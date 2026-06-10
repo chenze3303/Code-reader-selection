@@ -875,7 +875,7 @@
       const requiredPrecision = moduleMM / divisor;
       const requiredPixels = Math.ceil(fovReqMM / requiredPrecision);
       const ppmStandardText = is2D ? '📊 2D码评分: 4~8优秀 | 8~12良好 | ≥12或3~4合格 | <3较低' : '📊 1D码评分: 1.4~2优秀 | 2~3良好 | 1~1.4或≥3合格 | <1较低';
-      document.getElementById('calcContent').innerHTML = `<div class="calc-box">🔎 模块尺寸: ${moduleMM.toFixed(4)} mm &nbsp;| 工作距离: ${wdMM} mm</div><div class="calc-box">📏 视野过滤: 预估视野 ≥ ${fovReqMM} mm<br><span style="font-size:0.65rem;">${ppmStandardText}</span></div>`;
+      document.getElementById('calcContent').innerHTML = `<div class="calc-box">🔎 模块尺寸: ${moduleMM.toFixed(4)} mm &nbsp;| 工作距离: ${wdMM} mm</div><div class="calc-box">📏 视野过滤: 预估视野 ≥ ${fovReqMM} mm<br><span style="font-size:0.65rem;"></span></div>`;
 
       const allScored = PRODUCT_DB.map(model => {
         let score = 0, reasons = [];
