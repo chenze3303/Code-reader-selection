@@ -197,6 +197,14 @@
       gap: 0.5rem;
       align-items: center;
     }
+    .input-row select {
+      width: auto;
+      min-width: 70px;
+      flex-shrink: 0;
+    }
+    .input-row input {
+      flex: 1;
+    }
 
     .btn-primary {
       background: linear-gradient(105deg, #f76504, #e05a00);
@@ -296,6 +304,29 @@
       font-size: 0.6rem;
       font-weight: 700;
       color: #f76504;
+    }
+
+    /* 图片展示样式 */
+    .code-img-container {
+      margin: 0.8rem 0 0.2rem 0;
+      text-align: center;
+      background: #fafcff;
+      border-radius: 24px;
+      padding: 0.5rem;
+      border: 1px solid #eef2f6;
+    }
+    .code-type-img {
+      width: 100%;
+      max-width: 100%;
+      border-radius: 20px;
+      background: #fef9f0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+    }
+    .img-caption {
+      font-size: 0.65rem;
+      color: #8f9eae;
+      margin-top: 0.3rem;
+      font-weight: 500;
     }
 
     .modal-overlay {
@@ -517,6 +548,10 @@
       .left-panel, .right-panel { width: 100%; }
       .modal { width: 95%; padding: 1rem; }
       .modal-spec-grid { grid-template-columns: 1fr 1fr; }
+      .compact-grid {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+      }
     }
   </style>
 </head>
@@ -532,10 +567,11 @@
   <div class="main-content">
     <div class="left-panel">
       <div class="card">
-        <div class="card-header">📋 需求参数</div>
+        <div class="card-header">📋 核心参数配置</div>
         
+        <!-- 区块1：码制类型 + 模块尺寸 (并排放) -->
         <div class="form-section">
-          <div class="form-section-title">📌 码制信息</div>
+          <div class="form-section-title">🔖 码制 & 模块尺寸</div>
           <div class="compact-grid">
             <div>
               <label>码制类型 *</label>
@@ -545,28 +581,25 @@
                 <option value="Code39">一维码 (1D)</option>
               </select>
             </div>
-            <div></div>
-          </div>
-        </div>
-
-        <div class="form-section">
-          <div class="form-section-title">📐 选型参数</div>
-          <div class="compact-grid">
             <div>
               <label>模块尺寸 *</label>
               <div class="input-row">
                 <input type="number" id="moduleSize" value="" placeholder="请输入数值">
                 <select id="moduleUnit"><option value="mil">mil</option><option value="mm" selected>mm</option></select>
               </div>
-              <!-- 添加说明图片 -->
-              <div style="margin-top: 0.6rem;">
-               <img src="code-type-desc.png" alt="码制类型说明" style="width: 200%; border-radius: 20px;">
-             </div>
             </div>
+          </div>
+          <!-- 图片区域：放在码制类型和模块尺寸下方 (调整后符合新布局) -->
+          <div class="code-img-container">
+            <img src="code-type-desc.png" alt="码制类型与模块尺寸说明示意图" class="code-type-img" onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22120%22%20viewBox%3D%220%200%20400%20120%22%3E%3Crect%20width%3D%22400%22%20height%3D%22120%22%20fill%3D%22%23fef3e8%22%20rx%3D%2212%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20dominant-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20fill%3D%22%23f76504%22%20font-size%3D%2214%22%3E📖%20码制示意%3A%20QR%20%26%20Code39%20|%20模块尺寸参考%3C%2Ftext%3E%3C%2Fsvg%3E';">
+            <div class="img-caption">💡 码制类型&模块尺寸参考</div>
+          </div>
+        </div>
 
-            
-            
-
+        <!-- 区块2：工作距离 + 期望视野 -->
+        <div class="form-section">
+          <div class="form-section-title">📐 距离 & 视野参数</div>
+          <div class="compact-grid">
             <div>
               <label>工作距离 *</label>
               <div class="input-row">
@@ -581,7 +614,6 @@
                 <select id="fovUnit"><option value="mm" selected>mm</option><option value="cm">cm</option></select>
               </div>
             </div>
-            <div></div>
           </div>
         </div>
 
@@ -622,7 +654,7 @@
 
 <script>
   (function() {
-    // ======================= 产品数据库 =======================
+    // ======================= 产品数据库 (保持不变) =======================
     const PRODUCT_DB = [
       { model: "ID803M-03M", series: "ID800", resolution: { w: 640, h: 480 }, pixelSize: 3.7, focal: 3.1, interface: "USB2.0、RS232、RJ45", protection: "IP54", workingDist: { min: 120, max: 120} },
       { model: "ID813M-05M", series: "ID800", resolution: { w: 1280, h: 1024 }, pixelSize: 2.7, focal: 4.9, interface: "USB2.0、RS232、RJ45", protection: "IP54", workingDist: { min: 70, max: 120 } },
@@ -764,7 +796,6 @@
       return value;
     }
 
-    // 根据焦距和工作距离计算预估视野
     function estimateFOV(model, wdMM) {
       if (!model.focal || !model.pixelSize) return null;
       const sensorWidth = (model.resolution.w * model.pixelSize) / 1000;
@@ -774,67 +805,39 @@
       return { width: Math.round(fovWidth), height: Math.round(fovHeight) };
     }
 
-    // 基于型号自己的预估视野计算 PPM
     function calculatePPMForModel(model, wdMM, moduleMM) {
       if (!model.focal || !model.pixelSize) return null;
       const fovEst = estimateFOV(model, wdMM);
       if (!fovEst) return null;
-      const ppm = (model.resolution.w / fovEst.width) * moduleMM;
-      return ppm;
+      return (model.resolution.w / fovEst.width) * moduleMM;
     }
 
     function isCodeType2D(codeType) {
       return codeType === 'QR' || codeType === 'DM';
     }
 
-    // 获取 PPM 过滤范围（用于过滤不合格型号）
     function getPPMFilterRange(codeType) {
-      if (isCodeType2D(codeType)) {
-        return { min: 3, max: 20 };
-      } else {
-        return { min: 1, max: 4 };
-      }
+      return isCodeType2D(codeType) ? { min: 3, max: 20 } : { min: 1, max: 4 };
     }
 
-    // PPM 评分逻辑（根据码制类型返回评分和等级描述）
     function getPPMScoreAndLevel(ppm, codeType) {
       const is2D = isCodeType2D(codeType);
-      
       if (is2D) {
-        // 2D 条码 (QR/DM) 评分逻辑
-        if (ppm >= 4 && ppm <= 8) {
-          return { score: 30, level: '优秀' };
-        } else if (ppm > 8 && ppm <= 12) {
-          return { score: 25, level: '良好' };
-        } else if (ppm >= 12 || (ppm >= 3 && ppm < 4)) {
-          return { score: 15, level: '合格' };
-        } else if (ppm < 3) {
-          return { score: -15, level: '较低' };
-        } else {
-          return { score: 0, level: '未知' };
-        }
+        if (ppm >= 4 && ppm <= 8) return { score: 30, level: '优秀' };
+        if (ppm > 8 && ppm <= 12) return { score: 25, level: '良好' };
+        if (ppm >= 12 || (ppm >= 3 && ppm < 4)) return { score: 15, level: '合格' };
+        if (ppm < 3) return { score: -15, level: '较低' };
+        return { score: 0, level: '未知' };
       } else {
-        // 1D 条码 (Code128/Code39) 评分逻辑
-        if (ppm >= 1.4 && ppm <= 2) {
-          return { score: 30, level: '优秀' };
-        } else if (ppm >= 2 && ppm <= 3) {
-          return { score: 25, level: '良好' };
-        } else if ((ppm >= 1 && ppm < 1.4) || ppm >= 3) {
-          return { score: 15, level: '合格' };
-        } else if (ppm < 1) {
-          return { score: -15, level: '较低' };
-        } else {
-          return { score: 0, level: '未知' };
-        }
+        if (ppm >= 1.4 && ppm <= 2) return { score: 30, level: '优秀' };
+        if (ppm >= 2 && ppm <= 3) return { score: 25, level: '良好' };
+        if ((ppm >= 1 && ppm < 1.4) || ppm >= 3) return { score: 15, level: '合格' };
+        if (ppm < 1) return { score: -15, level: '较低' };
+        return { score: 0, level: '未知' };
       }
     }
 
-    let cachedFilteredList = null;
-    let cachedWdMM = null;
-    let cachedCodeType = null;
-    let cachedPPMFilterRange = null;
-    let cachedModuleMM = null;
-    let cachedFovReqMM = null;
+    let cachedFilteredList = null, cachedWdMM = null, cachedCodeType = null, cachedPPMFilterRange = null, cachedModuleMM = null, cachedFovReqMM = null;
 
     function resetToEmpty() {
       document.getElementById('calcContent').innerHTML = '<div class="empty-state">等待参数输入...</div>';
@@ -861,7 +864,6 @@
 
       cachedCodeType = codeType;
       cachedPPMFilterRange = getPPMFilterRange(codeType);
-
       const moduleMM = toMM(mSize, mUnit);
       const fovReqMM = toMM(fovReq, fovUnit);
       const wdMM = toMM(wd, dUnit);
@@ -872,144 +874,58 @@
       const divisor = is2D ? 5 : 1.5;
       const requiredPrecision = moduleMM / divisor;
       const requiredPixels = Math.ceil(fovReqMM / requiredPrecision);
+      const ppmStandardText = is2D ? '📊 2D码评分: 4~8优秀 | 8~12良好 | ≥12或3~4合格 | <3较低' : '📊 1D码评分: 1.4~2优秀 | 2~3良好 | 1~1.4或≥3合格 | <1较低';
+      document.getElementById('calcContent').innerHTML = `<div class="calc-box">🔎 模块尺寸: ${moduleMM.toFixed(4)} mm &nbsp;| 工作距离: ${wdMM} mm</div><div class="calc-box">📏 视野过滤: 预估视野 ≥ ${fovReqMM} mm<br><span style="font-size:0.65rem;">${ppmStandardText}</span></div>`;
 
-      // 显示 PPM 评分标准说明
-      let ppmStandardText = '';
-      if (is2D) {
-        ppmStandardText = '📊 2D码评分: 4~8优秀 | 8~12良好 | ≥12或3~4合格 | <3较低';
-      } else {
-        ppmStandardText = '📊 1D码评分: 1.4~2优秀 | 2~3良好 | 1~1.4或≥3合格 | <1较低';
-      }
-
-      document.getElementById('calcContent').innerHTML = `
-        <div class="calc-box">🔎 模块尺寸: ${moduleMM.toFixed(4)} mm &nbsp;| 工作距离: ${wdMM} mm</div>
-        <div class="calc-box">📏 视野过滤: 预估视野 ≥ ${fovReqMM} mm</div>
-      `;
-
-      // 计算所有产品的评分
       const allScored = PRODUCT_DB.map(model => {
-        let score = 0;
-        const reasons = [];
+        let score = 0, reasons = [];
         const sensorWidthPx = model.resolution.w;
         const fovEst = estimateFOV(model, wdMM);
-        
-        // 基于型号自己的预估视野计算真实 PPM
-        let ppm = null;
-        let ppmScore = 0;
-        let ppmLevel = '';
+        let ppm = null, ppmScore = 0, ppmLevel = '';
         if (model.focal && fovEst) {
           ppm = (sensorWidthPx / fovEst.width) * moduleMM;
           const ppmResult = getPPMScoreAndLevel(ppm, codeType);
           ppmScore = ppmResult.score;
           ppmLevel = ppmResult.level;
         }
-        
-        // 分辨率评分（基于用户需求视野）
         if (sensorWidthPx >= requiredPixels) { score += 30; reasons.push(`分辨率满足✓ (需${requiredPixels}px)`); }
         else if (sensorWidthPx >= requiredPixels * 0.8) { score += 15; reasons.push(`分辨率接近 (需${requiredPixels}px)`); }
         else { score -= 20; reasons.push(`分辨率偏低 (仅${sensorWidthPx}px < ${requiredPixels}px)`); }
-        
-        // PPM 评分（使用新的评分逻辑）
-        if (ppm !== null) {
-          score += ppmScore;
-          reasons.push(`PPM${ppmLevel}(${ppm.toFixed(2)})`);
-        } else {
-          score += 5;
-          reasons.push('C-Mount(镜头外接，PPM取决于所选镜头)');
-        }
-        
-        // 工作距离评分
-        if (wdMM >= model.workingDist.min && wdMM <= model.workingDist.max) { 
-          score += 15; 
-          reasons.push(`距离适配(${model.workingDist.min}-${model.workingDist.max}mm)`); 
-        } else { 
-          score -= 5; 
-          reasons.push(`距离不适配(需${model.workingDist.min}-${model.workingDist.max}mm)`);
-        }
-        
-        // 视野评分
+        if (ppm !== null) { score += ppmScore; reasons.push(`PPM${ppmLevel}(${ppm.toFixed(2)})`); }
+        else { score += 5; reasons.push('C-Mount(镜头外接)'); }
+        if (wdMM >= model.workingDist.min && wdMM <= model.workingDist.max) { score += 15; reasons.push(`距离适配(${model.workingDist.min}-${model.workingDist.max}mm)`); } 
+        else { score -= 5; reasons.push(`距离不适配(需${model.workingDist.min}-${model.workingDist.max}mm)`); }
         if (model.focal && fovEst) {
-          if (fovEst.width >= fovReqMM) {
-            score += 15;
-            reasons.push(`视野满足(预估${fovEst.width}mm ≥ ${fovReqMM}mm)`);
-          } else {
-            score -= 20;
-            reasons.push(`视野不足(预估${fovEst.width}mm < ${fovReqMM}mm)`);
-          }
-        } else if (!model.focal) {
-          reasons.push('C-Mount(视野取决于所选镜头)');
-        }
-        
+          if (fovEst.width >= fovReqMM) { score += 15; reasons.push(`视野满足(预估${fovEst.width}mm ≥ ${fovReqMM}mm)`); } 
+          else { score -= 20; reasons.push(`视野不足(预估${fovEst.width}mm < ${fovReqMM}mm)`); }
+        } else if (!model.focal) reasons.push('C-Mount(视野取决于镜头)');
         return { model, score, ppm, ppmLevel, reasons, fovEst };
       });
       allScored.sort((a,b)=>b.score-a.score);
-      
-      // 过滤条件：工作距离、PPM 范围、视野足够（三重过滤）
       const filtered = allScored.filter(item => {
-        // 条件1：工作距离必须在范围内
         const wdOK = (cachedWdMM >= item.model.workingDist.min && cachedWdMM <= item.model.workingDist.max);
-        
-        // 条件2：PPM 必须在过滤范围内（有焦距的型号才检查）
         let ppmOK = true;
-        if (item.model.focal && item.ppm !== null) {
-          ppmOK = (item.ppm >= cachedPPMFilterRange.min && item.ppm <= cachedPPMFilterRange.max);
-        }
-        
-        // 条件3：视野必须足够（预估视野 ≥ 用户需求视野），C-Mount 自动通过
+        if (item.model.focal && item.ppm !== null) ppmOK = (item.ppm >= cachedPPMFilterRange.min && item.ppm <= cachedPPMFilterRange.max);
         let fovOK = true;
-        if (item.model.focal && item.fovEst) {
-          fovOK = (item.fovEst.width >= cachedFovReqMM);
-        }
-        
+        if (item.model.focal && item.fovEst) fovOK = (item.fovEst.width >= cachedFovReqMM);
         return wdOK && ppmOK && fovOK;
       });
       cachedFilteredList = filtered;
-      
       document.getElementById('showModalBtn').disabled = false;
-      
       let best = filtered.length > 0 ? filtered[0] : null;
       if (best) {
         const fovDisplay = best.fovEst ? `，预估视野 ${best.fovEst.width}×${best.fovEst.height}mm` : '，C-Mount 外接镜头';
         const ppmDisplay = best.ppm !== null ? best.ppm.toFixed(2) : '— (C-Mount)';
         const ppmLevelDisplay = best.ppmLevel ? ` (${best.ppmLevel})` : '';
-        document.getElementById('top1Content').innerHTML = `
-          <div class="result-main">
-            <div class="result-card"><strong>首选型号</strong><span>${best.model.model}</span></div>
-            <div class="result-card"><strong>PPM</strong><span>${ppmDisplay}${ppmLevelDisplay}</span></div>
-          </div>
-          <div class="model-preview">
-            <span>${best.model.series} · ${best.model.resolution.w}×${best.model.resolution.h} · ${best.model.interface}</span>
-            <span class="tag">${best.model.protection}</span>
-          </div>
-        `;
+        document.getElementById('top1Content').innerHTML = `<div class="result-main"><div class="result-card"><strong>首选型号</strong><span>${best.model.model}</span></div><div class="result-card"><strong>PPM</strong><span>${ppmDisplay}${ppmLevelDisplay}</span></div></div><div class="model-preview"><span>${best.model.series} · ${best.model.resolution.w}×${best.model.resolution.h} · ${best.model.interface}</span><span class="tag">${best.model.protection}</span></div>`;
       } else {
-        document.getElementById('top1Content').innerHTML = `
-          <div class="warning-badge" style="margin-bottom: 0.8rem;">⚠️ 没有找到同时满足所有条件的型号</div>
-          <div class="calc-box" style="background:#fff3e0;">
-            <strong>过滤条件：</strong><br>
-            • 工作距离需在相机范围内<br>
-            • 真实 PPM 需在 ${cachedPPMFilterRange.min}~${cachedPPMFilterRange.max} 之间 (${is2D ? '2D码制' : '1D码制'})<br>
-            • 预估视野宽度需 ≥ ${fovReqMM} mm
-          </div>
-          <div class="model-preview" style="margin-top: 0.5rem;">
-            <span>请调整工作距离、视野宽度或模块尺寸后重试</span>
-            <span class="tag">无匹配</span>
-          </div>
-        `;
+        document.getElementById('top1Content').innerHTML = `<div class="warning-badge" style="margin-bottom: 0.8rem;">⚠️ 没有找到同时满足所有条件的型号</div><div class="calc-box" style="background:#fff3e0;"><strong>过滤条件：</strong><br>• 工作距离需在相机范围内<br>• 真实 PPM 需在 ${cachedPPMFilterRange.min}~${cachedPPMFilterRange.max} 之间 (${is2D ? '2D码制' : '1D码制'})<br>• 预估视野宽度需 ≥ ${fovReqMM} mm</div><div class="model-preview" style="margin-top: 0.5rem;"><span>请调整参数后重试</span><span class="tag">无匹配</span></div>`;
       }
     }
 
     function renderModalContent() {
       if (!cachedFilteredList || cachedFilteredList.length === 0) {
-        document.getElementById('modalModelList').innerHTML = `
-          <div class="warning-badge" style="text-align:center; margin:1rem; padding:1rem;">
-            ⚠️ 没有符合三重过滤条件的型号<br><br>
-            <span style="font-size:0.7rem;">请尝试：<br>
-            • 调整工作距离<br>
-            • 减小视野宽度需求<br>
-            • 修改模块尺寸<br>
-            • 更换码制类型</span>
-          </div>`;
+        document.getElementById('modalModelList').innerHTML = `<div class="warning-badge" style="text-align:center; margin:1rem; padding:1rem;">⚠️ 没有符合三重过滤条件的型号<br><br><span style="font-size:0.7rem;">请尝试调整工作距离、视野宽度或模块尺寸</span></div>`;
         return;
       }
       let html = '';
@@ -1021,56 +937,16 @@
         const ppmDisplay = item.ppm !== null ? item.ppm.toFixed(2) : '— (C-Mount)';
         const ppmLevelDisplay = item.ppmLevel ? ` (${item.ppmLevel})` : '';
         const fovStatus = fovEst ? `📐 预估视野 ${fovEst.width}×${fovEst.height}mm` : '🔧 C-Mount 外接镜头';
-        
-        html += `
-          <div class="modal-model-entry ${i===0?'recommended':''}">
-            <div class="modal-entry-header">
-              <div style="display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap;">
-                <span class="modal-model-name">${m.model}</span>
-                <span class="modal-model-series">${m.series}</span>
-              </div>
-            </div>
-            
-            <div class="modal-spec-grid">
-              <div class="spec-item"><span class="spec-icon">🔘</span> ${m.resolution.w}×${m.resolution.h}</div>
-              <div class="spec-item"><span class="spec-icon">🔌</span> ${m.interface}</div>
-              <div class="spec-item"><span class="spec-icon">🛡️</span> ${m.protection}</div>
-              <div class="spec-item">${m.focal ? `<span class="spec-icon">🔍</span> ${m.focal}mm` : '<span class="spec-icon">🔧</span> C-Mount'}</div>
-            </div>
-            
-            <div class="ppm-value-row">
-              <span>📊 真实 PPM 值：<span class="ppm-value-highlight">${ppmDisplay}</span>${ppmLevelDisplay} (过滤范围 ${cachedPPMFilterRange.min}~${cachedPPMFilterRange.max})</span>
-            </div>
-            
-            <div class="info-row">
-              <span class="info-tag">📏 工作距离 ${m.workingDist.min}-${m.workingDist.max}mm</span>
-              <span class="info-tag">${fovStatus} ✓ 满足需求</span>
-            </div>
-            
-            <div class="reasons-row">
-              ${item.reasons.map(r => `<span class="reason-badge">✨ ${r}</span>`).join('')}
-            </div>
-          </div>
-        `;
+        html += `<div class="modal-model-entry ${i===0?'recommended':''}"><div class="modal-entry-header"><div style="display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap;"><span class="modal-model-name">${m.model}</span><span class="modal-model-series">${m.series}</span></div></div><div class="modal-spec-grid"><div class="spec-item"><span class="spec-icon">🔘</span> ${m.resolution.w}×${m.resolution.h}</div><div class="spec-item"><span class="spec-icon">🔌</span> ${m.interface}</div><div class="spec-item"><span class="spec-icon">🛡️</span> ${m.protection}</div><div class="spec-item">${m.focal ? `<span class="spec-icon">🔍</span> ${m.focal}mm` : '<span class="spec-icon">🔧</span> C-Mount'}</div></div><div class="ppm-value-row"><span>📊 真实 PPM 值：<span class="ppm-value-highlight">${ppmDisplay}</span>${ppmLevelDisplay} (过滤范围 ${cachedPPMFilterRange.min}~${cachedPPMFilterRange.max})</span></div><div class="info-row"><span class="info-tag">📏 工作距离 ${m.workingDist.min}-${m.workingDist.max}mm</span><span class="info-tag">${fovStatus} ✓ 满足需求</span></div><div class="reasons-row">${item.reasons.map(r => `<span class="reason-badge">✨ ${r}</span>`).join('')}</div></div>`;
       }
       document.getElementById('modalModelList').innerHTML = html;
     }
 
     function initModal() {
-      const modal = document.getElementById('modelModal');
-      const showBtn = document.getElementById('showModalBtn');
-      const closeBtn = document.getElementById('closeModalBtn');
-
-      showBtn.addEventListener('click', () => {
-        renderModalContent();
-        modal.classList.add('active');
-      });
-      closeBtn.addEventListener('click', () => {
-        modal.classList.remove('active');
-      });
-      modal.addEventListener('click', (e) => {
-        if (e.target === modal) modal.classList.remove('active');
-      });
+      const modal = document.getElementById('modelModal'), showBtn = document.getElementById('showModalBtn'), closeBtn = document.getElementById('closeModalBtn');
+      showBtn.addEventListener('click', () => { renderModalContent(); modal.classList.add('active'); });
+      closeBtn.addEventListener('click', () => modal.classList.remove('active'));
+      modal.addEventListener('click', (e) => { if (e.target === modal) modal.classList.remove('active'); });
     }
 
     function init() {
@@ -1081,13 +957,10 @@
       document.getElementById('moduleUnit').value = 'mm';
       document.getElementById('distanceUnit').value = 'mm';
       document.getElementById('fovUnit').value = 'mm';
-      
       resetToEmpty();
-      
       document.getElementById('runBtn').addEventListener('click', runSelection);
       initModal();
     }
-
     init();
   })();
 </script>
