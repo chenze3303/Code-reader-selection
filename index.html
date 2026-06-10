@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
+  <title>海康机器人 · 读码器智能选型 | 专业版</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f0f2f5;
+      font-family: 'Nunito', 'Segoe UI', 'Poppins', system-ui, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 1.2rem;
+      color: #1a2632;
+    }
+
+    .app-window {
+      max-width: 1200px;
+      width: 100%;
+      background: #ffffff;
+      border-radius: 40px;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      animation: fadeIn 0.3s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .titlebar {
+      background: #ffffff;
+      padding: 0.8rem 1.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #eef2f6;
+    }
+
+    .logo-area h1 {
+      font-size: 1.3rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #1f2c38, #f76504);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .badge {
+      background: #f2f5f8;
+      color: #f76504;
+      padding: 0.2rem 0.9rem;
+      border-radius: 40px;
+      font-size: 0.65rem;
+      font-weight: 700;
+    }
+
+    .status-badge {
+      font-size: 0.7rem;
+      background: #f0f4f8;
+      padding: 0.25rem 0.8rem;
+      border-radius: 40px;
+      color: #5d6f7e;
+    }
+
+    .main-content {
+      display: flex;
+      gap: 1.8rem;
+      padding: 1.5rem 1.8rem;
+      min-height: 520px;
+    }
+
+    .left-panel {
+      width: 42%;
+      flex-shrink: 0;
+    }
+
+    .right-panel {
+      width: 58%;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 28px;
+      padding: 1.2rem 1.4rem;
+      border: 1px solid #eef2f6;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.04);
+    }
+
+    .card-header {
+      font-weight: 800;
+      font-size: 1rem;
+      margin-bottom: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #1f2c38;
+      border-left: 4px solid #f76504;
+      padding-left: 0.7rem;
+    }
+
+    .form-section {
+      margin-bottom: 1.2rem;
+    }
+    .form-section-title {
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: #f76504;
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.5px;
+      border-bottom: 1px dashed #eef2f6;
+      padding-bottom: 0.2rem;
+    }
+    .compact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.9rem;
+    }
+
+    label {
+      font-weight: 700;
+      font-size: 0.65rem;
+      color: #5d6f7e;
+      display: block;
+      margin-bottom: 0.25rem;
+      text-transform: uppercase;
+    }
+
+    /* 下拉框样式 - 完全禁用浏览器默认的蓝色悬停/选中效果 */
+    select, input {
+      background: #fcfdfe;
+      border: 1.5px solid #e2e8f0;
+      border-radius: 20px;
+      padding: 0.55rem 0.8rem;
+      font-size: 0.8rem;
+      width: 100%;
+      transition: border-color 0.15s, box-shadow 0.15s;
+      outline: none;
+      font-family: inherit;
+      color: #1f2c38;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    }
+
+    /* 下拉框选项样式 - 彻底移除蓝色 */
+    select option {
+      background: #ffffff;
+      color: #1f2c38;
+    }
+    select option:checked {
+      background: #fef3e8;
+      color: #f76504;
+    }
+    /* 鼠标悬停时选项的样式 - 覆盖浏览器默认蓝色 */
+    select option:hover {
+      background: #fef3e8 !important;
+      color: #f76504 !important;
+    }
+    /* Firefox 特殊处理 */
+    select:-moz-focusring {
+      color: transparent;
+      text-shadow: 0 0 0 #1f2c38;
+    }
+    /* Chrome/Safari 下拉框内部悬停 */
+    select:focus option:hover {
+      background: #fef3e8;
+      color: #f76504;
+    }
+
+    input::placeholder {
+      font-size: 0.7rem;
+      color: #a0b0c0;
+      font-weight: 400;
+    }
+
+    select:focus, input:focus {
+      border-color: #f76504;
+      box-shadow: 0 0 0 2px rgba(247, 101, 4, 0.1);
+    }
+
+    .input-row {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+    }
+
+    .btn-primary {
+      background: linear-gradient(105deg, #f76504, #e05a00);
+      color: white;
+      border: none;
+      padding: 0.75rem 1rem;
+      border-radius: 40px;
+      font-weight: 800;
+      font-size: 0.85rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      width: 100%;
+      margin-top: 0.5rem;
+      transition: transform 0.15s, box-shadow 0.15s;
+      box-shadow: 0 3px 8px rgba(247, 101, 4, 0.2);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 12px rgba(247, 101, 4, 0.25);
+    }
+    .btn-primary:active {
+      transform: translateY(1px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1.5px solid #f76504;
+      color: #f76504;
+      padding: 0.5rem 1rem;
+      border-radius: 40px;
+      font-weight: 700;
+      font-size: 0.75rem;
+      cursor: pointer;
+      transition: background 0.15s, transform 0.1s;
+      width: 100%;
+      margin-top: 0.6rem;
+    }
+
+    .btn-outline:hover {
+      background: #fef3e8;
+      transform: scale(0.98);
+    }
+
+    .calc-box {
+      background: #fafcfd;
+      border-radius: 20px;
+      padding: 0.7rem 1rem;
+      font-size: 0.8rem;
+      margin-bottom: 0.6rem;
+      border-left: 4px solid #f76504;
+    }
+
+    .result-main {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 0.8rem;
+      align-items: stretch;
+    }
+    .result-card {
+      flex: 1;
+      background: #f9fbfd;
+      border-radius: 24px;
+      padding: 0.7rem;
+      text-align: center;
+      border: 1px solid #eef2f6;
+    }
+    .result-card strong {
+      display: block;
+      font-size: 0.7rem;
+      color: #5d6f7e;
+      margin-bottom: 0.3rem;
+    }
+    .result-card span {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #1f2c38;
+    }
+
+    .model-preview {
+      background: #f8fafc;
+      border-radius: 40px;
+      padding: 0.6rem 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.75rem;
+    }
+
+    .tag {
+      background: #f2f5f8;
+      padding: 0.2rem 0.7rem;
+      border-radius: 40px;
+      font-size: 0.6rem;
+      font-weight: 700;
+      color: #f76504;
+    }
+
+    /* 弹窗样式 */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(4px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0.2s, opacity 0.2s;
+    }
+
+    .modal-overlay.active {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .modal {
+      background: white;
+      border-radius: 36px;
+      max-width: 860px;
+      width: 90%;
+      max-height: 85vh;
+      overflow-y: auto;
+      padding: 1.5rem;
+      box-shadow: 0 20px 35px rgba(0, 0, 0, 0.15);
+      transform: scale(0.96);
+      transition: transform 0.2s cubic-bezier(0.2, 0.9, 0.4, 1);
+    }
+
+    .modal-overlay.active .modal {
+      transform: scale(1);
+    }
+
+    .modal::-webkit-scrollbar {
+      width: 0;
+      background: transparent;
+    }
+    .modal {
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.2rem;
+      border-bottom: 1px solid #eef2f6;
+      padding-bottom: 0.8rem;
+    }
+
+    .modal-header h2 {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: #1f2c38;
+    }
+
+    .modal-close {
+      background: none;
+      border: none;
+      font-size: 1.8rem;
+      cursor: pointer;
+      color: #8f9eae;
+      line-height: 1;
+      transition: color 0.15s;
+    }
+
+    .modal-close:hover {
+      color: #f76504;
+    }
+
+    .modal-model-list {
+      max-height: 65vh;
+      overflow-y: auto;
+      padding-right: 0.3rem;
+    }
+    .modal-model-list::-webkit-scrollbar {
+      width: 0;
+      background: transparent;
+    }
+    .modal-model-list {
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    .modal-model-entry {
+      border: 1px solid #eef2f6;
+      border-radius: 24px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      transition: all 0.15s;
+      background: #ffffff;
+    }
+
+    .modal-model-entry.recommended {
+      border-left: 4px solid #f76504;
+      background: #fffbf5;
+    }
+
+    .modal-entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.75rem;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .modal-model-name {
+      font-size: 1rem;
+      font-weight: 800;
+      color: #1f2c38;
+    }
+    .modal-model-series {
+      background: #f2f5f8;
+      padding: 0.2rem 0.7rem;
+      border-radius: 40px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: #f76504;
+    }
+
+    .modal-spec-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+      gap: 0.6rem;
+      margin-bottom: 0.8rem;
+      padding: 0.5rem 0;
+      border-top: 1px dashed #eef2f6;
+      border-bottom: 1px dashed #eef2f6;
+    }
+    .spec-item {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      font-size: 0.8rem;
+      color: #5d6f7e;
+    }
+    .spec-icon {
+      font-size: 0.85rem;
+    }
+
+    .ppm-value-row {
+      margin: 0.5rem 0;
+      font-size: 0.75rem;
+      color: #5d6f7e;
+    }
+    .ppm-value-highlight {
+      font-weight: 800;
+      color: #f76504;
+      font-size: 0.85rem;
+    }
+
+    .info-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 0.6rem 0;
+      font-size: 0.75rem;
+    }
+    .info-tag {
+      background: #fef3e8;
+      border-radius: 40px;
+      padding: 0.2rem 0.7rem;
+      color: #f76504;
+      font-weight: 600;
+    }
+    .fov-highlight {
+      background: #fef3e8;
+      border-radius: 40px;
+      padding: 0.2rem 0.7rem;
+      font-weight: 700;
+      color: #f76504;
+      font-size: 0.7rem;
+      display: inline-block;
+    }
+
+    .reasons-row {
+      margin-top: 0.6rem;
+      font-size: 0.7rem;
+      color: #5d6f7e;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+    .reason-badge {
+      background: #f0f4f8;
+      padding: 0.15rem 0.6rem;
+      border-radius: 30px;
+      font-size: 0.7rem;
+    }
+
+    .warning-badge {
+      background: #fff3e0;
+      color: #f76504;
+      padding: 0.5rem 1rem;
+      border-radius: 40px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .empty-state {
+      color: #8f9eae;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 800px) {
+      .main-content { flex-direction: column; }
+      .left-panel, .right-panel { width: 100%; }
+      .modal { width: 95%; padding: 1rem; }
+      .modal-spec-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+<div class="app-window">
+  <div class="titlebar">
+    <div class="logo-area">
+      <h1>📷 Hikrobot 读码器选型 <span class="badge">V1.0</span></h1>
+    </div>
+    <div class="status-badge">✨ 建议选型后实测</div>
+  </div>
+
+  <div class="main-content">
+    <div class="left-panel">
+      <div class="card">
+        <div class="card-header">📋 需求参数</div>
+        
+        <div class="form-section">
+          <div class="form-section-title">📌 码制信息</div>
+          <div class="compact-grid">
+            <div>
+              <label>码制类型 *</label>
+              <select id="codeType">
+                <option value="">-- 请选择 --</option>
+                <option value="QR">二维码 (2D)</option>
+                <option value="Code128">一维码 (1D)</option>
+              </select>
+            </div>
+            <div></div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <div class="form-section-title">📐 光学参数</div>
+          <div class="compact-grid">
+            <div>
+              <label>模块尺寸 *</label>
+              <div class="input-row">
+                <input type="number" id="moduleSize" value="" placeholder="请输入数值">
+                <select id="moduleUnit"><option value="mil">mil</option><option value="mm" selected>mm</option></select>
+              </div>
+            </div>
+            <div>
+              <label>工作距离 *</label>
+              <div class="input-row">
+                <input type="number" id="workingDistance" value="" placeholder="请输入数值">
+                <select id="distanceUnit"><option value="mm" selected>mm</option><option value="cm">cm</option></select>
+              </div>
+            </div>
+            <div>
+              <label>视野宽度 *</label>
+              <div class="input-row">
+                <input type="number" id="fovWidth" value="" placeholder="请输入数值">
+                <select id="fovUnit"><option value="mm" selected>mm</option><option value="cm">cm</option></select>
+              </div>
+            </div>
+            <div></div>
+          </div>
+        </div>
+
+        <button class="btn-primary" id="runBtn">⚡ 开始智能选型</button>
+      </div>
+    </div>
+
+    <div class="right-panel">
+      <div class="card">
+        <div class="card-header">🔢 分辨率 & 精度</div>
+        <div id="calcContent" class="empty-state">
+          等待参数输入...
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">🏆 最佳推荐</div>
+        <div id="top1Content" class="empty-state">
+          等待参数输入...
+        </div>
+        <button class="btn-outline" id="showModalBtn" style="margin-top: 0.6rem;" disabled>📋 查看所有满足条件的型号清单</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modelModal">
+  <div class="modal">
+    <div class="modal-header">
+      <h2>📌 满足过滤条件的推荐型号</h2>
+      <button class="modal-close" id="closeModalBtn">&times;</button>
+    </div>
+    <div id="modalModelList" class="modal-model-list">
+      <div class="empty-state">暂无数据，请先进行选型</div>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function() {
+    // ======================= 产品数据库 =======================
+    const PRODUCT_DB = [
+      { model: "ID803M-3mm", series: "ID800", resolution: { w: 640, h: 480 }, pixelSize: 3.7, focal: 3.1, interface: "USB2.0、RS232、RJ45", protection: "IP54", workingDist: { min: 25, max: 250 } },
+      { model: "ID813M-5mm", series: "ID800", resolution: { w: 1280, h: 1024 }, pixelSize: 2.7, focal: 4.9, interface: "USB2.0、RS232、RJ45", protection: "IP54", workingDist: { min: 45, max: 420 } },
+      { model: "ID2013EM-3mm", series: "ID2000", resolution: { w: 1024, h: 1280 }, pixelSize: 2.7, focal: 2.48, interface: "Fast Ethernet、RS232", protection: "IP54", workingDist: { min: 15, max: 280 } },
+      { model: "ID2013EM-5mm", series: "ID2000", resolution: { w: 1024, h: 1280 }, pixelSize: 2.7, focal: 4.63, interface: "Fast Ethernet、RS232、USB3.0", protection: "IP54", workingDist: { min: 25, max: 420 } },
+      { model: "ID2004M-6mm", series: "ID2000", resolution: { w: 704, h: 540 }, pixelSize: 6.9, focal: 6.72, interface: "Fast Ethernet、RS232、USB3.0", protection: "IP65", workingDist: { min: 40, max: 120 } },
+      { model: "ID2004M-16T", series: "ID2000", resolution: { w: 704, h: 540 }, pixelSize: 6.9, focal: 16, interface: "Fast Ethernet、RS232", protection: "IP65", workingDist: { min: 100, max: 400 } },
+      { model: "ID2013M-6mm", series: "ID2000", resolution: { w: 1280, h: 1024 }, pixelSize: 4, focal: 6.72, interface: "Fast Ethernet、RS232", protection: "IP65", workingDist: { min: 40, max: 120 } },
+      { model: "ID2013M-16mm", series: "ID2000", resolution: { w: 1280, h: 1024 }, pixelSize: 4, focal: 16, interface: "Fast Ethernet、RS232", protection: "IP65", workingDist: { min: 105, max: 130 } },
+      { model: "ID2013M-25mm", series: "ID2000", resolution: { w: 1280, h: 1024 }, pixelSize: 4, focal: 25, interface: "Fast Ethernet、RS232", protection: "IP65", workingDist: { min: 170, max: 200 } },
+      { model: "ID2016M-6mm", series: "ID2000", resolution: { w: 1408, h: 1024 }, pixelSize: 3.45, focal: 6.72, interface: "Fast Ethernet、RS232、USB3.0", protection: "IP65", workingDist: { min: 40, max: 120 } },
+      { model: "ID2016M-16mm", series: "ID2000", resolution: { w: 1408, h: 1024 }, pixelSize: 3.45, focal: 16, interface: "Fast Ethernet、RS232", protection: "IP65", workingDist: { min: 105, max: 130 } },
+      { model: "ID2016M-25mm", series: "ID2000", resolution: { w: 1408, h: 1024 }, pixelSize: 3.45, focal: 25, interface: "Fast Ethernet、RS232", protection: "IP65", workingDist: { min: 170, max: 200 } },
+      { model: "ID2016M-6T", series: "ID2000", resolution: { w: 1408, h: 1024 }, pixelSize: 3.45, focal: 6.7, interface: "Fast Ethernet、RS232", protection: "IP65", workingDist: { min: 70, max: 160 } },
+      { model: "ID2016M-10T", series: "ID2000", resolution: { w: 1408, h: 1024 }, pixelSize: 3.45, focal: 10, interface: "Fast Ethernet、RS232", protection: "IP65", workingDist: { min: 100, max: 400 } },
+      { model: "ID2016M-16T", series: "ID2000", resolution: { w: 1408, h: 1024 }, pixelSize: 3.45, focal: 16, interface: "Fast Ethernet、RS232", protection: "IP65", workingDist: { min: 100, max: 400 } },
+    ];
+
+    function toMM(value, unit) {
+      if (unit === 'mil') return value * 0.0254;
+      if (unit === 'cm') return value * 10;
+      return value;
+    }
+
+    function estimateFOV(model, wdMM) {
+      if (!model.focal || !model.pixelSize) return null;
+      const sensorWidth = (model.resolution.w * model.pixelSize) / 1000;
+      const fovWidth = (sensorWidth * wdMM) / model.focal;
+      const sensorHeight = (model.resolution.h * model.pixelSize) / 1000;
+      const fovHeight = (sensorHeight * wdMM) / model.focal;
+      return { width: Math.round(fovWidth), height: Math.round(fovHeight) };
+    }
+
+    function isCodeType2D(codeType) {
+      return codeType === 'QR' || codeType === 'DM';
+    }
+
+    function getPPMRange(codeType) {
+      if (isCodeType2D(codeType)) {
+        return { min: 3, max: 20 };
+      } else {
+        return { min: 1, max: 4 };
+      }
+    }
+
+    let cachedFilteredList = null;
+    let cachedWdMM = null;
+    let cachedCodeType = null;
+    let cachedPPMRange = null;
+
+    function resetToEmpty() {
+      document.getElementById('calcContent').innerHTML = '<div class="empty-state">等待参数输入...</div>';
+      document.getElementById('top1Content').innerHTML = '<div class="empty-state">等待参数输入...</div>';
+      document.getElementById('showModalBtn').disabled = true;
+      document.getElementById('modalModelList').innerHTML = '<div class="empty-state">暂无数据，请先进行选型</div>';
+      cachedFilteredList = null;
+    }
+
+    function runSelection() {
+      const codeType = document.getElementById('codeType').value;
+      const mSize = parseFloat(document.getElementById('moduleSize').value);
+      const mUnit = document.getElementById('moduleUnit').value;
+      const fovW = parseFloat(document.getElementById('fovWidth').value);
+      const fovUnit = document.getElementById('fovUnit').value;
+      const wd = parseFloat(document.getElementById('workingDistance').value);
+      const dUnit = document.getElementById('distanceUnit').value;
+
+      if (!codeType || isNaN(mSize) || isNaN(fovW) || isNaN(wd) || mSize <= 0 || fovW <= 0 || wd <= 0) {
+        alert('请完整填写所有必填参数（码制类型、模块尺寸、工作距离、视野宽度），且数值必须大于0');
+        resetToEmpty();
+        return;
+      }
+
+      cachedCodeType = codeType;
+      cachedPPMRange = getPPMRange(codeType);
+
+      const moduleMM = toMM(mSize, mUnit);
+      const fovMM = toMM(fovW, fovUnit);
+      const wdMM = toMM(wd, dUnit);
+      cachedWdMM = wdMM;
+      const is2D = isCodeType2D(codeType);
+      const divisor = is2D ? 5 : 1.5;
+      const requiredPrecision = moduleMM / divisor;
+      const requiredPixels = Math.ceil(fovMM / requiredPrecision);
+
+      document.getElementById('calcContent').innerHTML = `
+        <div class="calc-box">🔎 模块 ${moduleMM.toFixed(3)} mm &nbsp;| ${is2D ? '2D (÷5)' : '1D (÷1.5)'}</div>
+        <div class="calc-box">📐 精度 ${requiredPrecision.toFixed(4)} mm/px → 需 ${requiredPixels} px (≈${(requiredPixels*requiredPixels*9/16/1e6).toFixed(1)} MP)</div>
+        <div class="calc-box">📊 PPM 过滤范围: ${cachedPPMRange.min} ~ ${cachedPPMRange.max}</div>
+      `;
+
+      const allScored = PRODUCT_DB.map(model => {
+        let score = 0;
+        const reasons = [];
+        const sensorWidthPx = model.resolution.w;
+        const ppm = (sensorWidthPx / fovMM) * moduleMM;
+
+        if (sensorWidthPx >= requiredPixels) { score += 30; reasons.push('分辨率满足✓'); }
+        else if (sensorWidthPx >= requiredPixels * 0.8) { score += 15; reasons.push('分辨率接近'); }
+        else { score -= 20; reasons.push('分辨率偏低'); }
+
+        if (ppm >= 5) { score += 25; reasons.push(`PPM优(${ppm.toFixed(1)})`); }
+        else if (ppm >= 4) { score += 15; reasons.push('PPM良好'); }
+        else if (ppm >= 3) { score += 5; reasons.push('PPM合格'); }
+        else { score -= 15; reasons.push('PPM较低'); }
+
+        if (wdMM >= model.workingDist.min && wdMM <= model.workingDist.max) { score += 15; reasons.push(`距离适配(${model.workingDist.min}-${model.workingDist.max}mm)`); }
+        else { score -= 5; }
+
+        return { model, score, ppm, reasons };
+      });
+      allScored.sort((a,b)=>b.score-a.score);
+
+      const filtered = allScored.filter(item => {
+        const wdOK = (cachedWdMM >= item.model.workingDist.min && cachedWdMM <= item.model.workingDist.max);
+        const ppmOK = (item.ppm >= cachedPPMRange.min && item.ppm <= cachedPPMRange.max);
+        return wdOK && ppmOK;
+      });
+      cachedFilteredList = filtered;
+
+      document.getElementById('showModalBtn').disabled = false;
+
+      let best = filtered.length > 0 ? filtered[0] : null;
+      if (best) {
+        document.getElementById('top1Content').innerHTML = `
+          <div class="result-main">
+            <div class="result-card"><strong>首选型号</strong><span>${best.model.model}</span></div>
+            <div class="result-card"><strong>PPM</strong><span>${best.ppm.toFixed(1)} px/mod</span></div>
+          </div>
+          <div class="model-preview">
+            <span>${best.model.series} · ${best.model.resolution.w}×${best.model.resolution.h} · ${best.model.interface}</span>
+            <span class="tag">${best.model.protection}</span>
+          </div>
+          <div style="margin-top: 0.6rem; font-size:0.75rem;">
+            ✅ 工作距离 ${best.model.workingDist.min}-${best.model.workingDist.max}mm，${best.model.protection} 防护。<br>
+            📊 PPM ${best.ppm.toFixed(2)} (符合 ${cachedPPMRange.min}~${cachedPPMRange.max} 范围)
+          </div>
+        `;
+      } else {
+        document.getElementById('top1Content').innerHTML = `
+          <div class="warning-badge" style="margin-bottom: 0.8rem;">⚠️ 没有找到同时满足以下条件的型号：</div>
+          <div class="calc-box" style="background:#fff3e0;">
+            • 工作距离需在相机范围内<br>
+            • PPM 需在 ${cachedPPMRange.min}~${cachedPPMRange.max} 之间 (${is2D ? '2D码制' : '1D码制'})
+          </div>
+          <div class="model-preview" style="margin-top: 0.5rem;">
+            <span>请调整参数后重试</span>
+            <span class="tag">无匹配</span>
+          </div>
+        `;
+      }
+    }
+
+    function renderModalContent() {
+      if (!cachedFilteredList || cachedFilteredList.length === 0) {
+        document.getElementById('modalModelList').innerHTML = `
+          <div class="warning-badge" style="text-align:center; margin:1rem; padding:1rem;">
+            ⚠️ 没有符合过滤条件的型号<br><br>
+            <span style="font-size:0.7rem;">请尝试：<br>
+            • 调整工作距离<br>
+            • 修改模块尺寸或视野宽度<br>
+            • 更换码制类型</span>
+          </div>`;
+        return;
+      }
+      const wdMM = cachedWdMM;
+      let html = '';
+      const displayLimit = Math.min(20, cachedFilteredList.length);
+      for (let i = 0; i < displayLimit; i++) {
+        const item = cachedFilteredList[i];
+        const m = item.model;
+        const fovEst = estimateFOV(m, wdMM);
+        
+        html += `
+          <div class="modal-model-entry ${i===0?'recommended':''}">
+            <div class="modal-entry-header">
+              <div style="display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap;">
+                <span class="modal-model-name">${m.model}</span>
+                <span class="modal-model-series">${m.series}</span>
+              </div>
+            </div>
+            
+            <div class="modal-spec-grid">
+              <div class="spec-item"><span class="spec-icon">🔘</span> ${m.resolution.w}×${m.resolution.h}</div>
+              <div class="spec-item"><span class="spec-icon">🔌</span> ${m.interface}</div>
+              <div class="spec-item"><span class="spec-icon">🛡️</span> ${m.protection}</div>
+              <div class="spec-item">${m.focal ? `<span class="spec-icon">🔍</span> ${m.focal}mm` : '<span class="spec-icon">🔧</span> C-Mount'}</div>
+            </div>
+            
+            <div class="ppm-value-row">
+              <span>📊 PPM 值：<span class="ppm-value-highlight">${item.ppm.toFixed(2)}</span> (过滤范围 ${cachedPPMRange.min}~${cachedPPMRange.max})</span>
+            </div>
+            
+            <div class="info-row">
+              <span class="info-tag">📏 工作距离 ${m.workingDist.min}-${m.workingDist.max}mm</span>
+              ${fovEst ? `<span class="fov-highlight">📐 当前视野 ≈ ${fovEst.width}×${fovEst.height}mm</span>` : '<span class="tag">🔧 外接镜头</span>'}
+            </div>
+            
+            <div class="reasons-row">
+              ${item.reasons.map(r => `<span class="reason-badge">✨ ${r}</span>`).join('')}
+            </div>
+          </div>
+        `;
+      }
+      document.getElementById('modalModelList').innerHTML = html;
+    }
+
+    function initModal() {
+      const modal = document.getElementById('modelModal');
+      const showBtn = document.getElementById('showModalBtn');
+      const closeBtn = document.getElementById('closeModalBtn');
+
+      showBtn.addEventListener('click', () => {
+        renderModalContent();
+        modal.classList.add('active');
+      });
+      closeBtn.addEventListener('click', () => {
+        modal.classList.remove('active');
+      });
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) modal.classList.remove('active');
+      });
+    }
+
+    function init() {
+      document.getElementById('codeType').value = '';
+      document.getElementById('moduleSize').value = '';
+      document.getElementById('workingDistance').value = '';
+      document.getElementById('fovWidth').value = '';
+      document.getElementById('moduleUnit').value = 'mm';
+      document.getElementById('distanceUnit').value = 'mm';
+      document.getElementById('fovUnit').value = 'mm';
+      
+      resetToEmpty();
+      
+      document.getElementById('runBtn').addEventListener('click', runSelection);
+      initModal();
+    }
+
+    init();
+  })();
+</script>
+</body>
+</html>
