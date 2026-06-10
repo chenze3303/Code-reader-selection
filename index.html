@@ -558,7 +558,15 @@
                 <input type="number" id="moduleSize" value="" placeholder="请输入数值">
                 <select id="moduleUnit"><option value="mil">mil</option><option value="mm" selected>mm</option></select>
               </div>
+              <!-- 添加说明图片 -->
+              <div style="margin-top: 0.6rem;">
+               <img src="code-type-desc.png" alt="码制类型说明" style="width: 200%; border-radius: 20px;">
+             </div>
             </div>
+
+            
+            
+
             <div>
               <label>工作距离 *</label>
               <div class="input-row">
@@ -972,10 +980,6 @@
           <div class="model-preview">
             <span>${best.model.series} · ${best.model.resolution.w}×${best.model.resolution.h} · ${best.model.interface}</span>
             <span class="tag">${best.model.protection}</span>
-          </div>
-          <div style="margin-top: 0.6rem; font-size:0.75rem;">
-            ✅ 工作距离 ${best.model.workingDist.min}-${best.model.workingDist.max}mm${fovDisplay}<br>
-            📏 预估视野 ${best.fovEst ? best.fovEst.width : '?'}mm ≥ 需求 ${cachedFovReqMM}mm ✓
           </div>
         `;
       } else {
