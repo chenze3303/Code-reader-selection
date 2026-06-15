@@ -5,15 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>海康机器人 · 读码器选型工具</title>
   <style>
-    /* =====================================================
-       HIKROBOT 品牌色系
-       主色：#CC0000（海康红）
-       深底：#0A1628（深海军蓝）
-       辅助深：#1A2B4A
-       中性文字：#2C3E50
-       浅背景：#F5F7FA
-       边框线：#E2E8F0
-    ===================================================== */
     :root {
       --brand-red:     #f76504;
       --brand-red-dk:  #d95800;
@@ -32,11 +23,7 @@
       --border-light:  #EEF2F8;
     }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
       background: var(--bg-page);
@@ -61,9 +48,7 @@
       animation: fadeIn 0.3s ease-out;
     }
 
-    /* Prevent iOS font size inflation */
     input, select, textarea { -webkit-text-size-adjust: 100%; }
-    /* Prevent tap highlight flash */
     * { -webkit-tap-highlight-color: transparent; }
 
     @keyframes fadeIn {
@@ -83,7 +68,6 @@
       position: relative;
     }
 
-    /* 红色底部强调线 */
     .titlebar::after {
       content: '';
       position: absolute;
@@ -125,12 +109,85 @@
       color: rgba(255,255,255,0.5);
     }
 
-    /* ===== LAYOUT ===== */
+    /* ===== BODY LAYOUT (sidebar + content) ===== */
+    .app-body {
+      display: flex;
+      flex: 1;
+      min-height: 0;
+    }
+
+    /* ===== NAV SIDEBAR ===== */
+    .nav-tabs {
+      background: var(--navy-2);
+      display: flex;
+      flex-direction: column;
+      width: 136px;
+      flex-shrink: 0;
+      padding: 1rem 0;
+      border-right: 1px solid rgba(255,255,255,0.06);
+      gap: 2px;
+    }
+
+    .nav-tab {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.38rem;
+      padding: 0.85rem 0.5rem;
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: rgba(255,255,255,0.4);
+      cursor: pointer;
+      border-left: 3px solid transparent;
+      border-right: 3px solid transparent;
+      border-top: none;
+      border-bottom: none;
+      transition: all 0.18s ease;
+      white-space: nowrap;
+      letter-spacing: 0.2px;
+      user-select: none;
+      background: none;
+      text-align: center;
+      line-height: 1.3;
+      width: 100%;
+    }
+
+    .nav-tab:hover {
+      color: rgba(255,255,255,0.8);
+      background: rgba(255,255,255,0.05);
+    }
+
+    .nav-tab.active {
+      color: #ffffff;
+      border-left-color: var(--brand-red);
+      background: rgba(247,101,4,0.1);
+    }
+
+    .nav-tab-icon {
+      font-size: 1.2rem;
+      opacity: 0.85;
+      line-height: 1;
+    }
+
+    /* ===== PAGE CONTENT ===== */
+    .page {
+      display: none;
+      flex: 1;
+      min-width: 0;
+    }
+    .page.active {
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ===== LAYOUT (Selection Tool Page) ===== */
     .main-content {
       display: grid;
       grid-template-columns: 460px 1fr;
       gap: 0;
       min-height: 600px;
+      flex: 1;
     }
 
     .left-panel {
@@ -157,9 +214,7 @@
       border: 1px solid var(--border);
     }
 
-    .left-panel .card {
-      flex: 1;
-    }
+    .left-panel .card { flex: 1; }
 
     .card-header {
       font-weight: 800;
@@ -175,9 +230,7 @@
     }
 
     /* ===== FORM ===== */
-    .form-section {
-      margin-bottom: 1.4rem;
-    }
+    .form-section { margin-bottom: 1.4rem; }
     .form-section-title {
       font-size: 0.68rem;
       font-weight: 700;
@@ -186,19 +239,9 @@
       letter-spacing: 1px;
       text-transform: uppercase;
     }
-    .compact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
-    }
-    .compact-grid-1 {
-      grid-template-columns: 1fr;
-      gap: 0.85rem;
-    }
-    .compact-grid-3 {
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 0.85rem;
-    }
+    .compact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .compact-grid-1 { grid-template-columns: 1fr; gap: 0.85rem; }
+    .compact-grid-3 { grid-template-columns: 1fr 1fr 1fr; gap: 0.85rem; }
 
     label {
       font-weight: 700;
@@ -226,7 +269,6 @@
       -moz-appearance: none;
     }
 
-    /* 给 select 加右侧箭头空间，防止文字被遮挡 */
     select {
       padding-right: 2rem;
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238A9BAC' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
@@ -235,20 +277,10 @@
       background-size: 10px;
     }
 
-    select option {
-      background: #ffffff;
-      color: var(--text-primary);
-    }
-    select option:checked {
-      background: var(--brand-red-lt);
-      color: var(--brand-red);
-    }
+    select option { background: #ffffff; color: var(--text-primary); }
+    select option:checked { background: var(--brand-red-lt); color: var(--brand-red); }
 
-    input::placeholder {
-      font-size: 0.72rem;
-      color: var(--text-muted);
-      font-weight: 400;
-    }
+    input::placeholder { font-size: 0.72rem; color: var(--text-muted); font-weight: 400; }
 
     select:focus, input:focus {
       border-color: var(--brand-red);
@@ -256,16 +288,8 @@
       background: #ffffff;
     }
 
-    .input-row {
-      display: flex;
-      gap: 0.4rem;
-      align-items: stretch;
-    }
-    .input-row input {
-      flex: 1 1 0;
-      width: 0;        /* 覆盖全局 width:100%，让 flex 正确分配空间 */
-      min-width: 0;
-    }
+    .input-row { display: flex; gap: 0.4rem; align-items: stretch; }
+    .input-row input { flex: 1 1 0; width: 0; min-width: 0; }
     .input-row select {
       flex: 0 0 auto;
       width: auto;
@@ -295,6 +319,7 @@
       transition: background 0.15s, transform 0.15s, box-shadow 0.15s;
       box-shadow: 0 4px 12px rgba(247, 101, 4, 0.25);
       letter-spacing: 0.3px;
+      font-family: inherit;
     }
 
     .btn-primary:hover {
@@ -323,6 +348,7 @@
       align-items: center;
       justify-content: center;
       gap: 0.4rem;
+      font-family: inherit;
     }
 
     .btn-outline:hover:not(:disabled) {
@@ -332,10 +358,7 @@
       box-shadow: 0 4px 12px rgba(247,101,4,0.2);
     }
 
-    .btn-outline:disabled {
-      opacity: 0.35;
-      cursor: not-allowed;
-    }
+    .btn-outline:disabled { opacity: 0.35; cursor: not-allowed; }
 
     /* ===== CALC & RESULTS ===== */
     .calc-box {
@@ -460,17 +483,10 @@
       border: 1.5px solid var(--border);
       transition: all 0.15s ease;
     }
-    .series-check:hover {
-      background: var(--brand-red-lt);
-      border-color: var(--brand-red);
-      color: var(--brand-red);
-    }
-    .series-check input {
-      display: none;
-    }
+    .series-check:hover { background: var(--brand-red-lt); border-color: var(--brand-red); color: var(--brand-red); }
+    .series-check input { display: none; }
     .check-dot {
-      width: 11px;
-      height: 11px;
+      width: 11px; height: 11px;
       border-radius: 2px;
       background: #ffffff;
       border: 1.5px solid var(--border);
@@ -478,15 +494,8 @@
       transition: all 0.1s ease;
       box-sizing: border-box;
     }
-    .series-check input:checked + .check-dot {
-      background: var(--brand-red);
-      border-color: var(--brand-red);
-    }
-    .series-check:has(input:checked) {
-      background: var(--brand-red-lt);
-      border-color: var(--brand-red);
-      color: var(--brand-red);
-    }
+    .series-check input:checked + .check-dot { background: var(--brand-red); border-color: var(--brand-red); }
+    .series-check:has(input:checked) { background: var(--brand-red-lt); border-color: var(--brand-red); color: var(--brand-red); }
     .filter-reset-btn {
       background: transparent;
       border: 1px solid var(--border);
@@ -497,29 +506,14 @@
       padding: 0.25rem 0.7rem;
       border-radius: 4px;
       transition: all 0.15s;
+      font-family: inherit;
     }
-    .filter-reset-btn:hover {
-      background: var(--brand-red);
-      border-color: var(--brand-red);
-      color: white;
-    }
+    .filter-reset-btn:hover { background: var(--brand-red); border-color: var(--brand-red); color: white; }
 
-    /* ===== SCHEMATIC DIAGRAM ===== */
-    .schematic-wrap {
-      display: flex;
-      flex-direction: column;
-      gap: 0.85rem;
-    }
-    #schematicSvg {
-      border-radius: 6px;
-      border: 1px solid var(--border);
-      background: var(--bg-panel);
-    }
-    .calc-summary-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.6rem;
-    }
+    /* ===== SCHEMATIC ===== */
+    .schematic-wrap { display: flex; flex-direction: column; gap: 0.85rem; }
+    #schematicSvg { border-radius: 6px; border: 1px solid var(--border); background: var(--bg-panel); }
+    .calc-summary-row { display: flex; flex-wrap: wrap; gap: 0.6rem; }
     .calc-chip {
       background: var(--bg-panel);
       border: 1px solid var(--border);
@@ -531,25 +525,15 @@
       gap: 0.35rem;
       align-items: center;
     }
-    .calc-chip strong {
-      color: var(--text-primary);
-      font-weight: 700;
-    }
-    .calc-chip.highlight {
-      border-color: var(--brand-red);
-      background: var(--brand-red-lt);
-    }
-    .calc-chip.highlight strong {
-      color: var(--brand-red);
-    }
+    .calc-chip strong { color: var(--text-primary); font-weight: 700; }
+    .calc-chip.highlight { border-color: var(--brand-red); background: var(--brand-red-lt); }
+    .calc-chip.highlight strong { color: var(--brand-red); }
 
     /* ===== MODAL ===== */
     .modal-overlay {
       position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
       background: rgba(10, 22, 40, 0.6);
       backdrop-filter: blur(6px);
       display: flex;
@@ -560,12 +544,7 @@
       opacity: 0;
       transition: visibility 0.2s, opacity 0.2s;
     }
-
-    .modal-overlay.active {
-      visibility: visible;
-      opacity: 1;
-    }
-
+    .modal-overlay.active { visibility: visible; opacity: 1; }
     .modal {
       background: white;
       border-radius: 12px;
@@ -578,11 +557,7 @@
       transform: translateY(12px) scale(0.98);
       transition: transform 0.22s cubic-bezier(0.2, 0.9, 0.4, 1);
     }
-
-    .modal-overlay.active .modal {
-      transform: translateY(0) scale(1);
-    }
-
+    .modal-overlay.active .modal { transform: translateY(0) scale(1); }
     .modal::-webkit-scrollbar { width: 0; background: transparent; }
     .modal { scrollbar-width: none; -ms-overflow-style: none; }
 
@@ -594,18 +569,11 @@
       border-bottom: 1px solid #eef2f6;
       padding-bottom: 0.9rem;
     }
-
-    .modal-header h2 {
-      font-size: 1.1rem;
-      font-weight: 800;
-      color: #1f2c38;
-    }
-
+    .modal-header h2 { font-size: 1.1rem; font-weight: 800; color: #1f2c38; }
     .modal-close {
       background: var(--bg-panel);
       border: none;
-      width: 32px;
-      height: 32px;
+      width: 32px; height: 32px;
       border-radius: 6px;
       cursor: pointer;
       color: var(--text-muted);
@@ -615,17 +583,9 @@
       justify-content: center;
       transition: all 0.15s;
     }
+    .modal-close:hover { background: var(--brand-red); color: white; }
 
-    .modal-close:hover {
-      background: var(--brand-red);
-      color: white;
-    }
-
-    .modal-model-list {
-      max-height: 62vh;
-      overflow-y: auto;
-      padding-right: 0.2rem;
-    }
+    .modal-model-list { max-height: 62vh; overflow-y: auto; padding-right: 0.2rem; }
     .modal-model-list::-webkit-scrollbar { width: 0; background: transparent; }
 
     .modal-model-entry {
@@ -636,12 +596,7 @@
       transition: all 0.15s;
       background: var(--bg-card);
     }
-
-    .modal-model-entry:hover {
-      border-color: var(--brand-red-mid);
-      background: #FAFAFA;
-    }
-
+    .modal-model-entry:hover { border-color: var(--brand-red-mid); background: #FAFAFA; }
     .modal-model-entry.recommended {
       border-left: 4px solid var(--brand-red);
       background: var(--brand-red-lt);
@@ -656,11 +611,7 @@
       flex-wrap: wrap;
       gap: 0.5rem;
     }
-    .modal-model-name {
-      font-size: 0.95rem;
-      font-weight: 800;
-      color: var(--text-primary);
-    }
+    .modal-model-name { font-size: 0.95rem; font-weight: 800; color: var(--text-primary); }
     .modal-model-series {
       background: var(--navy);
       padding: 0.18rem 0.65rem;
@@ -680,35 +631,12 @@
       border-top: 1px solid var(--border-light);
       border-bottom: 1px solid var(--border-light);
     }
-    .spec-item {
-      display: flex;
-      align-items: center;
-      gap: 0.3rem;
-      font-size: 0.78rem;
-      color: var(--text-secondary);
-    }
-    .spec-icon {
-      font-size: 0.85rem;
-    }
+    .spec-item { display: flex; align-items: center; gap: 0.3rem; font-size: 0.78rem; color: var(--text-secondary); }
 
-    .ppm-value-row {
-      margin: 0.5rem 0;
-      font-size: 0.75rem;
-      color: var(--text-secondary);
-    }
-    .ppm-value-highlight {
-      font-weight: 800;
-      color: var(--brand-red);
-      font-size: 0.88rem;
-    }
+    .ppm-value-row { margin: 0.5rem 0; font-size: 0.75rem; color: var(--text-secondary); }
+    .ppm-value-highlight { font-weight: 800; color: var(--brand-red); font-size: 0.88rem; }
 
-    .info-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.6rem;
-      margin: 0.5rem 0;
-      font-size: 0.75rem;
-    }
+    .info-row { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 0.5rem 0; font-size: 0.75rem; }
     .info-tag {
       background: var(--bg-panel);
       border-radius: 4px;
@@ -719,14 +647,7 @@
       border: 1px solid var(--border);
     }
 
-    .reasons-row {
-      margin-top: 0.5rem;
-      font-size: 0.7rem;
-      color: var(--text-secondary);
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.35rem;
-    }
+    .reasons-row { margin-top: 0.5rem; font-size: 0.7rem; color: var(--text-secondary); display: flex; flex-wrap: wrap; gap: 0.35rem; }
     .reason-badge {
       background: var(--bg-panel);
       padding: 0.15rem 0.55rem;
@@ -747,48 +668,272 @@
       border: 1px solid var(--brand-red-mid);
     }
 
-    .empty-state {
-      color: var(--text-muted);
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.82rem;
+    .empty-state { color: var(--text-muted); text-align: center; padding: 2rem 1rem; font-size: 0.82rem; }
+
+    /* ===== PLACEHOLDER PAGES ===== */
+    .placeholder-page {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 2rem;
+      gap: 1.2rem;
+      background: var(--bg-panel);
+      min-height: 500px;
     }
 
-    .fov-highlight-badge {
-      background: #E8EEF8;
-      color: var(--navy-2);
-      padding: 0.2rem 0.6rem;
-      border-radius: 4px;
-      font-size: 0.65rem;
-      font-weight: 600;
+    .placeholder-icon {
+      width: 72px;
+      height: 72px;
+      background: var(--bg-card);
+      border: 2px dashed var(--border);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
     }
+
+    .placeholder-title {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--text-primary);
+    }
+
+    .placeholder-desc {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      text-align: center;
+      max-width: 340px;
+      line-height: 1.7;
+    }
+
+    .placeholder-pill {
+      background: var(--bg-card);
+      border: 1.5px dashed var(--brand-red-mid);
+      color: var(--brand-red);
+      padding: 0.4rem 1.2rem;
+      border-radius: 99px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    /* ===== CATALOG PAGE ===== */
+    .catalog-wrap { display: flex; flex-direction: column; height: 100%; overflow: hidden; }
+    .catalog-toolbar {
+      background: var(--bg-panel); border-bottom: 1px solid var(--border-light);
+      padding: 0.9rem 1.5rem; display: flex; flex-wrap: wrap; gap: 0.7rem;
+      align-items: center; justify-content: space-between; flex-shrink: 0;
+    }
+    .catalog-toolbar-left { display: flex; align-items: center; gap: 0.85rem; flex-wrap: wrap; }
+    .catalog-title { font-size: 0.85rem; font-weight: 800; color: var(--text-primary); display: flex; align-items: center; gap: 0.45rem; }
+    .catalog-count-badge { background: var(--brand-red-lt); color: var(--brand-red); border: 1px solid var(--brand-red-mid); padding: 0.15rem 0.65rem; border-radius: 99px; font-size: 0.65rem; font-weight: 700; }
+    .catalog-search-wrap { display: flex; align-items: center; gap: 0.45rem; background: var(--bg-card); border: 1.5px solid var(--border); border-radius: 6px; padding: 0 0.7rem; transition: border-color 0.15s; }
+    .catalog-search-wrap:focus-within { border-color: var(--brand-red); box-shadow: 0 0 0 3px rgba(247,101,4,0.08); }
+    .catalog-search-wrap input { border: none; background: none; padding: 0.45rem 0; font-size: 0.76rem; width: 200px; box-shadow: none; outline: none; font-family: inherit; color: var(--text-primary); }
+    .catalog-toolbar-right { display: flex; gap: 0.45rem; flex-wrap: wrap; }
+    .cat-btn { display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.42rem 0.85rem; border-radius: 5px; font-size: 0.7rem; font-weight: 700; cursor: pointer; transition: all 0.15s; font-family: inherit; border: 1.5px solid var(--border); background: var(--bg-card); color: var(--text-secondary); }
+    .cat-btn:hover { background: var(--bg-panel); }
+    .cat-btn.primary { background: var(--brand-red); border-color: var(--brand-red); color: white; }
+    .cat-btn.primary:hover { background: var(--brand-red-dk); }
+    .cat-btn.dark { background: var(--navy); border-color: var(--navy); color: white; }
+    .cat-btn.dark:hover { background: var(--navy-2); }
+    .catalog-table-wrap { flex: 1; overflow-y: auto; overflow-x: auto; scrollbar-width: none; -ms-overflow-style: none; }
+    .catalog-table-wrap::-webkit-scrollbar { display: none; }
+    .catalog-table { width: 100%; border-collapse: collapse; font-size: 0.77rem; min-width: 860px; }
+    .catalog-table th { position: sticky; top: 0; z-index: 2; background: var(--navy); color: rgba(255,255,255,0.82); padding: 0.65rem 0.85rem; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.5px; text-align: center; white-space: nowrap; border-bottom: 2px solid var(--brand-red); }
+    .catalog-table td { padding: 0.6rem 0.85rem; border-bottom: 1px solid var(--border-light); text-align: center; vertical-align: middle; color: var(--text-secondary); }
+    .catalog-table tbody tr:hover td { background: var(--bg-panel); }
+    .cat-model-chip { font-family: "SF Mono","Fira Code","Consolas",monospace; font-weight: 700; color: var(--navy-2); background: #E8EEF8; padding: 0.22rem 0.65rem; border-radius: 4px; font-size: 0.7rem; display: inline-block; white-space: nowrap; }
+    .cat-series-tag { background: var(--navy); color: rgba(255,255,255,0.85); padding: 0.15rem 0.55rem; border-radius: 4px; font-size: 0.6rem; font-weight: 700; }
+    .cat-prot-tag { background: var(--brand-red-lt); color: var(--brand-red); border: 1px solid var(--brand-red-mid); padding: 0.15rem 0.55rem; border-radius: 4px; font-size: 0.6rem; font-weight: 700; }
+    .cat-action-cell { display: flex; gap: 0.35rem; justify-content: center; }
+    .cat-edit-btn, .cat-del-btn { display: inline-flex; align-items: center; gap: 0.25rem; padding: 0.25rem 0.6rem; border-radius: 4px; font-size: 0.62rem; font-weight: 700; cursor: pointer; transition: all 0.15s; border: 1px solid; font-family: inherit; }
+    .cat-edit-btn { background: #ecfdf5; color: #0b5e42; border-color: #c6f0da; }
+    .cat-edit-btn:hover { background: #d1fae5; }
+    .cat-del-btn { background: var(--brand-red-lt); color: var(--brand-red-dk); border-color: var(--brand-red-mid); }
+    .cat-del-btn:hover { background: #fcd9be; }
+    .cat-modal-overlay { position: fixed; inset: 0; background: rgba(10,22,40,0.55); backdrop-filter: blur(5px); display: flex; align-items: center; justify-content: center; z-index: 2000; visibility: hidden; opacity: 0; transition: visibility 0.2s, opacity 0.2s; }
+    .cat-modal-overlay.active { visibility: visible; opacity: 1; }
+    .cat-modal { background: var(--bg-card); border-radius: 12px; max-width: 660px; width: 92%; max-height: 88vh; overflow-y: auto; padding: 1.4rem 1.6rem; box-shadow: 0 24px 48px rgba(10,22,40,0.25); transform: translateY(10px) scale(0.98); transition: transform 0.22s cubic-bezier(0.2,0.9,0.4,1); scrollbar-width: none; }
+    .cat-modal-overlay.active .cat-modal { transform: translateY(0) scale(1); }
+    .cat-modal::-webkit-scrollbar { display: none; }
+    .cat-modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; padding-bottom: 0.8rem; border-bottom: 2px solid var(--brand-red); }
+    .cat-modal-header h3 { font-size: 0.95rem; font-weight: 800; color: var(--text-primary); }
+    .cat-modal-close { background: var(--bg-panel); border: none; width: 28px; height: 28px; border-radius: 5px; cursor: pointer; color: var(--text-muted); font-size: 1rem; display: flex; align-items: center; justify-content: center; transition: all 0.15s; }
+    .cat-modal-close:hover { background: var(--brand-red); color: white; }
+    .cat-form-grid { display: grid; grid-template-columns: 120px 1fr; gap: 0.75rem 0.65rem; margin-bottom: 1.1rem; }
+    .cat-form-grid label { font-size: 0.64rem; font-weight: 700; color: var(--text-secondary); align-self: center; text-transform: uppercase; letter-spacing: 0.5px; }
+    .cat-form-grid input { border: 1.5px solid var(--border); border-radius: 5px; padding: 0.45rem 0.7rem; font-size: 0.75rem; background: var(--bg-panel); color: var(--text-primary); font-family: inherit; outline: none; width: 100%; transition: border-color 0.15s, box-shadow 0.15s; }
+    .cat-form-grid input:focus { border-color: var(--brand-red); box-shadow: 0 0 0 3px rgba(247,101,4,0.1); background: white; }
+    .cat-res-row { display: flex; gap: 0.4rem; align-items: center; }
+    .cat-res-row input { width: 76px; flex: none; }
+    .cat-res-sep { color: var(--text-muted); font-weight: 700; }
+    .cat-modal-footer { display: flex; justify-content: flex-end; gap: 0.5rem; }
+    .cat-code-preview { background: var(--navy); color: rgba(255,255,255,0.85); padding: 0.9rem 1rem; border-radius: 7px; font-family: "SF Mono","Fira Code",monospace; font-size: 0.67rem; overflow: auto; max-height: 300px; line-height: 1.55; white-space: pre; scrollbar-width: thin; margin-bottom: 0.9rem; }
+    .cat-import-area { width: 100%; border: 1.5px solid var(--border); border-radius: 7px; padding: 0.75rem 0.9rem; font-size: 0.7rem; font-family: "SF Mono","Fira Code",monospace; background: var(--bg-panel); color: var(--text-primary); resize: vertical; min-height: 110px; margin-bottom: 0.7rem; outline: none; }
+    .cat-import-area:focus { border-color: var(--brand-red); }
+    .cat-hint { background: var(--brand-red-lt); border: 1px solid var(--brand-red-mid); border-radius: 5px; padding: 0.45rem 0.8rem; font-size: 0.67rem; color: var(--brand-red-dk); margin-bottom: 0.8rem; line-height: 1.5; }
+    .cat-toast { position: fixed; bottom: 1.5rem; right: 1.5rem; background: rgba(10,22,40,0.92); backdrop-filter: blur(8px); color: white; padding: 0.45rem 1.1rem; border-radius: 99px; font-size: 0.72rem; font-weight: 600; z-index: 9999; opacity: 0; transition: opacity 0.2s; pointer-events: none; }
+
+    /* ===== COMING SOON SHELL ===== */
+    .coming-soon-shell {
+      position: relative;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .coming-soon-shell .main-content {
+      flex: 1;
+      min-height: 600px;
+    }
+    .coming-soon-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      background: rgba(238, 241, 246, 0.55);
+      backdrop-filter: blur(3px);
+      -webkit-backdrop-filter: blur(3px);
+      z-index: 10;
+    }
+    .coming-soon-badge {
+      width: 68px; height: 68px;
+      background: var(--bg-card);
+      border: 2px solid var(--border);
+      border-radius: 16px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2rem;
+      box-shadow: 0 4px 16px rgba(10,22,40,0.08);
+    }
+    .coming-soon-title {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      letter-spacing: 0.2px;
+    }
+    .coming-soon-desc {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-align: center;
+      max-width: 360px;
+      line-height: 1.75;
+    }
+    .coming-soon-pill {
+      background: var(--navy);
+      color: rgba(255,255,255,0.85);
+      padding: 0.45rem 1.4rem;
+      border-radius: 99px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      border: 2px solid var(--brand-red);
+    }
+
+    /* ===== COMPETITOR ANALYSIS ===== */
+    .comp-wrap, .bom-wrap { display:flex; flex-direction:column; height:100%; overflow:hidden; }
+    .comp-toolbar, .bom-toolbar {
+      background: var(--bg-panel); border-bottom: 1px solid var(--border-light);
+      padding: 0.85rem 1.5rem; display:flex; align-items:center;
+      justify-content:space-between; flex-shrink:0; flex-wrap:wrap; gap:0.6rem;
+    }
+    .comp-title, .bom-title { font-size:0.88rem; font-weight:800; color:var(--text-primary); }
+    .comp-toolbar-right, .bom-toolbar-right { display:flex; gap:0.45rem; flex-wrap:wrap; }
+    .cp-btn { display:inline-flex; align-items:center; gap:0.35rem; padding:0.42rem 0.85rem; border-radius:5px; font-size:0.7rem; font-weight:700; cursor:pointer; transition:all 0.15s; font-family:inherit; border:1.5px solid var(--border); background:var(--bg-card); color:var(--text-secondary); }
+    .cp-btn:hover { background:var(--bg-panel); }
+    .cp-btn.primary { background:var(--brand-red); border-color:var(--brand-red); color:white; }
+    .cp-btn.primary:hover { background:var(--brand-red-dk); }
+    .cp-btn.dark { background:var(--navy); border-color:var(--navy); color:white; }
+    .cp-btn.dark:hover { background:var(--navy-2); }
+
+    /* Competitor grid */
+    .comp-header-row {
+      display:grid; background:var(--navy); border-bottom:2px solid var(--brand-red);
+      flex-shrink:0; overflow-x:auto; scrollbar-width:none;
+    }
+    .comp-header-row::-webkit-scrollbar { display:none; }
+    .comp-attr-col {
+      padding:0.7rem 1rem; font-size:0.65rem; font-weight:700;
+      color:rgba(255,255,255,0.55); letter-spacing:0.6px; text-transform:uppercase;
+      border-right:1px solid rgba(255,255,255,0.08); min-width:120px;
+    }
+    .comp-brand-col {
+      padding:0.6rem 1rem; display:flex; align-items:center; justify-content:space-between;
+      gap:0.5rem; border-right:1px solid rgba(255,255,255,0.08); min-width:160px;
+    }
+    .comp-brand-name { font-size:0.82rem; font-weight:800; color:#fff; }
+    .comp-brand-model { font-size:0.65rem; color:rgba(255,255,255,0.5); margin-top:0.1rem; }
+    .comp-del-brand { background:rgba(247,101,4,0.2); border:1px solid rgba(247,101,4,0.4); color:var(--brand-red); border-radius:3px; width:20px; height:20px; display:flex; align-items:center; justify-content:center; cursor:pointer; font-size:0.7rem; flex-shrink:0; transition:all 0.15s; }
+    .comp-del-brand:hover { background:var(--brand-red); color:white; }
+
+    .comp-body { flex:1; overflow:auto; scrollbar-width:none; }
+    .comp-body::-webkit-scrollbar { display:none; }
+    .comp-row { display:grid; border-bottom:1px solid var(--border-light); }
+    .comp-row:hover .comp-cell { background:var(--bg-panel); }
+    .comp-row-label {
+      padding:0.65rem 1rem; font-size:0.72rem; font-weight:700;
+      color:var(--text-secondary); background:var(--bg-panel);
+      border-right:1px solid var(--border-light); min-width:120px;
+      display:flex; align-items:center;
+    }
+    .comp-cell {
+      padding:0.65rem 1rem; font-size:0.75rem; color:var(--text-secondary);
+      border-right:1px solid var(--border-light); min-width:160px;
+      word-break:break-word; line-height:1.5;
+    }
+    .comp-cell.hikrobot { background:var(--brand-red-lt); color:var(--text-primary); font-weight:600; }
+    .comp-cell.pros { color:#0b5e42; }
+    .comp-cell.cons { color:var(--brand-red-dk); }
+    .comp-empty {
+      flex:1; display:flex; flex-direction:column; align-items:center;
+      justify-content:center; gap:0.75rem; padding:3rem;
+      color:var(--text-muted); font-size:0.8rem;
+    }
+
+    /* BOM table */
+    .bom-table-wrap { flex:1; overflow:auto; scrollbar-width:none; }
+    .bom-table-wrap::-webkit-scrollbar { display:none; }
+    .bom-table { width:100%; border-collapse:collapse; font-size:0.76rem; min-width:960px; }
+    .bom-table th { position:sticky; top:0; z-index:2; background:var(--navy); color:rgba(255,255,255,0.82); padding:0.62rem 0.8rem; font-size:0.64rem; font-weight:700; letter-spacing:0.4px; text-align:center; border-bottom:2px solid var(--brand-red); white-space:nowrap; }
+    .bom-table td { padding:0.55rem 0.7rem; border-bottom:1px solid var(--border-light); text-align:center; vertical-align:middle; color:var(--text-secondary); }
+    .bom-table tbody tr:hover td { background:var(--bg-panel); }
+    .bom-table td[contenteditable="true"]:focus { outline:2px solid var(--brand-red); outline-offset:-1px; background:#fff; border-radius:2px; }
+    .bom-idx { font-weight:700; color:var(--text-muted); font-size:0.68rem; }
+    .bom-model-chip { font-family:"SF Mono","Fira Code",monospace; font-weight:700; color:var(--navy-2); background:#E8EEF8; padding:0.2rem 0.6rem; border-radius:4px; font-size:0.68rem; display:inline-block; }
+    .bom-del-btn { background:var(--brand-red-lt); color:var(--brand-red-dk); border:1px solid var(--brand-red-mid); border-radius:4px; padding:0.22rem 0.55rem; font-size:0.62rem; font-weight:700; cursor:pointer; transition:all 0.15s; font-family:inherit; }
+    .bom-del-btn:hover { background:#fcd9be; }
+    .bom-footer { background:var(--bg-panel); border-top:1px solid var(--border-light); padding:0.55rem 1.2rem; display:flex; align-items:center; justify-content:space-between; font-size:0.7rem; color:var(--text-muted); flex-shrink:0; }
+    .bom-footer-hint { font-size:0.65rem; }
+    .bom-empty { padding:3rem; color:var(--text-muted); text-align:center; font-size:0.8rem; }
 
     /* ===== RESPONSIVE ===== */
     @media (max-width: 860px) {
       body { padding: 0; background: var(--bg-card); }
       .app-window { border-radius: 0; box-shadow: none; min-height: 100vh; }
       .main-content { grid-template-columns: 1fr; }
-      .left-panel {
-        border-right: none;
-        border-bottom: 4px solid var(--border-light);
-        background: var(--bg-panel);
-        padding: 1.5rem;
-      }
+      .left-panel { border-right: none; border-bottom: 4px solid var(--border-light); background: var(--bg-panel); padding: 1.5rem; }
       .right-panel { padding: 1.5rem; gap: 1rem; }
       .compact-grid { grid-template-columns: 1fr 1fr; gap: 0.85rem; }
       .compact-grid-3 { grid-template-columns: 1fr 1fr 1fr; gap: 0.75rem; }
       .modal { width: 96%; padding: 1.2rem; border-radius: 10px; }
+      .nav-tabs { width: 72px; }
+      .nav-tab { font-size: 0.6rem; padding: 0.7rem 0.3rem; }
+      .nav-tab-icon { font-size: 1.05rem; }
     }
 
     @media (max-width: 520px) {
-      .titlebar {
-        padding: 0.75rem 1rem;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.3rem;
-      }
+      .titlebar { padding: 0.75rem 1rem; flex-direction: column; align-items: flex-start; gap: 0.3rem; }
       .logo-area h1 { font-size: 0.95rem; }
       .status-badge { font-size: 0.62rem; padding: 0.2rem 0.6rem; }
+      .nav-tabs { width: 56px; padding: 0.75rem 0; }
+      .nav-tab { padding: 0.65rem 0.2rem; font-size: 0; gap: 0; } /* icon only on small screens */
+      .nav-tab-icon { font-size: 1.1rem; opacity: 1; }
       .left-panel { padding: 1rem; }
       .right-panel { padding: 1rem; gap: 0.75rem; }
       .card { padding: 1rem; border-radius: 12px; }
@@ -814,7 +959,7 @@
       .modal-spec-grid { grid-template-columns: 1fr 1fr; gap: 0.45rem; }
       .spec-item { font-size: 0.72rem; }
       .modal-model-entry { padding: 0.85rem; border-radius: 12px; }
-      .code-img-container { margin-top: 0.6rem; }
+      .titlebar { height: auto; }
     }
     @media (max-width: 360px) {
       .result-main { grid-template-columns: 1fr; }
@@ -824,6 +969,8 @@
 </head>
 <body>
 <div class="app-window">
+
+  <!-- TITLEBAR -->
   <div class="titlebar">
     <div class="logo-area">
       <h1>
@@ -840,147 +987,182 @@
     <div class="status-badge">计算结果仅供参考，建议实测验证</div>
   </div>
 
-  <div class="main-content">
-    <div class="left-panel">
-      <div class="card">
-        <div class="card-header">📋 核心参数配置</div>
-        
-        <div class="form-section">
-          <div class="form-section-title">🔖 码制 & 模块尺寸</div>
-          <div class="compact-grid">
-            <div>
-              <label>码制类型 *</label>
-              <select id="codeType">
-                <option value="">-- 请选择 --</option>
-                <option value="QR">二维码 (2D)</option>
-                <option value="Code39">一维码 (1D)</option>
-              </select>
+  <!-- BODY: sidebar + content -->
+  <div class="app-body">
+
+  <!-- NAV SIDEBAR -->
+  <nav class="nav-tabs" role="tablist">
+    <button class="nav-tab active" data-page="page-selection" role="tab">
+      <span class="nav-tab-icon">⚡</span>智能选型
+    </button>
+    <button class="nav-tab" data-page="page-competitor" role="tab">
+      <span class="nav-tab-icon">🔬</span>竞品分析
+    </button>
+    <button class="nav-tab" data-page="page-bom" role="tab">
+      <span class="nav-tab-icon">📋</span>配单表
+    </button>
+  </nav>
+
+  <!-- PAGE: 智能选型 -->
+  <div class="page active" id="page-selection">
+    <div class="main-content">
+      <div class="left-panel">
+        <div class="card">
+          <div class="card-header">📋 核心参数配置</div>
+          
+          <div class="form-section">
+            <div class="form-section-title">🔖 码制 &amp; 模块尺寸</div>
+            <div class="compact-grid">
+              <div>
+                <label>码制类型 *</label>
+                <select id="codeType">
+                  <option value="">-- 请选择 --</option>
+                  <option value="QR">二维码 (2D)</option>
+                  <option value="Code39">一维码 (1D)</option>
+                </select>
+              </div>
+              <div>
+                <label>模块尺寸 *</label>
+                <div class="input-row">
+                  <input type="number" id="moduleSize" value="" placeholder="请输入">
+                  <select id="moduleUnit"><option value="mil">mil</option><option value="mm" selected>mm</option></select>
+                </div>
+              </div>
             </div>
-            <div>
-              <label>模块尺寸 *</label>
-              <div class="input-row">
-                <input type="number" id="moduleSize" value="" placeholder="请输入">
-                <select id="moduleUnit"><option value="mil">mil</option><option value="mm" selected>mm</option></select>
+            <div class="code-img-container">
+              <img src="code-type-desc.png" alt="码制类型与模块尺寸说明" class="code-type-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22120%22%3E%3Crect width=%22400%22 height=%22120%22 fill=%22%23fef3e8%22 rx=%2212%22/%3E%3Ctext x=%2250%%22 y=%2250%%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22 fill=%22%23f76504%22 font-size=%2214%22%3E📖 码制示意：QR / Code39%3C/text%3E%3C/svg%3E';">
+              <div class="img-caption">💡 码制类型与模块尺寸说明</div>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <div class="form-section-title">📐 距离 &amp; 视野参数</div>
+            <div class="compact-grid compact-grid-1">
+              <div>
+                <label>工作距离 *</label>
+                <div class="input-row">
+                  <input type="number" id="workingDistance" value="" placeholder="请输入">
+                  <select id="distanceUnit"><option value="mm" selected>mm</option><option value="cm">cm</option></select>
+                </div>
+              </div>
+              <div>
+                <label>期望视野宽度 *</label>
+                <div class="input-row">
+                  <input type="number" id="fovWidth" value="" placeholder="请输入">
+                  <select id="fovUnit"><option value="mm" selected>mm</option><option value="cm">cm</option></select>
+                </div>
+              </div>
+              <div>
+                <label>期望视野高度 *</label>
+                <div class="input-row">
+                  <input type="number" id="fovHeight" value="" placeholder="请输入">
+                  <select id="fovHeightUnit"><option value="mm" selected>mm</option><option value="cm">cm</option></select>
+                </div>
               </div>
             </div>
           </div>
-          <div class="code-img-container">
-            <img src="code-type-desc.png" alt="码制类型与模块尺寸说明" class="code-type-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22120%22%3E%3Crect width=%22400%22 height=%22120%22 fill=%22%23fef3e8%22 rx=%2212%22/%3E%3Ctext x=%2250%%22 y=%2250%%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22 fill=%22%23f76504%22 font-size=%2214%22%3E📖 码制示意：QR / Code39%3C/text%3E%3C/svg%3E';">
-            <div class="img-caption">💡 码制类型与模块尺寸说明</div>
-          </div>
-        </div>
 
-        <div class="form-section">
-          <div class="form-section-title">📐 距离 & 视野参数</div>
-          <div class="compact-grid compact-grid-1">
-            <div>
-              <label>工作距离 *</label>
-              <div class="input-row">
-                <input type="number" id="workingDistance" value="" placeholder="请输入">
-                <select id="distanceUnit"><option value="mm" selected>mm</option><option value="cm">cm</option></select>
-              </div>
-            </div>
-            <div>
-              <label>期望视野宽度 *</label>
-              <div class="input-row">
-                <input type="number" id="fovWidth" value="" placeholder="请输入">
-                <select id="fovUnit"><option value="mm" selected>mm</option><option value="cm">cm</option></select>
-              </div>
-            </div>
-            <div>
-              <label>期望视野高度 *</label>
-              <div class="input-row">
-                <input type="number" id="fovHeight" value="" placeholder="请输入">
-                <select id="fovHeightUnit"><option value="mm" selected>mm</option><option value="cm">cm</option></select>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <button class="btn-primary" id="runBtn">⚡ 开始智能选型</button>
-      </div>
-    </div>
-
-    <div class="right-panel">
-      <div class="card">
-        <div class="card-header">📐 方案示意图</div>
-        <div id="calcContent">
-          <div class="schematic-wrap">
-            <!-- SVG 目标区域为横向矩形，宽度:高度 = 5:4，宽度方向为长边对应预估宽度 -->
-            <svg id="schematicSvg" viewBox="0 0 580 300" xmlns="http://www.w3.org/2000/svg" style="width:100%; display:block; background:#F5F7FA; border-radius:8px;">
-              <rect width="580" height="300" fill="#F5F7FA" rx="8"/>
-              
-              <!-- 目标平面：横向矩形 宽120 高96 (5:4比例) 居中偏右放置 -->
-              <rect x="380" y="95" width="140" height="112" fill="#FFE8D6" stroke="#f76504" stroke-width="2.2" rx="6"/>
-              
-              <!-- 斜线填充，增强视觉效果 -->
-              <line x1="380" y1="120" x2="410" y2="95"  stroke="#f76504" stroke-width="0.8" opacity="0.35"/>
-              <line x1="380" y1="150" x2="460" y2="95"  stroke="#f76504" stroke-width="0.8" opacity="0.35"/>
-              <line x1="380" y1="180" x2="500" y2="95"  stroke="#f76504" stroke-width="0.8" opacity="0.35"/>
-              <line x1="380" y1="200" x2="520" y2="110" stroke="#f76504" stroke-width="0.8" opacity="0.35"/>
-              <line x1="400" y1="207" x2="520" y2="150" stroke="#f76504" stroke-width="0.8" opacity="0.35"/>
-              <line x1="440" y1="207" x2="520" y2="190" stroke="#f76504" stroke-width="0.8" opacity="0.35"/>
-              
-              <!-- 预估宽度标注 (顶部水平，矩形长边) -->
-              <line x1="380" y1="80" x2="520" y2="80" stroke="#f76504" stroke-width="1.2" marker-start="url(#arrowLeftRed)" marker-end="url(#arrowRightRed)"/>
-              <text x="450" y="70" fill="#f76504" font-size="10" font-family="sans-serif" text-anchor="middle">预估宽度</text>
-              <text id="lblFovW" x="450" y="58" fill="#1A2332" font-size="11" font-family="sans-serif" font-weight="bold" text-anchor="middle">— mm</text>
-
-              <!-- 预估高度标注 (左侧垂直，矩形短边) -->
-              <line x1="366" y1="95" x2="366" y2="207" stroke="#f76504" stroke-width="1.2" marker-start="url(#arrowUpRed)" marker-end="url(#arrowDownRed)"/>
-              <text x="325" y="156" fill="#f76504" font-size="10" font-family="sans-serif" text-anchor="middle">预估高度</text>
-              <text id="lblFovH" x="325" y="169" fill="#1A2332" font-size="11" font-family="sans-serif" font-weight="bold" text-anchor="middle">— mm</text>
-
-              <!-- 读码器（左侧） -->
-              <rect x="42" y="122" width="56" height="56" fill="#1A2B4A" rx="8"/>
-              <rect x="50" y="130" width="40" height="40" fill="#243556" rx="6"/>
-              <circle cx="70" cy="150" r="14" fill="#0A1628" stroke="#f76504" stroke-width="2"/>
-              <circle cx="70" cy="150" r="7" fill="#f76504" opacity="0.7"/>
-              <circle cx="70" cy="150" r="3" fill="#ffffff"/>
-              <circle cx="88" cy="168" r="4" fill="#f76504"/>
-
-              <!-- 光锥：从相机中心到目标矩形上下两角 -->
-              <polygon points="70,150 380,95 380,207" fill="#f76504" opacity="0.08"/>
-              <line x1="70" y1="150" x2="380" y2="95"  stroke="#f76504" stroke-width="1.5" stroke-dasharray="6,3" opacity="0.6"/>
-              <line x1="70" y1="150" x2="380" y2="207" stroke="#f76504" stroke-width="1.5" stroke-dasharray="6,3" opacity="0.6"/>
-              
-              <!-- 工作距离标注 (底部) -->
-              <line x1="70" y1="265" x2="380" y2="265" stroke="#4A5A6A" stroke-width="1.2" marker-start="url(#arrowLeftGray)" marker-end="url(#arrowRightGray)"/>
-              <text x="225" y="282" fill="#4A5A6A" font-size="10" font-family="sans-serif" text-anchor="middle">工作距离</text>
-              <text id="lblWd" x="225" y="260" fill="#1A2332" font-size="11" font-family="sans-serif" font-weight="bold" text-anchor="middle">— mm</text>
-
-              <!-- 焦距标注 -->
-              <text x="155" y="148" fill="#8A9BAC" font-size="9.5" font-family="sans-serif" text-anchor="middle">焦距</text>
-              <text id="lblFocal" x="155" y="162" fill="#1A2332" font-size="10.5" font-family="sans-serif" font-weight="bold" text-anchor="middle">— mm</text>
-
-              <defs>
-                <marker id="arrowUpRed"    markerWidth="6" markerHeight="6" refX="3" refY="6" orient="auto"><path d="M3,0 L0,6 L6,6 Z" fill="#f76504"/></marker>
-                <marker id="arrowDownRed"  markerWidth="6" markerHeight="6" refX="3" refY="0" orient="auto"><path d="M0,0 L6,0 L3,6 Z" fill="#f76504"/></marker>
-                <marker id="arrowLeftRed"  markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto"><path d="M6,0 L0,3 L6,6 Z" fill="#f76504"/></marker>
-                <marker id="arrowRightRed" markerWidth="6" markerHeight="6" refX="0" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#f76504"/></marker>
-                <marker id="arrowLeftGray"  markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto"><path d="M6,0 L0,3 L6,6 Z" fill="#4A5A6A"/></marker>
-                <marker id="arrowRightGray" markerWidth="6" markerHeight="6" refX="0" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#4A5A6A"/></marker>
-              </defs>
-            </svg>
-
-            <div id="calcSummary" class="calc-summary-row">
-              <div class="calc-chip">模块尺寸 <strong>—</strong></div>
-              <div class="calc-chip">需求分辨率 <strong>— × —</strong></div>
-              <div class="calc-chip">PPM <strong>—</strong></div>
-            </div>
-          </div>
+          <button class="btn-primary" id="runBtn">⚡ 开始智能选型</button>
         </div>
       </div>
 
-      <div class="card">
-        <div class="card-header">🏆 最佳推荐型号</div>
-        <div id="top1Content"><div class="empty-state">等待选型结果...</div></div>
-        <button class="btn-outline" id="showModalBtn" disabled>📋 查看所有满足条件的型号清单</button>
+      <div class="right-panel">
+        <div class="card">
+          <div class="card-header">📐 方案示意图</div>
+          <div id="calcContent">
+            <div class="schematic-wrap">
+              <svg id="schematicSvg" viewBox="0 0 580 300" xmlns="http://www.w3.org/2000/svg" style="width:100%; display:block; background:#F5F7FA; border-radius:8px;">
+                <rect width="580" height="300" fill="#F5F7FA" rx="8"/>
+                <rect x="380" y="95" width="140" height="112" fill="#FFE8D6" stroke="#f76504" stroke-width="2.2" rx="6"/>
+                <line x1="380" y1="120" x2="410" y2="95"  stroke="#f76504" stroke-width="0.8" opacity="0.35"/>
+                <line x1="380" y1="150" x2="460" y2="95"  stroke="#f76504" stroke-width="0.8" opacity="0.35"/>
+                <line x1="380" y1="180" x2="500" y2="95"  stroke="#f76504" stroke-width="0.8" opacity="0.35"/>
+                <line x1="380" y1="200" x2="520" y2="110" stroke="#f76504" stroke-width="0.8" opacity="0.35"/>
+                <line x1="400" y1="207" x2="520" y2="150" stroke="#f76504" stroke-width="0.8" opacity="0.35"/>
+                <line x1="440" y1="207" x2="520" y2="190" stroke="#f76504" stroke-width="0.8" opacity="0.35"/>
+                <line x1="380" y1="80" x2="520" y2="80" stroke="#f76504" stroke-width="1.2" marker-start="url(#arrowLeftRed)" marker-end="url(#arrowRightRed)"/>
+                <text x="450" y="70" fill="#f76504" font-size="10" font-family="sans-serif" text-anchor="middle">预估宽度</text>
+                <text id="lblFovW" x="450" y="58" fill="#1A2332" font-size="11" font-family="sans-serif" font-weight="bold" text-anchor="middle">— mm</text>
+                <line x1="366" y1="95" x2="366" y2="207" stroke="#f76504" stroke-width="1.2" marker-start="url(#arrowUpRed)" marker-end="url(#arrowDownRed)"/>
+                <text x="325" y="156" fill="#f76504" font-size="10" font-family="sans-serif" text-anchor="middle">预估高度</text>
+                <text id="lblFovH" x="325" y="169" fill="#1A2332" font-size="11" font-family="sans-serif" font-weight="bold" text-anchor="middle">— mm</text>
+                <rect x="42" y="122" width="56" height="56" fill="#1A2B4A" rx="8"/>
+                <rect x="50" y="130" width="40" height="40" fill="#243556" rx="6"/>
+                <circle cx="70" cy="150" r="14" fill="#0A1628" stroke="#f76504" stroke-width="2"/>
+                <circle cx="70" cy="150" r="7" fill="#f76504" opacity="0.7"/>
+                <circle cx="70" cy="150" r="3" fill="#ffffff"/>
+                <circle cx="88" cy="168" r="4" fill="#f76504"/>
+                <polygon points="70,150 380,95 380,207" fill="#f76504" opacity="0.08"/>
+                <line x1="70" y1="150" x2="380" y2="95"  stroke="#f76504" stroke-width="1.5" stroke-dasharray="6,3" opacity="0.6"/>
+                <line x1="70" y1="150" x2="380" y2="207" stroke="#f76504" stroke-width="1.5" stroke-dasharray="6,3" opacity="0.6"/>
+                <line x1="70" y1="265" x2="380" y2="265" stroke="#4A5A6A" stroke-width="1.2" marker-start="url(#arrowLeftGray)" marker-end="url(#arrowRightGray)"/>
+                <text x="225" y="282" fill="#4A5A6A" font-size="10" font-family="sans-serif" text-anchor="middle">工作距离</text>
+                <text id="lblWd" x="225" y="260" fill="#1A2332" font-size="11" font-family="sans-serif" font-weight="bold" text-anchor="middle">— mm</text>
+                <text x="155" y="148" fill="#8A9BAC" font-size="9.5" font-family="sans-serif" text-anchor="middle">焦距</text>
+                <text id="lblFocal" x="155" y="162" fill="#1A2332" font-size="10.5" font-family="sans-serif" font-weight="bold" text-anchor="middle">— mm</text>
+                <defs>
+                  <marker id="arrowUpRed"    markerWidth="6" markerHeight="6" refX="3" refY="6" orient="auto"><path d="M3,0 L0,6 L6,6 Z" fill="#f76504"/></marker>
+                  <marker id="arrowDownRed"  markerWidth="6" markerHeight="6" refX="3" refY="0" orient="auto"><path d="M0,0 L6,0 L3,6 Z" fill="#f76504"/></marker>
+                  <marker id="arrowLeftRed"  markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto"><path d="M6,0 L0,3 L6,6 Z" fill="#f76504"/></marker>
+                  <marker id="arrowRightRed" markerWidth="6" markerHeight="6" refX="0" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#f76504"/></marker>
+                  <marker id="arrowLeftGray"  markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto"><path d="M6,0 L0,3 L6,6 Z" fill="#4A5A6A"/></marker>
+                  <marker id="arrowRightGray" markerWidth="6" markerHeight="6" refX="0" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#4A5A6A"/></marker>
+                </defs>
+              </svg>
+              <div id="calcSummary" class="calc-summary-row">
+                <div class="calc-chip">模块尺寸 <strong>—</strong></div>
+                <div class="calc-chip">需求分辨率 <strong>— × —</strong></div>
+                <div class="calc-chip">PPM <strong>—</strong></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">🏆 最佳推荐型号</div>
+          <div id="top1Content"><div class="empty-state">等待选型结果...</div></div>
+          <button class="btn-outline" id="showModalBtn" disabled>📋 查看所有满足条件的型号清单</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
+  <!-- PAGE: 竞品分析 -->
+  <div class="page" id="page-competitor">
+    <div class="coming-soon-shell">
+      <div class="main-content" style="opacity:0.18;pointer-events:none;user-select:none;">
+        <div class="left-panel"><div class="card"><div class="card-header">🔬 竞品分析参数</div></div></div>
+        <div class="right-panel"><div class="card" style="flex:1"><div class="card-header">📊 对比结果</div></div></div>
+      </div>
+      <div class="coming-soon-overlay">
+        <div class="coming-soon-badge">🔬</div>
+        <div class="coming-soon-title">竞品分析</div>
+        <div class="coming-soon-desc">竞品选型、对标</div>
+        <div class="coming-soon-pill">后续即将上线 · Coming Soon</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE: 配单表 -->
+  <div class="page" id="page-bom">
+    <div class="coming-soon-shell">
+      <div class="main-content" style="opacity:0.18;pointer-events:none;user-select:none;">
+        <div class="left-panel"><div class="card"><div class="card-header">📋 配单参数</div></div></div>
+        <div class="right-panel"><div class="card" style="flex:1"><div class="card-header">📄 配单明细</div></div></div>
+      </div>
+      <div class="coming-soon-overlay">
+        <div class="coming-soon-badge">📋</div>
+        <div class="coming-soon-title">配单表</div>
+        <div class="coming-soon-desc">读码器配单信息</div>
+        <div class="coming-soon-pill">后续即将上线 · Coming Soon</div>
+      </div>
+    </div>
+  </div>
+
+  </div><!-- /.app-body -->
+</div><!-- /.app-window -->
+
+<!-- MODAL -->
 <div class="modal-overlay" id="modelModal">
   <div class="modal">
     <div class="modal-header">
@@ -1004,143 +1186,161 @@
 </div>
 
 <script>
-  (function() {
-    // ======================= 产品数据库 (保持不变) =======================
-    const PRODUCT_DB = [
-      { model: "ID803M-03M", series: "ID800", resolution: { w: 640, h: 480 }, pixelSize: 3.7, focal: 3.1, interface: "USB2.0、RS232、RJ45", protection: "IP54", workingDist: { min: 120, max: 120} },
-      { model: "ID813M-05M", series: "ID800", resolution: { w: 1280, h: 1024 }, pixelSize: 2.7, focal: 4.9, interface: "USB2.0、RS232、RJ45", protection: "IP54", workingDist: { min: 70, max: 120 } },
-      { model: "ID2013EM-03M", series: "ID2000", resolution: { w: 1024, h: 1280 }, pixelSize: 2.7, focal: 2.48, interface: "Fast Ethernet、RS232", protection: "IP54", workingDist: { min: 40, max: 120 } },
-      { model: "ID2013EM-05M", series: "ID2000", resolution: { w: 1024, h: 1280 }, pixelSize: 2.7, focal: 4.63, interface: "Fast Ethernet、RS232、USB3.0", protection: "IP54", workingDist: { min: 40, max: 120 } },
-      { model: "ID2004M-06M", series: "ID2000", resolution: { w: 704, h: 540 }, pixelSize: 6.9, focal: 6.72, interface: "Fast Ethernet、RS232、USB3.0", protection: "IP65", workingDist: { min: 40, max: 120 } },
-      { model: "ID2004M-16T", series: "ID2000", resolution: { w: 704, h: 540 }, pixelSize: 6.9, focal: 16, interface: "Fast Ethernet、RS232", protection: "IP65", workingDist: { min: 100, max: 400 } },
-      { model: "ID2013M-06M", series: "ID2000", resolution: { w: 1280, h: 1024 }, pixelSize: 4, focal: 6.72, interface: "Fast Ethernet、RS232", protection: "IP65", workingDist: { min: 40, max: 120 } },
-      { model: "ID2013M-16M", series: "ID2000", resolution: { w: 1280, h: 1024 }, pixelSize: 4, focal: 16, interface: "Fast Ethernet、RS232", protection: "IP65", workingDist: { min: 105, max: 130 } },
-      { model: "ID2013M-25M", series: "ID2000", resolution: { w: 1280, h: 1024 }, pixelSize: 4, focal: 25, interface: "Fast Ethernet、RS232", protection: "IP65", workingDist: { min: 170, max: 200 } },
-      { model: "ID2016M-06M", series: "ID2000", resolution: { w: 1408, h: 1024 }, pixelSize: 3.45, focal: 6.72, interface: "Fast Ethernet、RS232、USB3.0", protection: "IP65", workingDist: { min: 40, max: 120 } },
-      { model: "ID2016M-16M", series: "ID2000", resolution: { w: 1408, h: 1024 }, pixelSize: 3.45, focal: 16, interface: "Fast Ethernet、RS232", protection: "IP65", workingDist: { min: 105, max: 130 } },
-      { model: "ID2016M-25M", series: "ID2000", resolution: { w: 1408, h: 1024 }, pixelSize: 3.45, focal: 25, interface: "Fast Ethernet、RS232", protection: "IP65", workingDist: { min: 170, max: 200 } },
-      { model: "ID2016M-06T", series: "ID2000", resolution: { w: 1408, h: 1024 }, pixelSize: 3.45, focal: 6.7, interface: "Fast Ethernet、RS232", protection: "IP65", workingDist: { min: 70, max: 160 } },
-      { model: "ID2016M-10T", series: "ID2000", resolution: { w: 1408, h: 1024 }, pixelSize: 3.45, focal: 10, interface: "Fast Ethernet、RS232", protection: "IP65", workingDist: { min: 100, max: 400 } },
-      { model: "ID2016M-16T", series: "ID2000", resolution: { w: 1408, h: 1024 }, pixelSize: 3.45, focal: 16, interface: "Fast Ethernet、RS232", protection: "IP65", workingDist: { min: 100, max: 400 } },
-      { model: "ID2016XM-05M", series: "ID2000", resolution: { w: 1408, h: 1200 }, pixelSize: 2.2, focal: 5, interface: "Fast Ethernet、RS232、USB2.0", protection: "IP65", workingDist: { min: 25, max: 1000 } },
-      { model: "ID2016XM-08M", series: "ID2000", resolution: { w: 1408, h: 1200 }, pixelSize: 2.2, focal: 8, interface: "Fast Ethernet、RS232、USB2.0", protection: "IP65", workingDist: { min: 40, max: 1000 } },
-      { model: "ID2016XM-12M", series: "ID2000", resolution: { w: 1408, h: 1200 }, pixelSize: 2.2, focal: 12, interface: "Fast Ethernet、RS232、USB2.0", protection: "IP65", workingDist: { min: 60, max: 1000 } },
-      { model: "ID2016XM-16M", series: "ID2000", resolution: { w: 1408, h: 1200 }, pixelSize: 2.2, focal: 16, interface: "Fast Ethernet、RS232、USB2.0", protection: "IP65", workingDist: { min: 125, max: 1000 } },
-      { model: "ID2016XM-08L", series: "ID2000", resolution: { w: 1408, h: 1200 }, pixelSize: 2.2, focal: 8, interface: "Fast Ethernet、RS232、USB2.0", protection: "IP65", workingDist: { min: 40, max: 1000 } },
-      { model: "ID2016XM-12L", series: "ID2000", resolution: { w: 1408, h: 1200 }, pixelSize: 2.2, focal: 12, interface: "Fast Ethernet、RS232、USB2.0", protection: "IP65", workingDist: { min: 75, max: 1000 } },
-      { model: "ID2016XM-16L", series: "ID2000", resolution: { w: 1408, h: 1200 }, pixelSize: 2.2, focal: 16, interface: "Fast Ethernet、RS232、USB2.0", protection: "IP65", workingDist: { min: 100, max: 1000 } },
-      { model: "ID2023XM-05M", series: "ID2000", resolution: { w: 1920, h: 1280 }, pixelSize: 2.2, focal: 5, interface: "Fast Ethernet、RS232、USB2.0", protection: "IP65", workingDist: { min: 25, max: 1000 } },
-      { model: "ID2023XM-08M", series: "ID2000", resolution: { w: 1920, h: 1280 }, pixelSize: 2.2, focal: 8, interface: "Fast Ethernet、RS232、USB2.0", protection: "IP65", workingDist: { min: 40, max: 1000 } },
-      { model: "ID2023XM-12M", series: "ID2000", resolution: { w: 1920, h: 1280 }, pixelSize: 2.2, focal: 12, interface: "Fast Ethernet、RS232、USB2.0", protection: "IP65", workingDist: { min: 60, max: 1000 } },
-      { model: "ID2023XM-16M", series: "ID2000", resolution: { w: 1920, h: 1280 }, pixelSize: 2.2, focal: 16, interface: "Fast Ethernet、RS232、USB2.0", protection: "IP65", workingDist: { min: 125, max: 1000 } },
-      { model: "ID2023XM-08L", series: "ID2000", resolution: { w: 1920, h: 1280 }, pixelSize: 2.2, focal: 8, interface: "Fast Ethernet、RS232、USB2.0", protection: "IP65", workingDist: { min: 40, max: 1000 } },
-      { model: "ID2023XM-12L", series: "ID2000", resolution: { w: 1920, h: 1280 }, pixelSize: 2.2, focal: 12, interface: "Fast Ethernet、RS232、USB2.0", protection: "IP65", workingDist: { min: 75, max: 1000 } },
-      { model: "ID2023XM-16L", series: "ID2000", resolution: { w: 1920, h: 1280 }, pixelSize: 2.2, focal: 16, interface: "Fast Ethernet、RS232、USB2.0", protection: "IP65", workingDist: { min: 100, max: 1000 } },
-      { model: "ID3013PM-06M", series: "ID3000", resolution: { w: 1280, h: 1024 }, pixelSize: 4, focal: 6, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 20, max: 2000 } },
-      { model: "ID3013PM-12M", series: "ID3000", resolution: { w: 1280, h: 1024 }, pixelSize: 4, focal: 12, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 60, max: 2000 } },
-      { model: "ID3013PM-15M", series: "ID3000", resolution: { w: 1280, h: 1024 }, pixelSize: 4, focal: 14.8, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 88, max: 2000 } },
-      { model: "ID3016PM-06M", series: "ID3000", resolution: { w: 1408, h: 1024 }, pixelSize: 3.45, focal: 6, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 20, max: 2000 } },
-      { model: "ID3016PM-12M", series: "ID3000", resolution: { w: 1408, h: 1024 }, pixelSize: 3.45, focal: 12, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 60, max: 2000 } },
-      { model: "ID3016PM-15M", series: "ID3000", resolution: { w: 1408, h: 1024 }, pixelSize: 3.45, focal: 14.8, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 88, max: 2000 } },
-      { model: "ID3050PM-08M", series: "ID3000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.4, focal: 8, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 25, max: 2000 } },
-      { model: "ID3050PM-12M", series: "ID3000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.4, focal: 12, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 60, max: 2000 } },
-      { model: "ID3050PM-16M", series: "ID3000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.4, focal: 16, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 80, max: 2000 } },
-      { model: "ID3050PM-25M", series: "ID3000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.4, focal: 25, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 230, max: 2000 } },
-      { model: "ID3016XM-08M", series: "ID3000", resolution: { w: 1408, h: 1024 }, pixelSize: 3.45, focal: 8, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 25, max: 2000 } },
-      { model: "ID3016XM-12M", series: "ID3000", resolution: { w: 1408, h: 1024 }, pixelSize: 3.45, focal: 12, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 60, max: 2000 } },
-      { model: "ID3016XM-16L", series: "ID3000", resolution: { w: 1408, h: 1024 }, pixelSize: 3.45, focal: 16, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 60, max: 2000 } },
-      { model: "ID3016XM-25M", series: "ID3000", resolution: { w: 1408, h: 1024 }, pixelSize: 3.45, focal: 25, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 230, max: 2000 } },
-      { model: "ID3030XM-08M", series: "ID3000", resolution: { w: 2048, h: 1536 }, pixelSize: 3.45, focal: 8, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 25, max: 2000 } },
-      { model: "ID3030XM-12M", series: "ID3000", resolution: { w: 2048, h: 1536 }, pixelSize: 3.45, focal: 12, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 60, max: 2000 } },
-      { model: "ID3030XM-16M", series: "ID3000", resolution: { w: 2048, h: 1536 }, pixelSize: 3.45, focal: 16, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 110, max: 2000 } },
-      { model: "ID3030XM-25M", series: "ID3000", resolution: { w: 2048, h: 1536 }, pixelSize: 3.45, focal: 25, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 230, max: 2000 } },
-      { model: "ID3030XM-08L", series: "ID3000", resolution: { w: 2048, h: 1536 }, pixelSize: 3.45, focal: 8, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 35, max: 2000 } },
-      { model: "ID3030XM-12L", series: "ID3000", resolution: { w: 2048, h: 1536 }, pixelSize: 3.45, focal: 12, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 60, max: 2000 } },
-      { model: "ID3030XM-16L", series: "ID3000", resolution: { w: 2048, h: 1536 }, pixelSize: 3.45, focal: 16, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 85, max: 2000 } },
-      { model: "ID3050XM-08M", series: "ID3000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.45, focal: 8, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 25, max: 2000 } },
-      { model: "ID3050XM-12M", series: "ID3000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.45, focal: 12, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 60, max: 2000 } },
-      { model: "ID3050XM-16M", series: "ID3000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.45, focal: 16, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 110, max: 2000 } },
-      { model: "ID3050XM-25M", series: "ID3000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.45, focal: 25, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 230, max: 2000 } },
-      { model: "ID3050XM-08L", series: "ID3000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.45, focal: 8, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 35, max: 2000 } },
-      { model: "ID3050XM-12L", series: "ID3000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.45, focal: 12, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 60, max: 2000 } },
-      { model: "ID3050XM-16L", series: "ID3000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.45, focal: 16, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 85, max: 2000 } },
-      { model: "ID3040RM-08M", series: "ID3000", resolution: { w: 2688, h: 1536 }, pixelSize: 2, focal: 8, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 25, max: 2000 } },
-      { model: "ID3040RM-12M", series: "ID3000", resolution: { w: 2688, h: 1536 }, pixelSize: 2, focal: 12, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 60, max: 2000 } },
-      { model: "ID3040RM-16M", series: "ID3000", resolution: { w: 2688, h: 1536 }, pixelSize: 2, focal: 16, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 60, max: 2000 } },
-      { model: "ID3040RM-25M", series: "ID3000", resolution: { w: 2688, h: 1536 }, pixelSize: 2, focal: 25, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 230, max: 2000 } },
-      { model: "ID3040RM-00C-12", series: "ID3000", resolution: { w: 2688, h: 1536 }, pixelSize: 2, focal: 12, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 100, max: 2000 } },
-      { model: "ID3040RM-00C-16", series: "ID3000", resolution: { w: 2688, h: 1536 }, pixelSize: 2, focal: 16, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 100, max: 2000 } },
-      { model: "ID3040RM-00C-25", series: "ID3000", resolution: { w: 2688, h: 1536 }, pixelSize: 2, focal: 25, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 100, max: 2000 } },
-      { model: "ID3040RM-00C-35", series: "ID3000", resolution: { w: 2688, h: 1536 }, pixelSize: 2, focal: 35, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 200, max: 2000 } },
-      { model: "ID3040RM-00C-50", series: "ID3000", resolution: { w: 2688, h: 1536 }, pixelSize: 2, focal: 50, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 300, max: 2000 } },
-      { model: "ID3060RM-08M", series: "ID3000", resolution: { w: 3200, h: 1920 }, pixelSize: 2, focal: 8, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 25, max: 2000 } },
-      { model: "ID3060RM-12M", series: "ID3000", resolution: { w: 3200, h: 1920 }, pixelSize: 2, focal: 12, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 60, max: 2000 } },
-      { model: "ID3060RM-16M", series: "ID3000", resolution: { w: 3200, h: 1920 }, pixelSize: 2, focal: 16, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 60, max: 2000 } },
-      { model: "ID3060RM-25M", series: "ID3000", resolution: { w: 3200, h: 1920 }, pixelSize: 2, focal: 25, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 230, max: 2000 } },
-      { model: "ID3060RM-00C-12", series: "ID3000", resolution: { w: 3200, h: 1920 }, pixelSize: 2, focal: 12, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 100, max: 2000 } },
-      { model: "ID3060RM-00C-16", series: "ID3000", resolution: { w: 3200, h: 1920 }, pixelSize: 2, focal: 16, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 100, max: 2000 } },
-      { model: "ID3060RM-00C-25", series: "ID3000", resolution: { w: 3200, h: 1920 }, pixelSize: 2, focal: 25, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 100, max: 2000 } },
-      { model: "ID3060RM-00C-35", series: "ID3000", resolution: { w: 3200, h: 1920 }, pixelSize: 2, focal: 35, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 200, max: 2000 } },
-      { model: "ID3060RM-00C-50", series: "ID3000", resolution: { w: 3200, h: 1920 }, pixelSize: 2, focal: 50, interface: "Fast Ethernet、RS232", protection: "IP67", workingDist: { min: 300, max: 2000 } },
-      { model: "ID5050M-12S", series: "ID5000", resolution: { w: 2560, h: 2048 }, pixelSize: 3.2, focal: 12, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 60, max: 2000 } },
-      { model: "ID5050M-08S", series: "ID5000", resolution: { w: 2560, h: 2048 }, pixelSize: 3.2, focal: 8, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 25, max: 2000 } },
-      { model: "ID5050M-16S", series: "ID5000", resolution: { w: 2560, h: 2048 }, pixelSize: 3.2, focal: 16, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 100, max: 2000 } },
-      { model: "ID5050M-25S", series: "ID5000", resolution: { w: 2560, h: 2048 }, pixelSize: 3.2, focal: 25, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 230, max: 2000 } },
-      { model: "ID5060M-08S", series: "ID5000", resolution: { w: 3072, h: 2048 }, pixelSize: 2.4, focal: 8, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 45, max: 2000 } },
-      { model: "ID5060M-12S", series: "ID5000", resolution: { w: 3072, h: 2048 }, pixelSize: 2.4, focal: 12, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 60, max: 2000 } },
-      { model: "ID5060M-16S", series: "ID5000", resolution: { w: 3072, h: 2048 }, pixelSize: 2.4, focal: 16, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 80, max: 700 } },
-      { model: "ID5060M-25S", series: "ID5000", resolution: { w: 3072, h: 2048 }, pixelSize: 2.4, focal: 25, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 300, max: 2000 } },
-      { model: "ID5060M-00C-12", series: "ID5000", resolution: { w: 3072, h: 2048 }, pixelSize: 2.4, focal: 12, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 60, max: 2000 } },
-      { model: "ID5060M-00C-16", series: "ID5000", resolution: { w: 3072, h: 2048 }, pixelSize: 2.4, focal: 16, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 80, max: 2000 } },
-      { model: "ID5060M-00C-25", series: "ID5000", resolution: { w: 3072, h: 2048 }, pixelSize: 2.4, focal: 25, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 125, max: 2000 } },
-      { model: "ID5060M-00C-35", series: "ID5000", resolution: { w: 3072, h: 2048 }, pixelSize: 2.4, focal: 35, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 175, max: 2000 } },
-      { model: "ID5120M-00C-12", series: "ID5000", resolution: { w: 4096, h: 3072 }, pixelSize: 3.2, focal: 12, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 60, max: 2000 } },
-      { model: "ID5120M-00C-16", series: "ID5000", resolution: { w: 4096, h: 3072 }, pixelSize: 3.2, focal: 16, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 80, max: 2000 } },
-      { model: "ID5120M-00C-25", series: "ID5000", resolution: { w: 4096, h: 3072 }, pixelSize: 3.2, focal: 25, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 125, max: 2000 } },
-      { model: "ID5120M-00C-35", series: "ID5000", resolution: { w: 4096, h: 3072 }, pixelSize: 3.2, focal: 35, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 175, max: 2000 } },
-      { model: "ID5200M-00C-12", series: "ID5000", resolution: { w: 5440, h: 3648 }, pixelSize: 2.4, focal: 12, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 60, max: 2000 } },
-      { model: "ID5200M-00C-16", series: "ID5000", resolution: { w: 5440, h: 3648 }, pixelSize: 2.4, focal: 16, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 80, max: 2000 } },
-      { model: "ID5200M-00C-25", series: "ID5000", resolution: { w: 5440, h: 3648 }, pixelSize: 2.4, focal: 25, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 125, max: 2000 } },
-      { model: "ID5200M-00C-35", series: "ID5000", resolution: { w: 5440, h: 3648 }, pixelSize: 2.4, focal: 35, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 175, max: 2000 } },
-      { model: "ID5200PM-00C-12", series: "ID5000", resolution: { w: 5120, h: 3968 }, pixelSize: 2.5, focal: 12, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 60, max: 2000 } },
-      { model: "ID5200PM-00C-16", series: "ID5000", resolution: { w: 5120, h: 3968 }, pixelSize: 2.5, focal: 16, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 80, max: 2000 } },
-      { model: "ID5200PM-00C-25", series: "ID5000", resolution: { w: 5120, h: 3968 }, pixelSize: 2.5, focal: 25, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 125, max: 2000 } },
-      { model: "ID5200PM-00C-35", series: "ID5000", resolution: { w: 5120, h: 3968 }, pixelSize: 2.5, focal: 35, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 175, max: 2000 } },
-      { model: "ID5250PM-00C-12", series: "ID5000", resolution: { w: 5120, h: 5120 }, pixelSize: 2.5, focal: 12, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 60, max: 2000 } },
-      { model: "ID5250PM-00C-16", series: "ID5000", resolution: { w: 5120, h: 5120 }, pixelSize: 2.5, focal: 16, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 80, max: 2000 } },
-      { model: "ID5250PM-00C-25", series: "ID5000", resolution: { w: 5120, h: 5120 }, pixelSize: 2.5, focal: 25, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 125, max: 2000 } },
-      { model: "ID5250PM-00C-35", series: "ID5000", resolution: { w: 5120, h: 5120 }, pixelSize: 2.5, focal: 35, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 175, max: 2000 } },
-      { model: "ID5050XM-08M", series: "ID5000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.45, focal: 8, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 25, max: 2000 } },
-      { model: "ID5050XM-12M", series: "ID5000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.45, focal: 12, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 60, max: 2000 } },
-      { model: "ID5050XM-16M", series: "ID5000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.45, focal: 16, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 100, max: 2000 } },
-      { model: "ID5050XM-25M", series: "ID5000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.45, focal: 25, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 230, max: 2000 } },
-      { model: "ID5050XM-08L", series: "ID5000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.45, focal: 8, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 100, max: 2000 } },
-      { model: "ID5050XM-12L", series: "ID5000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.45, focal: 12, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 100, max: 2000 } },
-      { model: "ID5050XM-16L", series: "ID5000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.45, focal: 16, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 100, max: 2000 } },
-      { model: "ID5050XM-00C-12", series: "ID5000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.45, focal: 12, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 100, max: 2000 } },
-      { model: "ID5050XM-00C-16", series: "ID5000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.45, focal: 16, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 100, max: 2000 } },
-      { model: "ID5050XM-00C-25", series: "ID5000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.45, focal: 25, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 100, max: 2000 } },
-      { model: "ID5050XM-00C-35", series: "ID5000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.45, focal: 35, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 200, max: 2000 } },
-      { model: "ID5050XM-00C-50", series: "ID5000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.45, focal: 50, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 300, max: 2000 } },
-      { model: "ID5120XM-00C-12", series: "ID5000", resolution: { w: 4096, h: 3072 }, pixelSize: 3.45, focal: 12, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 100, max: 2000 } },
-      { model: "ID5120XM-00C-16", series: "ID5000", resolution: { w: 4096, h: 3072 }, pixelSize: 3.45, focal: 16, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 100, max: 2000 } },
-      { model: "ID5120XM-00C-25", series: "ID5000", resolution: { w: 4096, h: 3072 }, pixelSize: 3.45, focal: 25, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 100, max: 2000 } },
-      { model: "ID5120XM-00C-35", series: "ID5000", resolution: { w: 4096, h: 3072 }, pixelSize: 3.45, focal: 35, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 200, max: 2000 } },
-      { model: "ID5120XM-00C-50", series: "ID5000", resolution: { w: 4096, h: 3072 }, pixelSize: 3.45, focal: 50, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 300, max: 2000 } },
-      { model: "ID5120RM-08M", series: "ID5000", resolution: { w: 4096, h: 3024 }, pixelSize: 2, focal: 8, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 25, max: 2000 } },
-      { model: "ID5120RM-12M", series: "ID5000", resolution: { w: 4096, h: 3024 }, pixelSize: 2, focal: 12, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 60, max: 2000 } },
-      { model: "ID5120RM-16M", series: "ID5000", resolution: { w: 4096, h: 3024 }, pixelSize: 2, focal: 16, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 100, max: 2000 } },
-      { model: "ID5120RM-25M", series: "ID5000", resolution: { w: 4096, h: 3024 }, pixelSize: 2, focal: 25, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 230, max: 2000 } },
-      { model: "ID5120RM-08L", series: "ID5000", resolution: { w: 4096, h: 3024 }, pixelSize: 2, focal: 8, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 100, max: 2000 } },
-      { model: "ID5120RM-12L", series: "ID5000", resolution: { w: 4096, h: 3024 }, pixelSize: 2, focal: 12, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 100, max: 2000 } },
-      { model: "ID5120RM-16L", series: "ID5000", resolution: { w: 4096, h: 3024 }, pixelSize: 2, focal: 16, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 100, max: 2000 } },
-      { model: "ID5120RM-00C-08", series: "ID5000", resolution: { w: 4096, h: 3024 }, pixelSize: 2, focal: 8, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 100, max: 2000 } },
-      { model: "ID5120RM-00C-12", series: "ID5000", resolution: { w: 4096, h: 3024 }, pixelSize: 2, focal: 12, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 100, max: 2000 } },
-      { model: "ID5120RM-00C-16", series: "ID5000", resolution: { w: 4096, h: 3024 }, pixelSize: 2, focal: 16, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 100, max: 2000 } },
-      { model: "ID5120RM-00C-25", series: "ID5000", resolution: { w: 4096, h: 3024 }, pixelSize: 2, focal: 25, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 100, max: 2000 } },
-      { model: "ID5120RM-00C-35", series: "ID5000", resolution: { w: 4096, h: 3024 }, pixelSize: 2, focal: 35, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 250, max: 2000 } },
-    ];
+(function() {
 
+  /* ===== NAV ===== */
+  const tabs = document.querySelectorAll('.nav-tab');
+  const pages = document.querySelectorAll('.page');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      pages.forEach(p => p.classList.remove('active'));
+      tab.classList.add('active');
+      const targetId = tab.dataset.page;
+      const targetPage = document.getElementById(targetId);
+      if (targetPage) targetPage.classList.add('active');
+    });
+  });
+
+  /* ===== PRODUCT DB ===== */
+  const PRODUCT_DB = [
+    { model: "ID803M-03M",   series: "ID800",  resolution: { w: 640,  h: 480  }, pixelSize: 3.7,  focal: 3.1,  interface: "USB2.0、RS232、RJ45",           protection: "IP54", workingDist: { min: 120, max: 120  } },
+    { model: "ID813M-05M",   series: "ID800",  resolution: { w: 1280, h: 1024 }, pixelSize: 2.7,  focal: 4.9,  interface: "USB2.0、RS232、RJ45",           protection: "IP54", workingDist: { min: 70,  max: 120  } },
+    { model: "ID2013EM-03M", series: "ID2000", resolution: { w: 1024, h: 1280 }, pixelSize: 2.7,  focal: 2.48, interface: "Fast Ethernet、RS232",          protection: "IP54", workingDist: { min: 40,  max: 120  } },
+    { model: "ID2013EM-05M", series: "ID2000", resolution: { w: 1024, h: 1280 }, pixelSize: 2.7,  focal: 4.63, interface: "Fast Ethernet、RS232、USB3.0",   protection: "IP54", workingDist: { min: 40,  max: 120  } },
+    { model: "ID2004M-06M",  series: "ID2000", resolution: { w: 704,  h: 540  }, pixelSize: 6.9,  focal: 6.72, interface: "Fast Ethernet、RS232、USB3.0",   protection: "IP65", workingDist: { min: 40,  max: 120  } },
+    { model: "ID2004M-16T",  series: "ID2000", resolution: { w: 704,  h: 540  }, pixelSize: 6.9,  focal: 16,   interface: "Fast Ethernet、RS232",          protection: "IP65", workingDist: { min: 100, max: 400  } },
+    { model: "ID2013M-06M",  series: "ID2000", resolution: { w: 1280, h: 1024 }, pixelSize: 4,    focal: 6.72, interface: "Fast Ethernet、RS232",          protection: "IP65", workingDist: { min: 40,  max: 120  } },
+    { model: "ID2013M-16M",  series: "ID2000", resolution: { w: 1280, h: 1024 }, pixelSize: 4,    focal: 16,   interface: "Fast Ethernet、RS232",          protection: "IP65", workingDist: { min: 105, max: 130  } },
+    { model: "ID2013M-25M",  series: "ID2000", resolution: { w: 1280, h: 1024 }, pixelSize: 4,    focal: 25,   interface: "Fast Ethernet、RS232",          protection: "IP65", workingDist: { min: 170, max: 200  } },
+    { model: "ID2016M-06M",  series: "ID2000", resolution: { w: 1408, h: 1024 }, pixelSize: 3.45, focal: 6.72, interface: "Fast Ethernet、RS232、USB3.0",   protection: "IP65", workingDist: { min: 40,  max: 120  } },
+    { model: "ID2016M-16M",  series: "ID2000", resolution: { w: 1408, h: 1024 }, pixelSize: 3.45, focal: 16,   interface: "Fast Ethernet、RS232",          protection: "IP65", workingDist: { min: 105, max: 130  } },
+    { model: "ID2016M-25M",  series: "ID2000", resolution: { w: 1408, h: 1024 }, pixelSize: 3.45, focal: 25,   interface: "Fast Ethernet、RS232",          protection: "IP65", workingDist: { min: 170, max: 200  } },
+    { model: "ID2016M-06T",  series: "ID2000", resolution: { w: 1408, h: 1024 }, pixelSize: 3.45, focal: 6.7,  interface: "Fast Ethernet、RS232",          protection: "IP65", workingDist: { min: 70,  max: 160  } },
+    { model: "ID2016M-10T",  series: "ID2000", resolution: { w: 1408, h: 1024 }, pixelSize: 3.45, focal: 10,   interface: "Fast Ethernet、RS232",          protection: "IP65", workingDist: { min: 100, max: 400  } },
+    { model: "ID2016M-16T",  series: "ID2000", resolution: { w: 1408, h: 1024 }, pixelSize: 3.45, focal: 16,   interface: "Fast Ethernet、RS232",          protection: "IP65", workingDist: { min: 100, max: 400  } },
+    { model: "ID2016XM-05M", series: "ID2000", resolution: { w: 1408, h: 1200 }, pixelSize: 2.2,  focal: 5,    interface: "Fast Ethernet、RS232、USB2.0",   protection: "IP65", workingDist: { min: 25,  max: 1000 } },
+    { model: "ID2016XM-08M", series: "ID2000", resolution: { w: 1408, h: 1200 }, pixelSize: 2.2,  focal: 8,    interface: "Fast Ethernet、RS232、USB2.0",   protection: "IP65", workingDist: { min: 40,  max: 1000 } },
+    { model: "ID2016XM-12M", series: "ID2000", resolution: { w: 1408, h: 1200 }, pixelSize: 2.2,  focal: 12,   interface: "Fast Ethernet、RS232、USB2.0",   protection: "IP65", workingDist: { min: 60,  max: 1000 } },
+    { model: "ID2016XM-16M", series: "ID2000", resolution: { w: 1408, h: 1200 }, pixelSize: 2.2,  focal: 16,   interface: "Fast Ethernet、RS232、USB2.0",   protection: "IP65", workingDist: { min: 125, max: 1000 } },
+    { model: "ID2016XM-08L", series: "ID2000", resolution: { w: 1408, h: 1200 }, pixelSize: 2.2,  focal: 8,    interface: "Fast Ethernet、RS232、USB2.0",   protection: "IP65", workingDist: { min: 40,  max: 1000 } },
+    { model: "ID2016XM-12L", series: "ID2000", resolution: { w: 1408, h: 1200 }, pixelSize: 2.2,  focal: 12,   interface: "Fast Ethernet、RS232、USB2.0",   protection: "IP65", workingDist: { min: 75,  max: 1000 } },
+    { model: "ID2016XM-16L", series: "ID2000", resolution: { w: 1408, h: 1200 }, pixelSize: 2.2,  focal: 16,   interface: "Fast Ethernet、RS232、USB2.0",   protection: "IP65", workingDist: { min: 100, max: 1000 } },
+    { model: "ID2023XM-05M", series: "ID2000", resolution: { w: 1920, h: 1280 }, pixelSize: 2.2,  focal: 5,    interface: "Fast Ethernet、RS232、USB2.0",   protection: "IP65", workingDist: { min: 25,  max: 1000 } },
+    { model: "ID2023XM-08M", series: "ID2000", resolution: { w: 1920, h: 1280 }, pixelSize: 2.2,  focal: 8,    interface: "Fast Ethernet、RS232、USB2.0",   protection: "IP65", workingDist: { min: 40,  max: 1000 } },
+    { model: "ID2023XM-12M", series: "ID2000", resolution: { w: 1920, h: 1280 }, pixelSize: 2.2,  focal: 12,   interface: "Fast Ethernet、RS232、USB2.0",   protection: "IP65", workingDist: { min: 60,  max: 1000 } },
+    { model: "ID2023XM-16M", series: "ID2000", resolution: { w: 1920, h: 1280 }, pixelSize: 2.2,  focal: 16,   interface: "Fast Ethernet、RS232、USB2.0",   protection: "IP65", workingDist: { min: 125, max: 1000 } },
+    { model: "ID2023XM-08L", series: "ID2000", resolution: { w: 1920, h: 1280 }, pixelSize: 2.2,  focal: 8,    interface: "Fast Ethernet、RS232、USB2.0",   protection: "IP65", workingDist: { min: 40,  max: 1000 } },
+    { model: "ID2023XM-12L", series: "ID2000", resolution: { w: 1920, h: 1280 }, pixelSize: 2.2,  focal: 12,   interface: "Fast Ethernet、RS232、USB2.0",   protection: "IP65", workingDist: { min: 75,  max: 1000 } },
+    { model: "ID2023XM-16L", series: "ID2000", resolution: { w: 1920, h: 1280 }, pixelSize: 2.2,  focal: 16,   interface: "Fast Ethernet、RS232、USB2.0",   protection: "IP65", workingDist: { min: 100, max: 1000 } },
+    { model: "ID3013PM-06M", series: "ID3000", resolution: { w: 1280, h: 1024 }, pixelSize: 4,    focal: 6,    interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 20,  max: 2000 } },
+    { model: "ID3013PM-12M", series: "ID3000", resolution: { w: 1280, h: 1024 }, pixelSize: 4,    focal: 12,   interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 60,  max: 2000 } },
+    { model: "ID3013PM-15M", series: "ID3000", resolution: { w: 1280, h: 1024 }, pixelSize: 4,    focal: 14.8, interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 88,  max: 2000 } },
+    { model: "ID3016PM-06M", series: "ID3000", resolution: { w: 1408, h: 1024 }, pixelSize: 3.45, focal: 6,    interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 20,  max: 2000 } },
+    { model: "ID3016PM-12M", series: "ID3000", resolution: { w: 1408, h: 1024 }, pixelSize: 3.45, focal: 12,   interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 60,  max: 2000 } },
+    { model: "ID3016PM-15M", series: "ID3000", resolution: { w: 1408, h: 1024 }, pixelSize: 3.45, focal: 14.8, interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 88,  max: 2000 } },
+    { model: "ID3050PM-08M", series: "ID3000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.4,  focal: 8,    interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 25,  max: 2000 } },
+    { model: "ID3050PM-12M", series: "ID3000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.4,  focal: 12,   interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 60,  max: 2000 } },
+    { model: "ID3050PM-16M", series: "ID3000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.4,  focal: 16,   interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 80,  max: 2000 } },
+    { model: "ID3050PM-25M", series: "ID3000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.4,  focal: 25,   interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 230, max: 2000 } },
+    { model: "ID3016XM-08M", series: "ID3000", resolution: { w: 1408, h: 1024 }, pixelSize: 3.45, focal: 8,    interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 25,  max: 2000 } },
+    { model: "ID3016XM-12M", series: "ID3000", resolution: { w: 1408, h: 1024 }, pixelSize: 3.45, focal: 12,   interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 60,  max: 2000 } },
+    { model: "ID3016XM-16L", series: "ID3000", resolution: { w: 1408, h: 1024 }, pixelSize: 3.45, focal: 16,   interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 60,  max: 2000 } },
+    { model: "ID3016XM-25M", series: "ID3000", resolution: { w: 1408, h: 1024 }, pixelSize: 3.45, focal: 25,   interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 230, max: 2000 } },
+    { model: "ID3030XM-08M", series: "ID3000", resolution: { w: 2048, h: 1536 }, pixelSize: 3.45, focal: 8,    interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 25,  max: 2000 } },
+    { model: "ID3030XM-12M", series: "ID3000", resolution: { w: 2048, h: 1536 }, pixelSize: 3.45, focal: 12,   interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 60,  max: 2000 } },
+    { model: "ID3030XM-16M", series: "ID3000", resolution: { w: 2048, h: 1536 }, pixelSize: 3.45, focal: 16,   interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 110, max: 2000 } },
+    { model: "ID3030XM-25M", series: "ID3000", resolution: { w: 2048, h: 1536 }, pixelSize: 3.45, focal: 25,   interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 230, max: 2000 } },
+    { model: "ID3030XM-08L", series: "ID3000", resolution: { w: 2048, h: 1536 }, pixelSize: 3.45, focal: 8,    interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 35,  max: 2000 } },
+    { model: "ID3030XM-12L", series: "ID3000", resolution: { w: 2048, h: 1536 }, pixelSize: 3.45, focal: 12,   interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 60,  max: 2000 } },
+    { model: "ID3030XM-16L", series: "ID3000", resolution: { w: 2048, h: 1536 }, pixelSize: 3.45, focal: 16,   interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 85,  max: 2000 } },
+    { model: "ID3050XM-08M", series: "ID3000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.45, focal: 8,    interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 25,  max: 2000 } },
+    { model: "ID3050XM-12M", series: "ID3000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.45, focal: 12,   interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 60,  max: 2000 } },
+    { model: "ID3050XM-16M", series: "ID3000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.45, focal: 16,   interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 110, max: 2000 } },
+    { model: "ID3050XM-25M", series: "ID3000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.45, focal: 25,   interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 230, max: 2000 } },
+    { model: "ID3050XM-08L", series: "ID3000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.45, focal: 8,    interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 35,  max: 2000 } },
+    { model: "ID3050XM-12L", series: "ID3000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.45, focal: 12,   interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 60,  max: 2000 } },
+    { model: "ID3050XM-16L", series: "ID3000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.45, focal: 16,   interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 85,  max: 2000 } },
+    { model: "ID3040RM-08M", series: "ID3000", resolution: { w: 2688, h: 1536 }, pixelSize: 2,    focal: 8,    interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 25,  max: 2000 } },
+    { model: "ID3040RM-12M", series: "ID3000", resolution: { w: 2688, h: 1536 }, pixelSize: 2,    focal: 12,   interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 60,  max: 2000 } },
+    { model: "ID3040RM-16M", series: "ID3000", resolution: { w: 2688, h: 1536 }, pixelSize: 2,    focal: 16,   interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 60,  max: 2000 } },
+    { model: "ID3040RM-25M", series: "ID3000", resolution: { w: 2688, h: 1536 }, pixelSize: 2,    focal: 25,   interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 230, max: 2000 } },
+    { model: "ID3040RM-00C-12", series: "ID3000", resolution: { w: 2688, h: 1536 }, pixelSize: 2, focal: 12,   interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 100, max: 2000 } },
+    { model: "ID3040RM-00C-16", series: "ID3000", resolution: { w: 2688, h: 1536 }, pixelSize: 2, focal: 16,   interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 100, max: 2000 } },
+    { model: "ID3040RM-00C-25", series: "ID3000", resolution: { w: 2688, h: 1536 }, pixelSize: 2, focal: 25,   interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 100, max: 2000 } },
+    { model: "ID3040RM-00C-35", series: "ID3000", resolution: { w: 2688, h: 1536 }, pixelSize: 2, focal: 35,   interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 200, max: 2000 } },
+    { model: "ID3040RM-00C-50", series: "ID3000", resolution: { w: 2688, h: 1536 }, pixelSize: 2, focal: 50,   interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 300, max: 2000 } },
+    { model: "ID3060RM-08M", series: "ID3000", resolution: { w: 3200, h: 1920 }, pixelSize: 2,    focal: 8,    interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 25,  max: 2000 } },
+    { model: "ID3060RM-12M", series: "ID3000", resolution: { w: 3200, h: 1920 }, pixelSize: 2,    focal: 12,   interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 60,  max: 2000 } },
+    { model: "ID3060RM-16M", series: "ID3000", resolution: { w: 3200, h: 1920 }, pixelSize: 2,    focal: 16,   interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 60,  max: 2000 } },
+    { model: "ID3060RM-25M", series: "ID3000", resolution: { w: 3200, h: 1920 }, pixelSize: 2,    focal: 25,   interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 230, max: 2000 } },
+    { model: "ID3060RM-00C-12", series: "ID3000", resolution: { w: 3200, h: 1920 }, pixelSize: 2, focal: 12,   interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 100, max: 2000 } },
+    { model: "ID3060RM-00C-16", series: "ID3000", resolution: { w: 3200, h: 1920 }, pixelSize: 2, focal: 16,   interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 100, max: 2000 } },
+    { model: "ID3060RM-00C-25", series: "ID3000", resolution: { w: 3200, h: 1920 }, pixelSize: 2, focal: 25,   interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 100, max: 2000 } },
+    { model: "ID3060RM-00C-35", series: "ID3000", resolution: { w: 3200, h: 1920 }, pixelSize: 2, focal: 35,   interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 200, max: 2000 } },
+    { model: "ID3060RM-00C-50", series: "ID3000", resolution: { w: 3200, h: 1920 }, pixelSize: 2, focal: 50,   interface: "Fast Ethernet、RS232",          protection: "IP67", workingDist: { min: 300, max: 2000 } },
+    { model: "ID5050M-08S",  series: "ID5000", resolution: { w: 2560, h: 2048 }, pixelSize: 3.2,  focal: 8,    interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 25,  max: 2000 } },
+    { model: "ID5050M-12S",  series: "ID5000", resolution: { w: 2560, h: 2048 }, pixelSize: 3.2,  focal: 12,   interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 60,  max: 2000 } },
+    { model: "ID5050M-16S",  series: "ID5000", resolution: { w: 2560, h: 2048 }, pixelSize: 3.2,  focal: 16,   interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 100, max: 2000 } },
+    { model: "ID5050M-25S",  series: "ID5000", resolution: { w: 2560, h: 2048 }, pixelSize: 3.2,  focal: 25,   interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 230, max: 2000 } },
+    { model: "ID5060M-08S",  series: "ID5000", resolution: { w: 3072, h: 2048 }, pixelSize: 2.4,  focal: 8,    interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 45,  max: 2000 } },
+    { model: "ID5060M-12S",  series: "ID5000", resolution: { w: 3072, h: 2048 }, pixelSize: 2.4,  focal: 12,   interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 60,  max: 2000 } },
+    { model: "ID5060M-16S",  series: "ID5000", resolution: { w: 3072, h: 2048 }, pixelSize: 2.4,  focal: 16,   interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 80,  max: 700  } },
+    { model: "ID5060M-25S",  series: "ID5000", resolution: { w: 3072, h: 2048 }, pixelSize: 2.4,  focal: 25,   interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 300, max: 2000 } },
+    { model: "ID5060M-00C-12", series: "ID5000", resolution: { w: 3072, h: 2048 }, pixelSize: 2.4, focal: 12,  interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 60,  max: 2000 } },
+    { model: "ID5060M-00C-16", series: "ID5000", resolution: { w: 3072, h: 2048 }, pixelSize: 2.4, focal: 16,  interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 80,  max: 2000 } },
+    { model: "ID5060M-00C-25", series: "ID5000", resolution: { w: 3072, h: 2048 }, pixelSize: 2.4, focal: 25,  interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 125, max: 2000 } },
+    { model: "ID5060M-00C-35", series: "ID5000", resolution: { w: 3072, h: 2048 }, pixelSize: 2.4, focal: 35,  interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 175, max: 2000 } },
+    { model: "ID5120M-00C-12", series: "ID5000", resolution: { w: 4096, h: 3072 }, pixelSize: 3.2, focal: 12,  interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 60,  max: 2000 } },
+    { model: "ID5120M-00C-16", series: "ID5000", resolution: { w: 4096, h: 3072 }, pixelSize: 3.2, focal: 16,  interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 80,  max: 2000 } },
+    { model: "ID5120M-00C-25", series: "ID5000", resolution: { w: 4096, h: 3072 }, pixelSize: 3.2, focal: 25,  interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 125, max: 2000 } },
+    { model: "ID5120M-00C-35", series: "ID5000", resolution: { w: 4096, h: 3072 }, pixelSize: 3.2, focal: 35,  interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 175, max: 2000 } },
+    { model: "ID5200M-00C-12", series: "ID5000", resolution: { w: 5440, h: 3648 }, pixelSize: 2.4, focal: 12,  interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 60,  max: 2000 } },
+    { model: "ID5200M-00C-16", series: "ID5000", resolution: { w: 5440, h: 3648 }, pixelSize: 2.4, focal: 16,  interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 80,  max: 2000 } },
+    { model: "ID5200M-00C-25", series: "ID5000", resolution: { w: 5440, h: 3648 }, pixelSize: 2.4, focal: 25,  interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 125, max: 2000 } },
+    { model: "ID5200M-00C-35", series: "ID5000", resolution: { w: 5440, h: 3648 }, pixelSize: 2.4, focal: 35,  interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 175, max: 2000 } },
+    { model: "ID5200PM-00C-12", series: "ID5000", resolution: { w: 5120, h: 3968 }, pixelSize: 2.5, focal: 12, interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 60,  max: 2000 } },
+    { model: "ID5200PM-00C-16", series: "ID5000", resolution: { w: 5120, h: 3968 }, pixelSize: 2.5, focal: 16, interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 80,  max: 2000 } },
+    { model: "ID5200PM-00C-25", series: "ID5000", resolution: { w: 5120, h: 3968 }, pixelSize: 2.5, focal: 25, interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 125, max: 2000 } },
+    { model: "ID5200PM-00C-35", series: "ID5000", resolution: { w: 5120, h: 3968 }, pixelSize: 2.5, focal: 35, interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 175, max: 2000 } },
+    { model: "ID5250PM-00C-12", series: "ID5000", resolution: { w: 5120, h: 5120 }, pixelSize: 2.5, focal: 12, interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 60,  max: 2000 } },
+    { model: "ID5250PM-00C-16", series: "ID5000", resolution: { w: 5120, h: 5120 }, pixelSize: 2.5, focal: 16, interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 80,  max: 2000 } },
+    { model: "ID5250PM-00C-25", series: "ID5000", resolution: { w: 5120, h: 5120 }, pixelSize: 2.5, focal: 25, interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 125, max: 2000 } },
+    { model: "ID5250PM-00C-35", series: "ID5000", resolution: { w: 5120, h: 5120 }, pixelSize: 2.5, focal: 35, interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 175, max: 2000 } },
+    { model: "ID5050XM-08M",  series: "ID5000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.45, focal: 8,   interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 25,  max: 2000 } },
+    { model: "ID5050XM-12M",  series: "ID5000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.45, focal: 12,  interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 60,  max: 2000 } },
+    { model: "ID5050XM-16M",  series: "ID5000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.45, focal: 16,  interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 100, max: 2000 } },
+    { model: "ID5050XM-25M",  series: "ID5000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.45, focal: 25,  interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 230, max: 2000 } },
+    { model: "ID5050XM-08L",  series: "ID5000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.45, focal: 8,   interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 100, max: 2000 } },
+    { model: "ID5050XM-12L",  series: "ID5000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.45, focal: 12,  interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 100, max: 2000 } },
+    { model: "ID5050XM-16L",  series: "ID5000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.45, focal: 16,  interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 100, max: 2000 } },
+    { model: "ID5050XM-00C-12", series: "ID5000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.45, focal: 12, interface: "Gigabit Ethernet、RS232",       protection: "IP67", workingDist: { min: 100, max: 2000 } },
+    { model: "ID5050XM-00C-16", series: "ID5000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.45, focal: 16, interface: "Gigabit Ethernet、RS232",       protection: "IP67", workingDist: { min: 100, max: 2000 } },
+    { model: "ID5050XM-00C-25", series: "ID5000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.45, focal: 25, interface: "Gigabit Ethernet、RS232",       protection: "IP67", workingDist: { min: 100, max: 2000 } },
+    { model: "ID5050XM-00C-35", series: "ID5000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.45, focal: 35, interface: "Gigabit Ethernet、RS232",       protection: "IP67", workingDist: { min: 200, max: 2000 } },
+    { model: "ID5050XM-00C-50", series: "ID5000", resolution: { w: 2432, h: 2048 }, pixelSize: 3.45, focal: 50, interface: "Gigabit Ethernet、RS232",       protection: "IP67", workingDist: { min: 300, max: 2000 } },
+    { model: "ID5120XM-00C-12", series: "ID5000", resolution: { w: 4096, h: 3072 }, pixelSize: 3.45, focal: 12, interface: "Gigabit Ethernet、RS232",       protection: "IP67", workingDist: { min: 100, max: 2000 } },
+    { model: "ID5120XM-00C-16", series: "ID5000", resolution: { w: 4096, h: 3072 }, pixelSize: 3.45, focal: 16, interface: "Gigabit Ethernet、RS232",       protection: "IP67", workingDist: { min: 100, max: 2000 } },
+    { model: "ID5120XM-00C-25", series: "ID5000", resolution: { w: 4096, h: 3072 }, pixelSize: 3.45, focal: 25, interface: "Gigabit Ethernet、RS232",       protection: "IP67", workingDist: { min: 100, max: 2000 } },
+    { model: "ID5120XM-00C-35", series: "ID5000", resolution: { w: 4096, h: 3072 }, pixelSize: 3.45, focal: 35, interface: "Gigabit Ethernet、RS232",       protection: "IP67", workingDist: { min: 200, max: 2000 } },
+    { model: "ID5120XM-00C-50", series: "ID5000", resolution: { w: 4096, h: 3072 }, pixelSize: 3.45, focal: 50, interface: "Gigabit Ethernet、RS232",       protection: "IP67", workingDist: { min: 300, max: 2000 } },
+    { model: "ID5120RM-08M",  series: "ID5000", resolution: { w: 4096, h: 3024 }, pixelSize: 2,    focal: 8,   interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 25,  max: 2000 } },
+    { model: "ID5120RM-12M",  series: "ID5000", resolution: { w: 4096, h: 3024 }, pixelSize: 2,    focal: 12,  interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 60,  max: 2000 } },
+    { model: "ID5120RM-16M",  series: "ID5000", resolution: { w: 4096, h: 3024 }, pixelSize: 2,    focal: 16,  interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 100, max: 2000 } },
+    { model: "ID5120RM-25M",  series: "ID5000", resolution: { w: 4096, h: 3024 }, pixelSize: 2,    focal: 25,  interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 230, max: 2000 } },
+    { model: "ID5120RM-08L",  series: "ID5000", resolution: { w: 4096, h: 3024 }, pixelSize: 2,    focal: 8,   interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 100, max: 2000 } },
+    { model: "ID5120RM-12L",  series: "ID5000", resolution: { w: 4096, h: 3024 }, pixelSize: 2,    focal: 12,  interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 100, max: 2000 } },
+    { model: "ID5120RM-16L",  series: "ID5000", resolution: { w: 4096, h: 3024 }, pixelSize: 2,    focal: 16,  interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 100, max: 2000 } },
+    { model: "ID5120RM-00C-08", series: "ID5000", resolution: { w: 4096, h: 3024 }, pixelSize: 2, focal: 8,   interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 100, max: 2000 } },
+    { model: "ID5120RM-00C-12", series: "ID5000", resolution: { w: 4096, h: 3024 }, pixelSize: 2, focal: 12,  interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 100, max: 2000 } },
+    { model: "ID5120RM-00C-16", series: "ID5000", resolution: { w: 4096, h: 3024 }, pixelSize: 2, focal: 16,  interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 100, max: 2000 } },
+    { model: "ID5120RM-00C-25", series: "ID5000", resolution: { w: 4096, h: 3024 }, pixelSize: 2, focal: 25,  interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 100, max: 2000 } },
+    { model: "ID5120RM-00C-35", series: "ID5000", resolution: { w: 4096, h: 3024 }, pixelSize: 2, focal: 35,  interface: "Gigabit Ethernet、RS232",        protection: "IP67", workingDist: { min: 250, max: 2000 } },
+  ];
+
+  // Expose default DB to catalog page
+  window.__HIKROBOT_DEFAULT_DB = PRODUCT_DB;
 
   function toMM(value, unit) {
     if (unit === 'mil') return value * 0.0254;
@@ -1160,14 +1360,14 @@
   function getPPMScoreAndLevel(ppm, codeType) {
     const is2D = isCodeType2D(codeType);
     if (is2D) {
-      if (ppm >= 4 && ppm <= 8) return { score: 30, level: '优秀' };
-      if (ppm > 8 && ppm <= 12) return { score: 25, level: '良好' };
+      if (ppm >= 4 && ppm <= 8)  return { score: 30, level: '优秀' };
+      if (ppm > 8 && ppm <= 12)  return { score: 25, level: '良好' };
       if (ppm >= 12 || (ppm >= 3 && ppm < 4)) return { score: 15, level: '合格' };
       if (ppm < 3) return { score: -15, level: '较低' };
       return { score: 0, level: '未知' };
     } else {
       if (ppm >= 1.4 && ppm <= 2) return { score: 30, level: '优秀' };
-      if (ppm >= 2 && ppm <= 3) return { score: 25, level: '良好' };
+      if (ppm >= 2 && ppm <= 3)   return { score: 25, level: '良好' };
       if ((ppm >= 1 && ppm < 1.4) || ppm >= 3) return { score: 15, level: '合格' };
       if (ppm < 1) return { score: -15, level: '较低' };
       return { score: 0, level: '未知' };
@@ -1243,16 +1443,16 @@
         ppmScore = ppmResult.score;
         ppmLevel = ppmResult.level;
       }
-      if (sensorWidthPx >= requiredPixelsW && sensorHeightPx >= requiredPixelsH) { score += 30; reasons.push(`分辨率满足`); }
-      else if ((sensorWidthPx >= requiredPixelsW * 0.8 && sensorHeightPx >= requiredPixelsH * 0.8)) { score += 15; reasons.push(`分辨率接近`); }
-      else { score -= 20; reasons.push(`分辨率偏低`); }
+      if (sensorWidthPx >= requiredPixelsW && sensorHeightPx >= requiredPixelsH) { score += 30; reasons.push('分辨率满足'); }
+      else if (sensorWidthPx >= requiredPixelsW * 0.8 && sensorHeightPx >= requiredPixelsH * 0.8) { score += 15; reasons.push('分辨率接近'); }
+      else { score -= 20; reasons.push('分辨率偏低'); }
       if (ppm !== null) { score += ppmScore; reasons.push(`PPM${ppmLevel}(${ppm.toFixed(2)})`); }
       else { score += 5; reasons.push('C-Mount'); }
-      if (wdMM >= model.workingDist.min && wdMM <= model.workingDist.max) { score += 15; reasons.push(`距离适配`); }
-      else { score -= 5; reasons.push(`距离不适配`); }
+      if (wdMM >= model.workingDist.min && wdMM <= model.workingDist.max) { score += 15; reasons.push('距离适配'); }
+      else { score -= 5; reasons.push('距离不适配'); }
       if (model.focal && fovEst) {
-        if (fovEst.width >= fovReqW_mm && fovEst.height >= fovReqH_mm) { score += 15; reasons.push(`视野满足`); }
-        else { score -= 20; reasons.push(`视野不足`); }
+        if (fovEst.width >= fovReqW_mm && fovEst.height >= fovReqH_mm) { score += 15; reasons.push('视野满足'); }
+        else { score -= 20; reasons.push('视野不足'); }
       }
       return { model, score, ppm, ppmLevel, reasons, fovEst };
     });
@@ -1273,15 +1473,21 @@
       const ppmDisplay = best.ppm !== null ? best.ppm.toFixed(2) : '—';
       const ppmLevelDisplay = best.ppmLevel ? ` (${best.ppmLevel})` : '';
       document.getElementById('top1Content').innerHTML = `
-        <div class="result-main"><div class="result-card"><strong>首选型号</strong><span>${best.model.model}</span></div><div class="result-card"><strong>PPM</strong><span>${ppmDisplay}${ppmLevelDisplay}</span></div></div>
-        <div class="model-preview"><span>${best.model.series} · ${best.model.resolution.w}×${best.model.resolution.h} · ${best.model.interface}</span><span class="tag">${best.model.protection}</span></div>
+        <div class="result-main">
+          <div class="result-card"><strong>首选型号</strong><span>${best.model.model}</span></div>
+          <div class="result-card"><strong>PPM</strong><span>${ppmDisplay}${ppmLevelDisplay}</span></div>
+        </div>
+        <div class="model-preview">
+          <span>${best.model.series} · ${best.model.resolution.w}×${best.model.resolution.h} · ${best.model.interface}</span>
+          <span class="tag">${best.model.protection}</span>
+        </div>
       `;
       const estW = best.fovEst ? best.fovEst.width : null;
       const estH = best.fovEst ? best.fovEst.height : null;
       updateSchematic(wdMM, estW, estH, moduleMM, best.model.focal, best.ppm, requiredPixelsW, requiredPixelsH);
     } else {
       updateSchematic(wdMM, null, null, moduleMM, null, null, requiredPixelsW, requiredPixelsH);
-      document.getElementById('top1Content').innerHTML = `<div class="warning-badge">⚠️ 没有找到同时满足所有条件的型号<br>请调整参数后重试</div>`;
+      document.getElementById('top1Content').innerHTML = '<div class="warning-badge">⚠️ 没有找到同时满足所有条件的型号<br>请调整参数后重试</div>';
     }
   }
 
@@ -1294,7 +1500,7 @@
     const selectedSeries = Array.from(checkboxes).filter(cb => cb.checked).map(cb => cb.value);
     let filteredBySeries = cachedFilteredList.filter(item => selectedSeries.includes(item.model.series));
     if (filteredBySeries.length === 0) {
-      document.getElementById('modalModelList').innerHTML = `<div class="warning-badge">⚠️ 当前勾选的系列中无匹配型号，请勾选其他系列</div>`;
+      document.getElementById('modalModelList').innerHTML = '<div class="warning-badge">⚠️ 当前勾选的系列中无匹配型号，请勾选其他系列</div>';
       return;
     }
     let html = '';
@@ -1304,7 +1510,24 @@
       const ppmDisplay = item.ppm !== null ? item.ppm.toFixed(2) : '— (C-Mount)';
       const ppmLevelDisplay = item.ppmLevel ? ` (${item.ppmLevel})` : '';
       const fovStatus = fovEst ? `📐 预估视野 ${fovEst.width}×${fovEst.height}mm` : '🔧 C-Mount';
-      html += `<div class="modal-model-entry ${idx === 0 ? 'recommended' : ''}"><div class="modal-entry-header"><span class="modal-model-name">${m.model}</span><span class="modal-model-series">${m.series}</span></div><div class="modal-spec-grid"><div class="spec-item">🔘 ${m.resolution.w}×${m.resolution.h}</div><div class="spec-item">🔌 ${m.interface}</div><div class="spec-item">🛡️ ${m.protection}</div><div class="spec-item">${m.focal ? `🔍 ${m.focal}mm` : '🔧 C-Mount'}</div></div><div class="ppm-value-row"><span>📊 真实 PPM：<span class="ppm-value-highlight">${ppmDisplay}</span>${ppmLevelDisplay}</span></div><div class="info-row"><span class="info-tag">📏 工作距离 ${m.workingDist.min}-${m.workingDist.max}mm</span><span class="info-tag">${fovStatus}</span></div><div class="reasons-row">${item.reasons.map(r => `<span class="reason-badge">✨ ${r}</span>`).join('')}</div></div>`;
+      html += `<div class="modal-model-entry ${idx === 0 ? 'recommended' : ''}">
+        <div class="modal-entry-header">
+          <span class="modal-model-name">${m.model}</span>
+          <span class="modal-model-series">${m.series}</span>
+        </div>
+        <div class="modal-spec-grid">
+          <div class="spec-item">🔘 ${m.resolution.w}×${m.resolution.h}</div>
+          <div class="spec-item">🔌 ${m.interface}</div>
+          <div class="spec-item">🛡️ ${m.protection}</div>
+          <div class="spec-item">${m.focal ? `🔍 ${m.focal}mm` : '🔧 C-Mount'}</div>
+        </div>
+        <div class="ppm-value-row"><span>📊 真实 PPM：<span class="ppm-value-highlight">${ppmDisplay}</span>${ppmLevelDisplay}</span></div>
+        <div class="info-row">
+          <span class="info-tag">📏 工作距离 ${m.workingDist.min}-${m.workingDist.max}mm</span>
+          <span class="info-tag">${fovStatus}</span>
+        </div>
+        <div class="reasons-row">${item.reasons.map(r => `<span class="reason-badge">✨ ${r}</span>`).join('')}</div>
+      </div>`;
     });
     document.getElementById('modalModelList').innerHTML = html;
   }
@@ -1335,6 +1558,203 @@
     initModal();
   }
   init();
+})();
+</script>
+
+
+<script>
+/* ===== COMPETITOR ANALYSIS ===== */
+(function(){
+  const COMP_KEY = 'hikrobot_competitors';
+  const BOM_KEY  = 'hikrobot_bom';
+
+  // ─── COMPETITOR DATA ───
+  const ATTR_LABELS = ['型号','分辨率','工作距离','接口','防护等级','价格区间','优势','劣势','备注'];
+  const ATTR_KEYS   = ['model','res','wd','interface','protection','price','pros','cons','note'];
+  const HIKROBOT_COL = { brand:'HIKROBOT', model:'ID系列', res:'640×480 ~ 5120×5120', wd:'20~2000 mm', interface:'Ethernet / RS232 / USB', protection:'IP54~IP67', price:'灵活定价', pros:'全系列覆盖、IP67、自研算法', cons:'—', note:'海康机器人自研' };
+
+  let competitors = [];
+
+  function compSave(){ try{ localStorage.setItem(COMP_KEY, JSON.stringify(competitors)); }catch(e){} }
+  function compLoad(){ try{ const r=localStorage.getItem(COMP_KEY); if(r){ const p=JSON.parse(r); if(Array.isArray(p)){ competitors=p; return; } } }catch(e){} competitors=[]; }
+
+  function getGridCols(){ return 1 + 1 + competitors.length; } // attr + hikrobot + n competitors
+
+  function compRender(){
+    const hRow = document.getElementById('compHeaderRow');
+    const body = document.getElementById('compBody');
+    if (!hRow || !body) return;
+
+    const cols = getGridCols();
+    const colTpl = '120px 1fr ' + competitors.map(()=>'1fr').join(' ');
+    hRow.style.gridTemplateColumns = colTpl;
+
+    // Header
+    hRow.innerHTML = '<div class="comp-attr-col">对比维度</div>' +
+      '<div class="comp-brand-col"><div><div class="comp-brand-name" style="color:var(--brand-red)">🔴 HIKROBOT</div><div class="comp-brand-model">海康机器人</div></div></div>' +
+      competitors.map((c,i) => '<div class="comp-brand-col"><div><div class="comp-brand-name">' + esc(c.brand) + '</div><div class="comp-brand-model">' + esc(c.model||'') + '</div></div><button class="comp-del-brand" data-i="'+i+'">✕</button></div>').join('');
+
+    hRow.querySelectorAll('.comp-del-brand').forEach(btn => {
+      btn.addEventListener('click', ()=>{ competitors.splice(+btn.dataset.i,1); compSave(); compRender(); });
+    });
+
+    if (competitors.length === 0) {
+      body.innerHTML = '<div class="comp-empty"><div style="font-size:2rem">🔬</div><div>点击「添加竞品」开始对比分析</div></div>';
+      return;
+    }
+
+    body.innerHTML = ATTR_KEYS.map((key,ri) => {
+      const label = ATTR_LABELS[ri];
+      const isPros = key==='pros', isCons = key==='cons';
+      return '<div class="comp-row" style="grid-template-columns:'+colTpl+'">' +
+        '<div class="comp-row-label">' + label + '</div>' +
+        '<div class="comp-cell hikrobot">' + esc(HIKROBOT_COL[key]||'—') + '</div>' +
+        competitors.map(c => '<div class="comp-cell'+(isPros?' pros':isCons?' cons':'')+'">' + esc(c[key]||'—') + '</div>').join('') +
+      '</div>';
+    }).join('');
+  }
+
+  function openCompAdd(){
+    ['comp-brand','comp-model','comp-res','comp-wd','comp-if','comp-prot','comp-price','comp-pros','comp-cons','comp-note']
+      .forEach(id=>{ const el=document.getElementById(id); if(el) el.value=''; });
+    document.getElementById('compAddModal').classList.add('active');
+  }
+  function closeCompAdd(){ document.getElementById('compAddModal').classList.remove('active'); }
+  function saveCompAdd(){
+    const brand = document.getElementById('comp-brand').value.trim();
+    if(!brand){ alert('品牌名称不能为空'); return; }
+    competitors.push({
+      brand, model: document.getElementById('comp-model').value.trim(),
+      res: document.getElementById('comp-res').value.trim(),
+      wd: document.getElementById('comp-wd').value.trim(),
+      interface: document.getElementById('comp-if').value.trim(),
+      protection: document.getElementById('comp-prot').value.trim(),
+      price: document.getElementById('comp-price').value.trim(),
+      pros: document.getElementById('comp-pros').value.trim(),
+      cons: document.getElementById('comp-cons').value.trim(),
+      note: document.getElementById('comp-note').value.trim(),
+    });
+    compSave(); compRender(); closeCompAdd();
+  }
+
+  function compExportCSV(){
+    const rows = [['对比维度','HIKROBOT',...competitors.map(c=>c.brand)]];
+    ATTR_KEYS.forEach((k,i)=> rows.push([ATTR_LABELS[i], HIKROBOT_COL[k]||'—', ...competitors.map(c=>c[k]||'—')]));
+    downloadCSV(rows, 'competitor_analysis.csv');
+  }
+
+  // ─── BOM DATA ───
+  let bomRows = [];
+  let bomEditId = null;
+
+  function bomSave(){ try{ localStorage.setItem(BOM_KEY, JSON.stringify(bomRows)); }catch(e){} }
+  function bomLoad(){ try{ const r=localStorage.getItem(BOM_KEY); if(r){ const p=JSON.parse(r); if(Array.isArray(p)){ bomRows=p; return; } } }catch(e){} bomRows=[]; }
+
+  const BOM_FIELDS = ['name','model','series','qty','wd','fov','code','interface','note'];
+  const BOM_PLACEHOLDERS = ['项目名称','推荐型号','系列','数量','工作距离','视野W×H','码制','接口','备注'];
+
+  function bomRender(){
+    const tbody = document.getElementById('bomBody');
+    const countEl = document.getElementById('bomCount');
+    if(!tbody) return;
+    countEl.textContent = '共 ' + bomRows.length + ' 行';
+    if(!bomRows.length){
+      tbody.innerHTML = '<tr><td colspan="11" class="bom-empty">点击「添加行」新建配单项</td></tr>';
+      return;
+    }
+    tbody.innerHTML = bomRows.map((row,i) =>
+      '<tr data-i="'+i+'">' +
+      '<td class="bom-idx">'+(i+1)+'</td>' +
+      '<td contenteditable="true" data-f="name">'+esc(row.name||'')+'</td>' +
+      '<td><span class="bom-model-chip">'+esc(row.model||'—')+'</span></td>' +
+      '<td contenteditable="true" data-f="series">'+esc(row.series||'')+'</td>' +
+      '<td contenteditable="true" data-f="qty" style="width:52px">'+esc(row.qty||'1')+'</td>' +
+      '<td contenteditable="true" data-f="wd">'+esc(row.wd||'')+'</td>' +
+      '<td contenteditable="true" data-f="fov">'+esc(row.fov||'')+'</td>' +
+      '<td contenteditable="true" data-f="code">'+esc(row.code||'')+'</td>' +
+      '<td contenteditable="true" data-f="interface">'+esc(row.interface||'')+'</td>' +
+      '<td contenteditable="true" data-f="note">'+esc(row.note||'')+'</td>' +
+      '<td><button class="bom-del-btn" data-i="'+i+'">✕</button></td>' +
+      '</tr>'
+    ).join('');
+
+    // contenteditable save on blur
+    tbody.querySelectorAll('td[contenteditable]').forEach(td => {
+      td.addEventListener('blur', ()=>{
+        const tr = td.closest('tr');
+        const i = +tr.dataset.i;
+        const f = td.dataset.f;
+        if(bomRows[i]) { bomRows[i][f] = td.textContent.trim(); bomSave(); }
+      });
+      td.addEventListener('keydown', e=>{ if(e.key==='Enter'){ e.preventDefault(); td.blur(); } });
+    });
+    tbody.querySelectorAll('.bom-del-btn').forEach(btn=>{
+      btn.addEventListener('click',()=>{ bomRows.splice(+btn.dataset.i,1); bomSave(); bomRender(); });
+    });
+  }
+
+  function bomAddRow(){
+    bomRows.push({ name:'', model:'—', series:'', qty:'1', wd:'', fov:'', code:'', interface:'', note:'' });
+    bomSave(); bomRender();
+    // focus first editable cell of new row
+    const tbody = document.getElementById('bomBody');
+    const rows = tbody.querySelectorAll('tr');
+    const last = rows[rows.length-1];
+    if(last){ const td = last.querySelector('td[contenteditable]'); if(td){ td.focus(); } }
+  }
+
+  function bomExportCSV(){
+    const header = ['#','项目名称','推荐型号','系列','数量','工作距离','视野W×H','码制','接口','备注'];
+    const rows = [header, ...bomRows.map((r,i)=>[i+1,r.name,r.model,r.series,r.qty,r.wd,r.fov,r.code,r.interface,r.note])];
+    downloadCSV(rows, 'bom_list.csv');
+  }
+
+  // ─── SHARED UTILS ───
+  function esc(s){ return s ? String(s).replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])) : ''; }
+  function downloadCSV(rows, filename){
+    const csv = rows.map(r=>r.map(v=>'"'+(v||'').toString().replace(/"/g,'""')+'"').join(',')).join('
+');
+    const blob = new Blob(['﻿'+csv],{type:'text/csv;charset=utf-8'});
+    const a=document.createElement('a'); a.href=URL.createObjectURL(blob);
+    a.download=filename; a.click(); URL.revokeObjectURL(a.href);
+  }
+
+  // ─── INIT ───
+  function init(){
+    compLoad(); bomLoad();
+
+    // competitor events
+    const compAddBtn = document.getElementById('compAddRowBtn');
+    const compClearBtn = document.getElementById('compClearBtn');
+    const compExportBtn = document.getElementById('compExportBtn');
+    const compAddModalClose = document.getElementById('compAddModalClose');
+    const compAddModalCancel = document.getElementById('compAddModalCancel');
+    const compAddModalSave = document.getElementById('compAddModalSave');
+    const compAddModal = document.getElementById('compAddModal');
+
+    if(compAddBtn) compAddBtn.addEventListener('click', openCompAdd);
+    if(compClearBtn) compClearBtn.addEventListener('click',()=>{ if(confirm('清空所有竞品？')){ competitors=[]; compSave(); compRender(); } });
+    if(compExportBtn) compExportBtn.addEventListener('click', compExportCSV);
+    if(compAddModalClose) compAddModalClose.addEventListener('click', closeCompAdd);
+    if(compAddModalCancel) compAddModalCancel.addEventListener('click', closeCompAdd);
+    if(compAddModalSave) compAddModalSave.addEventListener('click', saveCompAdd);
+    if(compAddModal) compAddModal.addEventListener('click', e=>{ if(e.target===compAddModal) closeCompAdd(); });
+
+    // bom events
+    const bomAddBtn = document.getElementById('bomAddBtn');
+    const bomClearBtn = document.getElementById('bomClearBtn');
+    const bomExportBtn = document.getElementById('bomExportBtn');
+    if(bomAddBtn) bomAddBtn.addEventListener('click', bomAddRow);
+    if(bomClearBtn) bomClearBtn.addEventListener('click',()=>{ if(confirm('清空配单表？')){ bomRows=[]; bomSave(); bomRender(); } });
+    if(bomExportBtn) bomExportBtn.addEventListener('click', bomExportCSV);
+
+    // initial render
+    compRender(); bomRender();
+  }
+
+  // Wait for DOM
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded', init);
+  else init();
 })();
 </script>
 </body>
