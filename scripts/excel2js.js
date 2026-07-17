@@ -1,23 +1,32 @@
 #!/usr/bin/env node
 /**
  * Excel 转换为 JS 数据文件
- * 用法：node scripts/excel2js.js <excel文件路径>
- * 示例：node scripts/excel2js.js data_import.xlsx
+ * 用法：node scripts/excel2js.js <excel文件> [输出目录]
+ * 示例：
+ *   node scripts/excel2js.js data_export.xlsx                    # 输出到 js/data/
+ *   node scripts/excel2js.js data_export.xlsx ./output           # 输出到 ./output/
+ *   node scripts/excel2js.js data_export.xlsx C:/my/data         # 输出到指定目录
  */
 const XLSX = require('xlsx');
 const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
-const DATA_DIR = path.join(ROOT, 'js', 'data');
+const DEFAULT_DATA_DIR = path.join(ROOT, 'js', 'data');
 
 console.log('\n📊 Excel → JS 转换脚本\n');
 
-// 获取输入文件
+// 获取输入文件和输出目录
 const inputFile = process.argv[2];
+const outputDir = process.argv[3]; // 可选参数
+
 if (!inputFile) {
-  console.log('用法: node scripts/excel2js.js <excel文件路径>');
-  console.log('示例: node scripts/excel2js.js data_import.xlsx');
+  console.log('用法: node scripts/excel2js.js <excel文件> [输出目录]');
+  console.log('');
+  console.log('示例:');
+  console.log('  node scripts/excel2js.js data_export.xlsx');
+  console.log('  node scripts/excel2js.js data_export.xlsx ./output');
+  console.log('  node scripts/excel2js.js data_export.xlsx C:/my/data');
   process.exit(1);
 }
 
@@ -26,6 +35,18 @@ if (!fs.existsSync(inputPath)) {
   console.log(`❌ 文件不存在: ${inputPath}`);
   process.exit(1);
 }
+
+// 确定输出目录
+const DATA_DIR = outputDir ? path.resolve(outputDir) : DEFAULT_DATA_DIR;
+
+// 如果输出目录不存在，创建它
+if (!fs.existsSync(DATA_DIR)) {
+  fs.mkdirSync(DATA_DIR, { recursive: true });
+  console.log(`📁 已创建输出目录: ${DATA_DIR}`);
+}
+
+console.log(`📁 输出目录: ${DATA_DIR}`);
+console.log('');
 
 // 读取 Excel
 console.log(`读取文件: ${path.basename(inputPath)}`);
@@ -124,31 +145,49 @@ if (wb.SheetNames.includes('竞品对标')) {
     ', advantageDesc: ' + JSON.stringify(row['海康优势'] || '') + ' },'
   );
 
-  // 读取原始文件，替换 competitorDB 数组
+  // 尝试读取原始文件，如果不存在则创建新文件
   const originalFile = path.join(DATA_DIR, 'competitor.js');
-  let originalContent = fs.readFileSync(originalFile, 'utf8');
+  let jsContent;
 
-  const newDB = 'var competitorDB = [\n' + lines.join('\n') + '\n];';
+  if (fs.existsSync(originalFile)) {
+    // 读取原始文件，替换 competitorDB 数组
+    let originalContent = fs.readFileSync(originalFile, 'utf8');
+    const newDB = 'var competitorDB = [\n' + lines.join('\n') + '\n];';
 
-  // 替换 competitorDB 部分
-  const startMarker = 'var competitorDB = [';
-  const startIdx = originalContent.indexOf(startMarker);
-  if (startIdx !== -1) {
-    // 找到对应的结束 ]
-    let depth = 0;
-    let endIdx = -1;
-    for (let i = startIdx + startMarker.length - 1; i < originalContent.length; i++) {
-      if (originalContent[i] === '[') depth++;
-      else if (originalContent[i] === ']') depth--;
-      if (depth === 0) { endIdx = i + 1; break; }
-    }
-    if (endIdx !== -1) {
-      originalContent = originalContent.slice(0, startIdx) + newDB + originalContent.slice(endIdx);
-      fs.writeFileSync(originalFile, originalContent, 'utf8');
-      console.log(`✅ 已更新: competitor.js`);
-      console.log(`  共 ${data.length} 条数据\n`);
+    // 替换 competitorDB 部分
+    const startMarker = 'var competitorDB = [';
+    const startIdx = originalContent.indexOf(startMarker);
+    if (startIdx !== -1) {
+      let depth = 0;
+      let endIdx = -1;
+      for (let i = startIdx + startMarker.length - 1; i < originalContent.length; i++) {
+        if (originalContent[i] === '[') depth++;
+        else if (originalContent[i] === ']') depth--;
+        if (depth === 0) { endIdx = i + 1; break; }
+      }
+      if (endIdx !== -1) {
+        originalContent = originalContent.slice(0, startIdx) + newDB + originalContent.slice(endIdx);
+        fs.writeFileSync(originalFile, originalContent, 'utf8');
+        console.log(`✅ 已更新: competitor.js`);
+        console.log(`  共 ${data.length} 条数据\n`);
+        return;
+      }
     }
   }
+
+  // 如果原始文件不存在或替换失败，创建新文件
+  jsContent = [
+    '// competitor.js - 竞品数据',
+    '// 自动生成于 ' + new Date().toLocaleString('zh-CN'),
+    '',
+    'var competitorDB = [',
+    lines.join('\n'),
+    '];'
+  ].join('\n');
+
+  fs.writeFileSync(originalFile, jsContent, 'utf8');
+  console.log(`✅ 已生成: competitor.js`);
+  console.log(`  共 ${data.length} 条数据\n`);
 }
 
 // 处理选型产品库
