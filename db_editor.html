@@ -12,128 +12,213 @@
   --text:#1A2332;--text-2:#4A5A6A;--text-3:#8A9BAC;
   --green:#0b5e42;--green-lt:#e8f5ec;--red:#dc2626;--red-lt:#fee2e2;
   --blue:#2a4a8c;--blue-lt:#e8edf8;
+  --shadow:0 2px 8px rgba(0,0,0,0.08);
+  --shadow-lg:0 8px 24px rgba(0,0,0,0.12);
 }
 *{margin:0;padding:0;box-sizing:border-box;-webkit-text-size-adjust:100%}
-body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--surface);color:var(--text);height:100vh;display:flex;flex-direction:column;overflow:hidden;font-size:14px}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--surface);color:var(--text);height:100vh;display:flex;flex-direction:column;overflow:hidden;font-size:14px}
 button,input,select,textarea{font-family:inherit}
 
 /* ── Header ── */
-header{background:var(--navy);height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 1.5rem;flex-shrink:0}
+header{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 100%);height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 1.5rem;flex-shrink:0;box-shadow:var(--shadow)}
 .hd-left{display:flex;align-items:center;gap:.8rem}
-.hd-logo{font-size:.88rem;font-weight:800;color:#fff}
-.hd-badge{background:var(--brand);color:#fff;font-size:.58rem;font-weight:700;padding:.15rem .5rem;border-radius:3px}
+.hd-logo{font-size:.92rem;font-weight:800;color:#fff;letter-spacing:0.5px}
+.hd-badge{background:var(--brand);color:#fff;font-size:.6rem;font-weight:700;padding:.2rem .6rem;border-radius:4px;letter-spacing:0.5px}
 .hd-right{display:flex;gap:.5rem}
 
 /* ── Tab bar ── */
-.tab-bar{background:var(--navy-2);display:flex;gap:0;padding:0 1.5rem;flex-shrink:0;border-bottom:2px solid var(--navy-3)}
-.tab{padding:.65rem 1.2rem;font-size:.75rem;font-weight:600;color:rgba(255,255,255,.55);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-2px;transition:all .15s;display:flex;align-items:center;gap:.4rem}
-.tab:hover{color:rgba(255,255,255,.85)}
-.tab.active{color:#fff;border-bottom-color:var(--brand)}
-.tab-count{background:rgba(255,255,255,.12);color:rgba(255,255,255,.7);font-size:.58rem;padding:.1rem .4rem;border-radius:10px}
+.tab-bar{background:var(--card);display:flex;gap:0;padding:0 1.5rem;flex-shrink:0;border-bottom:1px solid var(--border);box-shadow:0 1px 3px rgba(0,0,0,0.04)}
+.tab{padding:.75rem 1.2rem;font-size:.78rem;font-weight:600;color:var(--text-3);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;transition:all .2s;display:flex;align-items:center;gap:.5rem}
+.tab:hover{color:var(--text);background:var(--surface)}
+.tab.active{color:var(--brand);border-bottom-color:var(--brand)}
+.tab-count{background:var(--surface);color:var(--text-3);font-size:.62rem;font-weight:700;padding:.15rem .5rem;border-radius:12px;transition:all .2s}
+.tab.active .tab-count{background:var(--brand-lt);color:var(--brand)}
 
 /* ── Layout ── */
-.layout{display:flex;flex:1;overflow:hidden;padding:12px;gap:10px}
+.layout{display:flex;flex:1;overflow:hidden;padding:12px;gap:12px}
 
 /* ── Buttons ── */
-.btn{display:inline-flex;align-items:center;gap:.35rem;padding:.4rem 1rem;border-radius:6px;font-size:.75rem;font-weight:600;cursor:pointer;border:none;transition:all .15s;white-space:nowrap;line-height:1}
-.btn-sm{padding:.28rem .65rem;font-size:.68rem}
-.btn-xs{padding:.2rem .5rem;font-size:.62rem}
-.btn-ghost{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.15)}
+.btn{display:inline-flex;align-items:center;gap:.4rem;padding:.5rem 1rem;border-radius:8px;font-size:.78rem;font-weight:600;cursor:pointer;border:none;transition:all .2s;white-space:nowrap;line-height:1}
+.btn:hover{transform:translateY(-1px);box-shadow:var(--shadow)}
+.btn:active{transform:translateY(0)}
+.btn-sm{padding:.35rem .75rem;font-size:.72rem}
+.btn-xs{padding:.25rem .55rem;font-size:.65rem}
+.btn-ghost{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.2)}
 .btn-ghost:hover{background:rgba(255,255,255,.2)}
-.btn-brand{background:var(--brand);color:#fff}
-.btn-brand:hover{background:var(--brand-dk)}
+.btn-brand{background:linear-gradient(135deg,var(--brand) 0%,var(--brand-dk) 100%);color:#fff}
+.btn-brand:hover{box-shadow:0 4px 12px rgba(247,101,4,0.4)}
 .btn-outline{background:var(--card);color:var(--text-2);border:1.5px solid var(--border)}
-.btn-outline:hover{border-color:var(--text-3)}
+.btn-outline:hover{border-color:var(--brand);color:var(--brand)}
 .btn-danger{background:var(--red-lt);color:var(--red);border:1.5px solid #fca5a5}
-.btn-danger:hover{background:#fde8e8}
+.btn-danger:hover{background:#fde8e8;border-color:var(--red)}
 .btn-success{background:var(--green-lt);color:var(--green);border:1.5px solid #6ee7b7}
-.btn-success:hover{background:#d1fae5}
+.btn-success:hover{background:#d1fae5;border-color:var(--green)}
 
 /* ── Sidebar ── */
-.sidebar{width:250px;flex-shrink:0;background:var(--card);border-radius:8px;border:1px solid var(--border-lt);display:flex;flex-direction:column;overflow:hidden}
-.sb-head{padding:.65rem .9rem;border-bottom:1px solid var(--border-lt);display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
-.sb-title{font-size:.72rem;font-weight:700}
-.sb-count{font-size:.62rem;color:var(--text-3);background:var(--surface);padding:.1rem .4rem;border-radius:20px}
-.sb-search{padding:.5rem .8rem;border-bottom:1px solid var(--border-lt);flex-shrink:0}
-.sb-search input{width:100%;border:1.5px solid var(--border);border-radius:6px;padding:.32rem .6rem;font-size:.72rem;outline:none;background:var(--surface)}
-.sb-search input:focus{border-color:var(--brand);background:#fff}
-.item-list{flex:1;overflow-y:auto;padding:.35rem}
-.list-item{display:flex;align-items:center;padding:.5rem .65rem;border-radius:6px;cursor:pointer;gap:.45rem;border:1.5px solid transparent;margin-bottom:2px;transition:all .1s}
-.list-item:hover{background:var(--brand-lt)}
-.list-item.active{background:var(--brand-lt);border-color:var(--brand)}
-.item-tag{font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;flex-shrink:0;white-space:nowrap}
+.sidebar{width:300px;flex-shrink:0;background:var(--card);border-radius:12px;border:1px solid var(--border-lt);display:flex;flex-direction:column;overflow:hidden;box-shadow:var(--shadow)}
+.sb-head{padding:.6rem .8rem;border-bottom:1px solid var(--border-lt);display:flex;align-items:center;justify-content:space-between;flex-shrink:0;background:linear-gradient(180deg,var(--card) 0%,var(--surface) 100%)}
+.sb-title{font-size:.75rem;font-weight:700;color:var(--text)}
+.sb-count{font-size:.6rem;font-weight:600;color:var(--text-3);background:var(--border-lt);padding:.15rem .5rem;border-radius:20px}
+.sb-search{padding:.5rem .7rem;border-bottom:1px solid var(--border-lt);flex-shrink:0}
+.sb-search input{width:100%;border:1.5px solid var(--border);border-radius:8px;padding:.4rem .7rem;font-size:.75rem;outline:none;background:var(--surface);transition:all .2s}
+.sb-search input:focus{border-color:var(--brand);background:#fff;box-shadow:0 0 0 3px rgba(247,101,4,0.1)}
+.sb-search input::placeholder{color:var(--text-3)}
+.item-list{flex:1;overflow-y:auto;padding:.4rem}
+.list-item{display:flex;align-items:center;padding:.5rem .6rem;border-radius:6px;cursor:pointer;gap:.4rem;border:1.5px solid transparent;margin-bottom:2px;transition:all .15s}
+.list-item:hover{background:var(--brand-lt);border-color:transparent}
+.list-item.active{background:var(--brand-lt);border-color:var(--brand);box-shadow:0 2px 8px rgba(247,101,4,0.15)}
+.item-tag{font-size:.58rem;font-weight:700;padding:.15rem .4rem;border-radius:3px;flex-shrink:0;white-space:nowrap}
 .item-tag.blue{background:var(--blue-lt);color:var(--blue)}
 .item-tag.orange{background:var(--brand-lt);color:var(--brand)}
 .item-tag.navy{background:var(--navy-2);color:#fff}
 .item-tag.gray{background:var(--surface);color:var(--text-3)}
-.item-name{font-size:.72rem;font-weight:600;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.sb-foot{padding:.6rem .8rem;border-top:1px solid var(--border-lt);flex-shrink:0}
+.item-name{font-size:.72rem;font-weight:600;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text)}
+.sb-foot{padding:.5rem .7rem;border-top:1px solid var(--border-lt);flex-shrink:0}
 
 /* ── Main ── */
-.main{flex:1;background:var(--card);border-radius:8px;border:1px solid var(--border-lt);display:flex;flex-direction:column;overflow:hidden}
-.main-head{padding:.7rem 1.2rem;border-bottom:1px solid var(--border-lt);display:flex;align-items:center;gap:.7rem;flex-shrink:0}
-.main-title{font-size:.85rem;font-weight:800;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.main-body{flex:1;overflow-y:auto;padding:1.2rem}
+.main{flex:1;background:var(--card);border-radius:12px;border:1px solid var(--border-lt);display:flex;flex-direction:column;overflow:hidden;box-shadow:var(--shadow)}
+.main-head{padding:.6rem 1rem;border-bottom:1px solid var(--border-lt);display:flex;align-items:center;gap:.5rem;flex-shrink:0;background:linear-gradient(180deg,var(--card) 0%,var(--surface) 100%)}
+.main-title{font-size:.85rem;font-weight:800;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text)}
+.main-body{flex:1;overflow-y:auto;padding:.8rem 1rem}
 .empty{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;gap:.8rem;color:var(--text-3)}
-.empty-icon{font-size:2.5rem;opacity:.35}
-.empty-msg{font-size:.78rem}
+.empty-icon{font-size:2.5rem;opacity:0.4}
+.empty-msg{font-size:.78rem;text-align:center;line-height:1.5}
 
-/* ── Form ── */
-.section{margin-bottom:1.2rem}
-.section-title{font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--text-3);margin-bottom:.6rem;padding-bottom:.35rem;border-bottom:1px solid var(--border-lt)}
-.row{display:grid;gap:.7rem;margin-bottom:.7rem}
-.row-2{grid-template-columns:1fr 1fr}
-.row-3{grid-template-columns:1fr 1fr 1fr}
-.row-4{grid-template-columns:1fr 1fr 1fr 1fr}
-.row-1{grid-template-columns:1fr}
-.field label{display:block;font-size:.65rem;font-weight:600;color:var(--text-2);margin-bottom:.25rem}
-.field input,.field select,.field textarea{width:100%;border:1.5px solid var(--border);border-radius:6px;padding:.4rem .6rem;font-size:.75rem;outline:none;background:var(--surface);color:var(--text);font-family:inherit;resize:none}
-.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--brand);background:#fff}
-.field textarea{height:56px}
+/* ── Form - 横向紧凑布局 ── */
+.section{margin-bottom:.8rem;background:var(--card);border:1px solid var(--border-lt);border-radius:6px;padding:.6rem .8rem;box-shadow:0 1px 2px rgba(0,0,0,0.02)}
+.section-title{font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--text-3);margin-bottom:.5rem;padding-bottom:.35rem;border-bottom:1px solid var(--border-lt);display:flex;align-items:center;gap:.35rem}
+.section-title::before{content:'';width:3px;height:9px;background:var(--brand);border-radius:2px}
+
+/* 横向字段布局 */
+.field-row{display:flex;align-items:center;gap:.5rem;margin-bottom:.35rem}
+.field-row:last-child{margin-bottom:0}
+.field-row label{font-size:.62rem;font-weight:600;color:var(--text-2);white-space:nowrap;min-width:60px;text-align:right}
+.field-row input,.field-row select{flex:1;border:1px solid var(--border);border-radius:4px;padding:.3rem .5rem;font-size:.72rem;outline:none;background:var(--surface);color:var(--text);transition:all .15s}
+.field-row input:focus,.field-row select:focus{border-color:var(--brand);background:#fff}
+.field-row input::placeholder{color:var(--text-3)}
+
+/* 多行字段布局 */
+.field-grid{display:grid;gap:.4rem;margin-bottom:.35rem}
+.field-grid.cols-2{grid-template-columns:1fr 1fr}
+.field-grid.cols-3{grid-template-columns:1fr 1fr 1fr}
+.field-grid.cols-4{grid-template-columns:1fr 1fr 1fr 1fr}
+.field-grid .field-item{display:flex;align-items:center;gap:.4rem}
+.field-grid .field-item label{font-size:.58rem;font-weight:600;color:var(--text-3);white-space:nowrap;min-width:50px}
+.field-grid .field-item input{flex:1;border:1px solid var(--border);border-radius:4px;padding:.25rem .4rem;font-size:.7rem;outline:none;background:var(--surface);color:var(--text);transition:all .15s}
+.field-grid .field-item input:focus{border-color:var(--brand);background:#fff}
+
+/* 文本域 */
+.field-textarea{margin-bottom:.35rem}
+.field-textarea label{display:block;font-size:.58rem;font-weight:600;color:var(--text-3);margin-bottom:.2rem}
+.field-textarea textarea{width:100%;border:1px solid var(--border);border-radius:4px;padding:.3rem .5rem;font-size:.7rem;outline:none;background:var(--surface);color:var(--text);font-family:inherit;resize:none;height:44px;transition:all .15s}
+.field-textarea textarea:focus{border-color:var(--brand);background:#fff}
 
 /* ── Accessory table ── */
 .acc-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:.5rem}
-.acc-label{font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--text-3)}
-.acc-badge{display:inline-block;font-size:.6rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;margin-left:.3rem}
-.tbl{width:100%;border-collapse:collapse;font-size:.72rem;margin-bottom:1.2rem}
-.tbl th{background:var(--navy-2);color:rgba(255,255,255,.8);font-size:.62rem;font-weight:700;padding:.42rem .6rem;text-align:left;white-space:nowrap}
-.tbl th:first-child{border-radius:6px 0 0 0}
-.tbl th:last-child{border-radius:0 6px 0 0;text-align:center}
-.tbl td{padding:.3rem .4rem;border-bottom:1px solid var(--border-lt);vertical-align:middle}
+.acc-label{font-size:.65rem;font-weight:700;color:var(--text-2);display:flex;align-items:center;gap:.4rem}
+.acc-badge{display:inline-block;font-size:.58rem;font-weight:700;padding:.15rem .4rem;border-radius:3px;background:var(--brand-lt);color:var(--brand)}
+.tbl{width:100%;border-collapse:separate;border-spacing:0;font-size:.72rem;margin-bottom:1rem;border:1px solid var(--border-lt);border-radius:6px;overflow:hidden}
+.tbl th{background:var(--navy-2);color:rgba(255,255,255,.9);font-size:.62rem;font-weight:700;padding:.4rem .5rem;text-align:left;white-space:nowrap}
+.tbl th:first-child{border-radius:0}
+.tbl th:last-child{border-radius:0;text-align:center}
+.tbl td{padding:.35rem .4rem;border-bottom:1px solid var(--border-lt);vertical-align:middle;background:var(--card)}
 .tbl tr:last-child td{border-bottom:none}
 .tbl tr:hover td{background:var(--surface)}
-.tbl input,.tbl select,.tbl textarea{width:100%;border:1.5px solid transparent;border-radius:4px;padding:.22rem .4rem;font-size:.72rem;outline:none;background:transparent;color:var(--text);font-family:inherit;resize:none}
-.tbl input:focus,.tbl select:focus,.tbl textarea:focus{border-color:var(--brand);background:#fff}
-.tbl textarea{height:44px;min-height:32px}
-.tbl-del{width:26px;height:26px;border:none;border-radius:4px;background:transparent;color:var(--text-3);cursor:pointer;font-size:.82rem;display:flex;align-items:center;justify-content:center;transition:all .15s;margin:auto}
+.tbl input,.tbl select,.tbl textarea{width:100%;border:1.5px solid transparent;border-radius:4px;padding:.25rem .4rem;font-size:.72rem;outline:none;background:transparent;color:var(--text);font-family:inherit;resize:none;transition:all .15s}
+.tbl input:focus,.tbl select:focus,.tbl textarea:focus{border-color:var(--brand);background:#fff;box-shadow:0 0 0 2px rgba(247,101,4,0.08)}
+.tbl textarea{height:40px;min-height:32px}
+.tbl-del{width:24px;height:24px;border:none;border-radius:4px;background:transparent;color:var(--text-3);cursor:pointer;font-size:.8rem;display:flex;align-items:center;justify-content:center;transition:all .15s;margin:auto}
 .tbl-del:hover{background:var(--red-lt);color:var(--red)}
 
+/* ── Stats ── */
+.stats-bar{display:flex;gap:1rem;padding:.5rem 0;margin-bottom:1rem}
+.stat-item{display:flex;align-items:center;gap:.4rem;font-size:.72rem;color:var(--text-3)}
+.stat-dot{width:8px;height:8px;border-radius:50%}
+.stat-dot.blue{background:var(--blue)}
+.stat-dot.orange{background:var(--brand)}
+.stat-dot.green{background:var(--green)}
+
 /* ── Toast ── */
-.toast{position:fixed;bottom:24px;right:24px;background:var(--navy-2);color:#fff;padding:.65rem 1.1rem;border-radius:8px;font-size:.75rem;font-weight:600;z-index:9999;box-shadow:0 8px 24px rgba(0,0,0,.18);transition:opacity .3s;pointer-events:none;display:none}
-.toast.show{display:block}
-.toast.success{background:var(--green)}
-.toast.error{background:var(--red)}
+.toast{position:fixed;bottom:24px;right:24px;background:var(--navy-2);color:#fff;padding:.75rem 1.25rem;border-radius:10px;font-size:.8rem;font-weight:600;z-index:9999;box-shadow:var(--shadow-lg);transition:all .3s;pointer-events:none;display:none;transform:translateY(20px);opacity:0}
+.toast.show{display:block;transform:translateY(0);opacity:1}
+.toast.success{background:linear-gradient(135deg,#059669,#047857)}
+.toast.error{background:linear-gradient(135deg,#dc2626,#b91c1c)}
 
 /* ── Confirm ── */
-.overlay{position:fixed;inset:0;background:rgba(10,22,40,.5);z-index:1000;display:none;align-items:center;justify-content:center}
-.overlay.open{display:flex}
-.dialog{background:var(--card);border-radius:10px;padding:1.4rem;max-width:380px;width:90%;box-shadow:0 16px 48px rgba(0,0,0,.2)}
-.dlg-title{font-size:.85rem;font-weight:800;margin-bottom:.45rem}
-.dlg-msg{font-size:.75rem;color:var(--text-2);margin-bottom:1.1rem;line-height:1.5}
-.dlg-btns{display:flex;justify-content:flex-end;gap:.45rem}
+.overlay{position:fixed;inset:0;background:rgba(10,22,40,.6);backdrop-filter:blur(4px);z-index:1000;display:none;align-items:center;justify-content:center;opacity:0;transition:opacity .2s}
+.overlay.open{display:flex;opacity:1}
+.dialog{background:var(--card);border-radius:12px;padding:1.5rem;max-width:400px;width:90%;box-shadow:var(--shadow-lg);transform:scale(0.95);transition:transform .2s}
+.overlay.open .dialog{transform:scale(1)}
+.dlg-title{font-size:.92rem;font-weight:800;margin-bottom:.5rem;color:var(--text)}
+.dlg-msg{font-size:.8rem;color:var(--text-2);margin-bottom:1.2rem;line-height:1.6}
+.dlg-btns{display:flex;justify-content:flex-end;gap:.5rem}
+
+/* ── Keyboard shortcuts hint ── */
+.shortcuts{position:fixed;bottom:12px;left:12px;font-size:.65rem;color:var(--text-3);display:flex;gap:1rem}
+.shortcut{display:flex;align-items:center;gap:.3rem}
+.shortcut kbd{background:var(--surface);border:1px solid var(--border);border-radius:4px;padding:.1rem .35rem;font-size:.6rem;font-family:monospace;color:var(--text-2)}
 
 /* scrollbar */
 *{scrollbar-width:thin;scrollbar-color:var(--border) transparent}
-*::-webkit-scrollbar{width:4px;height:4px}
+*::-webkit-scrollbar{width:6px;height:6px}
+*::-webkit-scrollbar-track{background:transparent}
 *::-webkit-scrollbar-thumb{background:var(--border);border-radius:4px}
+*::-webkit-scrollbar-thumb:hover{background:var(--text-3)}
+
+/* ── 响应式布局 ── */
+@media (max-width: 768px) {
+  .layout{flex-direction:column;padding:8px;gap:8px}
+  .sidebar{width:100%;max-height:40vh;border-radius:10px}
+  .main{border-radius:10px}
+  .item-list{max-height:200px}
+  .field-row{flex-wrap:wrap}
+  .field-row label{min-width:50px}
+  .field-grid.cols-4{grid-template-columns:1fr 1fr}
+  .field-grid.cols-3{grid-template-columns:1fr 1fr}
+  .hd-logo{font-size:.78rem}
+  .hd-badge{display:none}
+  .btn span.btn-text{display:none}
+}
+
+@media (max-width: 480px) {
+  .tab-bar{overflow-x:auto;flex-wrap:nowrap;padding:0 .5rem}
+  .tab{padding:.5rem .8rem;font-size:.7rem;white-space:nowrap}
+  .sidebar{max-height:35vh}
+  .main-body{padding:.6rem}
+  .section{padding:.5rem .6rem}
+  .field-grid.cols-4{grid-template-columns:1fr}
+  .field-grid.cols-2{grid-template-columns:1fr}
+  .shortcuts{display:none}
+}
+
+/* ── Animations ── */
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.fade-in{animation:fadeIn .2s ease-out}
+
+/* ── Filter bar ── */
+.filter-bar{padding:.4rem .6rem;border-bottom:1px solid var(--border-lt);flex-shrink:0;display:flex;gap:.4rem;align-items:center}
+.filter-select{flex:1;border:1px solid var(--border);border-radius:6px;padding:.3rem .5rem;font-size:.68rem;background:var(--card);color:var(--text);outline:none;cursor:pointer}
+.filter-select:focus{border-color:var(--brand)}
+.filter-clear{font-size:.6rem;color:var(--text-3);cursor:pointer;padding:.2rem .4rem;border-radius:4px;transition:all .15s;white-space:nowrap;border:1px solid var(--border)}
+.filter-clear:hover{color:var(--red);background:var(--red-lt);border-color:var(--red)}
+
+/* ── Template modal ── */
+.template-list{max-height:300px;overflow-y:auto;margin:.8rem 0;border:1px solid var(--border-lt);border-radius:8px}
+.template-item{display:flex;align-items:center;gap:.6rem;padding:.6rem .8rem;cursor:pointer;border-bottom:1px solid var(--border-lt);transition:background .15s}
+.template-item:last-child{border-bottom:none}
+.template-item:hover{background:var(--brand-lt)}
+.template-item.selected{background:var(--brand-lt);outline:2px solid var(--brand)}
+.template-tag{font-size:.6rem;font-weight:700;padding:.15rem .4rem;border-radius:3px;background:var(--blue-lt);color:var(--blue)}
+.template-name{font-size:.78rem;font-weight:600;flex:1}
+.template-desc{font-size:.65rem;color:var(--text-3)}
 </style>
 </head>
 <body>
 
 <header>
   <div class="hd-left">
-    <a href="index.html" class="btn btn-ghost btn-sm" style="text-decoration:none;margin-right:.3rem;">← 返回</a>
-    <svg width="18" height="18" viewBox="0 0 24 24"><rect x="2" y="2" width="9" height="9" rx="1" fill="#f76504"/><rect x="13" y="2" width="9" height="9" rx="1" fill="rgba(255,255,255,.3)"/><rect x="2" y="13" width="9" height="9" rx="1" fill="rgba(255,255,255,.3)"/><rect x="13" y="13" width="9" height="9" rx="1" fill="rgba(255,255,255,.15)"/></svg>
+    <a href="index.html" class="btn btn-ghost btn-sm" style="text-decoration:none">← 返回</a>
+    <svg width="20" height="20" viewBox="0 0 24 24"><rect x="2" y="2" width="9" height="9" rx="2" fill="#f76504"/><rect x="13" y="2" width="9" height="9" rx="2" fill="rgba(255,255,255,.3)"/><rect x="2" y="13" width="9" height="9" rx="2" fill="rgba(255,255,255,.3)"/><rect x="13" y="13" width="9" height="9" rx="2" fill="rgba(255,255,255,.15)"/></svg>
     <span class="hd-logo">HIKROBOT · 数据库编辑器</span>
     <span class="hd-badge">V3.0</span>
   </div>
@@ -145,7 +230,7 @@ header{background:var(--navy);height:52px;display:flex;align-items:center;justif
 
 <div class="tab-bar">
   <div class="tab active" onclick="switchTab('peidan')" id="tab_peidan">📋 配单数据 <span class="tab-count" id="tc_peidan">0</span></div>
-  <div class="tab" onclick="switchTab('mapping')" id="tab_mapping">🔄 对照表 <span class="tab-count" id="tc_mapping">0</span></div>
+  <div class="tab" onclick="switchTab('mapping')" id="tab_mapping">🔄 产品表 <span class="tab-count" id="tc_mapping">0</span></div>
   <div class="tab" onclick="switchTab('competitor')" id="tab_competitor">🔬 竞品对标 <span class="tab-count" id="tc_competitor">0</span></div>
   <div class="tab" onclick="switchTab('product')" id="tab_product">⚡ 选型产品库 <span class="tab-count" id="tc_product">0</span></div>
 </div>
@@ -155,11 +240,17 @@ header{background:var(--navy);height:52px;display:flex;align-items:center;justif
   <div class="sidebar">
     <div class="sb-head">
       <span class="sb-title" id="sbTitle">列表</span>
-      <span class="sb-count" id="sbCount">0</span>
+      <span class="sb-count" id="sbCount">0 条</span>
     </div>
-    <div class="sb-search"><input id="sbSearch" placeholder="搜索…" oninput="renderList()"></div>
+    <div class="sb-search"><input id="sbSearch" placeholder="搜索型号、名称..." oninput="renderList()"></div>
+    <div class="filter-bar" id="filterBar"></div>
     <div class="item-list" id="itemList"></div>
-    <div class="sb-foot"><button class="btn btn-outline" style="width:100%" onclick="addItem()">＋ 新建</button></div>
+    <div class="sb-foot">
+      <div style="display:flex;gap:.5rem">
+        <button class="btn btn-outline" style="flex:1" onclick="addItem()">＋ 新建</button>
+        <button class="btn btn-brand btn-sm" onclick="showTemplateModal()" title="从模板新建">📋 模板</button>
+      </div>
+    </div>
   </div>
 
   <!-- 编辑区 -->
@@ -167,13 +258,13 @@ header{background:var(--navy);height:52px;display:flex;align-items:center;justif
     <div class="main-head" id="mainHead" style="display:none">
       <span class="main-title" id="mainTitle"></span>
       <button class="btn btn-sm btn-outline" onclick="duplicateItem()">⧉ 复制</button>
-      <button class="btn btn-sm btn-danger" onclick="confirmDelete()">删除</button>
+      <button class="btn btn-sm btn-danger" onclick="confirmDelete()">🗑️ 删除</button>
       <button class="btn btn-sm btn-success" onclick="saveItem()">✓ 保存</button>
     </div>
     <div class="main-body" id="mainBody">
       <div class="empty">
         <div class="empty-icon">🗄️</div>
-        <div class="empty-msg">选择左侧条目开始编辑，或点击「＋ 新建」</div>
+        <div class="empty-msg">选择左侧条目开始编辑<br>或点击「＋ 新建」创建新条目</div>
       </div>
     </div>
   </div>
@@ -190,8 +281,32 @@ header{background:var(--navy);height:52px;display:flex;align-items:center;justif
   </div>
 </div>
 
+<!-- 模板选择弹窗 -->
+<div class="overlay" id="templateOverlay">
+  <div class="dialog" style="max-width:500px">
+    <div class="dlg-title">📋 从模板新建</div>
+    <div class="dlg-msg">选择一个已有条目作为模板，快速创建相似型号：</div>
+    <div class="template-list" id="templateList"></div>
+    <div class="dlg-btns">
+      <button class="btn btn-outline btn-sm" onclick="closeTemplateModal()">取消</button>
+      <button class="btn btn-brand btn-sm" id="templateOk" onclick="createFromTemplate()">创建</button>
+    </div>
+  </div>
+</div>
+
 <input type="file" id="fileInput" accept=".js,.json" style="display:none" onchange="handleImport(event)">
 <div class="toast" id="toast"></div>
+
+<div class="shortcuts">
+  <span class="shortcut"><kbd>Ctrl</kbd>+<kbd>S</kbd> 保存</span>
+  <span class="shortcut"><kbd>Esc</kbd> 关闭弹窗</span>
+</div>
+
+<!-- 数据文件必须在内联脚本之前加载 -->
+<script src="js/data/product_db.js"></script>
+<script src="js/data/competitor.js"></script>
+<script src="js/data/mapping.js"></script>
+<script src="js/data/peidan.js"></script>
 
 <script>
 // ═══════════════════════════ STATE ═══════════════════════════
@@ -202,7 +317,9 @@ var state = {
   competitor: [],  // competitorDB
   product: [],     // PRODUCT_DB
   idx: null,
-  dirty: {}        // which tabs have unsaved changes
+  dirty: {},       // which tabs have unsaved changes
+  filter: null,    // current filter value
+  templateIdx: null // selected template index
 };
 
 var CAT_OPTS = ['大类','线缆','网线','电源线','电源','安装','安装板','镜头','测试镜头','镜头罩','光源','微码光源','爆闪光源','灯板','外置配件','其他'];
@@ -233,40 +350,40 @@ function field(id, label, value, type, ph, opts){
   type = type || 'text';
   var inp;
   if(type==='select' && opts){
-    // 支持 opts 为数组或 {opts: [...]} 格式
     var optArr = Array.isArray(opts) ? opts : (opts.opts || []);
     var optHtml = optArr.map(function(o){
       var v=typeof o==='object'?o.v:o, l=typeof o==='object'?o.l:o;
       return '<option value="'+esc(v)+'"'+(v==value?' selected':'')+'>'+esc(l)+'</option>';
     }).join('');
-    // 支持自定义输入：如果当前值不在选项中，插入它
     if(value && optArr.every(function(o){ var v=typeof o==='object'?o.v:o; return v!==value; })){
       optHtml = '<option value="'+esc(value)+'" selected>'+esc(value)+'</option>' + optHtml;
     }
     inp = '<select id="f_'+id+'">' + optHtml + '</select>';
   } else if(type==='textarea'){
-    inp = '<textarea id="f_'+id+'" placeholder="'+esc(ph||'')+'">'+esc(value||'')+'</textarea>';
+    return '<div class="field-textarea"><label>'+label+'</label><textarea id="f_'+id+'" placeholder="'+esc(ph||'')+'">'+esc(value||'')+'</textarea></div>';
   } else {
     inp = '<input id="f_'+id+'" type="'+type+'" value="'+esc(value||'')+'" placeholder="'+esc(ph||'')+'">';
   }
-  return '<div class="field"><label>'+label+'</label>'+inp+'</div>';
+  return '<div class="field-row"><label>'+label+'</label>'+inp+'</div>';
 }
 
 function get(id){ var el=document.getElementById(id); return el?el.value:''; }
 
 function showEmpty(){
   document.getElementById('mainHead').style.display='none';
-  document.getElementById('mainBody').innerHTML='<div class="empty"><div class="empty-icon">🗄️</div><div class="empty-msg">选择左侧条目开始编辑，或点击「＋ 新建」</div></div>';
+  document.getElementById('mainBody').innerHTML='<div class="empty fade-in"><div class="empty-icon">🗄️</div><div class="empty-msg">选择左侧条目开始编辑<br>或点击「＋ 新建」创建新条目</div></div>';
 }
 
 // ═══════════════════════════ TAB ═══════════════════════════
 function switchTab(tab){
   state.tab = tab;
   state.idx = null;
+  state.filter = null;
   document.querySelectorAll('.tab').forEach(function(t){ t.classList.remove('active'); });
   document.getElementById('tab_'+tab).classList.add('active');
   document.getElementById('sbSearch').value = '';
   showEmpty();
+  renderFilters();
   renderList();
   updateCounts();
 }
@@ -278,6 +395,70 @@ function updateCounts(){
   document.getElementById('tc_product').textContent = state.product.length;
 }
 
+// ═══════════════════════════ FILTER ═══════════════════════════
+function renderFilters(){
+  var arr = state[state.tab];
+  var filterKey = '';
+  if(state.tab==='peidan') filterKey = 'productSeries';
+  else if(state.tab==='mapping') filterKey = 'cat';
+  else if(state.tab==='competitor') filterKey = 'brand';
+  else if(state.tab==='product') filterKey = 'series';
+
+  if(!filterKey || !arr.length){
+    document.getElementById('filterBar').innerHTML = '';
+    return;
+  }
+
+  // 统计每个分组的数量
+  var groups = {};
+  arr.forEach(function(item){
+    var val = item[filterKey] || '未分类';
+    groups[val] = (groups[val] || 0) + 1;
+  });
+
+  // 按数量排序
+  var sorted = Object.keys(groups).sort(function(a,b){ return groups[b] - groups[a]; });
+  _filterValues = sorted;
+
+  // 构建下拉选项
+  var optionsHtml = '<option value="">全部 (' + arr.length + ')</option>';
+  sorted.forEach(function(g){
+    var selected = state.filter === g ? ' selected' : '';
+    optionsHtml += '<option value="'+esc(g)+'"'+selected+'>'+esc(g)+' ('+groups[g]+')</option>';
+  });
+
+  var html = '<select class="filter-select" onchange="onFilterChange(this.value)">'+optionsHtml+'</select>';
+  if(state.filter){
+    html += '<span class="filter-clear" onclick="clearFilter()">✕ 清除</span>';
+  }
+
+  document.getElementById('filterBar').innerHTML = html;
+}
+
+function onFilterChange(val){
+  state.filter = val || null;
+  renderFilters();
+  renderList();
+}
+
+function toggleFilter(val){
+  state.filter = state.filter === val ? null : val;
+  renderFilters();
+  renderList();
+}
+
+var _filterValues = [];
+function toggleFilterByIndex(idx){
+  var val = _filterValues[idx];
+  if(val !== undefined) toggleFilter(val);
+}
+
+function clearFilter(){
+  state.filter = null;
+  renderFilters();
+  renderList();
+}
+
 // ═══════════════════════════ LIST ═══════════════════════════
 function renderList(){
   var kw = (document.getElementById('sbSearch').value||'').trim().toLowerCase();
@@ -286,7 +467,15 @@ function renderList(){
   document.getElementById('sbTitle').textContent = titles[state.tab];
   document.getElementById('sbCount').textContent = arr.length+' 条';
 
+  // 获取筛选字段
+  var filterKey = '';
+  if(state.tab==='peidan') filterKey = 'productSeries';
+  else if(state.tab==='mapping') filterKey = 'cat';
+  else if(state.tab==='competitor') filterKey = 'brand';
+  else if(state.tab==='product') filterKey = 'series';
+
   var html = '';
+  var matchCount = 0;
   arr.forEach(function(item, i){
     var tag='', name='';
     if(state.tab==='peidan'){
@@ -302,11 +491,26 @@ function renderList(){
       tag='<span class="item-tag orange">'+esc(item.series||'—')+'</span>';
       name=item.model||'（未命名）';
     }
+
+    // 应用筛选
+    if(state.filter && filterKey){
+      var filterVal = item[filterKey] || '未分类';
+      if(filterVal !== state.filter) return;
+    }
+
+    // 应用搜索
     if(kw && name.toLowerCase().indexOf(kw)===-1 && (tag.toLowerCase().indexOf(kw)===-1)) return;
-    html+='<div class="list-item'+(i===state.idx?' active':'')+'" onclick="selectItem('+i+')">'+tag+'<span class="item-name" title="'+esc(name)+'">'+esc(name)+'</span></div>';
+
+    matchCount++;
+    html+='<div class="list-item fade-in'+(i===state.idx?' active':'')+'" onclick="selectItem('+i+')">'+tag+'<span class="item-name" title="'+esc(name)+'">'+esc(name)+'</span></div>';
   });
-  if(!html) html='<div style="padding:.8rem;font-size:.72rem;color:var(--text-3);text-align:center">无匹配结果</div>';
+  if(!html) html='<div style="padding:1rem;font-size:.78rem;color:var(--text-3);text-align:center">无匹配结果</div>';
   document.getElementById('itemList').innerHTML = html;
+
+  // 更新搜索提示
+  if((kw || state.filter) && matchCount > 0){
+    document.getElementById('sbCount').textContent = matchCount+' / '+arr.length+' 条';
+  }
 }
 
 // ═══════════════════════════ SELECT / EDIT ═══════════════════════════
@@ -326,12 +530,11 @@ function selectItem(idx){
 function renderPeidan(m){
   document.getElementById('mainTitle').textContent = m.productModel||'（未命名）';
   document.getElementById('mainBody').innerHTML =
-    '<div class="section"><div class="section-title">基本信息</div>' +
-    '<div class="row row-3">' +
-      field('pc','产品大类',m.productCategory,'select','',{v:'',l:'── 选择或输入 ──', opts: getProductCategories()}) +
-      field('ps','产品系列',m.productSeries,'select','',{v:'',l:'── 选择或输入 ──', opts: getProductSeries()}) +
-      field('pm','具体型号',m.productModel,'text','如 MV-ID803M-U(基线)') +
-    '</div></div>' +
+    '<div class="section fade-in"><div class="section-title">基本信息</div>' +
+      field('pm','型号',m.productModel,'text','如 MV-ID803M-U(基线)') +
+      field('pc','大类',m.productCategory,'select','',{v:'',l:'── 选择 ──', opts: getProductCategories()}) +
+      field('ps','系列',m.productSeries,'select','',{v:'',l:'── 选择 ──', opts: getProductSeries()}) +
+    '</div>' +
     accSection('std','标配配件',m.standardAccessories,'blue') +
     accSection('opt','选配配件',m.optionalAccessories,'orange');
 
@@ -349,22 +552,22 @@ function accSection(kind, title, accs, tagColor){
   var rows = accs.map(function(a,i){
     var catOpts = CAT_OPTS.map(function(c){return '<option'+(c===a.category?' selected':'')+'>'+c+'</option>';}).join('');
     return '<tr>'+
-      '<td style="width:75px"><select onchange="updateAcc(\''+kind+'\','+i+',\'category\',this.value)">'+catOpts+'</select></td>'+
-      '<td style="width:130px"><input value="'+esc(a.name)+'" placeholder="名称" oninput="updateAcc(\''+kind+'\','+i+',\'name\',this.value)"></td>'+
-      '<td style="width:100px"><input value="'+esc(a.code)+'" placeholder="物料代码" oninput="updateAcc(\''+kind+'\','+i+',\'code\',this.value)"></td>'+
+      '<td style="width:85px"><select onchange="updateAcc(\''+kind+'\','+i+',\'category\',this.value)">'+catOpts+'</select></td>'+
+      '<td style="width:140px"><input value="'+esc(a.name)+'" placeholder="名称" oninput="updateAcc(\''+kind+'\','+i+',\'name\',this.value)"></td>'+
+      '<td style="width:110px"><input value="'+esc(a.code)+'" placeholder="物料代码" oninput="updateAcc(\''+kind+'\','+i+',\'code\',this.value)"></td>'+
       '<td><textarea placeholder="描述" oninput="updateAcc(\''+kind+'\','+i+',\'detail\',this.value)">'+esc(a.detail)+'</textarea></td>'+
-      '<td style="width:32px"><button class="tbl-del" onclick="delAcc(\''+kind+'\','+i+')">✕</button></td>'+
+      '<td style="width:36px"><button class="tbl-del" onclick="delAcc(\''+kind+'\','+i+')">✕</button></td>'+
     '</tr>';
   }).join('');
-  return '<div class="section">'+
+  return '<div class="section fade-in">'+
     '<div class="acc-head">'+
       '<span class="acc-label">'+title+' <span class="acc-badge" '+badgeCls+'>'+accs.length+'</span></span>'+
       '<button class="btn btn-xs btn-outline" onclick="addAcc(\''+kind+'\')">＋ 添加</button>'+
     '</div>'+
     '<table class="tbl"><thead><tr>'+
-      '<th style="width:100px">大类</th><th style="width:150px">名称</th><th style="width:120px">物料代码</th><th>描述</th><th></th>'+
+      '<th style="width:100px">大类</th><th style="width:160px">名称</th><th style="width:130px">物料代码</th><th>描述</th><th></th>'+
     '</tr></thead><tbody id="acc_'+kind+'">'+
-      (rows||'<tr><td colspan="5" style="padding:.8rem;text-align:center;color:var(--text-3)">暂无配件</td></tr>')+
+      (rows||'<tr><td colspan="5" style="padding:1.2rem;text-align:center;color:var(--text-3)">暂无配件，点击上方「＋ 添加」</td></tr>')+
     '</tbody></table></div>';
 }
 
@@ -376,6 +579,7 @@ function addAcc(kind){
   var arr = kind==='std' ? state.peidan[state.idx].standardAccessories : state.peidan[state.idx].optionalAccessories;
   arr.push({category: kind==='opt'?'其他':'大类', name:'', code:'', detail:''});
   renderPeidan(state.peidan[state.idx]);
+  toast('✅ 已添加配件');
 }
 function delAcc(kind,i){
   var arr = kind==='std' ? state.peidan[state.idx].standardAccessories : state.peidan[state.idx].optionalAccessories;
@@ -387,20 +591,14 @@ function delAcc(kind,i){
 function renderMapping(m){
   document.getElementById('mainTitle').textContent = (m.baseName||'（未命名）');
   document.getElementById('mainBody').innerHTML =
-    '<div class="section"><div class="section-title">对照信息</div>' +
-    '<div class="row row-3">' +
-      field('mcat','系列分类',m.cat,'text','如 ID803M系列') +
+    '<div class="section fade-in"><div class="section-title">对照信息</div>' +
+      field('mcat','系列',m.cat,'text','如 ID803M系列') +
       field('mseq','序号',m.seq,'number','') +
-      '<div></div>' +
-    '</div>' +
-    '<div class="row row-2">' +
       field('mbn','基线型号',m.baseName,'text','') +
       field('mbc','基线代码',m.baseCode,'text','') +
-    '</div>' +
-    '<div class="row row-2">' +
       field('mdn','经销型号',m.distName,'text','') +
       field('mdc','经销代码',m.distCode,'text','') +
-    '</div></div>';
+    '</div>';
 
   ['mcat','mseq','mbn','mbc','mdn','mdc'].forEach(function(id){
     var keyMap={mcat:'cat',mseq:'seq',mbn:'baseName',mbc:'baseCode',mdn:'distName',mdc:'distCode'};
@@ -419,20 +617,13 @@ function renderCompetitor(m){
   });
   brandOpts.unshift({v:'',l:'── 选择品牌 ──'});
   document.getElementById('mainBody').innerHTML =
-    '<div class="section"><div class="section-title">竞品信息</div>' +
-    '<div class="row row-2">' +
-      field('cbrand','友商品牌',m.brand,'select','',brandOpts) +
-      field('cmodel','友商型号',m.model,'text','如 SR-1000') +
-    '</div>' +
-    '<div class="row row-1">' +
-      field('cdesc','友商特点',m.competitorDesc,'textarea','描述该友商型号的核心规格和特点') +
-    '</div>' +
-    '<div class="row row-1">' +
-      field('chik','推荐海康型号',m.hikModel,'text','如 ID3013PM / ID2023XM') +
-    '</div>' +
-    '<div class="row row-1">' +
-      field('cadv','海康优势',m.advantageDesc,'textarea','相比友商型号，海康产品的竞争优势') +
-    '</div></div>';
+    '<div class="section fade-in"><div class="section-title">竞品信息</div>' +
+      field('cbrand','品牌',m.brand,'select','',brandOpts) +
+      field('cmodel','型号',m.model,'text','如 SR-1000') +
+      field('chik','海康型号',m.hikModel,'text','如 ID3013PM') +
+      field('cdesc','友商特点',m.competitorDesc,'textarea','核心规格和特点') +
+      field('cadv','海康优势',m.advantageDesc,'textarea','竞争优势') +
+    '</div>';
 
   var keys={cbrand:'brand',cmodel:'model',cdesc:'competitorDesc',chik:'hikModel',cadv:'advantageDesc'};
   Object.keys(keys).forEach(function(id){
@@ -452,25 +643,22 @@ function renderProduct(m){
   document.getElementById('mainTitle').textContent = m.model||'（未命名）';
   var protOpts=[{v:'IP54',l:'IP54'},{v:'IP65',l:'IP65'},{v:'IP67',l:'IP67'}];
   document.getElementById('mainBody').innerHTML =
-    '<div class="section"><div class="section-title">基本信息</div>' +
-    '<div class="row row-3">' +
+    '<div class="section fade-in"><div class="section-title">基本信息</div>' +
       field('pmodel','型号',m.model,'text','如 ID803M-03M') +
       field('pseries','系列',m.series,'text','如 ID800') +
-      field('pprot','防护等级',m.protection,'select','',protOpts) +
+      field('pprot','防护',m.protection,'select','',protOpts) +
+      field('piface','接口',m.interface,'text','如 USB2.0、RS232') +
     '</div>' +
-    '<div class="row row-1">' +
-      field('piface','接口',m.interface,'text','如 USB2.0、RS232、RJ45') +
-    '</div></div>' +
-    '<div class="section"><div class="section-title">光学参数</div>' +
-    '<div class="row row-4">' +
-      field('prw','分辨率宽 (px)',m.resolution.w,'number','') +
-      field('prh','分辨率高 (px)',m.resolution.h,'number','') +
-      field('ppx','像素尺寸 (µm)',m.pixelSize,'number','') +
-      field('pfocal','焦距 (mm)',m.focal||'','number','C-Mount 留空') +
+    '<div class="section fade-in"><div class="section-title">光学参数</div>' +
+    '<div class="field-grid cols-4">' +
+      '<div class="field-item"><label>宽</label><input id="f_prw" type="number" value="'+(m.resolution.w||0)+'"></div>' +
+      '<div class="field-item"><label>高</label><input id="f_prh" type="number" value="'+(m.resolution.h||0)+'"></div>' +
+      '<div class="field-item"><label>像素</label><input id="f_ppx" type="number" value="'+(m.pixelSize||0)+'"></div>' +
+      '<div class="field-item"><label>焦距</label><input id="f_pfocal" type="number" value="'+(m.focal||'')+'"></div>' +
     '</div>' +
-    '<div class="row row-2">' +
-      field('pwdmin','工作距离最小 (mm)',m.workingDist.min,'number','') +
-      field('pwdmax','工作距离最大 (mm)',m.workingDist.max,'number','') +
+    '<div class="field-grid cols-2">' +
+      '<div class="field-item"><label>最小距离</label><input id="f_pwdmin" type="number" value="'+(m.workingDist.min||0)+'"></div>' +
+      '<div class="field-item"><label>最大距离</label><input id="f_pwdmax" type="number" value="'+(m.workingDist.max||0)+'"></div>' +
     '</div></div>';
 
   var simpleKeys={pmodel:'model',pseries:'series',pprot:'protection',piface:'interface'};
@@ -510,10 +698,11 @@ function duplicateItem(){
   else if(state.tab==='product' && copy.model) copy.model += ' (副本)';
   state[state.tab].splice(state.idx+1, 0, copy);
   state.idx = state.idx + 1;
+  renderFilters();
   renderList();
   selectItem(state.idx);
   updateCounts();
-  toast('✅ 已复制','success');
+  toast('✅ 已复制条目','success');
 }
 
 function addItem(){
@@ -529,9 +718,11 @@ function addItem(){
   }
   state[state.tab].push(newItem);
   state.idx = state[state.tab].length-1;
+  renderFilters();
   renderList();
   selectItem(state.idx);
   updateCounts();
+  toast('✅ 已新建条目');
 }
 
 function saveItem(){
@@ -556,9 +747,86 @@ function doDelete(){
   updateCounts();
   if(state.idx!==null) selectItem(state.idx);
   else showEmpty();
-  toast('已删除','error');
+  toast('已删除条目','error');
 }
 function closeDialog(){ document.getElementById('overlay').classList.remove('open'); }
+
+// ═══════════════════════════ TEMPLATE ═══════════════════════════
+function showTemplateModal(){
+  var arr = state[state.tab];
+  if(!arr.length){
+    toast('没有可用的模板，请先创建条目','error');
+    return;
+  }
+
+  state.templateIdx = null;
+  var html = '';
+  arr.forEach(function(item, i){
+    var name = '';
+    if(state.tab==='peidan') name = item.productModel || '（未命名）';
+    else if(state.tab==='mapping') name = item.baseName || '（未命名）';
+    else if(state.tab==='competitor') name = (item.brand||'') + (item.model?' · '+item.model:'');
+    else name = item.model || '（未命名）';
+
+    var tag = '';
+    if(state.tab==='peidan') tag = item.productSeries || '';
+    else if(state.tab==='mapping') tag = item.cat || '';
+    else if(state.tab==='competitor') tag = item.brand || '';
+    else tag = item.series || '';
+
+    html += '<div class="template-item" onclick="selectTemplate('+i+', this)">';
+    if(tag) html += '<span class="template-tag">'+esc(tag)+'</span>';
+    html += '<span class="template-name">'+esc(name)+'</span>';
+    html += '</div>';
+  });
+
+  document.getElementById('templateList').innerHTML = html;
+  document.getElementById('templateOverlay').classList.add('open');
+}
+
+function selectTemplate(idx, el){
+  state.templateIdx = idx;
+  document.querySelectorAll('.template-item').forEach(function(item){ item.classList.remove('selected'); });
+  el.classList.add('selected');
+}
+
+function closeTemplateModal(){
+  document.getElementById('templateOverlay').classList.remove('open');
+  state.templateIdx = null;
+}
+
+function createFromTemplate(){
+  if(state.templateIdx === null){
+    toast('请先选择一个模板','error');
+    return;
+  }
+
+  var template = state[state.tab][state.templateIdx];
+  var copy = clone(template);
+
+  // 清空名称字段，方便用户输入新名称
+  if(state.tab==='peidan'){
+    copy.productModel = '';
+  } else if(state.tab==='mapping'){
+    copy.baseName = '';
+    copy.baseCode = '';
+    copy.distName = '';
+    copy.distCode = '';
+  } else if(state.tab==='competitor'){
+    copy.model = '';
+  } else {
+    copy.model = '';
+  }
+
+  state[state.tab].push(copy);
+  state.idx = state[state.tab].length - 1;
+  closeTemplateModal();
+  renderFilters();
+  renderList();
+  selectItem(state.idx);
+  updateCounts();
+  toast('✅ 已从模板创建，清修改型号名称','success');
+}
 
 // ═══════════════════════════ IMPORT ═══════════════════════════
 function importFile(){ document.getElementById('fileInput').click(); }
@@ -729,7 +997,13 @@ function exportFile(){
 // ═══════════════════════════ KEYBOARD ═══════════════════════════
 document.addEventListener('keydown',function(e){
   if((e.ctrlKey||e.metaKey)&&e.key==='s'){ e.preventDefault(); if(state.idx!==null) saveItem(); }
-  if(e.key==='Escape') closeDialog();
+  if(e.key==='Escape'){
+    if(document.getElementById('templateOverlay').classList.contains('open')){
+      closeTemplateModal();
+    } else {
+      closeDialog();
+    }
+  }
 });
 
 // ═══════════════════════════ INIT ═══════════════════════════
@@ -757,6 +1031,7 @@ function autoLoadData() {
     console.log('✅ 自动加载产品库：' + state.product.length + ' 条');
   }
   updateCounts();
+  renderFilters();
   renderList();
 }
 
@@ -764,13 +1039,8 @@ function autoLoadData() {
 setTimeout(autoLoadData, 500);
 
 updateCounts();
+renderFilters();
 renderList();
 </script>
-
-<!-- 自动加载数据文件 -->
-<script src="js/data/product_db.js"></script>
-<script src="js/data/competitor.js"></script>
-<script src="js/data/mapping.js"></script>
-<script src="js/data/peidan.js"></script>
 </body>
 </html>
