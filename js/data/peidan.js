@@ -1,253 +1,85 @@
 // peidan.js - 配单数据文件
-// 生成时间：2026/6/26 19:48:02
+// 自动生成于 2026/7/18 01:31:27
 
 window.PEIDAN_DATA = {
   "currentConfig": {
-    "productCategory": "ID5000 工业读码器",
-    "productSeries": "ID5000XM",
-    "productModel": "MV-ID5000XM-00C",
+    "productCategory": "ID800 工业读码器",
+    "productSeries": "ID800",
+    "productModel": "MV-ID803M-U(基线)",
     "standardAccessories": [
       {
         "category": "大类",
-        "name": "安装板",
-        "code": "192119847",
-        "detail": "V-读码器023-安装支架"
+        "name": "U 口线缆",
+        "code": "101523961",
+        "detail": "10P10C转OPEN+USB-AM,2m,黑色线缆特性：弯折30W次，运动速度30次/分，弯折半径：12D；"
       },
       {
         "category": "大类",
         "name": "螺丝包",
-        "code": "193100772",
-        "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)"
+        "code": "193100773",
+        "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)"
+      },
+      {
+        "category": "大类",
+        "name": "泡棉",
+        "code": "194405409",
+        "detail": "192x140x80 机器视觉 ID2000E相机 EPE"
       },
       {
         "category": "大类",
         "name": "外包装",
-        "code": "194230227",
-        "detail": "228x180x120 机器视觉 烫银logo白盒"
+        "code": "194213827",
+        "detail": "195x145x135 机器视觉 视觉传感器黄包"
       }
     ],
     "optionalAccessories": [
       {
+        "category": "其他",
+        "name": "安装板",
+        "code": "190193441",
+        "detail": "V-读码器005-安装支架M3适配ID2013EM、ID800M使用，L型，安装孔位为M6，相机孔位M3"
+      },
+      {
+        "category": "线缆",
+        "name": "串口线缆",
+        "code": "101523962",
+        "detail": "10P10C转OPEN+DB9F(DC-J),1.5m,黑色 线缆特性：弯折30W次，运动速度30次/分，弯折半径：12D；"
+      },
+      {
+        "category": "线缆",
+        "name": "组合线缆",
+        "code": "101524790",
+        "detail": "10P10C转OPEN+DB9F(DC-J)+USB-AM,2m,黑"
+      },
+      {
         "category": "电源",
-        "name": "电源适配器",
+        "name": "电源适配器1",
+        "code": "310100899",
+        "detail": "ADS-26FSG-12 12024EPCN(两线)   电源适配器_12V2A_ADS-26FSG-12 12024EPCN,AC100-240V,国标,24W,两线,VI"
+      },
+      {
+        "category": "电源",
+        "name": "电源适配器2",
         "code": "310100901",
-        "detail": "KPL-060M-VI(中性)  桌面式适配器,24V2.5A,60W,1.2m,open两线"
+        "detail": "KPL-060M-VI(中性)   桌面式适配器,24V2.5A,60W,1.2m,open两线"
       },
       {
         "category": "电源",
         "name": "电源适配器线缆",
         "code": "310100840",
-        "detail": "AC电源线-C13   交流电源线_国标_弯三插_C13_1.2米(中性) 备注:电源适配器需要搭配适配器线缆使用"
+        "detail": "AC电源线-C13 交流电源线_国标_弯三插_C13_1.2米(中性)   备注：下单时需选配电源适配器之一+适配器线缆"
       },
       {
         "category": "电源",
-        "name": "开关电源1",
+        "name": "开关电源",
         "code": "310100905",
-        "detail": "LRS-50-24(中性)   开关电源,24V2.09A,50W,接线端子"
-      },
-      {
-        "category": "电源",
-        "name": "开关电源2",
-        "code": "310100904",
-        "detail": "LRS-150F-24(中性)  开关电源,24V6.25A,150W,接线端子"
+        "detail": "LRS-50-24(中性) 开关电源,24V2.09A,50W,接线端子"
       },
       {
         "category": "电源",
         "name": "开关电源线缆",
         "code": "310100843",
-        "detail": "AC电源线-open  交流电源线_国标_弯三插_open_2米(中性)  备注：开关电源需要搭配开关电源线缆使用"
-      },
-      {
-        "category": "电源线",
-        "name": "1m普通电源线",
-        "code": "101532667",
-        "detail": "MV-IDA-P-M12A12pF-open-ST-1m，电源线，12pin转open 静态，1m 线缆特性：静态铺设，弯折半径：12D；"
-      },
-      {
-        "category": "电源线",
-        "name": "3m普通电源线",
-        "code": "310101268",
-        "detail": "MV-IDA-P-M12A12pF-open-ST-3m，电源线，12pin转open 静态，3m 线缆特性：静态铺设，弯折半径：12D；"
-      },
-      {
-        "category": "电源线",
-        "name": "5m普通电源线",
-        "code": "310101269",
-        "detail": "MV-IDA-P-M12A12pF-open-ST-5m，电源线，12pin转open 静态，5m 线缆特性：静态铺设，弯折半径：12D；"
-      },
-      {
-        "category": "电源线",
-        "name": "7m普通电源线",
-        "code": "310101270",
-        "detail": "MV-IDA-P-M12A12pF-open-ST-7m，电源线，12pin转open 静态，7m 线缆特性：静态铺设，弯折半径：12D；"
-      },
-      {
-        "category": "电源线",
-        "name": "10m普通电源线",
-        "code": "310101271",
-        "detail": "MV-IDA-P-M12A12pF-open-ST-10m，电源线，12pin转open 静态，10m 线缆特性：静态铺设，弯折半径：12D；"
-      },
-      {
-        "category": "电源线",
-        "name": "15m普通电源线",
-        "code": "310101272",
-        "detail": "MV-IDA-P-M12A12pF-open-ST-15m，电源线，12pin转open 静态，15m 线缆特性：静态铺设，弯折半径：12D；"
-      },
-      {
-        "category": "电源线",
-        "name": "30m普通电源线",
-        "code": "310101273",
-        "detail": "MV-IDA-P-M12A12pF-open-ST-30m，电源线，12pin转open 静态，30m 线缆特性：静态铺设，弯折半径：12D；"
-      },
-      {
-        "category": "电源线",
-        "name": "3m高柔电源线",
-        "code": "310101280",
-        "detail": "MV-IDA-P-M12A12pF-open-HF-3m电源线，12pin转open 高柔，3m 线缆特性：拖链500W次，运动速度60次/分，弯折半径：12D；"
-      },
-      {
-        "category": "电源线",
-        "name": "5m高柔电源线",
-        "code": "310101281",
-        "detail": "MV-IDA-P-M12A12pF-open-HF-5m电源线，12pin转open 高柔，5m 线缆特性：拖链500W次，运动速度60次/分，弯折半径：12D；"
-      },
-      {
-        "category": "电源线",
-        "name": "10m高柔电源线",
-        "code": "310101282",
-        "detail": "MV-IDA-P-M12A12pF-open-HF-10m电源线，12pin转open 高柔，10m 线缆特性：拖链500W次，运动速度60次/分，弯折半径：12D；"
-      },
-      {
-        "category": "电源线",
-        "name": "20m高柔电源线",
-        "code": "310101283",
-        "detail": "MV-IDA-P-M12A12pF-open-HF-20m电源线，12pin转open 高柔，20m 线缆特性：拖链500W次，运动速度60次/分，弯折半径：12D；"
-      },
-      {
-        "category": "电源线",
-        "name": "3m串口普通电源线",
-        "code": "310102639",
-        "detail": "MV-IDAP-M12A12F-DB9Fopen-ST-3m，电源线，12pin转DB9母头open，静态，3m 线缆特性：静态铺设，弯折半径：12D；"
-      },
-      {
-        "category": "电源线",
-        "name": "5m串口普通电源线",
-        "code": "310102640",
-        "detail": "MV-IDAP-M12A12F-DB9Fopen-ST-5m，电源线，12pin转DB9母头open，静态，5m 线缆特性：静态铺设，弯折半径：12D；"
-      },
-      {
-        "category": "电源线",
-        "name": "7m串口普通电源线",
-        "code": "310102641",
-        "detail": "MV-IDAP-M12A12F-DB9Fopen-ST-7m，电源线，12pin转DB9母头open，静态，7m 线缆特性：静态铺设，弯折半径：12D；"
-      },
-      {
-        "category": "电源线",
-        "name": "10m串口普通电源线",
-        "code": "310102642",
-        "detail": "MV-IDAP-M12A12F-DB9Fopen-ST-10m，电源线，12pin转DB9母头open，静态，10m 线缆特性：静态铺设，弯折半径：12D；"
-      },
-      {
-        "category": "网线",
-        "name": "1m普通网线",
-        "code": "101532666",
-        "detail": "MV-IDA-E-M12A8pF-RJ45-ST-1m，网线，8pin转RJ45,静态，1m 弯线缆特性：静态铺设，弯折半径：12D；"
-      },
-      {
-        "category": "网线",
-        "name": "3m普通网线",
-        "code": "310101274",
-        "detail": "MV-IDA-E-M12A8pF-RJ45-ST-3m，网线，8pin转RJ45,静态，3m 线缆特性：静态铺设，弯折半径：12D；"
-      },
-      {
-        "category": "网线",
-        "name": "5m普通网线",
-        "code": "310101275",
-        "detail": "MV-IDA-E-M12A8pF-RJ45-ST-5m，网线，8pin转RJ45,静态，5m弯线缆特性：静态铺设，弯折半径：12D；"
-      },
-      {
-        "category": "网线",
-        "name": "7m普通网线",
-        "code": "310101276",
-        "detail": "MV-IDA-E-M12A8pF-RJ45-ST-7m，网线，8pin转RJ45,静态，7m 线缆特性：静态铺设，弯折半径：12D；"
-      },
-      {
-        "category": "网线",
-        "name": "10m普通网线",
-        "code": "310101277",
-        "detail": "MV-IDA-E-M12A8pF-RJ45-ST-10m，网线，8pin转RJ45,静态，10m 线缆特性：静态铺设，弯折半径：12D；"
-      },
-      {
-        "category": "网线",
-        "name": "15m普通网线",
-        "code": "310101278",
-        "detail": "MV-IDA-E-M12A8pF-RJ45-ST-15m，网线，8pin转RJ45,静态，15m 线缆特性：静态铺设，弯折半径：12D；"
-      },
-      {
-        "category": "网线",
-        "name": "30m普通网线",
-        "code": "310101279",
-        "detail": "MV-IDA-E-M12A8pF-RJ45-ST-30m，网线，8pin转RJ45,静态，30m 线缆特性：静态铺设，弯折半径：12D；"
-      },
-      {
-        "category": "网线",
-        "name": "3m高柔网线",
-        "code": "310101284",
-        "detail": "MV-IDA-E-M12A8pF-RJ45-HF-3m，网线，8pin转RJ45,高柔，3m 线缆特性：拖链500W次，运动速度60次/分，弯折半径：12D；"
-      },
-      {
-        "category": "网线",
-        "name": "5m高柔网线",
-        "code": "310101285",
-        "detail": "MV-IDA-E-M12A8pF-RJ45-HF-5m，网线，8pin转RJ45,高柔，5m 线缆特性：拖链500W次，运动速度60次/分，弯折半径：12D；"
-      },
-      {
-        "category": "网线",
-        "name": "10m高柔网线",
-        "code": "310101286",
-        "detail": "MV-IDA-E-M12A8pF-RJ45-HF-10m，网线，8pin转RJ45,高柔，10m 线缆特性：拖链500W次，运动速度60次/分，弯折半径：12D；"
-      },
-      {
-        "category": "网线",
-        "name": "20m高柔网线",
-        "code": "310101287",
-        "detail": "MV-IDA-E-M12A8pF-RJ45-HF-20m，网线，8pin转RJ45,高柔，20m 线缆特性：拖链500W次，运动速度60次/分，弯折半径：12D；"
-      },
-      {
-        "category": "爆闪光源",
-        "name": "MV-IDA-SL-16-C-WBN(全球通中性)",
-        "code": "310103088",
-        "detail": "适配C口型号，白色 16颗补光灯，透明镜头罩，亮度最大可达自带光源的3倍以上"
-      },
-      {
-        "category": "爆闪光源",
-        "name": "MV-IDA-SL-16-C-RBP(全球通中性)",
-        "code": "310103074",
-        "detail": "适配C口型号，红色 16颗补光灯，偏振镜头罩，亮度最大可达自带光源的3倍以上"
-      },
-      {
-        "category": "微码光源",
-        "name": "MV-IDA-LY-02-76C-20B2(全球通中性)",
-        "code": "310103150",
-        "detail": "蓝色 20 颗补光灯，暗场光源，工作距离76mm"
-      },
-      {
-        "category": "微码光源",
-        "name": "MV-IDA-LY-02-76C-20R2(全球通中性)",
-        "code": "310103149",
-        "detail": "红色 20 颗补光灯，暗场光源，工作距离76mm"
-      },
-      {
-        "category": "微码光源",
-        "name": "MV-IDA-LY-02-76C-61B8(全球通中性)",
-        "code": "310103148",
-        "detail": "蓝色 61 颗补光灯，明暗场光源，工作距离76mm"
-      },
-      {
-        "category": "微码光源",
-        "name": "MV-IDA-LY-02-76C-61R8(全球通中性)",
-        "code": "310103147",
-        "detail": "红色 61 颗补光灯，明暗场光源，工作距离76mm"
+        "detail": "AC电源线-open  交流电源线_国标_弯三插_open_2米(中性)  备注：下单时需选配开关电源+开关电源线缆"
       }
     ]
   },
