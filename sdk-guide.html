@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MvCodeReader SDK 编程学习指南</title>
+<style>
+:root{--bg:#fff;--bg-secondary:#f5f7fa;--bg-code:#0d1b2a;--text:#1a1a2e;--text-secondary:#555;--accent:#f76504;--accent-light:rgba(247,101,4,.1);--border:#e0e4e8;--note-bg:#fff8f0;--note-border:#f76504;--warn-bg:#fff0f0;--warn-border:#e74c3c;--tip-bg:#f0fff4;--tip-border:#27ae60;--table-header:#0A1628;--table-header-text:#fff;--table-stripe:#f8f9fa;--shadow:0 2px 8px rgba(0,0,0,.08);--code-keyword:#ff79c6;--code-type:#8be9fd;--code-string:#f1fa8c;--code-comment:#6272a4;--code-number:#bd93f9;--code-func:#50fa7b;--code-pp:#ffb86c;--code-line-num:#4a5568}
+[data-theme="dark"]{--bg:#0f1923;--bg-secondary:#162231;--bg-code:#0d1117;--text:#e0e6ed;--text-secondary:#8899aa;--border:#1e3048;--note-bg:#1a1200;--warn-bg:#1a0a0a;--tip-bg:#0a1a0f;--table-header:#1e3048;--table-header-text:#e0e6ed;--table-stripe:#162231;--shadow:0 2px 8px rgba(0,0,0,.3);--code-line-num:#3a4a5a}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;transition:background .3s,color .3s}
+
+.sidebar{position:fixed;top:0;left:0;width:280px;height:100vh;background:#0A1628;color:#c8d6e5;overflow-y:auto;z-index:100;transition:transform .3s;scrollbar-width:thin;scrollbar-color:#2a3a4a transparent}
+.sidebar::-webkit-scrollbar{width:4px}.sidebar::-webkit-scrollbar-thumb{background:#2a3a4a;border-radius:2px}
+.sidebar-header{padding:20px 20px 12px;border-bottom:1px solid rgba(255,255,255,.08)}
+.sidebar-header h2{font-size:15px;font-weight:700;color:#fff;margin-bottom:4px}
+.sidebar-header p{font-size:11px;opacity:.6}
+.lang-switch{display:flex;gap:0;margin:12px 16px 8px;background:rgba(255,255,255,.06);border-radius:8px;padding:3px}
+.lang-btn{flex:1;padding:8px 0;text-align:center;border-radius:6px;font-size:13px;font-weight:600;cursor:pointer;transition:all .2s;border:none;background:transparent;color:#c8d6e5}
+.lang-btn.active{background:var(--accent);color:#fff}
+.nav-section{margin:6px 0}
+.nav-section-title{padding:8px 20px 5px;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--accent);cursor:pointer;display:flex;align-items:center;justify-content:space-between;user-select:none}
+.nav-items{overflow:hidden;transition:max-height .3s ease}
+.nav-link{display:block;padding:6px 20px 6px 28px;color:#c8d6e5;text-decoration:none;font-size:12.5px;border-left:3px solid transparent;transition:all .2s}
+.nav-link:hover{background:rgba(255,255,255,.05);color:#fff;border-left-color:var(--accent)}
+.nav-link.active{color:#fff;border-left-color:var(--accent);background:rgba(247,101,4,.15)}
+
+.main{margin-left:280px;min-height:100vh;transition:margin .3s}
+.topbar{position:sticky;top:0;z-index:50;background:var(--bg);border-bottom:1px solid var(--border);padding:10px 32px;display:flex;align-items:center;justify-content:space-between;backdrop-filter:blur(10px)}
+.topbar-left{display:flex;align-items:center;gap:12px}
+.topbar-center{display:flex;gap:0;background:var(--bg-secondary);border-radius:8px;padding:2px;border:1px solid var(--border)}
+.topbar-lang{padding:5px 16px;border-radius:6px;font-size:13px;font-weight:600;cursor:pointer;border:none;background:transparent;color:var(--text-secondary);transition:all .2s}
+.topbar-lang.active{background:var(--accent);color:#fff}
+.menu-btn{display:none;background:none;border:none;color:var(--text);font-size:22px;cursor:pointer;padding:4px}
+.download-btn{background:var(--accent);border:none;border-radius:20px;padding:8px 16px;cursor:pointer;font-size:12px;font-weight:600;color:#fff;transition:all .2s;display:flex;align-items:center;gap:4px}
+.download-btn:hover{background:#e55a00;transform:translateY(-1px)}
+.content{max-width:900px;margin:0 auto;padding:32px 40px 80px}
+
+h1{font-size:30px;font-weight:800;margin-bottom:12px;color:var(--accent)}
+h2{font-size:24px;font-weight:700;margin:40px 0 18px;padding-bottom:10px;border-bottom:2px solid var(--accent);color:var(--text)}
+h3{font-size:18px;font-weight:600;margin:28px 0 12px;color:var(--text)}
+h4{font-size:15px;font-weight:600;margin:20px 0 8px;color:var(--text-secondary)}
+p{margin-bottom:12px}a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+ul,ol{margin:0 0 14px 24px}li{margin-bottom:5px}strong{color:var(--accent)}
+
+.hero{background:linear-gradient(135deg,#0A1628,#1a2a44);border-radius:12px;padding:36px;margin-bottom:36px;color:#fff;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-50%;right:-20%;width:400px;height:400px;background:radial-gradient(circle,rgba(247,101,4,.2),transparent 70%);border-radius:50%}
+.hero h1{color:#fff;font-size:32px;position:relative}
+.hero p{color:rgba(255,255,255,.8);font-size:15px;position:relative}
+.hero-badge{display:inline-block;background:var(--accent);color:#fff;padding:3px 10px;border-radius:4px;font-size:11px;font-weight:700;letter-spacing:.5px;margin-bottom:10px;position:relative}
+.path-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-top:20px;position:relative}
+.path-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);border-radius:8px;padding:18px;cursor:pointer;transition:all .2s;text-decoration:none;color:#fff}
+.path-card:hover{background:rgba(247,101,4,.2);border-color:var(--accent);transform:translateY(-2px);text-decoration:none}
+.path-card .step{font-size:10px;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-bottom:4px}
+.path-card h3{color:#fff;font-size:14px;margin:0 0 3px}
+.path-card p{font-size:11px;margin:0;opacity:.7}
+
+.info-box{padding:14px 18px;border-radius:8px;margin:14px 0;border-left:4px solid;font-size:13.5px}
+.info-box.note{background:var(--note-bg);border-color:var(--note-border)}
+.info-box.warn{background:var(--warn-bg);border-color:var(--warn-border)}
+.info-box.tip{background:var(--tip-bg);border-color:var(--tip-border)}
+.info-box-title{font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.5px;margin-bottom:5px}
+.info-box.note .info-box-title{color:var(--accent)}.info-box.warn .info-box-title{color:#e74c3c}.info-box.tip .info-box-title{color:#27ae60}
+
+.code-block{background:var(--bg-code);border-radius:8px;margin:14px 0;overflow:hidden;box-shadow:var(--shadow)}
+.code-header{display:flex;justify-content:space-between;align-items:center;padding:7px 14px;background:rgba(255,255,255,.05);border-bottom:1px solid rgba(255,255,255,.08)}
+.code-header span{font-size:11px;color:#8899aa;font-family:'SF Mono','Fira Code',monospace}
+.copy-btn{background:rgba(255,255,255,.1);border:none;color:#8899aa;padding:2px 8px;border-radius:4px;font-size:10px;cursor:pointer;transition:all .2s}
+.copy-btn:hover{background:var(--accent);color:#fff}
+.code-body{display:flex;overflow-x:auto;scrollbar-width:thin;scrollbar-color:#2a3a4a transparent}
+.line-numbers{padding:14px 0;text-align:right;user-select:none;flex-shrink:0;border-right:1px solid rgba(255,255,255,.06)}
+.line-numbers span{display:block;padding:0 10px;font-family:'SF Mono','Fira Code','Consolas',monospace;font-size:12.5px;line-height:1.6;color:var(--code-line-num)}
+.code-content{padding:14px;flex:1;overflow-x:auto}
+.code-content code{font-family:'SF Mono','Fira Code','Consolas',monospace;font-size:12.5px;line-height:1.6;color:#e0e6ed;white-space:pre}
+.kw{color:var(--code-keyword)}.tp{color:var(--code-type)}.st{color:var(--code-string)}.cm{color:var(--code-comment);font-style:italic}.nm{color:var(--code-number)}.fn{color:var(--code-func)}.pp{color:var(--code-pp)}
+
+.table-wrap{overflow-x:auto;margin:14px 0;border-radius:8px;box-shadow:var(--shadow)}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{background:var(--table-header);color:var(--table-header-text);padding:10px 14px;text-align:left;font-weight:600;font-size:12px;white-space:nowrap}
+td{padding:8px 14px;border-bottom:1px solid var(--border)}
+tr:nth-child(even) td{background:var(--table-stripe)}tr:hover td{background:var(--accent-light)}
+code.inline{background:var(--bg-secondary);border:1px solid var(--border);padding:1px 5px;border-radius:3px;font-family:'SF Mono','Fira Code','Consolas',monospace;font-size:.86em;color:var(--accent)}
+
+.flow{display:flex;align-items:center;gap:0;margin:16px 0;flex-wrap:wrap;justify-content:center}
+.flow-step{background:var(--bg-secondary);border:2px solid var(--border);border-radius:8px;padding:10px 16px;text-align:center;font-size:12px;font-weight:600;min-width:90px;transition:all .2s}
+.flow-step:hover{border-color:var(--accent);background:var(--accent-light)}
+.flow-step.highlight{background:var(--accent);color:#fff;border-color:var(--accent)}
+.flow-arrow{font-size:18px;color:var(--accent);padding:0 5px;flex-shrink:0}
+.flow-container{margin:16px 0;text-align:center}
+.flow-group-label{font-size:10px;text-transform:uppercase;letter-spacing:1px;color:var(--accent);font-weight:700;margin-bottom:5px}
+
+.api-item{background:var(--bg-secondary);border:1px solid var(--border);border-radius:8px;padding:12px 16px;margin:8px 0}
+.api-item .sig{font-family:'SF Mono','Fira Code','Consolas',monospace;font-size:12px;color:var(--accent);margin-bottom:4px;word-break:break-all}
+.api-item .desc{font-size:12px;color:var(--text-secondary)}
+
+.lang-content{display:none}.lang-content.active{display:block}
+.back-btn{display:inline-flex;align-items:center;gap:6px;padding:8px 16px;background:var(--accent);color:#fff;border-radius:8px;text-decoration:none;font-size:13px;font-weight:600;margin-bottom:20px;transition:all .2s}
+.back-btn:hover{background:#e55a00;text-decoration:none;color:#fff}
+
+@media(max-width:900px){
+  .sidebar{transform:translateX(-100%)}.sidebar.open{transform:translateX(0)}.main{margin-left:0}.menu-btn{display:block}
+  .content{padding:20px 18px 60px}.hero{padding:22px}.hero h1{font-size:24px}
+  .flow{flex-direction:column}.flow-arrow{transform:rotate(90deg)}h2{font-size:20px}
+}
+[id]{scroll-margin-top:54px}
+</style>
+</head>
+<body>
+
+<div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+<nav class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <h2>📖 MvCodeReader SDK</h2>
+    <p>C / C# 编程学习指南</p>
+  </div>
+  <div class="lang-switch">
+    <button class="lang-btn active" onclick="switchLang('c')" id="sideLangC">C 语言</button>
+    <button class="lang-btn" onclick="switchLang('csharp')" id="sideLangCSharp">C# 语言</button>
+  </div>
+
+  <div id="nav-c" class="lang-nav active">
+    <div class="nav-section"><div class="nav-section-title">📋 SDK 概述</div><div class="nav-items"><a class="nav-link" href="#c-ch1-intro">简介</a><a class="nav-link" href="#c-ch1-headers">核心头文件</a><a class="nav-link" href="#c-ch1-handle">句柄规则</a></div></div>
+    <div class="nav-section"><div class="nav-section-title">🔧 开发环境</div><div class="nav-items"><a class="nav-link" href="#c-ch2-prereq">前置条件</a><a class="nav-link" href="#c-ch2-config">工程配置</a><a class="nav-link" href="#c-ch2-gige">GigE 网络</a><a class="nav-link" href="#c-ch2-safe">安全 CRT</a></div></div>
+    <div class="nav-section"><div class="nav-section-title">⭐ 编程流程</div><div class="nav-items"><a class="nav-link" href="#c-ch3-flow">标准流程</a><a class="nav-link" href="#c-ch3-connect">连接阶段</a><a class="nav-link" href="#c-ch3-run">运行阶段</a><a class="nav-link" href="#c-ch3-release">释放阶段</a><a class="nav-link" href="#c-ch3-full">完整示例</a></div></div>
+    <div class="nav-section"><div class="nav-section-title">⚙️ 参数设置</div><div class="nav-items"><a class="nav-link" href="#c-ch4-nodes">节点类型映射</a><a class="nav-link" href="#c-ch4-rules">重要规则</a></div></div>
+    <div class="nav-section"><div class="nav-section-title">📷 取图方式</div><div class="nav-items"><a class="nav-link" href="#c-ch5-modes">两种方式</a><a class="nav-link" href="#c-ch5-poll">主动轮询</a><a class="nav-link" href="#c-ch5-callback">回调取图</a></div></div>
+    <div class="nav-section"><div class="nav-section-title">🎯 触发模式</div><div class="nav-items"><a class="nav-link" href="#c-ch6-modes">触发分类</a><a class="nav-link" href="#c-ch6-config">配置示例</a></div></div>
+    <div class="nav-section"><div class="nav-section-title">🔍 错误排查</div><div class="nav-items"><a class="nav-link" href="#c-ch7-table">排查速查表</a></div></div>
+    <div class="nav-section"><div class="nav-section-title">📚 API 速查</div><div class="nav-items"><a class="nav-link" href="#c-ch8-device">设备管理</a><a class="nav-link" href="#c-ch8-param">参数读写</a><a class="nav-link" href="#c-ch8-grab">取图控制</a></div></div>
+  </div>
+
+  <div id="nav-csharp" class="lang-nav" style="display:none">
+    <div class="nav-section"><div class="nav-section-title">📋 SDK 概述</div><div class="nav-items"><a class="nav-link" href="#cs-ch1-intro">命名空间</a><a class="nav-link" href="#cs-ch1-device-types">设备类型</a><a class="nav-link" href="#cs-ch1-error">错误码</a></div></div>
+    <div class="nav-section"><div class="nav-section-title">🔧 开发环境</div><div class="nav-items"><a class="nav-link" href="#cs-ch2-prereq">前置条件</a><a class="nav-link" href="#cs-ch2-references">引用命名空间</a></div></div>
+    <div class="nav-section"><div class="nav-section-title">⭐ 编程流程</div><div class="nav-items"><a class="nav-link" href="#cs-ch3-flow">标准流程</a><a class="nav-link" href="#cs-ch3-connect">连接阶段</a><a class="nav-link" href="#cs-ch3-release">释放阶段</a><a class="nav-link" href="#cs-ch3-full">完整示例</a></div></div>
+    <div class="nav-section"><div class="nav-section-title">⚙️ 参数设置</div><div class="nav-items"><a class="nav-link" href="#cs-ch4-nodes">节点映射</a><a class="nav-link" href="#cs-ch4-rules">重要规则</a><a class="nav-link" href="#cs-ch4-param-table">参数速查</a></div></div>
+    <div class="nav-section"><div class="nav-section-title">📷 取图方式</div><div class="nav-items"><a class="nav-link" href="#cs-ch5-modes">两种方式</a><a class="nav-link" href="#cs-ch5-poll">主动轮询</a><a class="nav-link" href="#cs-ch5-callback">回调取图</a><a class="nav-link" href="#cs-ch5-struct">结构体指针</a></div></div>
+    <div class="nav-section"><div class="nav-section-title">🎯 触发模式</div><div class="nav-items"><a class="nav-link" href="#cs-ch6-soft">软触发</a><a class="nav-link" href="#cs-ch6-hard">硬触发</a></div></div>
+    <div class="nav-section"><div class="nav-section-title">🔗 进阶场景</div><div class="nav-items"><a class="nav-link" href="#cs-ch7-multi">多相机</a><a class="nav-link" href="#cs-ch7-reconnect">断线重连</a><a class="nav-link" href="#cs-ch7-forceip">强制IP</a><a class="nav-link" href="#cs-ch7-file">文件读写</a></div></div>
+    <div class="nav-section"><div class="nav-section-title">🔍 错误排查</div><div class="nav-items"><a class="nav-link" href="#cs-ch8-table">排查速查表</a></div></div>
+    <div class="nav-section"><div class="nav-section-title">📚 API 速查</div><div class="nav-items"><a class="nav-link" href="#cs-ch9-device">设备管理</a><a class="nav-link" href="#cs-ch9-param">参数读写</a><a class="nav-link" href="#cs-ch9-grab">取图控制</a></div></div>
+  </div>
+</nav>
+
+<div class="main">
+  <div class="topbar">
+    <div class="topbar-left">
+      <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+      <a href="index.html" class="back-btn">← 返回工具箱</a>
+    </div>
+    <div class="topbar-center">
+      <button class="topbar-lang active" onclick="switchLang('c')" id="topLangC">C 语言</button>
+      <button class="topbar-lang" onclick="switchLang('csharp')" id="topLangCSharp">C# 语言</button>
+    </div>
+    <button class="download-btn" onclick="downloadDoc()" id="downloadBtn">⬇ 下载文档</button>
+  </div>
+
+  <div class="content">
+    <!-- ==================== C LANGUAGE ==================== -->
+    <div id="content-c" class="lang-content active">
+      <div class="hero">
+        <div class="hero-badge">C 语言</div>
+        <h1>MvCodeReader SDK<br>C 语言编程学习指南</h1>
+        <p>海康机器人读码器 C 语言开发套件 · 从入门到实战</p>
+        <div class="path-cards">
+          <a class="path-card" href="#c-ch1-intro"><div class="step">Step 1</div><h3>了解 SDK</h3><p>头文件与句柄</p></a>
+          <a class="path-card" href="#c-ch2-prereq"><div class="step">Step 2</div><h3>搭建环境</h3><p>工程与网络配置</p></a>
+          <a class="path-card" href="#c-ch3-flow"><div class="step">Step 3</div><h3>编写程序</h3><p>三段式流程</p></a>
+          <a class="path-card" href="#c-ch4-nodes"><div class="step">Step 4</div><h3>进阶深入</h3><p>参数/触发/回调</p></a>
+        </div>
+      </div>
+
+      <h2 id="c-ch1-intro">第一章：SDK 概述</h2>
+      <p>MvCodeReader SDK 是海康机器人读码器的 <strong>C 语言开发套件</strong>，通过 void* 句柄操作设备。</p>
+      <h3 id="c-ch1-headers">核心头文件</h3>
+      <div class="table-wrap"><table><thead><tr><th>头文件</th><th>用途</th></tr></thead><tbody>
+        <tr><td><code class="inline">MvCodeReaderCtrl.h</code></td><td>所有 SDK 函数声明（主接口）</td></tr>
+        <tr><td><code class="inline">MvCodeReaderParams.h</code></td><td>结构体、枚举定义</td></tr>
+        <tr><td><code class="inline">MvCodeReaderErrorDefine.h</code></td><td>错误码定义</td></tr>
+      </tbody></table></div>
+      <h3 id="c-ch1-handle">句柄规则</h3>
+      <div class="code-block"><div class="code-header"><span>C</span><button class="copy-btn" onclick="copyCode(this)">复制</button></div><div class="code-body"><div class="line-numbers"><span>1</span><span>2</span></div><div class="code-content"><code><span class="cm">// 所有操作都通过 handle 进行</span>
+<span class="tp">void</span>* <span class="fn">handle</span> = <span class="kw">NULL</span>;</code></div></div></div>
+      <div class="info-box note"><div class="info-box-title">📝 注意</div><p>C 语言需额外 <code class="inline">#include &lt;stdbool.h&gt;</code>，SDK 部分接口使用 bool 类型。</p></div>
+
+      <h2 id="c-ch2-prereq">第二章：开发环境</h2>
+      <ul><li>已安装 <strong>IDMVS</strong> 或 <strong>MVS Runtime</strong></li><li>配置 SDK 的 include 和 lib 路径</li><li>程序位数与 DLL 位数一致（x64 对应 x64）</li></ul>
+      <h3 id="c-ch2-config">工程配置</h3>
+      <div class="info-box warn"><div class="info-box-title">⚠️ 警告</div><p><strong>程序位数必须与 DLL 位数一致！</strong> 混用会导致加载失败。</p></div>
+      <h3 id="c-ch2-gige">GigE 网络配置</h3>
+      <ul><li>启用网卡<strong>巨帧（Jumbo Frame）</strong>，建议 9000+</li><li>设备 IP 与 PC 网卡在同一网段</li><li>建议关闭防火墙或添加端口例外</li></ul>
+      <h3 id="c-ch2-safe">安全 CRT 推荐</h3>
+      <div class="table-wrap"><table><thead><tr><th>标准函数</th><th>安全替代</th></tr></thead><tbody>
+        <tr><td><code class="inline">scanf</code></td><td><code class="inline">scanf_s</code></td></tr>
+        <tr><td><code class="inline">fopen</code></td><td><code class="inline">fopen_s</code></td></tr>
+        <tr><td><code class="inline">strncpy</code></td><td><code class="inline">strncpy_s</code></td></tr>
+      </tbody></table></div>
+
+      <h2 id="c-ch3-flow">第三章：编程流程（重点）</h2>
+      <div class="flow-container"><div class="flow-group-label">连接阶段</div><div class="flow"><div class="flow-step highlight">枚举设备</div><div class="flow-arrow">→</div><div class="flow-step highlight">创建句柄</div><div class="flow-arrow">→</div><div class="flow-step highlight">设置地域</div><div class="flow-arrow">→</div><div class="flow-step highlight">打开设备</div></div></div>
+      <div class="flow-container"><div class="flow-group-label">运行阶段</div><div class="flow"><div class="flow-step">设置参数</div><div class="flow-arrow">→</div><div class="flow-step">开始取流</div><div class="flow-arrow">→</div><div class="flow-step">获取图像/结果</div></div></div>
+      <div class="flow-container"><div class="flow-group-label">释放阶段</div><div class="flow"><div class="flow-step">停止取流</div><div class="flow-arrow">→</div><div class="flow-step">关闭设备</div><div class="flow-arrow">→</div><div class="flow-step">销毁句柄</div></div></div>
+
+      <h3 id="c-ch3-connect">连接阶段</h3>
+      <h4>1. 枚举设备</h4>
+      <div class="code-block"><div class="code-header"><span>C — 枚举设备</span><button class="copy-btn" onclick="copyCode(this)">复制</button></div><div class="code-body"><div class="line-numbers"><span>1</span><span>2</span><span>3</span><span>4</span></div><div class="code-content"><code><span class="tp">MV_CODEREADER_DEVICE_INFO_LIST</span> <span class="fn">stDevList</span>;
+<span class="fn">memset</span>(&stDevList, <span class="nm">0</span>, <span class="kw">sizeof</span>(stDevList));
+<span class="tp">int</span> <span class="fn">nRet</span> = <span class="fn">MV_CODEREADER_EnumDevices</span>(&stDevList, <span class="nm">MV_CODEREADER_GIGE_DEVICE</span>);
+<span class="cm">// stDevList.nDeviceNum 为设备数量</span></code></div></div></div>
+      <h4>2. 创建句柄</h4>
+      <div class="code-block"><div class="code-header"><span>C</span><button class="copy-btn" onclick="copyCode(this)">复制</button></div><div class="code-body"><div class="line-numbers"><span>1</span><span>2</span></div><div class="code-content"><code><span class="tp">void</span>* <span class="fn">handle</span> = <span class="kw">NULL</span>;
+<span class="fn">nRet</span> = <span class="fn">MV_CODEREADER_CreateHandle</span>(&handle, stDevList.<span class="fn">pDeviceInfo</span>[<span class="nm">0</span>]);</code></div></div></div>
+      <h4>3. 设置地域（中国大陆）</h4>
+      <div class="code-block"><div class="code-header"><span>C</span><button class="copy-btn" onclick="copyCode(this)">复制</button></div><div class="code-body"><div class="line-numbers"><span>1</span><span>2</span></div><div class="code-content"><code><span class="cm">// 地域参数固定</span>
+<span class="fn">nRet</span> = <span class="fn">MV_CODEREADER_SetAreaInfoConfig</span>(handle, <span class="nm">0xa80</span>, <span class="nm">0x10000</span>);</code></div></div></div>
+      <div class="info-box tip"><div class="info-box-title">💡 提示</div><p>地域设置是必须步骤，未设置可能导致设备打开失败。</p></div>
+      <h4>4. 打开设备</h4>
+      <div class="code-block"><div class="code-header"><span>C</span><button class="copy-btn" onclick="copyCode(this)">复制</button></div><div class="code-body"><div class="line-numbers"><span>1</span></div><div class="code-content"><code><span class="fn">nRet</span> = <span class="fn">MV_CODEREADER_OpenDevice</span>(handle);</code></div></div></div>
+
+      <h3 id="c-ch3-run">运行阶段</h3>
+      <div class="code-block"><div class="code-header"><span>C — 参数设置与取流</span><button class="copy-btn" onclick="copyCode(this)">复制</button></div><div class="code-body"><div class="line-numbers"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span></div><div class="code-content"><code><span class="cm">// 连续采集</span>
+<span class="fn">MV_CODEREADER_SetEnumValue</span>(handle, <span class="st">"TriggerMode"</span>, <span class="nm">MV_CODEREADER_TRIGGER_MODE_OFF</span>);
+<span class="fn">MV_CODEREADER_SetFloatValue</span>(handle, <span class="st">"ExposureTime"</span>, <span class="nm">120.0f</span>);
+
+<span class="cm">// 开始取流</span>
+<span class="fn">MV_CODEREADER_StartGrabbing</span>(handle);
+
+<span class="cm">// 获取一帧</span>
+<span class="tp">unsigned</span> <span class="tp">char</span>* <span class="fn">pData</span> = <span class="kw">NULL</span>;
+<span class="tp">MV_CODEREADER_IMAGE_OUT_INFO_EX2</span> <span class="fn">stFrameInfo</span>;
+<span class="fn">nRet</span> = <span class="fn">MV_CODEREADER_GetOneFrameTimeoutEx2</span>(handle, &pData, &stFrameInfo, <span class="nm">1000</span>);</code></div></div></div>
+
+      <h3 id="c-ch3-release">释放阶段</h3>
+      <div class="code-block"><div class="code-header"><span>C</span><button class="copy-btn" onclick="copyCode(this)">复制</button></div><div class="code-body"><div class="line-numbers"><span>1</span><span>2</span><span>3</span></div><div class="code-content"><code><span class="fn">MV_CODEREADER_StopGrabbing</span>(handle);
+<span class="fn">MV_CODEREADER_CloseDevice</span>(handle);
+<span class="fn">MV_CODEREADER_DestroyHandle</span>(handle);</code></div></div></div>
+
+      <h3 id="c-ch3-full">完整示例</h3>
+      <div class="code-block"><div class="code-header"><span>C — 完整调用流程</span><button class="copy-btn" onclick="copyCode(this)">复制</button></div><div class="code-body"><div class="line-numbers"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</span><span>28</span><span>29</span><span>30</span><span>31</span></div><div class="code-content"><code><span class="pp">#include</span> <span class="st">&lt;stdio.h&gt;</span>
+<span class="pp">#include</span> <span class="st">&lt;string.h&gt;</span>
+<span class="pp">#include</span> <span class="st">&lt;stdbool.h&gt;</span>
+<span class="pp">#include</span> <span class="st">"MvCodeReaderCtrl.h"</span>
+
+<span class="tp">int</span> <span class="fn">main</span>()
+{
+    <span class="tp">MV_CODEREADER_DEVICE_INFO_LIST</span> <span class="fn">stDevList</span>;
+    <span class="fn">memset</span>(&stDevList, <span class="nm">0</span>, <span class="kw">sizeof</span>(stDevList));
+    <span class="tp">int</span> <span class="fn">nRet</span> = <span class="fn">MV_CODEREADER_EnumDevices</span>(&stDevList, <span class="nm">MV_CODEREADER_GIGE_DEVICE</span>);
+
+    <span class="tp">void</span>* <span class="fn">handle</span> = <span class="kw">NULL</span>;
+    <span class="fn">MV_CODEREADER_CreateHandle</span>(&handle, stDevList.<span class="fn">pDeviceInfo</span>[<span class="nm">0</span>]);
+    <span class="fn">MV_CODEREADER_SetAreaInfoConfig</span>(handle, <span class="nm">0xa80</span>, <span class="nm">0x10000</span>);
+    <span class="fn">MV_CODEREADER_OpenDevice</span>(handle);
+
+    <span class="fn">MV_CODEREADER_SetEnumValue</span>(handle, <span class="st">"TriggerMode"</span>, <span class="nm">MV_CODEREADER_TRIGGER_MODE_OFF</span>);
+    <span class="fn">MV_CODEREADER_SetFloatValue</span>(handle, <span class="st">"ExposureTime"</span>, <span class="nm">120.0f</span>);
+    <span class="fn">MV_CODEREADER_StartGrabbing</span>(handle);
+
+    <span class="tp">unsigned</span> <span class="tp">char</span>* <span class="fn">pData</span> = <span class="kw">NULL</span>;
+    <span class="tp">MV_CODEREADER_IMAGE_OUT_INFO_EX2</span> <span class="fn">stFrameInfo</span>;
+    <span class="fn">memset</span>(&stFrameInfo, <span class="nm">0</span>, <span class="kw">sizeof</span>(stFrameInfo));
+    <span class="fn">MV_CODEREADER_GetOneFrameTimeoutEx2</span>(handle, &pData, &stFrameInfo, <span class="nm">1000</span>);
+
+    <span class="fn">MV_CODEREADER_StopGrabbing</span>(handle);
+    <span class="fn">MV_CODEREADER_CloseDevice</span>(handle);
+    <span class="fn">MV_CODEREADER_DestroyHandle</span>(handle);
+    <span class="kw">return</span> <span class="nm">0</span>;
+}</code></div></div></div>
+
+      <h2 id="c-ch4-nodes">第四章：参数设置</h2>
+      <h3>节点类型与接口映射</h3>
+      <div class="table-wrap"><table><thead><tr><th>类型</th><th>读取</th><th>设置</th><th>典型参数</th></tr></thead><tbody>
+        <tr><td>Integer</td><td><code class="inline">GetIntValue</code></td><td><code class="inline">SetIntValue</code></td><td>AcquisitionBurstFrameCount</td></tr>
+        <tr><td>Float</td><td><code class="inline">GetFloatValue</code></td><td><code class="inline">SetFloatValue</code></td><td>ExposureTime, Gain</td></tr>
+        <tr><td>Enumeration</td><td><code class="inline">GetEnumValue</code></td><td><code class="inline">SetEnumValue</code></td><td>TriggerMode, TriggerSource</td></tr>
+        <tr><td>Boolean</td><td><code class="inline">GetBoolValue</code></td><td><code class="inline">SetBoolValue</code></td><td>TriggerCache</td></tr>
+        <tr><td>String</td><td><code class="inline">GetStringValue</code></td><td><code class="inline">SetStringValue</code></td><td>DeviceUserID</td></tr>
+        <tr><td>Command</td><td>—</td><td><code class="inline">SetCommandValue</code></td><td>TriggerSoftware</td></tr>
+      </tbody></table></div>
+      <h3 id="c-ch4-rules">重要规则</h3>
+      <div class="info-box warn"><div class="info-box-title">⚠️ 常见错误</div><p><strong>枚举节点必须用整数值！</strong><br>❌ <code class="inline">SetEnumValue(handle, "TriggerMode", "On")</code><br>✅ <code class="inline">SetEnumValue(handle, "TriggerMode", MV_CODEREADER_TRIGGER_MODE_ON)</code></p></div>
+
+      <h2 id="c-ch5-modes">第五章：取图方式</h2>
+      <p>两种方式<strong>互斥</strong>：主动轮询 <code class="inline">GetOneFrameTimeoutEx2</code>（调试用） vs 回调 <code class="inline">RegisterImageCallBackEx2</code>（高频用）</p>
+      <h3 id="c-ch5-poll">主动轮询</h3>
+      <div class="code-block"><div class="code-header"><span>C</span><button class="copy-btn" onclick="copyCode(this)">复制</button></div><div class="code-body"><div class="line-numbers"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div><div class="code-content"><code><span class="tp">unsigned</span> <span class="tp">char</span>* <span class="fn">pData</span> = <span class="kw">NULL</span>;
+<span class="tp">MV_CODEREADER_IMAGE_OUT_INFO_EX2</span> <span class="fn">stFrameInfo</span>;
+<span class="tp">int</span> <span class="fn">nRet</span> = <span class="fn">MV_CODEREADER_GetOneFrameTimeoutEx2</span>(
+    handle, &pData, &stFrameInfo, <span class="nm">1000</span>);
+<span class="cm">// nRet==0 成功，pData 指向图像</span></code></div></div></div>
+      <h3 id="c-ch5-callback">回调取图</h3>
+      <div class="code-block"><div class="code-header"><span>C</span><button class="copy-btn" onclick="copyCode(this)">复制</button></div><div class="code-body"><div class="line-numbers"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span></div><div class="code-content"><code><span class="kw">static</span> <span class="tp">void</span> <span class="kw">__stdcall</span> <span class="fn">ImageCallbackFunc</span>(
+    <span class="tp">unsigned</span> <span class="tp">char</span>* pData,
+    <span class="tp">MV_CODEREADER_IMAGE_OUT_INFO_EX2</span>* pstFrameInfo,
+    <span class="tp">void</span>* pUser)
+{
+    <span class="kw">if</span> (!pData || !pstFrameInfo) <span class="kw">return</span>;
+    <span class="fn">printf</span>(<span class="st">"FrameLen=%u\n"</span>, pstFrameInfo->nFrameLen);
+}
+<span class="fn">MV_CODEREADER_RegisterImageCallBackEx2</span>(
+    handle, ImageCallbackFunc, <span class="kw">NULL</span>);</code></div></div></div>
+
+      <h2 id="c-ch6-modes">第六章：触发模式</h2>
+      <div class="table-wrap"><table><thead><tr><th>模式</th><th>TriggerMode</th><th>TriggerSource</th></tr></thead><tbody>
+        <tr><td><strong>连续采集</strong></td><td>Off</td><td>—</td></tr>
+        <tr><td><strong>软触发</strong></td><td>On</td><td>Software</td></tr>
+        <tr><td><strong>硬触发</strong></td><td>On</td><td>LineIn0/1/2</td></tr>
+      </tbody></table></div>
+      <h3 id="c-ch6-config">软触发配置</h3>
+      <div class="code-block"><div class="code-header"><span>C</span><button class="copy-btn" onclick="copyCode(this)">复制</button></div><div class="code-body"><div class="line-numbers"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div><div class="code-content"><code><span class="fn">MV_CODEREADER_SetEnumValue</span>(handle, <span class="st">"TriggerMode"</span>, <span class="nm">MV_CODEREADER_TRIGGER_MODE_ON</span>);
+<span class="fn">MV_CODEREADER_SetEnumValue</span>(handle, <span class="st">"TriggerSource"</span>, <span class="nm">MV_CODEREADER_TRIGGER_SOURCE_SOFTWARE</span>);
+<span class="fn">MV_CODEREADER_StartGrabbing</span>(handle);
+<span class="fn">MV_CODEREADER_SetCommandValue</span>(handle, <span class="st">"TriggerSoftware"</span>);
+<span class="cm">// 然后 GetOneFrameTimeoutEx2 取图</span></code></div></div></div>
+
+      <h2 id="c-ch7-table">第七章：常见错误排查</h2>
+      <div class="table-wrap"><table><thead><tr><th>现象</th><th>排查方向</th></tr></thead><tbody>
+        <tr><td><strong>枚举不到设备</strong></td><td>网卡IP、设备IP、网线、防火墙、供电</td></tr>
+        <tr><td><strong>能枚举但打不开</strong></td><td>是否设置地域、设备被占用、IP冲突</td></tr>
+        <tr><td><strong>打开成功但无图</strong></td><td>未开始取流、触发模式错误、无触发信号</td></tr>
+        <tr><td><strong>参数设置失败</strong></td><td>节点类型不匹配、值超范围、取流状态不允许</td></tr>
+        <tr><td><strong>读码结果为空</strong></td><td>码制未开启、曝光不合适、ROI设置错误</td></tr>
+      </tbody></table></div>
+
+      <h2 id="c-ch8-device">第八章：API 速查</h2>
+      <h3>设备管理</h3>
+      <div class="api-item"><div class="sig">MV_CODEREADER_EnumDevices(MV_CODEREADER_DEVICE_INFO_LIST*, uint nTLayerType)</div><div class="desc">枚举设备</div></div>
+      <div class="api-item"><div class="sig">MV_CODEREADER_CreateHandle(void**, MV_CODEREADER_DEVICE_INFO*)</div><div class="desc">创建句柄</div></div>
+      <div class="api-item"><div class="sig">MV_CODEREADER_SetAreaInfoConfig(void*, int64_t, int64_t)</div><div class="desc">设置地域（中国：0xa80, 0x10000）</div></div>
+      <div class="api-item"><div class="sig">MV_CODEREADER_OpenDevice(void*)</div><div class="desc">打开设备</div></div>
+      <div class="api-item"><div class="sig">MV_CODEREADER_CloseDevice(void*)</div><div class="desc">关闭设备</div></div>
+      <div class="api-item"><div class="sig">MV_CODEREADER_DestroyHandle(void*)</div><div class="desc">销毁句柄</div></div>
+      <h3 id="c-ch8-param">参数读写</h3>
+      <div class="api-item"><div class="sig">MV_CODEREADER_SetIntValue / GetIntValue</div><div class="desc">Integer 节点</div></div>
+      <div class="api-item"><div class="sig">MV_CODEREADER_SetFloatValue / GetFloatValue</div><div class="desc">Float 节点</div></div>
+      <div class="api-item"><div class="sig">MV_CODEREADER_SetEnumValue / GetEnumValue</div><div class="desc">Enumeration 节点（用整数值）</div></div>
+      <div class="api-item"><div class="sig">MV_CODEREADER_SetBoolValue / GetBoolValue</div><div class="desc">Boolean 节点</div></div>
+      <div class="api-item"><div class="sig">MV_CODEREADER_SetStringValue / GetStringValue</div><div class="desc">String 节点</div></div>
+      <div class="api-item"><div class="sig">MV_CODEREADER_SetCommandValue</div><div class="desc">Command 节点（如 TriggerSoftware）</div></div>
+      <h3 id="c-ch8-grab">取图控制</h3>
+      <div class="api-item"><div class="sig">MV_CODEREADER_StartGrabbing / StopGrabbing</div><div class="desc">开始/停止取流</div></div>
+      <div class="api-item"><div class="sig">MV_CODEREADER_GetOneFrameTimeoutEx2</div><div class="desc">主动轮询取图（超时ms）</div></div>
+      <div class="api-item"><div class="sig">MV_CODEREADER_RegisterImageCallBackEx2</div><div class="desc">注册图像回调</div></div>
+    </div>
+
+    <!-- ==================== C# LANGUAGE ==================== -->
+    <div id="content-csharp" class="lang-content">
+      <div class="hero">
+        <div class="hero-badge">C# 语言</div>
+        <h1>MvCodeReader SDK<br>C# 编程学习指南</h1>
+        <p>海康机器人读码器 .NET 开发套件 · 从入门到实战</p>
+        <div class="path-cards">
+          <a class="path-card" href="#cs-ch1-intro"><div class="step">Step 1</div><h3>了解 SDK</h3><p>命名空间与常量</p></a>
+          <a class="path-card" href="#cs-ch2-prereq"><div class="step">Step 2</div><h3>搭建环境</h3><p>工程配置与引用</p></a>
+          <a class="path-card" href="#cs-ch3-flow"><div class="step">Step 3</div><h3>编写程序</h3><p>三段式流程</p></a>
+          <a class="path-card" href="#cs-ch4-nodes"><div class="step">Step 4</div><h3>进阶深入</h3><p>参数/触发/回调</p></a>
+        </div>
+      </div>
+
+      <h2 id="cs-ch1-intro">第一章：SDK 概述</h2>
+      <p>C# 封装位于 <code class="inline">MvCodeReaderSDKNet</code> 命名空间，主类 <code class="inline">MvCodeReader</code>。接口以 <code class="inline">_NET</code> 后缀命名，通过设备对象实例调用。</p>
+      <div class="code-block"><div class="code-header"><span>C#</span><button class="copy-btn" onclick="copyCode(this)">复制</button></div><div class="code-body"><div class="line-numbers"><span>1</span><span>2</span><span>3</span></div><div class="code-content"><code><span class="kw">using</span> <span class="tp">MvCodeReaderSDKNet</span>;
+<span class="cm">// 主类实例化</span>
+<span class="tp">MvCodeReader</span> <span class="fn">device</span> = <span class="kw">new</span> <span class="tp">MvCodeReader</span>();</code></div></div></div>
+
+      <h3 id="cs-ch1-device-types">设备类型常量</h3>
+      <div class="table-wrap"><table><thead><tr><th>常量</th><th>值</th><th>说明</th></tr></thead><tbody>
+        <tr><td><code class="inline">MV_CODEREADER_GIGE_DEVICE</code></td><td>1</td><td>GigE 网口设备</td></tr>
+        <tr><td><code class="inline">MV_CODEREADER_USB_DEVICE</code></td><td>4</td><td>USB3.0 设备</td></tr>
+        <tr><td><code class="inline">MV_CODEREADER_CAMERALINK_DEVICE</code></td><td>8</td><td>CameraLink 设备</td></tr>
+      </tbody></table></div>
+
+      <h3 id="cs-ch1-error">常用错误码</h3>
+      <div class="table-wrap"><table><thead><tr><th>常量</th><th>说明</th></tr></thead><tbody>
+        <tr><td><code class="inline">MV_CODEREADER_OK</code></td><td>成功 (0)</td></tr>
+        <tr><td><code class="inline">MV_CODEREADER_E_HANDLE</code></td><td>无效句柄</td></tr>
+        <tr><td><code class="inline">MV_CODEREADER_E_PARAMETER</code></td><td>参数错误</td></tr>
+        <tr><td><code class="inline">MV_CODEREADER_E_CALLORDER</code></td><td>调用顺序错误</td></tr>
+        <tr><td><code class="inline">MV_CODEREADER_E_NODATA</code></td><td>无数据</td></tr>
+      </tbody></table></div>
+
+      <h2 id="cs-ch2-prereq">第二章：开发环境</h2>
+      <ul><li>已安装 IDMVS 或 MVS Runtime</li><li>项目已引用 <code class="inline">MvCodeReaderSDKNet.dll</code></li><li>程序位数与 DLL 一致</li><li>GigE 设备：网卡巨帧 + 同网段</li></ul>
+      <h3 id="cs-ch2-references">常用引用</h3>
+      <div class="code-block"><div class="code-header"><span>C#</span><button class="copy-btn" onclick="copyCode(this)">复制</button></div><div class="code-body"><div class="line-numbers"><span>1</span><span>2</span><span>3</span><span>4</span></div><div class="code-content"><code><span class="kw">using</span> <span class="tp">System</span>;
+<span class="kw">using</span> <span class="tp">MvCodeReaderSDKNet</span>;
+<span class="kw">using</span> <span class="tp">System.Runtime.InteropServices</span>;  <span class="cm">// Marshal</span>
+<span class="kw">using</span> <span class="tp">System.Threading</span>;              <span class="cm">// 接收线程</span></code></div></div></div>
+
+      <h2 id="cs-ch3-flow">第三章：编程流程（重点）</h2>
+      <div class="flow-container"><div class="flow-group-label">连接阶段</div><div class="flow"><div class="flow-step highlight">枚举设备</div><div class="flow-arrow">→</div><div class="flow-step highlight">创建句柄</div><div class="flow-arrow">→</div><div class="flow-step highlight">设置地域</div><div class="flow-arrow">→</div><div class="flow-step highlight">打开设备</div></div></div>
+      <div class="flow-container"><div class="flow-group-label">运行阶段</div><div class="flow"><div class="flow-step">设置参数</div><div class="flow-arrow">→</div><div class="flow-step">开始取流</div><div class="flow-arrow">→</div><div class="flow-step">获取图像/结果</div></div></div>
+      <div class="flow-container"><div class="flow-group-label">释放阶段</div><div class="flow"><div class="flow-step">停止取流</div><div class="flow-arrow">→</div><div class="flow-step">关闭设备</div><div class="flow-arrow">→</div><div class="flow-step">销毁句柄</div></div></div>
+
+      <h3 id="cs-ch3-connect">连接阶段</h3>
+      <h4>1. 枚举设备</h4>
+      <div class="code-block"><div class="code-header"><span>C#</span><button class="copy-btn" onclick="copyCode(this)">复制</button></div><div class="code-body"><div class="line-numbers"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div><div class="code-content"><code><span class="kw">var</span> <span class="fn">deviceList</span> = <span class="kw">new</span> <span class="tp">MvCodeReader</span>.<span class="tp">MV_CODEREADER_DEVICE_INFO_LIST</span>();
+<span class="tp">int</span> <span class="fn">nRet</span> = <span class="tp">MvCodeReader</span>.<span class="fn">MV_CODEREADER_EnumDevices_NET</span>(
+    <span class="kw">ref</span> deviceList, <span class="tp">MvCodeReader</span>.<span class="nm">MV_CODEREADER_GIGE_DEVICE</span>);</code></div></div></div>
+
+      <h4>2. 创建句柄（必须 Marshal.PtrToStructure）</h4>
+      <div class="code-block"><div class="code-header"><span>C#</span><button class="copy-btn" onclick="copyCode(this)">复制</button></div><div class="code-body"><div class="line-numbers"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span></div><div class="code-content"><code><span class="kw">var</span> <span class="fn">stDevInfo</span> = (<span class="tp">MvCodeReader</span>.<span class="tp">MV_CODEREADER_DEVICE_INFO</span>)
+    <span class="tp">Marshal</span>.<span class="fn">PtrToStructure</span>(deviceList.<span class="fn">pDeviceInfo</span>[<span class="nm">0</span>],
+        <span class="kw">typeof</span>(<span class="tp">MvCodeReader</span>.<span class="tp">MV_CODEREADER_DEVICE_INFO</span>));
+
+<span class="tp">MvCodeReader</span> <span class="fn">device</span> = <span class="kw">new</span> <span class="tp">MvCodeReader</span>();
+nRet = device.<span class="fn">MV_CODEREADER_CreateHandle_NET</span>(<span class="kw">ref</span> stDevInfo);</code></div></div></div>
+
+      <h4>3. 设置地域（DllImport）</h4>
+      <div class="code-block"><div class="code-header"><span>C# — DllImport</span><button class="copy-btn" onclick="copyCode(this)">复制</button></div><div class="code-body"><div class="line-numbers"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span></div><div class="code-content"><code>[<span class="fn">DllImport</span>(<span class="st">"MvCodeReaderCtrl.dll"</span>,
+    EntryPoint = <span class="st">"MV_CODEREADER_SetAreaInfoConfig"</span>)]
+<span class="kw">private static extern</span> <span class="tp">Int32</span> <span class="fn">MV_CODEREADER_SetAreaInfoConfig</span>(
+    <span class="tp">IntPtr</span> handle, <span class="tp">uint</span> nAreaAddress, <span class="tp">uint</span> nAreaCode);
+
+<span class="tp">IntPtr</span> <span class="fn">handle</span> = device.<span class="fn">GetCameraHandle</span>();
+<span class="fn">MV_CODEREADER_SetAreaInfoConfig</span>(handle, <span class="nm">0xa80</span>, <span class="nm">0x10000</span>);
+<span class="cm">// 中国：0xa80, 0x10000  |  海外：0xa80, 0x20000</span></code></div></div></div>
+      <div class="info-box warn"><div class="info-box-title">⚠️ 常见错误</div><p>❌ OpenDevice 后才设置地域 &nbsp; ❌ 编造 SetAreaInfoConfig_NET<br>❌ 把 0xa80 写成字符串</p></div>
+
+      <h4>4. 打开设备</h4>
+      <div class="code-block"><div class="code-header"><span>C#</span><button class="copy-btn" onclick="copyCode(this)">复制</button></div><div class="code-body"><div class="line-numbers"><span>1</span></div><div class="code-content"><code>nRet = device.<span class="fn">MV_CODEREADER_OpenDevice_NET</span>();</code></div></div></div>
+
+      <h3 id="cs-ch3-release">释放阶段</h3>
+      <div class="code-block"><div class="code-header"><span>C# — try/finally 释放</span><button class="copy-btn" onclick="copyCode(this)">复制</button></div><div class="code-body"><div class="line-numbers"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span></div><div class="code-content"><code><span class="kw">finally</span>
+{
+    <span class="kw">if</span> (device != <span class="kw">null</span>)
+    {
+        <span class="kw">if</span> (grabbing)  <span class="kw">try</span> { device.<span class="fn">MV_CODEREADER_StopGrabbing_NET</span>(); } <span class="kw">catch</span> { }
+        <span class="kw">if</span> (opened)    <span class="kw">try</span> { device.<span class="fn">MV_CODEREADER_CloseDevice_NET</span>(); } <span class="kw">catch</span> { }
+        <span class="kw">if</span> (handleOK)  <span class="kw">try</span> { device.<span class="fn">MV_CODEREADER_DestroyHandle_NET</span>(); } <span class="kw">catch</span> { }
+    }
+}</code></div></div></div>
+      <div class="info-box tip"><div class="info-box-title">💡 提示</div><p>C# 虽有 GC，但 SDK 句柄<strong>必须手动释放</strong>，用 try/finally 包裹。</p></div>
+
+      <h3 id="cs-ch3-full">完整示例</h3>
+      <div class="code-block"><div class="code-header"><span>C# — 枚举→打开→关闭</span><button class="copy-btn" onclick="copyCode(this)">复制</button></div><div class="code-body"><div class="line-numbers"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</span><span>28</span><span>29</span><span>30</span><span>31</span><span>32</span><span>33</span><span>34</span><span>35</span><span>36</span><span>37</span></div><div class="code-content"><code><span class="kw">using</span> <span class="tp">System</span>;
+<span class="kw">using</span> <span class="tp">System.Runtime.InteropServices</span>;
+<span class="kw">using</span> <span class="tp">MvCodeReaderSDKNet</span>;
+
+<span class="tp">MvCodeReader</span> <span class="fn">device</span> = <span class="kw">null</span>;
+<span class="tp">bool</span> <span class="fn">hOK</span> = <span class="kw">false</span>, <span class="fn">dOK</span> = <span class="kw">false</span>;
+<span class="kw">try</span>
+{
+    <span class="kw">var</span> <span class="fn">dl</span> = <span class="kw">new</span> <span class="tp">MvCodeReader</span>.<span class="tp">MV_CODEREADER_DEVICE_INFO_LIST</span>();
+
+    <span class="tp">MvCodeReader</span>.<span class="fn">MV_CODEREADER_EnumDevices_NET</span>(<span class="kw">ref</span> dl, <span class="tp">MvCodeReader</span>.<span class="nm">MV_CODEREADER_GIGE_DEVICE</span>);
+    <span class="kw">if</span> (dl.nDeviceNum == <span class="nm">0</span>) <span class="kw">return</span>;
+
+    <span class="kw">var</span> <span class="fn">info</span> = (<span class="tp">MvCodeReader</span>.<span class="tp">MV_CODEREADER_DEVICE_INFO</span>)
+        <span class="tp">Marshal</span>.<span class="fn">PtrToStructure</span>(dl.pDeviceInfo[<span class="nm">0</span>],
+            <span class="kw">typeof</span>(<span class="tp">MvCodeReader</span>.<span class="tp">MV_CODEREADER_DEVICE_INFO</span>));
+
+    device = <span class="kw">new</span> <span class="tp">MvCodeReader</span>();
+    device.<span class="fn">MV_CODEREADER_CreateHandle_NET</span>(<span class="kw">ref</span> info); hOK = <span class="kw">true</span>;
+    <span class="fn">MV_CODEREADER_SetAreaInfoConfig</span>(device.<span class="fn">GetCameraHandle</span>(), <span class="nm">0xa80</span>, <span class="nm">0x10000</span>);
+    device.<span class="fn">MV_CODEREADER_OpenDevice_NET</span>(); dOK = <span class="kw">true</span>;
+
+    device.<span class="fn">MV_CODEREADER_SetEnumValue_NET</span>(<span class="st">"TriggerMode"</span>,
+        (<span class="tp">uint</span>)<span class="tp">MvCodeReader</span>.<span class="nm">MV_CODEREADER_TRIGGER_MODE</span>.MV_CODEREADER_TRIGGER_MODE_OFF);
+    device.<span class="fn">MV_CODEREADER_SetFloatValue_NET</span>(<span class="st">"ExposureTime"</span>, <span class="nm">200.0f</span>);
+    device.<span class="fn">MV_CODEREADER_StartGrabbing_NET</span>();
+    <span class="cm">// ... 取图逻辑 ...</span>
+}
+<span class="kw">finally</span>
+{
+    <span class="kw">if</span> (device != <span class="kw">null</span>)
+    {
+        <span class="kw">try</span> { device.<span class="fn">MV_CODEREADER_StopGrabbing_NET</span>(); } <span class="kw">catch</span> { }
+        <span class="kw">if</span> (dOK) <span class="kw">try</span> { device.<span class="fn">MV_CODEREADER_CloseDevice_NET</span>(); } <span class="kw">catch</span> { }
+        <span class="kw">if</span> (hOK) <span class="kw">try</span> { device.<span class="fn">MV_CODEREADER_DestroyHandle_NET</span>(); } <span class="kw">catch</span> { }
+    }
+}</code></div></div></div>
+
+      <h2 id="cs-ch4-nodes">第四章：参数设置</h2>
+      <h3>节点类型与 C# 接口映射</h3>
+      <div class="table-wrap"><table><thead><tr><th>类型</th><th>读取</th><th>设置</th><th>值类型</th></tr></thead><tbody>
+        <tr><td>Integer</td><td><code class="inline">GetIntValue_NET</code></td><td><code class="inline">SetIntValue_NET</code></td><td>Int64</td></tr>
+        <tr><td>Float</td><td><code class="inline">GetFloatValue_NET</code></td><td><code class="inline">SetFloatValue_NET</code></td><td>Single</td></tr>
+        <tr><td>Enumeration</td><td><code class="inline">GetEnumValue_NET</code></td><td><code class="inline">SetEnumValue_NET</code></td><td>UInt32</td></tr>
+        <tr><td>Boolean</td><td><code class="inline">GetBoolValue_NET</code></td><td><code class="inline">SetBoolValue_NET</code></td><td>Boolean</td></tr>
+        <tr><td>StringReg</td><td><code class="inline">GetStringValue_NET</code></td><td><code class="inline">SetStringValue_NET</code></td><td>String</td></tr>
+        <tr><td>Command</td><td>—</td><td><code class="inline">SetCommandValue_NET</code></td><td>—</td></tr>
+      </tbody></table></div>
+      <h3 id="cs-ch4-rules">重要规则</h3>
+      <div class="info-box warn"><div class="info-box-title">⚠️ 枚举节点必须用整数值</div><p>❌ <code class="inline">SetEnumValue_NET("TriggerMode", "On")</code><br>✅ <code class="inline">SetEnumValue_NET("TriggerMode", (uint)MV_CODEREADER_TRIGGER_MODE.MV_CODEREADER_TRIGGER_MODE_ON)</code></p></div>
+
+      <h3 id="cs-ch4-param-table">常用参数速查</h3>
+      <div class="table-wrap"><table><thead><tr><th>参数</th><th>节点名</th><th>类型</th></tr></thead><tbody>
+        <tr><td>曝光时间</td><td><code class="inline">ExposureTime</code></td><td>Float</td></tr>
+        <tr><td>增益</td><td><code class="inline">Gain</code></td><td>Float</td></tr>
+        <tr><td>采集帧率</td><td><code class="inline">AcquisitionFrameRate</code></td><td>Float</td></tr>
+        <tr><td>触发模式</td><td><code class="inline">TriggerMode</code></td><td>Enum</td></tr>
+        <tr><td>触发源</td><td><code class="inline">TriggerSource</code></td><td>Enum</td></tr>
+        <tr><td>软触发</td><td><code class="inline">TriggerSoftware</code></td><td>Command</td></tr>
+        <tr><td>设备重启</td><td><code class="inline">DeviceReset</code></td><td>Command</td></tr>
+        <tr><td>一维码个数</td><td><code class="inline">LocBarNum</code></td><td>Integer</td></tr>
+        <tr><td>二维码个数</td><td><code class="inline">IdxLocCodeNum</code></td><td>Integer</td></tr>
+        <tr><td>算法等待时间</td><td><code class="inline">WaitingTime</code></td><td>Integer</td></tr>
+      </tbody></table></div>
+
+      <h2 id="cs-ch5-modes">第五章：取图方式</h2>
+      <p>两种方式<strong>互斥</strong>：主动轮询 vs 回调取图。</p>
+      <h3 id="cs-ch5-poll">主动轮询</h3>
+      <div class="code-block"><div class="code-header"><span>C# — Marshal 取图</span><button class="copy-btn" onclick="copyCode(this)">复制</button></div><div class="code-body"><div class="line-numbers"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span></div><div class="code-content"><code><span class="tp">IntPtr</span> <span class="fn">pData</span> = <span class="tp">IntPtr</span>.Zero;
+<span class="kw">var</span> <span class="fn">fi</span> = <span class="kw">new</span> <span class="tp">MvCodeReader</span>.<span class="tp">MV_CODEREADER_IMAGE_OUT_INFO_EX2</span>();
+<span class="tp">IntPtr</span> <span class="fn">pFi</span> = <span class="tp">Marshal</span>.<span class="fn">AllocHGlobal</span>(
+    <span class="tp">Marshal</span>.<span class="fn">SizeOf</span>(<span class="kw">typeof</span>(<span class="tp">MvCodeReader</span>.<span class="tp">MV_CODEREADER_IMAGE_OUT_INFO_EX2</span>)));
+<span class="tp">Marshal</span>.<span class="fn">StructureToPtr</span>(fi, pFi, <span class="kw">false</span>);
+
+<span class="tp">int</span> <span class="fn">nRet</span> = device.<span class="fn">MV_CODEREADER_GetOneFrameTimeoutEx2_NET</span>(
+    <span class="kw">ref</span> pData, pFi, <span class="nm">2000</span>);
+
+<span class="kw">if</span> (nRet == <span class="tp">MvCodeReader</span>.<span class="nm">MV_CODEREADER_OK</span>)
+{
+    fi = (<span class="tp">MvCodeReader</span>.<span class="tp">MV_CODEREADER_IMAGE_OUT_INFO_EX2</span>)
+        <span class="tp">Marshal</span>.<span class="fn">PtrToStructure</span>(pFi, <span class="kw">typeof</span>(<span class="tp">MvCodeReader</span>.<span class="tp">MV_CODEREADER_IMAGE_OUT_INFO_EX2</span>));
+    <span class="tp">byte</span>[] <span class="fn">buf</span> = <span class="kw">new</span> <span class="tp">byte</span>[fi.nFrameLen];
+    <span class="tp">Marshal</span>.<span class="fn">Copy</span>(pData, buf, <span class="nm">0</span>, (<span class="tp">int</span>)fi.nFrameLen);
+}
+<span class="tp">Marshal</span>.<span class="fn">FreeHGlobal</span>(pFi);</code></div></div></div>
+
+      <h3 id="cs-ch5-callback">回调取图</h3>
+      <div class="code-block"><div class="code-header"><span>C# — 回调（delegate 必须保存）</span><button class="copy-btn" onclick="copyCode(this)">复制</button></div><div class="code-body"><div class="line-numbers"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span></div><div class="code-content"><code><span class="kw">static</span> <span class="tp">MvCodeReader</span>.<span class="tp">cbOutputEx2delegate</span> <span class="fn">ImageCallback</span>; <span class="cm">// 必须保存！</span>
+
+<span class="kw">public static void</span> <span class="fn">OnImage</span>(<span class="tp">IntPtr</span> pData, <span class="tp">IntPtr</span> pFi, <span class="tp">IntPtr</span> pUser)
+{
+    <span class="kw">if</span> (pData == <span class="tp">IntPtr</span>.Zero) <span class="kw">return</span>;
+    <span class="kw">var</span> <span class="fn">fi</span> = (<span class="tp">MvCodeReader</span>.<span class="tp">MV_CODEREADER_IMAGE_OUT_INFO_EX2</span>)
+        <span class="tp">Marshal</span>.<span class="fn">PtrToStructure</span>(pFi, <span class="kw">typeof</span>(<span class="tp">MvCodeReader</span>.<span class="tp">MV_CODEREADER_IMAGE_OUT_INFO_EX2</span>));
+    <span class="tp">byte</span>[] <span class="fn">buf</span> = <span class="kw">new</span> <span class="tp">byte</span>[fi.nFrameLen];
+    <span class="tp">Marshal</span>.<span class="fn">Copy</span>(pData, buf, <span class="nm">0</span>, (<span class="tp">int</span>)fi.nFrameLen);
+}
+
+ImageCallback = <span class="kw">new</span> <span class="tp">MvCodeReader</span>.<span class="tp">cbOutputEx2delegate</span>(OnImage);
+device.<span class="fn">MV_CODEREADER_RegisterImageCallBackEx2_NET</span>(ImageCallback, <span class="tp">IntPtr</span>.Zero);</code></div></div></div>
+      <div class="info-box warn"><div class="info-box-title">⚠️ C# 回调关键</div><p>① delegate <strong>必须保存为字段/静态变量</strong>，否则 GC 回收后回调失效<br>② 回调中不要执行耗时操作</p></div>
+
+      <h3 id="cs-ch5-struct">结构体指针访问</h3>
+      <p>C# 中 <code class="inline">SpecialInfo.stGigEInfo</code> 是 <code class="inline">Byte[]</code>，不能直接点字段：</p>
+      <div class="code-block"><div class="code-header"><span>C# — 获取序列号和 IP</span><button class="copy-btn" onclick="copyCode(this)">复制</button></div><div class="code-body"><div class="line-numbers"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span></div><div class="code-content"><code><span class="tp">IntPtr</span> <span class="fn">buf</span> = <span class="tp">Marshal</span>.<span class="fn">UnsafeAddrOfPinnedArrayElement</span>(
+    stDevInfo.SpecialInfo.stGigEInfo, <span class="nm">0</span>);
+<span class="kw">var</span> <span class="fn">gige</span> = (<span class="tp">MvCodeReader</span>.<span class="tp">MV_CODEREADER_GIGE_DEVICE_INFO</span>)
+    <span class="tp">Marshal</span>.<span class="fn">PtrToStructure</span>(buf, <span class="kw">typeof</span>(<span class="tp">MvCodeReader</span>.<span class="tp">MV_CODEREADER_GIGE_DEVICE_INFO</span>));
+
+<span class="tp">uint</span> <span class="fn">ip</span> = gige.nCurrentIp;
+<span class="tp">Console</span>.<span class="fn">WriteLine</span>(<span class="st">"SN: {0}"</span>, gige.chSerialNumber);
+<span class="tp">Console</span>.<span class="fn">WriteLine</span>(<span class="st">"IP: {0}.{1}.{2}.{3}"</span>,
+    (ip & <span class="nm">0xff000000</span>) >> <span class="nm">24</span>, (ip & <span class="nm">0x00ff0000</span>) >> <span class="nm">16</span>,
+    (ip & <span class="nm">0x0000ff00</span>) >> <span class="nm">8</span>, ip & <span class="nm">0x000000ff</span>);</code></div></div></div>
+
+      <h2 id="cs-ch6-soft">第六章：触发模式</h2>
+      <h3>软触发</h3>
+      <div class="code-block"><div class="code-header"><span>C#</span><button class="copy-btn" onclick="copyCode(this)">复制</button></div><div class="code-body"><div class="line-numbers"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span></div><div class="code-content"><code>device.<span class="fn">MV_CODEREADER_SetEnumValue_NET</span>(<span class="st">"TriggerMode"</span>,
+    (<span class="tp">uint</span>)<span class="tp">MvCodeReader</span>.<span class="nm">MV_CODEREADER_TRIGGER_MODE</span>.MV_CODEREADER_TRIGGER_MODE_ON);
+device.<span class="fn">MV_CODEREADER_SetEnumValue_NET</span>(<span class="st">"TriggerSource"</span>,
+    (<span class="tp">uint</span>)<span class="tp">MvCodeReader</span>.<span class="nm">MV_CODEREADER_TRIGGER_SOURCE</span>.MV_CODEREADER_TRIGGER_SOURCE_SOFTWARE);
+device.<span class="fn">MV_CODEREADER_StartGrabbing_NET</span>();
+device.<span class="fn">MV_CODEREADER_SetCommandValue_NET</span>(<span class="st">"TriggerSoftware"</span>);
+<span class="cm">// 然后 GetOneFrameTimeoutEx2_NET 或等待回调</span></code></div></div></div>
+
+      <h3 id="cs-ch6-hard">硬触发</h3>
+      <div class="code-block"><div class="code-header"><span>C#</span><button class="copy-btn" onclick="copyCode(this)">复制</button></div><div class="code-body"><div class="line-numbers"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span></div><div class="code-content"><code>device.<span class="fn">MV_CODEREADER_SetEnumValue_NET</span>(<span class="st">"TriggerMode"</span>,
+    (<span class="tp">uint</span>)<span class="tp">MvCodeReader</span>.<span class="nm">MV_CODEREADER_TRIGGER_MODE</span>.MV_CODEREADER_TRIGGER_MODE_ON);
+device.<span class="fn">MV_CODEREADER_SetEnumValue_NET</span>(<span class="st">"TriggerSource"</span>,
+    (<span class="tp">uint</span>)<span class="tp">MvCodeReader</span>.<span class="nm">MV_CODEREADER_TRIGGER_SOURCE</span>.MV_CODEREADER_TRIGGER_SOURCE_LINEIN0);
+device.<span class="fn">MV_CODEREADER_SetFloatValue_NET</span>(<span class="st">"TriggerDelay"</span>, <span class="nm">1000.0f</span>);
+device.<span class="fn">MV_CODEREADER_SetBoolValue_NET</span>(<span class="st">"TriggerCache"</span>, <span class="kw">true</span>);</code></div></div></div>
+
+      <h2 id="cs-ch7-multi">第七章：进阶场景</h2>
+      <h3>多相机</h3>
+      <div class="code-block"><div class="code-header"><span>C#</span><button class="copy-btn" onclick="copyCode(this)">复制</button></div><div class="code-body"><div class="line-numbers"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span></div><div class="code-content"><code><span class="tp">MvCodeReader</span>[] <span class="fn">devs</span> = <span class="kw">new</span> <span class="tp">MvCodeReader</span>[<span class="nm">4</span>];
+<span class="tp">MvCodeReader</span>.<span class="tp">cbOutputEx2delegate</span>[] <span class="fn">cbs</span> = <span class="kw">new</span> <span class="tp">MvCodeReader</span>.<span class="tp">cbOutputEx2delegate</span>[<span class="nm">4</span>];
+<span class="kw">for</span> (<span class="tp">int</span> i = <span class="nm">0</span>; i &lt; <span class="nm">4</span>; i++)
+{
+    devs[i] = <span class="kw">new</span> <span class="tp">MvCodeReader</span>();
+    devs[i].<span class="fn">MV_CODEREADER_RegisterImageCallBackEx2_NET</span>(cbs[i], (<span class="tp">IntPtr</span>)i);
+}</code></div></div></div>
+
+      <h3 id="cs-ch7-reconnect">断线重连</h3>
+      <div class="code-block"><div class="code-header"><span>C#</span><button class="copy-btn" onclick="copyCode(this)">复制</button></div><div class="code-body"><div class="line-numbers"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span></div><div class="code-content"><code><span class="tp">MvCodeReader</span>.<span class="tp">cbExceptiondelegate</span> <span class="fn">excCb</span>;
+excCb = <span class="kw">new</span> <span class="tp">MvCodeReader</span>.<span class="tp">cbExceptiondelegate</span>(<span class="kw">delegate</span>(<span class="tp">UInt32</span> t, <span class="tp">IntPtr</span> u)
+{
+    <span class="cm">// 设备断开，实现重连逻辑</span>
+});
+device.<span class="fn">MV_CODEREADER_RegisterExceptionCallBack_NET</span>(excCb, <span class="tp">IntPtr</span>.Zero);
+<span class="tp">GC</span>.<span class="fn">KeepAlive</span>(excCb);</code></div></div></div>
+
+      <h3 id="cs-ch7-forceip">强制 IP</h3>
+      <div class="code-block"><div class="code-header"><span>C#</span><button class="copy-btn" onclick="copyCode(this)">复制</button></div><div class="code-body"><div class="line-numbers"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span></div><div class="code-content"><code>[<span class="fn">DllImport</span>(<span class="st">"MvCodeReaderCtrl.dll"</span>)]
+<span class="kw">static extern int</span> <span class="fn">MV_CODEREADER_ForceIp</span>(
+    <span class="tp">IntPtr</span> handle, <span class="tp">uint</span> nIP, <span class="tp">uint</span> nSubNet, <span class="tp">uint</span> nGateWay);
+
+<span class="cm">// 使用示例：192.168.1.100</span>
+<span class="tp">uint</span> <span class="fn">ip</span> = (<span class="nm">192</span> &lt;&lt; <span class="nm">24</span>) | (<span class="nm">168</span> &lt;&lt; <span class="nm">16</span>) | (<span class="nm">1</span> &lt;&lt; <span class="nm">8</span>) | <span class="nm">100</span>;
+<span class="tp">uint</span> <span class="fn">mask</span> = (<span class="nm">255</span> &lt;&lt; <span class="nm">24</span>) | (<span class="nm">255</span> &lt;&lt; <span class="nm">16</span>) | (<span class="nm">255</span> &lt;&lt; <span class="nm">8</span>) | <span class="nm">0</span>;
+<span class="fn">MV_CODEREADER_ForceIp</span>(handle, ip, mask, <span class="nm">0</span>);</code></div></div></div>
+
+      <h3 id="cs-ch7-file">文件读写</h3>
+      <div class="code-block"><div class="code-header"><span>C# — 保存/加载配置</span><button class="copy-btn" onclick="copyCode(this)">复制</button></div><div class="code-body"><div class="line-numbers"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span></div><div class="code-content"><code><span class="cm">// 保存配置到文件</span>
+device.<span class="fn">MV_CODEREADER_FeatureSave_NET</span>(<span class="st">"config.bin"</span>);
+
+<span class="cm">// 从文件加载配置</span>
+device.<span class="fn">MV_CODEREADER_FeatureLoad_NET</span>(<span class="st">"config.bin"</span>);
+
+<span class="cm">// 导出参数为 XML</span>
+device.<span class="fn">MV_CODEREADER_ExportAllFeature_NET</span>(<span class="st">"params.xml"</span>);</code></div></div></div>
+
+      <h2 id="cs-ch8-table">第八章：常见错误排查</h2>
+      <div class="table-wrap"><table><thead><tr><th>现象</th><th>排查方向</th></tr></thead><tbody>
+        <tr><td><strong>枚举不到设备</strong></td><td>网卡IP、设备IP、网线、防火墙、供电</td></tr>
+        <tr><td><strong>能枚举但打不开</strong></td><td>是否设置地域、设备被占用、IP冲突</td></tr>
+        <tr><td><strong>打开成功但无图</strong></td><td>未开始取流、触发模式错误、无触发信号</td></tr>
+        <tr><td><strong>参数设置失败</strong></td><td>节点类型不匹配、值超范围、取流状态不允许</td></tr>
+        <tr><td><strong>读码结果为空</strong></td><td>码制未开启、曝光不合适、ROI设置错误</td></tr>
+        <tr><td><strong>回调不触发</strong></td><td>delegate 被 GC 回收、未 StartGrabbing</td></tr>
+        <tr><td><strong>DLL 加载失败</strong></td><td>位数不匹配、DLL 不在 PATH 或程序目录</td></tr>
+      </tbody></table></div>
+
+      <h2 id="cs-ch9-device">第九章：API 速查</h2>
+      <h3>设备管理</h3>
+      <div class="api-item"><div class="sig">MV_CODEREADER_EnumDevices_NET(ref MV_CODEREADER_DEVICE_INFO_LIST, uint nTLayerType)</div><div class="desc">枚举设备</div></div>
+      <div class="api-item"><div class="sig">MV_CODEREADER_CreateHandle_NET(ref MV_CODEREADER_DEVICE_INFO)</div><div class="desc">创建句柄</div></div>
+      <div class="api-item"><div class="sig">MV_CODEREADER_OpenDevice_NET() / CloseDevice_NET()</div><div class="desc">打开/关闭设备</div></div>
+      <div class="api-item"><div class="sig">MV_CODEREADER_DestroyHandle_NET()</div><div class="desc">销毁句柄</div></div>
+      <div class="api-item"><div class="sig">GetCameraHandle() → IntPtr</div><div class="desc">获取原生句柄（用于 DllImport）</div></div>
+      <h3 id="cs-ch9-param">参数读写</h3>
+      <div class="api-item"><div class="sig">SetIntValue_NET(string name, Int64 value) / GetIntValue_NET</div><div class="desc">Integer 节点</div></div>
+      <div class="api-item"><div class="sig">SetFloatValue_NET(string name, float value) / GetFloatValue_NET</div><div class="desc">Float 节点</div></div>
+      <div class="api-item"><div class="sig">SetEnumValue_NET(string name, uint value) / GetEnumValue_NET</div><div class="desc">Enumeration 节点（用整数值）</div></div>
+      <div class="api-item"><div class="sig">SetBoolValue_NET(string name, bool value) / GetBoolValue_NET</div><div class="desc">Boolean 节点</div></div>
+      <div class="api-item"><div class="sig">SetStringValue_NET(string name, string value) / GetStringValue_NET</div><div class="desc">String 节点</div></div>
+      <div class="api-item"><div class="sig">SetCommandValue_NET(string name)</div><div class="desc">Command 节点（如 TriggerSoftware）</div></div>
+      <h3 id="cs-ch9-grab">取图控制</h3>
+      <div class="api-item"><div class="sig">MV_CODEREADER_StartGrabbing_NET() / StopGrabbing_NET()</div><div class="desc">开始/停止取流</div></div>
+      <div class="api-item"><div class="sig">MV_CODEREADER_GetOneFrameTimeoutEx2_NET(ref IntPtr, IntPtr, int timeout)</div><div class="desc">主动轮询取图（超时ms）</div></div>
+      <div class="api-item"><div class="sig">MV_CODEREADER_RegisterImageCallBackEx2_NET(cbOutputEx2delegate, IntPtr)</div><div class="desc">注册图像回调</div></div>
+      <div class="api-item"><div class="sig">MV_CODEREADER_RegisterExceptionCallBack_NET(cbExceptiondelegate, IntPtr)</div><div class="desc">注册异常回调（断线等）</div></div>
+    </div>
+  </div>
+</div>
+
+<script>
+function toggleSidebar(){document.getElementById('sidebar').classList.toggle('open');document.getElementById('overlay').classList.toggle('open')}
+function closeMobile(){if(window.innerWidth<=900)toggleSidebar()}
+function switchLang(lang){
+  document.querySelectorAll('.lang-nav').forEach(function(n){n.style.display='none'});
+  document.querySelectorAll('.lang-content').forEach(function(c){c.classList.remove('active')});
+  document.querySelectorAll('.lang-btn').forEach(function(b){b.classList.remove('active')});
+  document.querySelectorAll('.topbar-lang').forEach(function(b){b.classList.remove('active')});
+  document.getElementById('nav-'+lang).style.display='block';
+  document.getElementById('content-'+lang).classList.add('active');
+  document.getElementById('sideLang'+(lang==='c'?'C':'CSharp')).classList.add('active');
+  document.getElementById('topLang'+(lang==='c'?'C':'CSharp')).classList.add('active');
+}
+function copyCode(btn){var code=btn.closest('.code-block').querySelector('code');navigator.clipboard.writeText(code.textContent).then(function(){btn.textContent='已复制';setTimeout(function(){btn.textContent='复制'},1500)})}
+function downloadDoc(){var btn=document.getElementById('downloadBtn');btn.textContent='准备中...';btn.disabled=true;var html=document.documentElement.outerHTML;var blob=new Blob(['<!DOCTYPE html>'+html],{type:'text/html;charset=utf-8'});var url=URL.createObjectURL(blob);var a=document.createElement('a');a.href=url;a.download='MvCodeReader_SDK_编程学习指南.html';document.body.appendChild(a);a.click();document.body.removeChild(a);URL.revokeObjectURL(url);btn.textContent='✓ 已下载';setTimeout(function(){btn.textContent='⬇ 下载文档';btn.disabled=false},2000)}
+</script>
+</body>
+</html>
