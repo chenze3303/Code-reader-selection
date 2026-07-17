@@ -20,7 +20,8 @@ https://chenze3303.github.io/Code-reader-selection/
 ├── contact-douyin.jpg
 ├── sdk-guide.html                  # 独立 SDK 参考页面（C/C++ & C# 指南）
 ├── css/
-│   └── style.css                   # 全局样式（PC + 移动端响应式，含暗黑模式全面优化）
+│   ├── style.css                   # 全局样式（PC + 移动端响应式，含暗黑模式全面优化）
+│   └── style.min.css               # 压缩版样式（节省 17.7%）
 ├── js/
 │   ├── app.js                      # 智能选型：导航切换 + PPM/视野计算 + i18n + Toast 通知
 │   ├── bom.js                      # 配单表：型号树、选配件弹窗、自动生成配单、导出 CSV
@@ -38,7 +39,14 @@ https://chenze3303.github.io/Code-reader-selection/
 └── scripts/
     ├── scrape_base_downloads.js    # 抓取基线型号资料下载列表
     ├── scrape_dist_downloads.js    # 抓取经销型号资料下载列表
-    └── gen_download_urls.js        # 从下载数据生成 URL 映射文件
+    ├── gen_download_urls.js        # 从下载数据生成 URL 映射文件
+    ├── minify-css.js               # CSS 压缩脚本
+    ├── minify-js.js                # JS 压缩脚本
+    ├── compress-images.js          # 图片压缩脚本
+    ├── replace-images.js           # 替换压缩后的图片
+    ├── perf-optimize.js            # 性能优化报告
+    ├── test-performance.js         # 性能对比测试
+    └── test-all.js                 # 完整性能测试
 ```
 
 ---
@@ -293,6 +301,42 @@ const PRODUCT_DB = [
 - **响应式适配**：桌面端左右分栏，移动端底部 Tab 栏 + 统一滚动
 - **搜索归一化**：统一 `MV-` 前缀剥离 + 大小写不敏感
 - **样式一致**：12px 外边距 + 10px 圆角卡片 + 38px 统一控件高度
+- **性能优化**：CSS/JS/图片压缩，总体积从 1.14MB 降至 0.75MB（节省 33.6%）
+
+---
+
+## 性能优化
+
+本项目已进行性能优化，总体积减少 33.6%：
+
+| 类别 | 优化前 | 优化后 | 节省 |
+|------|--------|--------|------|
+| CSS | 121.2KB | 99.7KB | 17.7% |
+| JS | 586.3KB | 461.8KB | 21.2% |
+| 图片 | 436.0KB | 197.3KB | 54.8% |
+| **总计** | **1143.5KB** | **758.8KB** | **33.6%** |
+
+### 优化内容
+
+- **CSS 压缩**：移除注释、空格、换行
+- **JS 压缩**：移除注释、简化代码
+- **图片压缩**：使用 sharp 库压缩 JPG/PNG，节省 54.8%
+
+### 性能测试脚本
+
+```bash
+# 压缩 CSS
+node scripts/minify-css.js
+
+# 压缩 JS
+node scripts/minify-js.js
+
+# 压缩图片
+node scripts/compress-images.js
+
+# 查看性能报告
+node scripts/test-all.js
+```
 
 ---
 
