@@ -1,5 +1,5 @@
 // product_db.js - 选型产品数据库
-// 自动生成于 2026/7/18 01:31:27
+// 自动生成于 2026/7/18 01:47:03
 
 const PRODUCT_DB = [
   { model: "ID803M-03M", series: "ID800", resolution: { w: 640, h: 480 }, pixelSize: 3.7, focal: 3.1, interface: "USB2.0、RS232、RJ45", protection: "IP54", workingDist: { min: 120, max: 120 } },

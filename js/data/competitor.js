@@ -53,7 +53,7 @@
     { brand: "新大陆", model: "Soldier180 AI", competitorDesc: "1.2/2MP半偏照明，多色可选，AI读码", hikModel: "ID2023XM", advantageDesc: "体积小巧，镜头/对焦方式选择性多，提供U口/串口/网口，高度集成线缆" },
     { brand: "新大陆", model: "Soldier300", competitorDesc: "2.3/5MP液态对焦，14颗半偏照明，OCR功能", hikModel: "ID2023XM / ID3060RM", advantageDesc: "3入3出IO更丰富，一体化线缆，软件功能全，5MP型号用ID3060RM应对" },
     { brand: "新大陆", model: "NVF800", competitorDesc: "1MP AI手动对焦，半偏照明，视场角42°/27°", hikModel: "ID2023XM", advantageDesc: "疑难码性能更优，自动对焦灵活，2入2出接口，性价比优势显著" },
-];;
+];;;;
 
   var currentDisplayData = competitorDB.slice();
   var allCardsExpanded = false;

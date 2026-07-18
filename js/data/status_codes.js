@@ -1,5 +1,5 @@
 // status_codes.js - 状态码数据
-// 自动生成于 2026/7/18 01:31:27
+// 自动生成于 2026/7/18 01:47:03
 
 var STATUS_CODES = [
   { category: "正确码", name: "MV_CODEREADER_OK", value: "0x00000000", description: "成功，无错误" },

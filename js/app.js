@@ -40,14 +40,14 @@
     if (btnM) btnM.textContent = icon;
     swapThemeImages(isDark);
 
-    // 重新渲染拼接SVG以适配主题
+    // 重新渲染拼接3D场景以适配主题
     if (window._stitchResults && window._stitchResults.length > 0) {
       var svgArea = document.getElementById('stitchSvgArea');
       if (svgArea && svgArea.style.display !== 'none') {
         var activeIdx = window._stitchActiveIdx || 0;
         var best = window._stitchResults[activeIdx];
         if (best) {
-          svgArea.innerHTML = renderStitchSVG(best, window._stitchBarcodeW, window._stitchBarcodeH, 'auto', window._stitchTotalW, window._stitchTotalH);
+          renderStitchSVG(best, window._stitchBarcodeW, window._stitchBarcodeH, 'auto', window._stitchTotalW, window._stitchTotalH);
         }
       }
     }
@@ -697,8 +697,10 @@
         mSize <= 0 || fovW <= 0 || fovH <= 0 || wd <= 0) {
       alert('请完整填写所有必填参数（码制类型、模块尺寸、工作距离、视野宽度、视野高度），且数值必须大于0');
       resetSchematic();
-      document.getElementById('top1Content').innerHTML = '<div class="empty-state">等待参数输入...</div>';
-      document.getElementById('showModalBtn').disabled = true;
+      var top1El = document.getElementById('top1Content');
+      if (top1El) top1El.innerHTML = '<div class="empty-state">等待参数输入...</div>';
+      var modalBtnEl = document.getElementById('showModalBtn');
+      if (modalBtnEl) modalBtnEl.disabled = true;
       cachedFilteredList = null;
       return;
     }
@@ -803,13 +805,15 @@
     });
 
     cachedFilteredList = filtered;
-    document.getElementById('showModalBtn').disabled = false;
+    var modalBtnEl2 = document.getElementById('showModalBtn');
+    if (modalBtnEl2) modalBtnEl2.disabled = false;
 
     if (filtered.length > 0) {
       var best = filtered[0];
       var ppmDisplay = best.ppm !== null ? best.ppm.toFixed(2) : '—';
       var ppmLevelDisplay = best.ppmLevel ? ' (' + best.ppmLevel + ')' : '';
-      document.getElementById('top1Content').innerHTML = 
+      var top1El = document.getElementById('top1Content');
+      if (top1El) top1El.innerHTML = 
         '<div class="result-main">' +
           '<div class="result-card"><strong>' + t('showModal').replace('📋 ', '') + '</strong><span>' + best.model.model + '</span></div>' +
           '<div class="result-card"><strong>PPM</strong><span>' + ppmDisplay + ppmLevelDisplay + '</span></div>' +
@@ -835,26 +839,38 @@
         if (wdMM < item.model.workingDist.min || wdMM > item.model.workingDist.max) {
           if (failReasons.indexOf('dist') === -1) failReasons.push('dist');
         }
+        if (item.model.focal && item.ppm !== null && (item.ppm < ppmRange.min || item.ppm > ppmRange.max)) {
+          if (failReasons.indexOf('ppm') === -1) failReasons.push('ppm');
+        }
       });
 
       var reasonTags = '';
       if (failReasons.indexOf('fov') !== -1) reasonTags += '<span class="stitch-hint-reason">视野超出单机极限</span>';
       if (failReasons.indexOf('dist') !== -1) reasonTags += '<span class="stitch-hint-reason">工作距离受限</span>';
+      if (failReasons.indexOf('ppm') !== -1) reasonTags += '<span class="stitch-hint-reason">PPM超出范围</span>';
       if (!reasonTags) reasonTags = '<span class="stitch-hint-reason">视野超出单机极限</span>';
 
-      document.getElementById('top1Content').innerHTML =
+      // 只要有PPM超出范围，一律不显示拼接方案
+      var canStitch = failReasons.indexOf('ppm') === -1 && failReasons.indexOf('fov') !== -1;
+      var stitchBtnHtml = canStitch ? '<button class="stitch-hint-btn" id="showStitchBtn">📐 查看拼接方案</button>' : '';
+
+      var top1El2 = document.getElementById('top1Content');
+      if (top1El2) top1El2.innerHTML =
         '<div class="stitch-hint-card">' +
           '<div class="stitch-hint-icon">📷</div>' +
           '<div class="stitch-hint-title">单相机方案无法满足当前需求</div>' +
-          '<div class="stitch-hint-desc">您输入的视野范围较大，单台读码器无法完整覆盖。建议采用多相机组网拼接方案，通过多台读码器协同工作实现完整视野覆盖。</div>' +
-          '<button class="stitch-hint-btn" id="showStitchBtn">📐 查看拼接方案</button>' +
+          '<div class="stitch-hint-desc">' + (canStitch ? '您输入的视野范围较大，单台读码器无法完整覆盖。建议采用多相机组网拼接方案，通过多台读码器协同工作实现完整视野覆盖。' : '当前参数下所有型号的PPM均超出合理范围，请调整模块尺寸、工作距离或视野参数。') + '</div>' +
+          stitchBtnHtml +
           '<div class="stitch-hint-reasons">' + reasonTags + '</div>' +
         '</div>';
 
-      // 绑定按钮事件
-      document.getElementById('showStitchBtn').addEventListener('click', function() {
-        if (window._stitch) window._stitch.show();
-      });
+      // 绑定按钮事件（仅在有拼接按钮时）
+      if (canStitch) {
+        var showStitchBtn = document.getElementById('showStitchBtn');
+        if (showStitchBtn) showStitchBtn.addEventListener('click', function() {
+          if (window._stitch) window._stitch.show();
+        });
+      }
     }
 
     // 移除 loading 状态
@@ -920,7 +936,7 @@
     var closeBtn = document.getElementById('closeModalBtn');
     var resetBtn = document.getElementById('resetSeriesFilterBtn');
 
-    showBtn.addEventListener('click', function() {
+    if (showBtn) showBtn.addEventListener('click', function() {
       renderModalWithSeriesFilter();
       modal.classList.add('active');
     });
@@ -1002,8 +1018,10 @@
     document.getElementById('fovWidth').value = '';
     document.getElementById('fovHeight').value = '';
     resetSchematic();
-    document.getElementById('top1Content').innerHTML = '<div class="empty-state">' + t('emptyState') + '</div>';
-    document.getElementById('showModalBtn').disabled = true;
+    var top1Init = document.getElementById('top1Content');
+    if (top1Init) top1Init.innerHTML = '<div class="empty-state">' + t('emptyState') + '</div>';
+    var modalBtnInit = document.getElementById('showModalBtn');
+    if (modalBtnInit) modalBtnInit.disabled = true;
 
     // 绑定选型按钮
     document.getElementById('runBtn').addEventListener('click', runSelection);
@@ -1029,34 +1047,122 @@
     var stitchBackBtn = document.getElementById('stitchBackBtn');
     if (stitchBackBtn) stitchBackBtn.addEventListener('click', function() {
       if (window._stitch) window._stitch.hide();
-      // 清空右侧结果
-      document.getElementById('top1Content').innerHTML = '<div class="empty-state">' + t('emptyState') + '</div>';
-      document.getElementById('showModalBtn').disabled = true;
+      var top1El = document.getElementById('top1Content');
+      if (top1El) top1El.innerHTML = '<div class="empty-state">' + t('emptyState') + '</div>';
+      var modalBtnEl = document.getElementById('showModalBtn');
+      if (modalBtnEl) modalBtnEl.disabled = true;
       resetSchematic();
     });
 
-    // 拼接示意图下载
+    // 拼接示意图下载 (高清合成：3D场景 + 图例)
     var stitchDlBtn = document.getElementById('stitchDownloadBtn');
     if (stitchDlBtn) {
       stitchDlBtn.addEventListener('click', function() {
-        var svgWrap = document.getElementById('stitchSvgWrap');
-        if (!svgWrap) return;
-        var svgEl = svgWrap.querySelector('svg');
-        if (!svgEl) return;
-        // 创建高分辨率SVG
-        var clone = svgEl.cloneNode(true);
-        clone.setAttribute('width', '1920');
-        clone.setAttribute('height', '1200');
-        var svgData = new XMLSerializer().serializeToString(clone);
-        var blob = new Blob([svgData], { type: 'image/svg+xml' });
-        var url = URL.createObjectURL(blob);
-        var a = document.createElement('a');
-        a.href = url;
+        var container = document.getElementById('stitch3dContainer');
+        if (!container) return;
+        var srcCanvas = container.querySelector('canvas');
+        if (!srcCanvas) return;
+
+        // 获取当前方案数据
         var activeIdx = window._stitchActiveIdx || 0;
-        var activeModel = window._stitchResults ? window._stitchResults[activeIdx] : null;
-        a.download = '拼接方案_' + (activeModel ? activeModel.model.model : 'diagram') + '.svg';
-        a.click();
-        URL.revokeObjectURL(url);
+        var plan = window._stitchResults ? window._stitchResults[activeIdx] : null;
+        if (!plan) return;
+
+        // 临时用高分辨率重新渲染3D场景
+        var state = _stitch3dState;
+        if (!state || !state.renderer || !state.scene || !state.camera) return;
+
+        var origW = srcCanvas.width, origH = srcCanvas.height;
+        var hiScale = 3; // 3倍高清
+        var hiW = origW * hiScale, hiH = origH * hiScale;
+
+        state.renderer.setSize(hiW, hiH);
+        state.renderer.setPixelRatio(1);
+        state.camera.aspect = hiW / hiH;
+        state.camera.updateProjectionMatrix();
+        state.renderer.render(state.scene, state.camera);
+
+        // 截取高清图
+        var hiDataURL = srcCanvas.toDataURL('image/png');
+
+        // 恢复原始尺寸
+        state.renderer.setSize(origW / (window.devicePixelRatio || 1), origH / (window.devicePixelRatio || 1));
+        state.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+        state.camera.aspect = origW / origH;
+        state.camera.updateProjectionMatrix();
+        state.renderer.render(state.scene, state.camera);
+
+        // 合成最终图片
+        var legendH = 145;
+        var outW = hiW, outH = hiH + legendH;
+
+        var exportCanvas = document.createElement('canvas');
+        exportCanvas.width = outW;
+        exportCanvas.height = outH;
+        var ctx = exportCanvas.getContext('2d');
+
+        // 背景
+        var isDark = document.documentElement.classList.contains('dark');
+        ctx.fillStyle = isDark ? '#161b22' : '#f5f7fa';
+        ctx.fillRect(0, 0, outW, outH);
+
+        // 绘制高清3D场景
+        var hiImg = new Image();
+        hiImg.onload = function() {
+          ctx.drawImage(hiImg, 0, 0, hiW, hiH);
+
+          // 图例区域
+          var ly = hiH;
+          ctx.fillStyle = isDark ? '#1e2430' : '#ffffff';
+          ctx.fillRect(0, ly, outW, legendH);
+          ctx.strokeStyle = isDark ? '#30363d' : '#dde5ef';
+          ctx.lineWidth = 1;
+          ctx.beginPath(); ctx.moveTo(0, ly); ctx.lineTo(outW, ly); ctx.stroke();
+
+          var dotR = 7;
+          var lx = 36, lyy = ly + 28;
+          var textColor = isDark ? '#e6edf3' : '#333333';
+          var mutedColor = isDark ? '#8b949e' : '#888888';
+
+          // 型号信息
+          ctx.font = 'bold 16px sans-serif';
+          ctx.fillStyle = '#f76504';
+          ctx.fillText(plan.model.model + '  ·  ' + plan.grid.cols + 'x' + plan.grid.rows + ' = ' + plan.grid.total + '台', lx, lyy);
+          lyy += 24;
+          ctx.font = '13px sans-serif';
+          ctx.fillStyle = mutedColor;
+          ctx.fillText('PPM ' + plan.ppm.toFixed(2) + '  ·  安装高度 ' + Math.round(plan.workingDist || 200) + 'mm', lx, lyy);
+          lyy += 28;
+
+          // 颜色图例
+          ctx.font = '14px sans-serif';
+          var items = [
+            { color: '#4a90d9', label: '单机视野 ' + plan.fov.width + 'x' + plan.fov.height + 'mm' },
+            { color: '#f76504', label: '总覆盖 ' + Math.round(plan.grid.actualW) + 'x' + Math.round(plan.grid.actualH) + 'mm' }
+          ];
+          if (plan.overlapW > 0) items.push({ color: '#e74c3c', label: '水平重叠 ' + plan.overlapW + 'mm' });
+          if (plan.overlapH > 0) items.push({ color: '#3884f4', label: '垂直重叠 ' + plan.overlapH + 'mm' });
+          items.push({ color: '#0A1628', label: '需求覆盖 ' + Math.round(window._stitchTotalW) + 'x' + Math.round(window._stitchTotalH) + 'mm' });
+
+          var colX = lx;
+          items.forEach(function(item, i) {
+            if (i === 3) { colX = lx; lyy += 24; }
+            ctx.fillStyle = item.color;
+            ctx.beginPath(); ctx.arc(colX + dotR, lyy - 4, dotR, 0, Math.PI * 2); ctx.fill();
+            ctx.fillStyle = textColor;
+            ctx.fillText(item.label, colX + dotR * 2 + 8, lyy);
+            colX += ctx.measureText(item.label).width + dotR * 2 + 36;
+          });
+
+          // 下载
+          var url = exportCanvas.toDataURL('image/png');
+          var a = document.createElement('a');
+          a.href = url;
+          a.download = 'stitch_3d_' + plan.model.model + '.png';
+          a.click();
+          URL.revokeObjectURL(url);
+        };
+        hiImg.src = hiDataURL;
       });
     }
 
@@ -1237,7 +1343,8 @@
           model: model, rotation: rot, fov: fov, grid: grid,
           overlapW: grid.total > 1 ? Math.round(overlapW) : 0,
           overlapH: grid.total > 1 ? Math.round(overlapH) : 0,
-          ppm: fov.ppm
+          ppm: fov.ppm,
+          workingDist: wdMM
         });
       });
     });
@@ -1303,24 +1410,22 @@
     if (activeIdx >= displayResults.length) activeIdx = 0;
     var best = displayResults[activeIdx];
 
-    // 大图放SVG区域
-    svgArea.innerHTML = renderStitchSVG(best, barcodeW, barcodeH, orient, totalW, totalH);
+    // 先显示容器，再渲染3D（否则容器尺寸为0）
     svgArea.style.display = '';
+    // 显示方案卡片
+    var planCard = document.getElementById('stitchPlanCard');
+    if (planCard) planCard.style.display = '';
+    // 双层 rAF + setTimeout 确保浏览器完成reflow，容器有正确尺寸
+    requestAnimationFrame(function() {
+      requestAnimationFrame(function() {
+        renderStitchSVG(best, barcodeW, barcodeH, orient, totalW, totalH);
+      });
+    });
     // 显示下载按钮
     var dlBtn = document.getElementById('stitchDownloadBtn');
     if (dlBtn) dlBtn.style.display = '';
 
-    // 点击放大
-    var svgWrap = document.getElementById('stitchSvgWrap');
-    if (svgWrap) {
-      svgWrap.onclick = function() {
-        var svgEl = svgWrap.querySelector('svg');
-        var lightbox = document.getElementById('stitchLightbox');
-        var lightboxInner = document.getElementById('stitchLightboxInner');
-        lightboxInner.innerHTML = svgEl.outerHTML;
-        lightbox.classList.add('active');
-      };
-    }
+    // 3D view: no lightbox needed (interactive rotation/zoom)
 
     // 获取所有出现的系列
     var allSeries = [];
@@ -1334,259 +1439,498 @@
 
     var html = '';
 
-    // 顶部卡片：与单相机风格一致
-    html += '<div class="result-main">';
-    html += '<div class="result-card"><strong>推荐型号</strong><span>' + best.model.model + '</span></div>';
-    html += '<div class="result-card"><strong>相机数量</strong><span>' + best.grid.total + ' 台</span></div>';
-    html += '</div>';
-    html += '<div class="model-preview">';
-    html += '<span>' + best.model.series + ' · ' + best.model.resolution.w + '×' + best.model.resolution.h + ' · ' + best.grid.cols + '×' + best.grid.rows + ' 拼接</span>';
-    html += '<span class="tag">PPM ' + best.ppm.toFixed(2) + '</span>';
-    html += '</div>';
+    // 方案切换按钮（弹窗）
+    html += '<button class="stitch-plan-switch-btn" id="stitchPlanSwitchBtn">📋 查看全部方案 (' + displayResults.length + ')</button>';
 
-    // 系列筛选标签
-    html += '<div class="stitch-series-tabs">';
-    html += '<span class="stitch-series-tab' + (!filterSeries ? ' active' : '') + '" data-series="all">全部 (' + results.length + ')</span>';
+    // 弹窗移到 body 上，避免被父容器裁剪
+    var modalHtml = '<div class="stitch-plan-modal-overlay" id="stitchPlanModal">';
+    modalHtml += '<div class="stitch-plan-modal">';
+    modalHtml += '<div class="stitch-plan-modal-header">';
+    modalHtml += '<span>选择拼接方案</span>';
+    modalHtml += '<button class="stitch-plan-modal-close" id="stitchPlanModalClose">&times;</button>';
+    modalHtml += '</div>';
+    modalHtml += '<div class="stitch-series-tabs">';
+    modalHtml += '<span class="stitch-series-tab' + (!filterSeries ? ' active' : '') + '" data-series="all">全部 (' + results.length + ')</span>';
     allSeries.forEach(function(s) {
       var count = results.filter(function(r) { return r.model.series === s; }).length;
-      html += '<span class="stitch-series-tab' + (filterSeries === s ? ' active' : '') + '" data-series="' + s + '">' + s + ' (' + count + ')</span>';
+      modalHtml += '<span class="stitch-series-tab' + (filterSeries === s ? ' active' : '') + '" data-series="' + s + '">' + s + ' (' + count + ')</span>';
     });
-    html += '</div>';
-
-    // 方案列表
-    html += '<div class="stitch-plan-list" id="stitchPlanList">';
+    modalHtml += '</div>';
+    modalHtml += '<div class="stitch-plan-list" id="stitchPlanList">';
     displayResults.forEach(function(r, idx) {
       var isActive = idx === activeIdx;
-      var hidden = idx >= 5 ? ' style="display:none"' : '';
-      html += '<div class="stitch-plan-item' + (isActive ? ' active' : '') + '" data-stitch-idx="' + idx + '"' + hidden + '>';
-      html += '<div class="stitch-plan-left">';
-      html += '<span class="stitch-plan-model">' + r.model.model + '</span>';
-      html += '<span class="stitch-plan-spec">' + r.model.resolution.w + '×' + r.model.resolution.h + '</span>';
-      html += '</div>';
-      html += '<div class="stitch-plan-right">';
-      html += '<span class="stitch-plan-count">' + r.grid.cols + '×' + r.grid.rows + ' = ' + r.grid.total + '台</span>';
-      html += '<span class="stitch-plan-ppm">PPM ' + r.ppm.toFixed(2) + '</span>';
-      html += '</div>';
-      html += '</div>';
+      modalHtml += '<div class="stitch-plan-item' + (isActive ? ' active' : '') + '" data-stitch-idx="' + idx + '">';
+      modalHtml += '<div class="stitch-plan-left">';
+      modalHtml += '<span class="stitch-plan-model">' + r.model.model + '</span>';
+      modalHtml += '<span class="stitch-plan-spec">' + r.model.resolution.w + '×' + r.model.resolution.h + '</span>';
+      modalHtml += '</div>';
+      modalHtml += '<div class="stitch-plan-right">';
+      modalHtml += '<span class="stitch-plan-count">' + r.grid.cols + '×' + r.grid.rows + ' = ' + r.grid.total + '台</span>';
+      modalHtml += '<span class="stitch-plan-ppm">PPM ' + r.ppm.toFixed(2) + '</span>';
+      modalHtml += '</div>';
+      modalHtml += '</div>';
     });
-    html += '</div>';
-
-    // 更多按钮
-    if (displayResults.length > 5) {
-      html += '<button class="stitch-more-btn" id="stitchMoreBtn">📋 显示全部 ' + displayResults.length + ' 个方案</button>';
-    }
-
-    // 详情 - 使用与单相机一致的卡片风格
-    html += '<div class="stitch-detail-cards">';
-    html += '<div class="stitch-detail-card"><span class="stitch-detail-label">覆盖区域</span><span class="stitch-detail-value">' + Math.round(totalW) + '×' + Math.round(totalH) + 'mm</span></div>';
-    html += '<div class="stitch-detail-card highlight"><span class="stitch-detail-label">实际覆盖</span><span class="stitch-detail-value">' + best.grid.actualW + '×' + best.grid.actualH + 'mm</span></div>';
-    html += '<div class="stitch-detail-card"><span class="stitch-detail-label">单视野</span><span class="stitch-detail-value">' + best.fov.width + '×' + best.fov.height + 'mm</span></div>';
-    if (best.grid.total > 1) {
-      html += '<div class="stitch-detail-card"><span class="stitch-detail-label">重叠区</span><span class="stitch-detail-value">' + best.overlapW + '×' + best.overlapH + 'mm</span></div>';
-    }
-    html += '</div>';
-
-    if (best.grid.total > 1) {
-      html += '<div class="stitch-warning">';
-      html += '⚠️ <strong>拼接注意事项：</strong><br>';
-      html += '• 条码切勿跨越拼接线，确保每个条码完整落在单个相机视野内<br>';
-      html += '• 相邻相机重叠 ' + best.overlapW + 'mm，防止边缘漏读<br>';
-      html += '• 建议相邻相机间距 = ' + (best.fov.width - best.overlapW) + 'mm';
-      html += '</div>';
-    }
+    modalHtml += '</div>';
+    modalHtml += '</div>';
+    modalHtml += '</div>';
+    // Remove old modal if exists
+    var oldModal = document.getElementById('stitchPlanModal');
+    if (oldModal) oldModal.remove();
+    document.body.insertAdjacentHTML('beforeend', modalHtml);
 
     planArea.innerHTML = html;
     planArea.style.display = '';
 
-    // 绑定方案切换
-    planArea.querySelectorAll('.stitch-plan-item').forEach(function(el) {
-      el.addEventListener('click', function() {
-        var idx = parseInt(el.getAttribute('data-stitch-idx'));
-        window._stitchActiveIdx = idx;
-        renderStitchResult(results, totalW, totalH, barcodeW, barcodeH, orient, idx, filterSeries);
-      });
-    });
+    // 绑定弹窗开关（弹窗在 body 上）
+    var switchBtn = document.getElementById('stitchPlanSwitchBtn');
+    var modal = document.getElementById('stitchPlanModal');
+    var closeBtn = document.getElementById('stitchPlanModalClose');
+    if (switchBtn) {
+      switchBtn.onclick = function() { modal.classList.add('active'); };
+    }
+    if (closeBtn) {
+      closeBtn.onclick = function() { modal.classList.remove('active'); };
+    }
+    if (modal) {
+      modal.onclick = function(e) { if (e.target === modal) modal.classList.remove('active'); };
+    }
 
-    // 绑定系列筛选
-    planArea.querySelectorAll('.stitch-series-tab').forEach(function(el) {
-      el.addEventListener('click', function() {
-        var s = el.getAttribute('data-series');
-        renderStitchResult(results, totalW, totalH, barcodeW, barcodeH, orient, 0, s === 'all' ? null : s);
+    // 绑定方案切换（body 上的弹窗）
+    if (modal) {
+      modal.querySelectorAll('.stitch-plan-item').forEach(function(el) {
+        el.onclick = function() {
+          var idx = parseInt(el.getAttribute('data-stitch-idx'));
+          window._stitchActiveIdx = idx;
+          renderStitchResult(results, totalW, totalH, barcodeW, barcodeH, orient, idx, filterSeries);
+          modal.classList.remove('active');
+        };
       });
-    });
-
-    // 绑定更多按钮
-    var moreBtn = document.getElementById('stitchMoreBtn');
-    if (moreBtn) {
-      moreBtn.addEventListener('click', function() {
-        planArea.querySelectorAll('.stitch-plan-item').forEach(function(el) { el.style.display = ''; });
-        moreBtn.style.display = 'none';
+      modal.querySelectorAll('.stitch-series-tab').forEach(function(el) {
+        el.onclick = function() {
+          var s = el.getAttribute('data-series');
+          modal.classList.remove('active');
+          renderStitchResult(results, totalW, totalH, barcodeW, barcodeH, orient, 0, s === 'all' ? null : s);
+        };
       });
     }
   }
 
-  function renderStitchSVG(plan, barcodeW, barcodeH, orient, reqW, reqH) {
-    var cols = plan.grid.cols, rows = plan.grid.rows;
-    var padL = 100, padR = 80, padT = 90, padB = 80;
-    var maxSvgW = 1400, maxSvgH = 900;
-    var scaleX = (maxSvgW - padL - padR) / plan.grid.actualW;
-    var scaleY = (maxSvgH - padT - padB) / plan.grid.actualH;
-    var scale = Math.min(scaleX, scaleY);
-    var camW = plan.fov.width * scale;
-    var camH = plan.fov.height * scale;
-    var overlapPxW = plan.overlapW * scale;
-    var overlapPxH = plan.overlapH * scale;
-    var stepX = camW - overlapPxW;
-    var stepY = camH - overlapPxH;
-    var svgW = Math.round(camW * cols - overlapPxW * (cols - 1) + padL + padR);
-    var svgH = Math.round(camH * rows - overlapPxH * (rows - 1) + padT + padB);
-    svgW = Math.max(svgW, 600); svgH = Math.max(svgH, 450);
-    var regionX = padL, regionY = padT;
-    var regionW = plan.grid.actualW * scale;
-    var regionH = plan.grid.actualH * scale;
 
-    // 暗色模式检测
-    var isDark = document.documentElement.classList.contains('dark');
-    var bgColor = isDark ? '#161b22' : '#F5F7FA';
-    var textColor = isDark ? '#e6edf3' : '#555';
-    var mutedColor = isDark ? '#8b949e' : '#888';
-    var dimColor = isDark ? '#484f58' : '#bbb';
-    var borderDim = isDark ? '#30363d' : '#aaa';
-    var reqAreaColor = isDark ? '#58a6ff' : '#3884f4';
+  // ═══════════ 3D STITCH VISUALIZATION ═══════════
+  var _stitch3dState = null;
 
-    var camColor = '#f76504';
-    var overlapHColor = '#e74c3c';
-    var overlapVColor = '#3884f4';
+  function renderStitch3D(plan, barcodeW, barcodeH, orient, reqW, reqH) {
+    var container = document.getElementById('stitch3dContainer');
+    if (!container) return '';
+    // cleanup old scene
+    if (_stitch3dState) {
+      if (_stitch3dState.animId) cancelAnimationFrame(_stitch3dState.animId);
+      if (_stitch3dState.renderer) {
+        _stitch3dState.renderer.dispose();
+        var oldCanvas = container.querySelector('canvas');
+        if (oldCanvas) oldCanvas.remove();
+      }
+      _stitch3dState = null;
+    }
+    container.innerHTML = '';
 
-    var svg = '<div class="stitch-svg-wrap" id="stitchSvgWrap" title="点击放大"><svg viewBox="0 0 ' + svgW + ' ' + svgH + '" xmlns="http://www.w3.org/2000/svg">';
-    svg += '<rect width="' + svgW + '" height="' + svgH + '" fill="' + bgColor + '" rx="6"/>';
-
-    // 实际覆盖区域尺寸标注（顶部）- 放在外层
-    var dimTopY = regionY - 40;
-    svg += '<line x1="' + regionX + '" y1="' + dimTopY + '" x2="' + (regionX + regionW) + '" y2="' + dimTopY + '" stroke="' + camColor + '" stroke-width="1" marker-start="url(#sL)" marker-end="url(#sR)"/>';
-    svg += '<text x="' + (regionX + regionW / 2) + '" y="' + (dimTopY - 6) + '" fill="' + camColor + '" font-size="12" font-weight="bold" font-family="sans-serif" text-anchor="middle">' + Math.round(plan.grid.actualW) + 'mm</text>';
-    svg += '<line x1="' + regionX + '" y1="' + (dimTopY + 3) + '" x2="' + regionX + '" y2="' + (regionY - 3) + '" stroke="' + dimColor + '" stroke-width="0.5" stroke-dasharray="2,2"/>';
-    svg += '<line x1="' + (regionX + regionW) + '" y1="' + (dimTopY + 3) + '" x2="' + (regionX + regionW) + '" y2="' + (regionY - 3) + '" stroke="' + dimColor + '" stroke-width="0.5" stroke-dasharray="2,2"/>';
-
-    // 实际覆盖区域尺寸标注（左侧）- 放在外层
-    var dimLeftX = regionX - 40;
-    svg += '<line x1="' + dimLeftX + '" y1="' + regionY + '" x2="' + dimLeftX + '" y2="' + (regionY + regionH) + '" stroke="' + camColor + '" stroke-width="1" marker-start="url(#aU)" marker-end="url(#aD)"/>';
-    svg += '<text x="' + (dimLeftX - 6) + '" y="' + (regionY + regionH / 2) + '" fill="' + camColor + '" font-size="12" font-weight="bold" font-family="sans-serif" text-anchor="middle">' + Math.round(plan.grid.actualH) + 'mm</text>';
-    svg += '<line x1="' + (dimLeftX + 3) + '" y1="' + regionY + '" x2="' + (regionX - 3) + '" y2="' + regionY + '" stroke="' + dimColor + '" stroke-width="0.5" stroke-dasharray="2,2"/>';
-    svg += '<line x1="' + (dimLeftX + 3) + '" y1="' + (regionY + regionH) + '" x2="' + (regionX - 3) + '" y2="' + (regionY + regionH) + '" stroke="' + dimColor + '" stroke-width="0.5" stroke-dasharray="2,2"/>';
-
-    // 总覆盖区域虚线框（实际覆盖）
-    svg += '<rect x="' + regionX + '" y="' + regionY + '" width="' + regionW + '" height="' + regionH + '" fill="none" stroke="' + borderDim + '" stroke-width="1" stroke-dasharray="5,3" rx="3"/>';
-
-    // 需求覆盖区域（蓝色虚线框）
-    if (reqW && reqH) {
-      var reqPxW = reqW * scale;
-      var reqPxH = reqH * scale;
-      var reqX = regionX + (regionW - reqPxW) / 2;
-      var reqY = regionY + (regionH - reqPxH) / 2;
-      svg += '<rect x="' + reqX + '" y="' + reqY + '" width="' + reqPxW + '" height="' + reqPxH + '" fill="none" stroke="' + reqAreaColor + '" stroke-width="1.5" stroke-dasharray="6,4" rx="3"/>';
-      svg += '<text x="' + (reqX + reqPxW / 2) + '" y="' + (reqY - 6) + '" fill="' + reqAreaColor + '" font-size="11" font-weight="bold" font-family="sans-serif" text-anchor="middle">需求覆盖 ' + Math.round(reqW) + '×' + Math.round(reqH) + 'mm</text>';
+    if (typeof THREE === 'undefined') {
+      container.innerHTML = '<div style="padding:40px;text-align:center;color:#888">Three.js loading, please wait...</div>';
+      // Only retry once
+      if (!container._3dRetryDone) {
+        container._3dRetryDone = true;
+        setTimeout(function() { renderStitch3D(plan, barcodeW, barcodeH, orient, reqW, reqH); }, 2000);
+      }
+      return '';
     }
 
-    // 箭头 marker 定义
-    svg += '<defs>';
-    svg += '<marker id="aL" markerWidth="6" markerHeight="6" refX="0" refY="3" orient="auto"><path d="M6,0 L0,3 L6,6 Z" fill="' + camColor + '"/></marker>';
-    svg += '<marker id="aR" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="' + camColor + '"/></marker>';
-    svg += '<marker id="aU" markerWidth="6" markerHeight="6" refX="3" refY="0" orient="auto"><path d="M0,6 L3,0 L6,6 Z" fill="' + camColor + '"/></marker>';
-    svg += '<marker id="aD" markerWidth="6" markerHeight="6" refX="3" refY="6" orient="auto"><path d="M0,0 L6,0 L3,6 Z" fill="' + camColor + '"/></marker>';
-    svg += '<marker id="oL" markerWidth="6" markerHeight="6" refX="0" refY="3" orient="auto"><path d="M6,0 L0,3 L6,6 Z" fill="' + overlapHColor + '"/></marker>';
-    svg += '<marker id="oR" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="' + overlapHColor + '"/></marker>';
-    svg += '<marker id="oU" markerWidth="6" markerHeight="6" refX="3" refY="0" orient="auto"><path d="M0,6 L3,0 L6,6 Z" fill="' + overlapVColor + '"/></marker>';
-    svg += '<marker id="oD" markerWidth="6" markerHeight="6" refX="3" refY="6" orient="auto"><path d="M0,0 L6,0 L3,6 Z" fill="' + overlapVColor + '"/></marker>';
-    // 单机标注用 markers
-    var singleColorForMarker = isDark ? '#a0c4ff' : '#4a90d9';
-    svg += '<marker id="sL" markerWidth="6" markerHeight="6" refX="0" refY="3" orient="auto"><path d="M6,0 L0,3 L6,6 Z" fill="' + singleColorForMarker + '"/></marker>';
-    svg += '<marker id="sR" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="' + singleColorForMarker + '"/></marker>';
-    svg += '<marker id="sU" markerWidth="6" markerHeight="6" refX="3" refY="0" orient="auto"><path d="M0,6 L3,0 L6,6 Z" fill="' + singleColorForMarker + '"/></marker>';
-    svg += '<marker id="sD" markerWidth="6" markerHeight="6" refX="3" refY="6" orient="auto"><path d="M0,0 L6,0 L3,6 Z" fill="' + singleColorForMarker + '"/></marker>';
-    svg += '</defs>';
+    try {
+      _doRender3D(container, plan, barcodeW, barcodeH, orient, reqW, reqH);
+    } catch(e) {
+      console.error('3D render error:', e);
+      container.innerHTML = '<div style="padding:40px;text-align:center;color:#c00">3D render failed: ' + e.message + '</div>';
+    }
+    return '';
+  }
 
-    // 绘制相机视野
+  function _doRender3D(container, plan, barcodeW, barcodeH, orient, reqW, reqH) {
+    var isDark = document.documentElement.classList.contains('dark');
+    var cols = plan.grid.cols, rows = plan.grid.rows;
+    var fovW = plan.fov.width, fovH = plan.fov.height;
+    var actualW = plan.grid.actualW, actualH = plan.grid.actualH;
+    var overlapW = plan.overlapW, overlapH = plan.overlapH;
+
+    var camDepth = 200;
+    var sceneW = Math.max(actualW, 300);
+    var sceneD = Math.max(actualH, 300);
+    var sceneH = camDepth + 60;
+
+    // Scene
+    var scene = new THREE.Scene();
+    scene.background = new THREE.Color(isDark ? 0x161b22 : 0xf5f7fa);
+    scene.fog = new THREE.Fog(isDark ? 0x161b22 : 0xf5f7fa, sceneW * 3, sceneW * 6);
+
+    // Renderer
+    var renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, preserveDrawingBuffer: true });
+    // Force size: use container if visible, fallback to 450
+    var renderW = container.clientWidth || 600;
+    var renderH = container.clientHeight || 450;
+    renderer.setSize(renderW, renderH);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.shadowMap.enabled = true;
+    renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+    container.appendChild(renderer.domElement);
+
+    // Camera (created after renderer so aspect is correct)
+    var aspect = renderW / renderH;
+    var camera = new THREE.PerspectiveCamera(45, aspect, 1, sceneW * 10);
+    camera.position.set(sceneW * 0.6, sceneH * 1.2, sceneD * 1.4);
+    camera.lookAt(0, 0, 0);
+
+    // Orbit controls (manual)
+    var isDragging = false, prevMouse = { x: 0, y: 0 };
+    var spherical = { radius: camera.position.length(), theta: Math.atan2(camera.position.x, camera.position.z), phi: Math.acos(camera.position.y / camera.position.length()) };
+    var target = new THREE.Vector3(0, 0, 0);
+
+    function updateCamera() {
+      camera.position.x = target.x + spherical.radius * Math.sin(spherical.phi) * Math.sin(spherical.theta);
+      camera.position.y = target.y + spherical.radius * Math.cos(spherical.phi);
+      camera.position.z = target.z + spherical.radius * Math.sin(spherical.phi) * Math.cos(spherical.theta);
+      camera.lookAt(target);
+    }
+    updateCamera();
+
+    var canvasEl = renderer.domElement;
+    canvasEl.addEventListener('mousedown', function(e) {
+      isDragging = true;
+      prevMouse.x = e.clientX; prevMouse.y = e.clientY;
+    });
+    canvasEl.addEventListener('mousemove', function(e) {
+      if (!isDragging) return;
+      spherical.theta -= (e.clientX - prevMouse.x) * 0.005;
+      spherical.phi = Math.max(0.15, Math.min(Math.PI * 0.48, spherical.phi + (e.clientY - prevMouse.y) * 0.005));
+      prevMouse.x = e.clientX; prevMouse.y = e.clientY;
+      updateCamera();
+    });
+    window.addEventListener('mouseup', function() { isDragging = false; });
+    canvasEl.addEventListener('wheel', function(e) {
+      e.preventDefault();
+      spherical.radius = Math.max(sceneW * 0.3, Math.min(sceneW * 4, spherical.radius * (1 + e.deltaY * 0.001)));
+      updateCamera();
+    }, { passive: false });
+
+    // Touch support
+    var touchStartDist = 0;
+    canvasEl.addEventListener('touchstart', function(e) {
+      if (e.touches.length === 1) {
+        isDragging = true;
+        prevMouse.x = e.touches[0].clientX; prevMouse.y = e.touches[0].clientY;
+      } else if (e.touches.length === 2) {
+        var dx = e.touches[0].clientX - e.touches[1].clientX;
+        var dy = e.touches[0].clientY - e.touches[1].clientY;
+        touchStartDist = Math.sqrt(dx * dx + dy * dy);
+      }
+    });
+    canvasEl.addEventListener('touchmove', function(e) {
+      e.preventDefault();
+      if (e.touches.length === 1 && isDragging) {
+        spherical.theta -= (e.touches[0].clientX - prevMouse.x) * 0.005;
+        spherical.phi = Math.max(0.15, Math.min(Math.PI * 0.48, spherical.phi + (e.touches[0].clientY - prevMouse.y) * 0.005));
+        prevMouse.x = e.touches[0].clientX; prevMouse.y = e.touches[0].clientY;
+        updateCamera();
+      } else if (e.touches.length === 2) {
+        var dx2 = e.touches[0].clientX - e.touches[1].clientX;
+        var dy2 = e.touches[0].clientY - e.touches[1].clientY;
+        var dist = Math.sqrt(dx2 * dx2 + dy2 * dy2);
+        if (touchStartDist > 0) {
+          spherical.radius = Math.max(sceneW * 0.3, Math.min(sceneW * 4, spherical.radius * (touchStartDist / dist)));
+          updateCamera();
+        }
+        touchStartDist = dist;
+      }
+    }, { passive: false });
+    canvasEl.addEventListener('touchend', function() { isDragging = false; touchStartDist = 0; });
+
+    // Lights
+    var ambient = new THREE.AmbientLight(0xffffff, isDark ? 0.5 : 0.7);
+    scene.add(ambient);
+    var dirLight = new THREE.DirectionalLight(0xffffff, isDark ? 0.6 : 0.8);
+    dirLight.position.set(sceneW, sceneH * 2, sceneD);
+    dirLight.castShadow = true;
+    dirLight.shadow.mapSize.width = 1024;
+    dirLight.shadow.mapSize.height = 1024;
+    scene.add(dirLight);
+
+    // Ground
+    var groundSize = Math.max(sceneW, sceneD) * 2.5;
+    var ground = new THREE.Mesh(
+      new THREE.PlaneGeometry(groundSize, groundSize),
+      new THREE.MeshStandardMaterial({ color: isDark ? 0x1e2430 : 0xe8ecf1, roughness: 0.9, metalness: 0.0 })
+    );
+    ground.rotation.x = -Math.PI / 2;
+    ground.position.y = -0.5;
+    ground.receiveShadow = true;
+    scene.add(ground);
+
+    var gridHelper = new THREE.GridHelper(groundSize, Math.round(groundSize / 50), isDark ? 0x2d3748 : 0xc8cdd5, isDark ? 0x222933 : 0xd8dde5);
+    gridHelper.position.y = -0.3;
+    scene.add(gridHelper);
+
+    // Axes
+    var axisLen = Math.max(sceneW, sceneD) * 0.6;
+    var axisMat = new THREE.LineBasicMaterial({ color: 0x888888, transparent: true, opacity: 0.4 });
+    scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(0,0.1,0), new THREE.Vector3(axisLen,0.1,0)]), axisMat));
+    scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(0,0.1,0), new THREE.Vector3(0,0.1,axisLen)]), axisMat));
+    scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(0,0,0), new THREE.Vector3(0,sceneH+40,0)]), axisMat));
+
+    // Required coverage area - dark navy with dashed border
+    if (reqW && reqH) {
+      var reqColor = 0x0A1628;
+      var reqShape = new THREE.Shape();
+      reqShape.moveTo(-reqW/2, -reqH/2); reqShape.lineTo(reqW/2, -reqH/2);
+      reqShape.lineTo(reqW/2, reqH/2); reqShape.lineTo(-reqW/2, reqH/2);
+      reqShape.lineTo(-reqW/2, -reqH/2);
+      // Dashed border lines
+      var reqDashedMat = new THREE.LineDashedMaterial({ color: reqColor, dashSize: 8, gapSize: 5, linewidth: 1 });
+      var reqCorners = [
+        [-reqW/2, -reqH/2], [reqW/2, -reqH/2],
+        [reqW/2, reqH/2], [-reqW/2, reqH/2]
+      ];
+      for (var ri = 0; ri < 4; ri++) {
+        var p1 = reqCorners[ri], p2 = reqCorners[(ri+1)%4];
+        var reqLineGeo = new THREE.BufferGeometry().setFromPoints([
+          new THREE.Vector3(p1[0], 0.5, p1[1]),
+          new THREE.Vector3(p2[0], 0.5, p2[1])
+        ]);
+        var reqLine = new THREE.Line(reqLineGeo, reqDashedMat);
+        reqLine.computeLineDistances();
+        scene.add(reqLine);
+      }
+      // Semi-transparent fill
+      var reqFace = new THREE.Mesh(new THREE.ShapeGeometry(reqShape), new THREE.MeshBasicMaterial({ color: reqColor, transparent: true, opacity: 0.06, side: THREE.DoubleSide }));
+      reqFace.rotation.x = -Math.PI / 2; reqFace.position.y = 0.3;
+      scene.add(reqFace);
+    }
+
+    // Cameras and frustums
     var camNum = 0;
+    var stepX = fovW - overlapW, stepZ = fovH - overlapH;
+    var startX = -(cols - 1) * stepX / 2, startZ = -(rows - 1) * stepZ / 2;
+
     for (var r = 0; r < rows; r++) {
       for (var c = 0; c < cols; c++) {
-        var x = regionX + c * stepX;
-        var y = regionY + r * stepY;
-        svg += '<rect x="' + x + '" y="' + y + '" width="' + camW + '" height="' + camH + '" fill="' + camColor + '" fill-opacity="0.08" stroke="' + camColor + '" stroke-width="1.5" rx="3"/>';
-        var cx = x + camW / 2, cy = y + camH / 2;
-        svg += '<text x="' + cx + '" y="' + (cy + 5) + '" fill="' + camColor + '" font-size="16" font-weight="bold" font-family="sans-serif" text-anchor="middle">#' + (camNum + 1) + '</text>';
+        var cx = startX + c * stepX, cz = startZ + r * stepZ;
 
-        // 单机视野尺寸标注（只标第一台相机）- 使用不同样式区分
-        if (camNum === 0) {
-          var singleColor = isDark ? '#a0c4ff' : '#4a90d9';
-          var dimY = y - 15;
-          svg += '<line x1="' + x + '" y1="' + dimY + '" x2="' + (x + camW) + '" y2="' + dimY + '" stroke="' + singleColor + '" stroke-width="1" stroke-dasharray="4,2" marker-start="url(#sL)" marker-end="url(#sR)"/>';
-          svg += '<text x="' + cx + '" y="' + (dimY - 5) + '" fill="' + singleColor + '" font-size="11" font-weight="600" font-family="sans-serif" text-anchor="middle">单机 ' + plan.fov.width + 'mm</text>';
-          svg += '<line x1="' + x + '" y1="' + (dimY + 2) + '" x2="' + x + '" y2="' + (y - 2) + '" stroke="' + singleColor + '" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.5"/>';
-          svg += '<line x1="' + (x + camW) + '" y1="' + (dimY + 2) + '" x2="' + (x + camW) + '" y2="' + (y - 2) + '" stroke="' + singleColor + '" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.5"/>';
-          var dimX = x - 15;
-          svg += '<line x1="' + dimX + '" y1="' + y + '" x2="' + dimX + '" y2="' + (y + camH) + '" stroke="' + singleColor + '" stroke-width="1" stroke-dasharray="4,2" marker-start="url(#sU)" marker-end="url(#sD)"/>';
-          svg += '<text x="' + (dimX - 5) + '" y="' + cy + '" fill="' + singleColor + '" font-size="11" font-weight="600" font-family="sans-serif" text-anchor="middle">单机 ' + plan.fov.height + 'mm</text>';
-          svg += '<line x1="' + (dimX + 2) + '" y1="' + y + '" x2="' + (x - 2) + '" y2="' + y + '" stroke="' + singleColor + '" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.5"/>';
-          svg += '<line x1="' + (dimX + 2) + '" y1="' + (y + camH) + '" x2="' + (x - 2) + '" y2="' + (y + camH) + '" stroke="' + singleColor + '" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.5"/>';
-        }
+        // Camera body
+        var body = new THREE.Mesh(new THREE.BoxGeometry(30, 25, 25), new THREE.MeshStandardMaterial({ color: 0x1a2b4a, roughness: 0.3, metalness: 0.7 }));
+        body.position.set(cx, camDepth, cz); body.castShadow = true; scene.add(body);
 
-        // 水平重叠区
-        if (c < cols - 1 && plan.overlapW > 0) {
-          var ox = x + camW - overlapPxW;
-          svg += '<rect x="' + ox + '" y="' + y + '" width="' + overlapPxW + '" height="' + camH + '" fill="' + overlapHColor + '" fill-opacity="0.12" stroke="' + overlapHColor + '" stroke-width="0.8" stroke-dasharray="3,2"/>';
-          var ocx = ox + overlapPxW / 2;
-          var ocy = y + camH + 18;
-          svg += '<line x1="' + ox + '" y1="' + ocy + '" x2="' + (ox + overlapPxW) + '" y2="' + ocy + '" stroke="' + overlapHColor + '" stroke-width="1" marker-start="url(#oL)" marker-end="url(#oR)"/>';
-          svg += '<text x="' + ocx + '" y="' + (ocy + 14) + '" fill="' + overlapHColor + '" font-size="11" font-weight="bold" font-family="sans-serif" text-anchor="middle">' + plan.overlapW + 'mm</text>';
-          svg += '<line x1="' + ox + '" y1="' + (y + camH) + '" x2="' + ox + '" y2="' + (ocy - 3) + '" stroke="' + overlapHColor + '" stroke-width="0.5" stroke-dasharray="2,2"/>';
-          svg += '<line x1="' + (ox + overlapPxW) + '" y1="' + (y + camH) + '" x2="' + (ox + overlapPxW) + '" y2="' + (ocy - 3) + '" stroke="' + overlapHColor + '" stroke-width="0.5" stroke-dasharray="2,2"/>';
-        }
-        // 垂直重叠区
-        if (r < rows - 1 && plan.overlapH > 0) {
-          var oy = y + camH - overlapPxH;
-          svg += '<rect x="' + x + '" y="' + oy + '" width="' + camW + '" height="' + overlapPxH + '" fill="' + overlapVColor + '" fill-opacity="0.12" stroke="' + overlapVColor + '" stroke-width="0.8" stroke-dasharray="3,2"/>';
-          var ocx2 = x + camW + 18;
-          var ocy2 = oy + overlapPxH / 2;
-          svg += '<line x1="' + ocx2 + '" y1="' + oy + '" x2="' + ocx2 + '" y2="' + (oy + overlapPxH) + '" stroke="' + overlapVColor + '" stroke-width="1" marker-start="url(#oU)" marker-end="url(#oD)"/>';
-          svg += '<text x="' + (ocx2 + 6) + '" y="' + ocy2 + '" fill="' + overlapVColor + '" font-size="11" font-weight="bold" font-family="sans-serif" text-anchor="start">' + plan.overlapH + 'mm</text>';
-          svg += '<line x1="' + (x + camW) + '" y1="' + oy + '" x2="' + (ocx2 - 3) + '" y2="' + oy + '" stroke="' + overlapVColor + '" stroke-width="0.5" stroke-dasharray="2,2"/>';
-          svg += '<line x1="' + (x + camW) + '" y1="' + (oy + overlapPxH) + '" x2="' + (ocx2 - 3) + '" y2="' + (oy + overlapPxH) + '" stroke="' + overlapVColor + '" stroke-width="0.5" stroke-dasharray="2,2"/>';
+        // Lens
+        var lens = new THREE.Mesh(new THREE.CylinderGeometry(6, 8, 10, 16), new THREE.MeshStandardMaterial({ color: 0xf76504, roughness: 0.2, metalness: 0.8 }));
+        lens.rotation.x = Math.PI / 2; lens.position.set(cx, camDepth - 5, cz); scene.add(lens);
+
+        // LED
+        var led = new THREE.Mesh(new THREE.SphereGeometry(2.5, 8, 8), new THREE.MeshBasicMaterial({ color: 0x00ff88 }));
+        led.position.set(cx + 10, camDepth + 8, cz); scene.add(led);
+
+        // Pillar
+        var pillar = new THREE.Mesh(new THREE.CylinderGeometry(1.5, 1.5, camDepth, 8), new THREE.MeshStandardMaterial({ color: 0x555555, roughness: 0.6, metalness: 0.4, transparent: true, opacity: 0.3 }));
+        pillar.position.set(cx, camDepth / 2, cz); scene.add(pillar);
+
+        // Frustum
+        var fovHalfW = fovW / 2, fovHalfH = fovH / 2;
+        var isSingle = (camNum === 0);
+        var coneColor = isSingle ? 0x4a90d9 : 0xf76504;
+        var fovGeo = createFrustumGeometry(cx, camDepth, cz, fovHalfW, fovHalfH);
+        scene.add(new THREE.Mesh(fovGeo, new THREE.MeshBasicMaterial({ color: coneColor, transparent: true, opacity: 0.1, side: THREE.DoubleSide, depthWrite: false })));
+        scene.add(new THREE.LineSegments(new THREE.EdgesGeometry(fovGeo), new THREE.LineBasicMaterial({ color: coneColor, transparent: true, opacity: 0.5 })));
+
+        // Ground coverage rect
+        var rectS = new THREE.Shape();
+        rectS.moveTo(cx-fovHalfW, cz-fovHalfH); rectS.lineTo(cx+fovHalfW, cz-fovHalfH);
+        rectS.lineTo(cx+fovHalfW, cz+fovHalfH); rectS.lineTo(cx-fovHalfW, cz+fovHalfH);
+        rectS.lineTo(cx-fovHalfW, cz-fovHalfH);
+        var rectEdge = new THREE.LineSegments(new THREE.EdgesGeometry(new THREE.ShapeGeometry(rectS)), new THREE.LineBasicMaterial({ color: coneColor, transparent: true, opacity: 0.6 }));
+        rectEdge.position.y = 0.5; scene.add(rectEdge);
+        var rectFace = new THREE.Mesh(new THREE.ShapeGeometry(rectS), new THREE.MeshBasicMaterial({ color: coneColor, transparent: true, opacity: 0.06, side: THREE.DoubleSide }));
+        rectFace.rotation.x = -Math.PI / 2; rectFace.position.y = 0.2; scene.add(rectFace);
+
+        // Label
+        var label = makeTextSprite('#' + (camNum + 1), coneColor, isSingle ? 1.0 : 0.8);
+        label.position.set(cx, camDepth + 18, cz); scene.add(label);
+
+        if (isSingle) {
+          var dimLabel = makeTextSprite(fovW + 'mm x ' + fovH + 'mm', 0x4a90d9, 0.65);
+          dimLabel.position.set(cx, camDepth - 20, cz); scene.add(dimLabel);
         }
         camNum++;
       }
     }
 
-    // 图例（左下角）
-    var legX = regionX + 4;
-    var legY = regionY + regionH + 30;
-    svg += '<rect x="' + legX + '" y="' + legY + '" width="12" height="12" fill="' + camColor + '" fill-opacity="0.12" stroke="' + camColor + '" stroke-width="0.8" rx="2"/>';
-    svg += '<text x="' + (legX + 16) + '" y="' + (legY + 10) + '" fill="' + textColor + '" font-size="11" font-family="sans-serif">相机视野 ' + plan.fov.width + '\u00d7' + plan.fov.height + 'mm</text>';
-    var legY1b = legY + 18;
-    svg += '<rect x="' + legX + '" y="' + legY1b + '" width="12" height="12" fill="none" stroke="' + camColor + '" stroke-width="1" stroke-dasharray="4,2" rx="2"/>';
-    svg += '<text x="' + (legX + 16) + '" y="' + (legY1b + 10) + '" fill="' + textColor + '" font-size="11" font-family="sans-serif">覆盖 ' + Math.round(plan.grid.actualW) + '\u00d7' + Math.round(plan.grid.actualH) + 'mm</text>';
-    if (plan.overlapW > 0) {
-      var legY2 = legY + 36;
-      svg += '<rect x="' + legX + '" y="' + legY2 + '" width="12" height="12" fill="' + overlapHColor + '" fill-opacity="0.12" stroke="' + overlapHColor + '" stroke-width="0.8" stroke-dasharray="3,2" rx="2"/>';
-      svg += '<text x="' + (legX + 16) + '" y="' + (legY2 + 10) + '" fill="' + textColor + '" font-size="11" font-family="sans-serif">水平重叠 ' + plan.overlapW + 'mm</text>';
+    // Overlap regions
+    if (overlapW > 0) {
+      for (var r2 = 0; r2 < rows; r2++) {
+        for (var c2 = 0; c2 < cols - 1; c2++) {
+          var ox = startX + c2 * stepX + fovW / 2 - overlapW / 2;
+          var oz = startZ + r2 * stepZ;
+          var olS = new THREE.Shape();
+          olS.moveTo(ox-overlapW/2, oz-fovH/2); olS.lineTo(ox+overlapW/2, oz-fovH/2);
+          olS.lineTo(ox+overlapW/2, oz+fovH/2); olS.lineTo(ox-overlapW/2, oz+fovH/2);
+          olS.lineTo(ox-overlapW/2, oz-fovH/2);
+          var olM = new THREE.Mesh(new THREE.ShapeGeometry(olS), new THREE.MeshBasicMaterial({ color: 0xe74c3c, transparent: true, opacity: 0.15, side: THREE.DoubleSide }));
+          olM.rotation.x = -Math.PI/2; olM.position.y = 0.8; scene.add(olM);
+          var olE = new THREE.LineSegments(new THREE.EdgesGeometry(olM.geometry), new THREE.LineBasicMaterial({ color: 0xe74c3c, transparent: true, opacity: 0.5 }));
+          olE.rotation.x = -Math.PI/2; olE.position.set(ox, 1.0, oz); scene.add(olE);
+        }
+      }
     }
-    if (plan.overlapH > 0) {
-      var legY3 = legY + (plan.overlapW > 0 ? 54 : 36);
-      svg += '<rect x="' + legX + '" y="' + legY3 + '" width="12" height="12" fill="' + overlapVColor + '" fill-opacity="0.12" stroke="' + overlapVColor + '" stroke-width="0.8" stroke-dasharray="3,2" rx="2"/>';
-      svg += '<text x="' + (legX + 16) + '" y="' + (legY3 + 10) + '" fill="' + textColor + '" font-size="11" font-family="sans-serif">垂直重叠 ' + plan.overlapH + 'mm</text>';
+    if (overlapH > 0) {
+      for (var r3 = 0; r3 < rows - 1; r3++) {
+        for (var c3 = 0; c3 < cols; c3++) {
+          var ox2 = startX + c3 * stepX;
+          var oz2 = startZ + r3 * stepZ + fovH / 2 - overlapH / 2;
+          var olS2 = new THREE.Shape();
+          olS2.moveTo(ox2-fovW/2, oz2-overlapH/2); olS2.lineTo(ox2+fovW/2, oz2-overlapH/2);
+          olS2.lineTo(ox2+fovW/2, oz2+overlapH/2); olS2.lineTo(ox2-fovW/2, oz2+overlapH/2);
+          olS2.lineTo(ox2-fovW/2, oz2-overlapH/2);
+          var olM2 = new THREE.Mesh(new THREE.ShapeGeometry(olS2), new THREE.MeshBasicMaterial({ color: 0x3884f4, transparent: true, opacity: 0.15, side: THREE.DoubleSide }));
+          olM2.rotation.x = -Math.PI/2; olM2.position.y = 0.8; scene.add(olM2);
+          var olE2 = new THREE.LineSegments(new THREE.EdgesGeometry(olM2.geometry), new THREE.LineBasicMaterial({ color: 0x3884f4, transparent: true, opacity: 0.5 }));
+          olE2.rotation.x = -Math.PI/2; olE2.position.set(ox2, 1.0, oz2); scene.add(olE2);
+        }
+      }
+    }
+
+    // Dimension lines
+    var dimMat = new THREE.LineBasicMaterial({ color: 0xf76504 });
+    var dimOff = 20;
+    var topZ = -(rows-1)*stepZ/2 - fovH/2 - dimOff;
+    scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(-actualW/2,1,topZ), new THREE.Vector3(actualW/2,1,topZ)]), dimMat));
+    var endDotGeo = new THREE.SphereGeometry(1.5, 8, 8);
+    var endDotMat = new THREE.MeshBasicMaterial({ color: 0xf76504 });
+    var d1 = new THREE.Mesh(endDotGeo, endDotMat); d1.position.set(-actualW/2,1,topZ); scene.add(d1);
+    var d2 = new THREE.Mesh(endDotGeo, endDotMat); d2.position.set(actualW/2,1,topZ); scene.add(d2);
+    var wLbl = makeTextSprite(Math.round(actualW)+'mm', 0xf76504, 0.75); wLbl.position.set(0,8,topZ); scene.add(wLbl);
+
+    var sideX = -(cols-1)*stepX/2 - fovW/2 - dimOff;
+    scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(sideX,1,-actualH/2), new THREE.Vector3(sideX,1,actualH/2)]), dimMat));
+    var d3 = new THREE.Mesh(endDotGeo, endDotMat); d3.position.set(sideX,1,-actualH/2); scene.add(d3);
+    var d4 = new THREE.Mesh(endDotGeo, endDotMat); d4.position.set(sideX,1,actualH/2); scene.add(d4);
+    var hLbl = makeTextSprite(Math.round(actualH)+'mm', 0xf76504, 0.75); hLbl.position.set(sideX-25,8,0); scene.add(hLbl);
+
+    // Info overlay (inside 3D container)
+    var infoHtml = '<div class="stitch-3d-info">';
+    infoHtml += '<div class="stitch-3d-info-title">' + plan.model.model + '</div>';
+    infoHtml += '<div class="stitch-3d-info-row">' + cols + 'x' + rows + ' = ' + (cols*rows) + '台</div>';
+    infoHtml += '</div>';
+    infoHtml += '<div class="stitch-3d-controls">';
+    infoHtml += '<button class="stitch-3d-ctrl-btn" id="stitch3dReset" title="重置视角">&#x27F2;</button>';
+    infoHtml += '<button class="stitch-3d-ctrl-btn" id="stitch3dTop" title="俯视图">&#x2B07;</button>';
+    infoHtml += '</div>';
+    container.insertAdjacentHTML('afterbegin', infoHtml);
+
+    // Bottom annotation panel (below 3D view)
+    var annHtml = '<div class="stitch-3d-annotation">';
+    annHtml += '<div class="stitch-3d-ann-row">';
+    annHtml += '<span class="stitch-3d-ann-item"><span class="stitch-3d-ann-dot" style="background:#f76504"></span>相机数量</span>';
+    annHtml += '<span class="stitch-3d-ann-val">' + (cols * rows) + ' 台 (' + cols + 'x' + rows + ')</span>';
+    annHtml += '</div>';
+    annHtml += '<div class="stitch-3d-ann-row">';
+    annHtml += '<span class="stitch-3d-ann-item"><span class="stitch-3d-ann-dot" style="background:#4a90d9"></span>单机视野</span>';
+    annHtml += '<span class="stitch-3d-ann-val">' + fovW + ' x ' + fovH + ' mm</span>';
+    annHtml += '</div>';
+    annHtml += '<div class="stitch-3d-ann-row">';
+    annHtml += '<span class="stitch-3d-ann-item"><span class="stitch-3d-ann-dot" style="background:#f76504"></span>总覆盖区域</span>';
+    annHtml += '<span class="stitch-3d-ann-val">' + Math.round(actualW) + ' x ' + Math.round(actualH) + ' mm</span>';
+    annHtml += '</div>';
+    if (overlapW > 0 || overlapH > 0) {
+      annHtml += '<div class="stitch-3d-ann-row">';
+      annHtml += '<span class="stitch-3d-ann-item"><span class="stitch-3d-ann-dot" style="background:#e74c3c"></span>重叠区域</span>';
+      var overlapParts = [];
+      if (overlapW > 0) overlapParts.push(overlapW + 'mm(水平)');
+      if (overlapH > 0) overlapParts.push(overlapH + 'mm(垂直)');
+      annHtml += '<span class="stitch-3d-ann-val">' + overlapParts.join(' / ') + '</span>';
+      annHtml += '</div>';
     }
     if (reqW && reqH) {
-      var legY4 = legY + (plan.overlapW > 0 ? (plan.overlapH > 0 ? 72 : 54) : (plan.overlapH > 0 ? 54 : 36));
-      svg += '<rect x="' + legX + '" y="' + legY4 + '" width="12" height="12" fill="none" stroke="' + reqAreaColor + '" stroke-width="1" stroke-dasharray="3,2" rx="2"/>';
-      svg += '<text x="' + (legX + 16) + '" y="' + (legY4 + 10) + '" fill="' + textColor + '" font-size="11" font-family="sans-serif">需求覆盖 ' + Math.round(reqW) + '×' + Math.round(reqH) + 'mm</text>';
+      annHtml += '<div class="stitch-3d-ann-row">';
+      annHtml += '<span class="stitch-3d-ann-item"><span class="stitch-3d-ann-dot" style="background:#0A1628"></span>需求覆盖</span>';
+      annHtml += '<span class="stitch-3d-ann-val">' + Math.round(reqW) + ' x ' + Math.round(reqH) + ' mm</span>';
+      annHtml += '</div>';
     }
+    annHtml += '<div class="stitch-3d-ann-row">';
+    annHtml += '<span class="stitch-3d-ann-item"><span class="stitch-3d-ann-dot" style="background:#888"></span>PPM</span>';
+    annHtml += '<span class="stitch-3d-ann-val">' + plan.ppm.toFixed(2) + '</span>';
+    annHtml += '</div>';
+    annHtml += '<div class="stitch-3d-ann-row">';
+    annHtml += '<span class="stitch-3d-ann-item"><span class="stitch-3d-ann-dot" style="background:#888"></span>安装高度</span>';
+    annHtml += '<span class="stitch-3d-ann-val">' + Math.round(plan.workingDist || 200) + ' mm</span>';
+    annHtml += '</div>';
+    annHtml += '</div>';
+    // Insert after container
+    var existing = container.parentNode.querySelector('.stitch-3d-annotation');
+    if (existing) existing.remove();
+    container.insertAdjacentHTML('afterend', annHtml);
 
-    // 右下角信息
-    svg += '<text x="' + (regionX + regionW - 4) + '" y="' + (legY + 10) + '" fill="' + mutedColor + '" font-size="11" font-family="sans-serif" text-anchor="end">' + plan.model.model + ' \u00b7 ' + cols + '\u00d7' + rows + '</text>';
+    setTimeout(function() {
+      var rb = document.getElementById('stitch3dReset');
+      if (rb) rb.onclick = function() { spherical.radius = sceneW*1.2; spherical.theta = Math.atan2(sceneW*0.6,sceneD*1.4); spherical.phi = Math.acos((sceneH*1.2)/(sceneW*1.2)); updateCamera(); };
+      var tb = document.getElementById('stitch3dTop');
+      if (tb) tb.onclick = function() { spherical.radius = Math.max(sceneW,sceneD)*1.3; spherical.theta = 0; spherical.phi = 0.15; updateCamera(); };
+    }, 50);
 
-    svg += '</svg></div>';
-    return svg;
+    // Resize
+    function onResize() { var w = container.clientWidth, h = container.clientHeight || 450; camera.aspect = w/h; camera.updateProjectionMatrix(); renderer.setSize(w, h); }
+    window.addEventListener('resize', onResize);
+
+    // Must set _stitch3dState BEFORE animate() so animId can be assigned
+    _stitch3dState = { scene: scene, camera: camera, renderer: renderer, animId: null, onResize: onResize };
+
+    // Animation
+    function animate() { _stitch3dState.animId = requestAnimationFrame(animate); renderer.render(scene, camera); }
+    animate();
+    return '';
   }
+
+  function createFrustumGeometry(cx, cy, cz, halfW, halfH) {
+    var geo = new THREE.BufferGeometry();
+    var bL = new THREE.Vector3(cx-halfW, 0, cz-halfH);
+    var bR = new THREE.Vector3(cx+halfW, 0, cz-halfH);
+    var tR = new THREE.Vector3(cx+halfW, 0, cz+halfH);
+    var tL = new THREE.Vector3(cx-halfW, 0, cz+halfH);
+    var top = new THREE.Vector3(cx, cy, cz);
+    var v = new Float32Array([
+      top.x,top.y,top.z, bL.x,bL.y,bL.z, bR.x,bR.y,bR.z,
+      top.x,top.y,top.z, bR.x,bR.y,bR.z, tR.x,tR.y,tR.z,
+      top.x,top.y,top.z, tR.x,tR.y,tR.z, tL.x,tL.y,tL.z,
+      top.x,top.y,top.z, tL.x,tL.y,tL.z, bL.x,bL.y,bL.z,
+      bL.x,bL.y,bL.z, tL.x,tL.y,tL.z, tR.x,tR.y,tR.z,
+      bL.x,bL.y,bL.z, tR.x,tR.y,tR.z, bR.x,bR.y,bR.z
+    ]);
+    geo.setAttribute('position', new THREE.BufferAttribute(v, 3));
+    return geo;
+  }
+
+  function makeTextSprite(text, color, scale) {
+    var canvas = document.createElement('canvas');
+    var ctx = canvas.getContext('2d');
+    canvas.width = 256; canvas.height = 64;
+    ctx.font = 'bold 28px sans-serif';
+    ctx.fillStyle = '#' + (color.toString(16).padStart(6, '0'));
+    ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    ctx.fillText(text, 128, 32);
+    var texture = new THREE.CanvasTexture(canvas);
+    texture.minFilter = THREE.LinearFilter;
+    var sprite = new THREE.Sprite(new THREE.SpriteMaterial({ map: texture, transparent: true, depthTest: false }));
+    var s = (scale || 1) * 60;
+    sprite.scale.set(s, s * 0.25, 1);
+    return sprite;
+  }
+
+  function renderStitchSVG(plan, barcodeW, barcodeH, orient, reqW, reqH) {
+    return renderStitch3D(plan, barcodeW, barcodeH, orient, reqW, reqH);
+  }
+
 
   function calcRulerStep(totalMM) {
     var steps = [5, 10, 20, 50, 100, 200, 500];
@@ -1601,18 +1945,18 @@
       var card = document.getElementById('stitchCard');
       var schematic = document.querySelector('.schematic-wrap');
       var svgArea = document.getElementById('stitchSvgArea');
-      var planArea = document.getElementById('stitchPlanArea');
-      var top1 = document.getElementById('top1Content');
-      var modalBtn = document.getElementById('showModalBtn');
+      var planCard = document.getElementById('stitchPlanCard');
       var runBtn = document.getElementById('runBtn');
+      var top1Card = document.getElementById('top1Content');
+      var showModalBtn = document.getElementById('showModalBtn');
       if (card) card.style.display = '';
       if (schematic) schematic.style.display = 'none';
       if (svgArea) svgArea.style.display = 'none';
-      if (planArea) planArea.style.display = 'none';
-      if (top1) top1.style.display = 'none';
-      if (modalBtn) modalBtn.style.display = 'none';
+      if (planCard) planCard.style.display = 'none';
       if (runBtn) runBtn.style.display = 'none';
-      // 隐藏码制说明图片
+      // 隐藏单相机结果
+      if (top1Card && top1Card.parentElement) top1Card.parentElement.style.display = 'none';
+      if (showModalBtn && showModalBtn.parentElement) showModalBtn.parentElement.style.display = 'none';
       var codeImg = document.getElementById('codeImgContainer');
       if (codeImg) codeImg.style.display = 'none';
     },
@@ -1620,20 +1964,20 @@
       var card = document.getElementById('stitchCard');
       var schematic = document.querySelector('.schematic-wrap');
       var svgArea = document.getElementById('stitchSvgArea');
-      var planArea = document.getElementById('stitchPlanArea');
-      var top1 = document.getElementById('top1Content');
-      var modalBtn = document.getElementById('showModalBtn');
+      var planCard = document.getElementById('stitchPlanCard');
       var runBtn = document.getElementById('runBtn');
       if (card) card.style.display = 'none';
       if (schematic) schematic.style.display = '';
       if (svgArea) { svgArea.style.display = 'none'; svgArea.innerHTML = ''; }
-      if (planArea) { planArea.style.display = 'none'; planArea.innerHTML = ''; }
+      if (planCard) { planCard.style.display = 'none'; }
       var dlBtn = document.getElementById('stitchDownloadBtn');
       if (dlBtn) dlBtn.style.display = 'none';
-      if (top1) top1.style.display = '';
-      if (modalBtn) modalBtn.style.display = '';
       if (runBtn) runBtn.style.display = '';
-      // 恢复码制说明图片
+      // 恢复单相机结果卡片
+      var top1Card = document.getElementById('top1Content');
+      if (top1Card && top1Card.parentElement) top1Card.parentElement.style.display = '';
+      var showModalBtn = document.getElementById('showModalBtn');
+      if (showModalBtn && showModalBtn.parentElement) showModalBtn.parentElement.style.display = '';
       var codeImg = document.getElementById('codeImgContainer');
       if (codeImg) codeImg.style.display = '';
     }

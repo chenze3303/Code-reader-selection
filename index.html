@@ -9,13 +9,15 @@
   <!-- 预连接到可能的外部资源 -->
   <link rel="dns-prefetch" href="https://www.v-club.com">
   <!-- CSS 同步加载（避免弹窗闪烁） -->
-  <link rel="stylesheet" href="css/style.min.css?v=1">
+  <link rel="stylesheet" href="css/style.min.css?v=2">
+  <!-- Three.js 3D引擎 (本地) -->
+  <script src="js/three.min.js" defer></script>
   <!-- 预加载最大数据文件 -->
-  <link rel="preload" href="js/data/peidan.js" as="script">
-  <link rel="preload" href="js/data/mapping.js" as="script">
-  <link rel="preload" href="js/data/status_codes.js" as="script">
+  <link rel="preload" href="js/data/peidan.min.js" as="script">
+  <link rel="preload" href="js/data/mapping.min.js" as="script">
+  <link rel="preload" href="js/data/status_codes.min.js" as="script">
   <!-- 预加载关键模块 -->
-  <link rel="preload" href="js/app.js?v=6" as="script">
+  <link rel="preload" href="js/app.min.js?v=8" as="script">
 </head>
 <body>
 <div class="app-window">
@@ -334,7 +336,7 @@
 
         <div class="right-panel">
           <div class="card">
-            <div class="card-header" data-i18n="card2">📐 方案示意图</div>
+            <div class="card-header" style="display:flex;align-items:center;justify-content:space-between"><span data-i18n="card2">📐 方案示意图</span><button class="stitch-download-btn" id="stitchDownloadBtn" style="display:none" title="下载示意图">⬇️ 下载</button></div>
             <div id="calcContent">
               <div class="schematic-wrap">
                 <svg id="schematicSvg" viewBox="0 0 580 300" xmlns="http://www.w3.org/2000/svg" style="width:100%; display:block; background:#F5F7FA; border-radius:8px;">
@@ -377,16 +379,22 @@
                 </svg>
               </div>
               <!-- 拼接大图区域（计算后替换示意��） -->
-              <div id="stitchSvgArea" class="stitch-svg-area" style="display:none"></div>
+              <div id="stitchSvgArea" class="stitch-svg-area" style="display:none">
+                <div id="stitch3dContainer" class="stitch-3d-container"></div>
+              </div>
             </div>
           </div>
 
+          <!-- 单相机结果 -->
           <div class="card">
-            <div class="card-header" style="display:flex;align-items:center;justify-content:space-between"><span data-i18n="card3">🏆 最佳推荐型号</span><button class="stitch-download-btn" id="stitchDownloadBtn" style="display:none" title="下载示意图">⬇️ 下载</button></div>
+            <div class="card-header" data-i18n="card3">🏆 最佳推荐型号</div>
             <div id="top1Content"><div class="empty-state" data-i18n="emptyState">等待选型结果...</div></div>
             <button class="btn-outline" id="showModalBtn" disabled data-i18n="showModal">📋 查看所有满足条件的型号清单</button>
-            <!-- 拼接方案列表 -->
-            <div id="stitchPlanArea" class="stitch-plan-area" style="display:none"></div>
+          </div>
+
+          <!-- 拼接方案列表（独立卡片） -->
+          <div class="card" id="stitchPlanCard" style="display:none">
+            <div id="stitchPlanArea" class="stitch-plan-area"></div>
           </div>
 
 
@@ -1593,7 +1601,7 @@ nRet = device.<span class="fn">MV_CODEREADER_OpenDevice_NET</span>();</code></pr
   <script src="js/data/competitor.min.js" defer></script>
   <script src="js/data/mapping.min.js" defer></script>
   <script src="js/data/download_urls.min.js" defer></script>
-  <script src="js/app.min.js?v=7" defer></script>
+  <script src="js/app.min.js?v=8" defer></script>
   <script src="js/bom.min.js" defer></script>
   <script src="js/data/peidan.min.js" defer></script>
   <script src="js/mapping_module.min.js" defer></script>

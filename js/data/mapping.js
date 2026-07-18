@@ -1,5 +1,5 @@
 // mapping.js - 基线-经销对照表
-// 自动生成于 2026/7/18 01:31:27
+// 自动生成于 2026/7/18 01:47:03
 
 window.MAPPING_DATA = [
   { cat: "ID803M系列", seq: 1, baseName: "MV-ID803M-03S-WBN-SR-U(国内标配)", baseCode: "313201715", distName: "MV-IDA02X-03WSU(国内标配)", distCode: "328500153" },
