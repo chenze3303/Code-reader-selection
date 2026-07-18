@@ -11,11 +11,11 @@ const ROOT = path.join(__dirname, '..');
 
 // 需要压缩的图片
 const IMAGES = [
-  { file: 'contact-wechat.jpg', quality: 80 },
-  { file: 'contact-douyin.jpg', quality: 80 },
-  { file: 'contact-bilibili.jpg', quality: 80 },
-  { file: 'code-type-desc.png', quality: 80 },
-  { file: 'code-type-desc-dark.png', quality: 80 }
+  { file: 'assets/contact-wechat.jpg', quality: 80 },
+  { file: 'assets/contact-douyin.jpg', quality: 80 },
+  { file: 'assets/contact-bilibili.jpg', quality: 80 },
+  { file: 'assets/code-type-desc.png', quality: 80 },
+  { file: 'assets/code-type-desc-dark.png', quality: 80 }
 ];
 
 async function compressImage(file, quality) {

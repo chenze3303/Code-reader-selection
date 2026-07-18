@@ -10,11 +10,11 @@ const ROOT = path.join(__dirname, '..');
 
 // 压缩后的图片文件
 const IMAGES = [
-  'contact-wechat.jpg',
-  'contact-douyin.jpg',
-  'contact-bilibili.jpg',
-  'code-type-desc.png',
-  'code-type-desc-dark.png'
+  'assets/contact-wechat.jpg',
+  'assets/contact-douyin.jpg',
+  'assets/contact-bilibili.jpg',
+  'assets/code-type-desc.png',
+  'assets/code-type-desc-dark.png'
 ];
 
 console.log('\n🔄 替换压缩后的图片\n');

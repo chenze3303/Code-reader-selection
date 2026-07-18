@@ -14,11 +14,11 @@ console.log('\n📊 性能优化对比报告\n');
 const BEFORE = {
   css: 124078,        // style.css 原始大小
   images: {
-    'contact-wechat.jpg': 85842,
-    'contact-douyin.jpg': 113846,
-    'contact-bilibili.jpg': 138431,
-    'code-type-desc.png': 44580,
-    'code-type-desc-dark.png': 63727
+    'assets/contact-wechat.jpg': 85842,
+    'assets/contact-douyin.jpg': 113846,
+    'assets/contact-bilibili.jpg': 138431,
+    'assets/code-type-desc.png': 44580,
+    'assets/code-type-desc-dark.png': 63727
   }
 };
 

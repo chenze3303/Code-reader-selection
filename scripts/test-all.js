@@ -56,19 +56,19 @@ console.log(`JS 节省: ${((jsOriginalTotal - jsMinifiedTotal) / 1024).toFixed(1
 
 // 3. 图片
 const images = [
-  'contact-wechat.jpg',
-  'contact-douyin.jpg',
-  'contact-bilibili.jpg',
-  'code-type-desc.png',
-  'code-type-desc-dark.png'
+  'assets/contact-wechat.jpg',
+  'assets/contact-douyin.jpg',
+  'assets/contact-bilibili.jpg',
+  'assets/code-type-desc.png',
+  'assets/code-type-desc-dark.png'
 ];
 
 const imageOriginalSizes = {
-  'contact-wechat.jpg': 85842,
-  'contact-douyin.jpg': 113846,
-  'contact-bilibili.jpg': 138431,
-  'code-type-desc.png': 44580,
-  'code-type-desc-dark.png': 63727
+  'assets/contact-wechat.jpg': 85842,
+  'assets/contact-douyin.jpg': 113846,
+  'assets/contact-bilibili.jpg': 138431,
+  'assets/code-type-desc.png': 44580,
+  'assets/code-type-desc-dark.png': 63727
 };
 
 let imgOriginalTotal = 0;

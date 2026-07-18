@@ -13,12 +13,13 @@ https://chenze3303.github.io/Code-reader-selection/
 ```
 ├── index.html                      # 主页面，包含六个功能页签
 ├── db_editor.html                  # 数据库编辑器（可视化编辑全部数据文件）
-├── code-type-desc.png              # 码制类型说明图（明亮模式）
-├── code-type-desc-dark.png         # 码制类型说明图（暗黑模式）
-├── contact-wechat.jpg              # 联系方式
-├── contact-bilibili.jpg
-├── contact-douyin.jpg
 ├── sdk-guide.html                  # 独立 SDK 参考页面（C/C++ & C# 指南）
+├── assets/
+│   ├── code-type-desc.png          # 码制类型说明图（明亮模式）
+│   ├── code-type-desc-dark.png     # 码制类型说明图（暗黑模式）
+│   ├── contact-wechat.jpg          # 联系方式
+│   ├── contact-bilibili.jpg
+│   └── contact-douyin.jpg
 ├── css/
 │   ├── style.css                   # 全局样式（PC + 移动端响应式，含暗黑模式全面优化）
 │   └── style.min.css               # 压缩版样式（节省 17.7%）
@@ -36,6 +37,8 @@ https://chenze3303.github.io/Code-reader-selection/
 │       ├── status_codes.js         # 状态码数据（224 条，10 个分类）
 │       ├── download_urls.js        # 各系列资料下载页面 URL（自动生成）
 │       └── cat_dist_map.js         # 系列 → 经销型号前缀映射
+├── exports/
+│   └── data_export.xlsx            # 导出的 Excel 数据文件
 └── scripts/
     ├── scrape_base_downloads.js    # 抓取基线型号资料下载列表
     ├── scrape_dist_downloads.js    # 抓取经销型号资料下载列表
@@ -44,6 +47,8 @@ https://chenze3303.github.io/Code-reader-selection/
     ├── minify-js.js                # JS 压缩脚本
     ├── compress-images.js          # 图片压缩脚本
     ├── replace-images.js           # 替换压缩后的图片
+    ├── excel2js.js                 # Excel 转 JS 数据文件
+    ├── js2excel.js                 # JS 数据文件转 Excel
     ├── perf-optimize.js            # 性能优化报告
     ├── test-performance.js         # 性能对比测试
     └── test-all.js                 # 完整性能测试
@@ -218,12 +223,22 @@ window.MAPPING_DATA = [
 **资料下载 URL** `js/data/download_urls.js`（自动生成，勿手动编辑）
 
 ```js
-window.MAPPING_DOWNLOAD_URLS = {
-  base: { "ID803M系列": "https://www.hikrobotics.com/cn/machinevision/productdetail/?id=13058", ... },
-  dist: { "ID803M系列": "https://www.hikrobotics.com/cn/machinevision/productdetail/?id=13434", ... },
-  getBaseUrl: function(cat) { ... },
-  getDistUrl: function(cat) { ... }
-};
+(function() {
+  var BASE_DOWNLOAD_URLS = {
+    "ID803M系列": "https://www.hikrobotics.com/cn/machinevision/productdetail/?id=13058",
+    ...
+  };
+  var DIST_DOWNLOAD_URLS = {
+    "ID803M系列": "https://www.hikrobotics.com/cn/machinevision/productdetail/?id=13434",
+    ...
+  };
+  window.MAPPING_DOWNLOAD_URLS = {
+    base: BASE_DOWNLOAD_URLS,
+    dist: DIST_DOWNLOAD_URLS,
+    getBaseUrl: function(cat) { return BASE_DOWNLOAD_URLS[cat] || ''; },
+    getDistUrl: function(cat) { return DIST_DOWNLOAD_URLS[cat] || ''; }
+  };
+})();
 ```
 
 **配单数据** `js/data/peidan.js`
@@ -341,6 +356,14 @@ node scripts/test-all.js
 ---
 
 ## 更新日志
+
+### V3.5.1 · 2026-07-18
+
+**项目结构优化**
+- 图片资源（联系方式、码制说明图）移入 `assets/` 目录
+- 导出文件移入 `exports/` 目录
+- 清理 `.bak` 备份文件和 `test/` 参考数据目录
+- 更新所有脚本和 HTML 中的文件引用路径
 
 ### V3.5 · 2026-07-17
 

@@ -10,7 +10,7 @@ const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
 const DATA_DIR = path.join(ROOT, 'js', 'data');
-const OUTPUT = path.join(ROOT, 'data_export.xlsx');
+const OUTPUT = path.join(ROOT, 'exports', 'data_export.xlsx');
 
 console.log('\n📊 JS → Excel 转换脚本\n');
 
