@@ -839,7 +839,7 @@
         if (wdMM < item.model.workingDist.min || wdMM > item.model.workingDist.max) {
           if (failReasons.indexOf('dist') === -1) failReasons.push('dist');
         }
-        if (item.model.focal && item.ppm !== null && (item.ppm < ppmRange.min || item.ppm > ppmRange.max)) {
+        if (item.model.focal && item.ppm !== null && item.ppm > ppmRange.max) {
           if (failReasons.indexOf('ppm') === -1) failReasons.push('ppm');
         }
       });
