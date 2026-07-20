@@ -252,7 +252,7 @@
     },
     type: {
       title: '产品类型', color: '#1565c0',
-      html: '<table><tr><td>M</td><td><b>Mono 黑白</b> — 黑白传感器，适合对比度高的条码识别场景</td></tr><tr><td>XM</td><td><b>增强款</b> — 2系/3系标配，搭载深度学习算法，支持4路光源分控</td></tr><tr><td>PM</td><td><b>高端款</b> — 3系专用，14颗LED复合光源，聚光白光，支持偏振快速切换</td></tr><tr><td>RM</td><td><b>卷帘快门款</b> — Rolling Shutter Sensor，适合高速运动场景</td></tr><tr><td>EM</td><td><b>经济 Mono</b> — 经济型黑白款，45×43×25mm，塑料上盖，M5.8镜头接口</td></tr><tr><td>EMI</td><td><b>经济 Mono 增强</b> — 经济型黑白增强版，支持光源分控</td></tr><tr><td>EP</td><td><b>经济型（金属上盖）</b> — 经济型金属上盖版本</td></tr><tr><td>EPI</td><td><b>经济型增强</b> — 经济型金属上盖+光源分控</td></tr></table>'
+      html: '<table><tr><td>M</td><td><b>Mono 黑白</b> — 黑白传感器</td></tr><tr><td>XM</td><td><b>增强款</b> — 2系/3系标配，搭载深度学习算法，支持4路光源分控</td></tr><tr><td>PM</td><td><b>高端款</b> — 3系专用，14颗LED复合光源，聚光白光，支持偏振快速切换</td></tr><tr><td>RM</td><td><b>卷帘快门款</b> — Rolling Shutter Sensor，适合高速运动场景</td></tr><tr><td>EM</td><td><b>经济 Mono</b> — 经济型黑白款，45×43×25mm，塑料上盖，M5.8镜头接口</td></tr><tr><td>EMI</td><td><b>经济 Mono 增强</b> — 经济型黑白增强版，支持光源分控</td></tr><tr><td>EP</td><td><b>经济型（金属上盖）</b> — 经济型金属上盖版本</td></tr><tr><td>EPI</td><td><b>经济型增强</b> — 经济型金属上盖+光源分控</td></tr></table>'
     },
     focal: {
       title: '焦距', color: '#f57f17',
