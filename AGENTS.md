@@ -20,7 +20,7 @@
   - `cat_dist_map.js` → `window.CAT_DIST_MAP`
   - `product_db.js` → `const PRODUCT_DB`（无 `window.`）
   - `status_codes.js` → `var STATUS_CODES`（无 `window.`）
-  - `competitor.js` → IIFE 内部 `var competitorDB`（非 `window.*`）
+  - `competitor.js` → IIFE 内部 `var competitorDB`（非 `window.*`，同时包含 UI 渲染逻辑，通过 `window.COMPETITOR` 暴露接口）
   - `download_urls.js` → IIFE 内部 `var BASE_DOWNLOAD_URLS` 等
 - 国际化（i18n）：HTML 元素 `data-i18n` 属性
 - 暗黑模式：切换 `<html>` 元素的 `dark` class
@@ -73,8 +73,8 @@ node scripts/gen_download_urls.js                  # → js/data/download_urls.j
 |------|------|
 | `js/data/product_db.js` | 选型产品数据库（`const PRODUCT_DB`） |
 | `js/data/mapping.js` | 产品表数据（`window.MAPPING_DATA`） |
-| `js/data/peidan.js` | 配单数据（`window.PEIDAN_DATA`，296KB，最大文件） |
-| `js/data/competitor.js` | 竞品对标数据（IIFE 内 `var competitorDB`） |
+| `js/data/peidan.js` | 配单数据（`window.PEIDAN_DATA`，285KB，最大文件） |
+| `js/data/competitor.js` | 竞品对标模块（IIFE 内 `var competitorDB` + UI 逻辑） |
 | `js/data/status_codes.js` | 状态码数据（`var STATUS_CODES`） |
 | `js/data/download_urls.js` | 各系列下载 URL（IIFE），**自动生成，勿手动编辑** |
 | `js/data/cat_dist_map.js` | 系列→经销型号前缀映射（`window.CAT_DIST_MAP`） |
@@ -85,12 +85,14 @@ node scripts/gen_download_urls.js                  # → js/data/download_urls.j
 | `css/style.css` | 全局样式（PC + 移动端响应式 + 暗黑模式） |
 | `assets/` | 图片资源（联系方式、码制说明图） |
 | `exports/` | 导出的 Excel 数据文件 |
+| `sdk-guide.html` | 独立 SDK 参考完整文档页（72KB） |
 
 ## 注意事项
 
 - **无测试框架**：`package.json` 的 test 脚本是占位符
 - `download_urls.js` 由脚本生成，手动编辑会在下次抓取时被覆盖
-- `competitor.js` 是 IIFE，不是简单的全局变量赋值
+- `cat_dist_map.js` 被 `minify-js.js` 压缩为 `.min.js`，但不在 `index.html` 中直接加载（由模块运行时引用）
+- `competitor.js` 是 IIFE，包含竞品数据 + UI 渲染逻辑，不是纯数据文件
 - CSS 必须同步加载（不能 defer），否则弹窗会闪烁（CSS 未加载前弹窗短暂可见）
 - 主题/语言持久化使用 `localStorage` 键 `theme` / `lang`
 - `db_editor.html` 打开时自动加载数据，无需手动导入

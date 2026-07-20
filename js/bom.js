@@ -514,7 +514,7 @@
     var blob = new Blob(['\uFEFF' + csv], { type: 'text/csv;charset=utf-8' });
     var a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
-    a.download = 'HIKROBOT_配单表_' + new Date().toLocaleDateString('zh-CN').replace(/\//g, '-') + '.csv';
+    a.download = 'HIKROBOT_配单表_' + new Date().toLocaleDateString('zh-CN').split('/').join('-') + '.csv';
     a.click();
     URL.revokeObjectURL(a.href);
   }
