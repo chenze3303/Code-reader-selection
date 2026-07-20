@@ -177,9 +177,12 @@
     showCodeColumns = !showCodeColumns;
     updateTableHeader();
     render();
-    // 显示命名规则按钮
+    // 同步显示/隐藏命名规则按钮
     var namingBtn = document.getElementById('mpNamingBtn');
-    if (namingBtn) namingBtn.classList.add('show');
+    if (namingBtn) {
+      if (showCodeColumns) namingBtn.classList.add('show');
+      else namingBtn.classList.remove('show');
+    }
     return showCodeColumns;
   }
 
