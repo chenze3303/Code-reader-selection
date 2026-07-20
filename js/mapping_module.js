@@ -235,6 +235,109 @@
       }, 100);
       setTimeout(function() { clearInterval(check); }, 5000);
     }
+
+    // 命名规则弹窗
+    initNamingModal();
+  }
+
+  // ─── 命名规则弹窗 ───
+  var NAMING_DATA = {
+    prefix: {
+      title: '品牌·品类前缀', color: '#00796b',
+      html: '<table><tr class="naming-cur"><td>MV</td><td>Machine Vision（机器视觉）— 所有型号固定前缀</td></tr><tr class="naming-cur"><td>ID</td><td>Industrial Decoder（工业读码器）— 所有型号固定前缀</td></tr></table>'
+    },
+    series: {
+      title: '系列号', color: '#7b1fa2',
+      html: '<table><tr><td>8xx</td><td><b>入门级·超小型</b> — 38×38×19mm，塑料外壳，IP54防护，M10/M5.8镜头接口，支持USB/RS-232/RJ45</td></tr><tr><td>2xxx</td><td><b>中端·极小型</b> — M12/M5.8/D14镜头接口，IP54~IP65，搭载自研深度学习算法，支持4路光源分控</td></tr><tr><td>3xxx</td><td><b>高端·标准型</b> — M12/D14/C-Mount镜头接口，IP67金属外壳，14颗LED复合光源，偏振/扩散/全透三路光学照明</td></tr><tr><td>5xxx</td><td><b>旗舰·大视野</b> — M12/D14/C-Mount镜头接口，IP67金属外壳，千兆网口，1200万+ Sensor</td></tr></table><div class="naming-note"><b>分辨率编码：</b>系列号后2-3位数字代表传感器分辨率。如 2023 = 2系 + 23(240万)，5120 = 5系 + 120(1200万)</div>'
+    },
+    type: {
+      title: '产品类型', color: '#1565c0',
+      html: '<table><tr><td>M</td><td><b>基础款</b> — 8系标配，极小型化设计，适合入门应用</td></tr><tr><td>XM</td><td><b>增强款</b> — 2系/3系标配，搭载深度学习算法，支持4路光源分控</td></tr><tr><td>PM</td><td><b>高端款</b> — 3系专用，14颗LED复合光源，聚光白光，支持偏振快速切换</td></tr><tr><td>RM</td><td><b>卷帘快门款</b> — Rolling Shutter Sensor，适合高速运动场景</td></tr><tr><td>EM</td><td><b>极小型</b> — 2系，45×43×25mm，塑料上盖，M5.8镜头接口</td></tr><tr><td>EMI</td><td><b>极小型 Extreme Mini</b> — 2系，支持光源分控</td></tr><tr><td>EP</td><td><b>极小型（金属上盖）</b> — 2系，金属上盖版本</td></tr><tr><td>EPI</td><td><b>极小型增强</b> — 2系，金属上盖+光源分控</td></tr></table>'
+    },
+    focal: {
+      title: '焦距', color: '#f57f17',
+      html: '<table><tr><td>03</td><td><b>3mm</b> / 2.48mm — 8系803M标称3.1mm</td></tr><tr><td>05</td><td><b>4.63mm</b> / 5mm — EMI系列标称05</td></tr><tr><td>08</td><td><b>8mm</b> — 通用中焦距，最常见配置</td></tr><tr><td>12</td><td><b>12mm</b> — 中长焦距</td></tr><tr><td>16</td><td><b>16mm</b> — 长焦距</td></tr><tr><td>25</td><td><b>25mm</b> — 长焦距，远距离读码</td></tr><tr style="background:rgba(230,81,0,0.06);"><td style="color:#e65100;">00C</td><td><b>C-Mount接口</b> — 无内置镜头和光源，需外接C口镜头</td></tr></table><div class="naming-note"><b>调焦方式：</b><b style="color:#558b2f;">M</b>=机械调焦 · <b style="color:#558b2f;">L</b>=液态调焦（自动对焦） · <b style="color:#558b2f;">S</b>=定焦（仅8系）</div>'
+    },
+    focus: {
+      title: '调焦方式', color: '#558b2f',
+      html: '<table><tr><td>M</td><td><b>机械调焦 (Mechanical)</b> — 手动旋转镜头调整焦距</td></tr><tr><td>L</td><td><b>液态调焦 (Liquid)</b> — 支持自动对焦，搭配 IDMVS V5.0.0+ 可一键调谐</td></tr><tr><td>S</td><td><b>定焦</b> — 仅8系803M专用，焦距固定为3.1mm</td></tr></table><div class="naming-note"><b>液态调焦优势：</b>支持自动对焦，搭配 IDMVS V5.0.0+ 客户端可一键调谐，实时变焦。</div>'
+    },
+    light: {
+      title: '光源颜色', color: '#c62828',
+      html: '<table><tr><td>R</td><td><b>红光 (Red)</b> — 工业读码最常用波长，对比度高</td></tr><tr><td>W</td><td><b>白光 (White)</b> — 高显色性，适合需要彩色识别的场景</td></tr></table><div class="naming-note"><b>光源选购：</b>部分型号可选购白光、蓝光、红外光、紫外光或红蓝双色光源。C口型号（00C）无自带光源。</div>'
+    },
+    variant: {
+      title: '光源变体', color: '#512da8',
+      html: '<table><tr><td>B</td><td><b>基础/标准光源</b> — 标准光学配置，适合常规条码识别</td></tr></table><div class="naming-note"><b>说明：</b>大多数型号使用标准光源配置。部分高端型号（PM）支持14颗LED复合光源。</div>'
+    },
+    lens: {
+      title: '镜头类型', color: '#00838f',
+      html: '<table><tr><td>N</td><td><b>普通镜头（非偏振）</b> — 标准光学配置，适合无反光的常规场景</td></tr><tr><td>P</td><td><b>偏振镜头 (Polarized)</b> — 可抑制金属、薄膜等反光表面的眩光</td></tr></table><div class="naming-note"><b>偏振 vs 非偏振：</b>偏振镜头可有效抑制金属表面和薄膜的反光，提升条码识别率。</div>'
+    }
+  };
+
+  var activeNamingPart = null;
+
+  function showNamingDetail(part) {
+    var d = NAMING_DATA[part];
+    if (!d) return;
+    activeNamingPart = part;
+    document.querySelectorAll('.naming-blk.active').forEach(function(el) { el.classList.remove('active'); });
+    document.querySelectorAll('.naming-blk').forEach(function(el) {
+      if (el.getAttribute('data-naming-part') === part) el.classList.add('active');
+    });
+    var header = document.getElementById('namingDetailHeader');
+    var body = document.getElementById('namingDetailBody');
+    header.innerHTML = '<span class="naming-detail-dot" style="background:' + d.color + ';"></span>' + d.title;
+    body.innerHTML = d.html;
+    var panel = document.getElementById('namingDetail');
+    panel.classList.add('show');
+  }
+
+  function hideNamingDetail() {
+    activeNamingPart = null;
+    document.getElementById('namingDetail').classList.remove('show');
+    document.querySelectorAll('.naming-blk.active').forEach(function(el) { el.classList.remove('active'); });
+  }
+
+  function initNamingModal() {
+    var btn = document.getElementById('mpNamingBtn');
+    var overlay = document.getElementById('namingModal');
+    var closeBtn = document.getElementById('namingModalClose');
+    if (!btn || !overlay) return;
+
+    btn.addEventListener('click', function() {
+      overlay.classList.add('active');
+    });
+
+    if (closeBtn) {
+      closeBtn.addEventListener('click', function() {
+        overlay.classList.remove('active');
+        hideNamingDetail();
+      });
+    }
+
+    overlay.addEventListener('click', function(e) {
+      if (e.target === overlay) {
+        overlay.classList.remove('active');
+        hideNamingDetail();
+      }
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && overlay.classList.contains('active')) {
+        overlay.classList.remove('active');
+        hideNamingDetail();
+      }
+    });
+
+    document.querySelectorAll('.naming-blk[data-naming-part]').forEach(function(blk) {
+      blk.addEventListener('click', function() {
+        var part = blk.getAttribute('data-naming-part');
+        if (activeNamingPart === part) { hideNamingDetail(); return; }
+        showNamingDetail(part);
+      });
+    });
   }
 
   if (document.readyState === 'loading') {

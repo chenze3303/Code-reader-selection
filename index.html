@@ -1439,6 +1439,7 @@ nRet = device.<span class="fn">MV_CODEREADER_OpenDevice_NET</span>();</code></pr
             </select>
           </div>
           <button class="mp-btn-expand" id="mpToggleAllBtn" data-i18n="mpExpand">📂 全部展开</button>
+          <button class="mp-btn-naming" id="mpNamingBtn">📖 命名规则</button>
         </div>
 
         <!-- 状态栏 -->
@@ -1476,6 +1477,64 @@ nRet = device.<span class="fn">MV_CODEREADER_OpenDevice_NET</span>();</code></pr
       </div>
     </div>
 
+  </div>
+</div>
+
+<!-- 命名规则弹窗 -->
+<div class="naming-modal-overlay" id="namingModal">
+  <div class="naming-modal">
+    <div class="naming-modal-header">
+      <span class="naming-modal-title">📖 海康机器人 MV-ID 读码器型号命名规则</span>
+      <button class="naming-modal-close" id="namingModalClose">&times;</button>
+    </div>
+    <div class="naming-modal-body" id="namingModalBody">
+      <!-- 型号结构 -->
+      <div class="naming-section">
+        <div class="naming-section-title">型号结构</div>
+        <div class="naming-model-row">
+          <div class="naming-blk naming-b-brand" data-naming-part="prefix"><div class="naming-blk-top">品牌</div><div class="naming-blk-mid">MV</div><div class="naming-blk-bot">Machine Vision</div></div>
+          <div class="naming-sep">-</div>
+          <div class="naming-blk naming-b-brand" data-naming-part="prefix"><div class="naming-blk-top">品类</div><div class="naming-blk-mid">ID</div><div class="naming-blk-bot">Industrial Decoder</div></div>
+          <div class="naming-blk naming-b-series" data-naming-part="series"><div class="naming-blk-top">系列</div><div class="naming-blk-mid">2023</div><div class="naming-blk-bot">2系·240万</div></div>
+          <div class="naming-blk naming-b-type" data-naming-part="type"><div class="naming-blk-top">类型</div><div class="naming-blk-mid">XM</div><div class="naming-blk-bot">增强款</div></div>
+          <div class="naming-sep">-</div>
+          <div class="naming-blk naming-b-focal" data-naming-part="focal"><div class="naming-blk-top">焦距</div><div class="naming-blk-mid">08</div><div class="naming-blk-bot">8mm</div></div>
+          <div class="naming-blk naming-b-focus" data-naming-part="focus"><div class="naming-blk-top">调焦</div><div class="naming-blk-mid">M</div><div class="naming-blk-bot">机械调焦</div></div>
+          <div class="naming-sep">-</div>
+          <div class="naming-blk naming-b-light" data-naming-part="light"><div class="naming-blk-top">光源</div><div class="naming-blk-mid">R</div><div class="naming-blk-bot">红光</div></div>
+          <div class="naming-blk naming-b-variant" data-naming-part="variant"><div class="naming-blk-top">变体</div><div class="naming-blk-mid">B</div><div class="naming-blk-bot">标准光源</div></div>
+          <div class="naming-blk naming-b-lens" data-naming-part="lens"><div class="naming-blk-top">镜头</div><div class="naming-blk-mid">N</div><div class="naming-blk-bot">普通镜头</div></div>
+        </div>
+        <div class="naming-struct-note">
+          可选后缀：<b style="color:#e65100;">-U</b>=USB · <b style="color:#e65100;">-R</b>=串口(仅8系)<br>
+          C口外接镜头型号：焦距位用 <b style="color:#e65100;">00C</b> 替代，无内置镜头和光源
+        </div>
+      </div>
+
+      <!-- 详情区块 -->
+      <div class="naming-detail" id="namingDetail">
+        <div class="naming-detail-header" id="namingDetailHeader"></div>
+        <div class="naming-detail-body" id="namingDetailBody"></div>
+      </div>
+
+      <!-- 型号解析示例 -->
+      <div class="naming-section">
+        <div class="naming-section-title">型号解析示例</div>
+        <table class="naming-ex-table">
+          <thead><tr><th style="width:32%">完整型号</th><th>解析</th></tr></thead>
+          <tbody>
+            <tr><td class="naming-model">MV-ID803M-03S-WBN</td><td class="naming-parse"><b>8系</b> · <b>30万</b> · 基础款 — <b>3mm</b> 定焦 · <b>白光</b> · 标准 · <b>普通镜头</b> — 网口</td></tr>
+            <tr><td class="naming-model">MV-ID803M-03S-WBP-R</td><td class="naming-parse"><b>8系</b> · <b>30万</b> · 基础款 — <b>3mm</b> 定焦 · <b>白光</b> · 标准 · <b>偏振镜头</b> — <b>串口</b></td></tr>
+            <tr><td class="naming-model">MV-ID2013EMI-05-RBN-U</td><td class="naming-parse"><b>2系</b> · <b>130万</b> · 极小型 — <b>4.63mm</b> · <b>红光</b> · 标准 · <b>普通镜头</b> — <b>USB</b></td></tr>
+            <tr><td class="naming-model">MV-ID2023XM-08M-RBN</td><td class="naming-parse"><b>2系</b> · <b>240万</b> · 增强款 — <b>8mm</b> <b>机械调焦</b> · <b>红光</b> · 标准 · <b>普通镜头</b> — 网口</td></tr>
+            <tr><td class="naming-model">MV-ID3013PM-06M-WBN</td><td class="naming-parse"><b>3系</b> · <b>130万</b> · 高端款 — <b>6mm</b> <b>机械调焦</b> · <b>白光</b> · 标准 · <b>普通镜头</b> — 网口</td></tr>
+            <tr><td class="naming-model">MV-ID3040RM-00C-NNN</td><td class="naming-parse"><b>3系</b> · <b>400万</b> · 卷帘快门 — <b>C口外接镜头</b> — 无自带光源</td></tr>
+            <tr><td class="naming-model">MV-ID5120RM-08L-RBN</td><td class="naming-parse"><b>5系</b> · <b>1200万</b> · 卷帘快门 — <b>8mm</b> <b>液态调焦</b> · <b>红光</b> · 标准 · <b>普通镜头</b> — 网口</td></tr>
+            <tr><td class="naming-model">MV-ID5200M-00C-NNN</td><td class="naming-parse"><b>5系</b> · <b>2000万</b> · 基础款 — <b>C口外接镜头</b> — 无自带光源</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
   </div>
 </div>
 

@@ -8,7 +8,8 @@
 
 - **入口**：`index.html` — 通过 `<script defer>` 加载数据和模块，脚本顺序很重要（见下文）
 - **数据文件**（`js/data/*.js`）：通过 `<script>` 标签注入的全局变量，**不是 ES 模块**
-- **模块文件**（`js/*.js`）：各功能模块逻辑（app.js、bom.js、mapping_module.js、statuscode_module.js）
+- **模块文件**（`js/*.js`）：各功能模块逻辑（app.js、bom.js、mapping_module.js、statuscode_module.js、sdk_module.js）
+- **Three.js**（`js/three.min.js`）：3D 拼接方案渲染，`defer` 加载
 - **数据库编辑器**：`db_editor.html` — 独立数据编辑工具。隐藏入口：主页面连续点击左上角 logo 3 次（600ms 内）
 - **SDK 参考**：`sdk-guide.html` — 独立 SDK 参考页面
 
@@ -47,6 +48,7 @@
 ```bash
 # JS 压缩（编辑任意 js/ 下的 .js 后运行）
 node scripts/minify-js.js
+node scripts/minify-js.js --check   # 仅验证已有 .min.js 的语法正确性
 
 # CSS 压缩（编辑 css/style.css 后运行）
 node scripts/minify-css.js
@@ -82,6 +84,8 @@ node scripts/gen_download_urls.js                  # → js/data/download_urls.j
 | `js/bom.js` | 配单表（型号树、选配件弹窗、CSV 导出） |
 | `js/mapping_module.js` | 产品表（搜索、筛选、分组、资料下载） |
 | `js/statuscode_module.js` | 状态码查询（搜索、筛选、复制） |
+| `js/sdk_module.js` | 二次开发（SDK 参考）：目录导航、语言切换、章节渲染 |
+| `js/three.min.js` | Three.js 3D 渲染（拼接方案示意图） |
 | `css/style.css` | 全局样式（PC + 移动端响应式 + 暗黑模式） |
 | `assets/` | 图片资源（联系方式、码制说明图） |
 | `exports/` | 导出的 Excel 数据文件 |
@@ -89,7 +93,8 @@ node scripts/gen_download_urls.js                  # → js/data/download_urls.j
 
 ## 注意事项
 
-- **无测试框架**：`package.json` 的 test 脚本是占位符
+- **无测试框架**：`package.json` 的 test 脚本是占位符；`package.json` type 为 `commonjs`（脚本用 `require`）
+- `sdk_module.js` 存在但**未被任何 HTML 引用**，也不在 `minify-js.js` 压缩列表中——可能是遗留文件或未完成的模块
 - `download_urls.js` 由脚本生成，手动编辑会在下次抓取时被覆盖
 - `cat_dist_map.js` 被 `minify-js.js` 压缩为 `.min.js`，但不在 `index.html` 中直接加载（由模块运行时引用）
 - `competitor.js` 是 IIFE，包含竞品数据 + UI 渲染逻辑，不是纯数据文件
