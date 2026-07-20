@@ -2497,7 +2497,9 @@ select:focus, input:focus {
   cursor: pointer;
   white-space: nowrap;
   transition: background 0.15s;
+  display: none;
 }
+.mp-btn-naming.show { display: inline-block; }
 .mp-btn-naming:hover { background: var(--navy-3); }
 
 /* 命名规则弹窗 */
