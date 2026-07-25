@@ -9,15 +9,15 @@
   <!-- 预连接到可能的外部资源 -->
   <link rel="dns-prefetch" href="https://www.v-club.com">
   <!-- CSS 同步加载（避免弹窗闪烁） -->
-  <link rel="stylesheet" href="css/style.min.css?v=2">
+  <link rel="stylesheet" href="css/style.min.css?v=3">
   <!-- Three.js 3D引擎 (本地) -->
   <script src="js/three.min.js" defer></script>
   <!-- 预加载最大数据文件 -->
-  <link rel="preload" href="js/data/peidan.min.js" as="script">
+  <link rel="preload" href="js/data/peidan.min.js?v=2" as="script">
   <link rel="preload" href="js/data/mapping.min.js" as="script">
   <link rel="preload" href="js/data/status_codes.min.js" as="script">
   <!-- 预加载关键模块 -->
-  <link rel="preload" href="js/app.min.js?v=8" as="script">
+  <link rel="preload" href="js/app.min.js?v=9" as="script">
 </head>
 <body>
 <div class="app-window">
@@ -452,6 +452,15 @@
             <span class="bom-left-title" data-i18n="bomConfig">配单配置</span>
           </div>
           <div class="bom-left-inner">
+
+            <!-- 快速搜索 -->
+            <div class="bom-group">
+              <div class="bom-group-label" data-i18n="bomQuickSearch">🔍 快速搜索</div>
+              <div class="bom-search-wrap">
+                <input type="text" id="bomQuickSearch" class="bom-search-input" data-i18n-ph="bomQuickSearchPh" placeholder="输入型号名称或物料代码…" autocomplete="off">
+                <div class="bom-search-results" id="bomSearchResults" style="display:none"></div>
+              </div>
+            </div>
 
             <!-- 型号选择区 -->
             <div class="bom-group">
@@ -1660,9 +1669,9 @@ nRet = device.<span class="fn">MV_CODEREADER_OpenDevice_NET</span>();</code></pr
   <script src="js/data/competitor.min.js" defer></script>
   <script src="js/data/mapping.min.js" defer></script>
   <script src="js/data/download_urls.min.js" defer></script>
-  <script src="js/app.min.js?v=8" defer></script>
-  <script src="js/bom.min.js?v=1" defer></script>
-  <script src="js/data/peidan.min.js" defer></script>
+  <script src="js/app.min.js?v=9" defer></script>
+  <script src="js/bom.min.js?v=13" defer></script>
+  <script src="js/data/peidan.min.js?v=2" defer></script>
   <script src="js/mapping_module.min.js" defer></script>
   <script src="js/data/status_codes.min.js" defer></script>
   <script src="js/statuscode_module.min.js" defer></script>

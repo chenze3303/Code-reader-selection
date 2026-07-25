@@ -326,7 +326,7 @@ var state = {
   templateIdx: null // selected template index
 };
 
-var CAT_OPTS = ['大类','线缆','网线','电源线','电源','安装','安装板','镜头','测试镜头','镜头罩','光源','微码光源','爆闪光源','灯板','外置配件','其他'];
+var CAT_OPTS = ['大类','一体线','IO线','网线','电源线','电源','安装','安装板','镜头','FA镜头','测试镜头','镜头罩','光源','微码光源','爆闪光源','灯板','外置配件','扩展配件','其他'];
 
 // 从数据中自动提取所有产品大类和系列
 function getUniqueValues(arr, key){
@@ -545,6 +545,9 @@ function renderPeidan(m){
       field('pm','型号',m.productModel,'text','如 MV-ID803M-U(基线)') +
       field('pc','大类',m.productCategory,'select','',{v:'',l:'── 选择 ──', opts: getProductCategories()}) +
       field('ps','系列',m.productSeries,'select','',{v:'',l:'── 选择 ──', opts: getProductSeries()}) +
+      field('mc','物料代码',m.materialCode,'text','相机自身物料代码') +
+      field('md','描述',m.description,'text','如 0.3MP，3.1m镜头') +
+      field('mr','备注',m.remark,'text','如 支持U口/串口线缆互换') +
     '</div>' +
     accSection('std','标配配件',m.standardAccessories,'blue') +
     accSection('opt','选配配件',m.optionalAccessories,'orange');
@@ -556,6 +559,9 @@ function renderPeidan(m){
     document.getElementById('mainTitle').textContent=v||'（未命名）';
     renderList();
   });
+  bind('mc',function(v){ state.peidan[state.idx].materialCode=v; });
+  bind('md',function(v){ state.peidan[state.idx].description=v; });
+  bind('mr',function(v){ state.peidan[state.idx].remark=v; });
 }
 
 function accSection(kind, title, accs, tagColor){
@@ -564,6 +570,7 @@ function accSection(kind, title, accs, tagColor){
     var catOpts = CAT_OPTS.map(function(c){return '<option'+(c===a.category?' selected':'')+'>'+c+'</option>';}).join('');
     return '<tr>'+
       '<td style="width:85px"><select onchange="updateAcc(\''+kind+'\','+i+',\'category\',this.value)">'+catOpts+'</select></td>'+
+      '<td style="width:110px"><input value="'+esc(a.series||'')+'" placeholder="系列" oninput="updateAcc(\''+kind+'\','+i+',\'series\',this.value)"></td>'+
       '<td style="width:140px"><input value="'+esc(a.name)+'" placeholder="名称" oninput="updateAcc(\''+kind+'\','+i+',\'name\',this.value)"></td>'+
       '<td style="width:110px"><input value="'+esc(a.code)+'" placeholder="物料代码" oninput="updateAcc(\''+kind+'\','+i+',\'code\',this.value)"></td>'+
       '<td><textarea placeholder="描述" oninput="updateAcc(\''+kind+'\','+i+',\'detail\',this.value)">'+esc(a.detail)+'</textarea></td>'+
@@ -576,9 +583,9 @@ function accSection(kind, title, accs, tagColor){
       '<button class="btn btn-xs btn-outline" onclick="addAcc(\''+kind+'\')">＋ 添加</button>'+
     '</div>'+
     '<table class="tbl"><thead><tr>'+
-      '<th style="width:100px">大类</th><th style="width:160px">名称</th><th style="width:130px">物料代码</th><th>描述</th><th></th>'+
+      '<th style="width:100px">大类</th><th style="width:120px">系列</th><th style="width:160px">名称</th><th style="width:130px">物料代码</th><th>描述</th><th></th>'+
     '</tr></thead><tbody id="acc_'+kind+'">'+
-      (rows||'<tr><td colspan="5" style="padding:1.2rem;text-align:center;color:var(--text-3)">暂无配件，点击上方「＋ 添加」</td></tr>')+
+      (rows||'<tr><td colspan="6" style="padding:1.2rem;text-align:center;color:var(--text-3)">暂无配件，点击上方「＋ 添加」</td></tr>')+
     '</tbody></table></div>';
 }
 
@@ -588,7 +595,7 @@ function updateAcc(kind,i,key,val){
 }
 function addAcc(kind){
   var arr = kind==='std' ? state.peidan[state.idx].standardAccessories : state.peidan[state.idx].optionalAccessories;
-  arr.push({category: kind==='opt'?'其他':'大类', name:'', code:'', detail:''});
+  arr.push({category: kind==='opt'?'其他':'大类', series:'', name:'', code:'', detail:''});
   renderPeidan(state.peidan[state.idx]);
   toast('✅ 已添加配件');
 }
@@ -744,7 +751,7 @@ function duplicateItem(){
 function addItem(){
   var newItem;
   if(state.tab==='peidan'){
-    newItem={productCategory:'',productSeries:'',productModel:'',standardAccessories:[],optionalAccessories:[]};
+    newItem={productCategory:'',productSeries:'',productModel:'',materialCode:'',description:'',remark:'',standardAccessories:[],optionalAccessories:[]};
   } else if(state.tab==='mapping'){
     newItem={cat:'',seq:state.mapping.length+1,baseName:'',baseCode:'',distName:'',distCode:''};
   } else if(state.tab==='competitor'){

@@ -48,14 +48,17 @@
       if (!exists) {
         tree[cat][ser].mains.push({
           n: model,
-          c: model,
-          d: _t('bomReadHost'),
+          c: item.materialCode || model,
+          d: item.description || _t('bomReadHost'),
+          remark: item.remark || '',
           index: index,
           standardAcc: (item.standardAccessories || []).map(function(a, idx) {
             return { 
               name: a.name, 
               code: a.code, 
               detail: a.detail || '',
+              category: a.category || '大类',
+              series: a.series || '',
               _key: getAccKey(a, idx)
             };
           }),
@@ -65,6 +68,7 @@
               code: a.code, 
               detail: a.detail || '', 
               category: a.category || '其他',
+              series: a.series || '',
               _key: getAccKey(a, idx)
             };
           })
@@ -72,7 +76,19 @@
       }
     });
 
-    cats = Object.keys(tree).sort();
+    // 按 peidan.html 优先级排序大类
+    var CAT_PRIORITY = ['ID800', 'ID2013EM', 'ID2000M', 'ID2000XM', 'ID3000PM', 'ID3000XM', 'ID3000RM', 'ID5000M', 'ID5000XM'];
+    cats = Object.keys(tree).sort(function(a, b) {
+      var ia = -1, ib = -1;
+      for (var i = 0; i < CAT_PRIORITY.length; i++) {
+        if (a.indexOf(CAT_PRIORITY[i]) === 0) ia = i;
+        if (b.indexOf(CAT_PRIORITY[i]) === 0) ib = i;
+      }
+      if (ia === -1 && ib === -1) return a.localeCompare(b);
+      if (ia === -1) return 1;
+      if (ib === -1) return 1;
+      return ia - ib;
+    });
     cats.forEach(function(cat) {
       var serKeys = Object.keys(tree[cat]).sort();
       var sortedSer = {};
@@ -239,41 +255,55 @@
   }
 
   function getCatIcon(cat) {
-    var map = { '线缆': '🔌', '网线': '🌐', '电源线': '🔋', '电源': '⚡', '安装': '🔩', '安装板': '📐', '其他': '📦', '外置配件': '🔧', '镜头': '🔍', '测试镜头': '👁', '镜头罩': '🛡', '光源': '💡', '微码光源': '🔬', '爆闪光源': '✨', '灯板': '💎', '大类': '📋' };
+    var map = { '线缆': '🔌', '网线': '🌐', '电源线': '🔋', '电源': '⚡', '安装': '🔩', '安装板': '📐', '其他': '📦', '外置配件': '🔧', '镜头': '🔍', '测试镜头': '👁', '镜头罩': '🛡', '光源': '💡', '微码光源': '🔬', '爆闪光源': '✨', '灯板': '💎', '大类': '📋', '一体线': '🔌', 'IO线': '🔗', 'FA镜头': '🔭', '扩展配件': '📦' };
     return map[cat] || '📦';
   }
 
   // ─── 选配配件 Modal ───
-  var CABLE_CATS = ['线缆', '电源线', '网线'];
+  var CABLE_CATS = ['线缆', '电源线', '网线', '一体线', 'IO线'];
 
   // 各大类的提示信息，key 为 category 名称
   var CAT_WARNINGS = {
     '线缆':  '7m线缆无法配置下单，须订单备注删除标配线缆，再额外下单！',
     '电源线': '7m线缆无法配置下单，须订单备注删除标配线缆，再额外下单！',
     '网线':  '7m线缆无法配置下单，须订单备注删除标配线缆，再额外下单！',
+    '一体线': '7m线缆无法配置下单，须订单备注删除标配线缆，再额外下单！',
+    'IO线':  '7m线缆无法配置下单，须订单备注删除标配线缆，再额外下单！',
     '电源':  '下单适配器或开关电源时，需要选择对应线缆。'
   };
+
+  // 电源适配器/线缆自动联动（按 series 字段匹配）
+  var POWER_ADAPTER_SERIES = ['电源适配器', '电源适配器DC'];
+  var POWER_SUPPLY_SERIES = ['开关电源1', '开关电源2'];
+  var POWER_CABLE_SERIES = ['电源适配器线缆', '开关电源线缆'];
   var CABLE_LENGTHS = ['2m', '3m', '3.5m', '5m', '7m', '10m', '15m','20m','30m'];
   var CABLE_TEXTURES = ['普通', '高柔', '超柔', '弯头'];
 
-  // 从名称中提取长度/材质标签（用于筛选）
-  function getCableTags(name) {
+  // 从名称/描述中提取长度/材质标签（用于筛选）
+  function getCableTags(name, detail) {
+    var text = (name || '') + ' ' + (detail || '');
     var lengths = [], textures = [];
     CABLE_LENGTHS.forEach(function(l) {
-      if (name.indexOf(l) !== -1) lengths.push(l);
+      if (text.indexOf(l) !== -1) lengths.push(l);
     });
     CABLE_TEXTURES.forEach(function(t) {
-      if (name.indexOf(t) !== -1) textures.push(t);
+      if (text.indexOf(t) !== -1) textures.push(t);
     });
+    // 映射英文缩写
+    if (textures.length === 0) {
+      if (/\bHF\b/.test(text)) textures.push('高柔');
+      if (/\bSF\b/.test(text)) textures.push('超柔');
+      if (/\bST\b/.test(text)) textures.push('普通');
+    }
     return { lengths: lengths, textures: textures };
   }
 
   // 渲染弹窗配件列表（支持筛选）
-  function renderAccModalList(listEl, items, filterLen, filterTex) {
+  function renderAccModalList(listEl, items, filterLen, filterTex, catName) {
     var html = '';
     var filtered = items.filter(function(a) {
       if (!filterLen && !filterTex) return true;
-      var tags = getCableTags(a.name);
+      var tags = getCableTags(a.name, a.detail);
       var lenOK = !filterLen || tags.lengths.indexOf(filterLen) !== -1;
       var texOK = !filterTex || tags.textures.indexOf(filterTex) !== -1;
       return lenOK && texOK;
@@ -300,14 +330,63 @@
     listEl.querySelectorAll('.acc-modal-item').forEach(function(el) {
       el.addEventListener('click', function() {
         var key = el.dataset.key;
-        selState.accCodes[key] = !selState.accCodes[key];
-        var isChecked = !!selState.accCodes[key];
+        var wasChecked = !!selState.accCodes[key];
+        selState.accCodes[key] = !wasChecked;
+        var isChecked = !wasChecked;
         el.classList.toggle('checked', isChecked);
         var checkEl = el.querySelector('.acc-modal-check');
         if (checkEl) checkEl.textContent = isChecked ? '✓' : '';
+
+
+        // 电源适配器/线缆自动联动（按 series 匹配，参考 peidan.html 逻辑）
+        if (catName === '电源') {
+          var clickedItem = items.find(function(a) { return a._key === key; });
+          if (clickedItem && clickedItem.series) {
+            var ms = clickedItem.series;
+            var targetSeries = null;
+            if (POWER_ADAPTER_SERIES.indexOf(ms) !== -1) targetSeries = ['电源适配器线缆'];
+            else if (ms === '电源适配器线缆') targetSeries = POWER_ADAPTER_SERIES;
+            else if (POWER_SUPPLY_SERIES.indexOf(ms) !== -1) targetSeries = ['开关电源线缆'];
+            else if (ms === '开关电源线缆') targetSeries = POWER_SUPPLY_SERIES;
+
+            if (targetSeries) {
+              if (isChecked) {
+                // 选择：自动勾选关联项
+                var target = items.find(function(a) {
+                  return a.series && targetSeries.indexOf(a.series) !== -1 && !selState.accCodes[a._key];
+                });
+                if (target) {
+                  selState.accCodes[target._key] = true;
+                  listEl.querySelectorAll('.acc-modal-item').forEach(function(itemEl) {
+                    if (itemEl.dataset.key === target._key) {
+                      itemEl.classList.add('checked');
+                      var targetCheck = itemEl.querySelector('.acc-modal-check');
+                      if (targetCheck) targetCheck.textContent = '✓';
+                    }
+                  });
+                }
+              } else {
+                // 取消：自动取消关联项
+                var target = items.find(function(a) {
+                  return a.series && targetSeries.indexOf(a.series) !== -1 && selState.accCodes[a._key];
+                });
+                if (target) {
+                  selState.accCodes[target._key] = false;
+                  listEl.querySelectorAll('.acc-modal-item').forEach(function(itemEl) {
+                    if (itemEl.dataset.key === target._key) {
+                      itemEl.classList.remove('checked');
+                      var targetCheck = itemEl.querySelector('.acc-modal-check');
+                      if (targetCheck) targetCheck.textContent = '';
+                    }
+                  });
+                }
+              }
+            }
+          }
+        }
+
         autoGenerateBOM();
         renderAccList();
-        bindAccCatEvents();
       });
     });
   }
@@ -332,7 +411,7 @@
       // 收集当前 items 里实际出现的长度和材质
       var availLens = [], availTexs = [];
       items.forEach(function(a) {
-        var tags = getCableTags(a.name);
+        var tags = getCableTags(a.name, a.detail);
         tags.lengths.forEach(function(l) { if (availLens.indexOf(l) === -1) availLens.push(l); });
         tags.textures.forEach(function(t) { if (availTexs.indexOf(t) === -1) availTexs.push(t); });
       });
@@ -372,7 +451,7 @@
       }
 
       // 初始渲染全部
-      renderAccModalList(listEl, items, '', '');
+      renderAccModalList(listEl, items, '', '', catName);
 
       // 绑定筛选按钮事件
       var activeLen = '', activeTex = '';
@@ -387,7 +466,7 @@
           btn.classList.add('active');
           if (type === 'len') activeLen = val;
           else activeTex = val;
-          renderAccModalList(listEl, items, activeLen, activeTex);
+          renderAccModalList(listEl, items, activeLen, activeTex, catName);
         });
       });
 
@@ -402,7 +481,7 @@
           filterContainer.style.display = 'none';
         }
       }
-      renderAccModalList(listEl, items, '', '');
+      renderAccModalList(listEl, items, '', '', catName);
     }
 
     modal.classList.add('active');
@@ -428,22 +507,33 @@
   // ─── 自动生成配单 ───
   function autoGenerateBOM() {
     var m = getCurrentModel();
-    if (!m) return;
+    if (!m) { console.warn('[BOM] autoGenerateBOM: getCurrentModel() returned null'); return; }
     var qty = 1;
     var newBom = [];
 
-    newBom.push({ type: '主机', n: m.n, c: m.c, d: m.d, qty: qty,
+    newBom.push({ type: '主机', n: m.n, c: m.c, d: m.d, remark: m.remark || '', qty: qty,
                   cat: selState.cat, ser: selState.ser });
 
+    // 收集已选配的分类（用于替换标配）
+    var selectedOptCats = {};
+    (m.optionalAcc || []).forEach(function(a) {
+      if (a.code && a.name && selState.accCodes[a._key]) {
+        selectedOptCats[a.category] = true;
+      }
+    });
+
+    // 标配配件：如果该分类有选配项被选中，则跳过标配（被替换）
     (m.standardAcc || []).forEach(function(a) {
-      if (a.code && a.name) {
+      if (a.code && a.name && !selectedOptCats[a.category]) {
         newBom.push({ type: '配件', n: a.name, c: a.code, d: a.detail || '', qty: qty, accType: '标配', cat: selState.cat, ser: selState.ser });
       }
     });
 
+    var optionalCount = 0;
     (m.optionalAcc || []).forEach(function(a) {
       if (a.code && a.name && selState.accCodes[a._key]) {
         newBom.push({ type: '配件', n: a.name, c: a.code, d: a.detail || '', qty: qty, accType: '选配', cat: selState.cat, ser: selState.ser });
+        optionalCount++;
       }
     });
 
@@ -477,14 +567,15 @@
       var typeClass = row.type === '配件' ? ' acc' : '';
       var rowBg = row.type === '主机' ? 'bom-row-main' : (row.accType === '标配' ? 'bom-row-std' : 'bom-row-opt');
       
-      // 主机不显示物料代码
-      var codeDisplay = row.type === '主机' ? '—' : (row.c || '—');
+      var codeDisplay = row.c || '—';
+      var descText = row.d || '';
+      if (row.type === '主机' && row.remark) descText += ' (' + row.remark + ')';
       
       return '<tr data-i="' + i + '" class="' + rowBg + '">' +
         '<td class="bom-q-idx" style="text-align:center;">' + (i + 1) + '</td>' +
         '<td style="text-align:center;"><span class="bom-q-type-badge' + typeClass + '">' + esc(typeLabel) + '</span></td>' +
         '<td class="bom-td-name" style="text-align:center;">' + esc(row.n || '') + '</td>' +
-        '<td class="bom-q-desc" style="text-align:center;">' + esc((row.d || '').slice(0, 80)) + '</td>' +
+        '<td class="bom-q-desc" style="text-align:center;">' + esc(descText.slice(0, 80)) + '</td>' +
         '<td style="text-align:center;"><span class="bom-q-code">' + esc(codeDisplay) + '</span></td>' +
         '<td style="text-align:center;"><button class="bom-q-del" data-i="' + i + '">✕</button></td>' +
       '</tr>';
@@ -612,6 +703,72 @@
     if (clearBtn) clearBtn.addEventListener('click', clearBOM);
     var exportBtn = document.getElementById('bomQExportBtn');
     if (exportBtn) exportBtn.addEventListener('click', exportCSV);
+
+    // ─── 快速搜索 ───
+    var searchInput = document.getElementById('bomQuickSearch');
+    var searchResults = document.getElementById('bomSearchResults');
+    if (searchInput && searchResults) {
+      var searchTimer = null;
+      searchInput.addEventListener('input', function() {
+        clearTimeout(searchTimer);
+        var kw = this.value.trim().toLowerCase();
+        if (!kw) { searchResults.style.display = 'none'; return; }
+        searchTimer = setTimeout(function() {
+          var matches = [];
+          cats.forEach(function(cat) {
+            var sers = Object.keys(tree[cat] || {});
+            sers.forEach(function(ser) {
+              var mains = (tree[cat][ser] && tree[cat][ser].mains) || [];
+              mains.forEach(function(m, idx) {
+                var name = (m.n || '').toLowerCase();
+                var code = (m.c || '').toLowerCase();
+                if (name.indexOf(kw) !== -1 || code.indexOf(kw) !== -1) {
+                  matches.push({ cat: cat, ser: ser, idx: idx, name: m.n, code: m.c });
+                }
+              });
+            });
+          });
+          if (!matches.length) {
+            searchResults.innerHTML = '<div class="bom-search-item" style="color:var(--text-muted);cursor:default">无匹配结果</div>';
+          } else {
+            searchResults.innerHTML = matches.slice(0, 20).map(function(m, i) {
+              return '<div class="bom-search-item" data-idx="' + i + '">' +
+                '<div class="bom-search-item-name">' + esc(m.name) + '</div>' +
+                '<div class="bom-search-item-code">' + esc(m.code) + '</div>' +
+                '<div class="bom-search-item-cat">' + esc(m.cat) + ' › ' + esc(m.ser) + '</div>' +
+              '</div>';
+            }).join('');
+            searchResults.querySelectorAll('.bom-search-item[data-idx]').forEach(function(el) {
+              el.addEventListener('click', function() {
+                var m = matches[+el.dataset.idx];
+                // 设置下拉框
+                document.getElementById('bomCatSel').value = m.cat;
+                selState.cat = m.cat;
+                renderSerSel();
+                document.getElementById('bomSerSel').value = m.ser;
+                selState.ser = m.ser;
+                renderModelSel();
+                document.getElementById('bomModelSel').value = m.idx;
+                selState.modelIdx = m.idx;
+                selState.accCodes = {};
+                bomList = [];
+                renderTable();
+                renderAccList();
+                updateAddBtn();
+                setTimeout(autoGenerateBOM, 50);
+                // 清空搜索
+                searchInput.value = '';
+                searchResults.style.display = 'none';
+              });
+            });
+          }
+          searchResults.style.display = 'block';
+        }, 200);
+      });
+      searchInput.addEventListener('blur', function() {
+        setTimeout(function() { searchResults.style.display = 'none'; }, 200);
+      });
+    }
 
     initAccModal();
   }

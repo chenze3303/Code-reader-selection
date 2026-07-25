@@ -1196,6 +1196,48 @@ select:focus, input:focus {
 .bom-select:focus { outline: none; border-color: var(--brand-red); box-shadow: 0 0 0 3px rgba(247,101,4,0.1); }
 .bom-select:disabled { opacity: 0.4; cursor: not-allowed; background-color: var(--bg-panel); }
 
+/* 快速搜索 */
+.bom-search-wrap { position: relative; }
+.bom-search-input {
+  width: 100%;
+  padding: 0.45rem 0.7rem;
+  border: 1.5px solid var(--border-main);
+  border-radius: 6px;
+  font-size: 0.75rem;
+  outline: none;
+  background: var(--bg-panel);
+  color: var(--text-main);
+  transition: all 0.2s;
+}
+.bom-search-input:focus { border-color: var(--brand-red); box-shadow: 0 0 0 3px rgba(247,101,4,0.1); }
+.bom-search-input::placeholder { color: var(--text-muted); }
+.bom-search-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  background: var(--bg-card);
+  border: 1.5px solid var(--border-main);
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  z-index: 100;
+}
+.bom-search-item {
+  padding: 0.4rem 0.7rem;
+  cursor: pointer;
+  border-bottom: 1px solid var(--border-main);
+  font-size: 0.72rem;
+  transition: background 0.15s;
+}
+.bom-search-item:last-child { border-bottom: none; }
+.bom-search-item:hover { background: var(--bg-hover); }
+.bom-search-item-name { font-weight: 600; color: var(--text-main); }
+.bom-search-item-code { font-size: 0.65rem; color: var(--text-muted); margin-top: 2px; }
+.bom-search-item-cat { font-size: 0.6rem; color: var(--brand-red); margin-top: 1px; }
+
 .bom-add-btn {
   width: 100%;
   padding: 0.55rem;
@@ -3526,6 +3568,10 @@ select:focus, input:focus {
 .dark .bom-group { background: #1c2128; border-color: #21262d; }
 .dark .bom-group-label { border-bottom-color: #21262d; }
 .dark .bom-select { background: #161b22; border-color: #30363d; color: #e6edf3; }
+.dark .bom-search-input { background: #161b22; border-color: #30363d; color: #e6edf3; }
+.dark .bom-search-results { background: #161b22; border-color: #30363d; }
+.dark .bom-search-item { border-bottom-color: #21262d; color: #e6edf3; }
+.dark .bom-search-item:hover { background: #1c2128; }
 .dark .bom-right-toolbar { background: #1c2128; border-bottom-color: #21262d; }
 .dark .bom-legend-item.main { color: #8b949e; }
 .dark .bom-right-footer { background: #161b22; border-top-color: #21262d; }
