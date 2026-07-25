@@ -2029,6 +2029,7 @@
       var svgArea = document.getElementById('stitchSvgArea');
       var planCard = document.getElementById('stitchPlanCard');
       var runBtn = document.getElementById('runBtn');
+      var verifyBtn = document.getElementById('verifyBtn');
       if (card) card.style.display = 'none';
       if (schematic) schematic.style.display = '';
       if (svgArea) { svgArea.style.display = 'none'; svgArea.innerHTML = ''; }
@@ -2036,6 +2037,7 @@
       var dlBtn = document.getElementById('stitchDownloadBtn');
       if (dlBtn) dlBtn.style.display = 'none';
       if (runBtn) runBtn.style.display = '';
+      if (verifyBtn) verifyBtn.style.display = '';
       // 恢复单相机结果卡片
       var top1Card = document.getElementById('top1Content');
       if (top1Card && top1Card.parentElement) top1Card.parentElement.style.display = '';
