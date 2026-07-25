@@ -1334,6 +1334,8 @@ select:focus, input:focus {
   cursor: pointer;
   white-space: nowrap;
   transition: background 0.15s;
+  text-decoration: none;
+  display: inline-block;
 }
 .bom-btn-export:hover { background: var(--brand-red-dk); }
 

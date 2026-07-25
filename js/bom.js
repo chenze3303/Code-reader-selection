@@ -557,7 +557,7 @@
     if (!bomList.length) {
       tbody.innerHTML = 
         '<tr>' +
-          '<td colspan="6" class="bom-q-empty" style="text-align:center; padding:2.5rem 1rem; color:var(--text-muted);">' + _t('bomEmpty') + '</td>' +
+          '<td colspan="5" class="bom-q-empty" style="text-align:center; padding:2.5rem 1rem; color:var(--text-muted);">' + _t('bomEmpty') + '</td>' +
         '</tr>';
       return;
     }
@@ -577,17 +577,30 @@
         '<td class="bom-td-name" style="text-align:center;">' + esc(row.n || '') + '</td>' +
         '<td class="bom-q-desc" style="text-align:center;">' + esc(descText.slice(0, 80)) + '</td>' +
         '<td style="text-align:center;"><span class="bom-q-code">' + esc(codeDisplay) + '</span></td>' +
-        '<td style="text-align:center;"><button class="bom-q-del" data-i="' + i + '">✕</button></td>' +
       '</tr>';
     }).join('');
 
-    tbody.querySelectorAll('.bom-q-del').forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        bomList.splice(+btn.dataset.i, 1);
-        save();
-        renderTable();
-      });
-    });
+    // 下载按钮：查找主机型号在 mapping 中的下载链接
+    var dlBtn = document.getElementById('bomDownloadBtn');
+    if (dlBtn) {
+      var hostRow = bomList.find(function(r) { return r.type === '主机'; });
+      var dlUrl = '';
+      if (hostRow && window.MAPPING_DATA && window.MAPPING_DOWNLOAD_URLS) {
+        var modelName = hostRow.n || '';
+        var match = window.MAPPING_DATA.find(function(m) {
+          return m.baseName && modelName && m.baseName.indexOf(modelName) !== -1;
+        });
+        if (match && match.cat) {
+          dlUrl = window.MAPPING_DOWNLOAD_URLS.getBaseUrl(match.cat) || '';
+        }
+      }
+      if (dlUrl) {
+        dlBtn.href = dlUrl;
+        dlBtn.style.display = '';
+      } else {
+        dlBtn.style.display = 'none';
+      }
+    }
   }
 
   // ─── 导出 CSV ───
@@ -612,7 +625,20 @@
 
   function clearBOM() {
     if (!bomList.length) return;
-    if (confirm('确认清空全部配单行？')) { bomList = []; save(); renderTable(); }
+    // 只清除选配配件，保留主机和标配
+    bomList = bomList.filter(function(r) { return r.type === '主机' || r.accType === '标配'; });
+    // 清除所有选配勾选状态
+    selState.accCodes = {};
+    // 重新标记标配
+    var m = getCurrentModel();
+    if (m) {
+      (m.standardAcc || []).forEach(function(a) {
+        if (a._key) selState.accCodes[a._key] = true;
+      });
+    }
+    save();
+    renderTable();
+    renderAccList();
   }
 
   // ─── 数据加载 ───

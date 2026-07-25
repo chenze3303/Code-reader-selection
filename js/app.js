@@ -6,6 +6,12 @@
 (function() {
   'use strict';
 
+  function esc(s) {
+    return String(s || '').replace(/[&<>"]/g, function(c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+    });
+  }
+
   // ═══════════ DEBOUNCE UTILITY ═══════════
   function debounce(fn, delay) {
     var timer = null;
@@ -95,9 +101,11 @@
       title: 'HIKROBOT · 读码器工具箱',
       status: '计算结果仅供参考，建议实测验证',
       // Nav tabs
-      tab0: '首页', tab1: '智能选型', tab2: '竞品对标', tab3: '配单表', tab4: '产品表', tab5: '状态码查询', tabSdk: '二次开发', tab6: '方案解决', tabMore: '更多', moreTitle: '更多功能',
+      tab0: '首页', tab1: '智能选型', tabStitch: '多相机拼接', tab2: '竞品对标', tab3: '配单表', tab4: '产品表', tab5: '状态码查询', tab6: '方案解决', tabMore: '更多', moreTitle: '更多功能',
       homeTitle: '读码器工具箱', homeDesc: '集成智能选型、竞品对标、配单生成、产品对照、状态码查询五大功能模块，一站式解决读码器选型与配置需求。', homeFeatures: '功能模块',
       homeDesc1: '输入码制类型、模块尺寸、工作距离，自动计算 PPM，从产品库中推荐最佳读码器型号。',
+      homeDescStitch: '单相机视野不足时，自动计算多相机拼接方案，支持 3D 视野图和方案下载。',
+      homeActStitch: '计算拼接',
       homeDesc2: '覆盖 Cognex、Keyence、Datalogic 等 7 大品牌，39 条友商型号与海康对应型号的对标查询。',
       homeDesc3: '三级联动选型，选定型号后自动生成 BOM，支持选配配件勾选与 CSV 导出。',
       homeDesc4: '424 条基线 ↔ 经销型号物料代码对照，含资料下载按钮可直达海康官网下载页面。',
@@ -156,6 +164,9 @@
       bomEmpty: '请选择型号，配单将自动生成',
       bomCount: '共 {n} 行',
       bomFooterHint: '💡 蓝色 = 主机 · 浅蓝 = 标配 · 浅橙 = 选配',
+      // Verify page
+      verifyTitle: '📊 PPM 计算', verifyModelSel: '📷 选择型号', verifyDist: '📐 工作距离',
+      verifyBarcode: '🔖 条码参数',
       // Mapping page
       mpSearch: '搜索基线/经销 型号名称或物料代码，如 MV-ID803、IDA02X…',
       mpCatLabel: '系列筛选', mpCatAll: '全部系列',
@@ -244,9 +255,11 @@
     en: {
       title: 'HIKROBOT · CodeReader Toolbox',
       status: 'Results are for reference only, please verify with actual tests',
-      tab0: 'Home', tab1: 'Selection', tab2: 'Competitor', tab3: 'BOM', tab4: 'Product Table', tab5: 'Status Codes', tabSdk: 'SDK Guide', tab6: 'Solutions', tabMore: 'More', moreTitle: 'More Features',
+      tab0: 'Home', tab1: 'Selection', tabStitch: 'Stitching', tab2: 'Competitor', tab3: 'BOM', tab4: 'Product Table', tab5: 'Status Codes', tab6: 'Solutions', tabMore: 'More', moreTitle: 'More Features',
       homeTitle: 'Code Reader Toolkit', homeDesc: 'Integrated selection, competitor comparison, BOM generation, product mapping, and status code lookup — all in one place.', homeFeatures: 'Features',
       homeDesc1: 'Enter code type, module size, and working distance to auto-calculate PPM and recommend the best reader model.',
+      homeDescStitch: 'When single camera FOV is insufficient, auto-calculate multi-camera stitching with 3D view and download.',
+      homeActStitch: 'Calculate Stitching',
       homeDesc2: 'Covers 7 brands including Cognex, Keyence, Datalogic with 39 competitor-to-Hikvision model mappings.',
       homeDesc3: 'Three-level linked selection, auto-generate BOM after model selection, with optional accessories and CSV export.',
       homeDesc4: '424 baseline ↔ distribution model mappings with download buttons linking to Hikrobotics official site.',
@@ -299,6 +312,9 @@
       bomEmpty: 'Select a model to auto-generate BOM',
       bomCount: '{n} rows',
       bomFooterHint: '💡 Blue = Main · Light Blue = Standard · Light Orange = Optional',
+      // Verify page
+      verifyTitle: '📊 PPM Calculator', verifyModelSel: '📷 Select Model', verifyDist: '📐 Working Distance',
+      verifyBarcode: '🔖 Barcode Parameters',
       mpSearch: 'Search model name or material code, e.g. MV-ID803, IDA02X…',
       mpCatLabel: 'Series', mpCatAll: 'All Series',
       mpExpand: '📂 Expand All', mpCollapse: '📁 Collapse All',
@@ -441,9 +457,10 @@
     // 5. 更新页面标题
     document.title = t('title');
 
-    // 6. 通知 bom.js 和 mapping_module.js 重新渲染
+    // 6. 通知 bom.js、mapping_module.js、competitor.js 重新渲染
     if (window.BOM && window.BOM.rerender) window.BOM.rerender();
     if (window.MAPPING && window.MAPPING.rerender) window.MAPPING.rerender();
+    if (window.COMPETITOR && window.COMPETITOR.reset) window.COMPETITOR.reset();
   }
 
   function toggleLang() {
@@ -464,6 +481,18 @@
     tabs.forEach(function(t) {
       if (t.dataset.page === pageId) t.classList.add('active');
     });
+
+    // 多相机拼接：复用选型页面，展开拼接卡片
+    if (pageId === 'page-stitch') {
+      var selPage = document.getElementById('page-selection');
+      if (selPage) selPage.classList.add('active');
+      if (window._stitch) window._stitch.show();
+      return;
+    }
+
+    // 离开选型页面时，恢复拼接卡片状态
+    if (window._stitch) window._stitch.hide();
+
     var targetPage = document.getElementById(pageId);
     if (targetPage) targetPage.classList.add('active');
   }
@@ -870,7 +899,7 @@
       if (canStitch) {
         var showStitchBtn = document.getElementById('showStitchBtn');
         if (showStitchBtn) showStitchBtn.addEventListener('click', function() {
-          if (window._stitch) window._stitch.show();
+          switchToPage('page-stitch');
         });
       }
     }
@@ -1048,7 +1077,7 @@
     // 绑定返回单相机按钮
     var stitchBackBtn = document.getElementById('stitchBackBtn');
     if (stitchBackBtn) stitchBackBtn.addEventListener('click', function() {
-      if (window._stitch) window._stitch.hide();
+      switchToPage('page-selection');
       var top1El = document.getElementById('top1Content');
       if (top1El) top1El.innerHTML = '<div class="empty-state">' + t('emptyState') + '</div>';
       var modalBtnEl = document.getElementById('showModalBtn');
@@ -1417,12 +1446,10 @@
     // 显示方案卡片
     var planCard = document.getElementById('stitchPlanCard');
     if (planCard) planCard.style.display = '';
-    // 双层 rAF + setTimeout 确保浏览器完成reflow，容器有正确尺寸
-    requestAnimationFrame(function() {
-      requestAnimationFrame(function() {
-        renderStitchSVG(best, barcodeW, barcodeH, orient, totalW, totalH);
-      });
-    });
+    // 等待浏览器完成reflow，确保容器有正确尺寸
+    setTimeout(function() {
+      renderStitchSVG(best, barcodeW, barcodeH, orient, totalW, totalH);
+    }, 100);
     // 显示下载按钮
     var dlBtn = document.getElementById('stitchDownloadBtn');
     if (dlBtn) dlBtn.style.display = '';
@@ -1508,10 +1535,41 @@
         };
       });
       modal.querySelectorAll('.stitch-series-tab').forEach(function(el) {
-        el.onclick = function() {
+        el.onclick = function(e) {
+          e.stopPropagation();
           var s = el.getAttribute('data-series');
-          modal.classList.remove('active');
-          renderStitchResult(results, totalW, totalH, barcodeW, barcodeH, orient, 0, s === 'all' ? null : s);
+          // 更新 tab 高亮
+          modal.querySelectorAll('.stitch-series-tab').forEach(function(t) { t.classList.remove('active'); });
+          el.classList.add('active');
+          // 重新渲染方案列表（不关闭弹窗）
+          var listEl = document.getElementById('stitchPlanList');
+          if (!listEl) return;
+          var displayResults = s === 'all' ? results : results.filter(function(r) { return r.model.series === s; });
+          if (displayResults.length === 0) displayResults = results;
+          var listHtml = '';
+          displayResults.forEach(function(r, idx) {
+            var isActive = idx === (window._stitchActiveIdx || 0);
+            listHtml += '<div class="stitch-plan-item' + (isActive ? ' active' : '') + '" data-stitch-idx="' + idx + '">';
+            listHtml += '<div class="stitch-plan-left">';
+            listHtml += '<span class="stitch-plan-model">' + r.model.model + '</span>';
+            listHtml += '<span class="stitch-plan-spec">' + r.model.resolution.w + '×' + r.model.resolution.h + '</span>';
+            listHtml += '</div>';
+            listHtml += '<div class="stitch-plan-right">';
+            listHtml += '<span class="stitch-plan-count">' + r.grid.cols + '×' + r.grid.rows + ' = ' + r.grid.total + '台</span>';
+            listHtml += '<span class="stitch-plan-ppm">PPM ' + r.ppm.toFixed(2) + '</span>';
+            listHtml += '</div>';
+            listHtml += '</div>';
+          });
+          listEl.innerHTML = listHtml;
+          // 重新绑定方案点击事件
+          listEl.querySelectorAll('.stitch-plan-item').forEach(function(itemEl) {
+            itemEl.onclick = function() {
+              var idx = parseInt(itemEl.getAttribute('data-stitch-idx'));
+              window._stitchActiveIdx = idx;
+              renderStitchResult(results, totalW, totalH, barcodeW, barcodeH, orient, idx, s === 'all' ? null : s);
+              modal.classList.remove('active');
+            };
+          });
         };
       });
     }
@@ -1523,7 +1581,7 @@
 
   function renderStitch3D(plan, barcodeW, barcodeH, orient, reqW, reqH) {
     var container = document.getElementById('stitch3dContainer');
-    if (!container) return '';
+    if (!container) { console.warn('[Stitch] stitch3dContainer not found'); return ''; }
     // cleanup old scene
     if (_stitch3dState) {
       if (_stitch3dState.animId) cancelAnimationFrame(_stitch3dState.animId);
@@ -1538,7 +1596,6 @@
 
     if (typeof THREE === 'undefined') {
       container.innerHTML = '<div style="padding:40px;text-align:center;color:#888">Three.js loading, please wait...</div>';
-      // Only retry once
       if (!container._3dRetryDone) {
         container._3dRetryDone = true;
         setTimeout(function() { renderStitch3D(plan, barcodeW, barcodeH, orient, reqW, reqH); }, 2000);
@@ -1949,13 +2006,17 @@
       var svgArea = document.getElementById('stitchSvgArea');
       var planCard = document.getElementById('stitchPlanCard');
       var runBtn = document.getElementById('runBtn');
+      var verifyBtn = document.getElementById('verifyBtn');
       var top1Card = document.getElementById('top1Content');
       var showModalBtn = document.getElementById('showModalBtn');
+      var stitchBackBtn = document.getElementById('stitchBackBtn');
       if (card) card.style.display = '';
       if (schematic) schematic.style.display = 'none';
-      if (svgArea) svgArea.style.display = 'none';
+      // stitchSvgArea 由 renderStitchResult 管理显示/隐藏，这里不动
       if (planCard) planCard.style.display = 'none';
       if (runBtn) runBtn.style.display = 'none';
+      if (verifyBtn) verifyBtn.style.display = 'none';
+      if (stitchBackBtn) stitchBackBtn.style.display = 'none';
       // 隐藏单相机结果
       if (top1Card && top1Card.parentElement) top1Card.parentElement.style.display = 'none';
       if (showModalBtn && showModalBtn.parentElement) showModalBtn.parentElement.style.display = 'none';
@@ -1990,6 +2051,225 @@
     applyLang(currentLang);
     init();
   }
+
+  // ═══════════ PPM 计算 ═══════════
+  var _verifyFilteredModels = [];
+
+  function initVerifyPage() {
+    if (typeof PRODUCT_DB === 'undefined') return;
+    var seriesSel = document.getElementById('verifySeriesSel');
+    if (!seriesSel) return;
+    seriesSel.innerHTML = '<option value="">-- 请选择大类 --</option>';
+    var seriesMap = {};
+    PRODUCT_DB.forEach(function(m) {
+      if (m.series && !seriesMap[m.series]) seriesMap[m.series] = true;
+    });
+    Object.keys(seriesMap).sort().forEach(function(s) {
+      var opt = document.createElement('option');
+      opt.value = s;
+      opt.textContent = s;
+      seriesSel.appendChild(opt);
+    });
+  }
+
+  window.onVerifySeriesChange = function() {
+    var series = document.getElementById('verifySeriesSel').value;
+    var resSel = document.getElementById('verifyResSel');
+    var modelSel = document.getElementById('verifyModelSel');
+    var info = document.getElementById('verifyModelInfo');
+    resSel.innerHTML = '<option value="">-- 全部分辨率 --</option>';
+    resSel.disabled = true;
+    modelSel.innerHTML = '<option value="">-- 请选择型号 --</option>';
+    modelSel.disabled = true;
+    if (info) info.innerHTML = '';
+    _verifyFilteredModels = [];
+    if (!series || typeof PRODUCT_DB === 'undefined') return;
+    // 按大类筛选
+    var filtered = [];
+    PRODUCT_DB.forEach(function(m, i) {
+      if (m.series === series) filtered.push({ model: m, idx: i });
+    });
+    // 提取分辨率选项
+    var resMap = {};
+    filtered.forEach(function(item) {
+      if (item.model.resolution) {
+        var key = item.model.resolution.w + '×' + item.model.resolution.h;
+        resMap[key] = true;
+      }
+    });
+    Object.keys(resMap).sort().forEach(function(r) {
+      var parts = r.split('×');
+      var pixels = parseInt(parts[0]) * parseInt(parts[1]);
+      var label = (pixels / 10000).toFixed(0) + '万';
+      var opt = document.createElement('option');
+      opt.value = r;
+      opt.textContent = label + ' (' + r + ')';
+      resSel.appendChild(opt);
+    });
+    resSel.disabled = false;
+    _verifyFilteredModels = filtered;
+    // 直接填充型号
+    fillVerifyModels(filtered);
+  };
+
+  window.onVerifyResChange = function() {
+    var res = document.getElementById('verifyResSel').value;
+    if (!res) { fillVerifyModels(_verifyFilteredModels); return; }
+    var filtered = _verifyFilteredModels.filter(function(item) {
+      return item.model.resolution && (item.model.resolution.w + '×' + item.model.resolution.h) === res;
+    });
+    fillVerifyModels(filtered);
+  };
+
+  function fillVerifyModels(filtered) {
+    var modelSel = document.getElementById('verifyModelSel');
+    var info = document.getElementById('verifyModelInfo');
+    modelSel.innerHTML = '<option value="">-- 请选择型号 --</option>';
+    modelSel.disabled = true;
+    if (info) info.innerHTML = '';
+    if (!filtered.length) return;
+    filtered.forEach(function(item) {
+      var opt = document.createElement('option');
+      opt.value = item.idx;
+      var m = item.model;
+      var focal = m.focal ? m.focal + 'mm' : 'C-Mount';
+      opt.textContent = m.model + ' (' + focal + ')';
+      modelSel.appendChild(opt);
+    });
+    modelSel.disabled = false;
+    modelSel.onchange = function() {
+      if (!info || this.value === '') { info.innerHTML = ''; return; }
+      var m = PRODUCT_DB[+this.value];
+      info.innerHTML = '<span style="color:#f76504;">' + esc(m.model) + '</span> · ' +
+        (m.resolution ? m.resolution.w + '×' + m.resolution.h + 'px' : '') + ' · ' +
+        (m.pixelSize ? m.pixelSize + 'μm' : '') + ' · ' +
+        (m.focal ? m.focal + 'mm' : 'C-Mount');
+      // 显示工作距离范围
+      var rangeEl = document.getElementById('verifyWDRange');
+      if (rangeEl && m.workingDist && m.workingDist.min != null) {
+        var minV = m.workingDist.min;
+        var maxV = m.workingDist.max;
+        if (minV === maxV) {
+          rangeEl.innerHTML = '推荐工作距离：<strong>' + minV + 'mm</strong>';
+        } else {
+          rangeEl.innerHTML = '工作距离范围：<strong>' + minV + ' ~ ' + maxV + 'mm</strong>';
+        }
+        rangeEl.style.color = '#f76504';
+      } else if (rangeEl) {
+        rangeEl.innerHTML = '';
+      }
+    };
+  }
+
+  window.showVerifyPage = function() {
+    var main = document.getElementById('page-selection');
+    var sel = main.querySelector('.main-content');
+    var verify = document.getElementById('page-verify');
+    if (sel) sel.style.display = 'none';
+    if (verify) verify.style.display = 'block';
+    initVerifyPage();
+  };
+
+  window.hideVerifyPage = function() {
+    var main = document.getElementById('page-selection');
+    var sel = main.querySelector('.main-content');
+    var verify = document.getElementById('page-verify');
+    if (sel) sel.style.display = '';
+    if (verify) verify.style.display = 'none';
+  };
+
+  function toMM_v(val, unit) {
+    val = parseFloat(val);
+    if (isNaN(val)) return 0;
+    if (unit === 'mil') return val * 0.0254;
+    if (unit === 'cm') return val * 10;
+    return val;
+  }
+
+  window.runVerify = function() {
+    var modelIdx = document.getElementById('verifyModelSel').value;
+    var wd = parseFloat(document.getElementById('verifyWD').value);
+    var wdUnit = document.getElementById('verifyWDUnit').value;
+    var codeType = document.getElementById('verifyCodeType').value;
+    var moduleSize = parseFloat(document.getElementById('verifyModuleSize').value);
+    var moduleUnit = document.getElementById('verifyModuleUnit').value;
+
+    if (modelIdx === '' || isNaN(wd) || wd <= 0 || isNaN(moduleSize) || moduleSize <= 0) {
+      showToast('请填写完整参数（型号、工作距离、模块尺寸）', 'error');
+      return;
+    }
+
+    var model = PRODUCT_DB[+modelIdx];
+    var wdMM = toMM_v(wd, wdUnit);
+    var moduleMM = toMM_v(moduleSize, moduleUnit);
+
+    // 工作距离范围校验
+    if (model.workingDist && model.workingDist.min != null) {
+      var minV = model.workingDist.min;
+      var maxV = model.workingDist.max;
+      if (wdMM < minV || wdMM > maxV) {
+        showToast('工作距离 ' + wdMM + 'mm 超出范围（' + minV + '~' + maxV + 'mm）', 'error');
+        return;
+      }
+    }
+
+    var fovEst = estimateFOV(model, wdMM);
+    if (!fovEst) {
+      showToast('该型号缺少焦距/像素尺寸信息，无法计算', 'error');
+      return;
+    }
+
+    var sensorWidthPx = model.resolution ? model.resolution.w : 0;
+    var ppm = (sensorWidthPx / fovEst.width) * moduleMM;
+    var ppmResult = getPPMScoreAndLevel(ppm, codeType);
+
+    var hAngle = 2 * Math.atan(fovEst.width / (2 * wdMM)) * (180 / Math.PI);
+    var vAngle = 2 * Math.atan(fovEst.height / (2 * wdMM)) * (180 / Math.PI);
+
+    // 更新示意图
+    var set = function(id, val) { var el = document.getElementById(id); if (el) el.textContent = val; };
+    set('vLblWd', wdMM + ' mm');
+    set('vLblFovW', fovEst.width + ' mm');
+    set('vLblFovH', fovEst.height + ' mm');
+    set('vLblFovAngle', 'H:V=' + hAngle.toFixed(1) + '°×' + vAngle.toFixed(1) + '°');
+
+    // 计算最大曝光时间（可选）
+    var exposureHtml = '';
+    var speedVal = parseFloat(document.getElementById('verifySpeed').value);
+    var speedUnit = document.getElementById('verifySpeedUnit').value;
+    if (!isNaN(speedVal) && speedVal > 0) {
+      var speedMmS = speedUnit === 'm/s' ? speedVal * 1000 : (speedUnit === 'cm/s' ? speedVal * 10 : speedVal);
+      var moduleMM = toMM_v(moduleSize, moduleUnit);
+      var maxExposureUs = (moduleMM / ppm) / speedMmS * 1000000;
+      exposureHtml = '<div class="result-card"><strong>最大曝光</strong><span>' + maxExposureUs.toFixed(0) + ' μs</span></div>';
+    }
+
+    // 结果卡片
+    var ppmDisplay = ppm.toFixed(2);
+    var ppmLevelDisplay = ppmResult.level ? ' (' + ppmResult.level + ')' : '';
+
+    var html;
+    if (exposureHtml) {
+      // 有运动速度：三列一行
+      html = '<div class="result-main" style="grid-template-columns:1fr 1fr 1fr;">' +
+        '<div class="result-card"><strong>型号</strong><span>' + esc(model.model) + '</span></div>' +
+        '<div class="result-card"><strong>PPM</strong><span>' + ppmDisplay + ppmLevelDisplay + '</span></div>' +
+        exposureHtml +
+      '</div>';
+    } else {
+      // 无运动速度：两列
+      html = '<div class="result-main">' +
+        '<div class="result-card"><strong>型号</strong><span>' + esc(model.model) + '</span></div>' +
+        '<div class="result-card"><strong>PPM</strong><span>' + ppmDisplay + ppmLevelDisplay + '</span></div>' +
+      '</div>';
+    }
+    html += '<div class="model-preview">' +
+      '<span>' + (model.series || '') + ' · ' + (model.resolution ? model.resolution.w + '×' + model.resolution.h : '') + ' · ' + (model.interface || '') + '</span>' +
+      '<span class="tag">' + (model.protection || '') + '</span>' +
+    '</div>';
+
+    document.getElementById('verifyResult').innerHTML = html;
+  };
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', boot);
