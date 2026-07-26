@@ -2,7 +2,7 @@
 
 ## 项目概述
 
-海康机器人读码器选型工具 V3.5。纯前端，无需构建系统或服务器——浏览器直接打开 `index.html` 即可运行。
+海康机器人读码器选型工具 V3.6。纯前端，无需构建系统或服务器——浏览器直接打开 `index.html` 即可运行。
 
 ## 架构
 
@@ -14,22 +14,30 @@
 - **SDK 参考**：`sdk-guide.html` — 独立 SDK 参考页面
 - **独立配单页**：`peidan.html` — 独立的 ID 产品配单表页面（自包含，内联 CSS/JS）
 
+## 导航结构
+
+桌面端显示全部 8 个导航项：首页、智能选型、多相机拼接、竞品对标、配单表、产品表、状态码查询、方案解决。
+
+手机端只显示 3 个：首页、智能选型、更多（其余 6 个放入更多弹窗）。
+
+多相机拼接复用选型页面，点击后自动展开拼接卡片并隐藏选型 UI。
+
 ## 关键约定
 
 - 数据全局变量模式**不统一**，修改时需逐文件确认：
   - `peidan.js` → `window.PEIDAN_DATA`（含 `modelList` 数组，每项含 `materialCode`、`description`、`remark`、`standardAccessories`、`optionalAccessories`）
   - `mapping.js` → `window.MAPPING_DATA`
   - `cat_dist_map.js` → `window.CAT_DIST_MAP`
-  - `product_db.js` → `const PRODUCT_DB`（无 `window.`）
+  - `product_db.js` → `const PRODUCT_DB`（无 `window.`，但可通过 `typeof PRODUCT_DB` 检查）
   - `status_codes.js` → `var STATUS_CODES`（无 `window.`）
   - `competitor.js` → IIFE 内部 `var competitorDB`（非 `window.*`，同时包含 UI 渲染逻辑，通过 `window.COMPETITOR` 暴露接口）
   - `download_urls.js` → IIFE 内部 `var BASE_DOWNLOAD_URLS` 等
-- 国际化（i18n）：HTML 元素 `data-i18n` 属性，JS 中 `_t(key)` 函数
+- 国际化（i18n）：HTML 元素 `data-i18n` 属性，JS 中 `_t(key)` 函数；切换语言时 `applyLang()` 会重新渲染 BOM、产品表、竞品模块
 - 暗黑模式：切换 `<html>` 元素的 `dark` class
 - 搜索归一化：去除 `MV-` 前缀，大小写不敏感
 - 样式规范：12px 外边距，10px 圆角卡片，38px 统一控件高度
 - CSS 版本通过 `index.html` 中的查询字符串控制（`style.min.css?v=3`）
-- 命名规则弹窗：产品表页（mapping）工具栏的「📖 命名规则」按钮，仅在显示物料代码列时可见（每 4 次点击 tab 切换显示/隐藏），弹窗 HTML 内联在 `index.html` 中
+- 缓存破坏：编辑 JS/CSS 后需同步更新 `index.html` 中对应的 `?v=N` 参数
 
 ## 脚本加载顺序
 
@@ -89,8 +97,8 @@ node scripts/gen_download_urls.js                  # → js/data/download_urls.j
 | `js/data/download_urls.js` | 各系列下载 URL（IIFE），**自动生成，勿手动编辑** |
 | `js/data/cat_dist_map.js` | 系列→经销型号前缀映射（`window.CAT_DIST_MAP`） |
 | `product_data.json` | 配单原始数据源（24 列扁平格式，通过转换脚本生成 peidan.js） |
-| `js/app.js` | 智能选型主逻辑（PPM/视野计算、i18n、Toast） |
-| `js/bom.js` | 配单表（型号树、选配件弹窗、电源联动、标配替换、CSV 导出） |
+| `js/app.js` | 智能选型主逻辑（PPM/视野计算、i18n、Toast、导航、PPM计算器、拼接方案） |
+| `js/bom.js` | 配单表（型号树、选配件弹窗、电源联动、标配替换、CSV 导出、资料下载） |
 | `js/mapping_module.js` | 产品表（搜索、筛选、分组、资料下载、命名规则弹窗） |
 | `js/statuscode_module.js` | 状态码查询（搜索、筛选、复制） |
 | `js/three.min.js` | Three.js 3D 渲染（拼接方案示意图） |
