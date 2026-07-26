@@ -3150,7 +3150,9 @@ select:focus, input:focus {
     display: flex !important;
   }
   /* 闅愯棌浜屾寮€鍙戙€佸鐓ц〃銆佺姸鎬佺爜銆佹柟妗堣В鍐冲洓涓猼ab */
-  .nav-tab[data-page="page-sdk"],
+  .nav-tab[data-page="page-stitch"],
+  .nav-tab[data-page="page-competitor"],
+  .nav-tab[data-page="page-bom"],
   .nav-tab[data-page="page-mapping"],
   .nav-tab[data-page="page-statuscode"],
   .nav-tab[data-page="page-solutions"] {
