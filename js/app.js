@@ -1891,24 +1891,26 @@
     // Bottom annotation panel (below 3D view) - 2 column grid
     var annHtml = '<div class="stitch-3d-annotation">';
     annHtml += '<div class="stitch-3d-ann-grid">';
+    // Row 1: 相机数量 | 单机视野
     annHtml += '<div class="stitch-3d-ann-cell"><span class="stitch-3d-ann-dot" style="background:#f76504"></span><span class="stitch-3d-ann-label">相机数量</span><span class="stitch-3d-ann-val">' + (cols * rows) + ' 台 (' + cols + 'x' + rows + ')</span></div>';
     annHtml += '<div class="stitch-3d-ann-cell"><span class="stitch-3d-ann-dot" style="background:#4a90d9"></span><span class="stitch-3d-ann-label">单机视野</span><span class="stitch-3d-ann-val">' + fovW + ' x ' + fovH + ' mm</span></div>';
+    // Row 2: 总覆盖区域 | 需求覆盖区域
     annHtml += '<div class="stitch-3d-ann-cell"><span class="stitch-3d-ann-dot" style="background:#f76504"></span><span class="stitch-3d-ann-label">总覆盖区域</span><span class="stitch-3d-ann-val">' + Math.round(actualW) + ' x ' + Math.round(actualH) + ' mm</span></div>';
-    if (overlapW > 0 || overlapH > 0) {
-      var overlapParts = [];
-      if (overlapW > 0) overlapParts.push(overlapW + 'mm(水平)');
-      if (overlapH > 0) overlapParts.push(overlapH + 'mm(垂直)');
-      annHtml += '<div class="stitch-3d-ann-cell stitch-3d-ann-cell-full"><span class="stitch-3d-ann-dot" style="background:#e74c3c"></span><span class="stitch-3d-ann-label">重叠区域</span><span class="stitch-3d-ann-val">' + overlapParts.join(' / ') + '</span></div>';
-    } else {
-      annHtml += '<div class="stitch-3d-ann-cell"><span class="stitch-3d-ann-dot" style="background:transparent"></span><span class="stitch-3d-ann-label"></span><span class="stitch-3d-ann-val"></span></div>';
-    }
     if (reqW && reqH) {
       annHtml += '<div class="stitch-3d-ann-cell"><span class="stitch-3d-ann-dot" style="background:#0A1628"></span><span class="stitch-3d-ann-label">需求覆盖</span><span class="stitch-3d-ann-val">' + Math.round(reqW) + ' x ' + Math.round(reqH) + ' mm</span></div>';
     } else {
       annHtml += '<div class="stitch-3d-ann-cell"></div>';
     }
+    // Row 3: PPM | 安装高度
     annHtml += '<div class="stitch-3d-ann-cell"><span class="stitch-3d-ann-dot" style="background:#888"></span><span class="stitch-3d-ann-label">PPM</span><span class="stitch-3d-ann-val">' + plan.ppm.toFixed(2) + '</span></div>';
-    annHtml += '<div class="stitch-3d-ann-cell stitch-3d-ann-cell-full"><span class="stitch-3d-ann-dot" style="background:#888"></span><span class="stitch-3d-ann-label">安装高度</span><span class="stitch-3d-ann-val">' + Math.round(plan.workingDist || 200) + ' mm</span></div>';
+    annHtml += '<div class="stitch-3d-ann-cell"><span class="stitch-3d-ann-dot" style="background:#888"></span><span class="stitch-3d-ann-label">安装高度</span><span class="stitch-3d-ann-val">' + Math.round(plan.workingDist || 200) + ' mm</span></div>';
+    // Row 4: 重叠区域 (full width)
+    if (overlapW > 0 || overlapH > 0) {
+      var overlapParts = [];
+      if (overlapW > 0) overlapParts.push(overlapW + 'mm(水平)');
+      if (overlapH > 0) overlapParts.push(overlapH + 'mm(垂直)');
+      annHtml += '<div class="stitch-3d-ann-cell stitch-3d-ann-cell-full"><span class="stitch-3d-ann-dot" style="background:#e74c3c"></span><span class="stitch-3d-ann-label">重叠区域</span><span class="stitch-3d-ann-val">' + overlapParts.join(' / ') + '</span></div>';
+    }
     annHtml += '</div></div>';
     annHtml += '</div>';
     // Insert after container
