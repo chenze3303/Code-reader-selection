@@ -1440,6 +1440,8 @@
     // 确保 activeIdx 在范围内
     if (activeIdx >= displayResults.length) activeIdx = 0;
     var best = displayResults[activeIdx];
+    // 存储显示数量供3D渲染使用
+    window._stitchDisplayCount = displayResults.length;
 
     // 先显示容器，再渲染3D（否则容器尺寸为0）
     svgArea.style.display = '';
@@ -1911,7 +1913,7 @@
     }
     annHtml += '</div></div>';
     // 查看全部方案按钮放在重叠区域下面
-    annHtml += '<button class="stitch-plan-switch-btn" id="stitchPlanSwitchBtn" style="width:100%;margin-top:10px;">📋 查看全部方案 (' + displayResults.length + ')</button>';
+    annHtml += '<button class="stitch-plan-switch-btn" id="stitchPlanSwitchBtn" style="width:100%;margin-top:10px;">📋 查看全部方案 (' + (window._stitchDisplayCount || 0) + ')</button>';
     annHtml += '</div>';
     // Insert after container
     var existing = container.parentNode.querySelector('.stitch-3d-annotation');
