@@ -23,7 +23,8 @@ const JS_FILES = [
   'js/mapping_module.js',
   'js/data/status_codes.js',
   'js/statuscode_module.js',
-  'js/data/cat_dist_map.js'
+  'js/data/cat_dist_map.js',
+  'js/data/announcement.js'
 ];
 
 function syntaxCheck(code, label) {
