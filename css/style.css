@@ -4213,38 +4213,11 @@ select:focus, input:focus {
 .dark .home-section-head .home-section-line { background: #21262d; }
 
 /* ===== 灏廣鏅鸿兘鍔╂墜鎮诞鎸夐挳 ===== */
-.v-fab {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: var(--brand-red);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 16px rgba(247,101,4,.35);
-  cursor: pointer;
-  z-index: 999;
-  transition: transform .2s, box-shadow .2s;
-  text-decoration: none;
-}
-.v-fab:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 24px rgba(247,101,4,.45);
-}
-.v-fab:active {
-  transform: scale(.95);
-}
-.v-fab-icon {
   font-size: 22px;
   line-height: 1;
 }
 /* 绉诲姩绔湪瀵艰埅鏍忎笂鏂?*/
 @media (max-width: 768px) {
-  .v-fab { width: 42px; height: 42px; bottom: 64px; right: 16px; }
-  .v-fab-icon { font-size: 18px; }
 }
 
 /* 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?SDK 浜屾寮€鍙戦〉闈?鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?*/
