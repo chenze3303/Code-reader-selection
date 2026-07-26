@@ -2029,6 +2029,12 @@ select:focus, input:focus {
     gap: 0.8rem;
     overflow-y: visible;
   }
+  /* PPM计算页面左右面板需要可滚动 */
+  #page-verify .left-panel,
+  #page-verify .right-panel {
+    overflow-y: auto;
+    max-height: calc(100dvh - 100px);
+  }
   .card { padding: 0.8rem 1rem; }
   .compact-grid { grid-template-columns: 1fr 1fr; gap: 0.6rem; }
   .compact-grid-1 { grid-template-columns: 1fr; }
