@@ -1440,11 +1440,23 @@
     // 确保 activeIdx 在范围内
     if (activeIdx >= displayResults.length) activeIdx = 0;
     var best = displayResults[activeIdx];
-    // 存储显示数量供3D渲染使用
-    window._stitchDisplayCount = displayResults.length;
 
     // 先显示容器，再渲染3D（否则容器尺寸为0）
     svgArea.style.display = '';
+    // 移除旧按钮（如果有）
+    var oldBtn = document.getElementById('stitchPlanSwitchBtn');
+    if (oldBtn) oldBtn.remove();
+    // 查看全部方案按钮放在示意图下方
+    var btnHtml = '<button class="stitch-plan-switch-btn" id="stitchPlanSwitchBtn" style="width:100%;margin-top:10px;">📋 查看全部方案 (' + displayResults.length + ')</button>';
+    svgArea.insertAdjacentHTML('afterend', btnHtml);
+    // 绑定按钮事件
+    var switchBtn = document.getElementById('stitchPlanSwitchBtn');
+    if (switchBtn) {
+      switchBtn.onclick = function() {
+        var modal = document.getElementById('stitchPlanModal');
+        if (modal) modal.classList.add('active');
+      };
+    }
     // 等待浏览器完成reflow，确保容器有正确尺寸
     setTimeout(function() {
       renderStitchSVG(best, barcodeW, barcodeH, orient, totalW, totalH);
@@ -1503,17 +1515,6 @@
     if (oldModal) oldModal.remove();
     document.body.insertAdjacentHTML('beforeend', modalHtml);
 
-    // 方案弹窗（由3D渲染后插入的按钮触发）
-    // 使用事件委托绑定，因为按钮在3D渲染后才插入DOM
-    var stitchContainer = document.getElementById('stitch3dContainer');
-    if (stitchContainer) {
-      stitchContainer.addEventListener('click', function(e) {
-        if (e.target.id === 'stitchPlanSwitchBtn' || e.target.closest('#stitchPlanSwitchBtn')) {
-          var modal = document.getElementById('stitchPlanModal');
-          if (modal) modal.classList.add('active');
-        }
-      });
-    }
     // 弹窗关闭按钮和遮罩点击
     var modal = document.getElementById('stitchPlanModal');
     var closeBtn = document.getElementById('stitchPlanModalClose');
@@ -1912,9 +1913,6 @@
       annHtml += '<div class="stitch-3d-ann-cell stitch-3d-ann-cell-full"><span class="stitch-3d-ann-dot" style="background:#e74c3c"></span><span class="stitch-3d-ann-label">重叠区域</span><span class="stitch-3d-ann-val">' + overlapParts.join(' / ') + '</span></div>';
     }
     annHtml += '</div></div>';
-    // 查看全部方案按钮放在重叠区域下面
-    annHtml += '<button class="stitch-plan-switch-btn" id="stitchPlanSwitchBtn" style="width:100%;margin-top:10px;">📋 查看全部方案 (' + (window._stitchDisplayCount || 0) + ')</button>';
-    annHtml += '</div>';
     // Insert after container
     var existing = container.parentNode.querySelector('.stitch-3d-annotation');
     if (existing) existing.remove();
