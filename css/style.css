@@ -5185,22 +5185,21 @@ select:focus, input:focus {
   border: 1px solid var(--border, #dde5ef);
   border-radius: 10px;
 }
-.stitch-3d-ann-row {
+.stitch-3d-ann-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 16px;
+}
+.stitch-3d-ann-cell {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 6px;
   padding: 6px 0;
   border-bottom: 1px solid var(--border-light, #eef2f8);
   font-size: 13px;
 }
-.stitch-3d-ann-row:last-child {
-  border-bottom: none;
-}
-.stitch-3d-ann-item {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  color: var(--text-secondary, #4a5a6a);
+.stitch-3d-ann-cell-full {
+  grid-column: 1 / -1;
 }
 .stitch-3d-ann-dot {
   display: inline-block;
@@ -5209,10 +5208,15 @@ select:focus, input:focus {
   border-radius: 50%;
   flex-shrink: 0;
 }
+.stitch-3d-ann-label {
+  color: var(--text-secondary, #4a5a6a);
+  white-space: nowrap;
+}
 .stitch-3d-ann-val {
   font-weight: 600;
   color: var(--text-primary, #1a2332);
   font-family: var(--font-mono, 'SF Mono', monospace);
+  margin-left: auto;
 }
 
 /* 拼接方案切换按钮 */
