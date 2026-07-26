@@ -2012,8 +2012,13 @@
       var stitchBackBtn = document.getElementById('stitchBackBtn');
       if (card) card.style.display = '';
       if (schematic) schematic.style.display = 'none';
-      // stitchSvgArea 由 renderStitchResult 管理显示/隐藏，这里不动
-      if (planCard) planCard.style.display = 'none';
+      // 如果有拼接结果，恢复显示
+      if (svgArea && window._stitchResults && window._stitchResults.length > 0) {
+        svgArea.style.display = '';
+      }
+      if (planCard && window._stitchResults && window._stitchResults.length > 0) {
+        planCard.style.display = '';
+      }
       if (runBtn) runBtn.style.display = 'none';
       if (verifyBtn) verifyBtn.style.display = 'none';
       if (stitchBackBtn) stitchBackBtn.style.display = 'none';
@@ -2032,7 +2037,8 @@
       var verifyBtn = document.getElementById('verifyBtn');
       if (card) card.style.display = 'none';
       if (schematic) schematic.style.display = '';
-      if (svgArea) { svgArea.style.display = 'none'; svgArea.innerHTML = ''; }
+      // 隐藏但不清除 stitchSvgArea 内容（保留3D渲染结果）
+      if (svgArea) svgArea.style.display = 'none';
       if (planCard) { planCard.style.display = 'none'; }
       var dlBtn = document.getElementById('stitchDownloadBtn');
       if (dlBtn) dlBtn.style.display = 'none';
