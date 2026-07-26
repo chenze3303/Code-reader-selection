@@ -486,12 +486,26 @@
     if (pageId === 'page-stitch') {
       var selPage = document.getElementById('page-selection');
       if (selPage) selPage.classList.add('active');
+      // 恢复主内容区域（PPM计算页面可能隐藏了它）
+      var selMain = selPage ? selPage.querySelector('.main-content') : null;
+      if (selMain) selMain.style.display = '';
+      // 隐藏PPM计算页面
+      var verifyPage = document.getElementById('page-verify');
+      if (verifyPage) verifyPage.style.display = 'none';
       if (window._stitch) window._stitch.show();
       return;
     }
 
-    // 离开选型页面时，恢复拼接卡片状态
+    // 离开选型页面时，恢复拼接卡片状态和主内容
     if (window._stitch) window._stitch.hide();
+    // 如果从PPM计算页面切换走，恢复主内容
+    if (pageId === 'page-selection') {
+      var selPage2 = document.getElementById('page-selection');
+      var selMain2 = selPage2 ? selPage2.querySelector('.main-content') : null;
+      if (selMain2) selMain2.style.display = '';
+      var verifyPage2 = document.getElementById('page-verify');
+      if (verifyPage2) verifyPage2.style.display = 'none';
+    }
 
     var targetPage = document.getElementById(pageId);
     if (targetPage) targetPage.classList.add('active');
