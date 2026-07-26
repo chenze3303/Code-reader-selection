@@ -799,6 +799,21 @@
     initAccModal();
   }
 
+  // ─── 动态加载 peidan.min.js ───
+  function loadPeidanScript(callback) {
+    if (window.PEIDAN_DATA) { callback(); return; }
+    var existing = document.querySelector('script[src*="peidan.min.js"]');
+    if (existing) {
+      existing.addEventListener('load', callback);
+      return;
+    }
+    var script = document.createElement('script');
+    script.src = 'js/data/peidan.min.js';
+    script.onload = callback;
+    script.onerror = function() { console.error('❌ peidan.min.js 加载失败'); };
+    document.head.appendChild(script);
+  }
+
   // ─── 初始化 ───
   function init() {
     bindEvents();
@@ -807,17 +822,16 @@
 
     if (window.PEIDAN_DATA) {
       applyData(window.PEIDAN_DATA);
-      bindEvents(); // 兜底：若首次绑定因 DOM 未就绪而失败，数据加载完成后重试
+      bindEvents();
     } else {
-      console.warn('⚠️ window.PEIDAN_DATA 未定义，等待数据加载...');
-      var checkInterval = setInterval(function() {
+      loadPeidanScript(function() {
         if (window.PEIDAN_DATA) {
-          clearInterval(checkInterval);
           applyData(window.PEIDAN_DATA);
-          bindEvents(); // 兜底重试
+          bindEvents();
+        } else {
+          console.warn('⚠️ PEIDAN_DATA 未定义');
         }
-      }, 100);
-      setTimeout(function() { clearInterval(checkInterval); }, 5000);
+      });
     }
   }
 

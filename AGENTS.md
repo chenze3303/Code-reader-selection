@@ -14,14 +14,6 @@
 - **SDK 参考**：`sdk-guide.html` — 独立 SDK 参考页面
 - **独立配单页**：`peidan.html` — 独立的 ID 产品配单表页面（自包含，内联 CSS/JS）
 
-## 导航结构
-
-桌面端显示全部 8 个导航项：首页、智能选型、多相机拼接、竞品对标、配单表、产品表、状态码查询、方案解决。
-
-手机端只显示 3 个：首页、智能选型、更多（其余 6 个放入更多弹窗）。
-
-多相机拼接复用选型页面，点击后自动展开拼接卡片并隐藏选型 UI。
-
 ## 关键约定
 
 - 数据全局变量模式**不统一**，修改时需逐文件确认：
@@ -46,10 +38,14 @@
 1. `product_db.min.js` / `competitor.min.js` / `mapping.min.js` / `download_urls.min.js` — 数据文件
 2. `app.min.js` — 主模块（依赖上述数据）
 3. `bom.min.js` — 配单模块
-4. `peidan.min.js` — 配单数据（依赖 bom.js 先加载）
-5. `mapping_module.min.js` — 产品表模块
-6. `status_codes.min.js` — 状态码数据
-7. `statuscode_module.min.js` — 状态码模块
+4. `mapping_module.min.js` — 产品表模块
+5. `status_codes.min.js` — 状态码数据
+6. `statuscode_module.min.js` — 状态码模块
+
+**按需加载（非首屏）：**
+- `peidan.min.js`（2.9 MB）— 由 `bom.js` 动态加载，仅用户打开配单表时触发
+- `three.min.js`（589 KB）— 由 `app.js` 动态加载，仅用户打开拼接方案 3D 时触发
+- 首屏渲染完成后，`app.js` 会通过 `requestIdleCallback` 后台预加载这两个文件
 
 **编辑源码 `.js` 后必须重新生成 `.min.js`**（见"开发命令"）。
 
@@ -112,7 +108,6 @@ node scripts/gen_download_urls.js                  # → js/data/download_urls.j
 ## 注意事项
 
 - **无测试框架**：`package.json` 的 test 脚本是占位符；`package.json` type 为 `commonjs`（脚本用 `require`）
-- `sdk_module.js` 存在但**未被任何 HTML 引用**，也不在 `minify-js.js` 压缩列表中——可能是遗留文件或未完成的模块
 - `download_urls.js` 由脚本生成，手动编辑会在下次抓取时被覆盖
 - `cat_dist_map.js` 被 `minify-js.js` 压缩为 `.min.js`，但不在 `index.html` 中直接加载（由模块运行时引用）
 - `competitor.js` 是 IIFE，包含竞品数据 + UI 渲染逻辑，不是纯数据文件

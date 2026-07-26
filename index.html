@@ -10,14 +10,11 @@
   <link rel="dns-prefetch" href="https://www.v-club.com">
   <!-- CSS 同步加载（避免弹窗闪烁） -->
   <link rel="stylesheet" href="css/style.min.css?v=3">
-  <!-- Three.js 3D引擎 (本地) -->
-  <script src="js/three.min.js" defer></script>
-  <!-- 预加载最大数据文件 -->
-  <link rel="preload" href="js/data/peidan.min.js?v=2" as="script">
+  <!-- 预加载关键数据文件（peidan 和 three 改为按需加载） -->
   <link rel="preload" href="js/data/mapping.min.js" as="script">
   <link rel="preload" href="js/data/status_codes.min.js" as="script">
   <!-- 预加载关键模块 -->
-  <link rel="preload" href="js/app.min.js?v=24" as="script">
+  <link rel="preload" href="js/app.min.js?v=25" as="script">
 </head>
 <body>
 <div class="app-window">
@@ -1835,13 +1832,13 @@ nRet = device.<span class="fn">MV_CODEREADER_OpenDevice_NET</span>();</code></pr
   </div>
 
   <!-- ===== 脚本加载（数据优先，模块在后，使用 defer 优化） ===== -->
+  <!-- peidan.min.js 和 three.min.js 改为按需动态加载，减少首屏体积 -->
   <script src="js/data/product_db.min.js" defer></script>
   <script src="js/data/competitor.min.js" defer></script>
   <script src="js/data/mapping.min.js" defer></script>
   <script src="js/data/download_urls.min.js" defer></script>
-  <script src="js/app.min.js?v=24" defer></script>
-  <script src="js/bom.min.js?v=16" defer></script>
-  <script src="js/data/peidan.min.js?v=2" defer></script>
+  <script src="js/app.min.js?v=25" defer></script>
+  <script src="js/bom.min.js?v=17" defer></script>
   <script src="js/mapping_module.min.js" defer></script>
   <script src="js/data/status_codes.min.js" defer></script>
   <script src="js/statuscode_module.min.js" defer></script>

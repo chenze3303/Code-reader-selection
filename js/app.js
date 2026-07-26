@@ -1611,9 +1611,13 @@
 
     if (typeof THREE === 'undefined') {
       container.innerHTML = '<div style="padding:40px;text-align:center;color:#888">Three.js loading, please wait...</div>';
-      if (!container._3dRetryDone) {
-        container._3dRetryDone = true;
-        setTimeout(function() { renderStitch3D(plan, barcodeW, barcodeH, orient, reqW, reqH); }, 2000);
+      if (!container._3dLoading) {
+        container._3dLoading = true;
+        var s = document.createElement('script');
+        s.src = 'js/three.min.js';
+        s.onload = function() { renderStitch3D(plan, barcodeW, barcodeH, orient, reqW, reqH); };
+        s.onerror = function() { container.innerHTML = '<div style="padding:40px;text-align:center;color:#c00">Three.js 加载失败</div>'; };
+        document.head.appendChild(s);
       }
       return '';
     }
@@ -2055,6 +2059,28 @@
     initTheme();
     applyLang(currentLang);
     init();
+    // 空闲预加载：首页渲染完后后台静默下载大文件，用户无感知
+    idlePreload();
+  }
+
+  // ─── 空闲预加载（peidan + three） ───
+  function idlePreload() {
+    var srcs = ['js/data/peidan.min.js', 'js/three.min.js'];
+    function doPreload() {
+      srcs.forEach(function(src) {
+        if (document.querySelector('script[src="' + src + '"]')) return;
+        var l = document.createElement('link');
+        l.rel = 'preload';
+        l.as = 'script';
+        l.href = src;
+        document.head.appendChild(l);
+      });
+    }
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(doPreload);
+    } else {
+      setTimeout(doPreload, 2000);
+    }
   }
 
   // ═══════════ PPM 计算 ═══════════
