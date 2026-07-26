@@ -2029,19 +2029,26 @@ select:focus, input:focus {
     gap: 0.8rem;
     overflow-y: visible;
   }
-  /* PPM计算页面左右面板需要可滚动 */
+  /* PPM计算页面手机端：单列滚动布局 */
   #page-verify {
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
   }
   #page-verify .main-content {
-    min-height: auto;
+    display: block;
     height: auto;
+    min-height: auto;
+    overflow: visible;
   }
   #page-verify .left-panel,
   #page-verify .right-panel {
-    overflow-y: visible;
+    overflow: visible;
     max-height: none;
+    border-right: none;
+    padding: 0.8rem;
+  }
+  #page-verify .left-panel {
+    border-bottom: 1px solid var(--border-light);
   }
   .card { padding: 0.8rem 1rem; }
   .compact-grid { grid-template-columns: 1fr 1fr; gap: 0.6rem; }
