@@ -2065,58 +2065,72 @@
   }
 
   // ─── 公告弹窗 ───
-  function initAnnouncement() {
+  var _announcementPopulated = false;
+
+  function showAnnouncement(markSeen) {
     var list = window.ANNOUNCEMENTS;
     if (!list || !list.length) return;
-    var latest = list[0];
-    var lastSeen = parseInt(localStorage.getItem('announcement_last_seen_id') || '0', 10);
-    if (latest.id <= lastSeen) return;
-
     var overlay = document.getElementById('announcementOverlay');
     if (!overlay) return;
 
-    // 填充最新公告
-    var latestEl = document.getElementById('announcementLatest');
-    latestEl.innerHTML = '<div class="announcement-item-title">' + latest.title + '</div>' +
-      '<div class="announcement-item-date">' + latest.date + '</div>' +
-      '<div class="announcement-item-content">' + latest.content + '</div>';
+    // 只填充一次数据
+    if (!_announcementPopulated) {
+      _announcementPopulated = true;
+      var latest = list[0];
+      var latestEl = document.getElementById('announcementLatest');
+      latestEl.innerHTML = '<div class="announcement-item-title">' + latest.title + '</div>' +
+        '<div class="announcement-item-date">' + latest.date + '</div>' +
+        '<div class="announcement-item-content">' + latest.content + '</div>';
 
-    // 填充历史公告
-    var historyList = document.getElementById('announcementHistoryList');
-    historyList.innerHTML = '';
-    for (var i = 1; i < list.length; i++) {
-      var a = list[i];
-      var div = document.createElement('div');
-      div.className = 'announcement-history-item';
-      div.innerHTML = '<div class="announcement-item-title">' + a.title + '</div>' +
-        '<div class="announcement-item-date">' + a.date + '</div>' +
-        '<div class="announcement-item-content">' + a.content + '</div>';
-      historyList.appendChild(div);
+      var historyList = document.getElementById('announcementHistoryList');
+      historyList.innerHTML = '';
+      for (var i = 1; i < list.length; i++) {
+        var a = list[i];
+        var div = document.createElement('div');
+        div.className = 'announcement-history-item';
+        div.innerHTML = '<div class="announcement-item-title">' + a.title + '</div>' +
+          '<div class="announcement-item-date">' + a.date + '</div>' +
+          '<div class="announcement-item-content">' + a.content + '</div>';
+        historyList.appendChild(div);
+      }
+
+      var toggleBtn = document.getElementById('announcementHistoryToggle');
+      var historyOpen = false;
+      toggleBtn.onclick = function() {
+        historyOpen = !historyOpen;
+        historyList.style.display = historyOpen ? 'block' : 'none';
+        toggleBtn.textContent = historyOpen ? '历史公告 ▴' : '历史公告 ▾';
+      };
+      historyList.style.display = 'none';
     }
 
-    // 历史折叠
-    var toggleBtn = document.getElementById('announcementHistoryToggle');
-    var historyOpen = false;
-    toggleBtn.onclick = function() {
-      historyOpen = !historyOpen;
-      historyList.style.display = historyOpen ? 'block' : 'none';
-      toggleBtn.textContent = historyOpen ? '历史公告 ▴' : '历史公告 ▾';
-    };
-    historyList.style.display = 'none';
-
-    // 显示弹窗
     overlay.classList.add('active');
 
-    // 关闭
     function dismiss() {
       overlay.classList.remove('active');
-      localStorage.setItem('announcement_last_seen_id', String(latest.id));
+      if (markSeen) {
+        localStorage.setItem('announcement_last_seen_id', String(list[0].id));
+      }
     }
     document.getElementById('announcementClose').onclick = dismiss;
     document.getElementById('announcementDismiss').onclick = dismiss;
     overlay.addEventListener('click', function(e) {
       if (e.target === overlay) dismiss();
     });
+  }
+
+  function initAnnouncement() {
+    // 绑定首页公告按钮（始终可用）
+    var btn = document.getElementById('announcementBtn');
+    if (btn) btn.onclick = function() { showAnnouncement(false); };
+
+    // 有新公告时自动弹出
+    var list = window.ANNOUNCEMENTS;
+    if (!list || !list.length) return;
+    var latest = list[0];
+    var lastSeen = parseInt(localStorage.getItem('announcement_last_seen_id') || '0', 10);
+    if (latest.id <= lastSeen) return;
+    showAnnouncement(true);
   }
 
   // ─── 空闲预加载（peidan + three） ───
