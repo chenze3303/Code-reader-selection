@@ -116,6 +116,20 @@ PEIDAN_DATA = {
 
 固件下载、SDK 参考文档、STEP/DXF 在线查看器、技术方案等常用资源快速入口。
 
+### 9. 机器人智能助手 · 小V（浮动组件）
+
+右下角浮动的纯 CSS 机器人吉祥物，点击跳转海康机器视觉 v-club 智能助手。
+
+- **结构**：`index.html` 中 `.floating-robot-wrap` 容器，包含 `<a>` 链接和气泡两部分
+- **定位**：`position: absolute`，`top: 80%; right: 100px`，悬浮在所有页面内容上方
+- **气泡**：页面加载时显示提示语，15 秒后通过内联 `<script>` 自动隐藏
+- **样式**：纯 CSS 绘制天线、LED 眼睛（左右扫视动画）、蓝色呼吸灯心脏
+- **悬停**：机器人上浮摇摆 + 眼睛变好奇 + 心脏变橙加速跳动
+- **移动端**：`@media (max-width: 768px)` 下 `display: none`
+- **暗黑模式**：`.dark .robot-head`、`.dark .robot-body` 覆盖背景和边框色
+
+相关 CSS 类：`.floating-robot-wrap`、`.floating-robot`、`.robot`、`.robot-antenna`、`.robot-head`、`.robot-face`、`.robot-eye`、`.robot-body`、`.robot-heart`、`.robot-label`、`.robot-bubble`、`.robot-bubble-text`
+
 ---
 
 ## 导航结构

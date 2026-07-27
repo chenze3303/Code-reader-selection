@@ -2,7 +2,7 @@
 
 ## 项目概述
 
-海康机器人读码器选型工具 V3.6。纯前端，无需构建系统或服务器——浏览器直接打开 `index.html` 即可运行。
+海康机器人读码器选型工具 V3.7。纯前端，无需构建系统或服务器——浏览器直接打开 `index.html` 即可运行。
 
 ## 架构
 
@@ -13,6 +13,7 @@
 - **数据库编辑器**：`db_editor.html` — 独立数据编辑工具。隐藏入口：主页面连续点击左上角 logo 3 次（600ms 内）
 - **SDK 参考**：`sdk-guide.html` — 独立 SDK 参考页面
 - **独立配单页**：`peidan.html` — 独立的 ID 产品配单表页面（自包含，内联 CSS/JS）
+- **机器人浮动组件**：`index.html` 中 `.floating-robot-wrap`，纯 CSS 机器人吉祥物 + 15 秒气泡提示，点击跳转 v-club 智能助手
 
 ## 关键约定
 
@@ -99,6 +100,7 @@ node scripts/gen_download_urls.js                  # → js/data/download_urls.j
 | `js/statuscode_module.js` | 状态码查询（搜索、筛选、复制） |
 | `js/three.min.js` | Three.js 3D 渲染（拼接方案示意图） |
 | `css/style.css` | 全局样式（PC + 移动端响应式 + 暗黑模式） |
+| `index.html` 内 `.floating-robot-wrap` | 机器人浮动吉祥物组件（纯 CSS + 内联 JS 气泡） |
 | `assets/` | 图片资源（联系方式、码制说明图） |
 | `exports/` | 导出的 Excel 数据文件 |
 | `sdk-guide.html` | 独立 SDK 参考完整文档页（72KB） |
