@@ -9,12 +9,12 @@
   <!-- 预连接到可能的外部资源 -->
   <link rel="dns-prefetch" href="https://www.v-club.com">
   <!-- CSS 同步加载（避免弹窗闪烁） -->
-  <link rel="stylesheet" href="css/style.min.css?v=4">
+  <link rel="stylesheet" href="css/style.min.css?v=22">
   <!-- 预加载关键数据文件（peidan 和 three 改为按需加载） -->
   <link rel="preload" href="js/data/mapping.min.js" as="script">
   <link rel="preload" href="js/data/status_codes.min.js" as="script">
   <!-- 预加载关键模块 -->
-  <link rel="preload" href="js/app.min.js?v=27" as="script">
+  <link rel="preload" href="js/app.min.js?v=29" as="script">
 </head>
 <body>
 <div class="app-window">
@@ -38,6 +38,37 @@
       <button class="titlebar-btn" id="themeBtnMobile" onclick="toggleTheme()">🌙</button>
     </div>
     <div class="status-badge" data-i18n="status">计算结果仅供参考，建议实测验证</div>
+  </div>
+
+  <!-- 机器人吉祥物（全局悬浮） -->
+  <div class="floating-robot-wrap">
+    <a href="https://www.v-club.com/vAssistant" target="_blank" class="floating-robot" title="智能助手">
+      <div class="robot">
+        <div class="robot-antenna">
+          <span></span>
+          <span></span>
+        </div>
+        <div class="robot-head">
+          <div class="robot-face">
+            <div class="robot-eye"></div>
+            <div class="robot-eye"></div>
+          </div>
+        </div>
+        <div class="robot-body">
+          <div class="robot-heart"></div>
+        </div>
+      </div>
+    </a>
+    <div class="robot-bubble" id="robotBubble">
+      <div class="robot-bubble-text">您好！我是海康机器人机器视觉助手「小V」。无论您正在安装工业相机、调试读码器、使用3D产品，还是搭建 VisionMaster，只需一句话：<br><b>“产品信息 + 问题/需求”</b>，我即刻为您输出专业、可落地的解决方案。</div>
+    </div>
+    <script>
+    (function(){
+      var bubble = document.getElementById('robotBubble');
+      if(!bubble) return;
+      setTimeout(function(){ bubble.style.display = 'none'; }, 15000);
+    })();
+    </script>
   </div>
 
   <!-- BODY -->
@@ -1838,7 +1869,7 @@ nRet = device.<span class="fn">MV_CODEREADER_OpenDevice_NET</span>();</code></pr
   <script src="js/data/mapping.min.js" defer></script>
   <script src="js/data/download_urls.min.js" defer></script>
   <script src="js/data/announcement.min.js" defer></script>
-  <script src="js/app.min.js?v=27" defer></script>
+  <script src="js/app.min.js?v=29" defer></script>
   <script src="js/bom.min.js?v=17" defer></script>
   <script src="js/mapping_module.min.js" defer></script>
   <script src="js/data/status_codes.min.js" defer></script>
