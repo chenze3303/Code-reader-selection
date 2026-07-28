@@ -651,6 +651,7 @@
     if (fp === dataVersion && Object.keys(tree).length > 0) return;
     dataVersion = fp;
     buildTree(data);
+    buildReverseIndex(data);
     
     selState = { cat: '', ser: '', modelIdx: null, qty: 1, accCodes: {} };
     renderCatSel();
@@ -659,6 +660,36 @@
     renderAccList();
     updateAddBtn();
     renderTable();
+  }
+
+  // ─── 物料号反查索引 ───
+  var reverseIndex = {};
+  function buildReverseIndex(data) {
+    reverseIndex = {};
+    if (!data || !data.modelList) return;
+    data.modelList.forEach(function(item) {
+      var model = item.productModel || '';
+      var allAcc = (item.standardAccessories || []).concat(item.optionalAccessories || []);
+      allAcc.forEach(function(acc, i) {
+        var code = acc.code || '';
+        if (!code) return;
+        var isStd = i < (item.standardAccessories || []).length;
+        if (!reverseIndex[code]) {
+          reverseIndex[code] = {
+            name: acc.name || '',
+            category: acc.category || '',
+            series: acc.series || '',
+            detail: acc.detail || '',
+            models: []
+          };
+        }
+        var exists = reverseIndex[code].models.some(function(m) { return m.name === model; });
+        if (!exists) {
+          reverseIndex[code].models.push({ name: model, type: isStd ? 'standard' : 'optional' });
+        }
+      });
+    });
+    console.log('✅ 反查索引构建完成，' + Object.keys(reverseIndex).length + ' 条');
   }
 
   // ─── 事件绑定 ───
@@ -730,7 +761,7 @@
     var exportBtn = document.getElementById('bomQExportBtn');
     if (exportBtn) exportBtn.addEventListener('click', exportCSV);
 
-    // ─── 快速搜索 ───
+    // ─── 快速搜索（含配件反查） ───
     var searchInput = document.getElementById('bomQuickSearch');
     var searchResults = document.getElementById('bomSearchResults');
     if (searchInput && searchResults) {
@@ -740,6 +771,8 @@
         var kw = this.value.trim().toLowerCase();
         if (!kw) { searchResults.style.display = 'none'; return; }
         searchTimer = setTimeout(function() {
+          var html = '';
+          // 1. 搜索产品型号
           var matches = [];
           cats.forEach(function(cat) {
             var sers = Object.keys(tree[cat] || {});
@@ -754,40 +787,95 @@
               });
             });
           });
-          if (!matches.length) {
-            searchResults.innerHTML = '<div class="bom-search-item" style="color:var(--text-muted);cursor:default">无匹配结果</div>';
-          } else {
-            searchResults.innerHTML = matches.slice(0, 20).map(function(m, i) {
-              return '<div class="bom-search-item" data-idx="' + i + '">' +
+          if (matches.length) {
+            html += matches.slice(0, 15).map(function(m, i) {
+              return '<div class="bom-search-item bom-search-product" data-idx="' + i + '">' +
                 '<div class="bom-search-item-name">' + esc(m.name) + '</div>' +
                 '<div class="bom-search-item-code">' + esc(m.code) + '</div>' +
                 '<div class="bom-search-item-cat">' + esc(m.cat) + ' › ' + esc(m.ser) + '</div>' +
               '</div>';
             }).join('');
-            searchResults.querySelectorAll('.bom-search-item[data-idx]').forEach(function(el) {
-              el.addEventListener('click', function() {
-                var m = matches[+el.dataset.idx];
-                // 设置下拉框
-                document.getElementById('bomCatSel').value = m.cat;
-                selState.cat = m.cat;
-                renderSerSel();
-                document.getElementById('bomSerSel').value = m.ser;
-                selState.ser = m.ser;
-                renderModelSel();
-                document.getElementById('bomModelSel').value = m.idx;
-                selState.modelIdx = m.idx;
-                selState.accCodes = {};
-                bomList = [];
-                renderTable();
-                renderAccList();
-                updateAddBtn();
-                setTimeout(autoGenerateBOM, 50);
-                // 清空搜索
-                searchInput.value = '';
-                searchResults.style.display = 'none';
-              });
+          }
+          // 2. 搜索配件物料号
+          var accMatches = [];
+          if (reverseIndex) {
+            Object.keys(reverseIndex).forEach(function(code) {
+              var info = reverseIndex[code];
+              var name = (info.name || '').toLowerCase();
+              var cat = (info.category || '').toLowerCase();
+              if (code.toLowerCase().indexOf(kw) !== -1 || name.indexOf(kw) !== -1) {
+                accMatches.push({ code: code, name: info.name, category: info.category, series: info.series, detail: info.detail, count: info.models.length });
+              }
             });
           }
+          if (accMatches.length) {
+            if (html) html += '<div style="border-top:1px solid var(--border,#e2e8f0);margin:4px 0"></div>';
+            html += accMatches.slice(0, 10).map(function(a, i) {
+              return '<div class="bom-search-item bom-search-acc" data-acc="' + esc(a.code) + '">' +
+                '<div class="bom-search-item-name">' + esc(a.name) + ' <span style="font-size:10px;color:var(--primary,#f97316)">' + esc(a.category) + '</span></div>' +
+                '<div class="bom-search-item-code">物料号: ' + esc(a.code) + (a.detail ? ' | ' + esc(a.detail) : '') + '</div>' +
+                '<div class="bom-search-item-cat">适用 ' + a.count + ' 个型号 | 点击加入配单</div>' +
+              '</div>';
+            }).join('');
+          }
+          // 无结果
+          if (!html) {
+            html = '<div class="bom-search-item" style="color:var(--text-muted);cursor:default">无匹配结果</div>';
+          }
+          searchResults.innerHTML = html;
+          // 点击产品型号
+          searchResults.querySelectorAll('.bom-search-product[data-idx]').forEach(function(el) {
+            el.addEventListener('click', function() {
+              var m = matches[+el.dataset.idx];
+              document.getElementById('bomCatSel').value = m.cat;
+              selState.cat = m.cat;
+              renderSerSel();
+              document.getElementById('bomSerSel').value = m.ser;
+              selState.ser = m.ser;
+              renderModelSel();
+              document.getElementById('bomModelSel').value = m.idx;
+              selState.modelIdx = m.idx;
+              selState.accCodes = {};
+              bomList = [];
+              renderTable();
+              renderAccList();
+              updateAddBtn();
+              setTimeout(autoGenerateBOM, 50);
+              searchInput.value = '';
+              searchResults.style.display = 'none';
+            });
+          });
+          // 点击配件 — 加入配单明细
+          searchResults.querySelectorAll('.bom-search-acc[data-acc]').forEach(function(el) {
+            el.addEventListener('click', function() {
+              var code = el.dataset.acc;
+              var info = reverseIndex[code];
+              if (!info) return;
+              // 检查是否已存在
+              var exists = bomList.some(function(r) { return r.c === code; });
+              if (exists) {
+                alert('该配件已在配单中');
+                searchInput.value = '';
+                searchResults.style.display = 'none';
+                return;
+              }
+              // 添加到配单
+              bomList.push({
+                type: '配件',
+                n: info.name,
+                c: code,
+                d: info.detail || '',
+                qty: 1,
+                accType: '选配',
+                cat: info.category,
+                ser: info.series
+              });
+              save();
+              renderTable();
+              searchInput.value = '';
+              searchResults.style.display = 'none';
+            });
+          });
           searchResults.style.display = 'block';
         }, 200);
       });
@@ -849,6 +937,7 @@
     getData: function() { return bomList; },
     getTree: function() { return tree; },
     getCats: function() { return cats; },
+    getReverseIndex: function() { return reverseIndex; },
     rerender: function() {
       renderCatSel();
       renderSerSel();

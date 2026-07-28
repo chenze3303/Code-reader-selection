@@ -10,6 +10,17 @@
   <link rel="dns-prefetch" href="https://www.v-club.com">
   <!-- CSS 同步加载（避免弹窗闪烁） -->
   <link rel="stylesheet" href="css/style.min.css?v=22">
+  <style>
+    .bom-reverse-info{background:var(--warning-bg,#fffbeb);border:1px solid var(--warning-border,#fde68a);border-radius:6px;padding:10px;margin-top:8px}
+    .bom-reverse-name{font-size:13px;font-weight:700;color:var(--text,#1e293b);margin-bottom:4px}
+    .bom-reverse-meta{font-size:11px;color:var(--text-muted,#64748b);line-height:1.6}
+    .bom-reverse-meta b{color:var(--text,#334155)}
+    .bom-reverse-title{font-size:12px;font-weight:600;color:var(--text,#1e293b);margin:8px 0 4px}
+    .bom-reverse-model{display:flex;justify-content:space-between;align-items:center;padding:5px 8px;border:1px solid var(--border,#e2e8f0);border-radius:4px;margin-bottom:3px;font-size:11px}
+    .bom-reverse-model:hover{border-color:var(--primary,#f97316);background:var(--warning-bg,#fffbeb)}
+    .bom-tag-std{padding:1px 6px;border-radius:3px;font-size:10px;font-weight:600;background:#dbeafe;color:#1d4ed8}
+    .bom-tag-opt{padding:1px 6px;border-radius:3px;font-size:10px;font-weight:600;background:#fef3c7;color:#b45309}
+  </style>
   <!-- 预加载关键数据文件（peidan 和 three 改为按需加载） -->
   <link rel="preload" href="js/data/mapping.min.js" as="script">
   <link rel="preload" href="js/data/status_codes.min.js" as="script">
@@ -617,7 +628,7 @@
             <div class="bom-group">
               <div class="bom-group-label" data-i18n="bomQuickSearch">🔍 快速搜索</div>
               <div class="bom-search-wrap">
-                <input type="text" id="bomQuickSearch" class="bom-search-input" data-i18n-ph="bomQuickSearchPh" placeholder="输入型号名称或物料代码…" autocomplete="off">
+                <input type="text" id="bomQuickSearch" class="bom-search-input" data-i18n-ph="bomQuickSearchPh" placeholder="输入型号名称、物料代码或配件物料号…" autocomplete="off">
                 <div class="bom-search-results" id="bomSearchResults" style="display:none"></div>
               </div>
             </div>
