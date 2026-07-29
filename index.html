@@ -339,32 +339,10 @@
             </div>
             <div class="compact-grid compact-grid-1">
               <div>
-                <label data-i18n="barcodeW">条码实际宽度 *</label>
+                <label data-i18n="overlapMM">重叠区域 (mm)</label>
                 <div class="input-row">
-                  <input type="number" id="barcodeW" placeholder="请输入">
-                  <select id="barcodeWUnit"><option value="mm" selected>mm</option><option value="cm">cm</option></select>
-                </div>
-              </div>
-              <div>
-                <label data-i18n="barcodeH">条码实际高度 *</label>
-                <div class="input-row">
-                  <input type="number" id="barcodeH" placeholder="请输入">
-                  <select id="barcodeHUnit"><option value="mm" selected>mm</option><option value="cm">cm</option></select>
-                </div>
-              </div>
-              <div>
-                <label data-i18n="barcodeOrient">条码摆放方向</label>
-                <select id="barcodeOrient">
-                  <option value="auto" data-i18n="orientAuto">自动推荐</option>
-                  <option value="h" data-i18n="orientH">水平（沿宽度方向）</option>
-                  <option value="v" data-i18n="orientV">垂直（沿高度方向）</option>
-                </select>
-              </div>
-              <div>
-                <label data-i18n="safetyMargin">安全余量</label>
-                <div class="input-row">
-                  <input type="number" id="safetyMargin" value="5" min="0" max="100">
-                  <select id="safetyUnit"><option value="%" selected>%</option></select>
+                  <input type="number" id="overlapMM" value="20" min="0" max="500" step="1">
+                  <select id="overlapMMUnit"><option value="mm" selected>mm</option></select>
                 </div>
               </div>
             </div>

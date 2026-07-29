@@ -218,7 +218,7 @@
       stitchTitle: '🔗 多相机拼接方案', stitchHint: '⚠️ 单相机视野不足，可使用多相机拼接覆盖', stitchBack: '← 返回单相机',
       barcodeW: '条码实际宽度 *', barcodeH: '条码实际高度 *',
       barcodeOrient: '条码摆放方向', orientAuto: '自动推荐', orientH: '水平（沿宽度方向）', orientV: '垂直（沿高度方向）',
-      safetyMargin: '安全余量', stitchBtn: '⚡ 计算拼接方案',
+      safetyMargin: '安全余量', overlapMM: '重叠区域 (mm)', stitchBtn: '⚡ 计算拼接方案',
       stitchAlertBase: '请先完成基础选型参数填写（码制、模块尺寸、工作距离、视野宽高）',
       stitchAlertBarcode: '请填写条码实际尺寸（宽度和高度）',
 
@@ -362,7 +362,7 @@
       stitchTitle: '🔗 Multi-Camera Stitching', stitchHint: '⚠️ Single camera FOV insufficient, use multi-camera stitching', stitchBack: '← Back to Single',
       barcodeW: 'Barcode Width *', barcodeH: 'Barcode Height *',
       barcodeOrient: 'Barcode Orientation', orientAuto: 'Auto Recommend', orientH: 'Horizontal', orientV: 'Vertical',
-      safetyMargin: 'Safety Margin', stitchBtn: '⚡ Calculate Stitching',
+      safetyMargin: 'Safety Margin', overlapMM: 'Overlap (mm)', stitchBtn: '⚡ Calculate Stitching',
       stitchAlertBase: 'Please complete basic selection parameters first',
       stitchAlertBarcode: 'Please enter barcode dimensions (width and height)',
 
@@ -1314,22 +1314,17 @@
     var fovHUnit = document.getElementById('fovHeightUnit').value;
     var wd = parseFloat(document.getElementById('workingDistance').value);
     var dUnit = document.getElementById('distanceUnit').value;
-    var barcodeW = parseFloat(document.getElementById('barcodeW').value);
-    var barcodeH = parseFloat(document.getElementById('barcodeH').value);
-    var barcodeWUnit = document.getElementById('barcodeWUnit').value;
-    var barcodeHUnit = document.getElementById('barcodeHUnit').value;
-    var orient = document.getElementById('barcodeOrient').value;
-    var safetyPct = parseFloat(document.getElementById('safetyMargin').value) || 5;
+    var orient = 'auto';
 
     if (!codeType || isNaN(mSize) || isNaN(fovReqW) || isNaN(fovReqH) || isNaN(wd) ||
         mSize <= 0 || fovReqW <= 0 || fovReqH <= 0 || wd <= 0) {
       alert(t('stitchAlertBase'));
       return;
     }
-    if (isNaN(barcodeW) || isNaN(barcodeH) || barcodeW <= 0 || barcodeH <= 0) {
-      alert(t('stitchAlertBarcode'));
-      return;
-    }
+    // 重叠区域直接从输入框读取
+    var overlapInput = parseFloat(document.getElementById('overlapMM').value);
+    if (isNaN(overlapInput) || overlapInput < 0) overlapInput = 0;
+    var barcodeWMM = 0, barcodeHMM = 0;
 
     var btn = document.getElementById('stitchBtn');
     btn.classList.add('loading');
@@ -1341,11 +1336,11 @@
     var totalW = toMM(fovReqW, fovWUnit);
     var totalH = toMM(fovReqH, fovHUnit);
     var wdMM = toMM(wd, dUnit);
-    var barcodeWMM = toMM(barcodeW, barcodeWUnit);
-    var barcodeHMM = toMM(barcodeH, barcodeHUnit);
+
     var ppmRange = getPPMFilterRange(codeType);
-    var effW = totalW * (1 + safetyPct / 100);
-    var effH = totalH * (1 + safetyPct / 100);
+    // 不加安全余量，按实际需求视野计算
+    var effW = totalW;
+    var effH = totalH;
 
     var results = [];
 
@@ -1359,22 +1354,9 @@
         if (!fov) return;
         if (fov.ppm < ppmRange.min || fov.ppm > ppmRange.max) return;
 
-        // 重叠区：根据条码方向决定
-        var overlapW, overlapH;
-        if (orient === 'v') {
-          overlapW = barcodeHMM * (1 + safetyPct / 100);
-          overlapH = barcodeWMM * (1 + safetyPct / 100);
-        } else if (orient === 'h') {
-          overlapW = barcodeWMM * (1 + safetyPct / 100);
-          overlapH = barcodeHMM * (1 + safetyPct / 100);
-        } else {
-          // 自动：条码可能任意角度摆放，按对角线计算重叠区
-          var diag = Math.sqrt(barcodeWMM * barcodeWMM + barcodeHMM * barcodeHMM);
-          overlapW = diag * (1 + safetyPct / 100);
-          overlapH = diag * (1 + safetyPct / 100);
-        }
-        overlapW = Math.min(overlapW, fov.width * 0.4);
-        overlapH = Math.min(overlapH, fov.height * 0.4);
+        // 重叠区：直接使用用户输入的值
+        var overlapW = overlapInput;
+        var overlapH = overlapInput;
 
         var grid;
         if (fov.width >= effW && fov.height >= effH) {
@@ -1759,7 +1741,7 @@
     var axisMat = new THREE.LineBasicMaterial({ color: 0x888888, transparent: true, opacity: 0.4 });
     scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(0,0.1,0), new THREE.Vector3(axisLen,0.1,0)]), axisMat));
     scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(0,0.1,0), new THREE.Vector3(0,0.1,axisLen)]), axisMat));
-    scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(0,0,0), new THREE.Vector3(0,sceneH+40,0)]), axisMat));
+
 
     // Required coverage area - dark navy with dashed border
     if (reqW && reqH) {
