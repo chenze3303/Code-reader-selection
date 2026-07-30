@@ -10,17 +10,18 @@ const ROOT = path.join(__dirname, '..');
 const INPUT = path.join(ROOT, 'product_data.json');
 const OUTPUT = path.join(ROOT, 'js', 'data', 'peidan.js');
 
-// 配件列配置（与 peidan.html 一致）
+// 相机行的配件列配置（25列格式）
+// col: 配件引用列, flagCol: 标配/选配标志列, accCategory: 配件行[1]的类别名
 const ACCESSORY_COLUMNS = {
-  '电源':     { name: '电源',     col: 7 },
-  '安装板':   { name: '安装板',   col: 8,  flagCol: 9 },
-  '一体线':   { name: '一体线',   col: 10, flagCol: 11 },
-  'IO线':     { name: 'IO电源线', col: 12, flagCol: 13 },
-  '网线':     { name: '网线',     col: 14, flagCol: 15 },
-  '灯板':     { name: '灯板',     col: 16, flagCol: 17 },
-  '镜头罩':   { name: '镜头罩',   col: 18, flagCol: 19 },
-  'FA镜头':   { name: 'FA镜头',   col: 20, flagCol: 21 },
-  '扩展配件': { name: '扩展配件', col: 22, flagCol: 23 },
+  '电源':     { name: '电源',     col: 7,  flagCol: 8,  accCategory: '电源' },
+  '安装板':   { name: '安装板',   col: 9,  flagCol: 10, accCategory: '安装板' },
+  '一体线':   { name: '一体线',   col: 11, flagCol: 12, accCategory: '一体线' },
+  'IO电源线': { name: 'IO电源线', col: 13, flagCol: 14, accCategory: 'IO电源线' },
+  '网线':     { name: '网线',     col: 15, flagCol: 16, accCategory: '网线' },
+  '灯板':     { name: '灯板',     col: 17, flagCol: 18, accCategory: '灯板' },
+  '镜头罩':   { name: '镜头罩',   col: 19, flagCol: 20, accCategory: '镜头罩' },
+  'FA镜头':   { name: 'FA镜头',   col: 21, flagCol: 22, accCategory: 'FA镜头' },
+  '扩展配件': { name: '扩展配件', col: 23, flagCol: 24, accCategory: '扩展配件' },
 };
 
 // 产品大类排序优先级
@@ -93,69 +94,88 @@ function main() {
         keys.forEach(key => {
           const cfg = ACCESSORY_COLUMNS[key];
           const val = (r[cfg.col] || '').trim();
-          if (!val) return;
+          if (!val) return; // 相机行该列为空，跳过
 
           const flag = cfg.flagCol ? (r[cfg.flagCol] || '').trim() : '';
 
-          if (flag === '1') {
-            // 标配配件：通过 refTag 匹配 accessoryRows
-            const refTags = val.split(';')
-              .map(s => s.trim().toLowerCase())
-              .filter(s => s.length > 0);
-
-            let matched = false;
-            for (let j = 0; j < accessoryRows.length; j++) {
-              const ar = accessoryRows[j];
-              const accTag = ((ar[cfg.col] || '')).toLowerCase();
-              const accFlag = cfg.flagCol ? (ar[cfg.flagCol] || '') : '';
-              for (let k = 0; k < refTags.length; k++) {
-                if (accTag.indexOf(refTags[k]) >= 0 && accFlag === '1') {
-                  const accName = (ar[3] || key).trim();
-                  const accCode = (ar[4] || '').trim();
-                  const accDesc = (ar[5] || '').trim();
-                  // 避免重复
-                  if (!standardAcc.some(a => a.name === accName && a.code === accCode)) {
-                    standardAcc.push({ category: key, series: (ar[2] || '').trim(), name: accName, code: accCode, detail: accDesc });
-                  }
-                  matched = true;
-                  break;
-                }
-              }
-              if (matched) break;
-            }
-          }
-
-          // 选配配件：匹配所有可用配件（排除已作为标配的）
+          // 解析相机行的配件引用标签（分号分隔）
           const refTags = val.split(';')
             .map(s => s.trim().toLowerCase())
             .filter(s => s.length > 0);
 
+          // 标配配件：flag === '1'
+          if (flag === '1') {
+            for (let j = 0; j < accessoryRows.length; j++) {
+              const ar = accessoryRows[j];
+              const accCat = (ar[1] || '').trim();    // 配件类别名
+              const accRef = (ar[7] || '').trim().toLowerCase(); // 配件行的匹配标签
+              const accFlag = (ar[8] || '').trim();   // 配件标志
+
+              if (accCat !== cfg.accCategory) continue;
+              if (accFlag !== '1') continue;
+
+              // 检查配件行的ref标签是否匹配相机行的ref标签
+              let matched = false;
+              for (let k = 0; k < refTags.length; k++) {
+                if (accRef.indexOf(refTags[k]) >= 0 || refTags[k].indexOf(accRef) >= 0) {
+                  matched = true;
+                  break;
+                }
+              }
+
+              if (matched) {
+                const accName = (ar[3] || '').trim();
+                const accCode = (ar[4] || '').trim();
+                const accDesc = (ar[5] || '').trim();
+                if (!standardAcc.some(a => a.name === accName && a.code === accCode)) {
+                  standardAcc.push({
+                    category: cfg.accCategory,
+                    series: (ar[2] || '').trim(),
+                    name: accName,
+                    code: accCode,
+                    detail: accDesc
+                  });
+                }
+              }
+            }
+          }
+
+          // 选配配件：匹配所有可用配件（排除已作为标配的）
           const standardNames = new Set(standardAcc.map(a => a.name));
 
           accessoryRows.forEach(ar => {
-            const accTag = ((ar[cfg.col] || '')).toLowerCase();
+            const accCat = (ar[1] || '').trim();
+            const accRef = (ar[7] || '').trim().toLowerCase();
             const accName = (ar[3] || '').trim();
             const accCode = (ar[4] || '').trim();
             const accDesc = (ar[5] || '').trim();
-            const accRemark = (ar[6] || '').trim();
 
+            if (accCat !== cfg.accCategory) return;
             if (!accName || !accCode) return;
             if (standardNames.has(accName)) return;
 
+            // 检查匹配
             let match = false;
-            for (let k = 0; k < refTags.length; k++) {
-              if (accTag.indexOf(refTags[k]) >= 0 ||
-                  (ar[3] || '').toLowerCase().indexOf(refTags[k]) >= 0 ||
-                  (ar[5] || '').toLowerCase().indexOf(refTags[k]) >= 0 ||
-                  (ar[4] || '').toLowerCase().indexOf(refTags[k]) >= 0) {
-                match = true;
-                break;
+            if (refTags.length === 0) {
+              match = true; // 无ref标签时匹配所有
+            } else {
+              for (let k = 0; k < refTags.length; k++) {
+                if (accRef.indexOf(refTags[k]) >= 0 || refTags[k].indexOf(accRef) >= 0) {
+                  match = true;
+                  break;
+                }
               }
             }
 
-            if (match || refTags.length === 0) {
+            if (match) {
               if (!optionalAcc.some(a => a.name === accName && a.code === accCode)) {
-                optionalAcc.push({ category: key, series: (ar[2] || '').trim(), name: accName, code: accCode, detail: accDesc });
+                optionalAcc.push({
+                  category: cfg.accCategory,
+                  series: (ar[2] || '').trim(),
+                  name: accName,
+                  code: accCode,
+                  detail: accDesc
+                });
               }
             }
           });
