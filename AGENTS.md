@@ -60,6 +60,9 @@ node scripts/minify-js.js --check   # 仅验证已有 .min.js 的语法正确性
 # CSS 压缩（编辑 css/style.css 后运行）
 node scripts/minify-css.js
 
+# 压力测试（115 项自动化测试）
+node scripts/test-stress.js
+
 # 配单数据转换（product_data.json → peidan.js）
 node scripts/convert_product_data.js
 
@@ -90,7 +93,7 @@ node scripts/gen_download_urls.js                  # → js/data/download_urls.j
 | `js/data/mapping.js` | 产品表数据（`window.MAPPING_DATA`） |
 | `js/data/peidan.js` | 配单数据（`window.PEIDAN_DATA`，含 503 个型号） |
 | `js/data/competitor.js` | 竞品对标模块（IIFE 内 `var competitorDB` + UI 逻辑） |
-| `js/data/status_codes.js` | 状态码数据（`var STATUS_CODES`） |
+| `js/data/status_codes.js` | 状态码数据（`var STATUS_CODES`，257 条，162 条含解决方法） |
 | `js/data/download_urls.js` | 各系列下载 URL（IIFE），**自动生成，勿手动编辑** |
 | `js/data/cat_dist_map.js` | 系列→经销型号前缀映射（`window.CAT_DIST_MAP`） |
 | `product_data.json` | 配单原始数据源（24 列扁平格式，通过转换脚本生成 peidan.js） |
@@ -98,6 +101,7 @@ node scripts/gen_download_urls.js                  # → js/data/download_urls.j
 | `js/bom.js` | 配单表（型号树、选配件弹窗、电源联动、标配替换、CSV 导出、资料下载） |
 | `js/mapping_module.js` | 产品表（搜索、筛选、分组、资料下载、命名规则弹窗） |
 | `js/statuscode_module.js` | 状态码查询（搜索、筛选、复制） |
+| `scripts/test-stress.js` | 压力测试脚本（115 项自动化测试） |
 | `js/three.min.js` | Three.js 3D 渲染（拼接方案示意图） |
 | `css/style.css` | 全局样式（PC + 移动端响应式 + 暗黑模式） |
 | `index.html` 内 `.floating-robot-wrap` | 机器人浮动吉祥物组件（纯 CSS + 内联 JS 气泡） |
@@ -115,5 +119,6 @@ node scripts/gen_download_urls.js                  # → js/data/download_urls.j
 - `competitor.js` 是 IIFE，包含竞品数据 + UI 渲染逻辑，不是纯数据文件
 - CSS 必须同步加载（不能 defer），否则弹窗会闪烁（CSS 未加载前弹窗短暂可见）
 - 主题/语言持久化使用 `localStorage` 键 `theme` / `lang`
+- 配单表状态持久化使用 `localStorage` 键 `hikrob…tate`（含大类/系列/型号/配件勾选/bomList）
 - `db_editor.html` 打开时自动加载数据，无需手动导入
 - `peidan.html` 是独立自包含页面，不依赖 `index.html` 或共享模块

@@ -100,6 +100,16 @@ PEIDAN_DATA = {
 
 配单明细底部自动匹配主机型号在 mapping 数据中的下载链接，跳转海康官网资料下载页面。
 
+匹配策略（6 级）：
+1. baseName 精确包含 BOM 型号
+2. distName 精确包含 BOM 型号
+3. BOM 型号反向包含 baseName（去括号后）
+4. BOM 型号反向包含 distName（去括号后）
+5. 去括号后互相包含
+6. 系列前缀 fallback（如 ID5120RM）
+
+命中率 72.8%，有下载 URL 覆盖 66.9%。未命中主要是手持式读码器等无产品表条目的型号。
+
 #### 快速搜索
 
 选型页面提供快速搜索框，支持型号名称或物料代码模糊搜索，快速定位并选中型号。
@@ -110,7 +120,7 @@ PEIDAN_DATA = {
 
 ### 7. 状态码查询（statuscode_module.js → page-statuscode）
 
-224 条海康读码器 SDK 状态码定义，按 10 个分类组织。支持模糊搜索、分类筛选、点击复制。
+257 条海康读码器 SDK 状态码定义，按 10 个分类组织。162 条附带解决方法，支持模糊搜索、分类筛选、点击复制。
 
 ### 8. 方案解决（page-solutions）
 
@@ -207,7 +217,7 @@ function fovScore(actualFOV, requiredFOV) {
 
 ```javascript
 function normalize(s) {
-  return s.toLowerCase().replace(/mv-/i, '').replace(/[\s\-_\/]+/g, '');
+  return (s || '').toLowerCase().replace(/^[\s\-_\/]*mv[-_\s]*/i, '').replace(/[\s\-_\/]+/g, '');
 }
 ```
 
