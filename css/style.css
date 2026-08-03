@@ -3867,6 +3867,7 @@ select:focus, input:focus {
 .sc-cat-idmvs { background: rgba(99,102,241,0.12); color: #6366f1; }
 .sc-cat-control { background: rgba(249,115,22,0.12); color: #f97316; }
 .sc-cat-ethernet { background: rgba(14,165,233,0.12); color: #0ea5e9; }
+.sc-cat-底层 { background: rgba(161,98,7,0.12); color: #a16207; }
 .sc-cat-搴曞眰 { background: rgba(161,98,7,0.12); color: #a16207; }
 .sc-cat-default { background: var(--border-light); color: var(--text-secondary); }
 .sc-solution { font-size: 0.78rem; color: var(--text-secondary); line-height: 1.5; word-break: break-all; white-space: normal; text-align: left; }
@@ -3910,6 +3911,7 @@ select:focus, input:focus {
 .dark .sc-cat-idmvs { background: rgba(99,102,241,0.15); color: #818cf8; }
 .dark .sc-cat-control { background: rgba(249,115,22,0.15); color: #fb923c; }
 .dark .sc-cat-ethernet { background: rgba(14,165,233,0.15); color: #38bdf8; }
+.dark .sc-cat-底层 { background: rgba(161,98,7,0.15); color: #fbbf24; }
 .dark .sc-cat-搴曞眰 { background: rgba(161,98,7,0.15); color: #fbbf24; }
 .dark .sc-cat-default { background: #21262d; color: #8b949e; }
 .dark .sc-footer { background: #161b22; border-top-color: #21262d; }

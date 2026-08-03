@@ -113,8 +113,47 @@
     }
   }
 
-  // 配单不持久化：刷新页面即清空（按需求设计），save() 保留为空函数兼容调用点
-  function save() {}
+  // ─── localStorage 持久化 ───
+  var STORAGE_KEY = 'hikrobot_bom_state';
+
+  function save() {
+    try {
+      var state = {
+        cat: selState.cat,
+        ser: selState.ser,
+        modelIdx: selState.modelIdx,
+        accCodes: selState.accCodes,
+        bomList: bomList
+      };
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    } catch(e) { /* quota exceeded or private mode */ }
+  }
+
+  function loadState() {
+    try {
+      var raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return false;
+      var state = JSON.parse(raw);
+      if (!state || !state.cat) return false;
+      // 验证数据仍然有效
+      if (!tree[state.cat]) return false;
+      if (state.ser && !tree[state.cat][state.ser]) return false;
+      if (state.modelIdx !== null) {
+        var mains = tree[state.cat] && tree[state.cat][state.ser] ? tree[state.cat][state.ser].mains : [];
+        if (!mains || state.modelIdx >= mains.length) return false;
+      }
+      selState.cat = state.cat;
+      selState.ser = state.ser || '';
+      selState.modelIdx = state.modelIdx;
+      selState.accCodes = state.accCodes || {};
+      bomList = state.bomList || [];
+      return true;
+    } catch(e) { return false; }
+  }
+
+  function clearSavedState() {
+    try { localStorage.removeItem(STORAGE_KEY); } catch(e) {}
+  }
 
   function esc(s) {
     return String(s || '').replace(/[&<>"]/g, function(c) {
@@ -618,7 +657,9 @@
     var blob = new Blob(['\uFEFF' + csv], { type: 'text/csv;charset=utf-8' });
     var a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
-    a.download = 'HIKROBOT_配单表_' + new Date().toLocaleDateString('zh-CN').split('/').join('-') + '.csv';
+    var now = new Date();
+    var dateStr = now.getFullYear() + '-' + String(now.getMonth()+1).padStart(2,'0') + '-' + String(now.getDate()).padStart(2,'0');
+    a.download = 'HIKROBOT_配单表_' + dateStr + '.csv';
     a.click();
     URL.revokeObjectURL(a.href);
   }
@@ -903,6 +944,18 @@
   }
 
   // ─── 初始化 ───
+  function restoreAfterData() {
+    if (loadState()) {
+      // 恢复下拉框状态
+      renderCatSel();
+      renderSerSel();
+      renderModelSel();
+      renderAccList();
+      updateAddBtn();
+      renderTable();
+    }
+  }
+
   function init() {
     bindEvents();
     bomList = [];
@@ -911,11 +964,13 @@
     if (window.PEIDAN_DATA) {
       applyData(window.PEIDAN_DATA);
       bindEvents();
+      restoreAfterData();
     } else {
       loadPeidanScript(function() {
         if (window.PEIDAN_DATA) {
           applyData(window.PEIDAN_DATA);
           bindEvents();
+          restoreAfterData();
         } else {
           console.warn('⚠️ PEIDAN_DATA 未定义');
         }

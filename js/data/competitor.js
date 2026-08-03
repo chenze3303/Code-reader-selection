@@ -62,8 +62,7 @@
     return (str || '')
       .toLowerCase()
       .replace(/^mv-?/i, '')       // 去掉 MV- 前缀
-      .replace(/[\s\-_\/]+/g, '') // 去掉空格、横线、下划线、斜杠
-      .replace(/^id/i, 'id');      // 统一 ID 大小写
+      .replace(/[\s\-_\/]+/g, ''); // 去掉空格、横线、下划线、斜杠
   }
 
   function escapeHtml(str) {

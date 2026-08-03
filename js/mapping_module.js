@@ -12,7 +12,7 @@
   var mappingTabClickTimer = null; // 计时器
 
   function normalize(s) {
-    return (s || '').toLowerCase().replace(/[\s\-_\/]+/g, '').replace(/^mv/i, 'mv');
+    return (s || '').toLowerCase().replace(/^[\s\-_\/]*mv[-_\s]*/i, '').replace(/[\s\-_\/]+/g, '');
   }
 
   function esc(s) {
@@ -216,34 +216,43 @@
   }
 
   function init() {
-    var searchInput = document.getElementById('mpSearchInput');
-    var catSelect   = document.getElementById('mpCatSelect');
-    if (!searchInput) return;
+    try {
+      var searchInput = document.getElementById('mpSearchInput');
+      var catSelect   = document.getElementById('mpCatSelect');
+      if (!searchInput || !catSelect) {
+        console.warn('⚠️ 产品表模块 DOM 元素未找到');
+        return;
+      }
 
-    // 初始化表头（默认隐藏代码列）
-    updateTableHeader();
+      // 初始化表头（默认隐藏代码列）
+      updateTableHeader();
 
-    // 搜索防抖
-    var timer;
-    searchInput.addEventListener('input', function() {
-      clearTimeout(timer);
-      timer = setTimeout(doFilter, 200);
-    });
-    catSelect.addEventListener('change', doFilter);
+      // 搜索防抖
+      var timer;
+      searchInput.addEventListener('input', function() {
+        clearTimeout(timer);
+        timer = setTimeout(doFilter, 200);
+      });
+      catSelect.addEventListener('change', doFilter);
 
-    var toggleAllBtn = document.getElementById('mpToggleAllBtn');
-    if (toggleAllBtn) toggleAllBtn.addEventListener('click', toggleAll);
+      var toggleAllBtn = document.getElementById('mpToggleAllBtn');
+      if (toggleAllBtn) toggleAllBtn.addEventListener('click', toggleAll);
 
-    if (window.MAPPING_DATA) applyData(window.MAPPING_DATA);
-    else {
-      var check = setInterval(function() {
-        if (window.MAPPING_DATA) { clearInterval(check); applyData(window.MAPPING_DATA); }
-      }, 100);
-      setTimeout(function() { clearInterval(check); }, 5000);
+      if (window.MAPPING_DATA) applyData(window.MAPPING_DATA);
+      else {
+        var check = setInterval(function() {
+          if (window.MAPPING_DATA) { clearInterval(check); applyData(window.MAPPING_DATA); }
+        }, 100);
+        setTimeout(function() { clearInterval(check); }, 5000);
     }
 
     // 命名规则弹窗
     initNamingModal();
+    } catch(e) {
+      console.error('❌ 产品表模块初始化失败:', e);
+      var tbody = document.getElementById('mpTableBody');
+      if (tbody) tbody.innerHTML = '<tr><td colspan="7" class="mp-empty">模块加载出错，请刷新页面重试</td></tr>';
+    }
   }
 
   // ─── 命名规则弹窗 ───

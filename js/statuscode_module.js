@@ -65,7 +65,7 @@
       var html = '';
       data.forEach(function(item, index) {
         var rowClass = item.value === '0x00000000' ? 'sc-row-success' : 'sc-row-error';
-        var solutionText = item.solution || '';
+        var solutionText = (item.solution || '').replace(/\n/g, '<br>');
         html += '<tr class="' + rowClass + '" data-name="' + item.name + '">' +
                 '<td style="text-align:center">' + (index + 1) + '</td>' +
                 '<td><span class="sc-cat-tag sc-cat-' + getCategoryClass(item.category) + '">' + item.category + '</span></td>' +
@@ -148,13 +148,22 @@
 
   // 初始化
   function init() {
-    if (typeof STATUS_CODES === 'undefined') {
-      tableBody.innerHTML = '<tr><td colspan="6" class="sc-empty">状态码数据未加载</td></tr>';
-      return;
+    try {
+      if (typeof STATUS_CODES === 'undefined') {
+        tableBody.innerHTML = '<tr><td colspan="6" class="sc-empty">状态码数据未加载，请刷新页面重试</td></tr>';
+        return;
+      }
+      if (!searchInput || !tableBody) {
+        console.warn('⚠️ 状态码模块 DOM 元素未找到');
+        return;
+      }
+      initCategorySelect();
+      bindEvents();
+      filterCodes();
+    } catch(e) {
+      console.error('❌ 状态码模块初始化失败:', e);
+      if (tableBody) tableBody.innerHTML = '<tr><td colspan="6" class="sc-empty">模块加载出错，请刷新页面重试</td></tr>';
     }
-    initCategorySelect();
-    bindEvents();
-    filterCodes();
   }
 
   // 页面加载后初始化
