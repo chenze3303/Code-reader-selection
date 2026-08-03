@@ -543,6 +543,49 @@
     if (btn) btn.disabled = (getCurrentModel() === null);
   }
 
+  // ─── 配单型号 → 产品表下载URL 匹配 ───
+  function extractSeries(name) {
+    var m = (name || '').match(/(?:MV-)?(ID[A-Z0-9]+[A-Z]?)/i);
+    return m ? m[1].toUpperCase() : '';
+  }
+
+  function cleanName(name) {
+    return (name || '').replace(/[\(（].*?[\)）]/g, '').replace(/V\d+\.\d+/g, '').replace(/\s+/g, '').trim();
+  }
+
+  function findMappingMatch(bomName) {
+    if (!bomName || !window.MAPPING_DATA) return null;
+    var md = window.MAPPING_DATA;
+    var c = cleanName(bomName);
+    var p = extractSeries(bomName);
+
+    for (var i = 0; i < md.length; i++) {
+      var r = md[i];
+      var cb = cleanName(r.baseName || '');
+      var cd = cleanName(r.distName || '');
+      // 1. 精确包含：baseName 包含 BOM 型号
+      if (r.baseName && r.baseName.indexOf(bomName) !== -1) return r;
+      // 2. 精确包含：distName 包含 BOM 型号
+      if (r.distName && r.distName.indexOf(bomName) !== -1) return r;
+      // 3. 反向包含：BOM 型号包含 baseName（去括号后）
+      if (cb && c.indexOf(cb) !== -1) return r;
+      // 4. 反向包含：BOM 型号包含 distName（去括号后）
+      if (cd && c.indexOf(cd) !== -1) return r;
+      // 5. 去括号后互相包含
+      if (cb && cb.indexOf(c) !== -1) return r;
+      if (cd && cd.indexOf(c) !== -1) return r;
+    }
+    // 6. 系列前缀匹配（fallback）
+    if (p) {
+      for (var i = 0; i < md.length; i++) {
+        if (extractSeries(md[i].baseName) === p || extractSeries(md[i].distName) === p) {
+          return md[i];
+        }
+      }
+    }
+    return null;
+  }
+
   // ─── 自动生成配单 ───
   function autoGenerateBOM() {
     var m = getCurrentModel();
@@ -619,17 +662,15 @@
       '</tr>';
     }).join('');
 
-    // 下载按钮：查找主机型号在 mapping 中的下载链接
+    // 下载按钮：查找主机型号在 mapping 中的下载链接（多级匹配）
     var dlBtn = document.getElementById('bomDownloadBtn');
     if (dlBtn) {
       var hostRow = bomList.find(function(r) { return r.type === '主机'; });
       var dlUrl = '';
       if (hostRow && window.MAPPING_DATA && window.MAPPING_DOWNLOAD_URLS) {
         var modelName = hostRow.n || '';
-        var match = window.MAPPING_DATA.find(function(m) {
-          return m.baseName && modelName && m.baseName.indexOf(modelName) !== -1;
-        });
-        if (match && match.cat) {
+        var match = findMappingMatch(modelName);
+        if (match) {
           dlUrl = window.MAPPING_DOWNLOAD_URLS.getBaseUrl(match.cat) || '';
         }
       }
