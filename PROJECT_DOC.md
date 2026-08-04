@@ -140,6 +140,16 @@ PEIDAN_DATA = {
 
 相关 CSS 类：`.floating-robot-wrap`、`.floating-robot`、`.robot`、`.robot-antenna`、`.robot-head`、`.robot-face`、`.robot-eye`、`.robot-body`、`.robot-heart`、`.robot-label`、`.robot-bubble`、`.robot-bubble-text`
 
+### 10. SDK 参考（page-sdk）
+
+页面内嵌的二次开发学习指南，提供 C / C# 两套语言的开发文档（MvCodeReader SDK v1.0）。
+
+- **侧边目录**：快速导航 + 完整文档外链 + C/C# 语言切换
+- **章节**：开发环境配置、编程流程（连接→运行→释放）、参数设置（节点类型映射）、触发模式、常见错误排查、API 速查
+- **代码块**：带复制按钮与语法高亮，注释随语言切换翻译
+- **全量双语**：约 160 个 i18n 词条，覆盖 TOC、横幅、路径卡片、章节标题、表格、代码注释
+- 独立完整版：`sdk-guide.html`（72KB 静态页，含全部章节与代码示例）
+
 ---
 
 ## 导航结构
@@ -149,6 +159,14 @@ PEIDAN_DATA = {
 手机端只显示 3 个：首页、智能选型、更多（其余 6 个放入更多弹窗）。
 
 多相机拼接复用选型页面，点击后自动展开拼接卡片并隐藏选型 UI。
+
+### 首页布局（.home-page）
+
+首页为纵向滚动容器（`height: 100%` + `overflow-y: auto`），包含 hero 区、功能卡片网格、页脚三部分：
+
+- **hero 区**（`.home-hero`）：桌面端图文并排（文字区 `flex: 1 1 280px` 保底宽度，装饰图可收缩换行）；移动端改为纵向居中并压缩高度（`.home-hero-text { flex: none }` 防止 flex-basis 撑高）
+- **功能卡片**（`.home-grid`）：桌面端 4 列；移动端 2 列（`≤380px` 回退 1 列），描述超 2 行截断
+- **防挤压**：`.home-hero`、`.home-section` 均设置 `flex-shrink: 0`，页面高度不足时内容滚动而非压缩
 
 ---
 
@@ -249,11 +267,14 @@ node scripts/convert_product_data.js  # 修改 product_data.json 后
 
 ### i18n 规范
 
-- HTML 元素：`data-i18n="key"` 属性
-- JS 中：`_t('key')` 或 `window._i18n.t('key')`
-- 占位符：`data-i18n-ph="key"` 属性
-- 翻译文件：`js/app.js` 中的 `zh` 和 `en` 对象
+- HTML 元素：`data-i18n="key"` 属性（textContent）
+- JS 中：`_t('key')` 或 `window._i18n.t('key')`，支持 `{n}` 占位符
+- 占位符：`data-i18n-ph="key"` 属性（placeholder）
+- 其他属性：`data-i18n-alt="key"`（alt）、`data-i18n-title="key"`（title）、`data-i18n-html="key"`（innerHTML，可含 HTML 标签）
+- 翻译文件：`js/app.js` 中的 `zh` 和 `en` 对象（zh 约 467 条 / en 约 471 条，两侧需对应）
 - 切换语言时 `applyLang()` 会重新渲染 BOM、产品表、竞品模块
+- 命名规则弹窗 `NAMING_DATA`（mapping_module.js）含 `title/html` 与 `titleEn/htmlEn` 双版本，渲染时按当前语言选择
+- 数据文件（`js/data/*`）与品牌名（思谋/华睿/视界/新大陆）保持不翻译
 
 ### CSS 规范
 

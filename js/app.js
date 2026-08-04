@@ -250,7 +250,153 @@
       bomOther: '其他',
       langBtn: 'EN',
       // Contact modal
-      contactUs: '联系我们', contactTitle: '📱 关注我们~了解更多海康机器人最新动态！', contactHint: '💡 扫码关注，获取最新资讯'
+      contactUs: '联系我们', contactTitle: '📱 关注我们~了解更多海康机器人最新动态！', contactHint: '💡 扫码关注，获取最新资讯',
+
+      // Verify page
+      verifyBack: '← 返回智能选型',
+      verifySeriesLabel: '产品大类', verifySeriesPh: '-- 请选择大类 --',
+      verifyResLabel: '分辨率', verifyResPh: '-- 全部分辨率 --',
+      verifyModelLabel: '具体型号', verifyModelPh: '-- 请先选择大类 --',
+      verifyWDPh: '工作距离',
+      verifyCodeTypeLabel: '条码类型',
+      verifyModuleSizePh: '模块尺寸',
+      verifySpeedTitle: '🏃 运动速度（选填）', verifySpeedPh: '运动速度',
+      verifySpeedHint: '不填则不计算最大曝光时间',
+      verifyRunBtn: '⚡ 开始验算',
+      verifySchematicTitle: '📐 验算示意图', verifyResultTitle: '🏆 验算结果',
+      verifyEmpty: '选择型号并输入参数后点击「开始验算」',
+
+      // Home footer / misc
+      footerSite: '🌐 海康机器人官网',
+      announcementBtn: '📢 公告',
+      bomDownload: '📥 资料下载',
+      stitchDownloadBtn: '下载示意图',
+      mpThDocs: '资料',
+      mpNamingBtn: '📖 命名规则',
+
+      // Solutions page cards
+      solSdkTitle: 'SDK 参考文档',
+      solSdkDesc: 'MvCodeReader SDK C/C# 编程指南，从环境搭建到完整示例',
+      solViewerTitle: 'STEP & DXF 在线查看器',
+      solViewerDesc: '浏览器端 3D/2D CAD 图纸查看器，支持 STEP、IGES、BREP、DXF 格式，纯前端解析',
+
+      // Contact card labels
+      contactWechat: '微信视频号', contactDouyin: '抖音视频号', contactBili: 'B站视频号',
+      contactWechatAlt: '微信视频号', contactDouyinAlt: '抖音视频号', contactBiliAlt: 'B站视频号',
+
+      // Lightbox
+      lightboxCloseHint: '点击任意位置关闭',
+      previewAlt: '预览',
+
+      // Announcement
+      announcementTitle: '📢 公告',
+      announcementHistory: '历史公告 ▾', announcementHistoryOpen: '历史公告 ▴',
+      announcementDismiss: '好的',
+
+      // Robot bubble
+      robotBubble: '您好！我是海康机器人机器视觉助手「小V」。无论您正在安装工业相机、调试读码器、使用3D产品，还是搭建 VisionMaster，只需一句话：<br><b>“产品信息 + 问题/需求”</b>，我即刻为您输出专业、可落地的解决方案。',
+
+      // Naming rules modal
+      namingTitle: '📖 海康机器人 MV-ID 读码器型号命名规则',
+      namingStructure: '型号结构', namingExamples: '型号解析示例',
+      namingFullModel: '完整型号', namingParse: '解析',
+      namingBrand: '品牌', namingCategory: '品类', namingSeries: '系列', namingSeriesDesc: '2系·240万',
+      namingType: '类型', namingTypeDesc: '增强款', namingFocal: '焦距', namingFocus: '调焦',
+      namingFocusDesc: '机械调焦', namingLight: '光源', namingLightDesc: '红光', namingVariant: '变体',
+      namingVariantDesc: '标准光源', namingLens: '镜头', namingLensDesc: '普通镜头',
+      namingStructNote: '可选后缀：<b style="color:#e65100;">-U</b>=USB · <b style="color:#e65100;">-R</b>=串口(仅8系)<br>C口外接镜头型号：焦距位用 <b style="color:#e65100;">00C</b> 替代，无内置镜头和光源',
+      namingEx1: '<b>8系</b> · <b>30万</b> · 基础款 — <b>3mm</b> 定焦 · <b>白光</b> · 标准 · <b>普通镜头</b> — 网口',
+      namingEx2: '<b>8系</b> · <b>30万</b> · 基础款 — <b>3mm</b> 定焦 · <b>白光</b> · 标准 · <b>偏振镜头</b> — <b>串口</b>',
+      namingEx3: '<b>2系</b> · <b>130万</b> · 极小型 — <b>4.63mm</b> · <b>红光</b> · 标准 · <b>普通镜头</b> — <b>USB</b>',
+      namingEx4: '<b>2系</b> · <b>240万</b> · 增强款 — <b>8mm</b> <b>机械调焦</b> · <b>红光</b> · 标准 · <b>普通镜头</b> — 网口',
+      namingEx5: '<b>3系</b> · <b>130万</b> · 高端款 — <b>6mm</b> <b>机械调焦</b> · <b>白光</b> · 标准 · <b>普通镜头</b> — 网口',
+      namingEx6: '<b>3系</b> · <b>400万</b> · 卷帘快门 — <b>C口外接镜头</b> — 无自带光源',
+      namingEx7: '<b>5系</b> · <b>1200万</b> · 卷帘快门 — <b>8mm</b> <b>液态调焦</b> · <b>红光</b> · 标准 · <b>普通镜头</b> — 网口',
+      namingEx8: '<b>5系</b> · <b>2000万</b> · 基础款 — <b>C口外接镜头</b> — 无自带光源',
+
+      // SDK page
+      sdkTocTitle: '📑 快速导航', sdkFullDoc: '📖 查看完整文档',
+      sdkTocOverview: '📋 SDK 概述', sdkTocEnv: '🔧 开发环境配置', sdkTocFlow: '⭐ 编程流程',
+      sdkTocParam: '⚙️ 参数设置', sdkTocGrab: '📷 取图方式', sdkTocTrigger: '🎯 触发模式',
+      sdkTocError: '🔍 错误排查', sdkTocApi: '📚 API 速查', sdkTocAdvanced: '🔗 进阶场景',
+      sdkBannerTitle: '📖 完整 SDK 文档已上线', sdkBannerDesc: '包含完整的代码示例、API参考、进阶场景等内容',
+      sdkBannerBtn: '查看完整文档 →',
+      sdkHeroTitle: '二次开发学习指南', sdkHeroDesc: '海康机器人读码器 C / C# 编程开发套件 · 从入门到实战',
+      sdkLangC: 'C 语言', sdkLangCS: 'C# 语言',
+      sdkPathEnvT: '搭建环境', sdkPathEnvD: '工程与网络配置', sdkPathCsEnvD: '引用与配置',
+      sdkPathFlowT: '编写程序', sdkPathFlowD: '三段式流程',
+      sdkPathParamT: '参数设置', sdkPathParamD: '节点类型映射', sdkPathCsParamD: '节点映射',
+      sdkPathApiT: 'API 速查', sdkPathApiD: '常用接口参考', sdkPathCsApiD: '常用接口',
+      sdkEnvTitle: '🔧 开发环境配置', sdkPrereq: '前置条件',
+      sdkPrereq1: '已安装 <strong>IDMVS</strong> 或 <strong>MVS Runtime</strong>',
+      sdkPrereq2: '配置 SDK 的 include 和 lib 路径',
+      sdkPrereq3: '程序位数与 DLL 位数一致（x64 对应 x64）',
+      sdkBitnessWarn: '<strong>程序位数必须与 DLL 位数一致！</strong>混用会导致加载失败。',
+      sdkHeaders: '核心头文件', sdkHdr1: '所有 SDK 函数声明（主接口）', sdkHdr2: '结构体、枚举定义', sdkHdr3: '错误码定义',
+      sdkGige: 'GigE 网络配置', sdkGige1: '启用网卡<strong>巨帧（Jumbo Frame）</strong>，建议 9000+',
+      sdkGige2: '设备 IP 与 PC 网卡在同一网段', sdkGige3: '建议关闭防火墙或添加端口例外',
+      sdkFlowTitle: '⭐ 编程流程（重点）', sdkConnPhase: '连接阶段', sdkRunPhase: '运行阶段', sdkRelPhase: '释放阶段',
+      sdkEnumDev: '枚举设备', sdkCreateHandle: '创建句柄', sdkSetArea: '设置地域', sdkOpenDev: '打开设备',
+      sdkSetParam: '设置参数', sdkStartGrab: '开始取流', sdkGetResult: '获取结果',
+      sdkStopGrab: '停止取流', sdkCloseDev: '关闭设备', sdkDestroyHandle: '销毁句柄',
+      sdkCodeConn: '连接阶段代码', sdkCodeEnumC: 'C — 枚举设备', sdkCopy: '复制',
+      sdkC1: '// 1. 枚举设备', sdkC2: '// 2. 创建句柄', sdkC3: '// 3. 设置地域（中国大陆必须）', sdkC4: '// 4. 打开设备',
+      sdkAreaTip: '地域设置是必须步骤，未设置可能导致设备打开失败。',
+      sdkCodeRun: '运行阶段代码', sdkCodeRunC: 'C — 参数设置与取流',
+      sdkC5: '// 设置连续采集模式', sdkC6: '// 开始取流', sdkC7: '// 获取一帧图像',
+      sdkCodeRel: '释放阶段代码', sdkCodeRelC: 'C — 释放资源',
+      sdkParamTitle: '⚙️ 参数设置', sdkNodeMap: '节点类型与接口映射',
+      sdkType: '类型', sdkGet: '读取', sdkSet: '设置', sdkTypical: '典型参数',
+      sdkEnumWarn: '<strong>枚举节点必须用整数值！</strong><br>❌ SetEnumValue(handle, "TriggerMode", "On")<br>✅ SetEnumValue(handle, "TriggerMode", MV_CODEREADER_TRIGGER_MODE_ON)',
+      sdkTriggerTitle: '🎯 触发模式', sdkMode: '模式',
+      sdkCont: '连续采集', sdkSoftTrig: '软触发', sdkHardTrig: '硬触发',
+      sdkSoftExample: '软触发配置示例', sdkCodeSoftC: 'C — 软触发',
+      sdkSoftComment: '// 然后 GetOneFrameTimeoutEx2 取图',
+      sdkErrTitle: '🔍 常见错误排查', sdkSymptom: '现象', sdkCheck: '排查方向',
+      sdkErr1: '枚举不到设备', sdkErr1D: '网卡IP、设备IP、网线、防火墙、供电',
+      sdkErr2: '能枚举但打不开', sdkErr2D: '是否设置地域、设备被占用、IP冲突',
+      sdkErr3: '打开成功但无图', sdkErr3D: '未开始取流、触发模式错误、无触发信号',
+      sdkErr4: '参数设置失败', sdkErr4D: '节点类型不匹配、值超范围、取流状态不允许',
+      sdkErr5: '读码结果为空', sdkErr5D: '码制未开启、曝光不合适、ROI设置错误',
+      sdkApiTitle: '📚 API 速查', sdkApiDev: '设备管理', sdkApiArea: '设置地域（中国：0xa80, 0x10000）',
+      sdkOpenClose: '打开/关闭设备', sdkApiParamRW: '参数读写',
+      sdkIntNode: 'Integer 节点', sdkFloatNode: 'Float 节点', sdkEnumNode: 'Enumeration 节点（用整数值）',
+      sdkBoolNode: 'Boolean 节点', sdkStringNode: 'String 节点', sdkCmdNode: 'Command 节点（如 TriggerSoftware）',
+      sdkApiGrab: '取图控制', sdkStartStop: '开始/停止取流', sdkPoll: '主动轮询取图（超时ms）', sdkRegCb: '注册图像回调',
+      sdkCsRef: '项目已引用 <code>MvCodeReaderSDKNet.dll</code>', sdkCsRefs: '常用引用',
+      sdkCsRecvThread: '// 接收线程', sdkCsConst: '设备类型常量',
+      sdkConst: '常量', sdkValue: '值', sdkDesc: '说明', sdkGigeDev: 'GigE 网口设备', sdkUsbDev: 'USB3.0 设备',
+      sdkCodeEnumCS: 'C# — 枚举设备', sdkCsMarshal: '// 创建句柄（必须 Marshal.PtrToStructure）',
+      sdkCsDllImport: 'C# 中 SetAreaInfoConfig 需要通过 DllImport 调用，没有 _NET 后缀版本',
+      sdkRelCode: '释放阶段（try/finally）', sdkCodeRelCS: 'C# — 释放资源',
+      sdkCsGC: 'C# 虽有 GC，但 SDK 句柄<strong>必须手动释放</strong>，用 try/finally 包裹。',
+      sdkNodeMapCS: '节点类型与 C# 接口映射', sdkValType: '值类型',
+      sdkCommonParams: '常用参数速查', sdkParam: '参数', sdkNodeName: '节点名',
+      sdkExposure: '曝光时间', sdkGain: '增益', sdkTrigMode: '触发模式', sdkTrigSrc: '触发源',
+      sdkPollShort: '主动轮询取图',
+      robotTitle: '智能助手', scClear: '清空',
+      scNoData: '状态码数据未加载，请刷新页面重试',
+      scLoadErr: '模块加载出错，请刷新页面重试',
+      mpDlBase: '查看基线型号资料', mpDlDist: '查看经销型号资料', mpNone: '暂无',
+      bomNoMatchAcc: '无匹配配件', bomLen: '长度', bomMat: '材质', bomAll: '全部',
+      bomUpdated: '已更新', bomAutoGen: '自动生成配单', bomMatCode: '物料号: ',
+      bomFits: '适用 {n} 个型号 | 点击加入配单', bomNoResult: '无匹配结果', bomExists: '该配件已在配单中',
+      bomEmptyAlert: '配单表为空',
+      bomCsvHash: '#', bomCsvType: '配件类型', bomCsvName: '物料名称', bomCsvDesc: '描述', bomCsvCode: '物料代码',
+      bomCsvNameFile: '配单表',
+      stReasonFov: '视野超出单机极限', stReasonDist: '工作距离受限', stReasonPpm: 'PPM超出范围',
+      stViewPlan: '📐 查看拼接方案', stHintTitle: '单相机方案无法满足当前需求',
+      stHintDescCan: '您输入的视野范围较大，单台读码器无法完整覆盖。建议采用多相机组网拼接方案，通过多台读码器协同工作实现完整视野覆盖。',
+      stHintDescNo: '当前参数下所有型号的PPM均超出合理范围，请调整模块尺寸、工作距离或视野参数。',
+      stSingleFov: '单机视野', stTotalCover: '总覆盖', stOverlapH: '水平重叠', stOverlapV: '垂直重叠',
+      stReqCover: '需求覆盖', stNoPlan: '未找到合适的拼接方案', stNoPlanHint: '请调整参数：增大工作距离、减小覆盖区域、或选择更高分辨率型号',
+      stViewAll: '📋 查看全部方案', stSelectPlan: '选择拼接方案', stAll: '全部', stUnits: '台',
+      stResetView: '重置视角', stTopView: '俯视图', stCamCount: '相机数量', stMountHeight: '安装高度',
+      stHrz: '水平', stVrt: '垂直', stOverlap: '重叠区域',
+      copiedShort: '已复制', threeJsLoadErr: 'Three.js 加载失败',
+      verifyMPUnit: '万', verifyWdRec: '推荐工作距离：', verifyWdRange: '工作距离范围：',
+      verifyMaxExposure: '最大曝光', verifyEmptyWait: '等待参数输入...',
+      mpLoadErr: '模块加载出错，请刷新页面重试'
     },
     en: {
       title: 'HIKROBOT · CodeReader Toolbox',
@@ -393,7 +539,153 @@
       bomUnknownModel: 'Unknown Model',
       bomOther: 'Other',
       langBtn: '中',
-      contactUs: 'Contact Us', contactTitle: '📱 Follow Us~Learn more about HIKROBOT latest updates！', contactHint: '💡 Scan to follow for latest updates'
+      contactUs: 'Contact Us', contactTitle: '📱 Follow Us~Learn more about HIKROBOT latest updates！', contactHint: '💡 Scan to follow for latest updates',
+
+      // Verify page
+      verifyBack: '← Back to Smart Selection',
+      verifySeriesLabel: 'Category', verifySeriesPh: '-- Select Category --',
+      verifyResLabel: 'Resolution', verifyResPh: '-- All Resolutions --',
+      verifyModelLabel: 'Model', verifyModelPh: '-- Select Category First --',
+      verifyWDPh: 'Working Distance',
+      verifyCodeTypeLabel: 'Code Type',
+      verifyModuleSizePh: 'Module Size',
+      verifySpeedTitle: '🏃 Motion Speed (Optional)', verifySpeedPh: 'Motion Speed',
+      verifySpeedHint: 'Leave blank to skip max exposure time calculation',
+      verifyRunBtn: '⚡ Run Verification',
+      verifySchematicTitle: '📐 Verification Schematic', verifyResultTitle: '🏆 Verification Result',
+      verifyEmpty: 'Select a model and enter parameters, then click "Run Verification"',
+
+      // Home footer / misc
+      footerSite: '🌐 HIKROBOT Official Website',
+      announcementBtn: '📢 Notice',
+      bomDownload: '📥 Docs Download',
+      stitchDownloadBtn: 'Download Schematic',
+      mpThDocs: 'Docs',
+      mpNamingBtn: '📖 Naming Rules',
+
+      // Solutions page cards
+      solSdkTitle: 'SDK Reference Docs',
+      solSdkDesc: 'MvCodeReader SDK C/C# programming guide, from environment setup to full examples',
+      solViewerTitle: 'STEP & DXF Online Viewer',
+      solViewerDesc: 'Browser-based 3D/2D CAD viewer supporting STEP, IGES, BREP, DXF formats, pure front-end parsing',
+
+      // Contact card labels
+      contactWechat: 'WeChat', contactDouyin: 'Douyin', contactBili: 'Bilibili',
+      contactWechatAlt: 'WeChat', contactDouyinAlt: 'Douyin', contactBiliAlt: 'Bilibili',
+
+      // Lightbox
+      lightboxCloseHint: 'Click anywhere to close',
+      previewAlt: 'Preview',
+
+      // Announcement
+      announcementTitle: '📢 Notice',
+      announcementHistory: 'History ▾', announcementHistoryOpen: 'History ▴',
+      announcementDismiss: 'OK',
+
+      // Robot bubble
+      robotBubble: 'Hello! I am "V", the HIKROBOT machine vision assistant. Whether you are installing industrial cameras, debugging code readers, using 3D products, or setting up VisionMaster, just say:<br><b>"Product info + Question / Requirement"</b>, and I will provide professional, actionable solutions right away.',
+
+      // Naming rules modal
+      namingTitle: '📖 HIKROBOT MV-ID Code Reader Naming Rules',
+      namingStructure: 'Model Structure', namingExamples: 'Parsing Examples',
+      namingFullModel: 'Full Model', namingParse: 'Parsing',
+      namingBrand: 'Brand', namingCategory: 'Category', namingSeries: 'Series', namingSeriesDesc: 'Series 2 · 2.4MP',
+      namingType: 'Type', namingTypeDesc: 'Enhanced', namingFocal: 'Focal Length', namingFocus: 'Focusing',
+      namingFocusDesc: 'Mechanical Focus', namingLight: 'Illumination', namingLightDesc: 'Red', namingVariant: 'Variant',
+      namingVariantDesc: 'Standard Light', namingLens: 'Lens', namingLensDesc: 'Standard Lens',
+      namingStructNote: 'Optional suffix: <b style="color:#e65100;">-U</b>=USB · <b style="color:#e65100;">-R</b>=Serial (Series 8 only)<br>C-mount models: replace focal with <b style="color:#e65100;">00C</b>, no built-in lens or light',
+      namingEx1: '<b>Series 8</b> · <b>0.3MP</b> · Basic — <b>3mm</b> Fixed Focus · <b>White</b> · Standard · <b>Standard Lens</b> — Ethernet',
+      namingEx2: '<b>Series 8</b> · <b>0.3MP</b> · Basic — <b>3mm</b> Fixed Focus · <b>White</b> · Standard · <b>Polarized Lens</b> — <b>Serial</b>',
+      namingEx3: '<b>Series 2</b> · <b>1.3MP</b> · Micro — <b>4.63mm</b> · <b>Red</b> · Standard · <b>Standard Lens</b> — <b>USB</b>',
+      namingEx4: '<b>Series 2</b> · <b>2.4MP</b> · Enhanced — <b>8mm</b> <b>Mechanical Focus</b> · <b>Red</b> · Standard · <b>Standard Lens</b> — Ethernet',
+      namingEx5: '<b>Series 3</b> · <b>1.3MP</b> · Premium — <b>6mm</b> <b>Mechanical Focus</b> · <b>White</b> · Standard · <b>Standard Lens</b> — Ethernet',
+      namingEx6: '<b>Series 3</b> · <b>4.0MP</b> · Rolling Shutter — <b>C-mount Lens</b> — No Built-in Light',
+      namingEx7: '<b>Series 5</b> · <b>12MP</b> · Rolling Shutter — <b>8mm</b> <b>Liquid Focus</b> · <b>Red</b> · Standard · <b>Standard Lens</b> — Ethernet',
+      namingEx8: '<b>Series 5</b> · <b>20MP</b> · Basic — <b>C-mount Lens</b> — No Built-in Light',
+
+      // SDK page
+      sdkTocTitle: '📑 Quick Navigation', sdkFullDoc: '📖 View Full Docs',
+      sdkTocOverview: '📋 SDK Overview', sdkTocEnv: '🔧 Dev Environment', sdkTocFlow: '⭐ Programming Flow',
+      sdkTocParam: '⚙️ Parameters', sdkTocGrab: '📷 Image Acquisition', sdkTocTrigger: '🎯 Trigger Modes',
+      sdkTocError: '🔍 Troubleshooting', sdkTocApi: '📚 API Quick Ref', sdkTocAdvanced: '🔗 Advanced Scenarios',
+      sdkBannerTitle: '📖 Full SDK Docs Now Online', sdkBannerDesc: 'Complete code examples, API reference, advanced scenarios and more',
+      sdkBannerBtn: 'View Full Docs →',
+      sdkHeroTitle: 'Secondary Development Guide', sdkHeroDesc: 'HIKROBOT code reader C / C# development kit · from beginner to pro',
+      sdkLangC: 'C Language', sdkLangCS: 'C# Language',
+      sdkPathEnvT: 'Setup Environment', sdkPathEnvD: 'Project & Network Config', sdkPathCsEnvD: 'References & Config',
+      sdkPathFlowT: 'Write Code', sdkPathFlowD: 'Three-phase flow',
+      sdkPathParamT: 'Parameters', sdkPathParamD: 'Node type mapping', sdkPathCsParamD: 'Node mapping',
+      sdkPathApiT: 'API Quick Ref', sdkPathApiD: 'Common APIs', sdkPathCsApiD: 'Common APIs',
+      sdkEnvTitle: '🔧 Dev Environment Setup', sdkPrereq: 'Prerequisites',
+      sdkPrereq1: '<strong>IDMVS</strong> or <strong>MVS Runtime</strong> installed',
+      sdkPrereq2: 'Configure SDK include and lib paths',
+      sdkPrereq3: 'Program bitness must match DLL bitness (x64 for x64)',
+      sdkBitnessWarn: '<strong>Program bitness must match the DLL!</strong> Mixing causes load failure.',
+      sdkHeaders: 'Core Headers', sdkHdr1: 'All SDK function declarations (main interface)', sdkHdr2: 'Struct & enum definitions', sdkHdr3: 'Error code definitions',
+      sdkGige: 'GigE Network Setup', sdkGige1: 'Enable <strong>Jumbo Frame</strong> on NIC, 9000+ recommended',
+      sdkGige2: 'Device IP and PC NIC on the same subnet', sdkGige3: 'Disable firewall or add port exceptions',
+      sdkFlowTitle: '⭐ Programming Flow (Key)', sdkConnPhase: 'Connection', sdkRunPhase: 'Runtime', sdkRelPhase: 'Release',
+      sdkEnumDev: 'Enumerate Devices', sdkCreateHandle: 'Create Handle', sdkSetArea: 'Set Area', sdkOpenDev: 'Open Device',
+      sdkSetParam: 'Set Parameters', sdkStartGrab: 'Start Grabbing', sdkGetResult: 'Get Result',
+      sdkStopGrab: 'Stop Grabbing', sdkCloseDev: 'Close Device', sdkDestroyHandle: 'Destroy Handle',
+      sdkCodeConn: 'Connection Phase Code', sdkCodeEnumC: 'C — Enumerate Devices', sdkCopy: 'Copy',
+      sdkC1: '// 1. Enumerate devices', sdkC2: '// 2. Create handle', sdkC3: '// 3. Set area (required in mainland China)', sdkC4: '// 4. Open device',
+      sdkAreaTip: 'Setting the area is mandatory. Skipping it may cause device open failure.',
+      sdkCodeRun: 'Runtime Phase Code', sdkCodeRunC: 'C — Params & Grabbing',
+      sdkC5: '// Set continuous acquisition mode', sdkC6: '// Start grabbing', sdkC7: '// Get one frame',
+      sdkCodeRel: 'Release Phase Code', sdkCodeRelC: 'C — Release Resources',
+      sdkParamTitle: '⚙️ Parameters', sdkNodeMap: 'Node Types & Interface Mapping',
+      sdkType: 'Type', sdkGet: 'Get', sdkSet: 'Set', sdkTypical: 'Typical Params',
+      sdkEnumWarn: '<strong>Enum nodes MUST use integer values!</strong><br>❌ SetEnumValue(handle, "TriggerMode", "On")<br>✅ SetEnumValue(handle, "TriggerMode", MV_CODEREADER_TRIGGER_MODE_ON)',
+      sdkTriggerTitle: '🎯 Trigger Modes', sdkMode: 'Mode',
+      sdkCont: 'Continuous', sdkSoftTrig: 'Software Trigger', sdkHardTrig: 'Hardware Trigger',
+      sdkSoftExample: 'Software Trigger Example', sdkCodeSoftC: 'C — Software Trigger',
+      sdkSoftComment: '// Then grab with GetOneFrameTimeoutEx2',
+      sdkErrTitle: '🔍 Common Troubleshooting', sdkSymptom: 'Symptom', sdkCheck: 'Check',
+      sdkErr1: 'Cannot enumerate device', sdkErr1D: 'NIC IP, device IP, cable, firewall, power',
+      sdkErr2: 'Enum OK but cannot open', sdkErr2D: 'Area set? Device in use? IP conflict?',
+      sdkErr3: 'Opens but no image', sdkErr3D: 'Not grabbing, wrong trigger mode, no trigger signal',
+      sdkErr4: 'Parameter set failed', sdkErr4D: 'Node type mismatch, value out of range, grab state not allowed',
+      sdkErr5: 'Empty read result', sdkErr5D: 'Code type off, bad exposure, ROI misconfigured',
+      sdkApiTitle: '📚 API Quick Ref', sdkApiDev: 'Device Management', sdkApiArea: 'Set area (China: 0xa80, 0x10000)',
+      sdkOpenClose: 'Open / Close Device', sdkApiParamRW: 'Param Read / Write',
+      sdkIntNode: 'Integer node', sdkFloatNode: 'Float node', sdkEnumNode: 'Enumeration node (use integer)',
+      sdkBoolNode: 'Boolean node', sdkStringNode: 'String node', sdkCmdNode: 'Command node (e.g. TriggerSoftware)',
+      sdkApiGrab: 'Grab Control', sdkStartStop: 'Start / Stop Grabbing', sdkPoll: 'Poll for frame (timeout ms)', sdkRegCb: 'Register image callback',
+      sdkCsRef: 'Project references <code>MvCodeReaderSDKNet.dll</code>', sdkCsRefs: 'Common References',
+      sdkCsRecvThread: '// Receive thread', sdkCsConst: 'Device Type Constants',
+      sdkConst: 'Constant', sdkValue: 'Value', sdkDesc: 'Description', sdkGigeDev: 'GigE device', sdkUsbDev: 'USB3.0 device',
+      sdkCodeEnumCS: 'C# — Enumerate Devices', sdkCsMarshal: '// Create handle (must use Marshal.PtrToStructure)',
+      sdkCsDllImport: 'In C#, SetAreaInfoConfig must be called via DllImport — no _NET suffixed version exists',
+      sdkRelCode: 'Release Phase (try/finally)', sdkCodeRelCS: 'C# — Release Resources',
+      sdkCsGC: 'C# has GC, but SDK handles<strong> must be released manually</strong> — wrap in try/finally.',
+      sdkNodeMapCS: 'Node Types & C# Interface Mapping', sdkValType: 'Value Type',
+      sdkCommonParams: 'Common Params', sdkParam: 'Parameter', sdkNodeName: 'Node Name',
+      sdkExposure: 'Exposure', sdkGain: 'Gain', sdkTrigMode: 'Trigger Mode', sdkTrigSrc: 'Trigger Source',
+      sdkPollShort: 'Poll for frame',
+      robotTitle: 'Smart Assistant', scClear: 'Clear',
+      scNoData: 'Status code data not loaded. Please refresh the page.',
+      scLoadErr: 'Module failed to load. Please refresh the page.',
+      mpDlBase: 'View base model docs', mpDlDist: 'View distributor model docs', mpNone: 'None',
+      bomNoMatchAcc: 'No matching accessory', bomLen: 'Length', bomMat: 'Material', bomAll: 'All',
+      bomUpdated: 'Updated', bomAutoGen: 'Auto Generate BOM', bomMatCode: 'Material: ',
+      bomFits: 'Fits {n} models | Click to add', bomNoResult: 'No results', bomExists: 'This accessory is already in the BOM',
+      bomEmptyAlert: 'BOM is empty',
+      bomCsvHash: '#', bomCsvType: 'Type', bomCsvName: 'Name', bomCsvDesc: 'Description', bomCsvCode: 'Code',
+      bomCsvNameFile: 'BOM',
+      stReasonFov: 'FOV exceeds single-unit limit', stReasonDist: 'Working distance limited', stReasonPpm: 'PPM out of range',
+      stViewPlan: '📐 View Stitching Plan', stHintTitle: 'Single-camera plan cannot meet the requirement',
+      stHintDescCan: 'The requested FOV is too large for one code reader. We recommend a multi-camera stitching setup where multiple readers work together for full coverage.',
+      stHintDescNo: 'PPM of all models is out of the valid range under current parameters. Adjust module size, working distance, or FOV.',
+      stSingleFov: 'Single FOV', stTotalCover: 'Total coverage', stOverlapH: 'H-overlap', stOverlapV: 'V-overlap',
+      stReqCover: 'Requested', stNoPlan: 'No suitable stitching plan found', stNoPlanHint: 'Adjust parameters: increase working distance, reduce coverage, or choose higher resolution',
+      stViewAll: '📋 View All Plans', stSelectPlan: 'Select Stitching Plan', stAll: 'All', stUnits: ' units',
+      stResetView: 'Reset view', stTopView: 'Top view', stCamCount: 'Cameras', stMountHeight: 'Mount height',
+      stHrz: 'H', stVrt: 'V', stOverlap: 'Overlap',
+      copiedShort: 'Copied', threeJsLoadErr: 'Three.js failed to load',
+      verifyMPUnit: 'MP', verifyWdRec: 'Recommended WD: ', verifyWdRange: 'WD range: ',
+      verifyMaxExposure: 'Max Exposure', verifyEmptyWait: 'Waiting for parameters...',
+      mpLoadErr: 'Module failed to load. Please refresh the page.'
     }
   };
 
@@ -443,6 +735,11 @@
     // 2b. 处理 data-i18n-alt (alt text)
     document.querySelectorAll('[data-i18n-alt]').forEach(function(el) {
       el.alt = t(el.getAttribute('data-i18n-alt'));
+    });
+
+    // 2c. 处理 data-i18n-title (title attribute)
+    document.querySelectorAll('[data-i18n-title]').forEach(function(el) {
+      el.title = t(el.getAttribute('data-i18n-title'));
     });
 
     // 3. 处理 data-i18n-html (innerHTML)
@@ -740,10 +1037,10 @@
 
     if (!codeType || isNaN(mSize) || isNaN(fovW) || isNaN(fovH) || isNaN(wd) || 
         mSize <= 0 || fovW <= 0 || fovH <= 0 || wd <= 0) {
-      alert('请完整填写所有必填参数（码制类型、模块尺寸、工作距离、视野宽度、视野高度），且数值必须大于0');
+      alert(t('alertFillAll'));
       resetSchematic();
       var top1El = document.getElementById('top1Content');
-      if (top1El) top1El.innerHTML = '<div class="empty-state">等待参数输入...</div>';
+      if (top1El) top1El.innerHTML = '<div class="empty-state">' + t('verifyEmptyWait') + '</div>';
       var modalBtnEl = document.getElementById('showModalBtn');
       if (modalBtnEl) modalBtnEl.disabled = true;
       cachedFilteredList = null;
@@ -890,21 +1187,21 @@
       });
 
       var reasonTags = '';
-      if (failReasons.indexOf('fov') !== -1) reasonTags += '<span class="stitch-hint-reason">视野超出单机极限</span>';
-      if (failReasons.indexOf('dist') !== -1) reasonTags += '<span class="stitch-hint-reason">工作距离受限</span>';
-      if (failReasons.indexOf('ppm') !== -1) reasonTags += '<span class="stitch-hint-reason">PPM超出范围</span>';
-      if (!reasonTags) reasonTags = '<span class="stitch-hint-reason">视野超出单机极限</span>';
+      if (failReasons.indexOf('fov') !== -1) reasonTags += '<span class="stitch-hint-reason">' + t('stReasonFov') + '</span>';
+      if (failReasons.indexOf('dist') !== -1) reasonTags += '<span class="stitch-hint-reason">' + t('stReasonDist') + '</span>';
+      if (failReasons.indexOf('ppm') !== -1) reasonTags += '<span class="stitch-hint-reason">' + t('stReasonPpm') + '</span>';
+      if (!reasonTags) reasonTags = '<span class="stitch-hint-reason">' + t('stReasonFov') + '</span>';
 
       // 只要有PPM超出范围，一律不显示拼接方案
       var canStitch = failReasons.indexOf('ppm') === -1 && failReasons.indexOf('fov') !== -1;
-      var stitchBtnHtml = canStitch ? '<button class="stitch-hint-btn" id="showStitchBtn">📐 查看拼接方案</button>' : '';
+      var stitchBtnHtml = canStitch ? '<button class="stitch-hint-btn" id="showStitchBtn">' + t('stViewPlan') + '</button>' : '';
 
       var top1El2 = document.getElementById('top1Content');
       if (top1El2) top1El2.innerHTML =
         '<div class="stitch-hint-card">' +
           '<div class="stitch-hint-icon">📷</div>' +
-          '<div class="stitch-hint-title">单相机方案无法满足当前需求</div>' +
-          '<div class="stitch-hint-desc">' + (canStitch ? '您输入的视野范围较大，单台读码器无法完整覆盖。建议采用多相机组网拼接方案，通过多台读码器协同工作实现完整视野覆盖。' : '当前参数下所有型号的PPM均超出合理范围，请调整模块尺寸、工作距离或视野参数。') + '</div>' +
+          '<div class="stitch-hint-title">' + t('stHintTitle') + '</div>' +
+          '<div class="stitch-hint-desc">' + (canStitch ? t('stHintDescCan') : t('stHintDescNo')) + '</div>' +
           stitchBtnHtml +
           '<div class="stitch-hint-reasons">' + reasonTags + '</div>' +
         '</div>';
@@ -1036,13 +1333,17 @@
       if (e.target === contactModal) contactModal.classList.remove('active');
     });
 
-    // 点击图片打开 lightbox
+    // 点击图片/卡片打开 lightbox
     if (lightbox && lightboxImg) {
       contactModal.addEventListener('click', function(e) {
-        var wrap = e.target.closest('.contact-card-img-wrap');
-        if (wrap) {
-          lightboxImg.src = wrap.getAttribute('data-src');
-          lightbox.classList.add('active');
+        var card = e.target.closest('.contact-card');
+        if (card) {
+          var wrap = card.querySelector('.contact-card-img-wrap');
+          var src = (wrap && wrap.getAttribute('data-src')) || '';
+          if (src) {
+            lightboxImg.src = src;
+            lightbox.classList.add('active');
+          }
         }
       });
 
@@ -1182,12 +1483,12 @@
           // 颜色图例
           ctx.font = '14px sans-serif';
           var items = [
-            { color: '#4a90d9', label: '单机视野 ' + plan.fov.width + 'x' + plan.fov.height + 'mm' },
-            { color: '#f76504', label: '总覆盖 ' + Math.round(plan.grid.actualW) + 'x' + Math.round(plan.grid.actualH) + 'mm' }
+            { color: '#4a90d9', label: t('stSingleFov') + ' ' + plan.fov.width + 'x' + plan.fov.height + 'mm' },
+            { color: '#f76504', label: t('stTotalCover') + ' ' + Math.round(plan.grid.actualW) + 'x' + Math.round(plan.grid.actualH) + 'mm' }
           ];
-          if (plan.overlapW > 0) items.push({ color: '#e74c3c', label: '水平重叠 ' + plan.overlapW + 'mm' });
-          if (plan.overlapH > 0) items.push({ color: '#3884f4', label: '垂直重叠 ' + plan.overlapH + 'mm' });
-          items.push({ color: '#0A1628', label: '需求覆盖 ' + Math.round(window._stitchTotalW) + 'x' + Math.round(window._stitchTotalH) + 'mm' });
+          if (plan.overlapW > 0) items.push({ color: '#e74c3c', label: t('stOverlapH') + ' ' + plan.overlapW + 'mm' });
+          if (plan.overlapH > 0) items.push({ color: '#3884f4', label: t('stOverlapV') + ' ' + plan.overlapH + 'mm' });
+          items.push({ color: '#0A1628', label: t('stReqCover') + ' ' + Math.round(window._stitchTotalW) + 'x' + Math.round(window._stitchTotalH) + 'mm' });
 
           var colX = lx;
           items.forEach(function(item, i) {
@@ -1241,7 +1542,7 @@
     if (navigator.clipboard) {
       navigator.clipboard.writeText(text).then(function() {
         var original = btn.textContent;
-        btn.textContent = '已复制';
+        btn.textContent = t('copiedShort');
         btn.style.background = '#27ae60';
         setTimeout(function() {
           btn.textContent = original;
@@ -1259,7 +1560,7 @@
       document.execCommand('copy');
       document.body.removeChild(textarea);
       var original = btn.textContent;
-      btn.textContent = '已复制';
+      btn.textContent = t('copiedShort');
       btn.style.background = '#27ae60';
       setTimeout(function() {
         btn.textContent = original;
@@ -1424,7 +1725,7 @@
     var planArea = document.getElementById('stitchPlanArea');
     if (!results || results.length === 0) {
       svgArea.style.display = 'none';
-      planArea.innerHTML = '<div class="stitch-warning">😔 未找到合适的拼接方案<br>请调整参数：增大工作距离、减小覆盖区域、或选择更高分辨率型号</div>';
+      planArea.innerHTML = '<div class="stitch-warning">😔 ' + t('stNoPlan') + '<br>' + t('stNoPlanHint') + '</div>';
       planArea.style.display = '';
       return;
     }
@@ -1443,7 +1744,7 @@
     var oldBtn = document.getElementById('stitchPlanSwitchBtn');
     if (oldBtn) oldBtn.remove();
     // 查看全部方案按钮放在示意图下方
-    var btnHtml = '<button class="stitch-plan-switch-btn" id="stitchPlanSwitchBtn" style="width:100%;margin-top:10px;">📋 查看全部方案 (' + displayResults.length + ')</button>';
+    var btnHtml = '<button class="stitch-plan-switch-btn" id="stitchPlanSwitchBtn" style="width:100%;margin-top:10px;">' + t('stViewAll') + ' (' + displayResults.length + ')</button>';
     svgArea.insertAdjacentHTML('afterend', btnHtml);
     // 绑定按钮事件
     var switchBtn = document.getElementById('stitchPlanSwitchBtn');
@@ -1479,11 +1780,11 @@
     var modalHtml = '<div class="stitch-plan-modal-overlay" id="stitchPlanModal">';
     modalHtml += '<div class="stitch-plan-modal">';
     modalHtml += '<div class="stitch-plan-modal-header">';
-    modalHtml += '<span>选择拼接方案</span>';
+    modalHtml += '<span>' + t('stSelectPlan') + '</span>';
     modalHtml += '<button class="stitch-plan-modal-close" id="stitchPlanModalClose">&times;</button>';
     modalHtml += '</div>';
     modalHtml += '<div class="stitch-series-tabs">';
-    modalHtml += '<span class="stitch-series-tab' + (!filterSeries ? ' active' : '') + '" data-series="all">全部 (' + results.length + ')</span>';
+    modalHtml += '<span class="stitch-series-tab' + (!filterSeries ? ' active' : '') + '" data-series="all">' + t('stAll') + ' (' + results.length + ')</span>';
     allSeries.forEach(function(s) {
       var count = results.filter(function(r) { return r.model.series === s; }).length;
       modalHtml += '<span class="stitch-series-tab' + (filterSeries === s ? ' active' : '') + '" data-series="' + s + '">' + s + ' (' + count + ')</span>';
@@ -1498,7 +1799,7 @@
       modalHtml += '<span class="stitch-plan-spec">' + r.model.resolution.w + '×' + r.model.resolution.h + '</span>';
       modalHtml += '</div>';
       modalHtml += '<div class="stitch-plan-right">';
-      modalHtml += '<span class="stitch-plan-count">' + r.grid.cols + '×' + r.grid.rows + ' = ' + r.grid.total + '台</span>';
+      modalHtml += '<span class="stitch-plan-count">' + r.grid.cols + '×' + r.grid.rows + ' = ' + r.grid.total + t('stUnits') + '</span>';
       modalHtml += '<span class="stitch-plan-ppm">PPM ' + r.ppm.toFixed(2) + '</span>';
       modalHtml += '</div>';
       modalHtml += '</div>';
@@ -1552,7 +1853,7 @@
             listHtml += '<span class="stitch-plan-spec">' + r.model.resolution.w + '×' + r.model.resolution.h + '</span>';
             listHtml += '</div>';
             listHtml += '<div class="stitch-plan-right">';
-            listHtml += '<span class="stitch-plan-count">' + r.grid.cols + '×' + r.grid.rows + ' = ' + r.grid.total + '台</span>';
+            listHtml += '<span class="stitch-plan-count">' + r.grid.cols + '×' + r.grid.rows + ' = ' + r.grid.total + t('stUnits') + '</span>';
             listHtml += '<span class="stitch-plan-ppm">PPM ' + r.ppm.toFixed(2) + '</span>';
             listHtml += '</div>';
             listHtml += '</div>';
@@ -1598,7 +1899,7 @@
         var s = document.createElement('script');
         s.src = 'js/three.min.js';
         s.onload = function() { renderStitch3D(plan, barcodeW, barcodeH, orient, reqW, reqH); };
-        s.onerror = function() { container.innerHTML = '<div style="padding:40px;text-align:center;color:#c00">Three.js 加载失败</div>'; };
+        s.onerror = function() { container.innerHTML = '<div style="padding:40px;text-align:center;color:#c00">' + t('threeJsLoadErr') + '</div>'; };
         document.head.appendChild(s);
       }
       return '';
@@ -1881,11 +2182,11 @@
     // Info overlay (inside 3D container)
     var infoHtml = '<div class="stitch-3d-info">';
     infoHtml += '<div class="stitch-3d-info-title">' + plan.model.model + '</div>';
-    infoHtml += '<div class="stitch-3d-info-row">' + cols + 'x' + rows + ' = ' + (cols*rows) + '台</div>';
+    infoHtml += '<div class="stitch-3d-info-row">' + cols + 'x' + rows + ' = ' + (cols*rows) + t('stUnits') + '</div>';
     infoHtml += '</div>';
     infoHtml += '<div class="stitch-3d-controls">';
-    infoHtml += '<button class="stitch-3d-ctrl-btn" id="stitch3dReset" title="重置视角">&#x27F2;</button>';
-    infoHtml += '<button class="stitch-3d-ctrl-btn" id="stitch3dTop" title="俯视图">&#x2B07;</button>';
+    infoHtml += '<button class="stitch-3d-ctrl-btn" id="stitch3dReset" title="' + t('stResetView') + '">&#x27F2;</button>';
+    infoHtml += '<button class="stitch-3d-ctrl-btn" id="stitch3dTop" title="' + t('stTopView') + '">&#x2B07;</button>';
     infoHtml += '</div>';
     container.insertAdjacentHTML('afterbegin', infoHtml);
 
@@ -1893,24 +2194,24 @@
     var annHtml = '<div class="stitch-3d-annotation">';
     annHtml += '<div class="stitch-3d-ann-grid">';
     // Row 1: 相机数量 | 单机视野
-    annHtml += '<div class="stitch-3d-ann-cell"><span class="stitch-3d-ann-dot" style="background:#f76504"></span><span class="stitch-3d-ann-label">相机数量</span><span class="stitch-3d-ann-val">' + (cols * rows) + ' 台 (' + cols + 'x' + rows + ')</span></div>';
-    annHtml += '<div class="stitch-3d-ann-cell"><span class="stitch-3d-ann-dot" style="background:#4a90d9"></span><span class="stitch-3d-ann-label">单机视野</span><span class="stitch-3d-ann-val">' + fovW + ' x ' + fovH + ' mm</span></div>';
+    annHtml += '<div class="stitch-3d-ann-cell"><span class="stitch-3d-ann-dot" style="background:#f76504"></span><span class="stitch-3d-ann-label">' + t('stCamCount') + '</span><span class="stitch-3d-ann-val">' + (cols * rows) + ' ' + t('stUnits') + ' (' + cols + 'x' + rows + ')</span></div>';
+    annHtml += '<div class="stitch-3d-ann-cell"><span class="stitch-3d-ann-dot" style="background:#4a90d9"></span><span class="stitch-3d-ann-label">' + t('stSingleFov') + '</span><span class="stitch-3d-ann-val">' + fovW + ' x ' + fovH + ' mm</span></div>';
     // Row 2: 总覆盖区域 | 需求覆盖区域
-    annHtml += '<div class="stitch-3d-ann-cell"><span class="stitch-3d-ann-dot" style="background:#f76504"></span><span class="stitch-3d-ann-label">总覆盖区域</span><span class="stitch-3d-ann-val">' + Math.round(actualW) + ' x ' + Math.round(actualH) + ' mm</span></div>';
+    annHtml += '<div class="stitch-3d-ann-cell"><span class="stitch-3d-ann-dot" style="background:#f76504"></span><span class="stitch-3d-ann-label">' + t('stTotalCover') + '</span><span class="stitch-3d-ann-val">' + Math.round(actualW) + ' x ' + Math.round(actualH) + ' mm</span></div>';
     if (reqW && reqH) {
-      annHtml += '<div class="stitch-3d-ann-cell"><span class="stitch-3d-ann-dot" style="background:#0A1628"></span><span class="stitch-3d-ann-label">需求覆盖</span><span class="stitch-3d-ann-val">' + Math.round(reqW) + ' x ' + Math.round(reqH) + ' mm</span></div>';
+      annHtml += '<div class="stitch-3d-ann-cell"><span class="stitch-3d-ann-dot" style="background:#0A1628"></span><span class="stitch-3d-ann-label">' + t('stReqCover') + '</span><span class="stitch-3d-ann-val">' + Math.round(reqW) + ' x ' + Math.round(reqH) + ' mm</span></div>';
     } else {
       annHtml += '<div class="stitch-3d-ann-cell"></div>';
     }
     // Row 3: PPM | 安装高度
     annHtml += '<div class="stitch-3d-ann-cell"><span class="stitch-3d-ann-dot" style="background:#888"></span><span class="stitch-3d-ann-label">PPM</span><span class="stitch-3d-ann-val">' + plan.ppm.toFixed(2) + '</span></div>';
-    annHtml += '<div class="stitch-3d-ann-cell"><span class="stitch-3d-ann-dot" style="background:#888"></span><span class="stitch-3d-ann-label">安装高度</span><span class="stitch-3d-ann-val">' + Math.round(plan.workingDist || 200) + ' mm</span></div>';
+    annHtml += '<div class="stitch-3d-ann-cell"><span class="stitch-3d-ann-dot" style="background:#888"></span><span class="stitch-3d-ann-label">' + t('stMountHeight') + '</span><span class="stitch-3d-ann-val">' + Math.round(plan.workingDist || 200) + ' mm</span></div>';
     // Row 4: 重叠区域 (full width)
     if (overlapW > 0 || overlapH > 0) {
       var overlapParts = [];
-      if (overlapW > 0) overlapParts.push(overlapW + 'mm(水平)');
-      if (overlapH > 0) overlapParts.push(overlapH + 'mm(垂直)');
-      annHtml += '<div class="stitch-3d-ann-cell stitch-3d-ann-cell-full"><span class="stitch-3d-ann-dot" style="background:#e74c3c"></span><span class="stitch-3d-ann-label">重叠区域</span><span class="stitch-3d-ann-val">' + overlapParts.join(' / ') + '</span></div>';
+      if (overlapW > 0) overlapParts.push(overlapW + 'mm(' + t('stHrz') + ')');
+      if (overlapH > 0) overlapParts.push(overlapH + 'mm(' + t('stVrt') + ')');
+      annHtml += '<div class="stitch-3d-ann-cell stitch-3d-ann-cell-full"><span class="stitch-3d-ann-dot" style="background:#e74c3c"></span><span class="stitch-3d-ann-label">' + t('stOverlap') + '</span><span class="stitch-3d-ann-val">' + overlapParts.join(' / ') + '</span></div>';
     }
     annHtml += '</div></div>';
     // Insert after container
@@ -2081,7 +2382,7 @@
       toggleBtn.onclick = function() {
         historyOpen = !historyOpen;
         historyList.style.display = historyOpen ? 'block' : 'none';
-        toggleBtn.textContent = historyOpen ? '历史公告 ▴' : '历史公告 ▾';
+        toggleBtn.textContent = historyOpen ? t('announcementHistoryOpen') : t('announcementHistory');
       };
       historyList.style.display = 'none';
     }
@@ -2142,7 +2443,7 @@
     if (typeof PRODUCT_DB === 'undefined') return;
     var seriesSel = document.getElementById('verifySeriesSel');
     if (!seriesSel) return;
-    seriesSel.innerHTML = '<option value="">-- 请选择大类 --</option>';
+    seriesSel.innerHTML = '<option value="">' + t('verifySeriesPh') + '</option>';
     var seriesMap = {};
     PRODUCT_DB.forEach(function(m) {
       if (m.series && !seriesMap[m.series]) seriesMap[m.series] = true;
@@ -2160,9 +2461,9 @@
     var resSel = document.getElementById('verifyResSel');
     var modelSel = document.getElementById('verifyModelSel');
     var info = document.getElementById('verifyModelInfo');
-    resSel.innerHTML = '<option value="">-- 全部分辨率 --</option>';
+    resSel.innerHTML = '<option value="">' + t('verifyResPh') + '</option>';
     resSel.disabled = true;
-    modelSel.innerHTML = '<option value="">-- 请选择型号 --</option>';
+    modelSel.innerHTML = '<option value="">' + t('verifyModelPh') + '</option>';
     modelSel.disabled = true;
     if (info) info.innerHTML = '';
     _verifyFilteredModels = [];
@@ -2183,7 +2484,7 @@
     Object.keys(resMap).sort().forEach(function(r) {
       var parts = r.split('×');
       var pixels = parseInt(parts[0]) * parseInt(parts[1]);
-      var label = (pixels / 10000).toFixed(0) + '万';
+      var label = (pixels / 10000).toFixed(0) + t('verifyMPUnit');
       var opt = document.createElement('option');
       opt.value = r;
       opt.textContent = label + ' (' + r + ')';
@@ -2207,7 +2508,7 @@
   function fillVerifyModels(filtered) {
     var modelSel = document.getElementById('verifyModelSel');
     var info = document.getElementById('verifyModelInfo');
-    modelSel.innerHTML = '<option value="">-- 请选择型号 --</option>';
+    modelSel.innerHTML = '<option value="">' + t('verifyModelPh') + '</option>';
     modelSel.disabled = true;
     if (info) info.innerHTML = '';
     if (!filtered.length) return;
@@ -2233,9 +2534,9 @@
         var minV = m.workingDist.min;
         var maxV = m.workingDist.max;
         if (minV === maxV) {
-          rangeEl.innerHTML = '推荐工作距离：<strong>' + minV + 'mm</strong>';
+          rangeEl.innerHTML = t('verifyWdRec') + '<strong>' + minV + 'mm</strong>';
         } else {
-          rangeEl.innerHTML = '工作距离范围：<strong>' + minV + ' ~ ' + maxV + 'mm</strong>';
+          rangeEl.innerHTML = t('verifyWdRange') + '<strong>' + minV + ' ~ ' + maxV + 'mm</strong>';
         }
         rangeEl.style.color = '#f76504';
       } else if (rangeEl) {
@@ -2324,7 +2625,7 @@
       var speedMmS = speedUnit === 'm/s' ? speedVal * 1000 : (speedUnit === 'cm/s' ? speedVal * 10 : speedVal);
       var moduleMM = toMM_v(moduleSize, moduleUnit);
       var maxExposureUs = (moduleMM / ppm) / speedMmS * 1000000;
-      exposureHtml = '<div class="result-card"><strong>最大曝光</strong><span>' + maxExposureUs.toFixed(0) + ' μs</span></div>';
+      exposureHtml = '<div class="result-card"><strong>' + t('verifyMaxExposure') + '</strong><span>' + maxExposureUs.toFixed(0) + ' μs</span></div>';
     }
 
     // 结果卡片
@@ -2335,14 +2636,14 @@
     if (exposureHtml) {
       // 有运动速度：三列一行
       html = '<div class="result-main" style="grid-template-columns:1fr 1fr 1fr;">' +
-        '<div class="result-card"><strong>型号</strong><span>' + esc(model.model) + '</span></div>' +
+        '<div class="result-card"><strong>' + t('verifyModelLabel') + '</strong><span>' + esc(model.model) + '</span></div>' +
         '<div class="result-card"><strong>PPM</strong><span>' + ppmDisplay + ppmLevelDisplay + '</span></div>' +
         exposureHtml +
       '</div>';
     } else {
       // 无运动速度：两列
       html = '<div class="result-main">' +
-        '<div class="result-card"><strong>型号</strong><span>' + esc(model.model) + '</span></div>' +
+        '<div class="result-card"><strong>' + t('verifyModelLabel') + '</strong><span>' + esc(model.model) + '</span></div>' +
         '<div class="result-card"><strong>PPM</strong><span>' + ppmDisplay + ppmLevelDisplay + '</span></div>' +
       '</div>';
     }

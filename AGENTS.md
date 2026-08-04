@@ -2,7 +2,7 @@
 
 ## 项目概述
 
-海康机器人读码器选型工具 V3.7。纯前端，无需构建系统或服务器——浏览器直接打开 `index.html` 即可运行。
+海康机器人读码器选型工具 V3.9。纯前端，无需构建系统或服务器——浏览器直接打开 `index.html` 即可运行。
 
 ## 架构
 
@@ -25,12 +25,13 @@
   - `status_codes.js` → `var STATUS_CODES`（无 `window.`）
   - `competitor.js` → IIFE 内部 `var competitorDB`（非 `window.*`，同时包含 UI 渲染逻辑，通过 `window.COMPETITOR` 暴露接口）
   - `download_urls.js` → IIFE 内部 `var BASE_DOWNLOAD_URLS` 等
-- 国际化（i18n）：HTML 元素 `data-i18n` 属性，JS 中 `_t(key)` 函数；切换语言时 `applyLang()` 会重新渲染 BOM、产品表、竞品模块
+- 国际化（i18n）：HTML 元素 `data-i18n` 属性（文本）、`data-i18n-ph`（placeholder）、`data-i18n-alt`（alt）、`data-i18n-title`（title）、`data-i18n-html`（innerHTML），JS 中 `_t(key)` 函数；词典位于 `app.js` 的 `i18n = { zh: {...}, en: {...} }`；切换语言时 `applyLang()` 会重新渲染 BOM、产品表、竞品模块
+- 命名规则弹窗 `NAMING_DATA`（mapping_module.js）含 `title/html` 与 `titleEn/htmlEn` 双版本，渲染时按当前语言选择
 - 暗黑模式：切换 `<html>` 元素的 `dark` class
 - 搜索归一化：去除 `MV-` 前缀，大小写不敏感
 - 样式规范：12px 外边距，10px 圆角卡片，38px 统一控件高度
-- CSS 版本通过 `index.html` 中的查询字符串控制（`style.min.css?v=3`）
-- 缓存破坏：编辑 JS/CSS 后需同步更新 `index.html` 中对应的 `?v=N` 参数
+- CSS 版本通过 `index.html` 中的查询字符串控制（当前 `style.min.css?v=31`）
+- 缓存破坏：编辑 JS/CSS 后需同步更新 `index.html` 中对应的 `?v=N` 参数（CSS/JS 与数据模块均带版本号）
 
 ## 脚本加载顺序
 

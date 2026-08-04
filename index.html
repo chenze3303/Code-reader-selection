@@ -9,7 +9,7 @@
   <!-- 预连接到可能的外部资源 -->
   <link rel="dns-prefetch" href="https://www.v-club.com">
   <!-- CSS 同步加载（避免弹窗闪烁） -->
-  <link rel="stylesheet" href="css/style.min.css?v=22">
+  <link rel="stylesheet" href="css/style.min.css?v=30">
   <style>
     .bom-reverse-info{background:var(--warning-bg,#fffbeb);border:1px solid var(--warning-border,#fde68a);border-radius:6px;padding:10px;margin-top:8px}
     .bom-reverse-name{font-size:13px;font-weight:700;color:var(--text,#1e293b);margin-bottom:4px}
@@ -25,7 +25,7 @@
   <link rel="preload" href="js/data/mapping.min.js" as="script">
   <link rel="preload" href="js/data/status_codes.min.js" as="script">
   <!-- 预加载关键模块 -->
-  <link rel="preload" href="js/app.min.js?v=29" as="script">
+  <link rel="preload" href="js/app.min.js?v=31" as="script">
 </head>
 <body>
 <div class="app-window">
@@ -53,7 +53,7 @@
 
   <!-- 机器人吉祥物（全局悬浮） -->
   <div class="floating-robot-wrap">
-    <a href="https://www.v-club.com/vAssistant" target="_blank" class="floating-robot" title="智能助手">
+    <a href="https://www.v-club.com/vAssistant" target="_blank" class="floating-robot" title="智能助手" data-i18n-title="robotTitle">
       <div class="robot">
         <div class="robot-antenna">
           <span></span>
@@ -71,7 +71,7 @@
       </div>
     </a>
     <div class="robot-bubble" id="robotBubble">
-      <div class="robot-bubble-text">您好！我是海康机器人机器视觉助手「小V」。无论您正在安装工业相机、调试读码器、使用3D产品，还是搭建 VisionMaster，只需一句话：<br><b>“产品信息 + 问题/需求”</b>，我即刻为您输出专业、可落地的解决方案。</div>
+      <div class="robot-bubble-text" data-i18n-html="robotBubble">您好！我是海康机器人机器视觉助手「小V」。无论您正在安装工业相机、调试读码器、使用3D产品，还是搭建 VisionMaster，只需一句话：<br><b>“产品信息 + 问题/需求”</b>，我即刻为您输出专业、可落地的解决方案。</div>
     </div>
     <script>
     (function(){
@@ -260,10 +260,10 @@
         <!-- 底部 -->
         <div class="home-footer">
           <div class="home-footer-links">
-            <a href="https://www.hikrobotics.com" target="_blank">🌐 海康机器人官网</a>
+            <a href="https://www.hikrobotics.com" target="_blank" data-i18n="footerSite">🌐 海康机器人官网</a>
             
           </div>
-          <button class="home-footer-ver" id="announcementBtn">📢 公告</button>
+          <button class="home-footer-ver" id="announcementBtn" data-i18n="announcementBtn">📢 公告</button>
         </div>
 
       </div>
@@ -329,7 +329,7 @@
             </div>
 
             <button class="btn-primary" id="runBtn" data-i18n="runBtn" style="width:100%;">⚡ 开始智能选型</button>
-            <button class="btn-primary" id="verifyBtn" onclick="showVerifyPage()" style="width:100%;margin-top:8px;background:linear-gradient(135deg,#2a4a8c,#1a3366);">📊 PPM 计算</button>
+            <button class="btn-primary" id="verifyBtn" onclick="showVerifyPage()" data-i18n="verifyTitle" style="width:100%;margin-top:8px;background:linear-gradient(135deg,#2a4a8c,#1a3366);">📊 PPM 计算</button>
 
           <!-- 多相机拼接方案 -->
           <div class="form-section" id="stitchCard" style="display:none">
@@ -354,7 +354,7 @@
 
         <div class="right-panel">
           <div class="card">
-            <div class="card-header" style="display:flex;align-items:center;justify-content:space-between"><span data-i18n="card2">📐 方案示意图</span><button class="stitch-download-btn" id="stitchDownloadBtn" style="display:none" title="下载示意图">⬇️ 下载</button></div>
+            <div class="card-header" style="display:flex;align-items:center;justify-content:space-between"><span data-i18n="card2">📐 方案示意图</span><button class="stitch-download-btn" id="stitchDownloadBtn" style="display:none" title="下载示意图" data-i18n-title="stitchDownloadBtn">⬇️ 下载</button></div>
             <div id="calcContent">
               <div class="schematic-wrap">
                 <svg id="schematicSvg" viewBox="0 0 580 300" xmlns="http://www.w3.org/2000/svg" style="width:100%; display:block; background:#F5F7FA; border-radius:8px;">
@@ -425,28 +425,28 @@
           <div class="left-panel" style="overflow-y:auto;">
             <div class="card">
               <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
-                <button class="stitch-back-btn" onclick="hideVerifyPage()">← 返回智能选型</button>
+                <button class="stitch-back-btn" onclick="hideVerifyPage()" data-i18n="verifyBack">← 返回智能选型</button>
                 <span style="font-size:15px;font-weight:700;" data-i18n="verifyTitle">📊 PPM 计算</span>
               </div>
 
               <div class="form-section">
                 <div class="form-section-title" data-i18n="verifyModelSel">📷 选择型号</div>
                 <div style="margin-bottom:6px;">
-                  <label style="font-size:12px;color:#666;">产品大类</label>
+                  <label style="font-size:12px;color:#666;" data-i18n="verifySeriesLabel">产品大类</label>
                   <select id="verifySeriesSel" style="width:100%;" onchange="onVerifySeriesChange()">
-                    <option value="">-- 请选择大类 --</option>
+                    <option value="" data-i18n="verifySeriesPh">-- 请选择大类 --</option>
                   </select>
                 </div>
                 <div style="margin-bottom:6px;">
-                  <label style="font-size:12px;color:#666;">分辨率</label>
+                  <label style="font-size:12px;color:#666;" data-i18n="verifyResLabel">分辨率</label>
                   <select id="verifyResSel" style="width:100%;" onchange="onVerifyResChange()" disabled>
-                    <option value="">-- 全部分辨率 --</option>
+                    <option value="" data-i18n="verifyResPh">-- 全部分辨率 --</option>
                   </select>
                 </div>
                 <div>
-                  <label style="font-size:12px;color:#666;">具体型号</label>
+                  <label style="font-size:12px;color:#666;" data-i18n="verifyModelLabel">具体型号</label>
                   <select id="verifyModelSel" style="width:100%;" disabled>
-                    <option value="">-- 请先选择大类 --</option>
+                    <option value="" data-i18n="verifyModelPh">-- 请先选择大类 --</option>
                   </select>
                 </div>
                 <div id="verifyModelInfo" style="margin-top:6px;font-size:12px;color:#666;"></div>
@@ -455,7 +455,7 @@
               <div class="form-section">
                 <div class="form-section-title" data-i18n="verifyDist">📐 工作距离</div>
                 <div class="input-row">
-                  <input type="number" id="verifyWD" placeholder="工作距离" style="flex:1;">
+                  <input type="number" id="verifyWD" placeholder="工作距离" data-i18n-ph="verifyWDPh" style="flex:1;">
                   <select id="verifyWDUnit"><option value="mm" selected>mm</option><option value="cm">cm</option></select>
                 </div>
                 <div id="verifyWDRange" style="margin-top:4px;font-size:11px;color:#888;"></div>
@@ -464,37 +464,37 @@
               <div class="form-section">
                 <div class="form-section-title" data-i18n="verifyBarcode">🔖 条码参数</div>
                 <div style="margin-bottom:6px;">
-                  <label style="font-size:12px;color:#666;">条码类型</label>
+                  <label style="font-size:12px;color:#666;" data-i18n="verifyCodeTypeLabel">条码类型</label>
                   <select id="verifyCodeType" style="width:100%;">
-                    <option value="QR">二维码 (2D)</option>
-                    <option value="Code39">一维码 (1D)</option>
+                    <option value="QR" data-i18n="codeType2D">二维码 (2D)</option>
+                    <option value="Code39" data-i18n="codeType1D">一维码 (1D)</option>
                   </select>
                 </div>
                 <div>
-                  <label style="font-size:12px;color:#666;">模块尺寸 *</label>
+                  <label style="font-size:12px;color:#666;" data-i18n="moduleSize">模块尺寸 *</label>
                   <div class="input-row">
-                    <input type="number" id="verifyModuleSize" placeholder="模块尺寸">
+                    <input type="number" id="verifyModuleSize" placeholder="模块尺寸" data-i18n-ph="verifyModuleSizePh">
                     <select id="verifyModuleUnit"><option value="mm" selected>mm</option><option value="mil">mil</option></select>
                   </div>
                 </div>
               </div>
 
               <div class="form-section">
-                <div class="form-section-title">🏃 运动速度（选填）</div>
+                <div class="form-section-title" data-i18n="verifySpeedTitle">🏃 运动速度（选填）</div>
                 <div class="input-row">
-                  <input type="number" id="verifySpeed" placeholder="运动速度" style="flex:1;">
+                  <input type="number" id="verifySpeed" placeholder="运动速度" data-i18n-ph="verifySpeedPh" style="flex:1;">
                   <select id="verifySpeedUnit"><option value="mm/s" selected>mm/s</option><option value="m/s">m/s</option><option value="cm/s">cm/s</option></select>
                 </div>
-                <div style="font-size:11px;color:#888;margin-top:2px;">不填则不计算最大曝光时间</div>
+                <div style="font-size:11px;color:#888;margin-top:2px;" data-i18n="verifySpeedHint">不填则不计算最大曝光时间</div>
               </div>
 
-              <button class="btn-primary" id="verifyRunBtn" onclick="runVerify()" style="width:100%;">⚡ 开始验算</button>
+              <button class="btn-primary" id="verifyRunBtn" onclick="runVerify()" style="width:100%;" data-i18n="verifyRunBtn">⚡ 开始验算</button>
             </div>
           </div>
 
           <div class="right-panel" style="overflow-y:auto;">
             <div class="card">
-              <div class="card-header">📐 验算示意图</div>
+              <div class="card-header" data-i18n="verifySchematicTitle">📐 验算示意图</div>
               <div id="verifyCalcContent">
                 <div class="schematic-wrap">
                   <svg id="verifySchematicSvg" viewBox="0 0 580 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;background:#F5F7FA;border-radius:8px;">
@@ -540,9 +540,9 @@
             </div>
 
             <div class="card">
-              <div class="card-header">🏆 验算结果</div>
+              <div class="card-header" data-i18n="verifyResultTitle">🏆 验算结果</div>
               <div id="verifyResult">
-                <div class="empty-state" style="padding:30px;text-align:center;color:#999;">选择型号并输入参数后点击「开始验算」</div>
+                <div class="empty-state" style="padding:30px;text-align:center;color:#999;" data-i18n="verifyEmpty">选择型号并输入参数后点击「开始验算」</div>
               </div>
             </div>
           </div>
@@ -687,7 +687,7 @@
               </div>
               <div class="bom-toolbar-btns">
                 <button class="bom-btn-reset" id="bomQClearBtn" data-i18n="bomReset">重置</button>
-                <a class="bom-btn-export" id="bomDownloadBtn" href="" target="_blank" style="display:none;text-decoration:none;">📥 资料下载</a>
+                <a class="bom-btn-export" id="bomDownloadBtn" href="" target="_blank" style="display:none;text-decoration:none;" data-i18n="bomDownload">📥 资料下载</a>
                 <button class="bom-btn-export" id="bomQExportBtn" data-i18n="bomExport">⬇ 导出 CSV</button>
               </div>
             </div>
@@ -730,7 +730,7 @@
             <div class="sc-search-wrap">
               <span class="sc-search-icon">🔍</span>
               <input type="text" id="scSearchInput" class="sc-search-input" data-i18n-ph="scSearch" placeholder="输入状态码名称或十六进制值，如 MV_CODEREADER_E_HANDLE 或 0x80020000" autocomplete="off">
-              <button class="sc-search-clear" id="scSearchClear" title="清空">✕</button>
+              <button class="sc-search-clear" id="scSearchClear" title="清空" data-i18n-title="scClear">✕</button>
             </div>
             <div class="sc-filter-wrap">
               <span class="sc-filter-label" data-i18n="scCatLabel">分类筛选</span>
@@ -778,8 +778,8 @@
       <div class="sdk-layout">
         <!-- 侧边目录 -->
         <aside class="sdk-toc" id="sdkToc">
-          <div class="sdk-toc-title">📑 快速导航</div>
-          <a href="sdk-guide.html" class="sdk-full-link" target="_blank">
+          <div class="sdk-toc-title" data-i18n="sdkTocTitle">📑 快速导航</div>
+          <a href="sdk-guide.html" class="sdk-full-link" target="_blank" data-i18n="sdkFullDoc">
             📖 查看完整文档
           </a>
           <div class="sdk-toc-lang">
@@ -789,26 +789,26 @@
           <nav class="sdk-toc-nav" id="sdkTocNav">
             <!-- C 语言目录 -->
             <div class="sdk-toc-section active" data-lang="c">
-              <a href="#sdk-c-overview" class="sdk-toc-link">📋 SDK 概述</a>
-              <a href="#sdk-c-env" class="sdk-toc-link">🔧 开发环境配置</a>
-              <a href="#sdk-c-flow" class="sdk-toc-link">⭐ 编程流程</a>
-              <a href="#sdk-c-param" class="sdk-toc-link">⚙️ 参数设置</a>
-              <a href="#sdk-c-grab" class="sdk-toc-link">📷 取图方式</a>
-              <a href="#sdk-c-trigger" class="sdk-toc-link">🎯 触发模式</a>
-              <a href="#sdk-c-error" class="sdk-toc-link">🔍 错误排查</a>
-              <a href="#sdk-c-api" class="sdk-toc-link">📚 API 速查</a>
+              <a href="#sdk-c-overview" class="sdk-toc-link" data-i18n="sdkTocOverview">📋 SDK 概述</a>
+              <a href="#sdk-c-env" class="sdk-toc-link" data-i18n="sdkTocEnv">🔧 开发环境配置</a>
+              <a href="#sdk-c-flow" class="sdk-toc-link" data-i18n="sdkTocFlow">⭐ 编程流程</a>
+              <a href="#sdk-c-param" class="sdk-toc-link" data-i18n="sdkTocParam">⚙️ 参数设置</a>
+              <a href="#sdk-c-grab" class="sdk-toc-link" data-i18n="sdkTocGrab">📷 取图方式</a>
+              <a href="#sdk-c-trigger" class="sdk-toc-link" data-i18n="sdkTocTrigger">🎯 触发模式</a>
+              <a href="#sdk-c-error" class="sdk-toc-link" data-i18n="sdkTocError">🔍 错误排查</a>
+              <a href="#sdk-c-api" class="sdk-toc-link" data-i18n="sdkTocApi">📚 API 速查</a>
             </div>
             <!-- C# 语言目录 -->
             <div class="sdk-toc-section" data-lang="csharp">
-              <a href="#sdk-cs-overview" class="sdk-toc-link">📋 SDK 概述</a>
-              <a href="#sdk-cs-env" class="sdk-toc-link">🔧 开发环境配置</a>
-              <a href="#sdk-cs-flow" class="sdk-toc-link">⭐ 编程流程</a>
-              <a href="#sdk-cs-param" class="sdk-toc-link">⚙️ 参数设置</a>
-              <a href="#sdk-cs-grab" class="sdk-toc-link">📷 取图方式</a>
-              <a href="#sdk-cs-trigger" class="sdk-toc-link">🎯 触发模式</a>
-              <a href="#sdk-cs-advanced" class="sdk-toc-link">🔗 进阶场景</a>
-              <a href="#sdk-cs-error" class="sdk-toc-link">🔍 错误排查</a>
-              <a href="#sdk-cs-api" class="sdk-toc-link">📚 API 速查</a>
+              <a href="#sdk-cs-overview" class="sdk-toc-link" data-i18n="sdkTocOverview">📋 SDK 概述</a>
+              <a href="#sdk-cs-env" class="sdk-toc-link" data-i18n="sdkTocEnv">🔧 开发环境配置</a>
+              <a href="#sdk-cs-flow" class="sdk-toc-link" data-i18n="sdkTocFlow">⭐ 编程流程</a>
+              <a href="#sdk-cs-param" class="sdk-toc-link" data-i18n="sdkTocParam">⚙️ 参数设置</a>
+              <a href="#sdk-cs-grab" class="sdk-toc-link" data-i18n="sdkTocGrab">📷 取图方式</a>
+              <a href="#sdk-cs-trigger" class="sdk-toc-link" data-i18n="sdkTocTrigger">🎯 触发模式</a>
+              <a href="#sdk-cs-advanced" class="sdk-toc-link" data-i18n="sdkTocAdvanced">🔗 进阶场景</a>
+              <a href="#sdk-cs-error" class="sdk-toc-link" data-i18n="sdkTocError">🔍 错误排查</a>
+              <a href="#sdk-cs-api" class="sdk-toc-link" data-i18n="sdkTocApi">📚 API 速查</a>
             </div>
           </nav>
           <div class="sdk-toc-progress">
@@ -821,10 +821,10 @@
         <!-- 完整文档横幅 -->
         <div class="sdk-banner">
           <div class="sdk-banner-text">
-            <h2>📖 完整 SDK 文档已上线</h2>
-            <p>包含完整的代码示例、API参考、进阶场景等内容</p>
+            <h2 data-i18n="sdkBannerTitle">📖 完整 SDK 文档已上线</h2>
+            <p data-i18n="sdkBannerDesc">包含完整的代码示例、API参考、进阶场景等内容</p>
           </div>
-          <a href="sdk-guide.html" class="sdk-banner-btn" target="_blank">
+          <a href="sdk-guide.html" class="sdk-banner-btn" target="_blank" data-i18n="sdkBannerBtn">
             查看完整文档 →
           </a>
         </div>
@@ -832,14 +832,14 @@
         <!-- 顶部 -->
         <div class="sdk-hero">
           <div class="sdk-hero-badge">MvCodeReader SDK</div>
-          <h1 class="sdk-hero-title">二次开发学习指南</h1>
-          <p class="sdk-hero-desc">海康机器人读码器 C / C# 编程开发套件 · 从入门到实战</p>
+          <h1 class="sdk-hero-title" data-i18n="sdkHeroTitle">二次开发学习指南</h1>
+          <p class="sdk-hero-desc" data-i18n="sdkHeroDesc">海康机器人读码器 C / C# 编程开发套件 · 从入门到实战</p>
         </div>
 
         <!-- 语言切换 -->
         <div class="sdk-lang-bar">
-          <button class="sdk-lang-btn active" data-lang="c">C 语言</button>
-          <button class="sdk-lang-btn" data-lang="csharp">C# 语言</button>
+          <button class="sdk-lang-btn active" data-lang="c" data-i18n="sdkLangC">C 语言</button>
+          <button class="sdk-lang-btn" data-lang="csharp" data-i18n="sdkLangCS">C# 语言</button>
         </div>
 
         <!-- C 语言内容 -->
@@ -848,149 +848,149 @@
           <div class="sdk-path">
             <a class="sdk-path-card" href="#sdk-c-env">
               <div class="sdk-path-step">Step 1</div>
-              <div class="sdk-path-title">搭建环境</div>
-              <div class="sdk-path-desc">工程与网络配置</div>
+              <div class="sdk-path-title" data-i18n="sdkPathEnvT">搭建环境</div>
+              <div class="sdk-path-desc" data-i18n="sdkPathEnvD">工程与网络配置</div>
             </a>
             <a class="sdk-path-card" href="#sdk-c-flow">
               <div class="sdk-path-step">Step 2</div>
-              <div class="sdk-path-title">编写程序</div>
-              <div class="sdk-path-desc">三段式流程</div>
+              <div class="sdk-path-title" data-i18n="sdkPathFlowT">编写程序</div>
+              <div class="sdk-path-desc" data-i18n="sdkPathFlowD">三段式流程</div>
             </a>
             <a class="sdk-path-card" href="#sdk-c-param">
               <div class="sdk-path-step">Step 3</div>
-              <div class="sdk-path-title">参数设置</div>
-              <div class="sdk-path-desc">节点类型映射</div>
+              <div class="sdk-path-title" data-i18n="sdkPathParamT">参数设置</div>
+              <div class="sdk-path-desc" data-i18n="sdkPathParamD">节点类型映射</div>
             </a>
             <a class="sdk-path-card" href="#sdk-c-api">
               <div class="sdk-path-step">Step 4</div>
-              <div class="sdk-path-title">API 速查</div>
-              <div class="sdk-path-desc">常用接口参考</div>
+              <div class="sdk-path-title" data-i18n="sdkPathApiT">API 速查</div>
+              <div class="sdk-path-desc" data-i18n="sdkPathApiD">常用接口参考</div>
             </a>
           </div>
 
           <!-- 开发环境 -->
           <div class="sdk-section" id="sdk-c-env">
-            <h2 class="sdk-section-title">🔧 开发环境配置</h2>
+            <h2 class="sdk-section-title" data-i18n="sdkEnvTitle">🔧 开发环境配置</h2>
             <div class="sdk-card">
-              <h3>前置条件</h3>
+              <h3 data-i18n="sdkPrereq">前置条件</h3>
               <ul class="sdk-list">
-                <li>已安装 <strong>IDMVS</strong> 或 <strong>MVS Runtime</strong></li>
-                <li>配置 SDK 的 include 和 lib 路径</li>
-                <li>程序位数与 DLL 位数一致（x64 对应 x64）</li>
+                <li data-i18n="sdkPrereq1">已安装 <strong>IDMVS</strong> 或 <strong>MVS Runtime</strong></li>
+                <li data-i18n="sdkPrereq2">配置 SDK 的 include 和 lib 路径</li>
+                <li data-i18n="sdkPrereq3">程序位数与 DLL 位数一致（x64 对应 x64）</li>
               </ul>
               <div class="sdk-warning">
                 <span class="sdk-warning-icon">⚠️</span>
-                <span><strong>程序位数必须与 DLL 位数一致！</strong>混用会导致加载失败。</span>
+                <span data-i18n="sdkBitnessWarn"><strong>程序位数必须与 DLL 位数一致！</strong>混用会导致加载失败。</span>
               </div>
             </div>
             <div class="sdk-card">
-              <h3>核心头文件</h3>
+              <h3 data-i18n="sdkHeaders">核心头文件</h3>
               <div class="sdk-table">
                 <div class="sdk-table-row">
                   <code>MvCodeReaderCtrl.h</code>
-                  <span>所有 SDK 函数声明（主接口）</span>
+                  <span data-i18n="sdkHdr1">所有 SDK 函数声明（主接口）</span>
                 </div>
                 <div class="sdk-table-row">
                   <code>MvCodeReaderParams.h</code>
-                  <span>结构体、枚举定义</span>
+                  <span data-i18n="sdkHdr2">结构体、枚举定义</span>
                 </div>
                 <div class="sdk-table-row">
                   <code>MvCodeReaderErrorDefine.h</code>
-                  <span>错误码定义</span>
+                  <span data-i18n="sdkHdr3">错误码定义</span>
                 </div>
               </div>
             </div>
             <div class="sdk-card">
-              <h3>GigE 网络配置</h3>
+              <h3 data-i18n="sdkGige">GigE 网络配置</h3>
               <ul class="sdk-list">
-                <li>启用网卡<strong>巨帧（Jumbo Frame）</strong>，建议 9000+</li>
-                <li>设备 IP 与 PC 网卡在同一网段</li>
-                <li>建议关闭防火墙或添加端口例外</li>
+                <li data-i18n="sdkGige1">启用网卡<strong>巨帧（Jumbo Frame）</strong>，建议 9000+</li>
+                <li data-i18n="sdkGige2">设备 IP 与 PC 网卡在同一网段</li>
+                <li data-i18n="sdkGige3">建议关闭防火墙或添加端口例外</li>
               </ul>
             </div>
           </div>
 
           <!-- 编程流程 -->
           <div class="sdk-section" id="sdk-c-flow">
-            <h2 class="sdk-section-title">⭐ 编程流程（重点）</h2>
+            <h2 class="sdk-section-title" data-i18n="sdkFlowTitle">⭐ 编程流程（重点）</h2>
             <div class="sdk-flow">
               <div class="sdk-flow-group">
-                <div class="sdk-flow-label">连接阶段</div>
+                <div class="sdk-flow-label" data-i18n="sdkConnPhase">连接阶段</div>
                 <div class="sdk-flow-steps">
-                  <div class="sdk-flow-step highlight">枚举设备</div>
+                  <div class="sdk-flow-step highlight" data-i18n="sdkEnumDev">枚举设备</div>
                   <div class="sdk-flow-arrow">→</div>
-                  <div class="sdk-flow-step highlight">创建句柄</div>
+                  <div class="sdk-flow-step highlight" data-i18n="sdkCreateHandle">创建句柄</div>
                   <div class="sdk-flow-arrow">→</div>
-                  <div class="sdk-flow-step highlight">设置地域</div>
+                  <div class="sdk-flow-step highlight" data-i18n="sdkSetArea">设置地域</div>
                   <div class="sdk-flow-arrow">→</div>
-                  <div class="sdk-flow-step highlight">打开设备</div>
+                  <div class="sdk-flow-step highlight" data-i18n="sdkOpenDev">打开设备</div>
                 </div>
               </div>
               <div class="sdk-flow-group">
-                <div class="sdk-flow-label">运行阶段</div>
+                <div class="sdk-flow-label" data-i18n="sdkRunPhase">运行阶段</div>
                 <div class="sdk-flow-steps">
-                  <div class="sdk-flow-step">设置参数</div>
+                  <div class="sdk-flow-step" data-i18n="sdkSetParam">设置参数</div>
                   <div class="sdk-flow-arrow">→</div>
-                  <div class="sdk-flow-step">开始取流</div>
+                  <div class="sdk-flow-step" data-i18n="sdkStartGrab">开始取流</div>
                   <div class="sdk-flow-arrow">→</div>
-                  <div class="sdk-flow-step">获取结果</div>
+                  <div class="sdk-flow-step" data-i18n="sdkGetResult">获取结果</div>
                 </div>
               </div>
               <div class="sdk-flow-group">
-                <div class="sdk-flow-label">释放阶段</div>
+                <div class="sdk-flow-label" data-i18n="sdkRelPhase">释放阶段</div>
                 <div class="sdk-flow-steps">
-                  <div class="sdk-flow-step">停止取流</div>
+                  <div class="sdk-flow-step" data-i18n="sdkStopGrab">停止取流</div>
                   <div class="sdk-flow-arrow">→</div>
-                  <div class="sdk-flow-step">关闭设备</div>
+                  <div class="sdk-flow-step" data-i18n="sdkCloseDev">关闭设备</div>
                   <div class="sdk-flow-arrow">→</div>
-                  <div class="sdk-flow-step">销毁句柄</div>
+                  <div class="sdk-flow-step" data-i18n="sdkDestroyHandle">销毁句柄</div>
                 </div>
               </div>
             </div>
 
             <div class="sdk-card">
-              <h3>连接阶段代码</h3>
+              <h3 data-i18n="sdkCodeConn">连接阶段代码</h3>
               <div class="sdk-code">
                 <div class="sdk-code-header">
-                  <span>C — 枚举设备</span>
-                  <button class="sdk-copy-btn" onclick="copySdkCode(this)">复制</button>
+                  <span data-i18n="sdkCodeEnumC">C — 枚举设备</span>
+                  <button class="sdk-copy-btn" onclick="copySdkCode(this)" data-i18n="sdkCopy">复制</button>
                 </div>
-                <pre><code><span class="cm">// 1. 枚举设备</span>
+                <pre><code><span class="cm" data-i18n="sdkC1">// 1. 枚举设备</span>
 <span class="tp">MV_CODEREADER_DEVICE_INFO_LIST</span> <span class="fn">stDevList</span>;
 <span class="fn">memset</span>(&stDevList, <span class="nm">0</span>, <span class="kw">sizeof</span>(stDevList));
 <span class="tp">int</span> <span class="fn">nRet</span> = <span class="fn">MV_CODEREADER_EnumDevices</span>(&stDevList, <span class="nm">MV_CODEREADER_GIGE_DEVICE</span>);
 
-<span class="cm">// 2. 创建句柄</span>
+<span class="cm" data-i18n="sdkC2">// 2. 创建句柄</span>
 <span class="tp">void</span>* <span class="fn">handle</span> = <span class="kw">NULL</span>;
 <span class="fn">MV_CODEREADER_CreateHandle</span>(&handle, stDevList.<span class="fn">pDeviceInfo</span>[<span class="nm">0</span>]);
 
-<span class="cm">// 3. 设置地域（中国大陆必须）</span>
+<span class="cm" data-i18n="sdkC3">// 3. 设置地域（中国大陆必须）</span>
 <span class="fn">MV_CODEREADER_SetAreaInfoConfig</span>(handle, <span class="nm">0xa80</span>, <span class="nm">0x10000</span>);
 
-<span class="cm">// 4. 打开设备</span>
+<span class="cm" data-i18n="sdkC4">// 4. 打开设备</span>
 <span class="fn">MV_CODEREADER_OpenDevice</span>(handle);</code></pre>
               </div>
               <div class="sdk-tip">
                 <span class="sdk-tip-icon">💡</span>
-                <span>地域设置是必须步骤，未设置可能导致设备打开失败。</span>
+                <span data-i18n="sdkAreaTip">地域设置是必须步骤，未设置可能导致设备打开失败。</span>
               </div>
             </div>
 
             <div class="sdk-card">
-              <h3>运行阶段代码</h3>
+              <h3 data-i18n="sdkCodeRun">运行阶段代码</h3>
               <div class="sdk-code">
                 <div class="sdk-code-header">
-                  <span>C — 参数设置与取流</span>
-                  <button class="sdk-copy-btn" onclick="copySdkCode(this)">复制</button>
+                  <span data-i18n="sdkCodeRunC">C — 参数设置与取流</span>
+                  <button class="sdk-copy-btn" onclick="copySdkCode(this)" data-i18n="sdkCopy">复制</button>
                 </div>
-                <pre><code><span class="cm">// 设置连续采集模式</span>
+                <pre><code><span class="cm" data-i18n="sdkC5">// 设置连续采集模式</span>
 <span class="fn">MV_CODEREADER_SetEnumValue</span>(handle, <span class="st">"TriggerMode"</span>, <span class="nm">MV_CODEREADER_TRIGGER_MODE_OFF</span>);
 <span class="fn">MV_CODEREADER_SetFloatValue</span>(handle, <span class="st">"ExposureTime"</span>, <span class="nm">120.0f</span>);
 
-<span class="cm">// 开始取流</span>
+<span class="cm" data-i18n="sdkC6">// 开始取流</span>
 <span class="fn">MV_CODEREADER_StartGrabbing</span>(handle);
 
-<span class="cm">// 获取一帧图像</span>
+<span class="cm" data-i18n="sdkC7">// 获取一帧图像</span>
 <span class="tp">unsigned</span> <span class="tp">char</span>* <span class="fn">pData</span> = <span class="kw">NULL</span>;
 <span class="tp">MV_CODEREADER_IMAGE_OUT_INFO_EX2</span> <span class="fn">stFrameInfo</span>;
 <span class="fn">MV_CODEREADER_GetOneFrameTimeoutEx2</span>(handle, &pData, &stFrameInfo, <span class="nm">1000</span>);</code></pre>
@@ -998,11 +998,11 @@
             </div>
 
             <div class="sdk-card">
-              <h3>释放阶段代码</h3>
+              <h3 data-i18n="sdkCodeRel">释放阶段代码</h3>
               <div class="sdk-code">
                 <div class="sdk-code-header">
-                  <span>C — 释放资源</span>
-                  <button class="sdk-copy-btn" onclick="copySdkCode(this)">复制</button>
+                  <span data-i18n="sdkCodeRelC">C — 释放资源</span>
+                  <button class="sdk-copy-btn" onclick="copySdkCode(this)" data-i18n="sdkCopy">复制</button>
                 </div>
                 <pre><code><span class="fn">MV_CODEREADER_StopGrabbing</span>(handle);
 <span class="fn">MV_CODEREADER_CloseDevice</span>(handle);
@@ -1013,15 +1013,15 @@
 
           <!-- 参数设置 -->
           <div class="sdk-section" id="sdk-c-param">
-            <h2 class="sdk-section-title">⚙️ 参数设置</h2>
+            <h2 class="sdk-section-title" data-i18n="sdkParamTitle">⚙️ 参数设置</h2>
             <div class="sdk-card">
-              <h3>节点类型与接口映射</h3>
+              <h3 data-i18n="sdkNodeMap">节点类型与接口映射</h3>
               <div class="sdk-table">
                 <div class="sdk-table-header">
-                  <span>类型</span>
-                  <span>读取</span>
-                  <span>设置</span>
-                  <span>典型参数</span>
+                  <span data-i18n="sdkType">类型</span>
+                  <span data-i18n="sdkGet">读取</span>
+                  <span data-i18n="sdkSet">设置</span>
+                  <span data-i18n="sdkTypical">典型参数</span>
                 </div>
                 <div class="sdk-table-row">
                   <span>Integer</span>
@@ -1063,81 +1063,81 @@
             </div>
             <div class="sdk-warning">
               <span class="sdk-warning-icon">⚠️</span>
-              <span><strong>枚举节点必须用整数值！</strong><br>❌ SetEnumValue(handle, "TriggerMode", "On")<br>✅ SetEnumValue(handle, "TriggerMode", MV_CODEREADER_TRIGGER_MODE_ON)</span>
+              <span data-i18n="sdkEnumWarn"><strong>枚举节点必须用整数值！</strong><br>❌ SetEnumValue(handle, "TriggerMode", "On")<br>✅ SetEnumValue(handle, "TriggerMode", MV_CODEREADER_TRIGGER_MODE_ON)</span>
             </div>
           </div>
 
           <!-- 触发模式 -->
           <div class="sdk-section" id="sdk-c-trigger">
-            <h2 class="sdk-section-title">🎯 触发模式</h2>
+            <h2 class="sdk-section-title" data-i18n="sdkTriggerTitle">🎯 触发模式</h2>
             <div class="sdk-card">
               <div class="sdk-table">
                 <div class="sdk-table-header">
-                  <span>模式</span>
+                  <span data-i18n="sdkMode">模式</span>
                   <span>TriggerMode</span>
                   <span>TriggerSource</span>
                 </div>
                 <div class="sdk-table-row">
-                  <strong>连续采集</strong>
+                  <strong data-i18n="sdkCont">连续采集</strong>
                   <span>Off</span>
                   <span>—</span>
                 </div>
                 <div class="sdk-table-row">
-                  <strong>软触发</strong>
+                  <strong data-i18n="sdkSoftTrig">软触发</strong>
                   <span>On</span>
                   <span>Software</span>
                 </div>
                 <div class="sdk-table-row">
-                  <strong>硬触发</strong>
+                  <strong data-i18n="sdkHardTrig">硬触发</strong>
                   <span>On</span>
                   <span>LineIn0/1/2</span>
                 </div>
               </div>
             </div>
             <div class="sdk-card">
-              <h3>软触发配置示例</h3>
+              <h3 data-i18n="sdkSoftExample">软触发配置示例</h3>
               <div class="sdk-code">
                 <div class="sdk-code-header">
-                  <span>C — 软触发</span>
-                  <button class="sdk-copy-btn" onclick="copySdkCode(this)">复制</button>
+                  <span data-i18n="sdkCodeSoftC">C — 软触发</span>
+                  <button class="sdk-copy-btn" onclick="copySdkCode(this)" data-i18n="sdkCopy">复制</button>
                 </div>
                 <pre><code><span class="fn">MV_CODEREADER_SetEnumValue</span>(handle, <span class="st">"TriggerMode"</span>, <span class="nm">MV_CODEREADER_TRIGGER_MODE_ON</span>);
 <span class="fn">MV_CODEREADER_SetEnumValue</span>(handle, <span class="st">"TriggerSource"</span>, <span class="nm">MV_CODEREADER_TRIGGER_SOURCE_SOFTWARE</span>);
 <span class="fn">MV_CODEREADER_StartGrabbing</span>(handle);
 <span class="fn">MV_CODEREADER_SetCommandValue</span>(handle, <span class="st">"TriggerSoftware"</span>);
-<span class="cm">// 然后 GetOneFrameTimeoutEx2 取图</span></code></pre>
+<span class="cm" data-i18n="sdkSoftComment">// 然后 GetOneFrameTimeoutEx2 取图</span></code></pre>
               </div>
             </div>
           </div>
 
           <!-- 错误排查 -->
           <div class="sdk-section" id="sdk-c-error">
-            <h2 class="sdk-section-title">🔍 常见错误排查</h2>
+            <h2 class="sdk-section-title" data-i18n="sdkErrTitle">🔍 常见错误排查</h2>
             <div class="sdk-card">
               <div class="sdk-table">
                 <div class="sdk-table-header">
-                  <span>现象</span>
-                  <span>排查方向</span>
+                  <span data-i18n="sdkSymptom">现象</span>
+                  <span data-i18n="sdkCheck">排查方向</span>
                 </div>
                 <div class="sdk-table-row">
-                  <strong>枚举不到设备</strong>
-                  <span>网卡IP、设备IP、网线、防火墙、供电</span>
+                  <strong data-i18n="sdkErr1">枚举不到设备</strong>
+                  <span data-i18n="sdkErr1D">网卡IP、设备IP、网线、防火墙、供电</span>
                 </div>
                 <div class="sdk-table-row">
-                  <strong>能枚举但打不开</strong>
-                  <span>是否设置地域、设备被占用、IP冲突</span>
+                  <strong data-i18n="sdkErr2">能枚举但打不开</strong>
+                  <span data-i18n="sdkErr2D">是否设置地域、设备被占用、IP冲突</span>
                 </div>
                 <div class="sdk-table-row">
-                  <strong>打开成功但无图</strong>
-                  <span>未开始取流、触发模式错误、无触发信号</span>
+                  <strong data-i18n="sdkErr3">打开成功但无图</strong>
+                  <span data-i18n="sdkErr3D">未开始取流、触发模式错误、无触发信号</span>
                 </div>
                 <div class="sdk-table-row">
-                  <strong>参数设置失败</strong>
-                  <span>节点类型不匹配、值超范围、取流状态不允许</span>
+                  <strong data-i18n="sdkErr4">参数设置失败</strong>
+                  <span data-i18n="sdkErr4D">节点类型不匹配、值超范围、取流状态不允许</span>
                 </div>
                 <div class="sdk-table-row">
-                  <strong>读码结果为空</strong>
-                  <span>码制未开启、曝光不合适、ROI设置错误</span>
+                  <strong data-i18n="sdkErr5">读码结果为空</strong>
+                  <span data-i18n="sdkErr5D">码制未开启、曝光不合适、ROI设置错误</span>
                 </div>
               </div>
             </div>
@@ -1145,75 +1145,75 @@
 
           <!-- API 速查 -->
           <div class="sdk-section" id="sdk-c-api">
-            <h2 class="sdk-section-title">📚 API 速查</h2>
+            <h2 class="sdk-section-title" data-i18n="sdkApiTitle">📚 API 速查</h2>
             <div class="sdk-card">
-              <h3>设备管理</h3>
+              <h3 data-i18n="sdkApiDev">设备管理</h3>
               <div class="sdk-api-list">
                 <div class="sdk-api-item">
                   <code>MV_CODEREADER_EnumDevices(MV_CODEREADER_DEVICE_INFO_LIST*, uint nTLayerType)</code>
-                  <span>枚举设备</span>
+                  <span data-i18n="sdkEnumDev">枚举设备</span>
                 </div>
                 <div class="sdk-api-item">
                   <code>MV_CODEREADER_CreateHandle(void**, MV_CODEREADER_DEVICE_INFO*)</code>
-                  <span>创建句柄</span>
+                  <span data-i18n="sdkCreateHandle">创建句柄</span>
                 </div>
                 <div class="sdk-api-item">
                   <code>MV_CODEREADER_SetAreaInfoConfig(void*, int64_t, int64_t)</code>
-                  <span>设置地域（中国：0xa80, 0x10000）</span>
+                  <span data-i18n="sdkApiArea">设置地域（中国：0xa80, 0x10000）</span>
                 </div>
                 <div class="sdk-api-item">
                   <code>MV_CODEREADER_OpenDevice / CloseDevice</code>
-                  <span>打开/关闭设备</span>
+                  <span data-i18n="sdkOpenClose">打开/关闭设备</span>
                 </div>
                 <div class="sdk-api-item">
                   <code>MV_CODEREADER_DestroyHandle</code>
-                  <span>销毁句柄</span>
+                  <span data-i18n="sdkDestroyHandle">销毁句柄</span>
                 </div>
               </div>
             </div>
             <div class="sdk-card">
-              <h3>参数读写</h3>
+              <h3 data-i18n="sdkApiParamRW">参数读写</h3>
               <div class="sdk-api-list">
                 <div class="sdk-api-item">
                   <code>MV_CODEREADER_SetIntValue / GetIntValue</code>
-                  <span>Integer 节点</span>
+                  <span data-i18n="sdkIntNode">Integer 节点</span>
                 </div>
                 <div class="sdk-api-item">
                   <code>MV_CODEREADER_SetFloatValue / GetFloatValue</code>
-                  <span>Float 节点</span>
+                  <span data-i18n="sdkFloatNode">Float 节点</span>
                 </div>
                 <div class="sdk-api-item">
                   <code>MV_CODEREADER_SetEnumValue / GetEnumValue</code>
-                  <span>Enumeration 节点（用整数值）</span>
+                  <span data-i18n="sdkEnumNode">Enumeration 节点（用整数值）</span>
                 </div>
                 <div class="sdk-api-item">
                   <code>MV_CODEREADER_SetBoolValue / GetBoolValue</code>
-                  <span>Boolean 节点</span>
+                  <span data-i18n="sdkBoolNode">Boolean 节点</span>
                 </div>
                 <div class="sdk-api-item">
                   <code>MV_CODEREADER_SetStringValue / GetStringValue</code>
-                  <span>String 节点</span>
+                  <span data-i18n="sdkStringNode">String 节点</span>
                 </div>
                 <div class="sdk-api-item">
                   <code>MV_CODEREADER_SetCommandValue</code>
-                  <span>Command 节点（如 TriggerSoftware）</span>
+                  <span data-i18n="sdkCmdNode">Command 节点（如 TriggerSoftware）</span>
                 </div>
               </div>
             </div>
             <div class="sdk-card">
-              <h3>取图控制</h3>
+              <h3 data-i18n="sdkApiGrab">取图控制</h3>
               <div class="sdk-api-list">
                 <div class="sdk-api-item">
                   <code>MV_CODEREADER_StartGrabbing / StopGrabbing</code>
-                  <span>开始/停止取流</span>
+                  <span data-i18n="sdkStartStop">开始/停止取流</span>
                 </div>
                 <div class="sdk-api-item">
                   <code>MV_CODEREADER_GetOneFrameTimeoutEx2</code>
-                  <span>主动轮询取图（超时ms）</span>
+                  <span data-i18n="sdkPoll">主动轮询取图（超时ms）</span>
                 </div>
                 <div class="sdk-api-item">
                   <code>MV_CODEREADER_RegisterImageCallBackEx2</code>
-                  <span>注册图像回调</span>
+                  <span data-i18n="sdkRegCb">注册图像回调</span>
                 </div>
               </div>
             </div>
@@ -1225,85 +1225,85 @@
           <div class="sdk-path">
             <a class="sdk-path-card" href="#sdk-cs-env">
               <div class="sdk-path-step">Step 1</div>
-              <div class="sdk-path-title">搭建环境</div>
-              <div class="sdk-path-desc">引用与配置</div>
+              <div class="sdk-path-title" data-i18n="sdkPathEnvT">搭建环境</div>
+              <div class="sdk-path-desc" data-i18n="sdkPathCsEnvD">引用与配置</div>
             </a>
             <a class="sdk-path-card" href="#sdk-cs-flow">
               <div class="sdk-path-step">Step 2</div>
-              <div class="sdk-path-title">编写程序</div>
-              <div class="sdk-path-desc">三段式流程</div>
+              <div class="sdk-path-title" data-i18n="sdkPathFlowT">编写程序</div>
+              <div class="sdk-path-desc" data-i18n="sdkPathFlowD">三段式流程</div>
             </a>
             <a class="sdk-path-card" href="#sdk-cs-param">
               <div class="sdk-path-step">Step 3</div>
-              <div class="sdk-path-title">参数设置</div>
-              <div class="sdk-path-desc">节点映射</div>
+              <div class="sdk-path-title" data-i18n="sdkPathParamT">参数设置</div>
+              <div class="sdk-path-desc" data-i18n="sdkPathCsParamD">节点映射</div>
             </a>
             <a class="sdk-path-card" href="#sdk-cs-api">
               <div class="sdk-path-step">Step 4</div>
-              <div class="sdk-path-title">API 速查</div>
-              <div class="sdk-path-desc">常用接口</div>
+              <div class="sdk-path-title" data-i18n="sdkPathApiT">API 速查</div>
+              <div class="sdk-path-desc" data-i18n="sdkPathCsApiD">常用接口</div>
             </a>
           </div>
 
           <div class="sdk-section" id="sdk-cs-env">
-            <h2 class="sdk-section-title">🔧 开发环境配置</h2>
+            <h2 class="sdk-section-title" data-i18n="sdkEnvTitle">🔧 开发环境配置</h2>
             <div class="sdk-card">
-              <h3>前置条件</h3>
+              <h3 data-i18n="sdkPrereq">前置条件</h3>
               <ul class="sdk-list">
-                <li>已安装 IDMVS 或 MVS Runtime</li>
-                <li>项目已引用 <code>MvCodeReaderSDKNet.dll</code></li>
-                <li>程序位数与 DLL 一致</li>
+                <li data-i18n="sdkPrereq1">已安装 IDMVS 或 MVS Runtime</li>
+                <li data-i18n="sdkCsRef">项目已引用 <code>MvCodeReaderSDKNet.dll</code></li>
+                <li data-i18n="sdkPrereq3">程序位数与 DLL 一致</li>
               </ul>
             </div>
             <div class="sdk-card">
-              <h3>常用引用</h3>
+              <h3 data-i18n="sdkCsRefs">常用引用</h3>
               <div class="sdk-code">
                 <div class="sdk-code-header">
                   <span>C#</span>
-                  <button class="sdk-copy-btn" onclick="copySdkCode(this)">复制</button>
+                  <button class="sdk-copy-btn" onclick="copySdkCode(this)" data-i18n="sdkCopy">复制</button>
                 </div>
                 <pre><code><span class="kw">using</span> <span class="tp">System</span>;
 <span class="kw">using</span> <span class="tp">MvCodeReaderSDKNet</span>;
 <span class="kw">using</span> <span class="tp">System.Runtime.InteropServices</span>;  <span class="cm">// Marshal</span>
-<span class="kw">using</span> <span class="tp">System.Threading</span>;              <span class="cm">// 接收线程</span></code></pre>
+<span class="kw">using</span> <span class="tp">System.Threading</span>;              <span class="cm" data-i18n="sdkCsRecvThread">// 接收线程</span></code></pre>
               </div>
             </div>
             <div class="sdk-card">
-              <h3>设备类型常量</h3>
+              <h3 data-i18n="sdkCsConst">设备类型常量</h3>
               <div class="sdk-table">
                 <div class="sdk-table-header">
-                  <span>常量</span>
-                  <span>值</span>
-                  <span>说明</span>
+                  <span data-i18n="sdkConst">常量</span>
+                  <span data-i18n="sdkValue">值</span>
+                  <span data-i18n="sdkDesc">说明</span>
                 </div>
                 <div class="sdk-table-row">
                   <code>MV_CODEREADER_GIGE_DEVICE</code>
                   <span>1</span>
-                  <span>GigE 网口设备</span>
+                  <span data-i18n="sdkGigeDev">GigE 网口设备</span>
                 </div>
                 <div class="sdk-table-row">
                   <code>MV_CODEREADER_USB_DEVICE</code>
                   <span>4</span>
-                  <span>USB3.0 设备</span>
+                  <span data-i18n="sdkUsbDev">USB3.0 设备</span>
                 </div>
               </div>
             </div>
           </div>
 
           <div class="sdk-section" id="sdk-cs-flow">
-            <h2 class="sdk-section-title">⭐ 编程流程（重点）</h2>
+            <h2 class="sdk-section-title" data-i18n="sdkFlowTitle">⭐ 编程流程（重点）</h2>
             <div class="sdk-card">
-              <h3>连接阶段</h3>
+              <h3 data-i18n="sdkConnPhase">连接阶段</h3>
               <div class="sdk-code">
                 <div class="sdk-code-header">
-                  <span>C# — 枚举设备</span>
-                  <button class="sdk-copy-btn" onclick="copySdkCode(this)">复制</button>
+                  <span data-i18n="sdkCodeEnumCS">C# — 枚举设备</span>
+                  <button class="sdk-copy-btn" onclick="copySdkCode(this)" data-i18n="sdkCopy">复制</button>
                 </div>
                 <pre><code><span class="kw">var</span> <span class="fn">deviceList</span> = <span class="kw">new</span> <span class="tp">MvCodeReader</span>.<span class="tp">MV_CODEREADER_DEVICE_INFO_LIST</span>();
 <span class="tp">int</span> <span class="fn">nRet</span> = <span class="tp">MvCodeReader</span>.<span class="fn">MV_CODEREADER_EnumDevices_NET</span>(
     <span class="kw">ref</span> deviceList, <span class="tp">MvCodeReader</span>.<span class="nm">MV_CODEREADER_GIGE_DEVICE</span>);
 
-<span class="cm">// 创建句柄（必须 Marshal.PtrToStructure）</span>
+<span class="cm" data-i18n="sdkCsMarshal">// 创建句柄（必须 Marshal.PtrToStructure）</span>
 <span class="kw">var</span> <span class="fn">stDevInfo</span> = (<span class="tp">MvCodeReader</span>.<span class="tp">MV_CODEREADER_DEVICE_INFO</span>)
     <span class="tp">Marshal</span>.<span class="fn">PtrToStructure</span>(deviceList.<span class="fn">pDeviceInfo</span>[<span class="nm">0</span>],
         <span class="kw">typeof</span>(<span class="tp">MvCodeReader</span>.<span class="tp">MV_CODEREADER_DEVICE_INFO</span>));
@@ -1311,24 +1311,24 @@
 <span class="tp">MvCodeReader</span> <span class="fn">device</span> = <span class="kw">new</span> <span class="tp">MvCodeReader</span>();
 nRet = device.<span class="fn">MV_CODEREADER_CreateHandle_NET</span>(<span class="kw">ref</span> stDevInfo);
 
-<span class="cm">// 设置地域</span>
+<span class="cm" data-i18n="sdkC3">// 3. 设置地域（中国大陆必须）</span>
 <span class="tp">IntPtr</span> <span class="fn">handle</span> = device.<span class="fn">GetCameraHandle</span>();
 <span class="fn">MV_CODEREADER_SetAreaInfoConfig</span>(handle, <span class="nm">0xa80</span>, <span class="nm">0x10000</span>);
 
-<span class="cm">// 打开设备</span>
+<span class="cm" data-i18n="sdkC4">// 4. 打开设备</span>
 nRet = device.<span class="fn">MV_CODEREADER_OpenDevice_NET</span>();</code></pre>
               </div>
               <div class="sdk-warning">
                 <span class="sdk-warning-icon">⚠️</span>
-                <span>C# 中 SetAreaInfoConfig 需要通过 DllImport 调用，没有 _NET 后缀版本</span>
+                <span data-i18n="sdkCsDllImport">C# 中 SetAreaInfoConfig 需要通过 DllImport 调用，没有 _NET 后缀版本</span>
               </div>
             </div>
             <div class="sdk-card">
-              <h3>释放阶段（try/finally）</h3>
+              <h3 data-i18n="sdkRelCode">释放阶段（try/finally）</h3>
               <div class="sdk-code">
                 <div class="sdk-code-header">
-                  <span>C# — 释放资源</span>
-                  <button class="sdk-copy-btn" onclick="copySdkCode(this)">复制</button>
+                  <span data-i18n="sdkCodeRelCS">C# — 释放资源</span>
+                  <button class="sdk-copy-btn" onclick="copySdkCode(this)" data-i18n="sdkCopy">复制</button>
                 </div>
                 <pre><code><span class="kw">finally</span>
 {
@@ -1342,21 +1342,21 @@ nRet = device.<span class="fn">MV_CODEREADER_OpenDevice_NET</span>();</code></pr
               </div>
               <div class="sdk-tip">
                 <span class="sdk-tip-icon">💡</span>
-                <span>C# 虽有 GC，但 SDK 句柄<strong>必须手动释放</strong>，用 try/finally 包裹。</span>
+                <span data-i18n="sdkCsGC">C# 虽有 GC，但 SDK 句柄<strong>必须手动释放</strong>，用 try/finally 包裹。</span>
               </div>
             </div>
           </div>
 
           <div class="sdk-section" id="sdk-cs-param">
-            <h2 class="sdk-section-title">⚙️ 参数设置</h2>
+            <h2 class="sdk-section-title" data-i18n="sdkParamTitle">⚙️ 参数设置</h2>
             <div class="sdk-card">
-              <h3>节点类型与 C# 接口映射</h3>
+              <h3 data-i18n="sdkNodeMapCS">节点类型与 C# 接口映射</h3>
               <div class="sdk-table">
                 <div class="sdk-table-header">
-                  <span>类型</span>
-                  <span>读取</span>
-                  <span>设置</span>
-                  <span>值类型</span>
+                  <span data-i18n="sdkType">类型</span>
+                  <span data-i18n="sdkGet">读取</span>
+                  <span data-i18n="sdkSet">设置</span>
+                  <span data-i18n="sdkValType">值类型</span>
                 </div>
                 <div class="sdk-table-row">
                   <span>Integer</span>
@@ -1397,35 +1397,35 @@ nRet = device.<span class="fn">MV_CODEREADER_OpenDevice_NET</span>();</code></pr
               </div>
             </div>
             <div class="sdk-card">
-              <h3>常用参数速查</h3>
+              <h3 data-i18n="sdkCommonParams">常用参数速查</h3>
               <div class="sdk-table">
                 <div class="sdk-table-header">
-                  <span>参数</span>
-                  <span>节点名</span>
-                  <span>类型</span>
+                  <span data-i18n="sdkParam">参数</span>
+                  <span data-i18n="sdkNodeName">节点名</span>
+                  <span data-i18n="sdkType">类型</span>
                 </div>
                 <div class="sdk-table-row">
-                  <span>曝光时间</span>
+                  <span data-i18n="sdkExposure">曝光时间</span>
                   <code>ExposureTime</code>
                   <span>Float</span>
                 </div>
                 <div class="sdk-table-row">
-                  <span>增益</span>
+                  <span data-i18n="sdkGain">增益</span>
                   <code>Gain</code>
                   <span>Float</span>
                 </div>
                 <div class="sdk-table-row">
-                  <span>触发模式</span>
+                  <span data-i18n="sdkTrigMode">触发模式</span>
                   <code>TriggerMode</code>
                   <span>Enum</span>
                 </div>
                 <div class="sdk-table-row">
-                  <span>触发源</span>
+                  <span data-i18n="sdkTrigSrc">触发源</span>
                   <code>TriggerSource</code>
                   <span>Enum</span>
                 </div>
                 <div class="sdk-table-row">
-                  <span>软触发</span>
+                  <span data-i18n="sdkSoftTrig">软触发</span>
                   <code>TriggerSoftware</code>
                   <span>Command</span>
                 </div>
@@ -1434,42 +1434,42 @@ nRet = device.<span class="fn">MV_CODEREADER_OpenDevice_NET</span>();</code></pr
           </div>
 
           <div class="sdk-section" id="sdk-cs-api">
-            <h2 class="sdk-section-title">📚 API 速查</h2>
+            <h2 class="sdk-section-title" data-i18n="sdkApiTitle">📚 API 速查</h2>
             <div class="sdk-card">
-              <h3>设备管理</h3>
+              <h3 data-i18n="sdkApiDev">设备管理</h3>
               <div class="sdk-api-list">
                 <div class="sdk-api-item">
                   <code>MV_CODEREADER_EnumDevices_NET</code>
-                  <span>枚举设备</span>
+                  <span data-i18n="sdkEnumDev">枚举设备</span>
                 </div>
                 <div class="sdk-api-item">
                   <code>MV_CODEREADER_CreateHandle_NET</code>
-                  <span>创建句柄</span>
+                  <span data-i18n="sdkCreateHandle">创建句柄</span>
                 </div>
                 <div class="sdk-api-item">
                   <code>MV_CODEREADER_OpenDevice_NET / CloseDevice_NET</code>
-                  <span>打开/关闭设备</span>
+                  <span data-i18n="sdkOpenClose">打开/关闭设备</span>
                 </div>
                 <div class="sdk-api-item">
                   <code>MV_CODEREADER_DestroyHandle_NET</code>
-                  <span>销毁句柄</span>
+                  <span data-i18n="sdkDestroyHandle">销毁句柄</span>
                 </div>
               </div>
             </div>
             <div class="sdk-card">
-              <h3>取图控制</h3>
+              <h3 data-i18n="sdkApiGrab">取图控制</h3>
               <div class="sdk-api-list">
                 <div class="sdk-api-item">
                   <code>MV_CODEREADER_StartGrabbing_NET / StopGrabbing_NET</code>
-                  <span>开始/停止取流</span>
+                  <span data-i18n="sdkStartStop">开始/停止取流</span>
                 </div>
                 <div class="sdk-api-item">
                   <code>MV_CODEREADER_GetOneFrameTimeoutEx2_NET</code>
-                  <span>主动轮询取图</span>
+                  <span data-i18n="sdkPollShort">主动轮询取图</span>
                 </div>
                 <div class="sdk-api-item">
                   <code>MV_CODEREADER_RegisterImageCallBackEx2_NET</code>
-                  <span>注册图像回调</span>
+                  <span data-i18n="sdkRegCb">注册图像回调</span>
                 </div>
               </div>
             </div>
@@ -1503,7 +1503,7 @@ nRet = device.<span class="fn">MV_CODEREADER_OpenDevice_NET</span>();</code></pr
                 <span class="sol-card-icon">🤖</span>
               </div>
               <div class="sol-card-body">
-                <div class="sol-card-title">小V智能助手</div>
+                <div class="sol-card-title" data-i18n="solVTitle">小V智能助手</div>
                 <div class="sol-card-desc" data-i18n="solVDesc">在线智能问答，快速解决产品使用与选型问题</div>
                 <div class="sol-card-link">
                   <span class="sol-card-url">v-club.com</span>
@@ -1573,8 +1573,8 @@ nRet = device.<span class="fn">MV_CODEREADER_OpenDevice_NET</span>();</code></pr
                 <span class="sol-card-icon">💻</span>
               </div>
               <div class="sol-card-body">
-                <div class="sol-card-title">SDK 参考文档</div>
-                <div class="sol-card-desc">MvCodeReader SDK C/C# 编程指南，从环境搭建到完整示例</div>
+                <div class="sol-card-title" data-i18n="solSdkTitle">SDK 参考文档</div>
+                <div class="sol-card-desc" data-i18n="solSdkDesc">MvCodeReader SDK C/C# 编程指南，从环境搭建到完整示例</div>
                 <div class="sol-card-link">
                   <span class="sol-card-url">sdk-guide.html</span>
                   <span class="sol-card-arrow">→</span>
@@ -1587,8 +1587,8 @@ nRet = device.<span class="fn">MV_CODEREADER_OpenDevice_NET</span>();</code></pr
                 <span class="sol-card-icon">📐</span>
               </div>
               <div class="sol-card-body">
-                <div class="sol-card-title">STEP & DXF 在线查看器</div>
-                <div class="sol-card-desc">浏览器端 3D/2D CAD 图纸查看器，支持 STEP、IGES、BREP、DXF 格式，纯前端解析</div>
+                <div class="sol-card-title" data-i18n="solViewerTitle">STEP & DXF 在线查看器</div>
+                <div class="sol-card-desc" data-i18n="solViewerDesc">浏览器端 3D/2D CAD 图纸查看器，支持 STEP、IGES、BREP、DXF 格式，纯前端解析</div>
                 <div class="sol-card-link">
                   <span class="sol-card-url">jiaze3303.github.io</span>
                   <span class="sol-card-arrow">→</span>
@@ -1625,7 +1625,7 @@ nRet = device.<span class="fn">MV_CODEREADER_OpenDevice_NET</span>();</code></pr
             </select>
           </div>
           <button class="mp-btn-expand" id="mpToggleAllBtn" data-i18n="mpExpand">📂 全部展开</button>
-          <button class="mp-btn-naming" id="mpNamingBtn">📖 命名规则</button>
+          <button class="mp-btn-naming" id="mpNamingBtn" data-i18n="mpNamingBtn">📖 命名规则</button>
         </div>
 
         <!-- 状态栏 -->
@@ -1642,10 +1642,10 @@ nRet = device.<span class="fn">MV_CODEREADER_OpenDevice_NET</span>();</code></pr
                 <th style="width:52px;text-align:center">#</th>
                 <th style="width:28%;text-align:center" data-i18n="mpThBaseModel">基线型号</th>
                 <th style="width:110px;text-align:center" data-i18n="mpThBaseCode">基线代码</th>
-                <th style="width:50px;text-align:center">资料</th>
+                <th style="width:50px;text-align:center" data-i18n="mpThDocs">资料</th>
                 <th style="width:28%;text-align:center" data-i18n="mpThDistModel">经销型号</th>
                 <th style="width:110px;text-align:center" data-i18n="mpThDistCode">经销代码</th>
-                <th style="width:50px;text-align:center">资料</th>
+                <th style="width:50px;text-align:center" data-i18n="mpThDocs">资料</th>
               </tr>
             </thead>
             <tbody id="mpTableBody">
@@ -1670,28 +1670,28 @@ nRet = device.<span class="fn">MV_CODEREADER_OpenDevice_NET</span>();</code></pr
 <div class="naming-modal-overlay" id="namingModal">
   <div class="naming-modal">
     <div class="naming-modal-header">
-      <span class="naming-modal-title">📖 海康机器人 MV-ID 读码器型号命名规则</span>
+      <span class="naming-modal-title" data-i18n="namingTitle">📖 海康机器人 MV-ID 读码器型号命名规则</span>
       <button class="naming-modal-close" id="namingModalClose">&times;</button>
     </div>
     <div class="naming-modal-body" id="namingModalBody">
       <!-- 型号结构 -->
       <div class="naming-section">
-        <div class="naming-section-title">型号结构</div>
+        <div class="naming-section-title" data-i18n="namingStructure">型号结构</div>
         <div class="naming-model-row">
-          <div class="naming-blk naming-b-brand" data-naming-part="prefix"><div class="naming-blk-top">品牌</div><div class="naming-blk-mid">MV</div><div class="naming-blk-bot">Machine Vision</div></div>
+          <div class="naming-blk naming-b-brand" data-naming-part="prefix"><div class="naming-blk-top" data-i18n="namingBrand">品牌</div><div class="naming-blk-mid">MV</div><div class="naming-blk-bot">Machine Vision</div></div>
           <div class="naming-sep">-</div>
-          <div class="naming-blk naming-b-brand" data-naming-part="prefix"><div class="naming-blk-top">品类</div><div class="naming-blk-mid">ID</div><div class="naming-blk-bot">Industrial Decoder</div></div>
-          <div class="naming-blk naming-b-series" data-naming-part="series"><div class="naming-blk-top">系列</div><div class="naming-blk-mid">2023</div><div class="naming-blk-bot">2系·240万</div></div>
-          <div class="naming-blk naming-b-type" data-naming-part="type"><div class="naming-blk-top">类型</div><div class="naming-blk-mid">XM</div><div class="naming-blk-bot">增强款</div></div>
+          <div class="naming-blk naming-b-brand" data-naming-part="prefix"><div class="naming-blk-top" data-i18n="namingCategory">品类</div><div class="naming-blk-mid">ID</div><div class="naming-blk-bot">Industrial Decoder</div></div>
+          <div class="naming-blk naming-b-series" data-naming-part="series"><div class="naming-blk-top" data-i18n="namingSeries">系列</div><div class="naming-blk-mid">2023</div><div class="naming-blk-bot" data-i18n="namingSeriesDesc">2系·240万</div></div>
+          <div class="naming-blk naming-b-type" data-naming-part="type"><div class="naming-blk-top" data-i18n="namingType">类型</div><div class="naming-blk-mid">XM</div><div class="naming-blk-bot" data-i18n="namingTypeDesc">增强款</div></div>
           <div class="naming-sep">-</div>
-          <div class="naming-blk naming-b-focal" data-naming-part="focal"><div class="naming-blk-top">焦距</div><div class="naming-blk-mid">08</div><div class="naming-blk-bot">8mm</div></div>
-          <div class="naming-blk naming-b-focus" data-naming-part="focus"><div class="naming-blk-top">调焦</div><div class="naming-blk-mid">M</div><div class="naming-blk-bot">机械调焦</div></div>
+          <div class="naming-blk naming-b-focal" data-naming-part="focal"><div class="naming-blk-top" data-i18n="namingFocal">焦距</div><div class="naming-blk-mid">08</div><div class="naming-blk-bot">8mm</div></div>
+          <div class="naming-blk naming-b-focus" data-naming-part="focus"><div class="naming-blk-top" data-i18n="namingFocus">调焦</div><div class="naming-blk-mid">M</div><div class="naming-blk-bot" data-i18n="namingFocusDesc">机械调焦</div></div>
           <div class="naming-sep">-</div>
-          <div class="naming-blk naming-b-light" data-naming-part="light"><div class="naming-blk-top">光源</div><div class="naming-blk-mid">R</div><div class="naming-blk-bot">红光</div></div>
-          <div class="naming-blk naming-b-variant" data-naming-part="variant"><div class="naming-blk-top">变体</div><div class="naming-blk-mid">B</div><div class="naming-blk-bot">标准光源</div></div>
-          <div class="naming-blk naming-b-lens" data-naming-part="lens"><div class="naming-blk-top">镜头</div><div class="naming-blk-mid">N</div><div class="naming-blk-bot">普通镜头</div></div>
+          <div class="naming-blk naming-b-light" data-naming-part="light"><div class="naming-blk-top" data-i18n="namingLight">光源</div><div class="naming-blk-mid">R</div><div class="naming-blk-bot" data-i18n="namingLightDesc">红光</div></div>
+          <div class="naming-blk naming-b-variant" data-naming-part="variant"><div class="naming-blk-top" data-i18n="namingVariant">变体</div><div class="naming-blk-mid">B</div><div class="naming-blk-bot" data-i18n="namingVariantDesc">标准光源</div></div>
+          <div class="naming-blk naming-b-lens" data-naming-part="lens"><div class="naming-blk-top" data-i18n="namingLens">镜头</div><div class="naming-blk-mid">N</div><div class="naming-blk-bot" data-i18n="namingLensDesc">普通镜头</div></div>
         </div>
-        <div class="naming-struct-note">
+        <div class="naming-struct-note" data-i18n-html="namingStructNote">
           可选后缀：<b style="color:#e65100;">-U</b>=USB · <b style="color:#e65100;">-R</b>=串口(仅8系)<br>
           C口外接镜头型号：焦距位用 <b style="color:#e65100;">00C</b> 替代，无内置镜头和光源
         </div>
@@ -1705,18 +1705,18 @@ nRet = device.<span class="fn">MV_CODEREADER_OpenDevice_NET</span>();</code></pr
 
       <!-- 型号解析示例 -->
       <div class="naming-section">
-        <div class="naming-section-title">型号解析示例</div>
+        <div class="naming-section-title" data-i18n="namingExamples">型号解析示例</div>
         <table class="naming-ex-table">
-          <thead><tr><th style="width:32%">完整型号</th><th>解析</th></tr></thead>
+          <thead><tr><th style="width:32%" data-i18n="namingFullModel">完整型号</th><th data-i18n="namingParse">解析</th></tr></thead>
           <tbody>
-            <tr><td class="naming-model">MV-ID803M-03S-WBN</td><td class="naming-parse"><b>8系</b> · <b>30万</b> · 基础款 — <b>3mm</b> 定焦 · <b>白光</b> · 标准 · <b>普通镜头</b> — 网口</td></tr>
-            <tr><td class="naming-model">MV-ID803M-03S-WBP-R</td><td class="naming-parse"><b>8系</b> · <b>30万</b> · 基础款 — <b>3mm</b> 定焦 · <b>白光</b> · 标准 · <b>偏振镜头</b> — <b>串口</b></td></tr>
-            <tr><td class="naming-model">MV-ID2013EMI-05-RBN-U</td><td class="naming-parse"><b>2系</b> · <b>130万</b> · 极小型 — <b>4.63mm</b> · <b>红光</b> · 标准 · <b>普通镜头</b> — <b>USB</b></td></tr>
-            <tr><td class="naming-model">MV-ID2023XM-08M-RBN</td><td class="naming-parse"><b>2系</b> · <b>240万</b> · 增强款 — <b>8mm</b> <b>机械调焦</b> · <b>红光</b> · 标准 · <b>普通镜头</b> — 网口</td></tr>
-            <tr><td class="naming-model">MV-ID3013PM-06M-WBN</td><td class="naming-parse"><b>3系</b> · <b>130万</b> · 高端款 — <b>6mm</b> <b>机械调焦</b> · <b>白光</b> · 标准 · <b>普通镜头</b> — 网口</td></tr>
-            <tr><td class="naming-model">MV-ID3040RM-00C-NNN</td><td class="naming-parse"><b>3系</b> · <b>400万</b> · 卷帘快门 — <b>C口外接镜头</b> — 无自带光源</td></tr>
-            <tr><td class="naming-model">MV-ID5120RM-08L-RBN</td><td class="naming-parse"><b>5系</b> · <b>1200万</b> · 卷帘快门 — <b>8mm</b> <b>液态调焦</b> · <b>红光</b> · 标准 · <b>普通镜头</b> — 网口</td></tr>
-            <tr><td class="naming-model">MV-ID5200M-00C-NNN</td><td class="naming-parse"><b>5系</b> · <b>2000万</b> · 基础款 — <b>C口外接镜头</b> — 无自带光源</td></tr>
+            <tr><td class="naming-model">MV-ID803M-03S-WBN</td><td class="naming-parse" data-i18n-html="namingEx1"><b>8系</b> · <b>30万</b> · 基础款 — <b>3mm</b> 定焦 · <b>白光</b> · 标准 · <b>普通镜头</b> — 网口</td></tr>
+            <tr><td class="naming-model">MV-ID803M-03S-WBP-R</td><td class="naming-parse" data-i18n-html="namingEx2"><b>8系</b> · <b>30万</b> · 基础款 — <b>3mm</b> 定焦 · <b>白光</b> · 标准 · <b>偏振镜头</b> — <b>串口</b></td></tr>
+            <tr><td class="naming-model">MV-ID2013EMI-05-RBN-U</td><td class="naming-parse" data-i18n-html="namingEx3"><b>2系</b> · <b>130万</b> · 极小型 — <b>4.63mm</b> · <b>红光</b> · 标准 · <b>普通镜头</b> — <b>USB</b></td></tr>
+            <tr><td class="naming-model">MV-ID2023XM-08M-RBN</td><td class="naming-parse" data-i18n-html="namingEx4"><b>2系</b> · <b>240万</b> · 增强款 — <b>8mm</b> <b>机械调焦</b> · <b>红光</b> · 标准 · <b>普通镜头</b> — 网口</td></tr>
+            <tr><td class="naming-model">MV-ID3013PM-06M-WBN</td><td class="naming-parse" data-i18n-html="namingEx5"><b>3系</b> · <b>130万</b> · 高端款 — <b>6mm</b> <b>机械调焦</b> · <b>白光</b> · 标准 · <b>普通镜头</b> — 网口</td></tr>
+            <tr><td class="naming-model">MV-ID3040RM-00C-NNN</td><td class="naming-parse" data-i18n-html="namingEx6"><b>3系</b> · <b>400万</b> · 卷帘快门 — <b>C口外接镜头</b> — 无自带光源</td></tr>
+            <tr><td class="naming-model">MV-ID5120RM-08L-RBN</td><td class="naming-parse" data-i18n-html="namingEx7"><b>5系</b> · <b>1200万</b> · 卷帘快门 — <b>8mm</b> <b>液态调焦</b> · <b>红光</b> · 标准 · <b>普通镜头</b> — 网口</td></tr>
+            <tr><td class="naming-model">MV-ID5200M-00C-NNN</td><td class="naming-parse" data-i18n-html="namingEx8"><b>5系</b> · <b>2000万</b> · 基础款 — <b>C口外接镜头</b> — 无自带光源</td></tr>
           </tbody>
         </table>
       </div>
@@ -1817,21 +1817,21 @@ nRet = device.<span class="fn">MV_CODEREADER_OpenDevice_NET</span>();</code></pr
       <div class="contact-modal-body">
         <div class="contact-card">
           <div class="contact-card-img-wrap" data-src="assets/contact-wechat.jpg">
-            <img src="assets/contact-wechat.jpg" alt="微信视频号" class="contact-card-img" loading="lazy" decoding="async">
+            <img src="assets/contact-wechat.jpg" alt="微信视频号" class="contact-card-img" data-i18n-alt="contactWechatAlt" loading="lazy" decoding="async">
           </div>
-          <div class="contact-card-label">微信视频号</div>
+          <div class="contact-card-label" data-i18n="contactWechat">微信视频号</div>
         </div>
         <div class="contact-card">
           <div class="contact-card-img-wrap" data-src="assets/contact-douyin.jpg">
-            <img src="assets/contact-douyin.jpg" alt="抖音视频号" class="contact-card-img" loading="lazy" decoding="async">
+            <img src="assets/contact-douyin.jpg" alt="抖音视频号" class="contact-card-img" data-i18n-alt="contactDouyinAlt" loading="lazy" decoding="async">
           </div>
-          <div class="contact-card-label">抖音视频号</div>
+          <div class="contact-card-label" data-i18n="contactDouyin">抖音视频号</div>
         </div>
         <div class="contact-card">
           <div class="contact-card-img-wrap" data-src="assets/contact-bilibili.jpg">
-            <img src="assets/contact-bilibili.jpg" alt="B站视频号" class="contact-card-img" loading="lazy" decoding="async">
+            <img src="assets/contact-bilibili.jpg" alt="B站视频号" class="contact-card-img" data-i18n-alt="contactBiliAlt" loading="lazy" decoding="async">
           </div>
-          <div class="contact-card-label">B站视频号</div>
+          <div class="contact-card-label" data-i18n="contactBili">B站视频号</div>
         </div>
       </div>
       <div class="contact-modal-footer">
@@ -1844,11 +1844,12 @@ nRet = device.<span class="fn">MV_CODEREADER_OpenDevice_NET</span>();</code></pr
   <!-- 拼接示意图放大 Lightbox -->
   <div class="stitch-lightbox-overlay" id="stitchLightbox">
     <div class="stitch-lightbox-inner" id="stitchLightboxInner"></div>
-    <div class="stitch-lightbox-hint">点击任意位置关闭</div>
+    <div class="stitch-lightbox-hint" data-i18n="lightboxCloseHint">点击任意位置关闭</div>
   </div>
 
   <div class="contact-lightbox-overlay" id="contactLightbox">
-    <img src="" alt="预览" id="contactLightboxImg">
+    <img src="" alt="预览" data-i18n-alt="previewAlt" id="contactLightboxImg">
+    <div class="contact-lightbox-hint" data-i18n="lightboxCloseHint">点击任意位置关闭</div>
   </div>
 
   <!-- ===== 脚本加载（数据优先，模块在后，使用 defer 优化） ===== -->
@@ -1858,28 +1859,28 @@ nRet = device.<span class="fn">MV_CODEREADER_OpenDevice_NET</span>();</code></pr
   <script src="js/data/mapping.min.js" defer></script>
   <script src="js/data/download_urls.min.js" defer></script>
   <script src="js/data/announcement.min.js" defer></script>
-  <script src="js/app.min.js?v=29" defer></script>
-  <script src="js/bom.min.js?v=18" defer></script>
-  <script src="js/mapping_module.min.js" defer></script>
+  <script src="js/app.min.js?v=31" defer></script>
+  <script src="js/bom.min.js?v=19" defer></script>
+  <script src="js/mapping_module.min.js?v=19" defer></script>
   <script src="js/data/status_codes.min.js" defer></script>
-  <script src="js/statuscode_module.min.js" defer></script>
+  <script src="js/statuscode_module.min.js?v=19" defer></script>
 
   <!-- 公告弹窗 -->
   <div class="announcement-overlay" id="announcementOverlay">
     <div class="announcement-modal">
       <div class="announcement-header">
-        <span>📢 公告</span>
+        <span data-i18n="announcementTitle">📢 公告</span>
         <button class="announcement-close" id="announcementClose">✕</button>
       </div>
       <div class="announcement-body">
         <div class="announcement-latest" id="announcementLatest"></div>
         <div class="announcement-history">
-          <button class="announcement-history-toggle" id="announcementHistoryToggle">历史公告 ▾</button>
+          <button class="announcement-history-toggle" id="announcementHistoryToggle" data-i18n="announcementHistory">历史公告 ▾</button>
           <div class="announcement-history-list" id="announcementHistoryList"></div>
         </div>
       </div>
       <div class="announcement-footer">
-        <button class="announcement-btn" id="announcementDismiss">好的</button>
+        <button class="announcement-btn" id="announcementDismiss" data-i18n="announcementDismiss">好的</button>
       </div>
     </div>
   </div>

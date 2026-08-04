@@ -12,6 +12,12 @@
   var statsEl = document.getElementById('scStats');
   var footerCountEl = document.getElementById('scFooterCount');
 
+  // i18n 辅助
+  function _t(key) {
+    if (window._i18n && window._i18n.t) return window._i18n.t(key);
+    return key;
+  }
+
   // 获取所有分类
   function getCategories() {
     var cats = [];
@@ -60,7 +66,7 @@
   // 渲染表格
   function renderTable(data) {
     if (data.length === 0) {
-      tableBody.innerHTML = '<tr><td colspan="6" class="sc-empty">' + (typeof t === 'function' ? t('scNoMatch') : '😔 未找到匹配的状态码') + '</td></tr>';
+      tableBody.innerHTML = '<tr><td colspan="6" class="sc-empty">' + (typeof t === 'function' ? t('scNoMatch') : _t('scNoMatch')) + '</td></tr>';
     } else {
       var html = '';
       data.forEach(function(item, index) {
@@ -84,8 +90,8 @@
       statsEl.textContent = t('scStats').replace('{n}', countText);
       footerCountEl.textContent = t('scCount').replace('{n}', countText);
     } else {
-      statsEl.textContent = '共 ' + countText + ' 条状态码';
-      footerCountEl.textContent = '共 ' + countText + ' 条';
+      statsEl.textContent = _t('scStats').replace('{n}', countText);
+      footerCountEl.textContent = _t('scCount').replace('{n}', countText);
     }
   }
 
@@ -119,7 +125,7 @@
     var name = tr.dataset.name;
     if (navigator.clipboard) {
       navigator.clipboard.writeText(name).then(function() {
-        showToast('已复制: ' + name);
+        showToast(_t('scCopied') + name);
       });
     } else {
       // fallback
@@ -129,7 +135,7 @@
       textarea.select();
       document.execCommand('copy');
       document.body.removeChild(textarea);
-      showToast('已复制: ' + name);
+      showToast(_t('scCopied') + name);
     }
   }
 
@@ -150,7 +156,7 @@
   function init() {
     try {
       if (typeof STATUS_CODES === 'undefined') {
-        tableBody.innerHTML = '<tr><td colspan="6" class="sc-empty">状态码数据未加载，请刷新页面重试</td></tr>';
+        tableBody.innerHTML = '<tr><td colspan="6" class="sc-empty">' + _t('scNoData') + '</td></tr>';
         return;
       }
       if (!searchInput || !tableBody) {
@@ -162,7 +168,7 @@
       filterCodes();
     } catch(e) {
       console.error('❌ 状态码模块初始化失败:', e);
-      if (tableBody) tableBody.innerHTML = '<tr><td colspan="6" class="sc-empty">模块加载出错，请刷新页面重试</td></tr>';
+      if (tableBody) tableBody.innerHTML = '<tr><td colspan="6" class="sc-empty">' + _t('scLoadErr') + '</td></tr>';
     }
   }
 
