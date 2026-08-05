@@ -1442,7 +1442,7 @@
         state.renderer.render(state.scene, state.camera);
 
         // 合成最终图片
-        var legendH = 145;
+        var legendH = 175;
         var outW = hiW, outH = hiH + legendH;
 
         var exportCanvas = document.createElement('canvas');
@@ -1481,7 +1481,18 @@
           ctx.font = '13px sans-serif';
           ctx.fillStyle = mutedColor;
           ctx.fillText('PPM ' + plan.ppm.toFixed(2) + '  ·  安装高度 ' + Math.round(plan.workingDist || 200) + 'mm', lx, lyy);
-          lyy += 28;
+          lyy += 24;
+          // 相机间距
+          if (plan.grid.cols > 1 || plan.grid.rows > 1) {
+            var gapPartsDl = [];
+            var stepXDl = plan.fov.width - plan.overlapW;
+            var stepZDl = plan.fov.height - plan.overlapH;
+            if (plan.grid.cols > 1) gapPartsDl.push(t('stHrz') + ' ' + Math.round(stepXDl) + 'mm');
+            if (plan.grid.rows > 1) gapPartsDl.push(t('stVrt') + ' ' + Math.round(stepZDl) + 'mm');
+            ctx.fillText(t('stCamGap') + ' ' + gapPartsDl.join('  /  '), lx, lyy);
+            lyy += 24;
+          }
+          lyy += 4;
 
           // 颜色图例
           ctx.font = '14px sans-serif';
