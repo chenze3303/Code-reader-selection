@@ -2154,6 +2154,10 @@
     var camNum = 0;
     var stepX = fovW - overlapW, stepZ = fovH - overlapH;
     var startX = -(cols - 1) * stepX / 2, startZ = -(rows - 1) * stepZ / 2;
+    var totalCams = rows * cols;
+    var heavyMode = totalCams > 12, midMode = totalCams > 4;
+    var coneFillOp = heavyMode ? 0 : (midMode ? 0.02 : 0.04);
+    var rectFillOp = heavyMode || midMode ? 0 : 0.03;
 
     for (var r = 0; r < rows; r++) {
       for (var c = 0; c < cols; c++) {
@@ -2175,23 +2179,27 @@
         var pillar = new THREE.Mesh(new THREE.CylinderGeometry(1.5, 1.5, camDepth, 8), new THREE.MeshStandardMaterial({ color: 0x555555, roughness: 0.6, metalness: 0.4, transparent: true, opacity: 0.3 }));
         pillar.position.set(cx, camDepth / 2, cz); scene.add(pillar);
 
-        // Frustum（线框为主，填充极淡，避免多锥体透明叠加产生杂乱色块）
+        // Frustum（线框为主，填充按相机数量分级，避免多锥体透明叠加产生杂乱色块）
         var fovHalfW = fovW / 2, fovHalfH = fovH / 2;
         var isSingle = (camNum === 0);
         var coneColor = isSingle ? 0x4a90d9 : 0xf76504;
         var fovGeo = createFrustumGeometry(cx, camDepth, cz, fovHalfW, fovHalfH);
-        scene.add(new THREE.Mesh(fovGeo, new THREE.MeshBasicMaterial({ color: coneColor, transparent: true, opacity: 0.04, side: THREE.DoubleSide, depthWrite: false })));
+        if (coneFillOp > 0) {
+          scene.add(new THREE.Mesh(fovGeo, new THREE.MeshBasicMaterial({ color: coneColor, transparent: true, opacity: coneFillOp, side: THREE.DoubleSide, depthWrite: false })));
+        }
         scene.add(new THREE.LineSegments(new THREE.EdgesGeometry(fovGeo), new THREE.LineBasicMaterial({ color: coneColor, transparent: true, opacity: 0.75 })));
 
-        // Ground coverage rect（填充极淡，边框清晰）
+        // Ground coverage rect（填充按相机数量分级，边框始终保留）
         var rectS = new THREE.Shape();
         rectS.moveTo(cx-fovHalfW, cz-fovHalfH); rectS.lineTo(cx+fovHalfW, cz-fovHalfH);
         rectS.lineTo(cx+fovHalfW, cz+fovHalfH); rectS.lineTo(cx-fovHalfW, cz+fovHalfH);
         rectS.lineTo(cx-fovHalfW, cz-fovHalfH);
         var rectEdge = new THREE.LineSegments(new THREE.EdgesGeometry(new THREE.ShapeGeometry(rectS)), new THREE.LineBasicMaterial({ color: coneColor, transparent: true, opacity: 0.75 }));
         rectEdge.position.y = 0.5; scene.add(rectEdge);
-        var rectFace = new THREE.Mesh(new THREE.ShapeGeometry(rectS), new THREE.MeshBasicMaterial({ color: coneColor, transparent: true, opacity: 0.03, side: THREE.DoubleSide }));
-        rectFace.rotation.x = -Math.PI / 2; rectFace.position.y = 0.2; scene.add(rectFace);
+        if (rectFillOp > 0) {
+          var rectFace = new THREE.Mesh(new THREE.ShapeGeometry(rectS), new THREE.MeshBasicMaterial({ color: coneColor, transparent: true, opacity: rectFillOp, side: THREE.DoubleSide }));
+          rectFace.rotation.x = -Math.PI / 2; rectFace.position.y = 0.2; scene.add(rectFace);
+        }
 
         // Label
         var label = makeTextSprite('#' + (camNum + 1), coneColor, isSingle ? 1.0 : 0.8);
@@ -2205,7 +2213,8 @@
       }
     }
 
-    // Overlap regions
+    // Overlap regions（大视野下只保留边框，避免过多色块）
+    var olFillOp = heavyMode ? 0 : (midMode ? 0.05 : 0.07);
     if (overlapW > 0) {
       for (var r2 = 0; r2 < rows; r2++) {
         for (var c2 = 0; c2 < cols - 1; c2++) {
@@ -2215,9 +2224,11 @@
           olS.moveTo(ox-overlapW/2, oz-fovH/2); olS.lineTo(ox+overlapW/2, oz-fovH/2);
           olS.lineTo(ox+overlapW/2, oz+fovH/2); olS.lineTo(ox-overlapW/2, oz+fovH/2);
           olS.lineTo(ox-overlapW/2, oz-fovH/2);
-          var olM = new THREE.Mesh(new THREE.ShapeGeometry(olS), new THREE.MeshBasicMaterial({ color: 0xe74c3c, transparent: true, opacity: 0.07, side: THREE.DoubleSide }));
-          olM.rotation.x = -Math.PI/2; olM.position.y = 0.8; scene.add(olM);
-          var olE = new THREE.LineSegments(new THREE.EdgesGeometry(olM.geometry), new THREE.LineBasicMaterial({ color: 0xe74c3c, transparent: true, opacity: 0.5 }));
+          if (olFillOp > 0) {
+            var olM = new THREE.Mesh(new THREE.ShapeGeometry(olS), new THREE.MeshBasicMaterial({ color: 0xe74c3c, transparent: true, opacity: olFillOp, side: THREE.DoubleSide }));
+            olM.rotation.x = -Math.PI/2; olM.position.y = 0.8; scene.add(olM);
+          }
+          var olE = new THREE.LineSegments(new THREE.EdgesGeometry(new THREE.ShapeGeometry(olS)), new THREE.LineBasicMaterial({ color: 0xe74c3c, transparent: true, opacity: 0.5 }));
           olE.rotation.x = -Math.PI/2; olE.position.set(ox, 1.0, oz); scene.add(olE);
         }
       }
@@ -2231,9 +2242,11 @@
           olS2.moveTo(ox2-fovW/2, oz2-overlapH/2); olS2.lineTo(ox2+fovW/2, oz2-overlapH/2);
           olS2.lineTo(ox2+fovW/2, oz2+overlapH/2); olS2.lineTo(ox2-fovW/2, oz2+overlapH/2);
           olS2.lineTo(ox2-fovW/2, oz2-overlapH/2);
-          var olM2 = new THREE.Mesh(new THREE.ShapeGeometry(olS2), new THREE.MeshBasicMaterial({ color: 0x3884f4, transparent: true, opacity: 0.07, side: THREE.DoubleSide }));
-          olM2.rotation.x = -Math.PI/2; olM2.position.y = 0.8; scene.add(olM2);
-          var olE2 = new THREE.LineSegments(new THREE.EdgesGeometry(olM2.geometry), new THREE.LineBasicMaterial({ color: 0x3884f4, transparent: true, opacity: 0.5 }));
+          if (olFillOp > 0) {
+            var olM2 = new THREE.Mesh(new THREE.ShapeGeometry(olS2), new THREE.MeshBasicMaterial({ color: 0x3884f4, transparent: true, opacity: olFillOp, side: THREE.DoubleSide }));
+            olM2.rotation.x = -Math.PI/2; olM2.position.y = 0.8; scene.add(olM2);
+          }
+          var olE2 = new THREE.LineSegments(new THREE.EdgesGeometry(new THREE.ShapeGeometry(olS2)), new THREE.LineBasicMaterial({ color: 0x3884f4, transparent: true, opacity: 0.5 }));
           olE2.rotation.x = -Math.PI/2; olE2.position.set(ox2, 1.0, oz2); scene.add(olE2);
         }
       }
@@ -2255,28 +2268,6 @@
     var d3 = new THREE.Mesh(endDotGeo, endDotMat); d3.position.set(sideX,1,-actualH/2); scene.add(d3);
     var d4 = new THREE.Mesh(endDotGeo, endDotMat); d4.position.set(sideX,1,actualH/2); scene.add(d4);
     var hLbl = makeTextSprite(Math.round(actualH)+'mm', 0xf76504, 0.75); hLbl.position.set(sideX-25,8,0); scene.add(hLbl);
-
-    // 相机间距标注线（相邻相机中心间距 = stepX / stepZ）
-    var stepMat = new THREE.LineBasicMaterial({ color: 0x3884f4 });
-    var stepDotGeo = new THREE.SphereGeometry(1.5, 8, 8);
-    var stepDotMat = new THREE.MeshBasicMaterial({ color: 0x3884f4 });
-    var midZ = rows > 1 ? (startZ + (rows - 1) * stepZ) / 2 : startZ;
-    var midX = cols > 1 ? (startX + (cols - 1) * stepX) / 2 : startX;
-    var stepY = 3;
-    if (cols > 1) {
-      scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(startX, stepY, midZ), new THREE.Vector3(startX + stepX, stepY, midZ)]), stepMat));
-      var sd1 = new THREE.Mesh(stepDotGeo, stepDotMat); sd1.position.set(startX, stepY, midZ); scene.add(sd1);
-      var sd2 = new THREE.Mesh(stepDotGeo, stepDotMat); sd2.position.set(startX + stepX, stepY, midZ); scene.add(sd2);
-      var stepLbl = makeTextSprite(Math.round(stepX) + 'mm', 0x3884f4, 0.7);
-      stepLbl.position.set(startX + stepX / 2, stepY + 6, midZ); scene.add(stepLbl);
-    }
-    if (rows > 1) {
-      scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(midX, stepY, startZ), new THREE.Vector3(midX, stepY, startZ + stepZ)]), stepMat));
-      var sd3 = new THREE.Mesh(stepDotGeo, stepDotMat); sd3.position.set(midX, stepY, startZ); scene.add(sd3);
-      var sd4 = new THREE.Mesh(stepDotGeo, stepDotMat); sd4.position.set(midX, stepY, startZ + stepZ); scene.add(sd4);
-      var stepLbl2 = makeTextSprite(Math.round(stepZ) + 'mm', 0x3884f4, 0.7);
-      stepLbl2.position.set(midX, stepY + 6, startZ + stepZ / 2); scene.add(stepLbl2);
-    }
 
     // Info overlay (inside 3D container)
     var infoHtml = '<div class="stitch-3d-info">';
