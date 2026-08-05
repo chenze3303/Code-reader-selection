@@ -2,7 +2,7 @@
 
 ## 项目概述
 
-海康机器人读码器选型工具 V3.9。纯前端，无需构建系统或服务器——浏览器直接打开 `index.html` 即可运行。
+海康机器人读码器选型工具 V3.10。纯前端，无需构建系统或服务器——浏览器直接打开 `index.html` 即可运行。
 
 ## 架构
 
@@ -30,7 +30,7 @@
 - 暗黑模式：切换 `<html>` 元素的 `dark` class
 - 搜索归一化：去除 `MV-` 前缀，大小写不敏感
 - 样式规范：12px 外边距，10px 圆角卡片，38px 统一控件高度
-- CSS 版本通过 `index.html` 中的查询字符串控制（当前 `style.min.css?v=31`）
+- CSS 版本通过 `index.html` 中的查询字符串控制（当前 `style.min.css?v=36`）
 - 缓存破坏：编辑 JS/CSS 后需同步更新 `index.html` 中对应的 `?v=N` 参数（CSS/JS 与数据模块均带版本号）
 
 ## 脚本加载顺序
@@ -98,8 +98,8 @@ node scripts/gen_download_urls.js                  # → js/data/download_urls.j
 | `js/data/download_urls.js` | 各系列下载 URL（IIFE），**自动生成，勿手动编辑** |
 | `js/data/cat_dist_map.js` | 系列→经销型号前缀映射（`window.CAT_DIST_MAP`） |
 | `product_data.json` | 配单原始数据源（24 列扁平格式，通过转换脚本生成 peidan.js） |
-| `js/app.js` | 智能选型主逻辑（PPM/视野计算、i18n、Toast、导航、PPM计算器、拼接方案） |
-| `js/bom.js` | 配单表（型号树、选配件弹窗、电源联动、标配替换、CSV 导出、资料下载） |
+| `js/app.js` | 智能选型主逻辑（PPM/视野计算、i18n、Toast、导航、PPM计算器、拼接方案含排序工具栏） |
+| `js/bom.js` | 配单表（型号树、选配件弹窗、电源联动、标配替换、CSV 导出、资料下载、快速搜索配件反查/系列标签跳转） |
 | `js/mapping_module.js` | 产品表（搜索、筛选、分组、资料下载、命名规则弹窗） |
 | `js/statuscode_module.js` | 状态码查询（搜索、筛选、复制） |
 | `scripts/test-stress.js` | 压力测试脚本（115 项自动化测试） |

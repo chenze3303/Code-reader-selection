@@ -384,16 +384,17 @@
       bomEmptyAlert: '配单表为空',
       bomCsvHash: '#', bomCsvType: '配件类型', bomCsvName: '物料名称', bomCsvDesc: '描述', bomCsvCode: '物料代码',
       bomCsvNameFile: '配单表',
+      bomFitSeriesLabel: '适配系列：',
       stReasonFov: '视野超出单机极限', stReasonDist: '工作距离受限', stReasonPpm: 'PPM超出范围',
       stViewPlan: '📐 查看拼接方案', stHintTitle: '单相机方案无法满足当前需求',
       stHintDescCan: '您输入的视野范围较大，单台读码器无法完整覆盖。建议采用多相机组网拼接方案，通过多台读码器协同工作实现完整视野覆盖。',
       stHintDescNo: '当前参数下所有型号的PPM均超出合理范围，请调整模块尺寸、工作距离或视野参数。',
       stSingleFov: '单机视野', stTotalCover: '总覆盖', stOverlapH: '水平重叠', stOverlapV: '垂直重叠',
       stReqCover: '需求覆盖', stNoPlan: '未找到合适的拼接方案', stNoPlanHint: '请调整参数：增大工作距离、减小覆盖区域、或选择更高分辨率型号',
-      stViewAll: '📋 查看全部方案', stSelectPlan: '选择拼接方案', stAll: '全部', stUnits: '台',
-      stResetView: '重置视角', stTopView: '俯视图', stCamCount: '相机数量', stMountHeight: '安装高度',
+      stViewAll: '📋 查看全部方案', stSelectPlan: '选择拼接方案', stAll: '全部', stUnits: '台',      stResetView: '重置视角', stTopView: '俯视图', stCamCount: '相机数量', stMountHeight: '安装高度',
       stHrz: '水平', stVrt: '垂直', stOverlap: '重叠区域',
       copiedShort: '已复制', threeJsLoadErr: 'Three.js 加载失败',
+      stSortLabel: '排序', stSortDefault: '默认', stSortCountAsc: '数量 ↑', stSortCountDesc: '数量 ↓', stSortResAsc: '分辨率 ↑', stSortResDesc: '分辨率 ↓', stSeriesLabel: '系列',
       verifyMPUnit: '万', verifyWdRec: '推荐工作距离：', verifyWdRange: '工作距离范围：',
       verifyMaxExposure: '最大曝光', verifyEmptyWait: '等待参数输入...',
       mpLoadErr: '模块加载出错，请刷新页面重试'
@@ -673,6 +674,7 @@
       bomEmptyAlert: 'BOM is empty',
       bomCsvHash: '#', bomCsvType: 'Type', bomCsvName: 'Name', bomCsvDesc: 'Description', bomCsvCode: 'Code',
       bomCsvNameFile: 'BOM',
+      bomFitSeriesLabel: 'Fits series: ',
       stReasonFov: 'FOV exceeds single-unit limit', stReasonDist: 'Working distance limited', stReasonPpm: 'PPM out of range',
       stViewPlan: '📐 View Stitching Plan', stHintTitle: 'Single-camera plan cannot meet the requirement',
       stHintDescCan: 'The requested FOV is too large for one code reader. We recommend a multi-camera stitching setup where multiple readers work together for full coverage.',
@@ -683,6 +685,7 @@
       stResetView: 'Reset view', stTopView: 'Top view', stCamCount: 'Cameras', stMountHeight: 'Mount height',
       stHrz: 'H', stVrt: 'V', stOverlap: 'Overlap',
       copiedShort: 'Copied', threeJsLoadErr: 'Three.js failed to load',
+      stSortLabel: 'Sort', stSortDefault: 'Default', stSortCountAsc: 'Count ↑', stSortCountDesc: 'Count ↓', stSortResAsc: 'Resolution ↑', stSortResDesc: 'Resolution ↓', stSeriesLabel: 'Series',
       verifyMPUnit: 'MP', verifyWdRec: 'Recommended WD: ', verifyWdRange: 'WD range: ',
       verifyMaxExposure: 'Max Exposure', verifyEmptyWait: 'Waiting for parameters...',
       mpLoadErr: 'Module failed to load. Please refresh the page.'
@@ -1720,6 +1723,31 @@
     }, 80); });
   }
 
+  // 拼接方案排序状态：{ field: 'count'|'res', dir: 1|-1 }
+  window._stitchSort = window._stitchSort || { field: '', dir: 1 };
+
+  function sortStitchResults(list) {
+    if (!window._stitchSort || !window._stitchSort.field) return list;
+    var field = window._stitchSort.field;
+    var dir = window._stitchSort.dir;
+    var arr = list.slice();
+    arr.sort(function(a, b) {
+      var va, vb;
+      if (field === 'count') {
+        va = a.grid.total;
+        vb = b.grid.total;
+      } else if (field === 'res') {
+        va = a.model.resolution.w * a.model.resolution.h;
+        vb = b.model.resolution.w * b.model.resolution.h;
+      } else {
+        return 0;
+      }
+      if (va === vb) return 0;
+      return (va - vb) * dir;
+    });
+    return arr;
+  }
+
   function renderStitchResult(results, totalW, totalH, barcodeW, barcodeH, orient, activeIdx, filterSeries) {
     var svgArea = document.getElementById('stitchSvgArea');
     var planArea = document.getElementById('stitchPlanArea');
@@ -1733,6 +1761,8 @@
     // 系列筛选
     var displayResults = filterSeries ? results.filter(function(r) { return r.model.series === filterSeries; }) : results;
     if (displayResults.length === 0) displayResults = results;
+    // 排序
+    displayResults = sortStitchResults(displayResults);
 
     // 确保 activeIdx 在范围内
     if (activeIdx >= displayResults.length) activeIdx = 0;
@@ -1783,12 +1813,29 @@
     modalHtml += '<span>' + t('stSelectPlan') + '</span>';
     modalHtml += '<button class="stitch-plan-modal-close" id="stitchPlanModalClose">&times;</button>';
     modalHtml += '</div>';
-    modalHtml += '<div class="stitch-series-tabs">';
-    modalHtml += '<span class="stitch-series-tab' + (!filterSeries ? ' active' : '') + '" data-series="all">' + t('stAll') + ' (' + results.length + ')</span>';
+    modalHtml += '<div class="stitch-toolbar">';
+    // 系列筛选下拉框
+    modalHtml += '<label class="stitch-toolbar-field">' + t('stSeriesLabel') + ' <select id="stitchSeriesSelect" class="stitch-select">';
+    modalHtml += '<option value="all">' + t('stAll') + ' (' + results.length + ')</option>';
     allSeries.forEach(function(s) {
       var count = results.filter(function(r) { return r.model.series === s; }).length;
-      modalHtml += '<span class="stitch-series-tab' + (filterSeries === s ? ' active' : '') + '" data-series="' + s + '">' + s + ' (' + count + ')</span>';
+      modalHtml += '<option value="' + s + '"' + (filterSeries === s ? ' selected' : '') + '>' + s + ' (' + count + ')</option>';
     });
+    modalHtml += '</select></label>';
+    // 排序下拉框
+    var sortOpts = [
+      { field: '', dir: 1, label: t('stSortDefault') },
+      { field: 'count', dir: 1, label: t('stSortCountAsc') },
+      { field: 'count', dir: -1, label: t('stSortCountDesc') },
+      { field: 'res', dir: 1, label: t('stSortResAsc') },
+      { field: 'res', dir: -1, label: t('stSortResDesc') }
+    ];
+    modalHtml += '<label class="stitch-toolbar-field">' + t('stSortLabel') + ' <select id="stitchSortSelect" class="stitch-select">';
+    sortOpts.forEach(function(opt) {
+      var isActive = window._stitchSort.field === opt.field && window._stitchSort.dir === opt.dir;
+      modalHtml += '<option value="' + opt.field + ':' + opt.dir + '"' + (isActive ? ' selected' : '') + '>' + opt.label + '</option>';
+    });
+    modalHtml += '</select></label>';
     modalHtml += '</div>';
     modalHtml += '<div class="stitch-plan-list" id="stitchPlanList">';
     displayResults.forEach(function(r, idx) {
@@ -1832,44 +1879,60 @@
           modal.classList.remove('active');
         };
       });
-      modal.querySelectorAll('.stitch-series-tab').forEach(function(el) {
-        el.onclick = function(e) {
-          e.stopPropagation();
-          var s = el.getAttribute('data-series');
-          // 更新 tab 高亮
-          modal.querySelectorAll('.stitch-series-tab').forEach(function(t) { t.classList.remove('active'); });
-          el.classList.add('active');
-          // 重新渲染方案列表（不关闭弹窗）
-          var listEl = document.getElementById('stitchPlanList');
-          if (!listEl) return;
-          var displayResults = s === 'all' ? results : results.filter(function(r) { return r.model.series === s; });
-          if (displayResults.length === 0) displayResults = results;
-          var listHtml = '';
-          displayResults.forEach(function(r, idx) {
-            var isActive = idx === (window._stitchActiveIdx || 0);
-            listHtml += '<div class="stitch-plan-item' + (isActive ? ' active' : '') + '" data-stitch-idx="' + idx + '">';
-            listHtml += '<div class="stitch-plan-left">';
-            listHtml += '<span class="stitch-plan-model">' + r.model.model + '</span>';
-            listHtml += '<span class="stitch-plan-spec">' + r.model.resolution.w + '×' + r.model.resolution.h + '</span>';
-            listHtml += '</div>';
-            listHtml += '<div class="stitch-plan-right">';
-            listHtml += '<span class="stitch-plan-count">' + r.grid.cols + '×' + r.grid.rows + ' = ' + r.grid.total + t('stUnits') + '</span>';
-            listHtml += '<span class="stitch-plan-ppm">PPM ' + r.ppm.toFixed(2) + '</span>';
-            listHtml += '</div>';
-            listHtml += '</div>';
-          });
-          listEl.innerHTML = listHtml;
-          // 重新绑定方案点击事件
-          listEl.querySelectorAll('.stitch-plan-item').forEach(function(itemEl) {
-            itemEl.onclick = function() {
-              var idx = parseInt(itemEl.getAttribute('data-stitch-idx'));
-              window._stitchActiveIdx = idx;
-              renderStitchResult(results, totalW, totalH, barcodeW, barcodeH, orient, idx, s === 'all' ? null : s);
-              modal.classList.remove('active');
-            };
-          });
+    // 重建列表（供系列筛选 / 排序复用）
+    function buildPlanList(list, seriesFilter) {
+      var listEl = document.getElementById('stitchPlanList');
+      if (!listEl) return;
+      var base = seriesFilter && seriesFilter !== 'all'
+        ? list.filter(function(r) { return r.model.series === seriesFilter; })
+        : list;
+      if (base.length === 0) base = list;
+      base = sortStitchResults(base);
+      var listHtml = '';
+      base.forEach(function(r, idx) {
+        var isActive = idx === (window._stitchActiveIdx || 0);
+        listHtml += '<div class="stitch-plan-item' + (isActive ? ' active' : '') + '" data-stitch-idx="' + idx + '">';
+        listHtml += '<div class="stitch-plan-left">';
+        listHtml += '<span class="stitch-plan-model">' + r.model.model + '</span>';
+        listHtml += '<span class="stitch-plan-spec">' + r.model.resolution.w + '×' + r.model.resolution.h + '</span>';
+        listHtml += '</div>';
+        listHtml += '<div class="stitch-plan-right">';
+        listHtml += '<span class="stitch-plan-count">' + r.grid.cols + '×' + r.grid.rows + ' = ' + r.grid.total + t('stUnits') + '</span>';
+        listHtml += '<span class="stitch-plan-ppm">PPM ' + r.ppm.toFixed(2) + '</span>';
+        listHtml += '</div>';
+        listHtml += '</div>';
+      });
+      listEl.innerHTML = listHtml;
+      listEl.querySelectorAll('.stitch-plan-item').forEach(function(itemEl) {
+        itemEl.onclick = function() {
+          var idx = parseInt(itemEl.getAttribute('data-stitch-idx'));
+          window._stitchActiveIdx = idx;
+          renderStitchResult(results, totalW, totalH, barcodeW, barcodeH, orient, idx, seriesFilter === 'all' ? null : seriesFilter);
+          modal.classList.remove('active');
         };
       });
+    }
+
+    // 系列筛选下拉框
+    var seriesSelect = document.getElementById('stitchSeriesSelect');
+    if (seriesSelect) {
+      seriesSelect.onchange = function() {
+        var s = seriesSelect.value;
+        buildPlanList(results, s);
+      };
+    }
+    // 排序下拉框
+    var sortSelect = document.getElementById('stitchSortSelect');
+    if (sortSelect) {
+      sortSelect.onchange = function() {
+        var v = sortSelect.value.split(':');
+        window._stitchSort.field = v[0];
+        window._stitchSort.dir = parseInt(v[1]) || 1;
+        // 当前选中的系列
+        var curSeries = seriesSelect ? seriesSelect.value : 'all';
+        buildPlanList(results, curSeries);
+      };
+    }
     }
   }
 
