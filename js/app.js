@@ -2175,22 +2175,22 @@
         var pillar = new THREE.Mesh(new THREE.CylinderGeometry(1.5, 1.5, camDepth, 8), new THREE.MeshStandardMaterial({ color: 0x555555, roughness: 0.6, metalness: 0.4, transparent: true, opacity: 0.3 }));
         pillar.position.set(cx, camDepth / 2, cz); scene.add(pillar);
 
-        // Frustum
+        // Frustum（线框为主，填充极淡，避免多锥体透明叠加产生杂乱色块）
         var fovHalfW = fovW / 2, fovHalfH = fovH / 2;
         var isSingle = (camNum === 0);
         var coneColor = isSingle ? 0x4a90d9 : 0xf76504;
         var fovGeo = createFrustumGeometry(cx, camDepth, cz, fovHalfW, fovHalfH);
-        scene.add(new THREE.Mesh(fovGeo, new THREE.MeshBasicMaterial({ color: coneColor, transparent: true, opacity: 0.1, side: THREE.DoubleSide, depthWrite: false })));
-        scene.add(new THREE.LineSegments(new THREE.EdgesGeometry(fovGeo), new THREE.LineBasicMaterial({ color: coneColor, transparent: true, opacity: 0.5 })));
+        scene.add(new THREE.Mesh(fovGeo, new THREE.MeshBasicMaterial({ color: coneColor, transparent: true, opacity: 0.04, side: THREE.DoubleSide, depthWrite: false })));
+        scene.add(new THREE.LineSegments(new THREE.EdgesGeometry(fovGeo), new THREE.LineBasicMaterial({ color: coneColor, transparent: true, opacity: 0.75 })));
 
-        // Ground coverage rect
+        // Ground coverage rect（填充极淡，边框清晰）
         var rectS = new THREE.Shape();
         rectS.moveTo(cx-fovHalfW, cz-fovHalfH); rectS.lineTo(cx+fovHalfW, cz-fovHalfH);
         rectS.lineTo(cx+fovHalfW, cz+fovHalfH); rectS.lineTo(cx-fovHalfW, cz+fovHalfH);
         rectS.lineTo(cx-fovHalfW, cz-fovHalfH);
-        var rectEdge = new THREE.LineSegments(new THREE.EdgesGeometry(new THREE.ShapeGeometry(rectS)), new THREE.LineBasicMaterial({ color: coneColor, transparent: true, opacity: 0.6 }));
+        var rectEdge = new THREE.LineSegments(new THREE.EdgesGeometry(new THREE.ShapeGeometry(rectS)), new THREE.LineBasicMaterial({ color: coneColor, transparent: true, opacity: 0.75 }));
         rectEdge.position.y = 0.5; scene.add(rectEdge);
-        var rectFace = new THREE.Mesh(new THREE.ShapeGeometry(rectS), new THREE.MeshBasicMaterial({ color: coneColor, transparent: true, opacity: 0.06, side: THREE.DoubleSide }));
+        var rectFace = new THREE.Mesh(new THREE.ShapeGeometry(rectS), new THREE.MeshBasicMaterial({ color: coneColor, transparent: true, opacity: 0.03, side: THREE.DoubleSide }));
         rectFace.rotation.x = -Math.PI / 2; rectFace.position.y = 0.2; scene.add(rectFace);
 
         // Label
@@ -2215,7 +2215,7 @@
           olS.moveTo(ox-overlapW/2, oz-fovH/2); olS.lineTo(ox+overlapW/2, oz-fovH/2);
           olS.lineTo(ox+overlapW/2, oz+fovH/2); olS.lineTo(ox-overlapW/2, oz+fovH/2);
           olS.lineTo(ox-overlapW/2, oz-fovH/2);
-          var olM = new THREE.Mesh(new THREE.ShapeGeometry(olS), new THREE.MeshBasicMaterial({ color: 0xe74c3c, transparent: true, opacity: 0.15, side: THREE.DoubleSide }));
+          var olM = new THREE.Mesh(new THREE.ShapeGeometry(olS), new THREE.MeshBasicMaterial({ color: 0xe74c3c, transparent: true, opacity: 0.07, side: THREE.DoubleSide }));
           olM.rotation.x = -Math.PI/2; olM.position.y = 0.8; scene.add(olM);
           var olE = new THREE.LineSegments(new THREE.EdgesGeometry(olM.geometry), new THREE.LineBasicMaterial({ color: 0xe74c3c, transparent: true, opacity: 0.5 }));
           olE.rotation.x = -Math.PI/2; olE.position.set(ox, 1.0, oz); scene.add(olE);
@@ -2231,7 +2231,7 @@
           olS2.moveTo(ox2-fovW/2, oz2-overlapH/2); olS2.lineTo(ox2+fovW/2, oz2-overlapH/2);
           olS2.lineTo(ox2+fovW/2, oz2+overlapH/2); olS2.lineTo(ox2-fovW/2, oz2+overlapH/2);
           olS2.lineTo(ox2-fovW/2, oz2-overlapH/2);
-          var olM2 = new THREE.Mesh(new THREE.ShapeGeometry(olS2), new THREE.MeshBasicMaterial({ color: 0x3884f4, transparent: true, opacity: 0.15, side: THREE.DoubleSide }));
+          var olM2 = new THREE.Mesh(new THREE.ShapeGeometry(olS2), new THREE.MeshBasicMaterial({ color: 0x3884f4, transparent: true, opacity: 0.07, side: THREE.DoubleSide }));
           olM2.rotation.x = -Math.PI/2; olM2.position.y = 0.8; scene.add(olM2);
           var olE2 = new THREE.LineSegments(new THREE.EdgesGeometry(olM2.geometry), new THREE.LineBasicMaterial({ color: 0x3884f4, transparent: true, opacity: 0.5 }));
           olE2.rotation.x = -Math.PI/2; olE2.position.set(ox2, 1.0, oz2); scene.add(olE2);
