@@ -392,7 +392,7 @@
       stSingleFov: '单机视野', stTotalCover: '总覆盖', stOverlapH: '水平重叠', stOverlapV: '垂直重叠',
       stReqCover: '需求覆盖', stNoPlan: '未找到合适的拼接方案', stNoPlanHint: '请调整参数：增大工作距离、减小覆盖区域、或选择更高分辨率型号',
       stViewAll: '📋 查看全部方案', stSelectPlan: '选择拼接方案', stAll: '全部', stUnits: '台',      stResetView: '重置视角', stTopView: '俯视图', stCamCount: '相机数量', stMountHeight: '安装高度',
-      stHrz: '水平', stVrt: '垂直', stOverlap: '重叠区域',
+      stHrz: '水平', stVrt: '垂直', stOverlap: '重叠区域', stCamGap: '相机间距',
       copiedShort: '已复制', threeJsLoadErr: 'Three.js 加载失败',
       stSortLabel: '排序', stSortDefault: '默认', stSortCountAsc: '数量 ↑', stSortCountDesc: '数量 ↓', stSortResAsc: '分辨率 ↑', stSortResDesc: '分辨率 ↓', stSeriesLabel: '系列',
       verifyMPUnit: '万', verifyWdRec: '推荐工作距离：', verifyWdRange: '工作距离范围：',
@@ -683,7 +683,7 @@
       stReqCover: 'Requested', stNoPlan: 'No suitable stitching plan found', stNoPlanHint: 'Adjust parameters: increase working distance, reduce coverage, or choose higher resolution',
       stViewAll: '📋 View All Plans', stSelectPlan: 'Select Stitching Plan', stAll: 'All', stUnits: ' units',
       stResetView: 'Reset view', stTopView: 'Top view', stCamCount: 'Cameras', stMountHeight: 'Mount height',
-      stHrz: 'H', stVrt: 'V', stOverlap: 'Overlap',
+      stHrz: 'H', stVrt: 'V', stOverlap: 'Overlap', stCamGap: 'Camera spacing',
       copiedShort: 'Copied', threeJsLoadErr: 'Three.js failed to load',
       stSortLabel: 'Sort', stSortDefault: 'Default', stSortCountAsc: 'Count ↑', stSortCountDesc: 'Count ↓', stSortResAsc: 'Resolution ↑', stSortResDesc: 'Resolution ↓', stSeriesLabel: 'Series',
       verifyMPUnit: 'MP', verifyWdRec: 'Recommended WD: ', verifyWdRange: 'WD range: ',
@@ -2245,6 +2245,28 @@
     var d4 = new THREE.Mesh(endDotGeo, endDotMat); d4.position.set(sideX,1,actualH/2); scene.add(d4);
     var hLbl = makeTextSprite(Math.round(actualH)+'mm', 0xf76504, 0.75); hLbl.position.set(sideX-25,8,0); scene.add(hLbl);
 
+    // 相机间距标注线（相邻相机中心间距 = stepX / stepZ）
+    var stepMat = new THREE.LineBasicMaterial({ color: 0x3884f4 });
+    var stepDotGeo = new THREE.SphereGeometry(1.5, 8, 8);
+    var stepDotMat = new THREE.MeshBasicMaterial({ color: 0x3884f4 });
+    var midZ = rows > 1 ? (startZ + (rows - 1) * stepZ) / 2 : startZ;
+    var midX = cols > 1 ? (startX + (cols - 1) * stepX) / 2 : startX;
+    var stepY = 3;
+    if (cols > 1) {
+      scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(startX, stepY, midZ), new THREE.Vector3(startX + stepX, stepY, midZ)]), stepMat));
+      var sd1 = new THREE.Mesh(stepDotGeo, stepDotMat); sd1.position.set(startX, stepY, midZ); scene.add(sd1);
+      var sd2 = new THREE.Mesh(stepDotGeo, stepDotMat); sd2.position.set(startX + stepX, stepY, midZ); scene.add(sd2);
+      var stepLbl = makeTextSprite(Math.round(stepX) + 'mm', 0x3884f4, 0.7);
+      stepLbl.position.set(startX + stepX / 2, stepY + 6, midZ); scene.add(stepLbl);
+    }
+    if (rows > 1) {
+      scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(midX, stepY, startZ), new THREE.Vector3(midX, stepY, startZ + stepZ)]), stepMat));
+      var sd3 = new THREE.Mesh(stepDotGeo, stepDotMat); sd3.position.set(midX, stepY, startZ); scene.add(sd3);
+      var sd4 = new THREE.Mesh(stepDotGeo, stepDotMat); sd4.position.set(midX, stepY, startZ + stepZ); scene.add(sd4);
+      var stepLbl2 = makeTextSprite(Math.round(stepZ) + 'mm', 0x3884f4, 0.7);
+      stepLbl2.position.set(midX, stepY + 6, startZ + stepZ / 2); scene.add(stepLbl2);
+    }
+
     // Info overlay (inside 3D container)
     var infoHtml = '<div class="stitch-3d-info">';
     infoHtml += '<div class="stitch-3d-info-title">' + plan.model.model + '</div>';
@@ -2278,6 +2300,13 @@
       if (overlapW > 0) overlapParts.push(overlapW + 'mm(' + t('stHrz') + ')');
       if (overlapH > 0) overlapParts.push(overlapH + 'mm(' + t('stVrt') + ')');
       annHtml += '<div class="stitch-3d-ann-cell stitch-3d-ann-cell-full"><span class="stitch-3d-ann-dot" style="background:#e74c3c"></span><span class="stitch-3d-ann-label">' + t('stOverlap') + '</span><span class="stitch-3d-ann-val">' + overlapParts.join(' / ') + '</span></div>';
+    }
+    // Row 5: 相机间距 (full width)
+    if (cols > 1 || rows > 1) {
+      var gapParts = [];
+      if (cols > 1) gapParts.push(Math.round(stepX) + 'mm(' + t('stHrz') + ')');
+      if (rows > 1) gapParts.push(Math.round(stepZ) + 'mm(' + t('stVrt') + ')');
+      annHtml += '<div class="stitch-3d-ann-cell stitch-3d-ann-cell-full"><span class="stitch-3d-ann-dot" style="background:#3884f4"></span><span class="stitch-3d-ann-label">' + t('stCamGap') + '</span><span class="stitch-3d-ann-val">' + gapParts.join(' / ') + '</span></div>';
     }
     annHtml += '</div></div>';
     // Insert after container
