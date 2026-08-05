@@ -134,4 +134,5 @@ const PRODUCT_DB = [
   { model: "ID5120RM-00C-16", series: "ID5000", resolution: { w: 4096, h: 3024 }, pixelSize: 2, focal: 16, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 100, max: 2000 } },
   { model: "ID5120RM-00C-25", series: "ID5000", resolution: { w: 4096, h: 3024 }, pixelSize: 2, focal: 25, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 100, max: 2000 } },
   { model: "ID5120RM-00C-35", series: "ID5000", resolution: { w: 4096, h: 3024 }, pixelSize: 2, focal: 35, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 250, max: 2000 } },
+  { model: "ID6200M-00C-20", series: "ID6000", resolution: { w: 5440, h: 3648 }, pixelSize: 2.4, focal: 20, interface: "Gigabit Ethernet、RS232", protection: "IP67", workingDist: { min: 125, max: 2000 } },
 ];

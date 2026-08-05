@@ -70,7 +70,7 @@ function loadJS(relPath, varName) {
 var PRODUCT_DB = loadJS('js/data/product_db.js', 'PRODUCT_DB');
 assert(Array.isArray(PRODUCT_DB), 'PRODUCT_DB 是数组');
 assert(PRODUCT_DB && PRODUCT_DB.length > 0, 'PRODUCT_DB 非空', '长度: ' + (PRODUCT_DB ? PRODUCT_DB.length : 0));
-assert(PRODUCT_DB && PRODUCT_DB.length === 132, 'PRODUCT_DB 条数正确 (132)', '实际: ' + (PRODUCT_DB ? PRODUCT_DB.length : 0));
+assert(PRODUCT_DB && PRODUCT_DB.length === 133, 'PRODUCT_DB 条数正确 (133)', '实际: ' + (PRODUCT_DB ? PRODUCT_DB.length : 0));
 
 if (PRODUCT_DB) {
   var missingModel = PRODUCT_DB.filter(function(d) { return !d.model; });
