@@ -11,9 +11,14 @@ https://chenze3303.github.io/Code-reader-selection/
 ## 目录结构
 
 ```
-├── index.html                      # 主页面，包含六个功能页签
+├── index.html                      # 主页面：智能选型/多相机拼接/PPM/竞品/配单/产品/状态码/方案解决
 ├── db_editor.html                  # 数据库编辑器（可视化编辑全部数据文件）
 ├── sdk-guide.html                  # 独立 SDK 参考页面（C/C++ & C# 指南）
+├── peidan.html                     # 独立配单表页面（自包含）
+├── 海康读码器命名规则_副本.html      # 命名规则参考页面（独立静态文件）
+├── product_data.json               # 配单原始数据源（通过脚本生成 peidan.js）
+├── package.json                    # 脚本依赖与元数据（CommonJS）
+├── README.md / AGENTS.md / PROJECT_DOC.md / USER_GUIDE.md   # 项目文档
 ├── assets/
 │   ├── code-type-desc.png          # 码制类型说明图（明亮模式）
 │   ├── code-type-desc-dark.png     # 码制类型说明图（暗黑模式）
@@ -22,33 +27,36 @@ https://chenze3303.github.io/Code-reader-selection/
 │   └── contact-douyin.jpg
 ├── css/
 │   ├── style.css                   # 全局样式（PC + 移动端响应式，含暗黑模式全面优化）
-│   └── style.min.css               # 压缩版样式（节省 17.7%）
+│   └── style.min.css               # 压缩版样式
 ├── js/
-│   ├── app.js                      # 智能选型：导航切换 + PPM/视野计算 + i18n + Toast 通知
-│   ├── bom.js                      # 配单表：型号树、选配件弹窗、自动生成配单、导出 CSV
-│   ├── mapping_module.js           # 产品表：搜索、筛选、分组折叠、资料下载
+│   ├── app.js                      # 智能选型主逻辑：导航 + PPM/视野计算 + i18n + 拼接方案/3D
+│   ├── bom.js                      # 配单表：型号树、选配件弹窗、电源联动、快速搜索、导出 CSV
+│   ├── mapping_module.js           # 产品表：搜索、筛选、分组折叠、资料下载、命名规则弹窗
 │   ├── statuscode_module.js        # 状态码查询：搜索、筛选、点击复制
-│   ├── sdk_module.js               # 二次开发（SDK 参考）：目录导航、语言切换、章节渲染
+│   ├── three.min.js                # Three.js 3D 渲染（拼接方案示意图，按需加载）
 │   └── data/
 │       ├── product_db.js           # 选型产品数据库（PRODUCT_DB）
-│       ├── competitor.js           # 竞品对标数据（39 条）
+│       ├── competitor.js           # 竞品对标数据（IIFE，含 UI 逻辑）
 │       ├── peidan.js               # 配单数据（型号 + 标配/选配配件）
-│       ├── mapping.js              # 产品表数据（424 条，41 个系列）
+│       ├── mapping.js              # 产品表数据（503 条基线 ↔ 经销对照）
 │       ├── status_codes.js         # 状态码数据（257 条，10 个分类，162 条含解决方法）
-│       ├── download_urls.js        # 各系列资料下载页面 URL（自动生成）
-│       └── cat_dist_map.js         # 系列 → 经销型号前缀映射
+│       ├── download_urls.js        # 各系列资料下载页面 URL（自动生成，勿手改）
+│       ├── cat_dist_map.js         # 系列 → 经销型号前缀映射
+│       └── announcement.js         # 公告弹窗内容
 ├── exports/
 │   └── data_export.xlsx            # 导出的 Excel 数据文件
 └── scripts/
+    ├── minify-js.js                # JS 压缩（源码 → .min.js）
+    ├── minify-css.js               # CSS 压缩
+    ├── convert_product_data.js     # product_data.json → peidan.js
+    ├── excel2js.js                 # Excel 转 JS 数据文件
+    ├── js2excel.js                 # JS 数据文件转 Excel
     ├── scrape_base_downloads.js    # 抓取基线型号资料下载列表
     ├── scrape_dist_downloads.js    # 抓取经销型号资料下载列表
     ├── gen_download_urls.js        # 从下载数据生成 URL 映射文件
-    ├── minify-css.js               # CSS 压缩脚本
-    ├── minify-js.js                # JS 压缩脚本
     ├── compress-images.js          # 图片压缩脚本
     ├── replace-images.js           # 替换压缩后的图片
-    ├── excel2js.js                 # Excel 转 JS 数据文件
-    ├── js2excel.js                 # JS 数据文件转 Excel
+    ├── test-stress.js              # 压力测试（115 项自动化测试）
     ├── perf-optimize.js            # 性能优化报告
     ├── test-performance.js         # 性能对比测试
     └── test-all.js                 # 完整性能测试
