@@ -1770,15 +1770,11 @@
 
     // 先显示容器，再渲染3D（否则容器尺寸为0）
     svgArea.style.display = '';
-    // 移除旧按钮（如果有）
-    var oldBtn = document.getElementById('stitchPlanSwitchBtn');
-    if (oldBtn) oldBtn.remove();
-    // 查看全部方案按钮放在示意图下方
-    var btnHtml = '<button class="stitch-plan-switch-btn" id="stitchPlanSwitchBtn" style="width:100%;margin-top:10px;">' + t('stViewAll') + ' (' + displayResults.length + ')</button>';
-    svgArea.insertAdjacentHTML('afterend', btnHtml);
-    // 绑定按钮事件
+    // 查看全部方案按钮位于左侧拼接卡片内（计算按钮下方）
     var switchBtn = document.getElementById('stitchPlanSwitchBtn');
     if (switchBtn) {
+      switchBtn.style.display = '';
+      switchBtn.textContent = t('stViewAll') + ' (' + displayResults.length + ')';
       switchBtn.onclick = function() {
         var modal = document.getElementById('stitchPlanModal');
         if (modal) modal.classList.add('active');
