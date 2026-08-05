@@ -1599,12 +1599,19 @@
   }
 
   function calcGrid(totalW, totalH, fovW, fovH, overlapW, overlapH) {
+    // 重叠区域不能超过单机视野，否则 (fov - overlap) ≤ 0 会导致列/行数为 Infinity 或负数
+    var maxOverlapW = fovW * 0.8;
+    var maxOverlapH = fovH * 0.8;
+    overlapW = Math.max(0, Math.min(overlapW, maxOverlapW));
+    overlapH = Math.max(0, Math.min(overlapH, maxOverlapH));
     var cols = totalW <= fovW ? 1 : Math.ceil((totalW - fovW) / (fovW - overlapW)) + 1;
     var rows = totalH <= fovH ? 1 : Math.ceil((totalH - fovH) / (fovH - overlapH)) + 1;
     return {
       cols: cols, rows: rows, total: cols * rows,
       actualW: Math.round(fovW + (cols - 1) * (fovW - overlapW)),
-      actualH: Math.round(fovH + (rows - 1) * (fovH - overlapH))
+      actualH: Math.round(fovH + (rows - 1) * (fovH - overlapH)),
+      overlapW: Math.round(overlapW),
+      overlapH: Math.round(overlapH)
     };
   }
 
@@ -1664,7 +1671,7 @@
 
         var grid;
         if (fov.width >= effW && fov.height >= effH) {
-          grid = { cols: 1, rows: 1, total: 1, actualW: fov.width, actualH: fov.height };
+          grid = { cols: 1, rows: 1, total: 1, actualW: fov.width, actualH: fov.height, overlapW: 0, overlapH: 0 };
         } else {
           grid = calcGrid(effW, effH, fov.width, fov.height, overlapW, overlapH);
         }
@@ -1672,8 +1679,8 @@
 
         results.push({
           model: model, rotation: rot, fov: fov, grid: grid,
-          overlapW: grid.total > 1 ? Math.round(overlapW) : 0,
-          overlapH: grid.total > 1 ? Math.round(overlapH) : 0,
+          overlapW: grid.total > 1 ? grid.overlapW : 0,
+          overlapH: grid.total > 1 ? grid.overlapH : 0,
           ppm: fov.ppm,
           workingDist: wdMM
         });
