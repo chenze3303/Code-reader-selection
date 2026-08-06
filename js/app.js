@@ -2046,7 +2046,7 @@
     canvasEl.addEventListener('mousemove', function(e) {
       if (!isDragging) return;
       spherical.theta -= (e.clientX - prevMouse.x) * 0.005;
-      spherical.phi = Math.max(0.15, Math.min(Math.PI * 0.48, spherical.phi + (e.clientY - prevMouse.y) * 0.005));
+      spherical.phi = Math.max(0.01, Math.min(Math.PI - 0.01, spherical.phi + (e.clientY - prevMouse.y) * 0.005));
       prevMouse.x = e.clientX; prevMouse.y = e.clientY;
       updateCamera();
     });
@@ -2073,7 +2073,7 @@
       e.preventDefault();
       if (e.touches.length === 1 && isDragging) {
         spherical.theta -= (e.touches[0].clientX - prevMouse.x) * 0.005;
-        spherical.phi = Math.max(0.15, Math.min(Math.PI * 0.48, spherical.phi + (e.touches[0].clientY - prevMouse.y) * 0.005));
+        spherical.phi = Math.max(0.01, Math.min(Math.PI - 0.01, spherical.phi + (e.touches[0].clientY - prevMouse.y) * 0.005));
         prevMouse.x = e.touches[0].clientX; prevMouse.y = e.touches[0].clientY;
         updateCamera();
       } else if (e.touches.length === 2) {
