@@ -2114,12 +2114,6 @@
     gridHelper.position.y = -0.3;
     scene.add(gridHelper);
 
-    // Axes（仅保留 X 轴辅助线，去掉 Z 轴中间的辅助线缆）
-    var axisLen = Math.max(sceneW, sceneD) * 0.6;
-    var axisMat = new THREE.LineBasicMaterial({ color: 0x888888, transparent: true, opacity: 0.4 });
-    scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(0,0.1,0), new THREE.Vector3(axisLen,0.1,0)]), axisMat));
-
-
     // Required coverage area - dark navy with dashed border
     if (reqW && reqH) {
       var reqColor = 0x0A1628;
