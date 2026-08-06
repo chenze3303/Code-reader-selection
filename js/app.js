@@ -2110,7 +2110,9 @@
     ground.receiveShadow = true;
     scene.add(ground);
 
-    var gridHelper = new THREE.GridHelper(groundSize, Math.round(groundSize / 50), isDark ? 0x2d3748 : 0xc8cdd5, isDark ? 0x222933 : 0xd8dde5);
+    // Ground grid（中心线颜色与普通网格线一致，避免形成贯穿中心的高亮辅助线）
+    var gridCol = isDark ? 0x222933 : 0xd8dde5;
+    var gridHelper = new THREE.GridHelper(groundSize, Math.round(groundSize / 50), gridCol, gridCol);
     gridHelper.position.y = -0.3;
     scene.add(gridHelper);
 
