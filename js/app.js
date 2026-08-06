@@ -250,7 +250,7 @@
       bomOther: '其他',
       langBtn: 'EN',
       // Contact modal
-      contactUs: '联系我们', contactTitle: '📱 关注我们~了解更多海康机器人最新动态！', contactHint: '💡 扫码关注，获取最新资讯',
+      contactUs: '联系我们', contactTitle: '📱 关注我们~了解更多海康机器人最新动态！', contactHint: '💡 扫码关注，获取最新资讯，存在疑问请及时联系陈嘉泽',
 
       // Verify page
       verifyBack: '← 返回智能选型',
@@ -540,7 +540,7 @@
       bomUnknownModel: 'Unknown Model',
       bomOther: 'Other',
       langBtn: '中',
-      contactUs: 'Contact Us', contactTitle: '📱 Follow Us~Learn more about HIKROBOT latest updates！', contactHint: '💡 Scan to follow for latest updates',
+      contactUs: 'Contact Us', contactTitle: '📱 Follow Us~Learn more about HIKROBOT latest updates！', contactHint: '💡 Scan to follow for latest updates, contact Chen Jiaze for any questions',
 
       // Verify page
       verifyBack: '← Back to Smart Selection',
