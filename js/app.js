@@ -2184,13 +2184,11 @@
         }
         scene.add(new THREE.LineSegments(new THREE.EdgesGeometry(fovGeo), new THREE.LineBasicMaterial({ color: coneColor, transparent: true, opacity: 0.75 })));
 
-        // Ground coverage rect（填充按相机数量分级，边框始终保留）
+        // Ground coverage rect（填充按相机数量分级，边框由视锥 EdgesGeometry 底部提供，不重复绘制）
         var rectS = new THREE.Shape();
         rectS.moveTo(cx-fovHalfW, cz-fovHalfH); rectS.lineTo(cx+fovHalfW, cz-fovHalfH);
         rectS.lineTo(cx+fovHalfW, cz+fovHalfH); rectS.lineTo(cx-fovHalfW, cz+fovHalfH);
         rectS.lineTo(cx-fovHalfW, cz-fovHalfH);
-        var rectEdge = new THREE.LineSegments(new THREE.EdgesGeometry(new THREE.ShapeGeometry(rectS)), new THREE.LineBasicMaterial({ color: coneColor, transparent: true, opacity: 0.75 }));
-        rectEdge.position.y = 0.5; scene.add(rectEdge);
         if (rectFillOp > 0) {
           var rectFace = new THREE.Mesh(new THREE.ShapeGeometry(rectS), new THREE.MeshBasicMaterial({ color: coneColor, transparent: true, opacity: rectFillOp, side: THREE.DoubleSide }));
           rectFace.rotation.x = -Math.PI / 2; rectFace.position.y = 0.2; scene.add(rectFace);
