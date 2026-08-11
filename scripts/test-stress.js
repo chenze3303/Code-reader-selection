@@ -150,7 +150,7 @@ var PEIDAN_DATA = loadJS('js/data/peidan.js', 'PEIDAN_DATA');
 assert(PEIDAN_DATA && PEIDAN_DATA.modelList, 'PEIDAN_DATA 有 modelList');
 var ml = PEIDAN_DATA ? PEIDAN_DATA.modelList : [];
 assert(ml.length > 0, 'PEIDAN_DATA 非空', '长度: ' + ml.length);
-assert(ml.length === 650, 'PEIDAN_DATA 条数正确 (650)', '实际: ' + ml.length);
+assert(ml.length === 707, 'PEIDAN_DATA 条数正确 (707)', '实际: ' + ml.length);
 
 if (ml.length > 0) {
   var noCat = ml.filter(function(m) { return !m.productCategory; });
@@ -164,7 +164,7 @@ if (ml.length > 0) {
 
   var noStd = ml.filter(function(m) { return !m.standardAccessories || m.standardAccessories.length === 0; });
   console.log('  📊 无标配配件型号: ' + noStd.length + ' 个');
-  warn(noStd.length < 30, '无标配型号数量合理 (<30)', '实际: ' + noStd.length);
+  warn(noStd.length < 70, '无标配型号数量合理 (<70)', '实际: ' + noStd.length);
 
   // 标配配件完整性
   var stdBadCode = 0;

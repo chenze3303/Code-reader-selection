@@ -1,5 +1,5 @@
 // peidan.js - 配单数据文件
-// 自动生成于 2026/7/30 16:41:36
+// 自动生成于 2026/8/11 10:38:10
 // 数据来源: product_data.json
 
 window.PEIDAN_DATA = {
@@ -17202,6 +17202,200 @@ window.PEIDAN_DATA = {
           "name": "L型安装板M2孔",
           "code": "190171821",
           "detail": "V035-安装支架，适配ID2000M除长焦型号外所有型号，L型，相机孔位M2"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
+          "code": "310101292",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设"
+        }
+      ],
+      "optionalAccessories": [
+        {
+          "category": "电源",
+          "series": "电源适配器",
+          "name": "KPL-060M-VI(全球通中性)",
+          "code": "310100901",
+          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线"
+        },
+        {
+          "category": "电源",
+          "series": "电源适配器线缆",
+          "name": "交流电源线_国标_弯三插_C13_1.2米",
+          "code": "310100840",
+          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源1",
+          "name": "LRS-50-24(全球通中性)",
+          "code": "310100905",
+          "detail": "开关电源,24V2.09A,50W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源2",
+          "name": "LRS-150F-24(全球通中性)",
+          "code": "310100904",
+          "detail": "开关电源,24V6.25A,150W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源线缆",
+          "name": "交流电源线_国标_弯三插_open_2米",
+          "code": "310100843",
+          "detail": "交流电源线_国标_弯三插_open_2米(中性)"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
+          "code": "310101293",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "7m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
+          "code": "310101873",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
+          "code": "310101294",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "15m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
+          "code": "310101310",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
+          "code": "310101296",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
+          "code": "310102637",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
+          "code": "310101876",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
+          "code": "310103217",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
+          "code": "310101874",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "10m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
+          "code": "310101875",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "15m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
+          "code": "310101307",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
+          "code": "310101869",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通弯头网口母头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-5m",
+          "code": "310101877",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
+          "code": "310101878",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
+          "code": "310101870",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
+          "code": "310101871",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
+          "code": "310101872",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "扩展配件",
+          "series": "隔离支架",
+          "name": "ID2000M隔离支架",
+          "code": "190234947",
+          "detail": "V-读码器035-隔离支架适配ID2000系列基线型号使用，配合安装支架使用，相机孔位M2"
+        },
+        {
+          "category": "扩展配件",
+          "series": "IO盒子",
+          "name": "MV-IDA-IO-33(国内中性)V2.0",
+          "code": "310102404",
+          "detail": "适配ID2000M系列网口型号使用，内嵌光耦隔离IO，8路IO"
+        }
+      ]
+    },
+    {
+      "productCategory": "ID2000M系列",
+      "productSeries": "ID2013M长焦款网口",
+      "productModel": "MV-ID2013M-16S-RBN(国内标配)V4.0",
+      "materialCode": "313202636",
+      "description": "1.3MP，16mm镜头，6颗红色LED，工作距离105~130mm，长焦款网口",
+      "remark": "",
+      "standardAccessories": [
+        {
+          "category": "安装板",
+          "series": "安装板",
+          "name": "L型安装板M3孔",
+          "code": "190193441",
+          "detail": "适配ID2000M长焦款，L型，相机孔位M3"
         },
         {
           "category": "一体线",
@@ -34608,6 +34802,5006 @@ window.PEIDAN_DATA = {
     },
     {
       "productCategory": "ID2000XM系列",
+      "productSeries": "ID2020RM系列U口",
+      "productModel": "MV-ID2020RM-05M-RBN-U(国内标配)",
+      "materialCode": "328500541",
+      "description": "2MP，卷帘快门，5mm镜头，4颗红色LED，半偏镜头罩，机械调焦，U口型号",
+      "remark": "不配线缆，需额外下单，U口型号须额外供电",
+      "standardAccessories": [
+        {
+          "category": "安装板",
+          "series": "安装板",
+          "name": "ID2000XM安装板",
+          "code": "192139550",
+          "detail": "V-读码器027-安装支架，适配ID2000XM"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红光灯板",
+          "name": "MV-IDA-L-4-46-25.5-R(国内中性)",
+          "code": "310102934",
+          "detail": "四颗红色点光源，光源波长620nm~630nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM半偏镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-HP(国内中性)",
+          "code": "310102930",
+          "detail": "ID2000XM半偏镜头罩"
+        }
+      ],
+      "optionalAccessories": [
+        {
+          "category": "电源",
+          "series": "电源适配器",
+          "name": "KPL-060M-VI(全球通中性)",
+          "code": "310100901",
+          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线"
+        },
+        {
+          "category": "电源",
+          "series": "电源适配器线缆",
+          "name": "交流电源线_国标_弯三插_C13_1.2米",
+          "code": "310100840",
+          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源1",
+          "name": "LRS-50-24(全球通中性)",
+          "code": "310100905",
+          "detail": "开关电源,24V2.09A,50W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源2",
+          "name": "LRS-150F-24(全球通中性)",
+          "code": "310100904",
+          "detail": "开关电源,24V6.25A,150W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源线缆",
+          "name": "交流电源线_国标_弯三插_open_2米",
+          "code": "310100843",
+          "detail": "交流电源线_国标_弯三插_open_2米(中性)"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
+          "code": "310101292",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
+          "code": "310101293",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "7m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
+          "code": "310101873",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
+          "code": "310101294",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "15m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
+          "code": "310101310",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
+          "code": "310101296",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
+          "code": "310102637",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
+          "code": "310101876",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
+          "code": "310103217",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
+          "code": "310101874",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "10m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
+          "code": "310101875",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "15m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
+          "code": "310101307",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
+          "code": "310101869",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通弯头网口母头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-5m",
+          "code": "310101877",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
+          "code": "310101878",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
+          "code": "310101870",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
+          "code": "310101871",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
+          "code": "310101872",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM白光灯板",
+          "name": "MV-IDA-L-4-46-25.5-W(国内中性)",
+          "code": "310102937",
+          "detail": "四颗白色点光源，色温6500K，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM蓝光灯板",
+          "name": "MV-IDA-L-4-46-25.5-B(国内中性)",
+          "code": "310102936",
+          "detail": "四颗蓝色点光源，光源波长465nm~475nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红蓝灯板",
+          "name": "MV-IDA-L-4-46-25.5-BR(国内中性)",
+          "code": "310102933",
+          "detail": "四颗红蓝点光源，红光波长620nm~630nm，蓝光波长465nm~475nm，左边红色，右边蓝色，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红外灯板",
+          "name": "MV-IDA-L-4-46-25.5-IR(国内中性)",
+          "code": "310102935",
+          "detail": "四颗红外点光源，光源波长850nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM紫外灯板",
+          "name": "MV-IDA-L-4-46-25.5-UV(国内中性)",
+          "code": "310102977",
+          "detail": "四颗紫外点光源，光源波长360nm~370nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM全偏镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-P(国内中性)",
+          "code": "310102929",
+          "detail": "ID2000XM全偏镜头罩"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM全透镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-T(国内中性)",
+          "code": "310102931",
+          "detail": "ID2000XM全透镜头罩"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID2000XM白色全透爆闪光源",
+          "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
+          "code": "310103168",
+          "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上"
+        }
+      ]
+    },
+    {
+      "productCategory": "ID2000XM系列",
+      "productSeries": "ID2020RM系列U口",
+      "productModel": "MV-ID2020RM-05M-RBN-U(国内中性)",
+      "materialCode": "328500535",
+      "description": "2MP，卷帘快门，5mm镜头，4颗红色LED，半偏镜头罩，机械调焦，U口型号",
+      "remark": "不配线缆，需额外下单，U口型号须额外供电",
+      "standardAccessories": [
+        {
+          "category": "安装板",
+          "series": "安装板",
+          "name": "ID2000XM安装板",
+          "code": "192139550",
+          "detail": "V-读码器027-安装支架，适配ID2000XM"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红光灯板",
+          "name": "MV-IDA-L-4-46-25.5-R(国内中性)",
+          "code": "310102934",
+          "detail": "四颗红色点光源，光源波长620nm~630nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM半偏镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-HP(国内中性)",
+          "code": "310102930",
+          "detail": "ID2000XM半偏镜头罩"
+        }
+      ],
+      "optionalAccessories": [
+        {
+          "category": "电源",
+          "series": "电源适配器",
+          "name": "KPL-060M-VI(全球通中性)",
+          "code": "310100901",
+          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线"
+        },
+        {
+          "category": "电源",
+          "series": "电源适配器线缆",
+          "name": "交流电源线_国标_弯三插_C13_1.2米",
+          "code": "310100840",
+          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源1",
+          "name": "LRS-50-24(全球通中性)",
+          "code": "310100905",
+          "detail": "开关电源,24V2.09A,50W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源2",
+          "name": "LRS-150F-24(全球通中性)",
+          "code": "310100904",
+          "detail": "开关电源,24V6.25A,150W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源线缆",
+          "name": "交流电源线_国标_弯三插_open_2米",
+          "code": "310100843",
+          "detail": "交流电源线_国标_弯三插_open_2米(中性)"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
+          "code": "310101292",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
+          "code": "310101293",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "7m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
+          "code": "310101873",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
+          "code": "310101294",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "15m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
+          "code": "310101310",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
+          "code": "310101296",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
+          "code": "310102637",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
+          "code": "310101876",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
+          "code": "310103217",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
+          "code": "310101874",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "10m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
+          "code": "310101875",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "15m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
+          "code": "310101307",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
+          "code": "310101869",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通弯头网口母头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-5m",
+          "code": "310101877",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
+          "code": "310101878",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
+          "code": "310101870",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
+          "code": "310101871",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
+          "code": "310101872",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM白光灯板",
+          "name": "MV-IDA-L-4-46-25.5-W(国内中性)",
+          "code": "310102937",
+          "detail": "四颗白色点光源，色温6500K，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM蓝光灯板",
+          "name": "MV-IDA-L-4-46-25.5-B(国内中性)",
+          "code": "310102936",
+          "detail": "四颗蓝色点光源，光源波长465nm~475nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红蓝灯板",
+          "name": "MV-IDA-L-4-46-25.5-BR(国内中性)",
+          "code": "310102933",
+          "detail": "四颗红蓝点光源，红光波长620nm~630nm，蓝光波长465nm~475nm，左边红色，右边蓝色，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红外灯板",
+          "name": "MV-IDA-L-4-46-25.5-IR(国内中性)",
+          "code": "310102935",
+          "detail": "四颗红外点光源，光源波长850nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM紫外灯板",
+          "name": "MV-IDA-L-4-46-25.5-UV(国内中性)",
+          "code": "310102977",
+          "detail": "四颗紫外点光源，光源波长360nm~370nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM全偏镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-P(国内中性)",
+          "code": "310102929",
+          "detail": "ID2000XM全偏镜头罩"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM全透镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-T(国内中性)",
+          "code": "310102931",
+          "detail": "ID2000XM全透镜头罩"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID2000XM白色全透爆闪光源",
+          "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
+          "code": "310103168",
+          "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上"
+        }
+      ]
+    },
+    {
+      "productCategory": "ID2000XM系列",
+      "productSeries": "ID2020RM系列U口",
+      "productModel": "MV-ID2020RM-08M-RBN-U(国内标配)",
+      "materialCode": "328500543",
+      "description": "2MP，卷帘快门，8mm镜头，4颗红色LED，半偏镜头罩，机械调焦，U口型号",
+      "remark": "不配线缆，需额外下单，U口型号须额外供电",
+      "standardAccessories": [
+        {
+          "category": "安装板",
+          "series": "安装板",
+          "name": "ID2000XM安装板",
+          "code": "192139550",
+          "detail": "V-读码器027-安装支架，适配ID2000XM"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红光灯板",
+          "name": "MV-IDA-L-4-46-25.5-R(国内中性)",
+          "code": "310102934",
+          "detail": "四颗红色点光源，光源波长620nm~630nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM半偏镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-HP(国内中性)",
+          "code": "310102930",
+          "detail": "ID2000XM半偏镜头罩"
+        }
+      ],
+      "optionalAccessories": [
+        {
+          "category": "电源",
+          "series": "电源适配器",
+          "name": "KPL-060M-VI(全球通中性)",
+          "code": "310100901",
+          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线"
+        },
+        {
+          "category": "电源",
+          "series": "电源适配器线缆",
+          "name": "交流电源线_国标_弯三插_C13_1.2米",
+          "code": "310100840",
+          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源1",
+          "name": "LRS-50-24(全球通中性)",
+          "code": "310100905",
+          "detail": "开关电源,24V2.09A,50W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源2",
+          "name": "LRS-150F-24(全球通中性)",
+          "code": "310100904",
+          "detail": "开关电源,24V6.25A,150W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源线缆",
+          "name": "交流电源线_国标_弯三插_open_2米",
+          "code": "310100843",
+          "detail": "交流电源线_国标_弯三插_open_2米(中性)"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
+          "code": "310101292",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
+          "code": "310101293",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "7m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
+          "code": "310101873",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
+          "code": "310101294",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "15m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
+          "code": "310101310",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
+          "code": "310101296",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
+          "code": "310102637",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
+          "code": "310101876",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
+          "code": "310103217",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
+          "code": "310101874",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "10m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
+          "code": "310101875",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "15m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
+          "code": "310101307",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
+          "code": "310101869",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通弯头网口母头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-5m",
+          "code": "310101877",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
+          "code": "310101878",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
+          "code": "310101870",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
+          "code": "310101871",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
+          "code": "310101872",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM白光灯板",
+          "name": "MV-IDA-L-4-46-25.5-W(国内中性)",
+          "code": "310102937",
+          "detail": "四颗白色点光源，色温6500K，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM蓝光灯板",
+          "name": "MV-IDA-L-4-46-25.5-B(国内中性)",
+          "code": "310102936",
+          "detail": "四颗蓝色点光源，光源波长465nm~475nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红蓝灯板",
+          "name": "MV-IDA-L-4-46-25.5-BR(国内中性)",
+          "code": "310102933",
+          "detail": "四颗红蓝点光源，红光波长620nm~630nm，蓝光波长465nm~475nm，左边红色，右边蓝色，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红外灯板",
+          "name": "MV-IDA-L-4-46-25.5-IR(国内中性)",
+          "code": "310102935",
+          "detail": "四颗红外点光源，光源波长850nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM紫外灯板",
+          "name": "MV-IDA-L-4-46-25.5-UV(国内中性)",
+          "code": "310102977",
+          "detail": "四颗紫外点光源，光源波长360nm~370nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM全偏镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-P(国内中性)",
+          "code": "310102929",
+          "detail": "ID2000XM全偏镜头罩"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM全透镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-T(国内中性)",
+          "code": "310102931",
+          "detail": "ID2000XM全透镜头罩"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID2000XM白色全透爆闪光源",
+          "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
+          "code": "310103168",
+          "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上"
+        }
+      ]
+    },
+    {
+      "productCategory": "ID2000XM系列",
+      "productSeries": "ID2020RM系列U口",
+      "productModel": "MV-ID2020RM-08M-RBN-U(国内中性)",
+      "materialCode": "328500534",
+      "description": "2MP，卷帘快门，8mm镜头，4颗红色LED，半偏镜头罩，机械调焦，U口型号",
+      "remark": "不配线缆，需额外下单，U口型号须额外供电",
+      "standardAccessories": [
+        {
+          "category": "安装板",
+          "series": "安装板",
+          "name": "ID2000XM安装板",
+          "code": "192139550",
+          "detail": "V-读码器027-安装支架，适配ID2000XM"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红光灯板",
+          "name": "MV-IDA-L-4-46-25.5-R(国内中性)",
+          "code": "310102934",
+          "detail": "四颗红色点光源，光源波长620nm~630nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM半偏镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-HP(国内中性)",
+          "code": "310102930",
+          "detail": "ID2000XM半偏镜头罩"
+        }
+      ],
+      "optionalAccessories": [
+        {
+          "category": "电源",
+          "series": "电源适配器",
+          "name": "KPL-060M-VI(全球通中性)",
+          "code": "310100901",
+          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线"
+        },
+        {
+          "category": "电源",
+          "series": "电源适配器线缆",
+          "name": "交流电源线_国标_弯三插_C13_1.2米",
+          "code": "310100840",
+          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源1",
+          "name": "LRS-50-24(全球通中性)",
+          "code": "310100905",
+          "detail": "开关电源,24V2.09A,50W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源2",
+          "name": "LRS-150F-24(全球通中性)",
+          "code": "310100904",
+          "detail": "开关电源,24V6.25A,150W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源线缆",
+          "name": "交流电源线_国标_弯三插_open_2米",
+          "code": "310100843",
+          "detail": "交流电源线_国标_弯三插_open_2米(中性)"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
+          "code": "310101292",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
+          "code": "310101293",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "7m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
+          "code": "310101873",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
+          "code": "310101294",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "15m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
+          "code": "310101310",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
+          "code": "310101296",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
+          "code": "310102637",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
+          "code": "310101876",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
+          "code": "310103217",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
+          "code": "310101874",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "10m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
+          "code": "310101875",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "15m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
+          "code": "310101307",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
+          "code": "310101869",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通弯头网口母头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-5m",
+          "code": "310101877",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
+          "code": "310101878",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
+          "code": "310101870",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
+          "code": "310101871",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
+          "code": "310101872",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM白光灯板",
+          "name": "MV-IDA-L-4-46-25.5-W(国内中性)",
+          "code": "310102937",
+          "detail": "四颗白色点光源，色温6500K，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM蓝光灯板",
+          "name": "MV-IDA-L-4-46-25.5-B(国内中性)",
+          "code": "310102936",
+          "detail": "四颗蓝色点光源，光源波长465nm~475nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红蓝灯板",
+          "name": "MV-IDA-L-4-46-25.5-BR(国内中性)",
+          "code": "310102933",
+          "detail": "四颗红蓝点光源，红光波长620nm~630nm，蓝光波长465nm~475nm，左边红色，右边蓝色，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红外灯板",
+          "name": "MV-IDA-L-4-46-25.5-IR(国内中性)",
+          "code": "310102935",
+          "detail": "四颗红外点光源，光源波长850nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM紫外灯板",
+          "name": "MV-IDA-L-4-46-25.5-UV(国内中性)",
+          "code": "310102977",
+          "detail": "四颗紫外点光源，光源波长360nm~370nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM全偏镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-P(国内中性)",
+          "code": "310102929",
+          "detail": "ID2000XM全偏镜头罩"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM全透镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-T(国内中性)",
+          "code": "310102931",
+          "detail": "ID2000XM全透镜头罩"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID2000XM白色全透爆闪光源",
+          "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
+          "code": "310103168",
+          "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上"
+        }
+      ]
+    },
+    {
+      "productCategory": "ID2000XM系列",
+      "productSeries": "ID2020RM系列U口",
+      "productModel": "MV-ID2020RM-12M-RBN-U(国内标配)",
+      "materialCode": "328500531",
+      "description": "2MP，卷帘快门，12mm镜头，4颗红色LED，半偏镜头罩，机械调焦，U口型号",
+      "remark": "不配线缆，需额外下单，U口型号须额外供电",
+      "standardAccessories": [
+        {
+          "category": "安装板",
+          "series": "安装板",
+          "name": "ID2000XM安装板",
+          "code": "192139550",
+          "detail": "V-读码器027-安装支架，适配ID2000XM"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红光灯板",
+          "name": "MV-IDA-L-4-46-25.5-R(国内中性)",
+          "code": "310102934",
+          "detail": "四颗红色点光源，光源波长620nm~630nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM半偏镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-HP(国内中性)",
+          "code": "310102930",
+          "detail": "ID2000XM半偏镜头罩"
+        }
+      ],
+      "optionalAccessories": [
+        {
+          "category": "电源",
+          "series": "电源适配器",
+          "name": "KPL-060M-VI(全球通中性)",
+          "code": "310100901",
+          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线"
+        },
+        {
+          "category": "电源",
+          "series": "电源适配器线缆",
+          "name": "交流电源线_国标_弯三插_C13_1.2米",
+          "code": "310100840",
+          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源1",
+          "name": "LRS-50-24(全球通中性)",
+          "code": "310100905",
+          "detail": "开关电源,24V2.09A,50W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源2",
+          "name": "LRS-150F-24(全球通中性)",
+          "code": "310100904",
+          "detail": "开关电源,24V6.25A,150W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源线缆",
+          "name": "交流电源线_国标_弯三插_open_2米",
+          "code": "310100843",
+          "detail": "交流电源线_国标_弯三插_open_2米(中性)"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
+          "code": "310101292",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
+          "code": "310101293",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "7m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
+          "code": "310101873",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
+          "code": "310101294",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "15m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
+          "code": "310101310",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
+          "code": "310101296",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
+          "code": "310102637",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
+          "code": "310101876",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
+          "code": "310103217",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
+          "code": "310101874",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "10m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
+          "code": "310101875",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "15m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
+          "code": "310101307",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
+          "code": "310101869",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通弯头网口母头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-5m",
+          "code": "310101877",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
+          "code": "310101878",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
+          "code": "310101870",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
+          "code": "310101871",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
+          "code": "310101872",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM白光灯板",
+          "name": "MV-IDA-L-4-46-25.5-W(国内中性)",
+          "code": "310102937",
+          "detail": "四颗白色点光源，色温6500K，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM蓝光灯板",
+          "name": "MV-IDA-L-4-46-25.5-B(国内中性)",
+          "code": "310102936",
+          "detail": "四颗蓝色点光源，光源波长465nm~475nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红蓝灯板",
+          "name": "MV-IDA-L-4-46-25.5-BR(国内中性)",
+          "code": "310102933",
+          "detail": "四颗红蓝点光源，红光波长620nm~630nm，蓝光波长465nm~475nm，左边红色，右边蓝色，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红外灯板",
+          "name": "MV-IDA-L-4-46-25.5-IR(国内中性)",
+          "code": "310102935",
+          "detail": "四颗红外点光源，光源波长850nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM紫外灯板",
+          "name": "MV-IDA-L-4-46-25.5-UV(国内中性)",
+          "code": "310102977",
+          "detail": "四颗紫外点光源，光源波长360nm~370nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM全偏镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-P(国内中性)",
+          "code": "310102929",
+          "detail": "ID2000XM全偏镜头罩"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM全透镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-T(国内中性)",
+          "code": "310102931",
+          "detail": "ID2000XM全透镜头罩"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID2000XM白色全透爆闪光源",
+          "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
+          "code": "310103168",
+          "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上"
+        }
+      ]
+    },
+    {
+      "productCategory": "ID2000XM系列",
+      "productSeries": "ID2020RM系列U口",
+      "productModel": "MV-ID2020RM-12M-RBN-U(国内中性)",
+      "materialCode": "328500529",
+      "description": "2MP，卷帘快门，12mm镜头，4颗红色LED，半偏镜头罩，机械调焦，U口型号",
+      "remark": "不配线缆，需额外下单，U口型号须额外供电",
+      "standardAccessories": [
+        {
+          "category": "安装板",
+          "series": "安装板",
+          "name": "ID2000XM安装板",
+          "code": "192139550",
+          "detail": "V-读码器027-安装支架，适配ID2000XM"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红光灯板",
+          "name": "MV-IDA-L-4-46-25.5-R(国内中性)",
+          "code": "310102934",
+          "detail": "四颗红色点光源，光源波长620nm~630nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM半偏镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-HP(国内中性)",
+          "code": "310102930",
+          "detail": "ID2000XM半偏镜头罩"
+        }
+      ],
+      "optionalAccessories": [
+        {
+          "category": "电源",
+          "series": "电源适配器",
+          "name": "KPL-060M-VI(全球通中性)",
+          "code": "310100901",
+          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线"
+        },
+        {
+          "category": "电源",
+          "series": "电源适配器线缆",
+          "name": "交流电源线_国标_弯三插_C13_1.2米",
+          "code": "310100840",
+          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源1",
+          "name": "LRS-50-24(全球通中性)",
+          "code": "310100905",
+          "detail": "开关电源,24V2.09A,50W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源2",
+          "name": "LRS-150F-24(全球通中性)",
+          "code": "310100904",
+          "detail": "开关电源,24V6.25A,150W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源线缆",
+          "name": "交流电源线_国标_弯三插_open_2米",
+          "code": "310100843",
+          "detail": "交流电源线_国标_弯三插_open_2米(中性)"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
+          "code": "310101292",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
+          "code": "310101293",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "7m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
+          "code": "310101873",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
+          "code": "310101294",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "15m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
+          "code": "310101310",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
+          "code": "310101296",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
+          "code": "310102637",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
+          "code": "310101876",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
+          "code": "310103217",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
+          "code": "310101874",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "10m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
+          "code": "310101875",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "15m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
+          "code": "310101307",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
+          "code": "310101869",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通弯头网口母头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-5m",
+          "code": "310101877",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
+          "code": "310101878",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
+          "code": "310101870",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
+          "code": "310101871",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
+          "code": "310101872",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM白光灯板",
+          "name": "MV-IDA-L-4-46-25.5-W(国内中性)",
+          "code": "310102937",
+          "detail": "四颗白色点光源，色温6500K，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM蓝光灯板",
+          "name": "MV-IDA-L-4-46-25.5-B(国内中性)",
+          "code": "310102936",
+          "detail": "四颗蓝色点光源，光源波长465nm~475nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红蓝灯板",
+          "name": "MV-IDA-L-4-46-25.5-BR(国内中性)",
+          "code": "310102933",
+          "detail": "四颗红蓝点光源，红光波长620nm~630nm，蓝光波长465nm~475nm，左边红色，右边蓝色，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红外灯板",
+          "name": "MV-IDA-L-4-46-25.5-IR(国内中性)",
+          "code": "310102935",
+          "detail": "四颗红外点光源，光源波长850nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM紫外灯板",
+          "name": "MV-IDA-L-4-46-25.5-UV(国内中性)",
+          "code": "310102977",
+          "detail": "四颗紫外点光源，光源波长360nm~370nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM全偏镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-P(国内中性)",
+          "code": "310102929",
+          "detail": "ID2000XM全偏镜头罩"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM全透镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-T(国内中性)",
+          "code": "310102931",
+          "detail": "ID2000XM全透镜头罩"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID2000XM白色全透爆闪光源",
+          "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
+          "code": "310103168",
+          "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上"
+        }
+      ]
+    },
+    {
+      "productCategory": "ID2000XM系列",
+      "productSeries": "ID2020RM系列U口",
+      "productModel": "MV-ID2020RM-16M-RBN-U(国内标配)",
+      "materialCode": "328500539",
+      "description": "2MP，卷帘快门，16mm镜头，4颗红色LED，半偏镜头罩，机械调焦，U口型号",
+      "remark": "不配线缆，需额外下单，U口型号须额外供电",
+      "standardAccessories": [
+        {
+          "category": "安装板",
+          "series": "安装板",
+          "name": "ID2000XM安装板",
+          "code": "192139550",
+          "detail": "V-读码器027-安装支架，适配ID2000XM"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红光灯板",
+          "name": "MV-IDA-L-4-46-25.5-R(国内中性)",
+          "code": "310102934",
+          "detail": "四颗红色点光源，光源波长620nm~630nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM半偏镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-HP(国内中性)",
+          "code": "310102930",
+          "detail": "ID2000XM半偏镜头罩"
+        }
+      ],
+      "optionalAccessories": [
+        {
+          "category": "电源",
+          "series": "电源适配器",
+          "name": "KPL-060M-VI(全球通中性)",
+          "code": "310100901",
+          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线"
+        },
+        {
+          "category": "电源",
+          "series": "电源适配器线缆",
+          "name": "交流电源线_国标_弯三插_C13_1.2米",
+          "code": "310100840",
+          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源1",
+          "name": "LRS-50-24(全球通中性)",
+          "code": "310100905",
+          "detail": "开关电源,24V2.09A,50W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源2",
+          "name": "LRS-150F-24(全球通中性)",
+          "code": "310100904",
+          "detail": "开关电源,24V6.25A,150W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源线缆",
+          "name": "交流电源线_国标_弯三插_open_2米",
+          "code": "310100843",
+          "detail": "交流电源线_国标_弯三插_open_2米(中性)"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
+          "code": "310101292",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
+          "code": "310101293",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "7m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
+          "code": "310101873",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
+          "code": "310101294",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "15m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
+          "code": "310101310",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
+          "code": "310101296",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
+          "code": "310102637",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
+          "code": "310101876",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
+          "code": "310103217",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
+          "code": "310101874",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "10m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
+          "code": "310101875",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "15m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
+          "code": "310101307",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
+          "code": "310101869",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通弯头网口母头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-5m",
+          "code": "310101877",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
+          "code": "310101878",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
+          "code": "310101870",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
+          "code": "310101871",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
+          "code": "310101872",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM白光灯板",
+          "name": "MV-IDA-L-4-46-25.5-W(国内中性)",
+          "code": "310102937",
+          "detail": "四颗白色点光源，色温6500K，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM蓝光灯板",
+          "name": "MV-IDA-L-4-46-25.5-B(国内中性)",
+          "code": "310102936",
+          "detail": "四颗蓝色点光源，光源波长465nm~475nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红蓝灯板",
+          "name": "MV-IDA-L-4-46-25.5-BR(国内中性)",
+          "code": "310102933",
+          "detail": "四颗红蓝点光源，红光波长620nm~630nm，蓝光波长465nm~475nm，左边红色，右边蓝色，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红外灯板",
+          "name": "MV-IDA-L-4-46-25.5-IR(国内中性)",
+          "code": "310102935",
+          "detail": "四颗红外点光源，光源波长850nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM紫外灯板",
+          "name": "MV-IDA-L-4-46-25.5-UV(国内中性)",
+          "code": "310102977",
+          "detail": "四颗紫外点光源，光源波长360nm~370nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM全偏镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-P(国内中性)",
+          "code": "310102929",
+          "detail": "ID2000XM全偏镜头罩"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM全透镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-T(国内中性)",
+          "code": "310102931",
+          "detail": "ID2000XM全透镜头罩"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID2000XM白色全透爆闪光源",
+          "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
+          "code": "310103168",
+          "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上"
+        }
+      ]
+    },
+    {
+      "productCategory": "ID2000XM系列",
+      "productSeries": "ID2020RM系列U口",
+      "productModel": "MV-ID2020RM-16M-RBN-U(国内中性)",
+      "materialCode": "328500533",
+      "description": "2MP，卷帘快门，16mm镜头，4颗红色LED，半偏镜头罩，机械调焦，U口型号",
+      "remark": "不配线缆，需额外下单，U口型号须额外供电",
+      "standardAccessories": [
+        {
+          "category": "安装板",
+          "series": "安装板",
+          "name": "ID2000XM安装板",
+          "code": "192139550",
+          "detail": "V-读码器027-安装支架，适配ID2000XM"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红光灯板",
+          "name": "MV-IDA-L-4-46-25.5-R(国内中性)",
+          "code": "310102934",
+          "detail": "四颗红色点光源，光源波长620nm~630nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM半偏镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-HP(国内中性)",
+          "code": "310102930",
+          "detail": "ID2000XM半偏镜头罩"
+        }
+      ],
+      "optionalAccessories": [
+        {
+          "category": "电源",
+          "series": "电源适配器",
+          "name": "KPL-060M-VI(全球通中性)",
+          "code": "310100901",
+          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线"
+        },
+        {
+          "category": "电源",
+          "series": "电源适配器线缆",
+          "name": "交流电源线_国标_弯三插_C13_1.2米",
+          "code": "310100840",
+          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源1",
+          "name": "LRS-50-24(全球通中性)",
+          "code": "310100905",
+          "detail": "开关电源,24V2.09A,50W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源2",
+          "name": "LRS-150F-24(全球通中性)",
+          "code": "310100904",
+          "detail": "开关电源,24V6.25A,150W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源线缆",
+          "name": "交流电源线_国标_弯三插_open_2米",
+          "code": "310100843",
+          "detail": "交流电源线_国标_弯三插_open_2米(中性)"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
+          "code": "310101292",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
+          "code": "310101293",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "7m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
+          "code": "310101873",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
+          "code": "310101294",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "15m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
+          "code": "310101310",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
+          "code": "310101296",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
+          "code": "310102637",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
+          "code": "310101876",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
+          "code": "310103217",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
+          "code": "310101874",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "10m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
+          "code": "310101875",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "15m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
+          "code": "310101307",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
+          "code": "310101869",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通弯头网口母头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-5m",
+          "code": "310101877",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
+          "code": "310101878",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
+          "code": "310101870",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
+          "code": "310101871",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
+          "code": "310101872",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM白光灯板",
+          "name": "MV-IDA-L-4-46-25.5-W(国内中性)",
+          "code": "310102937",
+          "detail": "四颗白色点光源，色温6500K，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM蓝光灯板",
+          "name": "MV-IDA-L-4-46-25.5-B(国内中性)",
+          "code": "310102936",
+          "detail": "四颗蓝色点光源，光源波长465nm~475nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红蓝灯板",
+          "name": "MV-IDA-L-4-46-25.5-BR(国内中性)",
+          "code": "310102933",
+          "detail": "四颗红蓝点光源，红光波长620nm~630nm，蓝光波长465nm~475nm，左边红色，右边蓝色，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红外灯板",
+          "name": "MV-IDA-L-4-46-25.5-IR(国内中性)",
+          "code": "310102935",
+          "detail": "四颗红外点光源，光源波长850nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM紫外灯板",
+          "name": "MV-IDA-L-4-46-25.5-UV(国内中性)",
+          "code": "310102977",
+          "detail": "四颗紫外点光源，光源波长360nm~370nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM全偏镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-P(国内中性)",
+          "code": "310102929",
+          "detail": "ID2000XM全偏镜头罩"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM全透镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-T(国内中性)",
+          "code": "310102931",
+          "detail": "ID2000XM全透镜头罩"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID2000XM白色全透爆闪光源",
+          "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
+          "code": "310103168",
+          "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上"
+        }
+      ]
+    },
+    {
+      "productCategory": "ID2000XM系列",
+      "productSeries": "ID2020RM系列U口",
+      "productModel": "MV-ID2020RM-25M-RBN-U(国内标配)",
+      "materialCode": "328500584",
+      "description": "2MP，卷帘快门，25mm镜头，4颗红色LED，半偏镜头罩，机械调焦，U口型号",
+      "remark": "不配线缆，需额外下单，U口型号须额外供电",
+      "standardAccessories": [
+        {
+          "category": "安装板",
+          "series": "安装板",
+          "name": "ID2000XM安装板",
+          "code": "192139550",
+          "detail": "V-读码器027-安装支架，适配ID2000XM"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红光灯板",
+          "name": "MV-IDA-L-4-46-25.5-R(国内中性)",
+          "code": "310102934",
+          "detail": "四颗红色点光源，光源波长620nm~630nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM半偏镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-HP(国内中性)",
+          "code": "310102930",
+          "detail": "ID2000XM半偏镜头罩"
+        }
+      ],
+      "optionalAccessories": [
+        {
+          "category": "电源",
+          "series": "电源适配器",
+          "name": "KPL-060M-VI(全球通中性)",
+          "code": "310100901",
+          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线"
+        },
+        {
+          "category": "电源",
+          "series": "电源适配器线缆",
+          "name": "交流电源线_国标_弯三插_C13_1.2米",
+          "code": "310100840",
+          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源1",
+          "name": "LRS-50-24(全球通中性)",
+          "code": "310100905",
+          "detail": "开关电源,24V2.09A,50W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源2",
+          "name": "LRS-150F-24(全球通中性)",
+          "code": "310100904",
+          "detail": "开关电源,24V6.25A,150W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源线缆",
+          "name": "交流电源线_国标_弯三插_open_2米",
+          "code": "310100843",
+          "detail": "交流电源线_国标_弯三插_open_2米(中性)"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
+          "code": "310101292",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
+          "code": "310101293",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "7m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
+          "code": "310101873",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
+          "code": "310101294",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "15m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
+          "code": "310101310",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
+          "code": "310101296",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
+          "code": "310102637",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
+          "code": "310101876",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
+          "code": "310103217",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
+          "code": "310101874",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "10m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
+          "code": "310101875",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "15m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
+          "code": "310101307",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
+          "code": "310101869",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通弯头网口母头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-5m",
+          "code": "310101877",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
+          "code": "310101878",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
+          "code": "310101870",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
+          "code": "310101871",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
+          "code": "310101872",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM白光灯板",
+          "name": "MV-IDA-L-4-46-25.5-W(国内中性)",
+          "code": "310102937",
+          "detail": "四颗白色点光源，色温6500K，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM蓝光灯板",
+          "name": "MV-IDA-L-4-46-25.5-B(国内中性)",
+          "code": "310102936",
+          "detail": "四颗蓝色点光源，光源波长465nm~475nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红蓝灯板",
+          "name": "MV-IDA-L-4-46-25.5-BR(国内中性)",
+          "code": "310102933",
+          "detail": "四颗红蓝点光源，红光波长620nm~630nm，蓝光波长465nm~475nm，左边红色，右边蓝色，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红外灯板",
+          "name": "MV-IDA-L-4-46-25.5-IR(国内中性)",
+          "code": "310102935",
+          "detail": "四颗红外点光源，光源波长850nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM紫外灯板",
+          "name": "MV-IDA-L-4-46-25.5-UV(国内中性)",
+          "code": "310102977",
+          "detail": "四颗紫外点光源，光源波长360nm~370nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM全偏镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-P(国内中性)",
+          "code": "310102929",
+          "detail": "ID2000XM全偏镜头罩"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM全透镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-T(国内中性)",
+          "code": "310102931",
+          "detail": "ID2000XM全透镜头罩"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID2000XM白色全透爆闪光源",
+          "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
+          "code": "310103168",
+          "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上"
+        }
+      ]
+    },
+    {
+      "productCategory": "ID2000XM系列",
+      "productSeries": "ID2020RM系列U口",
+      "productModel": "MV-ID2020RM-25M-RBN-U(国内中性)",
+      "materialCode": "328500586",
+      "description": "2MP，卷帘快门，25mm镜头，4颗红色LED，半偏镜头罩，机械调焦，U口型号",
+      "remark": "不配线缆，需额外下单，U口型号须额外供电",
+      "standardAccessories": [
+        {
+          "category": "安装板",
+          "series": "安装板",
+          "name": "ID2000XM安装板",
+          "code": "192139550",
+          "detail": "V-读码器027-安装支架，适配ID2000XM"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红光灯板",
+          "name": "MV-IDA-L-4-46-25.5-R(国内中性)",
+          "code": "310102934",
+          "detail": "四颗红色点光源，光源波长620nm~630nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM半偏镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-HP(国内中性)",
+          "code": "310102930",
+          "detail": "ID2000XM半偏镜头罩"
+        }
+      ],
+      "optionalAccessories": [
+        {
+          "category": "电源",
+          "series": "电源适配器",
+          "name": "KPL-060M-VI(全球通中性)",
+          "code": "310100901",
+          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线"
+        },
+        {
+          "category": "电源",
+          "series": "电源适配器线缆",
+          "name": "交流电源线_国标_弯三插_C13_1.2米",
+          "code": "310100840",
+          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源1",
+          "name": "LRS-50-24(全球通中性)",
+          "code": "310100905",
+          "detail": "开关电源,24V2.09A,50W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源2",
+          "name": "LRS-150F-24(全球通中性)",
+          "code": "310100904",
+          "detail": "开关电源,24V6.25A,150W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源线缆",
+          "name": "交流电源线_国标_弯三插_open_2米",
+          "code": "310100843",
+          "detail": "交流电源线_国标_弯三插_open_2米(中性)"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
+          "code": "310101292",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
+          "code": "310101293",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "7m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
+          "code": "310101873",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
+          "code": "310101294",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "15m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
+          "code": "310101310",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
+          "code": "310101296",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
+          "code": "310102637",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
+          "code": "310101876",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
+          "code": "310103217",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
+          "code": "310101874",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "10m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
+          "code": "310101875",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "15m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
+          "code": "310101307",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
+          "code": "310101869",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通弯头网口母头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-5m",
+          "code": "310101877",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
+          "code": "310101878",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
+          "code": "310101870",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
+          "code": "310101871",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
+          "code": "310101872",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM白光灯板",
+          "name": "MV-IDA-L-4-46-25.5-W(国内中性)",
+          "code": "310102937",
+          "detail": "四颗白色点光源，色温6500K，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM蓝光灯板",
+          "name": "MV-IDA-L-4-46-25.5-B(国内中性)",
+          "code": "310102936",
+          "detail": "四颗蓝色点光源，光源波长465nm~475nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红蓝灯板",
+          "name": "MV-IDA-L-4-46-25.5-BR(国内中性)",
+          "code": "310102933",
+          "detail": "四颗红蓝点光源，红光波长620nm~630nm，蓝光波长465nm~475nm，左边红色，右边蓝色，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红外灯板",
+          "name": "MV-IDA-L-4-46-25.5-IR(国内中性)",
+          "code": "310102935",
+          "detail": "四颗红外点光源，光源波长850nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM紫外灯板",
+          "name": "MV-IDA-L-4-46-25.5-UV(国内中性)",
+          "code": "310102977",
+          "detail": "四颗紫外点光源，光源波长360nm~370nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM全偏镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-P(国内中性)",
+          "code": "310102929",
+          "detail": "ID2000XM全偏镜头罩"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM全透镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-T(国内中性)",
+          "code": "310102931",
+          "detail": "ID2000XM全透镜头罩"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID2000XM白色全透爆闪光源",
+          "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
+          "code": "310103168",
+          "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上"
+        }
+      ]
+    },
+    {
+      "productCategory": "ID2000XM系列",
+      "productSeries": "ID2020RM系列网口",
+      "productModel": "MV-ID2020RM-05M-RBN(国内标配)",
+      "materialCode": "328500542",
+      "description": "2MP，卷帘快门，5mm镜头，4颗红色LED，半偏镜头罩，机械调焦，网口型号",
+      "remark": "不配线缆，需额外下单",
+      "standardAccessories": [
+        {
+          "category": "安装板",
+          "series": "安装板",
+          "name": "ID2000XM安装板",
+          "code": "192139550",
+          "detail": "V-读码器027-安装支架，适配ID2000XM"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红光灯板",
+          "name": "MV-IDA-L-4-46-25.5-R(国内中性)",
+          "code": "310102934",
+          "detail": "四颗红色点光源，光源波长620nm~630nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM半偏镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-HP(国内中性)",
+          "code": "310102930",
+          "detail": "ID2000XM半偏镜头罩"
+        }
+      ],
+      "optionalAccessories": [
+        {
+          "category": "电源",
+          "series": "电源适配器",
+          "name": "KPL-060M-VI(全球通中性)",
+          "code": "310100901",
+          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线"
+        },
+        {
+          "category": "电源",
+          "series": "电源适配器线缆",
+          "name": "交流电源线_国标_弯三插_C13_1.2米",
+          "code": "310100840",
+          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源1",
+          "name": "LRS-50-24(全球通中性)",
+          "code": "310100905",
+          "detail": "开关电源,24V2.09A,50W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源2",
+          "name": "LRS-150F-24(全球通中性)",
+          "code": "310100904",
+          "detail": "开关电源,24V6.25A,150W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源线缆",
+          "name": "交流电源线_国标_弯三插_open_2米",
+          "code": "310100843",
+          "detail": "交流电源线_国标_弯三插_open_2米(中性)"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
+          "code": "310101292",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
+          "code": "310101293",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "7m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
+          "code": "310101873",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
+          "code": "310101294",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "15m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
+          "code": "310101310",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
+          "code": "310101296",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
+          "code": "310102637",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
+          "code": "310101876",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
+          "code": "310103217",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
+          "code": "310101874",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "10m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
+          "code": "310101875",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "15m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
+          "code": "310101307",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
+          "code": "310101869",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通弯头网口母头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-5m",
+          "code": "310101877",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
+          "code": "310101878",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
+          "code": "310101870",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
+          "code": "310101871",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
+          "code": "310101872",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM白光灯板",
+          "name": "MV-IDA-L-4-46-25.5-W(国内中性)",
+          "code": "310102937",
+          "detail": "四颗白色点光源，色温6500K，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM蓝光灯板",
+          "name": "MV-IDA-L-4-46-25.5-B(国内中性)",
+          "code": "310102936",
+          "detail": "四颗蓝色点光源，光源波长465nm~475nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红蓝灯板",
+          "name": "MV-IDA-L-4-46-25.5-BR(国内中性)",
+          "code": "310102933",
+          "detail": "四颗红蓝点光源，红光波长620nm~630nm，蓝光波长465nm~475nm，左边红色，右边蓝色，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红外灯板",
+          "name": "MV-IDA-L-4-46-25.5-IR(国内中性)",
+          "code": "310102935",
+          "detail": "四颗红外点光源，光源波长850nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM紫外灯板",
+          "name": "MV-IDA-L-4-46-25.5-UV(国内中性)",
+          "code": "310102977",
+          "detail": "四颗紫外点光源，光源波长360nm~370nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM全偏镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-P(国内中性)",
+          "code": "310102929",
+          "detail": "ID2000XM全偏镜头罩"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM全透镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-T(国内中性)",
+          "code": "310102931",
+          "detail": "ID2000XM全透镜头罩"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID2000XM白色全透爆闪光源",
+          "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
+          "code": "310103168",
+          "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上"
+        }
+      ]
+    },
+    {
+      "productCategory": "ID2000XM系列",
+      "productSeries": "ID2020RM系列网口",
+      "productModel": "MV-ID2020RM-05M-RBN(国内中性)",
+      "materialCode": "328500538",
+      "description": "2MP，卷帘快门，5mm镜头，4颗红色LED，半偏镜头罩，机械调焦，网口型号",
+      "remark": "不配线缆，需额外下单",
+      "standardAccessories": [
+        {
+          "category": "安装板",
+          "series": "安装板",
+          "name": "ID2000XM安装板",
+          "code": "192139550",
+          "detail": "V-读码器027-安装支架，适配ID2000XM"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红光灯板",
+          "name": "MV-IDA-L-4-46-25.5-R(国内中性)",
+          "code": "310102934",
+          "detail": "四颗红色点光源，光源波长620nm~630nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM半偏镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-HP(国内中性)",
+          "code": "310102930",
+          "detail": "ID2000XM半偏镜头罩"
+        }
+      ],
+      "optionalAccessories": [
+        {
+          "category": "电源",
+          "series": "电源适配器",
+          "name": "KPL-060M-VI(全球通中性)",
+          "code": "310100901",
+          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线"
+        },
+        {
+          "category": "电源",
+          "series": "电源适配器线缆",
+          "name": "交流电源线_国标_弯三插_C13_1.2米",
+          "code": "310100840",
+          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源1",
+          "name": "LRS-50-24(全球通中性)",
+          "code": "310100905",
+          "detail": "开关电源,24V2.09A,50W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源2",
+          "name": "LRS-150F-24(全球通中性)",
+          "code": "310100904",
+          "detail": "开关电源,24V6.25A,150W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源线缆",
+          "name": "交流电源线_国标_弯三插_open_2米",
+          "code": "310100843",
+          "detail": "交流电源线_国标_弯三插_open_2米(中性)"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
+          "code": "310101292",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
+          "code": "310101293",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "7m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
+          "code": "310101873",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
+          "code": "310101294",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "15m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
+          "code": "310101310",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
+          "code": "310101296",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
+          "code": "310102637",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
+          "code": "310101876",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
+          "code": "310103217",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
+          "code": "310101874",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "10m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
+          "code": "310101875",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "15m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
+          "code": "310101307",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
+          "code": "310101869",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通弯头网口母头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-5m",
+          "code": "310101877",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
+          "code": "310101878",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
+          "code": "310101870",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
+          "code": "310101871",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
+          "code": "310101872",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM白光灯板",
+          "name": "MV-IDA-L-4-46-25.5-W(国内中性)",
+          "code": "310102937",
+          "detail": "四颗白色点光源，色温6500K，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM蓝光灯板",
+          "name": "MV-IDA-L-4-46-25.5-B(国内中性)",
+          "code": "310102936",
+          "detail": "四颗蓝色点光源，光源波长465nm~475nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红蓝灯板",
+          "name": "MV-IDA-L-4-46-25.5-BR(国内中性)",
+          "code": "310102933",
+          "detail": "四颗红蓝点光源，红光波长620nm~630nm，蓝光波长465nm~475nm，左边红色，右边蓝色，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红外灯板",
+          "name": "MV-IDA-L-4-46-25.5-IR(国内中性)",
+          "code": "310102935",
+          "detail": "四颗红外点光源，光源波长850nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM紫外灯板",
+          "name": "MV-IDA-L-4-46-25.5-UV(国内中性)",
+          "code": "310102977",
+          "detail": "四颗紫外点光源，光源波长360nm~370nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM全偏镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-P(国内中性)",
+          "code": "310102929",
+          "detail": "ID2000XM全偏镜头罩"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM全透镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-T(国内中性)",
+          "code": "310102931",
+          "detail": "ID2000XM全透镜头罩"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID2000XM白色全透爆闪光源",
+          "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
+          "code": "310103168",
+          "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上"
+        }
+      ]
+    },
+    {
+      "productCategory": "ID2000XM系列",
+      "productSeries": "ID2020RM系列网口",
+      "productModel": "MV-ID2020RM-08M-RBN(国内标配)",
+      "materialCode": "328500544",
+      "description": "2MP，卷帘快门，8mm镜头，4颗红色LED，半偏镜头罩，机械调焦，网口型号",
+      "remark": "不配线缆，需额外下单",
+      "standardAccessories": [
+        {
+          "category": "安装板",
+          "series": "安装板",
+          "name": "ID2000XM安装板",
+          "code": "192139550",
+          "detail": "V-读码器027-安装支架，适配ID2000XM"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红光灯板",
+          "name": "MV-IDA-L-4-46-25.5-R(国内中性)",
+          "code": "310102934",
+          "detail": "四颗红色点光源，光源波长620nm~630nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM半偏镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-HP(国内中性)",
+          "code": "310102930",
+          "detail": "ID2000XM半偏镜头罩"
+        }
+      ],
+      "optionalAccessories": [
+        {
+          "category": "电源",
+          "series": "电源适配器",
+          "name": "KPL-060M-VI(全球通中性)",
+          "code": "310100901",
+          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线"
+        },
+        {
+          "category": "电源",
+          "series": "电源适配器线缆",
+          "name": "交流电源线_国标_弯三插_C13_1.2米",
+          "code": "310100840",
+          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源1",
+          "name": "LRS-50-24(全球通中性)",
+          "code": "310100905",
+          "detail": "开关电源,24V2.09A,50W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源2",
+          "name": "LRS-150F-24(全球通中性)",
+          "code": "310100904",
+          "detail": "开关电源,24V6.25A,150W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源线缆",
+          "name": "交流电源线_国标_弯三插_open_2米",
+          "code": "310100843",
+          "detail": "交流电源线_国标_弯三插_open_2米(中性)"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
+          "code": "310101292",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
+          "code": "310101293",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "7m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
+          "code": "310101873",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
+          "code": "310101294",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "15m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
+          "code": "310101310",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
+          "code": "310101296",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
+          "code": "310102637",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
+          "code": "310101876",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
+          "code": "310103217",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
+          "code": "310101874",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "10m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
+          "code": "310101875",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "15m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
+          "code": "310101307",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
+          "code": "310101869",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通弯头网口母头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-5m",
+          "code": "310101877",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
+          "code": "310101878",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
+          "code": "310101870",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
+          "code": "310101871",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
+          "code": "310101872",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM白光灯板",
+          "name": "MV-IDA-L-4-46-25.5-W(国内中性)",
+          "code": "310102937",
+          "detail": "四颗白色点光源，色温6500K，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM蓝光灯板",
+          "name": "MV-IDA-L-4-46-25.5-B(国内中性)",
+          "code": "310102936",
+          "detail": "四颗蓝色点光源，光源波长465nm~475nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红蓝灯板",
+          "name": "MV-IDA-L-4-46-25.5-BR(国内中性)",
+          "code": "310102933",
+          "detail": "四颗红蓝点光源，红光波长620nm~630nm，蓝光波长465nm~475nm，左边红色，右边蓝色，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红外灯板",
+          "name": "MV-IDA-L-4-46-25.5-IR(国内中性)",
+          "code": "310102935",
+          "detail": "四颗红外点光源，光源波长850nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM紫外灯板",
+          "name": "MV-IDA-L-4-46-25.5-UV(国内中性)",
+          "code": "310102977",
+          "detail": "四颗紫外点光源，光源波长360nm~370nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM全偏镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-P(国内中性)",
+          "code": "310102929",
+          "detail": "ID2000XM全偏镜头罩"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM全透镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-T(国内中性)",
+          "code": "310102931",
+          "detail": "ID2000XM全透镜头罩"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID2000XM白色全透爆闪光源",
+          "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
+          "code": "310103168",
+          "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上"
+        }
+      ]
+    },
+    {
+      "productCategory": "ID2000XM系列",
+      "productSeries": "ID2020RM系列网口",
+      "productModel": "MV-ID2020RM-08M-RBN(国内中性)",
+      "materialCode": "328500537",
+      "description": "2MP，卷帘快门，8mm镜头，4颗红色LED，半偏镜头罩，机械调焦，网口型号",
+      "remark": "不配线缆，需额外下单",
+      "standardAccessories": [
+        {
+          "category": "安装板",
+          "series": "安装板",
+          "name": "ID2000XM安装板",
+          "code": "192139550",
+          "detail": "V-读码器027-安装支架，适配ID2000XM"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红光灯板",
+          "name": "MV-IDA-L-4-46-25.5-R(国内中性)",
+          "code": "310102934",
+          "detail": "四颗红色点光源，光源波长620nm~630nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM半偏镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-HP(国内中性)",
+          "code": "310102930",
+          "detail": "ID2000XM半偏镜头罩"
+        }
+      ],
+      "optionalAccessories": [
+        {
+          "category": "电源",
+          "series": "电源适配器",
+          "name": "KPL-060M-VI(全球通中性)",
+          "code": "310100901",
+          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线"
+        },
+        {
+          "category": "电源",
+          "series": "电源适配器线缆",
+          "name": "交流电源线_国标_弯三插_C13_1.2米",
+          "code": "310100840",
+          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源1",
+          "name": "LRS-50-24(全球通中性)",
+          "code": "310100905",
+          "detail": "开关电源,24V2.09A,50W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源2",
+          "name": "LRS-150F-24(全球通中性)",
+          "code": "310100904",
+          "detail": "开关电源,24V6.25A,150W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源线缆",
+          "name": "交流电源线_国标_弯三插_open_2米",
+          "code": "310100843",
+          "detail": "交流电源线_国标_弯三插_open_2米(中性)"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
+          "code": "310101292",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
+          "code": "310101293",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "7m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
+          "code": "310101873",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
+          "code": "310101294",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "15m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
+          "code": "310101310",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
+          "code": "310101296",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
+          "code": "310102637",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
+          "code": "310101876",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
+          "code": "310103217",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
+          "code": "310101874",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "10m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
+          "code": "310101875",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "15m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
+          "code": "310101307",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
+          "code": "310101869",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通弯头网口母头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-5m",
+          "code": "310101877",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
+          "code": "310101878",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
+          "code": "310101870",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
+          "code": "310101871",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
+          "code": "310101872",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM白光灯板",
+          "name": "MV-IDA-L-4-46-25.5-W(国内中性)",
+          "code": "310102937",
+          "detail": "四颗白色点光源，色温6500K，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM蓝光灯板",
+          "name": "MV-IDA-L-4-46-25.5-B(国内中性)",
+          "code": "310102936",
+          "detail": "四颗蓝色点光源，光源波长465nm~475nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红蓝灯板",
+          "name": "MV-IDA-L-4-46-25.5-BR(国内中性)",
+          "code": "310102933",
+          "detail": "四颗红蓝点光源，红光波长620nm~630nm，蓝光波长465nm~475nm，左边红色，右边蓝色，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红外灯板",
+          "name": "MV-IDA-L-4-46-25.5-IR(国内中性)",
+          "code": "310102935",
+          "detail": "四颗红外点光源，光源波长850nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM紫外灯板",
+          "name": "MV-IDA-L-4-46-25.5-UV(国内中性)",
+          "code": "310102977",
+          "detail": "四颗紫外点光源，光源波长360nm~370nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM全偏镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-P(国内中性)",
+          "code": "310102929",
+          "detail": "ID2000XM全偏镜头罩"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM全透镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-T(国内中性)",
+          "code": "310102931",
+          "detail": "ID2000XM全透镜头罩"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID2000XM白色全透爆闪光源",
+          "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
+          "code": "310103168",
+          "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上"
+        }
+      ]
+    },
+    {
+      "productCategory": "ID2000XM系列",
+      "productSeries": "ID2020RM系列网口",
+      "productModel": "MV-ID2020RM-12M-RBN(国内标配)",
+      "materialCode": "328500530",
+      "description": "2MP，卷帘快门，12mm镜头，4颗红色LED，半偏镜头罩，机械调焦，网口型号",
+      "remark": "不配线缆，需额外下单",
+      "standardAccessories": [
+        {
+          "category": "安装板",
+          "series": "安装板",
+          "name": "ID2000XM安装板",
+          "code": "192139550",
+          "detail": "V-读码器027-安装支架，适配ID2000XM"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红光灯板",
+          "name": "MV-IDA-L-4-46-25.5-R(国内中性)",
+          "code": "310102934",
+          "detail": "四颗红色点光源，光源波长620nm~630nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM半偏镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-HP(国内中性)",
+          "code": "310102930",
+          "detail": "ID2000XM半偏镜头罩"
+        }
+      ],
+      "optionalAccessories": [
+        {
+          "category": "电源",
+          "series": "电源适配器",
+          "name": "KPL-060M-VI(全球通中性)",
+          "code": "310100901",
+          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线"
+        },
+        {
+          "category": "电源",
+          "series": "电源适配器线缆",
+          "name": "交流电源线_国标_弯三插_C13_1.2米",
+          "code": "310100840",
+          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源1",
+          "name": "LRS-50-24(全球通中性)",
+          "code": "310100905",
+          "detail": "开关电源,24V2.09A,50W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源2",
+          "name": "LRS-150F-24(全球通中性)",
+          "code": "310100904",
+          "detail": "开关电源,24V6.25A,150W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源线缆",
+          "name": "交流电源线_国标_弯三插_open_2米",
+          "code": "310100843",
+          "detail": "交流电源线_国标_弯三插_open_2米(中性)"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
+          "code": "310101292",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
+          "code": "310101293",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "7m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
+          "code": "310101873",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
+          "code": "310101294",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "15m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
+          "code": "310101310",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
+          "code": "310101296",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
+          "code": "310102637",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
+          "code": "310101876",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
+          "code": "310103217",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
+          "code": "310101874",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "10m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
+          "code": "310101875",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "15m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
+          "code": "310101307",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
+          "code": "310101869",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通弯头网口母头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-5m",
+          "code": "310101877",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
+          "code": "310101878",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
+          "code": "310101870",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
+          "code": "310101871",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
+          "code": "310101872",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM白光灯板",
+          "name": "MV-IDA-L-4-46-25.5-W(国内中性)",
+          "code": "310102937",
+          "detail": "四颗白色点光源，色温6500K，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM蓝光灯板",
+          "name": "MV-IDA-L-4-46-25.5-B(国内中性)",
+          "code": "310102936",
+          "detail": "四颗蓝色点光源，光源波长465nm~475nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红蓝灯板",
+          "name": "MV-IDA-L-4-46-25.5-BR(国内中性)",
+          "code": "310102933",
+          "detail": "四颗红蓝点光源，红光波长620nm~630nm，蓝光波长465nm~475nm，左边红色，右边蓝色，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红外灯板",
+          "name": "MV-IDA-L-4-46-25.5-IR(国内中性)",
+          "code": "310102935",
+          "detail": "四颗红外点光源，光源波长850nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM紫外灯板",
+          "name": "MV-IDA-L-4-46-25.5-UV(国内中性)",
+          "code": "310102977",
+          "detail": "四颗紫外点光源，光源波长360nm~370nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM全偏镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-P(国内中性)",
+          "code": "310102929",
+          "detail": "ID2000XM全偏镜头罩"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM全透镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-T(国内中性)",
+          "code": "310102931",
+          "detail": "ID2000XM全透镜头罩"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID2000XM白色全透爆闪光源",
+          "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
+          "code": "310103168",
+          "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上"
+        }
+      ]
+    },
+    {
+      "productCategory": "ID2000XM系列",
+      "productSeries": "ID2020RM系列网口",
+      "productModel": "MV-ID2020RM-12M-RBN(国内中性)",
+      "materialCode": "328500532",
+      "description": "2MP，卷帘快门，12mm镜头，4颗红色LED，半偏镜头罩，机械调焦，网口型号",
+      "remark": "不配线缆，需额外下单",
+      "standardAccessories": [
+        {
+          "category": "安装板",
+          "series": "安装板",
+          "name": "ID2000XM安装板",
+          "code": "192139550",
+          "detail": "V-读码器027-安装支架，适配ID2000XM"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红光灯板",
+          "name": "MV-IDA-L-4-46-25.5-R(国内中性)",
+          "code": "310102934",
+          "detail": "四颗红色点光源，光源波长620nm~630nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM半偏镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-HP(国内中性)",
+          "code": "310102930",
+          "detail": "ID2000XM半偏镜头罩"
+        }
+      ],
+      "optionalAccessories": [
+        {
+          "category": "电源",
+          "series": "电源适配器",
+          "name": "KPL-060M-VI(全球通中性)",
+          "code": "310100901",
+          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线"
+        },
+        {
+          "category": "电源",
+          "series": "电源适配器线缆",
+          "name": "交流电源线_国标_弯三插_C13_1.2米",
+          "code": "310100840",
+          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源1",
+          "name": "LRS-50-24(全球通中性)",
+          "code": "310100905",
+          "detail": "开关电源,24V2.09A,50W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源2",
+          "name": "LRS-150F-24(全球通中性)",
+          "code": "310100904",
+          "detail": "开关电源,24V6.25A,150W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源线缆",
+          "name": "交流电源线_国标_弯三插_open_2米",
+          "code": "310100843",
+          "detail": "交流电源线_国标_弯三插_open_2米(中性)"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
+          "code": "310101292",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
+          "code": "310101293",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "7m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
+          "code": "310101873",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
+          "code": "310101294",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "15m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
+          "code": "310101310",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
+          "code": "310101296",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
+          "code": "310102637",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
+          "code": "310101876",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
+          "code": "310103217",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
+          "code": "310101874",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "10m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
+          "code": "310101875",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "15m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
+          "code": "310101307",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
+          "code": "310101869",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通弯头网口母头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-5m",
+          "code": "310101877",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
+          "code": "310101878",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
+          "code": "310101870",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
+          "code": "310101871",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
+          "code": "310101872",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM白光灯板",
+          "name": "MV-IDA-L-4-46-25.5-W(国内中性)",
+          "code": "310102937",
+          "detail": "四颗白色点光源，色温6500K，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM蓝光灯板",
+          "name": "MV-IDA-L-4-46-25.5-B(国内中性)",
+          "code": "310102936",
+          "detail": "四颗蓝色点光源，光源波长465nm~475nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红蓝灯板",
+          "name": "MV-IDA-L-4-46-25.5-BR(国内中性)",
+          "code": "310102933",
+          "detail": "四颗红蓝点光源，红光波长620nm~630nm，蓝光波长465nm~475nm，左边红色，右边蓝色，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红外灯板",
+          "name": "MV-IDA-L-4-46-25.5-IR(国内中性)",
+          "code": "310102935",
+          "detail": "四颗红外点光源，光源波长850nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM紫外灯板",
+          "name": "MV-IDA-L-4-46-25.5-UV(国内中性)",
+          "code": "310102977",
+          "detail": "四颗紫外点光源，光源波长360nm~370nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM全偏镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-P(国内中性)",
+          "code": "310102929",
+          "detail": "ID2000XM全偏镜头罩"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM全透镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-T(国内中性)",
+          "code": "310102931",
+          "detail": "ID2000XM全透镜头罩"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID2000XM白色全透爆闪光源",
+          "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
+          "code": "310103168",
+          "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上"
+        }
+      ]
+    },
+    {
+      "productCategory": "ID2000XM系列",
+      "productSeries": "ID2020RM系列网口",
+      "productModel": "MV-ID2020RM-16M-RBN(国内标配)",
+      "materialCode": "328500540",
+      "description": "2MP，卷帘快门，16mm镜头，4颗红色LED，半偏镜头罩，机械调焦，网口型号",
+      "remark": "不配线缆，需额外下单",
+      "standardAccessories": [
+        {
+          "category": "安装板",
+          "series": "安装板",
+          "name": "ID2000XM安装板",
+          "code": "192139550",
+          "detail": "V-读码器027-安装支架，适配ID2000XM"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红光灯板",
+          "name": "MV-IDA-L-4-46-25.5-R(国内中性)",
+          "code": "310102934",
+          "detail": "四颗红色点光源，光源波长620nm~630nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM半偏镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-HP(国内中性)",
+          "code": "310102930",
+          "detail": "ID2000XM半偏镜头罩"
+        }
+      ],
+      "optionalAccessories": [
+        {
+          "category": "电源",
+          "series": "电源适配器",
+          "name": "KPL-060M-VI(全球通中性)",
+          "code": "310100901",
+          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线"
+        },
+        {
+          "category": "电源",
+          "series": "电源适配器线缆",
+          "name": "交流电源线_国标_弯三插_C13_1.2米",
+          "code": "310100840",
+          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源1",
+          "name": "LRS-50-24(全球通中性)",
+          "code": "310100905",
+          "detail": "开关电源,24V2.09A,50W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源2",
+          "name": "LRS-150F-24(全球通中性)",
+          "code": "310100904",
+          "detail": "开关电源,24V6.25A,150W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源线缆",
+          "name": "交流电源线_国标_弯三插_open_2米",
+          "code": "310100843",
+          "detail": "交流电源线_国标_弯三插_open_2米(中性)"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
+          "code": "310101292",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
+          "code": "310101293",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "7m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
+          "code": "310101873",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
+          "code": "310101294",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "15m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
+          "code": "310101310",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
+          "code": "310101296",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
+          "code": "310102637",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
+          "code": "310101876",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
+          "code": "310103217",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
+          "code": "310101874",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "10m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
+          "code": "310101875",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "15m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
+          "code": "310101307",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
+          "code": "310101869",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通弯头网口母头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-5m",
+          "code": "310101877",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
+          "code": "310101878",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
+          "code": "310101870",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
+          "code": "310101871",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
+          "code": "310101872",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM白光灯板",
+          "name": "MV-IDA-L-4-46-25.5-W(国内中性)",
+          "code": "310102937",
+          "detail": "四颗白色点光源，色温6500K，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM蓝光灯板",
+          "name": "MV-IDA-L-4-46-25.5-B(国内中性)",
+          "code": "310102936",
+          "detail": "四颗蓝色点光源，光源波长465nm~475nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红蓝灯板",
+          "name": "MV-IDA-L-4-46-25.5-BR(国内中性)",
+          "code": "310102933",
+          "detail": "四颗红蓝点光源，红光波长620nm~630nm，蓝光波长465nm~475nm，左边红色，右边蓝色，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红外灯板",
+          "name": "MV-IDA-L-4-46-25.5-IR(国内中性)",
+          "code": "310102935",
+          "detail": "四颗红外点光源，光源波长850nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM紫外灯板",
+          "name": "MV-IDA-L-4-46-25.5-UV(国内中性)",
+          "code": "310102977",
+          "detail": "四颗紫外点光源，光源波长360nm~370nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM全偏镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-P(国内中性)",
+          "code": "310102929",
+          "detail": "ID2000XM全偏镜头罩"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM全透镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-T(国内中性)",
+          "code": "310102931",
+          "detail": "ID2000XM全透镜头罩"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID2000XM白色全透爆闪光源",
+          "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
+          "code": "310103168",
+          "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上"
+        }
+      ]
+    },
+    {
+      "productCategory": "ID2000XM系列",
+      "productSeries": "ID2020RM系列网口",
+      "productModel": "MV-ID2020RM-16M-RBN(国内中性)",
+      "materialCode": "328500536",
+      "description": "2MP，卷帘快门，16mm镜头，4颗红色LED，半偏镜头罩，机械调焦，网口型号",
+      "remark": "不配线缆，需额外下单",
+      "standardAccessories": [
+        {
+          "category": "安装板",
+          "series": "安装板",
+          "name": "ID2000XM安装板",
+          "code": "192139550",
+          "detail": "V-读码器027-安装支架，适配ID2000XM"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红光灯板",
+          "name": "MV-IDA-L-4-46-25.5-R(国内中性)",
+          "code": "310102934",
+          "detail": "四颗红色点光源，光源波长620nm~630nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM半偏镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-HP(国内中性)",
+          "code": "310102930",
+          "detail": "ID2000XM半偏镜头罩"
+        }
+      ],
+      "optionalAccessories": [
+        {
+          "category": "电源",
+          "series": "电源适配器",
+          "name": "KPL-060M-VI(全球通中性)",
+          "code": "310100901",
+          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线"
+        },
+        {
+          "category": "电源",
+          "series": "电源适配器线缆",
+          "name": "交流电源线_国标_弯三插_C13_1.2米",
+          "code": "310100840",
+          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源1",
+          "name": "LRS-50-24(全球通中性)",
+          "code": "310100905",
+          "detail": "开关电源,24V2.09A,50W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源2",
+          "name": "LRS-150F-24(全球通中性)",
+          "code": "310100904",
+          "detail": "开关电源,24V6.25A,150W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源线缆",
+          "name": "交流电源线_国标_弯三插_open_2米",
+          "code": "310100843",
+          "detail": "交流电源线_国标_弯三插_open_2米(中性)"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
+          "code": "310101292",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
+          "code": "310101293",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "7m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
+          "code": "310101873",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
+          "code": "310101294",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "15m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
+          "code": "310101310",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
+          "code": "310101296",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
+          "code": "310102637",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
+          "code": "310101876",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
+          "code": "310103217",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
+          "code": "310101874",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "10m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
+          "code": "310101875",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "15m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
+          "code": "310101307",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
+          "code": "310101869",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通弯头网口母头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-5m",
+          "code": "310101877",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
+          "code": "310101878",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
+          "code": "310101870",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
+          "code": "310101871",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
+          "code": "310101872",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM白光灯板",
+          "name": "MV-IDA-L-4-46-25.5-W(国内中性)",
+          "code": "310102937",
+          "detail": "四颗白色点光源，色温6500K，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM蓝光灯板",
+          "name": "MV-IDA-L-4-46-25.5-B(国内中性)",
+          "code": "310102936",
+          "detail": "四颗蓝色点光源，光源波长465nm~475nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红蓝灯板",
+          "name": "MV-IDA-L-4-46-25.5-BR(国内中性)",
+          "code": "310102933",
+          "detail": "四颗红蓝点光源，红光波长620nm~630nm，蓝光波长465nm~475nm，左边红色，右边蓝色，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红外灯板",
+          "name": "MV-IDA-L-4-46-25.5-IR(国内中性)",
+          "code": "310102935",
+          "detail": "四颗红外点光源，光源波长850nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM紫外灯板",
+          "name": "MV-IDA-L-4-46-25.5-UV(国内中性)",
+          "code": "310102977",
+          "detail": "四颗紫外点光源，光源波长360nm~370nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM全偏镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-P(国内中性)",
+          "code": "310102929",
+          "detail": "ID2000XM全偏镜头罩"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM全透镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-T(国内中性)",
+          "code": "310102931",
+          "detail": "ID2000XM全透镜头罩"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID2000XM白色全透爆闪光源",
+          "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
+          "code": "310103168",
+          "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上"
+        }
+      ]
+    },
+    {
+      "productCategory": "ID2000XM系列",
+      "productSeries": "ID2020RM系列网口",
+      "productModel": "MV-ID2020RM-25M-RBN(国内标配)",
+      "materialCode": "328500585",
+      "description": "2MP，卷帘快门，25mm镜头，4颗红色LED，半偏镜头罩，机械调焦，网口型号",
+      "remark": "不配线缆，需额外下单",
+      "standardAccessories": [
+        {
+          "category": "安装板",
+          "series": "安装板",
+          "name": "ID2000XM安装板",
+          "code": "192139550",
+          "detail": "V-读码器027-安装支架，适配ID2000XM"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红光灯板",
+          "name": "MV-IDA-L-4-46-25.5-R(国内中性)",
+          "code": "310102934",
+          "detail": "四颗红色点光源，光源波长620nm~630nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM半偏镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-HP(国内中性)",
+          "code": "310102930",
+          "detail": "ID2000XM半偏镜头罩"
+        }
+      ],
+      "optionalAccessories": [
+        {
+          "category": "电源",
+          "series": "电源适配器",
+          "name": "KPL-060M-VI(全球通中性)",
+          "code": "310100901",
+          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线"
+        },
+        {
+          "category": "电源",
+          "series": "电源适配器线缆",
+          "name": "交流电源线_国标_弯三插_C13_1.2米",
+          "code": "310100840",
+          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源1",
+          "name": "LRS-50-24(全球通中性)",
+          "code": "310100905",
+          "detail": "开关电源,24V2.09A,50W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源2",
+          "name": "LRS-150F-24(全球通中性)",
+          "code": "310100904",
+          "detail": "开关电源,24V6.25A,150W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源线缆",
+          "name": "交流电源线_国标_弯三插_open_2米",
+          "code": "310100843",
+          "detail": "交流电源线_国标_弯三插_open_2米(中性)"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
+          "code": "310101292",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
+          "code": "310101293",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "7m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
+          "code": "310101873",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
+          "code": "310101294",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "15m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
+          "code": "310101310",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
+          "code": "310101296",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
+          "code": "310102637",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
+          "code": "310101876",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
+          "code": "310103217",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
+          "code": "310101874",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "10m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
+          "code": "310101875",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "15m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
+          "code": "310101307",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
+          "code": "310101869",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通弯头网口母头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-5m",
+          "code": "310101877",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
+          "code": "310101878",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
+          "code": "310101870",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
+          "code": "310101871",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
+          "code": "310101872",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM白光灯板",
+          "name": "MV-IDA-L-4-46-25.5-W(国内中性)",
+          "code": "310102937",
+          "detail": "四颗白色点光源，色温6500K，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM蓝光灯板",
+          "name": "MV-IDA-L-4-46-25.5-B(国内中性)",
+          "code": "310102936",
+          "detail": "四颗蓝色点光源，光源波长465nm~475nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红蓝灯板",
+          "name": "MV-IDA-L-4-46-25.5-BR(国内中性)",
+          "code": "310102933",
+          "detail": "四颗红蓝点光源，红光波长620nm~630nm，蓝光波长465nm~475nm，左边红色，右边蓝色，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红外灯板",
+          "name": "MV-IDA-L-4-46-25.5-IR(国内中性)",
+          "code": "310102935",
+          "detail": "四颗红外点光源，光源波长850nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM紫外灯板",
+          "name": "MV-IDA-L-4-46-25.5-UV(国内中性)",
+          "code": "310102977",
+          "detail": "四颗紫外点光源，光源波长360nm~370nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM全偏镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-P(国内中性)",
+          "code": "310102929",
+          "detail": "ID2000XM全偏镜头罩"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM全透镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-T(国内中性)",
+          "code": "310102931",
+          "detail": "ID2000XM全透镜头罩"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID2000XM白色全透爆闪光源",
+          "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
+          "code": "310103168",
+          "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上"
+        }
+      ]
+    },
+    {
+      "productCategory": "ID2000XM系列",
+      "productSeries": "ID2020RM系列网口",
+      "productModel": "MV-ID2020RM-25M-RBN(国内中性)",
+      "materialCode": "328500587",
+      "description": "2MP，卷帘快门，25mm镜头，4颗红色LED，半偏镜头罩，机械调焦，网口型号",
+      "remark": "不配线缆，需额外下单",
+      "standardAccessories": [
+        {
+          "category": "安装板",
+          "series": "安装板",
+          "name": "ID2000XM安装板",
+          "code": "192139550",
+          "detail": "V-读码器027-安装支架，适配ID2000XM"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红光灯板",
+          "name": "MV-IDA-L-4-46-25.5-R(国内中性)",
+          "code": "310102934",
+          "detail": "四颗红色点光源，光源波长620nm~630nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM半偏镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-HP(国内中性)",
+          "code": "310102930",
+          "detail": "ID2000XM半偏镜头罩"
+        }
+      ],
+      "optionalAccessories": [
+        {
+          "category": "电源",
+          "series": "电源适配器",
+          "name": "KPL-060M-VI(全球通中性)",
+          "code": "310100901",
+          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线"
+        },
+        {
+          "category": "电源",
+          "series": "电源适配器线缆",
+          "name": "交流电源线_国标_弯三插_C13_1.2米",
+          "code": "310100840",
+          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源1",
+          "name": "LRS-50-24(全球通中性)",
+          "code": "310100905",
+          "detail": "开关电源,24V2.09A,50W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源2",
+          "name": "LRS-150F-24(全球通中性)",
+          "code": "310100904",
+          "detail": "开关电源,24V6.25A,150W,接线端子"
+        },
+        {
+          "category": "电源",
+          "series": "开关电源线缆",
+          "name": "交流电源线_国标_弯三插_open_2米",
+          "code": "310100843",
+          "detail": "交流电源线_国标_弯三插_open_2米(中性)"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
+          "code": "310101292",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
+          "code": "310101293",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "7m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
+          "code": "310101873",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
+          "code": "310101294",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "15m普通网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
+          "code": "310101310",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
+          "code": "310101296",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
+          "code": "310102637",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "5m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
+          "code": "310101876",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m超柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
+          "code": "310103217",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "7m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
+          "code": "310101874",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "10m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
+          "code": "310101875",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "15m高柔网口公头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
+          "code": "310101307",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
+          "code": "310101869",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "5m普通弯头网口母头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-5m",
+          "code": "310101877",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "10m普通弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
+          "code": "310101878",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔弯头网口公头",
+          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
+          "code": "310101870",
+          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "一体线",
+          "series": "3m普通网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
+          "code": "310101871",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设"
+        },
+        {
+          "category": "一体线",
+          "series": "3m高柔网口母头",
+          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
+          "code": "310101872",
+          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM白光灯板",
+          "name": "MV-IDA-L-4-46-25.5-W(国内中性)",
+          "code": "310102937",
+          "detail": "四颗白色点光源，色温6500K，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM蓝光灯板",
+          "name": "MV-IDA-L-4-46-25.5-B(国内中性)",
+          "code": "310102936",
+          "detail": "四颗蓝色点光源，光源波长465nm~475nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红蓝灯板",
+          "name": "MV-IDA-L-4-46-25.5-BR(国内中性)",
+          "code": "310102933",
+          "detail": "四颗红蓝点光源，红光波长620nm~630nm，蓝光波长465nm~475nm，左边红色，右边蓝色，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM红外灯板",
+          "name": "MV-IDA-L-4-46-25.5-IR(国内中性)",
+          "code": "310102935",
+          "detail": "四颗红外点光源，光源波长850nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "灯板",
+          "series": "ID2000XM紫外灯板",
+          "name": "MV-IDA-L-4-46-25.5-UV(国内中性)",
+          "code": "310102977",
+          "detail": "四颗紫外点光源，光源波长360nm~370nm，仅适配ID2000XM机械款"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM全偏镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-P(国内中性)",
+          "code": "310102929",
+          "detail": "ID2000XM全偏镜头罩"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000XM全透镜头罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-T(国内中性)",
+          "code": "310102931",
+          "detail": "ID2000XM全透镜头罩"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID2000XM白色全透爆闪光源",
+          "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
+          "code": "310103168",
+          "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上"
+        }
+      ]
+    },
+    {
+      "productCategory": "ID2000XM系列",
       "productSeries": "ID2023XM系列U口",
       "productModel": "MV-ID2023XM-05M-RBN-U(国内标配)",
       "materialCode": "313202682",
@@ -42047,6 +47241,13 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "镜头罩",
+          "series": "紫外T565镜头罩-14灯珠",
+          "name": "MV-IDA-C-Y-62-62-T565nm(国内中性)",
+          "code": "310103225",
+          "detail": "ID3013PM/ID3050PM/ID5050M紫外T565镜头罩，过滤565nm以下波段光源，通常搭配紫外灯板使用，用于提升隐形码的对比度"
+        },
+        {
+          "category": "镜头罩",
           "series": "极小码配件1-14灯珠",
           "name": "MV-IDA-C-Y-62-62-M1",
           "code": "310101674",
@@ -42315,6 +47516,13 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-C-Y-62-62-IR775(国内中性)",
           "code": "310102605",
           "detail": "ID3013PM/ID3050PM/ID5050M长波通镜头罩，775nm长波通，用于屏蔽工厂内部环境光干扰，通常搭配红外灯板使用"
+        },
+        {
+          "category": "镜头罩",
+          "series": "紫外T565镜头罩-14灯珠",
+          "name": "MV-IDA-C-Y-62-62-T565nm(国内中性)",
+          "code": "310103225",
+          "detail": "ID3013PM/ID3050PM/ID5050M紫外T565镜头罩，过滤565nm以下波段光源，通常搭配紫外灯板使用，用于提升隐形码的对比度"
         },
         {
           "category": "镜头罩",
@@ -42589,6 +47797,13 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "镜头罩",
+          "series": "紫外T565镜头罩-14灯珠",
+          "name": "MV-IDA-C-Y-62-62-T565nm(国内中性)",
+          "code": "310103225",
+          "detail": "ID3013PM/ID3050PM/ID5050M紫外T565镜头罩，过滤565nm以下波段光源，通常搭配紫外灯板使用，用于提升隐形码的对比度"
+        },
+        {
+          "category": "镜头罩",
           "series": "极小码配件1-14灯珠",
           "name": "MV-IDA-C-Y-62-62-M1",
           "code": "310101674",
@@ -42857,6 +48072,13 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-C-Y-62-62-IR775(国内中性)",
           "code": "310102605",
           "detail": "ID3013PM/ID3050PM/ID5050M长波通镜头罩，775nm长波通，用于屏蔽工厂内部环境光干扰，通常搭配红外灯板使用"
+        },
+        {
+          "category": "镜头罩",
+          "series": "紫外T565镜头罩-14灯珠",
+          "name": "MV-IDA-C-Y-62-62-T565nm(国内中性)",
+          "code": "310103225",
+          "detail": "ID3013PM/ID3050PM/ID5050M紫外T565镜头罩，过滤565nm以下波段光源，通常搭配紫外灯板使用，用于提升隐形码的对比度"
         },
         {
           "category": "镜头罩",
@@ -43131,6 +48353,13 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "镜头罩",
+          "series": "紫外T565镜头罩-14灯珠",
+          "name": "MV-IDA-C-Y-62-62-T565nm(国内中性)",
+          "code": "310103225",
+          "detail": "ID3013PM/ID3050PM/ID5050M紫外T565镜头罩，过滤565nm以下波段光源，通常搭配紫外灯板使用，用于提升隐形码的对比度"
+        },
+        {
+          "category": "镜头罩",
           "series": "极小码配件1-14灯珠",
           "name": "MV-IDA-C-Y-62-62-M1",
           "code": "310101674",
@@ -43399,6 +48628,13 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-C-Y-62-62-IR775(国内中性)",
           "code": "310102605",
           "detail": "ID3013PM/ID3050PM/ID5050M长波通镜头罩，775nm长波通，用于屏蔽工厂内部环境光干扰，通常搭配红外灯板使用"
+        },
+        {
+          "category": "镜头罩",
+          "series": "紫外T565镜头罩-14灯珠",
+          "name": "MV-IDA-C-Y-62-62-T565nm(国内中性)",
+          "code": "310103225",
+          "detail": "ID3013PM/ID3050PM/ID5050M紫外T565镜头罩，过滤565nm以下波段光源，通常搭配紫外灯板使用，用于提升隐形码的对比度"
         },
         {
           "category": "镜头罩",
@@ -45131,6 +50367,13 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "镜头罩",
+          "series": "紫外T565镜头罩-14灯珠",
+          "name": "MV-IDA-C-Y-62-62-T565nm(国内中性)",
+          "code": "310103225",
+          "detail": "ID3013PM/ID3050PM/ID5050M紫外T565镜头罩，过滤565nm以下波段光源，通常搭配紫外灯板使用，用于提升隐形码的对比度"
+        },
+        {
+          "category": "镜头罩",
           "series": "极小码配件1-14灯珠",
           "name": "MV-IDA-C-Y-62-62-M1",
           "code": "310101674",
@@ -45399,6 +50642,13 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-C-Y-62-62-IR775(国内中性)",
           "code": "310102605",
           "detail": "ID3013PM/ID3050PM/ID5050M长波通镜头罩，775nm长波通，用于屏蔽工厂内部环境光干扰，通常搭配红外灯板使用"
+        },
+        {
+          "category": "镜头罩",
+          "series": "紫外T565镜头罩-14灯珠",
+          "name": "MV-IDA-C-Y-62-62-T565nm(国内中性)",
+          "code": "310103225",
+          "detail": "ID3013PM/ID3050PM/ID5050M紫外T565镜头罩，过滤565nm以下波段光源，通常搭配紫外灯板使用，用于提升隐形码的对比度"
         },
         {
           "category": "镜头罩",
@@ -45673,6 +50923,13 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "镜头罩",
+          "series": "紫外T565镜头罩-14灯珠",
+          "name": "MV-IDA-C-Y-62-62-T565nm(国内中性)",
+          "code": "310103225",
+          "detail": "ID3013PM/ID3050PM/ID5050M紫外T565镜头罩，过滤565nm以下波段光源，通常搭配紫外灯板使用，用于提升隐形码的对比度"
+        },
+        {
+          "category": "镜头罩",
           "series": "极小码配件1-14灯珠",
           "name": "MV-IDA-C-Y-62-62-M1",
           "code": "310101674",
@@ -45941,6 +51198,13 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-C-Y-62-62-IR775(国内中性)",
           "code": "310102605",
           "detail": "ID3013PM/ID3050PM/ID5050M长波通镜头罩，775nm长波通，用于屏蔽工厂内部环境光干扰，通常搭配红外灯板使用"
+        },
+        {
+          "category": "镜头罩",
+          "series": "紫外T565镜头罩-14灯珠",
+          "name": "MV-IDA-C-Y-62-62-T565nm(国内中性)",
+          "code": "310103225",
+          "detail": "ID3013PM/ID3050PM/ID5050M紫外T565镜头罩，过滤565nm以下波段光源，通常搭配紫外灯板使用，用于提升隐形码的对比度"
         },
         {
           "category": "镜头罩",
@@ -46215,6 +51479,13 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "镜头罩",
+          "series": "紫外T565镜头罩-14灯珠",
+          "name": "MV-IDA-C-Y-62-62-T565nm(国内中性)",
+          "code": "310103225",
+          "detail": "ID3013PM/ID3050PM/ID5050M紫外T565镜头罩，过滤565nm以下波段光源，通常搭配紫外灯板使用，用于提升隐形码的对比度"
+        },
+        {
+          "category": "镜头罩",
           "series": "极小码配件1-14灯珠",
           "name": "MV-IDA-C-Y-62-62-M1",
           "code": "310101674",
@@ -46483,6 +51754,13 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-C-Y-62-62-IR775(国内中性)",
           "code": "310102605",
           "detail": "ID3013PM/ID3050PM/ID5050M长波通镜头罩，775nm长波通，用于屏蔽工厂内部环境光干扰，通常搭配红外灯板使用"
+        },
+        {
+          "category": "镜头罩",
+          "series": "紫外T565镜头罩-14灯珠",
+          "name": "MV-IDA-C-Y-62-62-T565nm(国内中性)",
+          "code": "310103225",
+          "detail": "ID3013PM/ID3050PM/ID5050M紫外T565镜头罩，过滤565nm以下波段光源，通常搭配紫外灯板使用，用于提升隐形码的对比度"
         },
         {
           "category": "镜头罩",
@@ -46757,6 +52035,13 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "镜头罩",
+          "series": "紫外T565镜头罩-14灯珠",
+          "name": "MV-IDA-C-Y-62-62-T565nm(国内中性)",
+          "code": "310103225",
+          "detail": "ID3013PM/ID3050PM/ID5050M紫外T565镜头罩，过滤565nm以下波段光源，通常搭配紫外灯板使用，用于提升隐形码的对比度"
+        },
+        {
+          "category": "镜头罩",
           "series": "极小码配件1-14灯珠",
           "name": "MV-IDA-C-Y-62-62-M1",
           "code": "310101674",
@@ -47025,6 +52310,13 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-C-Y-62-62-IR775(国内中性)",
           "code": "310102605",
           "detail": "ID3013PM/ID3050PM/ID5050M长波通镜头罩，775nm长波通，用于屏蔽工厂内部环境光干扰，通常搭配红外灯板使用"
+        },
+        {
+          "category": "镜头罩",
+          "series": "紫外T565镜头罩-14灯珠",
+          "name": "MV-IDA-C-Y-62-62-T565nm(国内中性)",
+          "code": "310103225",
+          "detail": "ID3013PM/ID3050PM/ID5050M紫外T565镜头罩，过滤565nm以下波段光源，通常搭配紫外灯板使用，用于提升隐形码的对比度"
         },
         {
           "category": "镜头罩",
@@ -74245,6 +79537,13 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "镜头罩",
+          "series": "紫外T565镜头罩-14灯珠",
+          "name": "MV-IDA-C-Y-62-62-T565nm(国内中性)",
+          "code": "310103225",
+          "detail": "ID3013PM/ID3050PM/ID5050M紫外T565镜头罩，过滤565nm以下波段光源，通常搭配紫外灯板使用，用于提升隐形码的对比度"
+        },
+        {
+          "category": "镜头罩",
           "series": "极小码配件1-14灯珠",
           "name": "MV-IDA-C-Y-62-62-M1",
           "code": "310101674",
@@ -74569,6 +79868,13 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-C-Y-62-62-IR775(国内中性)",
           "code": "310102605",
           "detail": "ID3013PM/ID3050PM/ID5050M长波通镜头罩，775nm长波通，用于屏蔽工厂内部环境光干扰，通常搭配红外灯板使用"
+        },
+        {
+          "category": "镜头罩",
+          "series": "紫外T565镜头罩-14灯珠",
+          "name": "MV-IDA-C-Y-62-62-T565nm(国内中性)",
+          "code": "310103225",
+          "detail": "ID3013PM/ID3050PM/ID5050M紫外T565镜头罩，过滤565nm以下波段光源，通常搭配紫外灯板使用，用于提升隐形码的对比度"
         },
         {
           "category": "镜头罩",
@@ -74899,6 +80205,13 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "镜头罩",
+          "series": "紫外T565镜头罩-14灯珠",
+          "name": "MV-IDA-C-Y-62-62-T565nm(国内中性)",
+          "code": "310103225",
+          "detail": "ID3013PM/ID3050PM/ID5050M紫外T565镜头罩，过滤565nm以下波段光源，通常搭配紫外灯板使用，用于提升隐形码的对比度"
+        },
+        {
+          "category": "镜头罩",
           "series": "极小码配件1-14灯珠",
           "name": "MV-IDA-C-Y-62-62-M1",
           "code": "310101674",
@@ -75223,6 +80536,13 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-C-Y-62-62-IR775(国内中性)",
           "code": "310102605",
           "detail": "ID3013PM/ID3050PM/ID5050M长波通镜头罩，775nm长波通，用于屏蔽工厂内部环境光干扰，通常搭配红外灯板使用"
+        },
+        {
+          "category": "镜头罩",
+          "series": "紫外T565镜头罩-14灯珠",
+          "name": "MV-IDA-C-Y-62-62-T565nm(国内中性)",
+          "code": "310103225",
+          "detail": "ID3013PM/ID3050PM/ID5050M紫外T565镜头罩，过滤565nm以下波段光源，通常搭配紫外灯板使用，用于提升隐形码的对比度"
         },
         {
           "category": "镜头罩",
@@ -75553,6 +80873,13 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "镜头罩",
+          "series": "紫外T565镜头罩-14灯珠",
+          "name": "MV-IDA-C-Y-62-62-T565nm(国内中性)",
+          "code": "310103225",
+          "detail": "ID3013PM/ID3050PM/ID5050M紫外T565镜头罩，过滤565nm以下波段光源，通常搭配紫外灯板使用，用于提升隐形码的对比度"
+        },
+        {
+          "category": "镜头罩",
           "series": "极小码配件1-14灯珠",
           "name": "MV-IDA-C-Y-62-62-M1",
           "code": "310101674",
@@ -75877,6 +81204,13 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-C-Y-62-62-IR775(国内中性)",
           "code": "310102605",
           "detail": "ID3013PM/ID3050PM/ID5050M长波通镜头罩，775nm长波通，用于屏蔽工厂内部环境光干扰，通常搭配红外灯板使用"
+        },
+        {
+          "category": "镜头罩",
+          "series": "紫外T565镜头罩-14灯珠",
+          "name": "MV-IDA-C-Y-62-62-T565nm(国内中性)",
+          "code": "310103225",
+          "detail": "ID3013PM/ID3050PM/ID5050M紫外T565镜头罩，过滤565nm以下波段光源，通常搭配紫外灯板使用，用于提升隐形码的对比度"
         },
         {
           "category": "镜头罩",
@@ -76207,6 +81541,13 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "镜头罩",
+          "series": "紫外T565镜头罩-14灯珠",
+          "name": "MV-IDA-C-Y-62-62-T565nm(国内中性)",
+          "code": "310103225",
+          "detail": "ID3013PM/ID3050PM/ID5050M紫外T565镜头罩，过滤565nm以下波段光源，通常搭配紫外灯板使用，用于提升隐形码的对比度"
+        },
+        {
+          "category": "镜头罩",
           "series": "极小码配件1-14灯珠",
           "name": "MV-IDA-C-Y-62-62-M1",
           "code": "310101674",
@@ -76531,6 +81872,13 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-C-Y-62-62-IR775(国内中性)",
           "code": "310102605",
           "detail": "ID3013PM/ID3050PM/ID5050M长波通镜头罩，775nm长波通，用于屏蔽工厂内部环境光干扰，通常搭配红外灯板使用"
+        },
+        {
+          "category": "镜头罩",
+          "series": "紫外T565镜头罩-14灯珠",
+          "name": "MV-IDA-C-Y-62-62-T565nm(国内中性)",
+          "code": "310103225",
+          "detail": "ID3013PM/ID3050PM/ID5050M紫外T565镜头罩，过滤565nm以下波段光源，通常搭配紫外灯板使用，用于提升隐形码的对比度"
         },
         {
           "category": "镜头罩",
@@ -87755,4094 +93103,6 @@ window.PEIDAN_DATA = {
           "name": "MV-LB-230-230-4030WL-A",
           "code": "310100025",
           "detail": "48V,240W,48LED颗粒,全角40-30°"
-        }
-      ]
-    },
-    {
-      "productCategory": "ID5000XM系列",
-      "productSeries": "ID5050XM系列",
-      "productModel": "MV-ID5050XM-08M-RBN(国内标配)",
-      "materialCode": "313201845",
-      "description": "5MP，8mm镜头，8颗红色LED，半偏镜头罩，机械调焦，带OLED屏",
-      "remark": "",
-      "standardAccessories": [
-        {
-          "category": "安装板",
-          "series": "安装板",
-          "name": "ID5000XM安装板",
-          "code": "192119847",
-          "detail": "V-读码器023-安装支架，适配ID5000XM/RM"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM红光灯板",
-          "name": "MV-IDA-L-8-32-47-R(国内中性)",
-          "code": "310102291",
-          "detail": "8颗粒LED红光，光源波长620nm~630nm"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM半偏镜头罩",
-          "name": "MV-IDA-C-Y-41-56-H",
-          "code": "202406694",
-          "detail": "ID5000XM标配半偏镜头罩"
-        }
-      ],
-      "optionalAccessories": [
-        {
-          "category": "电源",
-          "series": "电源适配器",
-          "name": "KPL-060M-VI(全球通中性)",
-          "code": "310100901",
-          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线"
-        },
-        {
-          "category": "电源",
-          "series": "电源适配器线缆",
-          "name": "交流电源线_国标_弯三插_C13_1.2米",
-          "code": "310100840",
-          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源1",
-          "name": "LRS-50-24(全球通中性)",
-          "code": "310100905",
-          "detail": "开关电源,24V2.09A,50W,接线端子"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源2",
-          "name": "LRS-150F-24(全球通中性)",
-          "code": "310100904",
-          "detail": "开关电源,24V6.25A,150W,接线端子"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源线缆",
-          "name": "交流电源线_国标_弯三插_open_2米",
-          "code": "310100843",
-          "detail": "交流电源线_国标_弯三插_open_2米(中性)"
-        },
-        {
-          "category": "IO电源线",
-          "series": "1m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-1m",
-          "code": "101532667",
-          "detail": "12pin转open 静态，1m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-3m",
-          "code": "310101268",
-          "detail": "12pin转open 静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-5m",
-          "code": "310101269",
-          "detail": "12pin转open 静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "7m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-7m",
-          "code": "310101270",
-          "detail": "12pin转open 静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-10m",
-          "code": "310101271",
-          "detail": "12pin转open 静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "15m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-15m",
-          "code": "310101272",
-          "detail": "12pin转open 静态，15m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "30m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-30m",
-          "code": "310101273",
-          "detail": "12pin转open 静态，30m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-3m",
-          "code": "310101280",
-          "detail": "12pin转open 高柔，3m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-5m",
-          "code": "310101281",
-          "detail": "12pin转open 高柔，5m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-10m",
-          "code": "310101282",
-          "detail": "12pin转open 高柔，10m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "20m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-20m",
-          "code": "310101283",
-          "detail": "12pin转open 高柔，20m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-3m",
-          "code": "310102639",
-          "detail": "12pin转DB9母头open，静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-5m",
-          "code": "310102640",
-          "detail": "12pin转DB9母头open，静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "7m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-7m",
-          "code": "310102641",
-          "detail": "12pin转DB9母头open，静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-10m",
-          "code": "310102642",
-          "detail": "12pin转DB9母头open，静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "1m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-1m",
-          "code": "101532666",
-          "detail": "8pin转RJ45,静态，1m，弯线缆特性：静态铺设，弯折半径：12D；"
-        },
-        {
-          "category": "网线",
-          "series": "3m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-3m",
-          "code": "310101274",
-          "detail": "8pin转RJ45,静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "5m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-5m",
-          "code": "310101275",
-          "detail": "8pin转RJ45,静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "7m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-7m",
-          "code": "310101276",
-          "detail": "8pin转RJ45,静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "10m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-10m",
-          "code": "310101277",
-          "detail": "8pin转RJ45,静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "15m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-15m",
-          "code": "310101278",
-          "detail": "8pin转RJ45,静态，15m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "30m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-30m",
-          "code": "310101279",
-          "detail": "8pin转RJ45,静态，30m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "3m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-3m",
-          "code": "310101284",
-          "detail": "8pin转RJ45,高柔，3m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "5m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-5m",
-          "code": "310101285",
-          "detail": "8pin转RJ45,高柔，5m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "10m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-10m",
-          "code": "310101286",
-          "detail": "8pin转RJ45,高柔，10m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "20m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-20m",
-          "code": "310101287",
-          "detail": "8pin转RJ45,高柔，20m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM白光灯板",
-          "name": "MV-IDA-L-8-32-47-W(国内中性)",
-          "code": "310102288",
-          "detail": "8颗粒LED白光，色温5700K"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM蓝光灯板",
-          "name": "MV-IDA-L-8-32-47-B(国内中性)",
-          "code": "310102289",
-          "detail": "8颗粒LED蓝光，光源波长465nm~475nm"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM红外灯板",
-          "name": "MV-IDA-L-8-32-47-IR(国内中性)",
-          "code": "310102290",
-          "detail": "8颗粒LED红外光，光源波长850nm"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM全偏镜头罩",
-          "name": "MV-IDA-C-Y-41-56-P(国内中性)",
-          "code": "310102293",
-          "detail": "ID5000XR全偏镜头罩"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM全透镜头罩",
-          "name": "MV-IDA-C-Y-41-56-T(国内中性)",
-          "code": "310102294",
-          "detail": "ID5000XR透明镜头罩"
-        },
-        {
-          "category": "扩展配件",
-          "series": "ID5000XM-ESD防护罩",
-          "name": "MV-IDA-C-Y-41-56-ESD(国内中性)",
-          "code": "310102292",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求"
-        }
-      ]
-    },
-    {
-      "productCategory": "ID5000XM系列",
-      "productSeries": "ID5050XM系列",
-      "productModel": "MV-ID5050XM-08M-RBN(国内中性)",
-      "materialCode": "313201934",
-      "description": "5MP，8mm镜头，8颗红色LED，半偏镜头罩，机械调焦，带OLED屏",
-      "remark": "",
-      "standardAccessories": [
-        {
-          "category": "安装板",
-          "series": "安装板",
-          "name": "ID5000XM安装板",
-          "code": "192119847",
-          "detail": "V-读码器023-安装支架，适配ID5000XM/RM"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM红光灯板",
-          "name": "MV-IDA-L-8-32-47-R(国内中性)",
-          "code": "310102291",
-          "detail": "8颗粒LED红光，光源波长620nm~630nm"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM半偏镜头罩",
-          "name": "MV-IDA-C-Y-41-56-H",
-          "code": "202406694",
-          "detail": "ID5000XM标配半偏镜头罩"
-        }
-      ],
-      "optionalAccessories": [
-        {
-          "category": "电源",
-          "series": "电源适配器",
-          "name": "KPL-060M-VI(全球通中性)",
-          "code": "310100901",
-          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线"
-        },
-        {
-          "category": "电源",
-          "series": "电源适配器线缆",
-          "name": "交流电源线_国标_弯三插_C13_1.2米",
-          "code": "310100840",
-          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源1",
-          "name": "LRS-50-24(全球通中性)",
-          "code": "310100905",
-          "detail": "开关电源,24V2.09A,50W,接线端子"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源2",
-          "name": "LRS-150F-24(全球通中性)",
-          "code": "310100904",
-          "detail": "开关电源,24V6.25A,150W,接线端子"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源线缆",
-          "name": "交流电源线_国标_弯三插_open_2米",
-          "code": "310100843",
-          "detail": "交流电源线_国标_弯三插_open_2米(中性)"
-        },
-        {
-          "category": "IO电源线",
-          "series": "1m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-1m",
-          "code": "101532667",
-          "detail": "12pin转open 静态，1m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-3m",
-          "code": "310101268",
-          "detail": "12pin转open 静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-5m",
-          "code": "310101269",
-          "detail": "12pin转open 静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "7m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-7m",
-          "code": "310101270",
-          "detail": "12pin转open 静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-10m",
-          "code": "310101271",
-          "detail": "12pin转open 静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "15m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-15m",
-          "code": "310101272",
-          "detail": "12pin转open 静态，15m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "30m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-30m",
-          "code": "310101273",
-          "detail": "12pin转open 静态，30m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-3m",
-          "code": "310101280",
-          "detail": "12pin转open 高柔，3m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-5m",
-          "code": "310101281",
-          "detail": "12pin转open 高柔，5m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-10m",
-          "code": "310101282",
-          "detail": "12pin转open 高柔，10m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "20m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-20m",
-          "code": "310101283",
-          "detail": "12pin转open 高柔，20m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-3m",
-          "code": "310102639",
-          "detail": "12pin转DB9母头open，静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-5m",
-          "code": "310102640",
-          "detail": "12pin转DB9母头open，静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "7m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-7m",
-          "code": "310102641",
-          "detail": "12pin转DB9母头open，静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-10m",
-          "code": "310102642",
-          "detail": "12pin转DB9母头open，静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "1m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-1m",
-          "code": "101532666",
-          "detail": "8pin转RJ45,静态，1m，弯线缆特性：静态铺设，弯折半径：12D；"
-        },
-        {
-          "category": "网线",
-          "series": "3m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-3m",
-          "code": "310101274",
-          "detail": "8pin转RJ45,静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "5m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-5m",
-          "code": "310101275",
-          "detail": "8pin转RJ45,静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "7m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-7m",
-          "code": "310101276",
-          "detail": "8pin转RJ45,静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "10m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-10m",
-          "code": "310101277",
-          "detail": "8pin转RJ45,静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "15m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-15m",
-          "code": "310101278",
-          "detail": "8pin转RJ45,静态，15m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "30m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-30m",
-          "code": "310101279",
-          "detail": "8pin转RJ45,静态，30m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "3m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-3m",
-          "code": "310101284",
-          "detail": "8pin转RJ45,高柔，3m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "5m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-5m",
-          "code": "310101285",
-          "detail": "8pin转RJ45,高柔，5m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "10m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-10m",
-          "code": "310101286",
-          "detail": "8pin转RJ45,高柔，10m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "20m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-20m",
-          "code": "310101287",
-          "detail": "8pin转RJ45,高柔，20m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM白光灯板",
-          "name": "MV-IDA-L-8-32-47-W(国内中性)",
-          "code": "310102288",
-          "detail": "8颗粒LED白光，色温5700K"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM蓝光灯板",
-          "name": "MV-IDA-L-8-32-47-B(国内中性)",
-          "code": "310102289",
-          "detail": "8颗粒LED蓝光，光源波长465nm~475nm"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM红外灯板",
-          "name": "MV-IDA-L-8-32-47-IR(国内中性)",
-          "code": "310102290",
-          "detail": "8颗粒LED红外光，光源波长850nm"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM全偏镜头罩",
-          "name": "MV-IDA-C-Y-41-56-P(国内中性)",
-          "code": "310102293",
-          "detail": "ID5000XR全偏镜头罩"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM全透镜头罩",
-          "name": "MV-IDA-C-Y-41-56-T(国内中性)",
-          "code": "310102294",
-          "detail": "ID5000XR透明镜头罩"
-        },
-        {
-          "category": "扩展配件",
-          "series": "ID5000XM-ESD防护罩",
-          "name": "MV-IDA-C-Y-41-56-ESD(国内中性)",
-          "code": "310102292",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求"
-        }
-      ]
-    },
-    {
-      "productCategory": "ID5000XM系列",
-      "productSeries": "ID5050XM系列",
-      "productModel": "MV-ID5050XM-12M-RBN(国内标配)",
-      "materialCode": "313201846",
-      "description": "5MP，12mm镜头，8颗红色LED，半偏镜头罩，机械调焦，带OLED屏",
-      "remark": "",
-      "standardAccessories": [
-        {
-          "category": "安装板",
-          "series": "安装板",
-          "name": "ID5000XM安装板",
-          "code": "192119847",
-          "detail": "V-读码器023-安装支架，适配ID5000XM/RM"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM红光灯板",
-          "name": "MV-IDA-L-8-32-47-R(国内中性)",
-          "code": "310102291",
-          "detail": "8颗粒LED红光，光源波长620nm~630nm"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM半偏镜头罩",
-          "name": "MV-IDA-C-Y-41-56-H",
-          "code": "202406694",
-          "detail": "ID5000XM标配半偏镜头罩"
-        }
-      ],
-      "optionalAccessories": [
-        {
-          "category": "电源",
-          "series": "电源适配器",
-          "name": "KPL-060M-VI(全球通中性)",
-          "code": "310100901",
-          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线"
-        },
-        {
-          "category": "电源",
-          "series": "电源适配器线缆",
-          "name": "交流电源线_国标_弯三插_C13_1.2米",
-          "code": "310100840",
-          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源1",
-          "name": "LRS-50-24(全球通中性)",
-          "code": "310100905",
-          "detail": "开关电源,24V2.09A,50W,接线端子"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源2",
-          "name": "LRS-150F-24(全球通中性)",
-          "code": "310100904",
-          "detail": "开关电源,24V6.25A,150W,接线端子"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源线缆",
-          "name": "交流电源线_国标_弯三插_open_2米",
-          "code": "310100843",
-          "detail": "交流电源线_国标_弯三插_open_2米(中性)"
-        },
-        {
-          "category": "IO电源线",
-          "series": "1m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-1m",
-          "code": "101532667",
-          "detail": "12pin转open 静态，1m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-3m",
-          "code": "310101268",
-          "detail": "12pin转open 静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-5m",
-          "code": "310101269",
-          "detail": "12pin转open 静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "7m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-7m",
-          "code": "310101270",
-          "detail": "12pin转open 静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-10m",
-          "code": "310101271",
-          "detail": "12pin转open 静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "15m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-15m",
-          "code": "310101272",
-          "detail": "12pin转open 静态，15m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "30m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-30m",
-          "code": "310101273",
-          "detail": "12pin转open 静态，30m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-3m",
-          "code": "310101280",
-          "detail": "12pin转open 高柔，3m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-5m",
-          "code": "310101281",
-          "detail": "12pin转open 高柔，5m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-10m",
-          "code": "310101282",
-          "detail": "12pin转open 高柔，10m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "20m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-20m",
-          "code": "310101283",
-          "detail": "12pin转open 高柔，20m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-3m",
-          "code": "310102639",
-          "detail": "12pin转DB9母头open，静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-5m",
-          "code": "310102640",
-          "detail": "12pin转DB9母头open，静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "7m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-7m",
-          "code": "310102641",
-          "detail": "12pin转DB9母头open，静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-10m",
-          "code": "310102642",
-          "detail": "12pin转DB9母头open，静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "1m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-1m",
-          "code": "101532666",
-          "detail": "8pin转RJ45,静态，1m，弯线缆特性：静态铺设，弯折半径：12D；"
-        },
-        {
-          "category": "网线",
-          "series": "3m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-3m",
-          "code": "310101274",
-          "detail": "8pin转RJ45,静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "5m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-5m",
-          "code": "310101275",
-          "detail": "8pin转RJ45,静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "7m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-7m",
-          "code": "310101276",
-          "detail": "8pin转RJ45,静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "10m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-10m",
-          "code": "310101277",
-          "detail": "8pin转RJ45,静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "15m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-15m",
-          "code": "310101278",
-          "detail": "8pin转RJ45,静态，15m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "30m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-30m",
-          "code": "310101279",
-          "detail": "8pin转RJ45,静态，30m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "3m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-3m",
-          "code": "310101284",
-          "detail": "8pin转RJ45,高柔，3m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "5m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-5m",
-          "code": "310101285",
-          "detail": "8pin转RJ45,高柔，5m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "10m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-10m",
-          "code": "310101286",
-          "detail": "8pin转RJ45,高柔，10m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "20m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-20m",
-          "code": "310101287",
-          "detail": "8pin转RJ45,高柔，20m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM白光灯板",
-          "name": "MV-IDA-L-8-32-47-W(国内中性)",
-          "code": "310102288",
-          "detail": "8颗粒LED白光，色温5700K"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM蓝光灯板",
-          "name": "MV-IDA-L-8-32-47-B(国内中性)",
-          "code": "310102289",
-          "detail": "8颗粒LED蓝光，光源波长465nm~475nm"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM红外灯板",
-          "name": "MV-IDA-L-8-32-47-IR(国内中性)",
-          "code": "310102290",
-          "detail": "8颗粒LED红外光，光源波长850nm"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM全偏镜头罩",
-          "name": "MV-IDA-C-Y-41-56-P(国内中性)",
-          "code": "310102293",
-          "detail": "ID5000XR全偏镜头罩"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM全透镜头罩",
-          "name": "MV-IDA-C-Y-41-56-T(国内中性)",
-          "code": "310102294",
-          "detail": "ID5000XR透明镜头罩"
-        },
-        {
-          "category": "扩展配件",
-          "series": "ID5000XM-ESD防护罩",
-          "name": "MV-IDA-C-Y-41-56-ESD(国内中性)",
-          "code": "310102292",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求"
-        }
-      ]
-    },
-    {
-      "productCategory": "ID5000XM系列",
-      "productSeries": "ID5050XM系列",
-      "productModel": "MV-ID5050XM-12M-RBN(国内中性)",
-      "materialCode": "313201933",
-      "description": "5MP，12mm镜头，8颗红色LED，半偏镜头罩，机械调焦，带OLED屏",
-      "remark": "",
-      "standardAccessories": [
-        {
-          "category": "安装板",
-          "series": "安装板",
-          "name": "ID5000XM安装板",
-          "code": "192119847",
-          "detail": "V-读码器023-安装支架，适配ID5000XM/RM"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM红光灯板",
-          "name": "MV-IDA-L-8-32-47-R(国内中性)",
-          "code": "310102291",
-          "detail": "8颗粒LED红光，光源波长620nm~630nm"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM半偏镜头罩",
-          "name": "MV-IDA-C-Y-41-56-H",
-          "code": "202406694",
-          "detail": "ID5000XM标配半偏镜头罩"
-        }
-      ],
-      "optionalAccessories": [
-        {
-          "category": "电源",
-          "series": "电源适配器",
-          "name": "KPL-060M-VI(全球通中性)",
-          "code": "310100901",
-          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线"
-        },
-        {
-          "category": "电源",
-          "series": "电源适配器线缆",
-          "name": "交流电源线_国标_弯三插_C13_1.2米",
-          "code": "310100840",
-          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源1",
-          "name": "LRS-50-24(全球通中性)",
-          "code": "310100905",
-          "detail": "开关电源,24V2.09A,50W,接线端子"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源2",
-          "name": "LRS-150F-24(全球通中性)",
-          "code": "310100904",
-          "detail": "开关电源,24V6.25A,150W,接线端子"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源线缆",
-          "name": "交流电源线_国标_弯三插_open_2米",
-          "code": "310100843",
-          "detail": "交流电源线_国标_弯三插_open_2米(中性)"
-        },
-        {
-          "category": "IO电源线",
-          "series": "1m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-1m",
-          "code": "101532667",
-          "detail": "12pin转open 静态，1m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-3m",
-          "code": "310101268",
-          "detail": "12pin转open 静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-5m",
-          "code": "310101269",
-          "detail": "12pin转open 静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "7m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-7m",
-          "code": "310101270",
-          "detail": "12pin转open 静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-10m",
-          "code": "310101271",
-          "detail": "12pin转open 静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "15m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-15m",
-          "code": "310101272",
-          "detail": "12pin转open 静态，15m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "30m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-30m",
-          "code": "310101273",
-          "detail": "12pin转open 静态，30m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-3m",
-          "code": "310101280",
-          "detail": "12pin转open 高柔，3m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-5m",
-          "code": "310101281",
-          "detail": "12pin转open 高柔，5m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-10m",
-          "code": "310101282",
-          "detail": "12pin转open 高柔，10m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "20m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-20m",
-          "code": "310101283",
-          "detail": "12pin转open 高柔，20m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-3m",
-          "code": "310102639",
-          "detail": "12pin转DB9母头open，静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-5m",
-          "code": "310102640",
-          "detail": "12pin转DB9母头open，静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "7m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-7m",
-          "code": "310102641",
-          "detail": "12pin转DB9母头open，静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-10m",
-          "code": "310102642",
-          "detail": "12pin转DB9母头open，静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "1m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-1m",
-          "code": "101532666",
-          "detail": "8pin转RJ45,静态，1m，弯线缆特性：静态铺设，弯折半径：12D；"
-        },
-        {
-          "category": "网线",
-          "series": "3m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-3m",
-          "code": "310101274",
-          "detail": "8pin转RJ45,静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "5m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-5m",
-          "code": "310101275",
-          "detail": "8pin转RJ45,静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "7m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-7m",
-          "code": "310101276",
-          "detail": "8pin转RJ45,静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "10m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-10m",
-          "code": "310101277",
-          "detail": "8pin转RJ45,静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "15m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-15m",
-          "code": "310101278",
-          "detail": "8pin转RJ45,静态，15m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "30m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-30m",
-          "code": "310101279",
-          "detail": "8pin转RJ45,静态，30m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "3m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-3m",
-          "code": "310101284",
-          "detail": "8pin转RJ45,高柔，3m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "5m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-5m",
-          "code": "310101285",
-          "detail": "8pin转RJ45,高柔，5m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "10m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-10m",
-          "code": "310101286",
-          "detail": "8pin转RJ45,高柔，10m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "20m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-20m",
-          "code": "310101287",
-          "detail": "8pin转RJ45,高柔，20m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM白光灯板",
-          "name": "MV-IDA-L-8-32-47-W(国内中性)",
-          "code": "310102288",
-          "detail": "8颗粒LED白光，色温5700K"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM蓝光灯板",
-          "name": "MV-IDA-L-8-32-47-B(国内中性)",
-          "code": "310102289",
-          "detail": "8颗粒LED蓝光，光源波长465nm~475nm"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM红外灯板",
-          "name": "MV-IDA-L-8-32-47-IR(国内中性)",
-          "code": "310102290",
-          "detail": "8颗粒LED红外光，光源波长850nm"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM全偏镜头罩",
-          "name": "MV-IDA-C-Y-41-56-P(国内中性)",
-          "code": "310102293",
-          "detail": "ID5000XR全偏镜头罩"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM全透镜头罩",
-          "name": "MV-IDA-C-Y-41-56-T(国内中性)",
-          "code": "310102294",
-          "detail": "ID5000XR透明镜头罩"
-        },
-        {
-          "category": "扩展配件",
-          "series": "ID5000XM-ESD防护罩",
-          "name": "MV-IDA-C-Y-41-56-ESD(国内中性)",
-          "code": "310102292",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求"
-        }
-      ]
-    },
-    {
-      "productCategory": "ID5000XM系列",
-      "productSeries": "ID5050XM系列",
-      "productModel": "MV-ID5050XM-16M-RBN(国内标配)",
-      "materialCode": "313201777",
-      "description": "5MP，16mm镜头，8颗红色LED，半偏镜头罩，机械调焦，带OLED屏",
-      "remark": "",
-      "standardAccessories": [
-        {
-          "category": "安装板",
-          "series": "安装板",
-          "name": "ID5000XM安装板",
-          "code": "192119847",
-          "detail": "V-读码器023-安装支架，适配ID5000XM/RM"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM红光灯板",
-          "name": "MV-IDA-L-8-32-47-R(国内中性)",
-          "code": "310102291",
-          "detail": "8颗粒LED红光，光源波长620nm~630nm"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM半偏镜头罩",
-          "name": "MV-IDA-C-Y-41-56-H",
-          "code": "202406694",
-          "detail": "ID5000XM标配半偏镜头罩"
-        }
-      ],
-      "optionalAccessories": [
-        {
-          "category": "电源",
-          "series": "电源适配器",
-          "name": "KPL-060M-VI(全球通中性)",
-          "code": "310100901",
-          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线"
-        },
-        {
-          "category": "电源",
-          "series": "电源适配器线缆",
-          "name": "交流电源线_国标_弯三插_C13_1.2米",
-          "code": "310100840",
-          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源1",
-          "name": "LRS-50-24(全球通中性)",
-          "code": "310100905",
-          "detail": "开关电源,24V2.09A,50W,接线端子"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源2",
-          "name": "LRS-150F-24(全球通中性)",
-          "code": "310100904",
-          "detail": "开关电源,24V6.25A,150W,接线端子"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源线缆",
-          "name": "交流电源线_国标_弯三插_open_2米",
-          "code": "310100843",
-          "detail": "交流电源线_国标_弯三插_open_2米(中性)"
-        },
-        {
-          "category": "IO电源线",
-          "series": "1m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-1m",
-          "code": "101532667",
-          "detail": "12pin转open 静态，1m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-3m",
-          "code": "310101268",
-          "detail": "12pin转open 静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-5m",
-          "code": "310101269",
-          "detail": "12pin转open 静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "7m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-7m",
-          "code": "310101270",
-          "detail": "12pin转open 静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-10m",
-          "code": "310101271",
-          "detail": "12pin转open 静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "15m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-15m",
-          "code": "310101272",
-          "detail": "12pin转open 静态，15m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "30m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-30m",
-          "code": "310101273",
-          "detail": "12pin转open 静态，30m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-3m",
-          "code": "310101280",
-          "detail": "12pin转open 高柔，3m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-5m",
-          "code": "310101281",
-          "detail": "12pin转open 高柔，5m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-10m",
-          "code": "310101282",
-          "detail": "12pin转open 高柔，10m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "20m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-20m",
-          "code": "310101283",
-          "detail": "12pin转open 高柔，20m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-3m",
-          "code": "310102639",
-          "detail": "12pin转DB9母头open，静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-5m",
-          "code": "310102640",
-          "detail": "12pin转DB9母头open，静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "7m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-7m",
-          "code": "310102641",
-          "detail": "12pin转DB9母头open，静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-10m",
-          "code": "310102642",
-          "detail": "12pin转DB9母头open，静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "1m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-1m",
-          "code": "101532666",
-          "detail": "8pin转RJ45,静态，1m，弯线缆特性：静态铺设，弯折半径：12D；"
-        },
-        {
-          "category": "网线",
-          "series": "3m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-3m",
-          "code": "310101274",
-          "detail": "8pin转RJ45,静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "5m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-5m",
-          "code": "310101275",
-          "detail": "8pin转RJ45,静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "7m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-7m",
-          "code": "310101276",
-          "detail": "8pin转RJ45,静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "10m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-10m",
-          "code": "310101277",
-          "detail": "8pin转RJ45,静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "15m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-15m",
-          "code": "310101278",
-          "detail": "8pin转RJ45,静态，15m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "30m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-30m",
-          "code": "310101279",
-          "detail": "8pin转RJ45,静态，30m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "3m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-3m",
-          "code": "310101284",
-          "detail": "8pin转RJ45,高柔，3m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "5m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-5m",
-          "code": "310101285",
-          "detail": "8pin转RJ45,高柔，5m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "10m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-10m",
-          "code": "310101286",
-          "detail": "8pin转RJ45,高柔，10m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "20m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-20m",
-          "code": "310101287",
-          "detail": "8pin转RJ45,高柔，20m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM白光灯板",
-          "name": "MV-IDA-L-8-32-47-W(国内中性)",
-          "code": "310102288",
-          "detail": "8颗粒LED白光，色温5700K"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM蓝光灯板",
-          "name": "MV-IDA-L-8-32-47-B(国内中性)",
-          "code": "310102289",
-          "detail": "8颗粒LED蓝光，光源波长465nm~475nm"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM红外灯板",
-          "name": "MV-IDA-L-8-32-47-IR(国内中性)",
-          "code": "310102290",
-          "detail": "8颗粒LED红外光，光源波长850nm"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM全偏镜头罩",
-          "name": "MV-IDA-C-Y-41-56-P(国内中性)",
-          "code": "310102293",
-          "detail": "ID5000XR全偏镜头罩"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM全透镜头罩",
-          "name": "MV-IDA-C-Y-41-56-T(国内中性)",
-          "code": "310102294",
-          "detail": "ID5000XR透明镜头罩"
-        },
-        {
-          "category": "扩展配件",
-          "series": "ID5000XM-ESD防护罩",
-          "name": "MV-IDA-C-Y-41-56-ESD(国内中性)",
-          "code": "310102292",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求"
-        }
-      ]
-    },
-    {
-      "productCategory": "ID5000XM系列",
-      "productSeries": "ID5050XM系列",
-      "productModel": "MV-ID5050XM-16M-RBN(国内中性)",
-      "materialCode": "313201932",
-      "description": "5MP，16mm镜头，8颗红色LED，半偏镜头罩，机械调焦，带OLED屏",
-      "remark": "",
-      "standardAccessories": [
-        {
-          "category": "安装板",
-          "series": "安装板",
-          "name": "ID5000XM安装板",
-          "code": "192119847",
-          "detail": "V-读码器023-安装支架，适配ID5000XM/RM"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM红光灯板",
-          "name": "MV-IDA-L-8-32-47-R(国内中性)",
-          "code": "310102291",
-          "detail": "8颗粒LED红光，光源波长620nm~630nm"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM半偏镜头罩",
-          "name": "MV-IDA-C-Y-41-56-H",
-          "code": "202406694",
-          "detail": "ID5000XM标配半偏镜头罩"
-        }
-      ],
-      "optionalAccessories": [
-        {
-          "category": "电源",
-          "series": "电源适配器",
-          "name": "KPL-060M-VI(全球通中性)",
-          "code": "310100901",
-          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线"
-        },
-        {
-          "category": "电源",
-          "series": "电源适配器线缆",
-          "name": "交流电源线_国标_弯三插_C13_1.2米",
-          "code": "310100840",
-          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源1",
-          "name": "LRS-50-24(全球通中性)",
-          "code": "310100905",
-          "detail": "开关电源,24V2.09A,50W,接线端子"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源2",
-          "name": "LRS-150F-24(全球通中性)",
-          "code": "310100904",
-          "detail": "开关电源,24V6.25A,150W,接线端子"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源线缆",
-          "name": "交流电源线_国标_弯三插_open_2米",
-          "code": "310100843",
-          "detail": "交流电源线_国标_弯三插_open_2米(中性)"
-        },
-        {
-          "category": "IO电源线",
-          "series": "1m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-1m",
-          "code": "101532667",
-          "detail": "12pin转open 静态，1m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-3m",
-          "code": "310101268",
-          "detail": "12pin转open 静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-5m",
-          "code": "310101269",
-          "detail": "12pin转open 静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "7m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-7m",
-          "code": "310101270",
-          "detail": "12pin转open 静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-10m",
-          "code": "310101271",
-          "detail": "12pin转open 静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "15m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-15m",
-          "code": "310101272",
-          "detail": "12pin转open 静态，15m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "30m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-30m",
-          "code": "310101273",
-          "detail": "12pin转open 静态，30m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-3m",
-          "code": "310101280",
-          "detail": "12pin转open 高柔，3m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-5m",
-          "code": "310101281",
-          "detail": "12pin转open 高柔，5m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-10m",
-          "code": "310101282",
-          "detail": "12pin转open 高柔，10m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "20m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-20m",
-          "code": "310101283",
-          "detail": "12pin转open 高柔，20m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-3m",
-          "code": "310102639",
-          "detail": "12pin转DB9母头open，静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-5m",
-          "code": "310102640",
-          "detail": "12pin转DB9母头open，静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "7m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-7m",
-          "code": "310102641",
-          "detail": "12pin转DB9母头open，静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-10m",
-          "code": "310102642",
-          "detail": "12pin转DB9母头open，静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "1m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-1m",
-          "code": "101532666",
-          "detail": "8pin转RJ45,静态，1m，弯线缆特性：静态铺设，弯折半径：12D；"
-        },
-        {
-          "category": "网线",
-          "series": "3m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-3m",
-          "code": "310101274",
-          "detail": "8pin转RJ45,静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "5m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-5m",
-          "code": "310101275",
-          "detail": "8pin转RJ45,静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "7m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-7m",
-          "code": "310101276",
-          "detail": "8pin转RJ45,静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "10m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-10m",
-          "code": "310101277",
-          "detail": "8pin转RJ45,静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "15m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-15m",
-          "code": "310101278",
-          "detail": "8pin转RJ45,静态，15m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "30m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-30m",
-          "code": "310101279",
-          "detail": "8pin转RJ45,静态，30m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "3m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-3m",
-          "code": "310101284",
-          "detail": "8pin转RJ45,高柔，3m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "5m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-5m",
-          "code": "310101285",
-          "detail": "8pin转RJ45,高柔，5m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "10m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-10m",
-          "code": "310101286",
-          "detail": "8pin转RJ45,高柔，10m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "20m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-20m",
-          "code": "310101287",
-          "detail": "8pin转RJ45,高柔，20m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM白光灯板",
-          "name": "MV-IDA-L-8-32-47-W(国内中性)",
-          "code": "310102288",
-          "detail": "8颗粒LED白光，色温5700K"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM蓝光灯板",
-          "name": "MV-IDA-L-8-32-47-B(国内中性)",
-          "code": "310102289",
-          "detail": "8颗粒LED蓝光，光源波长465nm~475nm"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM红外灯板",
-          "name": "MV-IDA-L-8-32-47-IR(国内中性)",
-          "code": "310102290",
-          "detail": "8颗粒LED红外光，光源波长850nm"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM全偏镜头罩",
-          "name": "MV-IDA-C-Y-41-56-P(国内中性)",
-          "code": "310102293",
-          "detail": "ID5000XR全偏镜头罩"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM全透镜头罩",
-          "name": "MV-IDA-C-Y-41-56-T(国内中性)",
-          "code": "310102294",
-          "detail": "ID5000XR透明镜头罩"
-        },
-        {
-          "category": "扩展配件",
-          "series": "ID5000XM-ESD防护罩",
-          "name": "MV-IDA-C-Y-41-56-ESD(国内中性)",
-          "code": "310102292",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求"
-        }
-      ]
-    },
-    {
-      "productCategory": "ID5000XM系列",
-      "productSeries": "ID5050XM系列",
-      "productModel": "MV-ID5050XM-25M-RBN(国内标配)",
-      "materialCode": "313201847",
-      "description": "5MP，25mm镜头，8颗红色LED，半偏镜头罩，机械调焦，带OLED屏",
-      "remark": "",
-      "standardAccessories": [
-        {
-          "category": "安装板",
-          "series": "安装板",
-          "name": "ID5000XM安装板",
-          "code": "192119847",
-          "detail": "V-读码器023-安装支架，适配ID5000XM/RM"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM红光灯板",
-          "name": "MV-IDA-L-8-32-47-R(国内中性)",
-          "code": "310102291",
-          "detail": "8颗粒LED红光，光源波长620nm~630nm"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM半偏镜头罩",
-          "name": "MV-IDA-C-Y-41-56-H",
-          "code": "202406694",
-          "detail": "ID5000XM标配半偏镜头罩"
-        }
-      ],
-      "optionalAccessories": [
-        {
-          "category": "电源",
-          "series": "电源适配器",
-          "name": "KPL-060M-VI(全球通中性)",
-          "code": "310100901",
-          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线"
-        },
-        {
-          "category": "电源",
-          "series": "电源适配器线缆",
-          "name": "交流电源线_国标_弯三插_C13_1.2米",
-          "code": "310100840",
-          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源1",
-          "name": "LRS-50-24(全球通中性)",
-          "code": "310100905",
-          "detail": "开关电源,24V2.09A,50W,接线端子"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源2",
-          "name": "LRS-150F-24(全球通中性)",
-          "code": "310100904",
-          "detail": "开关电源,24V6.25A,150W,接线端子"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源线缆",
-          "name": "交流电源线_国标_弯三插_open_2米",
-          "code": "310100843",
-          "detail": "交流电源线_国标_弯三插_open_2米(中性)"
-        },
-        {
-          "category": "IO电源线",
-          "series": "1m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-1m",
-          "code": "101532667",
-          "detail": "12pin转open 静态，1m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-3m",
-          "code": "310101268",
-          "detail": "12pin转open 静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-5m",
-          "code": "310101269",
-          "detail": "12pin转open 静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "7m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-7m",
-          "code": "310101270",
-          "detail": "12pin转open 静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-10m",
-          "code": "310101271",
-          "detail": "12pin转open 静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "15m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-15m",
-          "code": "310101272",
-          "detail": "12pin转open 静态，15m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "30m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-30m",
-          "code": "310101273",
-          "detail": "12pin转open 静态，30m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-3m",
-          "code": "310101280",
-          "detail": "12pin转open 高柔，3m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-5m",
-          "code": "310101281",
-          "detail": "12pin转open 高柔，5m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-10m",
-          "code": "310101282",
-          "detail": "12pin转open 高柔，10m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "20m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-20m",
-          "code": "310101283",
-          "detail": "12pin转open 高柔，20m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-3m",
-          "code": "310102639",
-          "detail": "12pin转DB9母头open，静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-5m",
-          "code": "310102640",
-          "detail": "12pin转DB9母头open，静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "7m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-7m",
-          "code": "310102641",
-          "detail": "12pin转DB9母头open，静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-10m",
-          "code": "310102642",
-          "detail": "12pin转DB9母头open，静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "1m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-1m",
-          "code": "101532666",
-          "detail": "8pin转RJ45,静态，1m，弯线缆特性：静态铺设，弯折半径：12D；"
-        },
-        {
-          "category": "网线",
-          "series": "3m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-3m",
-          "code": "310101274",
-          "detail": "8pin转RJ45,静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "5m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-5m",
-          "code": "310101275",
-          "detail": "8pin转RJ45,静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "7m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-7m",
-          "code": "310101276",
-          "detail": "8pin转RJ45,静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "10m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-10m",
-          "code": "310101277",
-          "detail": "8pin转RJ45,静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "15m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-15m",
-          "code": "310101278",
-          "detail": "8pin转RJ45,静态，15m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "30m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-30m",
-          "code": "310101279",
-          "detail": "8pin转RJ45,静态，30m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "3m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-3m",
-          "code": "310101284",
-          "detail": "8pin转RJ45,高柔，3m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "5m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-5m",
-          "code": "310101285",
-          "detail": "8pin转RJ45,高柔，5m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "10m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-10m",
-          "code": "310101286",
-          "detail": "8pin转RJ45,高柔，10m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "20m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-20m",
-          "code": "310101287",
-          "detail": "8pin转RJ45,高柔，20m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM白光灯板",
-          "name": "MV-IDA-L-8-32-47-W(国内中性)",
-          "code": "310102288",
-          "detail": "8颗粒LED白光，色温5700K"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM蓝光灯板",
-          "name": "MV-IDA-L-8-32-47-B(国内中性)",
-          "code": "310102289",
-          "detail": "8颗粒LED蓝光，光源波长465nm~475nm"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM红外灯板",
-          "name": "MV-IDA-L-8-32-47-IR(国内中性)",
-          "code": "310102290",
-          "detail": "8颗粒LED红外光，光源波长850nm"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM全偏镜头罩",
-          "name": "MV-IDA-C-Y-41-56-P(国内中性)",
-          "code": "310102293",
-          "detail": "ID5000XR全偏镜头罩"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM全透镜头罩",
-          "name": "MV-IDA-C-Y-41-56-T(国内中性)",
-          "code": "310102294",
-          "detail": "ID5000XR透明镜头罩"
-        },
-        {
-          "category": "扩展配件",
-          "series": "ID5000XM-ESD防护罩",
-          "name": "MV-IDA-C-Y-41-56-ESD(国内中性)",
-          "code": "310102292",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求"
-        }
-      ]
-    },
-    {
-      "productCategory": "ID5000XM系列",
-      "productSeries": "ID5050XM系列",
-      "productModel": "MV-ID5050XM-25M-RBN(国内中性)",
-      "materialCode": "313201935",
-      "description": "5MP，25mm镜头，8颗红色LED，半偏镜头罩，机械调焦，带OLED屏",
-      "remark": "",
-      "standardAccessories": [
-        {
-          "category": "安装板",
-          "series": "安装板",
-          "name": "ID5000XM安装板",
-          "code": "192119847",
-          "detail": "V-读码器023-安装支架，适配ID5000XM/RM"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM红光灯板",
-          "name": "MV-IDA-L-8-32-47-R(国内中性)",
-          "code": "310102291",
-          "detail": "8颗粒LED红光，光源波长620nm~630nm"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM半偏镜头罩",
-          "name": "MV-IDA-C-Y-41-56-H",
-          "code": "202406694",
-          "detail": "ID5000XM标配半偏镜头罩"
-        }
-      ],
-      "optionalAccessories": [
-        {
-          "category": "电源",
-          "series": "电源适配器",
-          "name": "KPL-060M-VI(全球通中性)",
-          "code": "310100901",
-          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线"
-        },
-        {
-          "category": "电源",
-          "series": "电源适配器线缆",
-          "name": "交流电源线_国标_弯三插_C13_1.2米",
-          "code": "310100840",
-          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源1",
-          "name": "LRS-50-24(全球通中性)",
-          "code": "310100905",
-          "detail": "开关电源,24V2.09A,50W,接线端子"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源2",
-          "name": "LRS-150F-24(全球通中性)",
-          "code": "310100904",
-          "detail": "开关电源,24V6.25A,150W,接线端子"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源线缆",
-          "name": "交流电源线_国标_弯三插_open_2米",
-          "code": "310100843",
-          "detail": "交流电源线_国标_弯三插_open_2米(中性)"
-        },
-        {
-          "category": "IO电源线",
-          "series": "1m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-1m",
-          "code": "101532667",
-          "detail": "12pin转open 静态，1m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-3m",
-          "code": "310101268",
-          "detail": "12pin转open 静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-5m",
-          "code": "310101269",
-          "detail": "12pin转open 静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "7m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-7m",
-          "code": "310101270",
-          "detail": "12pin转open 静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-10m",
-          "code": "310101271",
-          "detail": "12pin转open 静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "15m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-15m",
-          "code": "310101272",
-          "detail": "12pin转open 静态，15m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "30m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-30m",
-          "code": "310101273",
-          "detail": "12pin转open 静态，30m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-3m",
-          "code": "310101280",
-          "detail": "12pin转open 高柔，3m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-5m",
-          "code": "310101281",
-          "detail": "12pin转open 高柔，5m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-10m",
-          "code": "310101282",
-          "detail": "12pin转open 高柔，10m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "20m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-20m",
-          "code": "310101283",
-          "detail": "12pin转open 高柔，20m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-3m",
-          "code": "310102639",
-          "detail": "12pin转DB9母头open，静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-5m",
-          "code": "310102640",
-          "detail": "12pin转DB9母头open，静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "7m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-7m",
-          "code": "310102641",
-          "detail": "12pin转DB9母头open，静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-10m",
-          "code": "310102642",
-          "detail": "12pin转DB9母头open，静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "1m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-1m",
-          "code": "101532666",
-          "detail": "8pin转RJ45,静态，1m，弯线缆特性：静态铺设，弯折半径：12D；"
-        },
-        {
-          "category": "网线",
-          "series": "3m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-3m",
-          "code": "310101274",
-          "detail": "8pin转RJ45,静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "5m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-5m",
-          "code": "310101275",
-          "detail": "8pin转RJ45,静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "7m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-7m",
-          "code": "310101276",
-          "detail": "8pin转RJ45,静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "10m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-10m",
-          "code": "310101277",
-          "detail": "8pin转RJ45,静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "15m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-15m",
-          "code": "310101278",
-          "detail": "8pin转RJ45,静态，15m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "30m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-30m",
-          "code": "310101279",
-          "detail": "8pin转RJ45,静态，30m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "3m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-3m",
-          "code": "310101284",
-          "detail": "8pin转RJ45,高柔，3m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "5m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-5m",
-          "code": "310101285",
-          "detail": "8pin转RJ45,高柔，5m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "10m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-10m",
-          "code": "310101286",
-          "detail": "8pin转RJ45,高柔，10m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "20m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-20m",
-          "code": "310101287",
-          "detail": "8pin转RJ45,高柔，20m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM白光灯板",
-          "name": "MV-IDA-L-8-32-47-W(国内中性)",
-          "code": "310102288",
-          "detail": "8颗粒LED白光，色温5700K"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM蓝光灯板",
-          "name": "MV-IDA-L-8-32-47-B(国内中性)",
-          "code": "310102289",
-          "detail": "8颗粒LED蓝光，光源波长465nm~475nm"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM红外灯板",
-          "name": "MV-IDA-L-8-32-47-IR(国内中性)",
-          "code": "310102290",
-          "detail": "8颗粒LED红外光，光源波长850nm"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM全偏镜头罩",
-          "name": "MV-IDA-C-Y-41-56-P(国内中性)",
-          "code": "310102293",
-          "detail": "ID5000XR全偏镜头罩"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM全透镜头罩",
-          "name": "MV-IDA-C-Y-41-56-T(国内中性)",
-          "code": "310102294",
-          "detail": "ID5000XR透明镜头罩"
-        },
-        {
-          "category": "扩展配件",
-          "series": "ID5000XM-ESD防护罩",
-          "name": "MV-IDA-C-Y-41-56-ESD(国内中性)",
-          "code": "310102292",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求"
-        }
-      ]
-    },
-    {
-      "productCategory": "ID5000XM系列",
-      "productSeries": "ID5050XM系列",
-      "productModel": "MV-ID5050XM-08L-RBN(国内标配)",
-      "materialCode": "313201977",
-      "description": "5MP，8mm镜头，8颗红色LED，半偏镜头罩，液态调焦，带OLED屏",
-      "remark": "",
-      "standardAccessories": [
-        {
-          "category": "安装板",
-          "series": "安装板",
-          "name": "ID5000XM安装板",
-          "code": "192119847",
-          "detail": "V-读码器023-安装支架，适配ID5000XM/RM"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM红光灯板",
-          "name": "MV-IDA-L-8-32-47-R(国内中性)",
-          "code": "310102291",
-          "detail": "8颗粒LED红光，光源波长620nm~630nm"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM半偏镜头罩",
-          "name": "MV-IDA-C-Y-41-56-H",
-          "code": "202406694",
-          "detail": "ID5000XM标配半偏镜头罩"
-        }
-      ],
-      "optionalAccessories": [
-        {
-          "category": "电源",
-          "series": "电源适配器",
-          "name": "KPL-060M-VI(全球通中性)",
-          "code": "310100901",
-          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线"
-        },
-        {
-          "category": "电源",
-          "series": "电源适配器线缆",
-          "name": "交流电源线_国标_弯三插_C13_1.2米",
-          "code": "310100840",
-          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源1",
-          "name": "LRS-50-24(全球通中性)",
-          "code": "310100905",
-          "detail": "开关电源,24V2.09A,50W,接线端子"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源2",
-          "name": "LRS-150F-24(全球通中性)",
-          "code": "310100904",
-          "detail": "开关电源,24V6.25A,150W,接线端子"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源线缆",
-          "name": "交流电源线_国标_弯三插_open_2米",
-          "code": "310100843",
-          "detail": "交流电源线_国标_弯三插_open_2米(中性)"
-        },
-        {
-          "category": "IO电源线",
-          "series": "1m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-1m",
-          "code": "101532667",
-          "detail": "12pin转open 静态，1m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-3m",
-          "code": "310101268",
-          "detail": "12pin转open 静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-5m",
-          "code": "310101269",
-          "detail": "12pin转open 静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "7m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-7m",
-          "code": "310101270",
-          "detail": "12pin转open 静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-10m",
-          "code": "310101271",
-          "detail": "12pin转open 静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "15m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-15m",
-          "code": "310101272",
-          "detail": "12pin转open 静态，15m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "30m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-30m",
-          "code": "310101273",
-          "detail": "12pin转open 静态，30m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-3m",
-          "code": "310101280",
-          "detail": "12pin转open 高柔，3m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-5m",
-          "code": "310101281",
-          "detail": "12pin转open 高柔，5m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-10m",
-          "code": "310101282",
-          "detail": "12pin转open 高柔，10m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "20m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-20m",
-          "code": "310101283",
-          "detail": "12pin转open 高柔，20m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-3m",
-          "code": "310102639",
-          "detail": "12pin转DB9母头open，静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-5m",
-          "code": "310102640",
-          "detail": "12pin转DB9母头open，静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "7m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-7m",
-          "code": "310102641",
-          "detail": "12pin转DB9母头open，静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-10m",
-          "code": "310102642",
-          "detail": "12pin转DB9母头open，静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "1m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-1m",
-          "code": "101532666",
-          "detail": "8pin转RJ45,静态，1m，弯线缆特性：静态铺设，弯折半径：12D；"
-        },
-        {
-          "category": "网线",
-          "series": "3m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-3m",
-          "code": "310101274",
-          "detail": "8pin转RJ45,静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "5m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-5m",
-          "code": "310101275",
-          "detail": "8pin转RJ45,静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "7m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-7m",
-          "code": "310101276",
-          "detail": "8pin转RJ45,静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "10m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-10m",
-          "code": "310101277",
-          "detail": "8pin转RJ45,静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "15m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-15m",
-          "code": "310101278",
-          "detail": "8pin转RJ45,静态，15m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "30m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-30m",
-          "code": "310101279",
-          "detail": "8pin转RJ45,静态，30m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "3m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-3m",
-          "code": "310101284",
-          "detail": "8pin转RJ45,高柔，3m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "5m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-5m",
-          "code": "310101285",
-          "detail": "8pin转RJ45,高柔，5m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "10m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-10m",
-          "code": "310101286",
-          "detail": "8pin转RJ45,高柔，10m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "20m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-20m",
-          "code": "310101287",
-          "detail": "8pin转RJ45,高柔，20m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM白光灯板",
-          "name": "MV-IDA-L-8-32-47-W(国内中性)",
-          "code": "310102288",
-          "detail": "8颗粒LED白光，色温5700K"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM蓝光灯板",
-          "name": "MV-IDA-L-8-32-47-B(国内中性)",
-          "code": "310102289",
-          "detail": "8颗粒LED蓝光，光源波长465nm~475nm"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM红外灯板",
-          "name": "MV-IDA-L-8-32-47-IR(国内中性)",
-          "code": "310102290",
-          "detail": "8颗粒LED红外光，光源波长850nm"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM全偏镜头罩",
-          "name": "MV-IDA-C-Y-41-56-P(国内中性)",
-          "code": "310102293",
-          "detail": "ID5000XR全偏镜头罩"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM全透镜头罩",
-          "name": "MV-IDA-C-Y-41-56-T(国内中性)",
-          "code": "310102294",
-          "detail": "ID5000XR透明镜头罩"
-        },
-        {
-          "category": "扩展配件",
-          "series": "ID5000XM-ESD防护罩",
-          "name": "MV-IDA-C-Y-41-56-ESD(国内中性)",
-          "code": "310102292",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求"
-        }
-      ]
-    },
-    {
-      "productCategory": "ID5000XM系列",
-      "productSeries": "ID5050XM系列",
-      "productModel": "MV-ID5050XM-08L-RBN(国内中性)",
-      "materialCode": "313201978",
-      "description": "5MP，8mm镜头，8颗红色LED，半偏镜头罩，液态调焦，带OLED屏",
-      "remark": "",
-      "standardAccessories": [
-        {
-          "category": "安装板",
-          "series": "安装板",
-          "name": "ID5000XM安装板",
-          "code": "192119847",
-          "detail": "V-读码器023-安装支架，适配ID5000XM/RM"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM红光灯板",
-          "name": "MV-IDA-L-8-32-47-R(国内中性)",
-          "code": "310102291",
-          "detail": "8颗粒LED红光，光源波长620nm~630nm"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM半偏镜头罩",
-          "name": "MV-IDA-C-Y-41-56-H",
-          "code": "202406694",
-          "detail": "ID5000XM标配半偏镜头罩"
-        }
-      ],
-      "optionalAccessories": [
-        {
-          "category": "电源",
-          "series": "电源适配器",
-          "name": "KPL-060M-VI(全球通中性)",
-          "code": "310100901",
-          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线"
-        },
-        {
-          "category": "电源",
-          "series": "电源适配器线缆",
-          "name": "交流电源线_国标_弯三插_C13_1.2米",
-          "code": "310100840",
-          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源1",
-          "name": "LRS-50-24(全球通中性)",
-          "code": "310100905",
-          "detail": "开关电源,24V2.09A,50W,接线端子"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源2",
-          "name": "LRS-150F-24(全球通中性)",
-          "code": "310100904",
-          "detail": "开关电源,24V6.25A,150W,接线端子"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源线缆",
-          "name": "交流电源线_国标_弯三插_open_2米",
-          "code": "310100843",
-          "detail": "交流电源线_国标_弯三插_open_2米(中性)"
-        },
-        {
-          "category": "IO电源线",
-          "series": "1m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-1m",
-          "code": "101532667",
-          "detail": "12pin转open 静态，1m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-3m",
-          "code": "310101268",
-          "detail": "12pin转open 静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-5m",
-          "code": "310101269",
-          "detail": "12pin转open 静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "7m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-7m",
-          "code": "310101270",
-          "detail": "12pin转open 静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-10m",
-          "code": "310101271",
-          "detail": "12pin转open 静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "15m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-15m",
-          "code": "310101272",
-          "detail": "12pin转open 静态，15m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "30m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-30m",
-          "code": "310101273",
-          "detail": "12pin转open 静态，30m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-3m",
-          "code": "310101280",
-          "detail": "12pin转open 高柔，3m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-5m",
-          "code": "310101281",
-          "detail": "12pin转open 高柔，5m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-10m",
-          "code": "310101282",
-          "detail": "12pin转open 高柔，10m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "20m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-20m",
-          "code": "310101283",
-          "detail": "12pin转open 高柔，20m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-3m",
-          "code": "310102639",
-          "detail": "12pin转DB9母头open，静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-5m",
-          "code": "310102640",
-          "detail": "12pin转DB9母头open，静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "7m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-7m",
-          "code": "310102641",
-          "detail": "12pin转DB9母头open，静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-10m",
-          "code": "310102642",
-          "detail": "12pin转DB9母头open，静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "1m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-1m",
-          "code": "101532666",
-          "detail": "8pin转RJ45,静态，1m，弯线缆特性：静态铺设，弯折半径：12D；"
-        },
-        {
-          "category": "网线",
-          "series": "3m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-3m",
-          "code": "310101274",
-          "detail": "8pin转RJ45,静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "5m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-5m",
-          "code": "310101275",
-          "detail": "8pin转RJ45,静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "7m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-7m",
-          "code": "310101276",
-          "detail": "8pin转RJ45,静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "10m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-10m",
-          "code": "310101277",
-          "detail": "8pin转RJ45,静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "15m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-15m",
-          "code": "310101278",
-          "detail": "8pin转RJ45,静态，15m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "30m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-30m",
-          "code": "310101279",
-          "detail": "8pin转RJ45,静态，30m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "3m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-3m",
-          "code": "310101284",
-          "detail": "8pin转RJ45,高柔，3m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "5m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-5m",
-          "code": "310101285",
-          "detail": "8pin转RJ45,高柔，5m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "10m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-10m",
-          "code": "310101286",
-          "detail": "8pin转RJ45,高柔，10m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "20m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-20m",
-          "code": "310101287",
-          "detail": "8pin转RJ45,高柔，20m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM白光灯板",
-          "name": "MV-IDA-L-8-32-47-W(国内中性)",
-          "code": "310102288",
-          "detail": "8颗粒LED白光，色温5700K"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM蓝光灯板",
-          "name": "MV-IDA-L-8-32-47-B(国内中性)",
-          "code": "310102289",
-          "detail": "8颗粒LED蓝光，光源波长465nm~475nm"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM红外灯板",
-          "name": "MV-IDA-L-8-32-47-IR(国内中性)",
-          "code": "310102290",
-          "detail": "8颗粒LED红外光，光源波长850nm"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM全偏镜头罩",
-          "name": "MV-IDA-C-Y-41-56-P(国内中性)",
-          "code": "310102293",
-          "detail": "ID5000XR全偏镜头罩"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM全透镜头罩",
-          "name": "MV-IDA-C-Y-41-56-T(国内中性)",
-          "code": "310102294",
-          "detail": "ID5000XR透明镜头罩"
-        },
-        {
-          "category": "扩展配件",
-          "series": "ID5000XM-ESD防护罩",
-          "name": "MV-IDA-C-Y-41-56-ESD(国内中性)",
-          "code": "310102292",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求"
-        }
-      ]
-    },
-    {
-      "productCategory": "ID5000XM系列",
-      "productSeries": "ID5050XM系列",
-      "productModel": "MV-ID5050XM-12L-RBN(国内标配)",
-      "materialCode": "313201979",
-      "description": "5MP，12mm镜头，8颗红色LED，半偏镜头罩，液态调焦，带OLED屏",
-      "remark": "",
-      "standardAccessories": [
-        {
-          "category": "安装板",
-          "series": "安装板",
-          "name": "ID5000XM安装板",
-          "code": "192119847",
-          "detail": "V-读码器023-安装支架，适配ID5000XM/RM"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM红光灯板",
-          "name": "MV-IDA-L-8-32-47-R(国内中性)",
-          "code": "310102291",
-          "detail": "8颗粒LED红光，光源波长620nm~630nm"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM半偏镜头罩",
-          "name": "MV-IDA-C-Y-41-56-H",
-          "code": "202406694",
-          "detail": "ID5000XM标配半偏镜头罩"
-        }
-      ],
-      "optionalAccessories": [
-        {
-          "category": "电源",
-          "series": "电源适配器",
-          "name": "KPL-060M-VI(全球通中性)",
-          "code": "310100901",
-          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线"
-        },
-        {
-          "category": "电源",
-          "series": "电源适配器线缆",
-          "name": "交流电源线_国标_弯三插_C13_1.2米",
-          "code": "310100840",
-          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源1",
-          "name": "LRS-50-24(全球通中性)",
-          "code": "310100905",
-          "detail": "开关电源,24V2.09A,50W,接线端子"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源2",
-          "name": "LRS-150F-24(全球通中性)",
-          "code": "310100904",
-          "detail": "开关电源,24V6.25A,150W,接线端子"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源线缆",
-          "name": "交流电源线_国标_弯三插_open_2米",
-          "code": "310100843",
-          "detail": "交流电源线_国标_弯三插_open_2米(中性)"
-        },
-        {
-          "category": "IO电源线",
-          "series": "1m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-1m",
-          "code": "101532667",
-          "detail": "12pin转open 静态，1m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-3m",
-          "code": "310101268",
-          "detail": "12pin转open 静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-5m",
-          "code": "310101269",
-          "detail": "12pin转open 静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "7m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-7m",
-          "code": "310101270",
-          "detail": "12pin转open 静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-10m",
-          "code": "310101271",
-          "detail": "12pin转open 静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "15m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-15m",
-          "code": "310101272",
-          "detail": "12pin转open 静态，15m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "30m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-30m",
-          "code": "310101273",
-          "detail": "12pin转open 静态，30m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-3m",
-          "code": "310101280",
-          "detail": "12pin转open 高柔，3m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-5m",
-          "code": "310101281",
-          "detail": "12pin转open 高柔，5m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-10m",
-          "code": "310101282",
-          "detail": "12pin转open 高柔，10m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "20m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-20m",
-          "code": "310101283",
-          "detail": "12pin转open 高柔，20m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-3m",
-          "code": "310102639",
-          "detail": "12pin转DB9母头open，静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-5m",
-          "code": "310102640",
-          "detail": "12pin转DB9母头open，静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "7m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-7m",
-          "code": "310102641",
-          "detail": "12pin转DB9母头open，静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-10m",
-          "code": "310102642",
-          "detail": "12pin转DB9母头open，静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "1m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-1m",
-          "code": "101532666",
-          "detail": "8pin转RJ45,静态，1m，弯线缆特性：静态铺设，弯折半径：12D；"
-        },
-        {
-          "category": "网线",
-          "series": "3m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-3m",
-          "code": "310101274",
-          "detail": "8pin转RJ45,静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "5m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-5m",
-          "code": "310101275",
-          "detail": "8pin转RJ45,静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "7m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-7m",
-          "code": "310101276",
-          "detail": "8pin转RJ45,静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "10m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-10m",
-          "code": "310101277",
-          "detail": "8pin转RJ45,静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "15m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-15m",
-          "code": "310101278",
-          "detail": "8pin转RJ45,静态，15m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "30m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-30m",
-          "code": "310101279",
-          "detail": "8pin转RJ45,静态，30m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "3m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-3m",
-          "code": "310101284",
-          "detail": "8pin转RJ45,高柔，3m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "5m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-5m",
-          "code": "310101285",
-          "detail": "8pin转RJ45,高柔，5m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "10m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-10m",
-          "code": "310101286",
-          "detail": "8pin转RJ45,高柔，10m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "20m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-20m",
-          "code": "310101287",
-          "detail": "8pin转RJ45,高柔，20m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM白光灯板",
-          "name": "MV-IDA-L-8-32-47-W(国内中性)",
-          "code": "310102288",
-          "detail": "8颗粒LED白光，色温5700K"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM蓝光灯板",
-          "name": "MV-IDA-L-8-32-47-B(国内中性)",
-          "code": "310102289",
-          "detail": "8颗粒LED蓝光，光源波长465nm~475nm"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM红外灯板",
-          "name": "MV-IDA-L-8-32-47-IR(国内中性)",
-          "code": "310102290",
-          "detail": "8颗粒LED红外光，光源波长850nm"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM全偏镜头罩",
-          "name": "MV-IDA-C-Y-41-56-P(国内中性)",
-          "code": "310102293",
-          "detail": "ID5000XR全偏镜头罩"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM全透镜头罩",
-          "name": "MV-IDA-C-Y-41-56-T(国内中性)",
-          "code": "310102294",
-          "detail": "ID5000XR透明镜头罩"
-        },
-        {
-          "category": "扩展配件",
-          "series": "ID5000XM-ESD防护罩",
-          "name": "MV-IDA-C-Y-41-56-ESD(国内中性)",
-          "code": "310102292",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求"
-        }
-      ]
-    },
-    {
-      "productCategory": "ID5000XM系列",
-      "productSeries": "ID5050XM系列",
-      "productModel": "MV-ID5050XM-12L-RBN(国内中性)",
-      "materialCode": "313201980",
-      "description": "5MP，12mm镜头，8颗红色LED，半偏镜头罩，液态调焦，带OLED屏",
-      "remark": "",
-      "standardAccessories": [
-        {
-          "category": "安装板",
-          "series": "安装板",
-          "name": "ID5000XM安装板",
-          "code": "192119847",
-          "detail": "V-读码器023-安装支架，适配ID5000XM/RM"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM红光灯板",
-          "name": "MV-IDA-L-8-32-47-R(国内中性)",
-          "code": "310102291",
-          "detail": "8颗粒LED红光，光源波长620nm~630nm"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM半偏镜头罩",
-          "name": "MV-IDA-C-Y-41-56-H",
-          "code": "202406694",
-          "detail": "ID5000XM标配半偏镜头罩"
-        }
-      ],
-      "optionalAccessories": [
-        {
-          "category": "电源",
-          "series": "电源适配器",
-          "name": "KPL-060M-VI(全球通中性)",
-          "code": "310100901",
-          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线"
-        },
-        {
-          "category": "电源",
-          "series": "电源适配器线缆",
-          "name": "交流电源线_国标_弯三插_C13_1.2米",
-          "code": "310100840",
-          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源1",
-          "name": "LRS-50-24(全球通中性)",
-          "code": "310100905",
-          "detail": "开关电源,24V2.09A,50W,接线端子"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源2",
-          "name": "LRS-150F-24(全球通中性)",
-          "code": "310100904",
-          "detail": "开关电源,24V6.25A,150W,接线端子"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源线缆",
-          "name": "交流电源线_国标_弯三插_open_2米",
-          "code": "310100843",
-          "detail": "交流电源线_国标_弯三插_open_2米(中性)"
-        },
-        {
-          "category": "IO电源线",
-          "series": "1m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-1m",
-          "code": "101532667",
-          "detail": "12pin转open 静态，1m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-3m",
-          "code": "310101268",
-          "detail": "12pin转open 静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-5m",
-          "code": "310101269",
-          "detail": "12pin转open 静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "7m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-7m",
-          "code": "310101270",
-          "detail": "12pin转open 静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-10m",
-          "code": "310101271",
-          "detail": "12pin转open 静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "15m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-15m",
-          "code": "310101272",
-          "detail": "12pin转open 静态，15m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "30m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-30m",
-          "code": "310101273",
-          "detail": "12pin转open 静态，30m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-3m",
-          "code": "310101280",
-          "detail": "12pin转open 高柔，3m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-5m",
-          "code": "310101281",
-          "detail": "12pin转open 高柔，5m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-10m",
-          "code": "310101282",
-          "detail": "12pin转open 高柔，10m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "20m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-20m",
-          "code": "310101283",
-          "detail": "12pin转open 高柔，20m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-3m",
-          "code": "310102639",
-          "detail": "12pin转DB9母头open，静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-5m",
-          "code": "310102640",
-          "detail": "12pin转DB9母头open，静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "7m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-7m",
-          "code": "310102641",
-          "detail": "12pin转DB9母头open，静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-10m",
-          "code": "310102642",
-          "detail": "12pin转DB9母头open，静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "1m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-1m",
-          "code": "101532666",
-          "detail": "8pin转RJ45,静态，1m，弯线缆特性：静态铺设，弯折半径：12D；"
-        },
-        {
-          "category": "网线",
-          "series": "3m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-3m",
-          "code": "310101274",
-          "detail": "8pin转RJ45,静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "5m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-5m",
-          "code": "310101275",
-          "detail": "8pin转RJ45,静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "7m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-7m",
-          "code": "310101276",
-          "detail": "8pin转RJ45,静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "10m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-10m",
-          "code": "310101277",
-          "detail": "8pin转RJ45,静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "15m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-15m",
-          "code": "310101278",
-          "detail": "8pin转RJ45,静态，15m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "30m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-30m",
-          "code": "310101279",
-          "detail": "8pin转RJ45,静态，30m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "3m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-3m",
-          "code": "310101284",
-          "detail": "8pin转RJ45,高柔，3m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "5m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-5m",
-          "code": "310101285",
-          "detail": "8pin转RJ45,高柔，5m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "10m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-10m",
-          "code": "310101286",
-          "detail": "8pin转RJ45,高柔，10m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "20m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-20m",
-          "code": "310101287",
-          "detail": "8pin转RJ45,高柔，20m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM白光灯板",
-          "name": "MV-IDA-L-8-32-47-W(国内中性)",
-          "code": "310102288",
-          "detail": "8颗粒LED白光，色温5700K"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM蓝光灯板",
-          "name": "MV-IDA-L-8-32-47-B(国内中性)",
-          "code": "310102289",
-          "detail": "8颗粒LED蓝光，光源波长465nm~475nm"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM红外灯板",
-          "name": "MV-IDA-L-8-32-47-IR(国内中性)",
-          "code": "310102290",
-          "detail": "8颗粒LED红外光，光源波长850nm"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM全偏镜头罩",
-          "name": "MV-IDA-C-Y-41-56-P(国内中性)",
-          "code": "310102293",
-          "detail": "ID5000XR全偏镜头罩"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM全透镜头罩",
-          "name": "MV-IDA-C-Y-41-56-T(国内中性)",
-          "code": "310102294",
-          "detail": "ID5000XR透明镜头罩"
-        },
-        {
-          "category": "扩展配件",
-          "series": "ID5000XM-ESD防护罩",
-          "name": "MV-IDA-C-Y-41-56-ESD(国内中性)",
-          "code": "310102292",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求"
-        }
-      ]
-    },
-    {
-      "productCategory": "ID5000XM系列",
-      "productSeries": "ID5050XM系列",
-      "productModel": "MV-ID5050XM-16L-RBN(国内标配)",
-      "materialCode": "313201981",
-      "description": "5MP，16mm镜头，8颗红色LED，半偏镜头罩，液态调焦，带OLED屏",
-      "remark": "",
-      "standardAccessories": [
-        {
-          "category": "安装板",
-          "series": "安装板",
-          "name": "ID5000XM安装板",
-          "code": "192119847",
-          "detail": "V-读码器023-安装支架，适配ID5000XM/RM"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM红光灯板",
-          "name": "MV-IDA-L-8-32-47-R(国内中性)",
-          "code": "310102291",
-          "detail": "8颗粒LED红光，光源波长620nm~630nm"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM半偏镜头罩",
-          "name": "MV-IDA-C-Y-41-56-H",
-          "code": "202406694",
-          "detail": "ID5000XM标配半偏镜头罩"
-        }
-      ],
-      "optionalAccessories": [
-        {
-          "category": "电源",
-          "series": "电源适配器",
-          "name": "KPL-060M-VI(全球通中性)",
-          "code": "310100901",
-          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线"
-        },
-        {
-          "category": "电源",
-          "series": "电源适配器线缆",
-          "name": "交流电源线_国标_弯三插_C13_1.2米",
-          "code": "310100840",
-          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源1",
-          "name": "LRS-50-24(全球通中性)",
-          "code": "310100905",
-          "detail": "开关电源,24V2.09A,50W,接线端子"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源2",
-          "name": "LRS-150F-24(全球通中性)",
-          "code": "310100904",
-          "detail": "开关电源,24V6.25A,150W,接线端子"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源线缆",
-          "name": "交流电源线_国标_弯三插_open_2米",
-          "code": "310100843",
-          "detail": "交流电源线_国标_弯三插_open_2米(中性)"
-        },
-        {
-          "category": "IO电源线",
-          "series": "1m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-1m",
-          "code": "101532667",
-          "detail": "12pin转open 静态，1m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-3m",
-          "code": "310101268",
-          "detail": "12pin转open 静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-5m",
-          "code": "310101269",
-          "detail": "12pin转open 静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "7m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-7m",
-          "code": "310101270",
-          "detail": "12pin转open 静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-10m",
-          "code": "310101271",
-          "detail": "12pin转open 静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "15m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-15m",
-          "code": "310101272",
-          "detail": "12pin转open 静态，15m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "30m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-30m",
-          "code": "310101273",
-          "detail": "12pin转open 静态，30m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-3m",
-          "code": "310101280",
-          "detail": "12pin转open 高柔，3m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-5m",
-          "code": "310101281",
-          "detail": "12pin转open 高柔，5m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-10m",
-          "code": "310101282",
-          "detail": "12pin转open 高柔，10m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "20m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-20m",
-          "code": "310101283",
-          "detail": "12pin转open 高柔，20m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-3m",
-          "code": "310102639",
-          "detail": "12pin转DB9母头open，静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-5m",
-          "code": "310102640",
-          "detail": "12pin转DB9母头open，静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "7m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-7m",
-          "code": "310102641",
-          "detail": "12pin转DB9母头open，静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-10m",
-          "code": "310102642",
-          "detail": "12pin转DB9母头open，静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "1m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-1m",
-          "code": "101532666",
-          "detail": "8pin转RJ45,静态，1m，弯线缆特性：静态铺设，弯折半径：12D；"
-        },
-        {
-          "category": "网线",
-          "series": "3m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-3m",
-          "code": "310101274",
-          "detail": "8pin转RJ45,静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "5m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-5m",
-          "code": "310101275",
-          "detail": "8pin转RJ45,静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "7m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-7m",
-          "code": "310101276",
-          "detail": "8pin转RJ45,静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "10m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-10m",
-          "code": "310101277",
-          "detail": "8pin转RJ45,静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "15m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-15m",
-          "code": "310101278",
-          "detail": "8pin转RJ45,静态，15m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "30m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-30m",
-          "code": "310101279",
-          "detail": "8pin转RJ45,静态，30m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "3m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-3m",
-          "code": "310101284",
-          "detail": "8pin转RJ45,高柔，3m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "5m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-5m",
-          "code": "310101285",
-          "detail": "8pin转RJ45,高柔，5m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "10m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-10m",
-          "code": "310101286",
-          "detail": "8pin转RJ45,高柔，10m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "20m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-20m",
-          "code": "310101287",
-          "detail": "8pin转RJ45,高柔，20m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM白光灯板",
-          "name": "MV-IDA-L-8-32-47-W(国内中性)",
-          "code": "310102288",
-          "detail": "8颗粒LED白光，色温5700K"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM蓝光灯板",
-          "name": "MV-IDA-L-8-32-47-B(国内中性)",
-          "code": "310102289",
-          "detail": "8颗粒LED蓝光，光源波长465nm~475nm"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM红外灯板",
-          "name": "MV-IDA-L-8-32-47-IR(国内中性)",
-          "code": "310102290",
-          "detail": "8颗粒LED红外光，光源波长850nm"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM全偏镜头罩",
-          "name": "MV-IDA-C-Y-41-56-P(国内中性)",
-          "code": "310102293",
-          "detail": "ID5000XR全偏镜头罩"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM全透镜头罩",
-          "name": "MV-IDA-C-Y-41-56-T(国内中性)",
-          "code": "310102294",
-          "detail": "ID5000XR透明镜头罩"
-        },
-        {
-          "category": "扩展配件",
-          "series": "ID5000XM-ESD防护罩",
-          "name": "MV-IDA-C-Y-41-56-ESD(国内中性)",
-          "code": "310102292",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求"
-        }
-      ]
-    },
-    {
-      "productCategory": "ID5000XM系列",
-      "productSeries": "ID5050XM系列",
-      "productModel": "MV-ID5050XM-16L-RBN(国内中性)",
-      "materialCode": "313201982",
-      "description": "5MP，16mm镜头，8颗红色LED，半偏镜头罩，液态调焦，带OLED屏",
-      "remark": "",
-      "standardAccessories": [
-        {
-          "category": "安装板",
-          "series": "安装板",
-          "name": "ID5000XM安装板",
-          "code": "192119847",
-          "detail": "V-读码器023-安装支架，适配ID5000XM/RM"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM红光灯板",
-          "name": "MV-IDA-L-8-32-47-R(国内中性)",
-          "code": "310102291",
-          "detail": "8颗粒LED红光，光源波长620nm~630nm"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM半偏镜头罩",
-          "name": "MV-IDA-C-Y-41-56-H",
-          "code": "202406694",
-          "detail": "ID5000XM标配半偏镜头罩"
-        }
-      ],
-      "optionalAccessories": [
-        {
-          "category": "电源",
-          "series": "电源适配器",
-          "name": "KPL-060M-VI(全球通中性)",
-          "code": "310100901",
-          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线"
-        },
-        {
-          "category": "电源",
-          "series": "电源适配器线缆",
-          "name": "交流电源线_国标_弯三插_C13_1.2米",
-          "code": "310100840",
-          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源1",
-          "name": "LRS-50-24(全球通中性)",
-          "code": "310100905",
-          "detail": "开关电源,24V2.09A,50W,接线端子"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源2",
-          "name": "LRS-150F-24(全球通中性)",
-          "code": "310100904",
-          "detail": "开关电源,24V6.25A,150W,接线端子"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源线缆",
-          "name": "交流电源线_国标_弯三插_open_2米",
-          "code": "310100843",
-          "detail": "交流电源线_国标_弯三插_open_2米(中性)"
-        },
-        {
-          "category": "IO电源线",
-          "series": "1m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-1m",
-          "code": "101532667",
-          "detail": "12pin转open 静态，1m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-3m",
-          "code": "310101268",
-          "detail": "12pin转open 静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-5m",
-          "code": "310101269",
-          "detail": "12pin转open 静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "7m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-7m",
-          "code": "310101270",
-          "detail": "12pin转open 静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-10m",
-          "code": "310101271",
-          "detail": "12pin转open 静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "15m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-15m",
-          "code": "310101272",
-          "detail": "12pin转open 静态，15m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "30m普通IO线",
-          "name": "MV-IDA-P-M12A12pF-open-ST-30m",
-          "code": "310101273",
-          "detail": "12pin转open 静态，30m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-3m",
-          "code": "310101280",
-          "detail": "12pin转open 高柔，3m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-5m",
-          "code": "310101281",
-          "detail": "12pin转open 高柔，5m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-10m",
-          "code": "310101282",
-          "detail": "12pin转open 高柔，10m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "20m高柔IO线",
-          "name": "MV-IDA-P-M12A12pF-open-HF-20m",
-          "code": "310101283",
-          "detail": "12pin转open 高柔，20m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "IO电源线",
-          "series": "3m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-3m",
-          "code": "310102639",
-          "detail": "12pin转DB9母头open，静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "5m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-5m",
-          "code": "310102640",
-          "detail": "12pin转DB9母头open，静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "7m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-7m",
-          "code": "310102641",
-          "detail": "12pin转DB9母头open，静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "IO电源线",
-          "series": "10m普通串口IO线",
-          "name": "MV-IDAP-M12A12F-DB9Fopen-ST-10m",
-          "code": "310102642",
-          "detail": "12pin转DB9母头open，静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "1m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-1m",
-          "code": "101532666",
-          "detail": "8pin转RJ45,静态，1m，弯线缆特性：静态铺设，弯折半径：12D；"
-        },
-        {
-          "category": "网线",
-          "series": "3m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-3m",
-          "code": "310101274",
-          "detail": "8pin转RJ45,静态，3m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "5m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-5m",
-          "code": "310101275",
-          "detail": "8pin转RJ45,静态，5m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "7m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-7m",
-          "code": "310101276",
-          "detail": "8pin转RJ45,静态，7m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "10m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-10m",
-          "code": "310101277",
-          "detail": "8pin转RJ45,静态，10m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "15m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-15m",
-          "code": "310101278",
-          "detail": "8pin转RJ45,静态，15m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "30m普通网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-ST-30m",
-          "code": "310101279",
-          "detail": "8pin转RJ45,静态，30m，弯折半径：12D；线缆特性：静态铺设"
-        },
-        {
-          "category": "网线",
-          "series": "3m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-3m",
-          "code": "310101284",
-          "detail": "8pin转RJ45,高柔，3m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "5m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-5m",
-          "code": "310101285",
-          "detail": "8pin转RJ45,高柔，5m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "10m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-10m",
-          "code": "310101286",
-          "detail": "8pin转RJ45,高柔，10m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "网线",
-          "series": "20m高柔网线",
-          "name": "MV-IDA-E-M12A8pF-RJ45-HF-20m",
-          "code": "310101287",
-          "detail": "8pin转RJ45,高柔，20m，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM白光灯板",
-          "name": "MV-IDA-L-8-32-47-W(国内中性)",
-          "code": "310102288",
-          "detail": "8颗粒LED白光，色温5700K"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM蓝光灯板",
-          "name": "MV-IDA-L-8-32-47-B(国内中性)",
-          "code": "310102289",
-          "detail": "8颗粒LED蓝光，光源波长465nm~475nm"
-        },
-        {
-          "category": "灯板",
-          "series": "ID5000XM红外灯板",
-          "name": "MV-IDA-L-8-32-47-IR(国内中性)",
-          "code": "310102290",
-          "detail": "8颗粒LED红外光，光源波长850nm"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM全偏镜头罩",
-          "name": "MV-IDA-C-Y-41-56-P(国内中性)",
-          "code": "310102293",
-          "detail": "ID5000XR全偏镜头罩"
-        },
-        {
-          "category": "镜头罩",
-          "series": "ID5000XM全透镜头罩",
-          "name": "MV-IDA-C-Y-41-56-T(国内中性)",
-          "code": "310102294",
-          "detail": "ID5000XR透明镜头罩"
-        },
-        {
-          "category": "扩展配件",
-          "series": "ID5000XM-ESD防护罩",
-          "name": "MV-IDA-C-Y-41-56-ESD(国内中性)",
-          "code": "310102292",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求"
         }
       ]
     },
@@ -104759,7 +106019,519 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "ID1000系列读码模组",
+      "productSeries": "ID1010MG单摄软解模组",
+      "productModel": "MV-ID1010MG-05-W1MF-C",
+      "materialCode": "313200537",
+      "description": "单摄，100W，黑白，白色补光，激光瞄准，MIPI接口，5mm焦距",
+      "remark": "其它NR/SR/ER调焦距离可选。红光补光可按需沟通",
+      "standardAccessories": [],
+      "optionalAccessories": [
+        {
+          "category": "扩展配件",
+          "series": "ID1010软解开发板套装",
+          "name": "MV-ID1000-Devboard-SW-1010MG(国内标配)",
+          "code": "313202686",
+          "detail": "包含：202407171，ID1010MG单摄软解模组开发板；202402784，MV-24069V1.0，模组与开发板的FPC连接线；101511646，电源开关线,船型开关,12V电源,XH2转电源开关,95cm"
+        }
+      ]
+    },
+    {
+      "productCategory": "ID1000系列读码模组",
+      "productSeries": "ID1013DMi单摄硬解模组",
+      "productModel": "MV-ID1013DMi-05-W1S-NR(国内标配)",
+      "materialCode": "313203091",
+      "description": "单摄，130W，黑白，白色补光，支持两路外部补光，十字激光瞄准，5mm焦距，近距离，12-pin接口",
+      "remark": "",
+      "standardAccessories": [],
+      "optionalAccessories": [
+        {
+          "category": "扩展配件",
+          "series": "ID1013硬解开发板套装",
+          "name": "硬解模组开发板",
+          "code": "202402969",
+          "detail": "模组开发板。可搭配IDMVS客户端+开发板+模组测试。"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID1013硬解开发板套装",
+          "name": "FFC线, 12芯, 0.5mm间距",
+          "code": "101515299",
+          "detail": "FFC信号线，用于数据传输。FFC线,12芯,0.5mm间距,75mm,同面 75mm的FPC排线"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID1013硬解开发板套装",
+          "name": "FPC线, FPC-0060 REV1.0",
+          "code": "101211754",
+          "detail": "FPC信号线，用于串口调试。0.5*14P,PI,200mm,单面,异面,黄色"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID1013DMi硬解开发板套装",
+          "name": "硬解模组开发板",
+          "code": "202404823",
+          "detail": "模组开发板。可搭配IDMVS客户端+开发板+模组测试。"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID1013DMi硬解开发板套装",
+          "name": "FPC-MV-24375 REV1.0",
+          "code": "101268660",
+          "detail": "FFC信号线，用于数据传输。12pin，0.5mm间距，7.70mm宽，200mm长，单面，黄色"
+        }
+      ]
+    },
+    {
+      "productCategory": "ID1000系列读码模组",
+      "productSeries": "ID1013DMi单摄硬解模组",
+      "productModel": "MV-ID1013DMi-05-W1S-SR(国内标配)",
+      "materialCode": "313203090",
+      "description": "单摄，130W，黑白，白色补光，支持两路外部补光，十字激光瞄准，5mm焦距，标准距离，12-pin接口",
+      "remark": "",
+      "standardAccessories": [],
+      "optionalAccessories": [
+        {
+          "category": "扩展配件",
+          "series": "ID1013硬解开发板套装",
+          "name": "硬解模组开发板",
+          "code": "202402969",
+          "detail": "模组开发板。可搭配IDMVS客户端+开发板+模组测试。"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID1013硬解开发板套装",
+          "name": "FFC线, 12芯, 0.5mm间距",
+          "code": "101515299",
+          "detail": "FFC信号线，用于数据传输。FFC线,12芯,0.5mm间距,75mm,同面 75mm的FPC排线"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID1013硬解开发板套装",
+          "name": "FPC线, FPC-0060 REV1.0",
+          "code": "101211754",
+          "detail": "FPC信号线，用于串口调试。0.5*14P,PI,200mm,单面,异面,黄色"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID1013DMi硬解开发板套装",
+          "name": "硬解模组开发板",
+          "code": "202404823",
+          "detail": "模组开发板。可搭配IDMVS客户端+开发板+模组测试。"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID1013DMi硬解开发板套装",
+          "name": "FPC-MV-24375 REV1.0",
+          "code": "101268660",
+          "detail": "FFC信号线，用于数据传输。12pin，0.5mm间距，7.70mm宽，200mm长，单面，黄色"
+        }
+      ]
+    },
+    {
+      "productCategory": "ID1000系列读码模组",
+      "productSeries": "ID1013D单摄硬解模组",
+      "productModel": "MV-ID1013D-05-W2U-NR(国内标配)V2.0",
+      "materialCode": "313202670",
+      "description": "单摄，130W，黑白，白色补光，红光LED瞄准，4.7mm焦距，近距离，5-pin接口",
+      "remark": "",
+      "standardAccessories": [
+        {
+          "category": "一体线",
+          "series": "2m普通U口",
+          "name": "USB/AM to GH5",
+          "code": "101515459",
+          "detail": "外部转接线-USB,USB/AM转GH5,3m,黑"
+        }
+      ],
+      "optionalAccessories": []
+    },
+    {
+      "productCategory": "ID1000系列读码模组",
+      "productSeries": "ID1013D单摄硬解模组",
+      "productModel": "MV-ID1013D-05-W2U-SR(国内标配)V2.0",
+      "materialCode": "313202671",
+      "description": "单摄，130W，黑白，白色补光，红光LED瞄准，4.7mm焦距，标准距离，5-pin接口",
+      "remark": "",
+      "standardAccessories": [
+        {
+          "category": "一体线",
+          "series": "2m普通U口",
+          "name": "USB/AM to GH5",
+          "code": "101515459",
+          "detail": "外部转接线-USB,USB/AM转GH5,3m,黑"
+        }
+      ],
+      "optionalAccessories": []
+    },
+    {
+      "productCategory": "ID1000系列读码模组",
+      "productSeries": "ID1013D单摄硬解模组",
+      "productModel": "MV-ID1013D-05-W2S-NR(国内标配)V2.0",
+      "materialCode": "313202669",
+      "description": "单摄，130W，黑白，白色补光，红光LED瞄准，4.7mm焦距，近距离，12-pin接口",
+      "remark": "",
+      "standardAccessories": [],
+      "optionalAccessories": [
+        {
+          "category": "扩展配件",
+          "series": "ID1013硬解开发板套装",
+          "name": "硬解模组开发板",
+          "code": "202402969",
+          "detail": "模组开发板。可搭配IDMVS客户端+开发板+模组测试。"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID1013硬解开发板套装",
+          "name": "FFC线, 12芯, 0.5mm间距",
+          "code": "101515299",
+          "detail": "FFC信号线，用于数据传输。FFC线,12芯,0.5mm间距,75mm,同面 75mm的FPC排线"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID1013硬解开发板套装",
+          "name": "FPC线, FPC-0060 REV1.0",
+          "code": "101211754",
+          "detail": "FPC信号线，用于串口调试。0.5*14P,PI,200mm,单面,异面,黄色"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID1013DMi硬解开发板套装",
+          "name": "硬解模组开发板",
+          "code": "202404823",
+          "detail": "模组开发板。可搭配IDMVS客户端+开发板+模组测试。"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID1013DMi硬解开发板套装",
+          "name": "FPC-MV-24375 REV1.0",
+          "code": "101268660",
+          "detail": "FFC信号线，用于数据传输。12pin，0.5mm间距，7.70mm宽，200mm长，单面，黄色"
+        }
+      ]
+    },
+    {
+      "productCategory": "ID1000系列读码模组",
+      "productSeries": "ID1013D单摄硬解模组",
+      "productModel": "MV-ID1013D-05-W2S-SR(国内标配)V2.0",
+      "materialCode": "313202672",
+      "description": "单摄，130W，黑白，白色补光，红光LED瞄准，4.7mm焦距，标准距离，12-pin接口",
+      "remark": "",
+      "standardAccessories": [],
+      "optionalAccessories": [
+        {
+          "category": "扩展配件",
+          "series": "ID1013硬解开发板套装",
+          "name": "硬解模组开发板",
+          "code": "202402969",
+          "detail": "模组开发板。可搭配IDMVS客户端+开发板+模组测试。"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID1013硬解开发板套装",
+          "name": "FFC线, 12芯, 0.5mm间距",
+          "code": "101515299",
+          "detail": "FFC信号线，用于数据传输。FFC线,12芯,0.5mm间距,75mm,同面 75mm的FPC排线"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID1013硬解开发板套装",
+          "name": "FPC线, FPC-0060 REV1.0",
+          "code": "101211754",
+          "detail": "FPC信号线，用于串口调试。0.5*14P,PI,200mm,单面,异面,黄色"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID1013DMi硬解开发板套装",
+          "name": "硬解模组开发板",
+          "code": "202404823",
+          "detail": "模组开发板。可搭配IDMVS客户端+开发板+模组测试。"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID1013DMi硬解开发板套装",
+          "name": "FPC-MV-24375 REV1.0",
+          "code": "101268660",
+          "detail": "FFC信号线，用于数据传输。12pin，0.5mm间距，7.70mm宽，200mm长，单面，黄色"
+        }
+      ]
+    },
+    {
+      "productCategory": "ID1000系列读码模组",
+      "productSeries": "ID1013D单摄硬解模组",
+      "productModel": "MV-ID1013D-05-W1S-NR(国内标配)V2.0",
+      "materialCode": "313202855",
+      "description": "单摄，130W，黑白，白色补光，十字激光瞄准，4.7mm焦距，近距离，12-pin接口",
+      "remark": "",
+      "standardAccessories": [],
+      "optionalAccessories": [
+        {
+          "category": "扩展配件",
+          "series": "ID1013硬解开发板套装",
+          "name": "硬解模组开发板",
+          "code": "202402969",
+          "detail": "模组开发板。可搭配IDMVS客户端+开发板+模组测试。"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID1013硬解开发板套装",
+          "name": "FFC线, 12芯, 0.5mm间距",
+          "code": "101515299",
+          "detail": "FFC信号线，用于数据传输。FFC线,12芯,0.5mm间距,75mm,同面 75mm的FPC排线"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID1013硬解开发板套装",
+          "name": "FPC线, FPC-0060 REV1.0",
+          "code": "101211754",
+          "detail": "FPC信号线，用于串口调试。0.5*14P,PI,200mm,单面,异面,黄色"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID1013DMi硬解开发板套装",
+          "name": "硬解模组开发板",
+          "code": "202404823",
+          "detail": "模组开发板。可搭配IDMVS客户端+开发板+模组测试。"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID1013DMi硬解开发板套装",
+          "name": "FPC-MV-24375 REV1.0",
+          "code": "101268660",
+          "detail": "FFC信号线，用于数据传输。12pin，0.5mm间距，7.70mm宽，200mm长，单面，黄色"
+        }
+      ]
+    },
+    {
+      "productCategory": "ID1000系列读码模组",
+      "productSeries": "ID1013D单摄硬解模组",
+      "productModel": "MV-ID1013D-05-W1S-SR(国内标配)V2.0",
+      "materialCode": "313202856",
+      "description": "单摄，130W，黑白，白色补光，十字激光瞄准，4.7mm焦距，标准距离，12-pin接口",
+      "remark": "",
+      "standardAccessories": [],
+      "optionalAccessories": [
+        {
+          "category": "扩展配件",
+          "series": "ID1013硬解开发板套装",
+          "name": "硬解模组开发板",
+          "code": "202402969",
+          "detail": "模组开发板。可搭配IDMVS客户端+开发板+模组测试。"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID1013硬解开发板套装",
+          "name": "FFC线, 12芯, 0.5mm间距",
+          "code": "101515299",
+          "detail": "FFC信号线，用于数据传输。FFC线,12芯,0.5mm间距,75mm,同面 75mm的FPC排线"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID1013硬解开发板套装",
+          "name": "FPC线, FPC-0060 REV1.0",
+          "code": "101211754",
+          "detail": "FPC信号线，用于串口调试。0.5*14P,PI,200mm,单面,异面,黄色"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID1013DMi硬解开发板套装",
+          "name": "硬解模组开发板",
+          "code": "202404823",
+          "detail": "模组开发板。可搭配IDMVS客户端+开发板+模组测试。"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID1013DMi硬解开发板套装",
+          "name": "FPC-MV-24375 REV1.0",
+          "code": "101268660",
+          "detail": "FFC信号线，用于数据传输。12pin，0.5mm间距，7.70mm宽，200mm长，单面，黄色"
+        }
+      ]
+    },
+    {
+      "productCategory": "ID1000系列读码模组",
+      "productSeries": "ID1013D单摄硬解模组",
+      "productModel": "MV-ID1013D-12-W1S-NR-C",
+      "materialCode": "313202804",
+      "description": "单摄，130W，黑白，白色补光，十字激光瞄准，12mm焦距50mm近焦，12-pin接口",
+      "remark": "",
+      "standardAccessories": [],
+      "optionalAccessories": [
+        {
+          "category": "扩展配件",
+          "series": "ID1013硬解开发板套装",
+          "name": "硬解模组开发板",
+          "code": "202402969",
+          "detail": "模组开发板。可搭配IDMVS客户端+开发板+模组测试。"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID1013硬解开发板套装",
+          "name": "FFC线, 12芯, 0.5mm间距",
+          "code": "101515299",
+          "detail": "FFC信号线，用于数据传输。FFC线,12芯,0.5mm间距,75mm,同面 75mm的FPC排线"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID1013硬解开发板套装",
+          "name": "FPC线, FPC-0060 REV1.0",
+          "code": "101211754",
+          "detail": "FPC信号线，用于串口调试。0.5*14P,PI,200mm,单面,异面,黄色"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID1013DMi硬解开发板套装",
+          "name": "硬解模组开发板",
+          "code": "202404823",
+          "detail": "模组开发板。可搭配IDMVS客户端+开发板+模组测试。"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID1013DMi硬解开发板套装",
+          "name": "FPC-MV-24375 REV1.0",
+          "code": "101268660",
+          "detail": "FFC信号线，用于数据传输。12pin，0.5mm间距，7.70mm宽，200mm长，单面，黄色"
+        }
+      ]
+    },
+    {
+      "productCategory": "ID1000系列读码模组",
+      "productSeries": "ID1013D单摄硬解模组",
+      "productModel": "PRO-13D",
+      "materialCode": "313202520",
+      "description": "单摄，130W，黑白，白色补光，十字激光瞄准，5mm焦距，近距离，12-pin接口",
+      "remark": "相对LED瞄准，该型号替换成十字激光瞄准，并增加外部光源控制引脚定义，适合客户开发专业巴枪",
+      "standardAccessories": [],
+      "optionalAccessories": [
+        {
+          "category": "扩展配件",
+          "series": "PRO-13D硬解开发板套装",
+          "name": "硬解模组开发板",
+          "code": "202404823",
+          "detail": "模组开发板。可搭配IDMVS客户端+开发板+模组测试。"
+        },
+        {
+          "category": "扩展配件",
+          "series": "PRO-13D硬解开发板套装",
+          "name": "FFC线, 12芯, 0.5mm间距",
+          "code": "101515299",
+          "detail": "FFC信号线，用于数据传输。FFC线,12芯,0.5mm间距,75mm,同面 75mm的FPC排线"
+        },
+        {
+          "category": "扩展配件",
+          "series": "PRO-13D硬解开发板套装",
+          "name": "FPC线, FPC-0060 REV1.0",
+          "code": "101211754",
+          "detail": "FPC信号线，用于串口调试。0.5*14P,PI,200mm,单面,异面,黄色"
+        }
+      ]
+    },
+    {
+      "productCategory": "ID1000系列读码模组",
+      "productSeries": "ID1013MG单摄软解模组",
+      "productModel": "MV-ID1013MG-05-W1MF(国内标配)",
+      "materialCode": "313202042",
+      "description": "单摄，130W，黑白，白色补光，激光瞄准，MIPI接口，5mm焦距",
+      "remark": "相对ID1010景深更大，性价比更高；可以红光补光可按需沟通",
+      "standardAccessories": [],
+      "optionalAccessories": [
+        {
+          "category": "扩展配件",
+          "series": "ID1013软解开发板套装",
+          "name": "MV-ID1000-Devboard-SW-1013MG(国内标配)",
+          "code": "313202687",
+          "detail": "包含：202407171，ID1010MG单摄软解模组开发板；202402784，MV-24069V1.0，模组与开发板的FPC连接线；101511646，电源开关线,船型开关,12V电源,XH2转电源开关,95cm"
+        }
+      ]
+    },
+    {
+      "productCategory": "ID1000系列读码模组",
+      "productSeries": "ID1013MG单摄软解模组",
+      "productModel": "MV-ID1013MG-05P-W1MF(国内标配)",
+      "materialCode": "313202832",
+      "description": "单摄，130W，黑白，白色补光，激光瞄准，MIPI接口，4.3mm焦距",
+      "remark": "相对ID1010景深更大，性价比更高；可以红光补光可按需沟通",
+      "standardAccessories": [],
+      "optionalAccessories": [
+        {
+          "category": "扩展配件",
+          "series": "ID1013软解开发板套装",
+          "name": "MV-ID1000-Devboard-SW-1013MG(国内标配)",
+          "code": "313202687",
+          "detail": "包含：202407171，ID1010MG单摄软解模组开发板；202402784，MV-24069V1.0，模组与开发板的FPC连接线；101511646，电源开关线,船型开关,12V电源,XH2转电源开关,95cm"
+        }
+      ]
+    },
+    {
+      "productCategory": "ID1000系列读码模组",
+      "productSeries": "ID1013MG单摄软解模组",
+      "productModel": "MV-ID1013MG-05P-W1MN(国内标配)",
+      "materialCode": "313203534",
+      "description": "单摄，130W，黑白，白色补光，激光瞄准，MIPI接口，4.3mm焦距",
+      "remark": "相对ID1010景深更大，性价比更高；可以红光补光可按需沟通",
+      "standardAccessories": [],
+      "optionalAccessories": [
+        {
+          "category": "扩展配件",
+          "series": "ID1013软解开发板套装",
+          "name": "MV-ID1000-Devboard-SW-1013MG(国内标配)",
+          "code": "313202687",
+          "detail": "包含：202407171，ID1010MG单摄软解模组开发板；202402784，MV-24069V1.0，模组与开发板的FPC连接线；101511646，电源开关线,船型开关,12V电源,XH2转电源开关,95cm"
+        }
+      ]
+    },
+    {
+      "productCategory": "ID1000系列读码模组",
+      "productSeries": "ID1013XMG双摄软解模组",
+      "productModel": "MV-ID1013XMG-0407ER-W1M(国内标配)",
+      "materialCode": "313202045",
+      "description": "双摄，130W，黑白，激光瞄准，MIPI接口，4/7mm焦距",
+      "remark": "",
+      "standardAccessories": [],
+      "optionalAccessories": [
+        {
+          "category": "扩展配件",
+          "series": "ID1013软解开发板套装",
+          "name": "MV-ID1000-Devboard-SW-1013MG(国内标配)",
+          "code": "313202687",
+          "detail": "包含：202407171，ID1010MG单摄软解模组开发板；202402784，MV-24069V1.0，模组与开发板的FPC连接线；101511646，电源开关线,船型开关,12V电源,XH2转电源开关,95cm"
+        }
+      ]
+    },
+    {
+      "productCategory": "ID1000系列读码模组",
+      "productSeries": "ID1310MG超远距软解模组",
+      "productModel": "MV-ID1310MG-18T-W1MX(国内标配)",
+      "materialCode": "313201506",
+      "description": "单摄，100W，黑白，两颗高亮红色补光，红色点激光瞄准，MIPI接口，18mm固态调教，最远可读15米",
+      "remark": "",
+      "standardAccessories": [],
+      "optionalAccessories": [
+        {
+          "category": "扩展配件",
+          "series": "ID1310软解开发板套装",
+          "name": "远距离模组开发板",
+          "code": "202403309",
+          "detail": "MV-29183(V1.0)，远距离模组开发板"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID1310软解开发板套装",
+          "name": "远距离模组连接线",
+          "code": "101252288",
+          "detail": "FPC-MV-24175 REV1.1,，远距离模组连接线"
+        },
+        {
+          "category": "扩展配件",
+          "series": "ID1310软解开发板套装",
+          "name": "电源开关线",
+          "code": "101511646",
+          "detail": "电源开关线,船型开关,12V电源,XH2转电源开关,95cm"
+        }
+      ]
+    },
+    {
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH2000无线款",
       "productModel": "MV-IDH2000PB/13SR/05RN/UC(国内标配)/套包",
       "materialCode": "313202651",
@@ -104767,11 +106539,25 @@ window.PEIDAN_DATA = {
       "remark": "标准距离，蓝牙无线，U口套包；单读码器物料：313202646",
       "standardAccessories": [
         {
+          "category": "安装板",
+          "series": "蓝牙无线模块接收器",
+          "name": "蓝牙5.0无线模块USB端",
+          "code": "102902945",
+          "detail": "USB DONGLE,蓝牙BLE 5.0,USB-HID接口，适配IDH2000B/IDH2000PB系列"
+        },
+        {
           "category": "一体线",
           "series": "ID2000无线-2mU口线缆",
           "name": "MV-IDA-H20B-N-S-USBB-U-ST-2m",
           "code": "310102797",
           "detail": "Type-B充电线缆"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH2000电池",
+          "name": "U可充电锂离子电池",
+          "code": "101900824",
+          "detail": "3.7V,2700mA*h,带卡扣，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -104784,7 +106570,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH2000无线款",
       "productModel": "MV-IDH2000PB/13SR/05RN/UC(国内中性)/套包",
       "materialCode": "313202650",
@@ -104792,11 +106578,25 @@ window.PEIDAN_DATA = {
       "remark": "标准距离，蓝牙无线，U口套包；单读码器物料：313202647",
       "standardAccessories": [
         {
+          "category": "安装板",
+          "series": "蓝牙无线模块接收器",
+          "name": "蓝牙5.0无线模块USB端",
+          "code": "102902945",
+          "detail": "USB DONGLE,蓝牙BLE 5.0,USB-HID接口，适配IDH2000B/IDH2000PB系列"
+        },
+        {
           "category": "一体线",
           "series": "ID2000无线-2mU口线缆",
           "name": "MV-IDA-H20B-N-S-USBB-U-ST-2m",
           "code": "310102797",
           "detail": "Type-B充电线缆"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH2000电池",
+          "name": "U可充电锂离子电池",
+          "code": "101900824",
+          "detail": "3.7V,2700mA*h,带卡扣，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -104809,7 +106609,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH2000无线款",
       "productModel": "MV-IDH2000PB/13NR/05RN/UC(国内标配)/套包",
       "materialCode": "313202572",
@@ -104817,11 +106617,25 @@ window.PEIDAN_DATA = {
       "remark": "近距离，蓝牙无线，U口套包；单读码器物料：313202567",
       "standardAccessories": [
         {
+          "category": "安装板",
+          "series": "蓝牙无线模块接收器",
+          "name": "蓝牙5.0无线模块USB端",
+          "code": "102902945",
+          "detail": "USB DONGLE,蓝牙BLE 5.0,USB-HID接口，适配IDH2000B/IDH2000PB系列"
+        },
+        {
           "category": "一体线",
           "series": "ID2000无线-2mU口线缆",
           "name": "MV-IDA-H20B-N-S-USBB-U-ST-2m",
           "code": "310102797",
           "detail": "Type-B充电线缆"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH2000电池",
+          "name": "U可充电锂离子电池",
+          "code": "101900824",
+          "detail": "3.7V,2700mA*h,带卡扣，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -104834,7 +106648,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH2000无线款",
       "productModel": "MV-IDH2000PB/13NR/05RN/UC(国内中性)/套包",
       "materialCode": "313202571",
@@ -104842,11 +106656,25 @@ window.PEIDAN_DATA = {
       "remark": "近距离，蓝牙无线，U口套包；单读码器物料：313202568",
       "standardAccessories": [
         {
+          "category": "安装板",
+          "series": "蓝牙无线模块接收器",
+          "name": "蓝牙5.0无线模块USB端",
+          "code": "102902945",
+          "detail": "USB DONGLE,蓝牙BLE 5.0,USB-HID接口，适配IDH2000B/IDH2000PB系列"
+        },
+        {
           "category": "一体线",
           "series": "ID2000无线-2mU口线缆",
           "name": "MV-IDA-H20B-N-S-USBB-U-ST-2m",
           "code": "310102797",
           "detail": "Type-B充电线缆"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH2000电池",
+          "name": "U可充电锂离子电池",
+          "code": "101900824",
+          "detail": "3.7V,2700mA*h,带卡扣，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -104859,7 +106687,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH2000无线款",
       "productModel": "MV-IDH2000RF/03SR/03WN/UC(国内标配)/套包",
       "materialCode": "313201765",
@@ -104867,11 +106695,25 @@ window.PEIDAN_DATA = {
       "remark": "0.3MP，标准距离，RF无线，U口套包；单读码器物料：313201347",
       "standardAccessories": [
         {
+          "category": "安装板",
+          "series": "RF无线模块接收器",
+          "name": "RF2.4GHz无线模块USB端",
+          "code": "102902700",
+          "detail": "USB DONGLE,私有组网,HJ-USB_DONGLE_CUS，适配IDH2000RF系列"
+        },
+        {
           "category": "一体线",
           "series": "ID2000无线-2mU口线缆",
           "name": "MV-IDA-H20B-N-S-USBB-U-ST-2m",
           "code": "310102797",
           "detail": "Type-B充电线缆"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH2000电池",
+          "name": "U可充电锂离子电池",
+          "code": "101900824",
+          "detail": "3.7V,2700mA*h,带卡扣，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -104884,7 +106726,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH2000无线款",
       "productModel": "MV-IDH2000RF/03SR/03WN/UC(国内中性)/套包",
       "materialCode": "313201801",
@@ -104892,11 +106734,25 @@ window.PEIDAN_DATA = {
       "remark": "0.3MP，标准距离，RF无线，U口套包；单读码器物料：313201442",
       "standardAccessories": [
         {
+          "category": "安装板",
+          "series": "RF无线模块接收器",
+          "name": "RF2.4GHz无线模块USB端",
+          "code": "102902700",
+          "detail": "USB DONGLE,私有组网,HJ-USB_DONGLE_CUS，适配IDH2000RF系列"
+        },
+        {
           "category": "一体线",
           "series": "ID2000无线-2mU口线缆",
           "name": "MV-IDA-H20B-N-S-USBB-U-ST-2m",
           "code": "310102797",
           "detail": "Type-B充电线缆"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH2000电池",
+          "name": "U可充电锂离子电池",
+          "code": "101900824",
+          "detail": "3.7V,2700mA*h,带卡扣，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -104909,7 +106765,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH2000无线款",
       "productModel": "MV-IDH2000RF/13SR/05WN/UC(国内标配)/套包",
       "materialCode": "313201766",
@@ -104917,11 +106773,25 @@ window.PEIDAN_DATA = {
       "remark": "1.3MP，标准距离，RF无线，U口套包；单读码器物料：313201434",
       "standardAccessories": [
         {
+          "category": "安装板",
+          "series": "RF无线模块接收器",
+          "name": "RF2.4GHz无线模块USB端",
+          "code": "102902700",
+          "detail": "USB DONGLE,私有组网,HJ-USB_DONGLE_CUS，适配IDH2000RF系列"
+        },
+        {
           "category": "一体线",
           "series": "ID2000无线-2mU口线缆",
           "name": "MV-IDA-H20B-N-S-USBB-U-ST-2m",
           "code": "310102797",
           "detail": "Type-B充电线缆"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH2000电池",
+          "name": "U可充电锂离子电池",
+          "code": "101900824",
+          "detail": "3.7V,2700mA*h,带卡扣，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -104934,7 +106804,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH2000无线款",
       "productModel": "MV-IDH2000RF/13SR/05WN/UC(国内中性)/套包",
       "materialCode": "313201800",
@@ -104942,11 +106812,25 @@ window.PEIDAN_DATA = {
       "remark": "1.3MP，标准距离，RF无线，U口套包；单读码器物料：313201507",
       "standardAccessories": [
         {
+          "category": "安装板",
+          "series": "RF无线模块接收器",
+          "name": "RF2.4GHz无线模块USB端",
+          "code": "102902700",
+          "detail": "USB DONGLE,私有组网,HJ-USB_DONGLE_CUS，适配IDH2000RF系列"
+        },
+        {
           "category": "一体线",
           "series": "ID2000无线-2mU口线缆",
           "name": "MV-IDA-H20B-N-S-USBB-U-ST-2m",
           "code": "310102797",
           "detail": "Type-B充电线缆"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH2000电池",
+          "name": "U可充电锂离子电池",
+          "code": "101900824",
+          "detail": "3.7V,2700mA*h,带卡扣，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -104959,7 +106843,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH2000无线款",
       "productModel": "MV-IDH2000RF/13NR/05WN/UC(国内标配)/套包",
       "materialCode": "313201767",
@@ -104967,11 +106851,25 @@ window.PEIDAN_DATA = {
       "remark": "1.3MP，近距离，RF无线，U口套包；单读码器物料：313201433",
       "standardAccessories": [
         {
+          "category": "安装板",
+          "series": "RF无线模块接收器",
+          "name": "RF2.4GHz无线模块USB端",
+          "code": "102902700",
+          "detail": "USB DONGLE,私有组网,HJ-USB_DONGLE_CUS，适配IDH2000RF系列"
+        },
+        {
           "category": "一体线",
           "series": "ID2000无线-2mU口线缆",
           "name": "MV-IDA-H20B-N-S-USBB-U-ST-2m",
           "code": "310102797",
           "detail": "Type-B充电线缆"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH2000电池",
+          "name": "U可充电锂离子电池",
+          "code": "101900824",
+          "detail": "3.7V,2700mA*h,带卡扣，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -104984,7 +106882,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH2000无线款",
       "productModel": "MV-IDH2000RF/13NR/05WN/UC(国内中性)/套包",
       "materialCode": "313201799",
@@ -104992,11 +106890,25 @@ window.PEIDAN_DATA = {
       "remark": "1.3MP，近距离，RF无线，U口套包；单读码器物料：313201508",
       "standardAccessories": [
         {
+          "category": "安装板",
+          "series": "RF无线模块接收器",
+          "name": "RF2.4GHz无线模块USB端",
+          "code": "102902700",
+          "detail": "USB DONGLE,私有组网,HJ-USB_DONGLE_CUS，适配IDH2000RF系列"
+        },
+        {
           "category": "一体线",
           "series": "ID2000无线-2mU口线缆",
           "name": "MV-IDA-H20B-N-S-USBB-U-ST-2m",
           "code": "310102797",
           "detail": "Type-B充电线缆"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH2000电池",
+          "name": "U可充电锂离子电池",
+          "code": "101900824",
+          "detail": "3.7V,2700mA*h,带卡扣，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -105009,7 +106921,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH2000无线款",
       "productModel": "MV-IDH2000B/03SR/03WN/UC(国内标配)/套包",
       "materialCode": "313201955",
@@ -105017,11 +106929,25 @@ window.PEIDAN_DATA = {
       "remark": "0.3MP，标准距离，蓝牙无线，U口套包；单读码器物料：313201761",
       "standardAccessories": [
         {
+          "category": "安装板",
+          "series": "蓝牙无线模块接收器",
+          "name": "蓝牙5.0无线模块USB端",
+          "code": "102902945",
+          "detail": "USB DONGLE,蓝牙BLE 5.0,USB-HID接口，适配IDH2000B/IDH2000PB系列"
+        },
+        {
           "category": "一体线",
           "series": "ID2000无线-2mU口线缆",
           "name": "MV-IDA-H20B-N-S-USBB-U-ST-2m",
           "code": "310102797",
           "detail": "Type-B充电线缆"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH2000电池",
+          "name": "U可充电锂离子电池",
+          "code": "101900824",
+          "detail": "3.7V,2700mA*h,带卡扣，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -105034,7 +106960,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH2000无线款",
       "productModel": "MV-IDH2000B/03SR/03WN/UC(国内中性)/套包",
       "materialCode": "313202071",
@@ -105042,11 +106968,25 @@ window.PEIDAN_DATA = {
       "remark": "0.3MP，标准距离，蓝牙无线，U口套包；单读码器物料：313201947",
       "standardAccessories": [
         {
+          "category": "安装板",
+          "series": "蓝牙无线模块接收器",
+          "name": "蓝牙5.0无线模块USB端",
+          "code": "102902945",
+          "detail": "USB DONGLE,蓝牙BLE 5.0,USB-HID接口，适配IDH2000B/IDH2000PB系列"
+        },
+        {
           "category": "一体线",
           "series": "ID2000无线-2mU口线缆",
           "name": "MV-IDA-H20B-N-S-USBB-U-ST-2m",
           "code": "310102797",
           "detail": "Type-B充电线缆"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH2000电池",
+          "name": "U可充电锂离子电池",
+          "code": "101900824",
+          "detail": "3.7V,2700mA*h,带卡扣，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -105059,7 +106999,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH2000无线款",
       "productModel": "MV-IDH2000B/13SR/05WN/UC(国内标配)/套包",
       "materialCode": "313202070",
@@ -105067,11 +107007,25 @@ window.PEIDAN_DATA = {
       "remark": "1.3MP，标准距离，蓝牙无线，U口套包；单读码器物料：313201762",
       "standardAccessories": [
         {
+          "category": "安装板",
+          "series": "蓝牙无线模块接收器",
+          "name": "蓝牙5.0无线模块USB端",
+          "code": "102902945",
+          "detail": "USB DONGLE,蓝牙BLE 5.0,USB-HID接口，适配IDH2000B/IDH2000PB系列"
+        },
+        {
           "category": "一体线",
           "series": "ID2000无线-2mU口线缆",
           "name": "MV-IDA-H20B-N-S-USBB-U-ST-2m",
           "code": "310102797",
           "detail": "Type-B充电线缆"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH2000电池",
+          "name": "U可充电锂离子电池",
+          "code": "101900824",
+          "detail": "3.7V,2700mA*h,带卡扣，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -105084,7 +107038,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH2000无线款",
       "productModel": "MV-IDH2000B/13SR/05WN/UC(国内中性)/套包",
       "materialCode": "313202073",
@@ -105092,11 +107046,25 @@ window.PEIDAN_DATA = {
       "remark": "1.3MP，标准距离，蓝牙无线，U口套包；单读码器物料：313201954",
       "standardAccessories": [
         {
+          "category": "安装板",
+          "series": "蓝牙无线模块接收器",
+          "name": "蓝牙5.0无线模块USB端",
+          "code": "102902945",
+          "detail": "USB DONGLE,蓝牙BLE 5.0,USB-HID接口，适配IDH2000B/IDH2000PB系列"
+        },
+        {
           "category": "一体线",
           "series": "ID2000无线-2mU口线缆",
           "name": "MV-IDA-H20B-N-S-USBB-U-ST-2m",
           "code": "310102797",
           "detail": "Type-B充电线缆"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH2000电池",
+          "name": "U可充电锂离子电池",
+          "code": "101900824",
+          "detail": "3.7V,2700mA*h,带卡扣，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -105109,7 +107077,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH2000无线款",
       "productModel": "MV-IDH2000B/13NR/05WN/UC(国内标配)/套包",
       "materialCode": "313202069",
@@ -105117,11 +107085,25 @@ window.PEIDAN_DATA = {
       "remark": "1.3MP，近距离，蓝牙无线，U口套包；单读码器物料：313201763",
       "standardAccessories": [
         {
+          "category": "安装板",
+          "series": "蓝牙无线模块接收器",
+          "name": "蓝牙5.0无线模块USB端",
+          "code": "102902945",
+          "detail": "USB DONGLE,蓝牙BLE 5.0,USB-HID接口，适配IDH2000B/IDH2000PB系列"
+        },
+        {
           "category": "一体线",
           "series": "ID2000无线-2mU口线缆",
           "name": "MV-IDA-H20B-N-S-USBB-U-ST-2m",
           "code": "310102797",
           "detail": "Type-B充电线缆"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH2000电池",
+          "name": "U可充电锂离子电池",
+          "code": "101900824",
+          "detail": "3.7V,2700mA*h,带卡扣，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -105134,7 +107116,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH2000无线款",
       "productModel": "MV-IDH2000B/13NR/05WN/UC(国内中性)/套包",
       "materialCode": "313202072",
@@ -105142,11 +107124,25 @@ window.PEIDAN_DATA = {
       "remark": "1.3MP，近距离，蓝牙无线，U口套包；单读码器物料：313201952",
       "standardAccessories": [
         {
+          "category": "安装板",
+          "series": "蓝牙无线模块接收器",
+          "name": "蓝牙5.0无线模块USB端",
+          "code": "102902945",
+          "detail": "USB DONGLE,蓝牙BLE 5.0,USB-HID接口，适配IDH2000B/IDH2000PB系列"
+        },
+        {
           "category": "一体线",
           "series": "ID2000无线-2mU口线缆",
           "name": "MV-IDA-H20B-N-S-USBB-U-ST-2m",
           "code": "310102797",
           "detail": "Type-B充电线缆"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH2000电池",
+          "name": "U可充电锂离子电池",
+          "code": "101900824",
+          "detail": "3.7V,2700mA*h,带卡扣，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -105159,7 +107155,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH2000有线款",
       "productModel": "MV-IDH2000P/13SR/05RN/U(国内标配)",
       "materialCode": "313202257",
@@ -105178,7 +107174,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -105220,7 +107216,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH2000有线款",
       "productModel": "MV-IDH2000P/13NR/05RN/U(国内中性)",
       "materialCode": "313202409",
@@ -105239,7 +107235,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -105281,7 +107277,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH2000有线款",
       "productModel": "MV-IDH2000P/13NR/05RN/U(国内标配)",
       "materialCode": "313202256",
@@ -105300,7 +107296,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -105342,7 +107338,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH2000有线款",
       "productModel": "MV-IDH2000/03SR/03WN/U(国内标配)",
       "materialCode": "313201214",
@@ -105361,7 +107357,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -105403,7 +107399,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH2000有线款",
       "productModel": "MV-IDH2000/03SR/03WN/U(国内中性)",
       "materialCode": "313201284",
@@ -105422,7 +107418,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -105464,7 +107460,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH2000有线款",
       "productModel": "MV-IDH2000/13SR/05WN/U(国内标配)",
       "materialCode": "313201327",
@@ -105483,7 +107479,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -105525,7 +107521,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH2000有线款",
       "productModel": "MV-IDH2000/13SR/05WN/U(国内中性)",
       "materialCode": "313201391",
@@ -105544,7 +107540,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -105586,7 +107582,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH2000有线款",
       "productModel": "MV-IDH2000/13SR/05WP/U(国内标配)",
       "materialCode": "313201452",
@@ -105605,7 +107601,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -105647,7 +107643,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH2000有线款",
       "productModel": "MV-IDH2000/13SR/05WP/U(国内中性)",
       "materialCode": "313201598",
@@ -105666,7 +107662,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -105708,7 +107704,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH2000有线款",
       "productModel": "MV-IDH2000/13SR/04WN/U(国内标配)",
       "materialCode": "313201490",
@@ -105727,7 +107723,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -105769,7 +107765,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH2000有线款",
       "productModel": "MV-IDH2000/13SR/04WN/U(国内中性)",
       "materialCode": "313201601",
@@ -105788,7 +107784,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -105830,7 +107826,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH2000有线款",
       "productModel": "MV-IDH2000/13NR/05WN/U(国内标配)",
       "materialCode": "313201328",
@@ -105849,7 +107845,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -105891,7 +107887,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH2000有线款",
       "productModel": "MV-IDH2000/13NR/05WN/U(国内中性)",
       "materialCode": "313201394",
@@ -105910,7 +107906,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -105952,7 +107948,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH2000有线款",
       "productModel": "MV-IDH2000/13NR/05WP/U(国内标配)",
       "materialCode": "313201451",
@@ -105971,7 +107967,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -106013,7 +108009,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH2000有线款",
       "productModel": "MV-IDH2000/13NR/05WP/U(国内中性)",
       "materialCode": "313201595",
@@ -106032,7 +108028,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -106074,7 +108070,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH3000无线款",
       "productModel": "MV-IDH3000B/13SR/05RN/US(国内标配)套包V3.0",
       "materialCode": "313202137",
@@ -106084,7 +108080,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -106101,6 +108097,13 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-H30B-N-S-RJ45-RNE-BR-3m",
           "code": "310102802",
           "detail": "外甩线_三代把枪底座网口线缆,10P10C转RJ45/M+DB9F,3m,黑"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH3000电池",
+          "name": "MV-IDH3013B-BATTERY-01",
+          "code": "101901181",
+          "detail": "CMV-IDH3013B-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -106121,7 +108124,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH3000无线款",
       "productModel": "MV-IDH3000B/13SR/05RN/US(国内中性)套包V3.0",
       "materialCode": "313202138",
@@ -106131,7 +108134,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -106148,6 +108151,13 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-H30B-N-S-RJ45-RNE-BR-3m",
           "code": "310102802",
           "detail": "外甩线_三代把枪底座网口线缆,10P10C转RJ45/M+DB9F,3m,黑"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH3000电池",
+          "name": "MV-IDH3013B-BATTERY-01",
+          "code": "101901181",
+          "detail": "CMV-IDH3013B-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -106168,7 +108178,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH3000无线款",
       "productModel": "MV-IDH3000B/13SR/05RN/LS(国内标配)套包V3.0",
       "materialCode": "313202135",
@@ -106178,9 +108188,16 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH3000电池",
+          "name": "MV-IDH3013B-BATTERY-01",
+          "code": "101901181",
+          "detail": "CMV-IDH3013B-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -106200,7 +108217,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH3000无线款",
       "productModel": "MV-IDH3000B/13SR/05RN/LS(国内中性)套包V3.0",
       "materialCode": "313202136",
@@ -106210,9 +108227,16 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH3000电池",
+          "name": "MV-IDH3013B-BATTERY-01",
+          "code": "101901181",
+          "detail": "CMV-IDH3013B-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -106232,7 +108256,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH3000无线款",
       "productModel": "MV-IDH3000B/13SR/05RN/LES(国内标配)套包V3.0",
       "materialCode": "313202134",
@@ -106242,9 +108266,16 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH3000电池",
+          "name": "MV-IDH3013B-BATTERY-01",
+          "code": "101901181",
+          "detail": "CMV-IDH3013B-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -106264,7 +108295,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH3000无线款",
       "productModel": "MV-IDH3000B/13NR/05RN/US(国内标配)套包V3.0",
       "materialCode": "313202132",
@@ -106274,7 +108305,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -106291,6 +108322,13 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-H30B-N-S-RJ45-RNE-BR-3m",
           "code": "310102802",
           "detail": "外甩线_三代把枪底座网口线缆,10P10C转RJ45/M+DB9F,3m,黑"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH3000电池",
+          "name": "MV-IDH3013B-BATTERY-01",
+          "code": "101901181",
+          "detail": "CMV-IDH3013B-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -106311,7 +108349,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH3000无线款",
       "productModel": "MV-IDH3000B/13NR/05RN/US(国内中性)套包V3.0",
       "materialCode": "313202133",
@@ -106321,7 +108359,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -106338,6 +108376,13 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-H30B-N-S-RJ45-RNE-BR-3m",
           "code": "310102802",
           "detail": "外甩线_三代把枪底座网口线缆,10P10C转RJ45/M+DB9F,3m,黑"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH3000电池",
+          "name": "MV-IDH3013B-BATTERY-01",
+          "code": "101901181",
+          "detail": "CMV-IDH3013B-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -106358,7 +108403,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH3000无线款",
       "productModel": "MV-IDH3000B/13NR/05RN/LS(国内标配)套包V3.0",
       "materialCode": "313202130",
@@ -106368,9 +108413,16 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH3000电池",
+          "name": "MV-IDH3013B-BATTERY-01",
+          "code": "101901181",
+          "detail": "CMV-IDH3013B-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -106390,7 +108442,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH3000无线款",
       "productModel": "MV-IDH3000B/13NR/05RN/LS(国内中性)套包V3.0",
       "materialCode": "313202131",
@@ -106400,9 +108452,16 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH3000电池",
+          "name": "MV-IDH3013B-BATTERY-01",
+          "code": "101901181",
+          "detail": "CMV-IDH3013B-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -106422,7 +108481,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH3000无线款",
       "productModel": "MV-IDH3000B/13NR/05RN/LES(国内标配)套包V3.0",
       "materialCode": "313202539",
@@ -106432,9 +108491,16 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH3000电池",
+          "name": "MV-IDH3013B-BATTERY-01",
+          "code": "101901181",
+          "detail": "CMV-IDH3013B-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -106454,7 +108520,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH3000无线款",
       "productModel": "MV-IDH3000B/13NR/05UVN/US(国内中性)套包V3.0",
       "materialCode": "313203070",
@@ -106464,7 +108530,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -106481,6 +108547,13 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-H30B-N-S-RJ45-RNE-BR-3m",
           "code": "310102802",
           "detail": "外甩线_三代把枪底座网口线缆,10P10C转RJ45/M+DB9F,3m,黑"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH3000电池",
+          "name": "MV-IDH3013B-BATTERY-01",
+          "code": "101901181",
+          "detail": "CMV-IDH3013B-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -106501,7 +108574,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH3000无线款",
       "productModel": "MV-IDH3000B/13NR/05UVN/US(国内标配)套包V3.0",
       "materialCode": "313203069",
@@ -106511,7 +108584,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -106528,6 +108601,13 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-H30B-N-S-RJ45-RNE-BR-3m",
           "code": "310102802",
           "detail": "外甩线_三代把枪底座网口线缆,10P10C转RJ45/M+DB9F,3m,黑"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH3000电池",
+          "name": "MV-IDH3013B-BATTERY-01",
+          "code": "101901181",
+          "detail": "CMV-IDH3013B-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -106548,7 +108628,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH3000无线款",
       "productModel": "MV-IDH3000B/13NR/04RN/US(国内标配)套包V3.0",
       "materialCode": "313202128",
@@ -106558,7 +108638,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -106575,6 +108655,13 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-H30B-N-S-RJ45-RNE-BR-3m",
           "code": "310102802",
           "detail": "外甩线_三代把枪底座网口线缆,10P10C转RJ45/M+DB9F,3m,黑"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH3000电池",
+          "name": "MV-IDH3013B-BATTERY-01",
+          "code": "101901181",
+          "detail": "CMV-IDH3013B-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -106595,7 +108682,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH3000有线款",
       "productModel": "MV-IDH3000/13SR/05RN/U(国内标配)V3.0",
       "materialCode": "313202122",
@@ -106614,7 +108701,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -106628,7 +108715,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH3000有线款",
       "productModel": "MV-IDH3000/13SR/05RN/U(国内中性)V3.0",
       "materialCode": "313202123",
@@ -106647,7 +108734,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -106661,7 +108748,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH3000有线款",
       "productModel": "MV-IDH3000/13SR/05RN/L(国内标配)V3.0",
       "materialCode": "313202119",
@@ -106671,7 +108758,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -106701,7 +108788,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH3000有线款",
       "productModel": "MV-IDH3000/13SR/05RN/L(国内中性)V3.0",
       "materialCode": "313202120",
@@ -106711,7 +108798,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -106741,7 +108828,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH3000有线款",
       "productModel": "MV-IDH3000/13SR/05RN/LE(国内标配)V3.0",
       "materialCode": "313202121",
@@ -106751,7 +108838,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -106781,7 +108868,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH3000有线款",
       "productModel": "MV-IDH3000/13NR/05RN/U(国内标配)V3.0",
       "materialCode": "313202117",
@@ -106800,7 +108887,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -106814,7 +108901,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH3000有线款",
       "productModel": "MV-IDH3000/13NR/05RN/U(国内中性)V3.0",
       "materialCode": "313202118",
@@ -106833,7 +108920,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -106847,7 +108934,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH3000有线款",
       "productModel": "MV-IDH3000/13NR/05RN/L(国内标配)V3.0",
       "materialCode": "313202114",
@@ -106857,7 +108944,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -106887,7 +108974,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH3000有线款",
       "productModel": "MV-IDH3000/13NR/05RN/L(国内中性)V3.0",
       "materialCode": "313202115",
@@ -106897,7 +108984,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -106927,7 +109014,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH3000有线款",
       "productModel": "MV-IDH3000/13NR/05RN/LE(国内标配)V3.0",
       "materialCode": "313202116",
@@ -106937,7 +109024,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -106967,7 +109054,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH3000有线款",
       "productModel": "MV-IDH3000/13NR/05UVN/U(国内标配)V3.0",
       "materialCode": "313203067",
@@ -106986,7 +109073,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -107000,7 +109087,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH3000有线款",
       "productModel": "MV-IDH3000/13NR/05UVN/U(国内中性)V3.0",
       "materialCode": "313203068",
@@ -107019,7 +109106,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -107033,7 +109120,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH3000有线款",
       "productModel": "MV-IDH3000/13NR/04RN/U(国内标配)V3.0",
       "materialCode": "313202113",
@@ -107052,7 +109139,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -107066,7 +109153,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH5000有线款",
       "productModel": "MV-IDH5000P/13NR/04RN/U(国内标配)",
       "materialCode": "313203092",
@@ -107085,7 +109172,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -107099,7 +109186,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH5000有线款",
       "productModel": "MV-IDH5000P/13NR/04RN/U(国内中性)",
       "materialCode": "313203265",
@@ -107118,7 +109205,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -107132,7 +109219,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH5000有线款",
       "productModel": "MV-IDH5000P/13NR/04RN/L(国内标配)",
       "materialCode": "313203093",
@@ -107142,7 +109229,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -107165,7 +109252,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH5000有线款",
       "productModel": "MV-IDH5000P/13NR/04RN/L(国内中性)",
       "materialCode": "313203266",
@@ -107175,7 +109262,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -107198,7 +109285,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH5000有线款",
       "productModel": "MV-IDH5000P/13NR/04RN/LE(国内标配)",
       "materialCode": "313203094",
@@ -107208,7 +109295,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -107231,7 +109318,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH5000有线款",
       "productModel": "MV-IDH5000P/13NR/04RN/LE(国内中性)",
       "materialCode": "313203267",
@@ -107241,7 +109328,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -107264,7 +109351,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH5000有线款",
       "productModel": "MV-IDH5000P/13SR/04RN/U(国内标配)",
       "materialCode": "313203260",
@@ -107283,7 +109370,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -107297,7 +109384,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH5000有线款",
       "productModel": "MV-IDH5000P/13SR/04RN/U(国内中性)",
       "materialCode": "313203268",
@@ -107316,7 +109403,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -107330,7 +109417,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH5000有线款",
       "productModel": "MV-IDH5000P/13SR/04RN/L(国内标配)",
       "materialCode": "313203263",
@@ -107340,7 +109427,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -107363,7 +109450,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH5000有线款",
       "productModel": "MV-IDH5000P/13SR/04RN/L(国内中性)",
       "materialCode": "313203269",
@@ -107373,7 +109460,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -107396,7 +109483,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH5000有线款",
       "productModel": "MV-IDH5000P/13SR/04RN/LE(国内标配)",
       "materialCode": "313203264",
@@ -107406,7 +109493,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -107429,7 +109516,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH5000有线款",
       "productModel": "MV-IDH5000P/13SR/04RN/LE(国内中性)",
       "materialCode": "313203270",
@@ -107439,7 +109526,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -107462,7 +109549,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH7000无线款",
       "productModel": "MV-IDH7000B/10SR/07RN/US(国内标配)套包",
       "materialCode": "313201186",
@@ -107472,7 +109559,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -107482,6 +109569,13 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-H70B-P-S-RJ45-U-ST-2.5m",
           "code": "310102813",
           "detail": "外甩线_无线把枪底座U口线缆,2.5m,黑"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH7000电池",
+          "name": "MV-IDA-H70-BATTERY-01",
+          "code": "101900934",
+          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -107494,7 +109588,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH7000无线款",
       "productModel": "MV-IDH7000B/10SR/07RN/US(国内中性)套包",
       "materialCode": "313201184",
@@ -107504,7 +109598,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -107514,6 +109608,13 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-H70B-P-S-RJ45-U-ST-2.5m",
           "code": "310102813",
           "detail": "外甩线_无线把枪底座U口线缆,2.5m,黑"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH7000电池",
+          "name": "MV-IDA-H70-BATTERY-01",
+          "code": "101900934",
+          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -107526,7 +109627,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH7000无线款",
       "productModel": "MV-IDH7000B/10SR/07RN/LS(国内标配)套包",
       "materialCode": "313201187",
@@ -107536,7 +109637,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -107546,6 +109647,13 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-H70B-P-S-RJ45-RNE-ST-3m",
           "code": "310102814",
           "detail": "外甩线_无线把枪底座网口线缆,3m,黑"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH7000电池",
+          "name": "MV-IDA-H70-BATTERY-01",
+          "code": "101900934",
+          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -107580,7 +109688,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH7000无线款",
       "productModel": "MV-IDH7000B/10SR/07RN/LS(国内中性)套包",
       "materialCode": "313201185",
@@ -107590,7 +109698,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -107600,6 +109708,13 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-H70B-P-S-RJ45-RNE-ST-3m",
           "code": "310102814",
           "detail": "外甩线_无线把枪底座网口线缆,3m,黑"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH7000电池",
+          "name": "MV-IDA-H70-BATTERY-01",
+          "code": "101900934",
+          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -107634,7 +109749,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH7000无线款",
       "productModel": "MV-IDH7000B/10NR/07RN/US(国内标配)套包",
       "materialCode": "313200694",
@@ -107644,7 +109759,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -107654,6 +109769,13 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-H70B-P-S-RJ45-U-ST-2.5m",
           "code": "310102813",
           "detail": "外甩线_无线把枪底座U口线缆,2.5m,黑"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH7000电池",
+          "name": "MV-IDA-H70-BATTERY-01",
+          "code": "101900934",
+          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -107666,7 +109788,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH7000无线款",
       "productModel": "MV-IDH7000B/10NR/07RN/US(国内中性)套包",
       "materialCode": "313200751",
@@ -107676,7 +109798,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -107686,6 +109808,13 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-H70B-P-S-RJ45-U-ST-2.5m",
           "code": "310102813",
           "detail": "外甩线_无线把枪底座U口线缆,2.5m,黑"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH7000电池",
+          "name": "MV-IDA-H70-BATTERY-01",
+          "code": "101900934",
+          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -107698,7 +109827,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH7000无线款",
       "productModel": "MV-IDH7000B/10NR/07RN/LS(国内标配)套包",
       "materialCode": "313200695",
@@ -107708,7 +109837,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -107718,6 +109847,13 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-H70B-P-S-RJ45-RNE-ST-3m",
           "code": "310102814",
           "detail": "外甩线_无线把枪底座网口线缆,3m,黑"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH7000电池",
+          "name": "MV-IDA-H70-BATTERY-01",
+          "code": "101900934",
+          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -107752,7 +109888,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH7000无线款",
       "productModel": "MV-IDH7000B/10NR/07RN/LS(国内中性)套包",
       "materialCode": "313200749",
@@ -107762,7 +109898,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -107772,6 +109908,13 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-H70B-P-S-RJ45-RNE-ST-3m",
           "code": "310102814",
           "detail": "外甩线_无线把枪底座网口线缆,3m,黑"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH7000电池",
+          "name": "MV-IDA-H70-BATTERY-01",
+          "code": "101900934",
+          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -107806,7 +109949,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH7000无线款",
       "productModel": "MV-IDH7000B/10ER/12RN/US(国内标配)/套包",
       "materialCode": "313202861",
@@ -107816,7 +109959,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -107826,6 +109969,13 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-H70B-P-S-RJ45-U-ST-2.5m",
           "code": "310102813",
           "detail": "外甩线_无线把枪底座U口线缆,2.5m,黑"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH7000电池",
+          "name": "MV-IDA-H70-BATTERY-01",
+          "code": "101900934",
+          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -107838,7 +109988,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH7000无线款",
       "productModel": "MV-IDH7000B/10ER/12RN/US(国内中性)/套包",
       "materialCode": "313202864",
@@ -107848,7 +109998,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -107858,6 +110008,13 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-H70B-P-S-RJ45-U-ST-2.5m",
           "code": "310102813",
           "detail": "外甩线_无线把枪底座U口线缆,2.5m,黑"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH7000电池",
+          "name": "MV-IDA-H70-BATTERY-01",
+          "code": "101900934",
+          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -107870,7 +110027,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH7000无线款",
       "productModel": "MV-IDH7000B/10ER/12RN/LS(国内标配)/套包",
       "materialCode": "313202892",
@@ -107880,7 +110037,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -107890,6 +110047,13 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-H70B-P-S-RJ45-RNE-ST-3m",
           "code": "310102814",
           "detail": "外甩线_无线把枪底座网口线缆,3m,黑"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH7000电池",
+          "name": "MV-IDA-H70-BATTERY-01",
+          "code": "101900934",
+          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -107924,7 +110088,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH7000无线款",
       "productModel": "MV-IDH7000B/10ER/12RN/LS(国内中性)/套包",
       "materialCode": "313202893",
@@ -107934,7 +110098,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -107944,6 +110108,13 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-H70B-P-S-RJ45-RNE-ST-3m",
           "code": "310102814",
           "detail": "外甩线_无线把枪底座网口线缆,3m,黑"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH7000电池",
+          "name": "MV-IDA-H70-BATTERY-01",
+          "code": "101900934",
+          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -107978,7 +110149,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH7000无线款",
       "productModel": "MV-IDH7000B/10HHD/12RN/US(国内标配)/套包",
       "materialCode": "313203183",
@@ -107988,7 +110159,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -107998,6 +110169,13 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-H70B-P-S-RJ45-U-ST-2.5m",
           "code": "310102813",
           "detail": "外甩线_无线把枪底座U口线缆,2.5m,黑"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH7000电池",
+          "name": "MV-IDA-H70-BATTERY-01",
+          "code": "101900934",
+          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -108010,7 +110188,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH7000无线款",
       "productModel": "MV-IDH7000B/10HHD/12RN/US(国内中性)/套包",
       "materialCode": "313203184",
@@ -108020,7 +110198,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -108030,6 +110208,13 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-H70B-P-S-RJ45-U-ST-2.5m",
           "code": "310102813",
           "detail": "外甩线_无线把枪底座U口线缆,2.5m,黑"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH7000电池",
+          "name": "MV-IDA-H70-BATTERY-01",
+          "code": "101900934",
+          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -108042,7 +110227,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH7000无线款",
       "productModel": "MV-IDH7000B/10HHD/12RN/LS(国内标配)/套包",
       "materialCode": "313203185",
@@ -108052,7 +110237,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -108062,6 +110247,13 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-H70B-P-S-RJ45-RNE-ST-3m",
           "code": "310102814",
           "detail": "外甩线_无线把枪底座网口线缆,3m,黑"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH7000电池",
+          "name": "MV-IDA-H70-BATTERY-01",
+          "code": "101900934",
+          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -108096,7 +110288,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH7000无线款",
       "productModel": "MV-IDH7000B/10HHD/12RN/LS(国内中性)/套包",
       "materialCode": "313203186",
@@ -108106,7 +110298,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -108116,6 +110308,13 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-H70B-P-S-RJ45-RNE-ST-3m",
           "code": "310102814",
           "detail": "外甩线_无线把枪底座网口线缆,3m,黑"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH7000电池",
+          "name": "MV-IDA-H70-BATTERY-01",
+          "code": "101900934",
+          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -108150,7 +110349,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH7000有线款",
       "productModel": "MV-IDH7000P/10NR/07RN/U(国内标配)V2.0",
       "materialCode": "313201844",
@@ -108169,7 +110368,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -108190,7 +110389,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH7000有线款",
       "productModel": "MV-IDH7000P/10NR/07RN/U(国内中性)V2.0",
       "materialCode": "313201890",
@@ -108209,7 +110408,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -108230,7 +110429,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH7000有线款",
       "productModel": "MV-IDH7000P/10NR/07RN/L(国内标配)V2.0",
       "materialCode": "313201842",
@@ -108240,7 +110439,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -108284,7 +110483,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH7000有线款",
       "productModel": "MV-IDH7000P/10NR/07RN/L(国内中性)V2.0",
       "materialCode": "313201888",
@@ -108294,7 +110493,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -108338,7 +110537,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH7000有线款",
       "productModel": "MV-IDH7000P/10NR/07RN/LP(国内标配)V2.0",
       "materialCode": "313202226",
@@ -108348,7 +110547,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -108392,7 +110591,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH7000有线款",
       "productModel": "MV-IDH7000P/10NR/07RN/LP(国内中性)V2.0",
       "materialCode": "313202229",
@@ -108402,7 +110601,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -108446,7 +110645,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH7000有线款",
       "productModel": "MV-IDH7000P/10SR/07RN/U(国内标配)V2.0",
       "materialCode": "313201843",
@@ -108465,7 +110664,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -108486,7 +110685,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH7000有线款",
       "productModel": "MV-IDH7000P/10SR/07RN/U(国内中性)V2.0",
       "materialCode": "313201889",
@@ -108505,7 +110704,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -108526,7 +110725,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH7000有线款",
       "productModel": "MV-IDH7000P/10SR/07RN/L(国内标配)V2.0",
       "materialCode": "313201841",
@@ -108536,7 +110735,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -108580,7 +110779,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH7000有线款",
       "productModel": "MV-IDH7000P/10SR/07RN/L(国内中性)V2.0",
       "materialCode": "313201887",
@@ -108590,7 +110789,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -108634,7 +110833,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH7000有线款",
       "productModel": "MV-IDH7000P/10SR/07RN/LP(国内标配)V2.0",
       "materialCode": "313202227",
@@ -108644,7 +110843,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -108688,7 +110887,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH7000有线款",
       "productModel": "MV-IDH7000P/10SR/07RN/LP(国内中性)V2.0",
       "materialCode": "313202228",
@@ -108698,7 +110897,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -108742,7 +110941,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH7000有线款",
       "productModel": "MV-IDH7000P/10ER/12RN/U(国内标配)V2.0",
       "materialCode": "313202866",
@@ -108761,7 +110960,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -108782,7 +110981,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH7000有线款",
       "productModel": "MV-IDH7000P/10ER/12RN/U(国内中性)V2.0",
       "materialCode": "313202867",
@@ -108801,7 +111000,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -108822,7 +111021,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH7000有线款",
       "productModel": "MV-IDH7000P/10ER/12RN/L(国内标配)V2.0",
       "materialCode": "313202895",
@@ -108832,7 +111031,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -108876,7 +111075,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH7000有线款",
       "productModel": "MV-IDH7000P/10ER/12RN/L(国内中性)V2.0",
       "materialCode": "313202896",
@@ -108886,7 +111085,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -108930,7 +111129,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH7000有线款",
       "productModel": "MV-IDH7000P/10HHD/12RN/U(国内标配)V2.0",
       "materialCode": "313203187",
@@ -108949,7 +111148,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -108970,7 +111169,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH7000有线款",
       "productModel": "MV-IDH7000P/10HHD/12RN/U(国内中性)V2.0",
       "materialCode": "313203188",
@@ -108989,7 +111188,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -109010,7 +111209,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH7000有线款",
       "productModel": "MV-IDH7000P/10HHD/12RN/L(国内标配)V2.0",
       "materialCode": "313203189",
@@ -109020,7 +111219,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -109064,7 +111263,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH7000有线款",
       "productModel": "MV-IDH7000P/10HHD/12RN/L(国内中性)V2.0",
       "materialCode": "313203190",
@@ -109074,7 +111273,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -109118,7 +111317,7 @@ window.PEIDAN_DATA = {
       ]
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH9000无线款",
       "productModel": "MV-IDH9000B/13DP/04RP/US(国内标配)/套包",
       "materialCode": "313202775",
@@ -109128,7 +111327,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -109138,6 +111337,13 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-HIP-P-S-RJ45-U-BR-3m",
           "code": "310102818",
           "detail": "10P10C 转USB-AM+DC-J,3m,黑色"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH9000电池",
+          "name": "MV-IDA-H90B–BATTERY-02",
+          "code": "101901097",
+          "detail": "3.69V,4650mAh,可更换，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -109150,7 +111356,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH9000无线款",
       "productModel": "MV-IDH9000B/13DP/04RP/US(国内中性)/套包",
       "materialCode": "313202771",
@@ -109160,7 +111366,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -109170,6 +111376,13 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-HIP-P-S-RJ45-U-BR-3m",
           "code": "310102818",
           "detail": "10P10C 转USB-AM+DC-J,3m,黑色"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH9000电池",
+          "name": "MV-IDA-H90B–BATTERY-02",
+          "code": "101901097",
+          "detail": "3.69V,4650mAh,可更换，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -109182,7 +111395,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH9000无线款",
       "productModel": "MV-IDH9000B/13DP/04RP/LS(国内标配)/套包",
       "materialCode": "313202776",
@@ -109192,7 +111405,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -109202,6 +111415,13 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-HIP-P-S-RJ45-RPE-BR-3m",
           "code": "310102819",
           "detail": "10P10C转DB9F(DC-J)+RJ45M,3m,黑色"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH9000电池",
+          "name": "MV-IDA-H90B–BATTERY-02",
+          "code": "101901097",
+          "detail": "3.69V,4650mAh,可更换，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -109214,7 +111434,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH9000无线款",
       "productModel": "MV-IDH9000B/13DP/04RP/LS(国内中性)/套包",
       "materialCode": "313202773",
@@ -109224,7 +111444,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -109236,17 +111456,17 @@ window.PEIDAN_DATA = {
           "detail": "10P10C转DB9F(DC-J)+RJ45M,3m,黑色"
         },
         {
-          "category": "扩展配件",
-          "series": "IDH9000B底座网口",
-          "name": "MV-IDH9000B/SBASE/L/国内中性无包装",
-          "code": "313202741",
-          "detail": "IDH9000B无线巴枪底座，网口接口"
+          "category": "FA镜头",
+          "series": "IDH9000电池",
+          "name": "MV-IDA-H90B–BATTERY-02",
+          "code": "101901097",
+          "detail": "3.69V,4650mAh,可更换，适配IDH2000无线款"
         }
       ],
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH9000无线款",
       "productModel": "MV-IDH9000B/13HHD/16RP/US(国内标配)/套包",
       "materialCode": "313202517",
@@ -109256,7 +111476,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -109266,6 +111486,13 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-HIP-P-S-RJ45-U-BR-3m",
           "code": "310102818",
           "detail": "10P10C 转USB-AM+DC-J,3m,黑色"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH9000电池",
+          "name": "MV-IDA-H90B–BATTERY-02",
+          "code": "101901097",
+          "detail": "3.69V,4650mAh,可更换，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -109278,7 +111505,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH9000无线款",
       "productModel": "MV-IDH9000B/13HHD/16RP/US(国内中性)/套包",
       "materialCode": "313202745",
@@ -109288,7 +111515,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -109298,6 +111525,13 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-HIP-P-S-RJ45-U-BR-3m",
           "code": "310102818",
           "detail": "10P10C 转USB-AM+DC-J,3m,黑色"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH9000电池",
+          "name": "MV-IDA-H90B–BATTERY-02",
+          "code": "101901097",
+          "detail": "3.69V,4650mAh,可更换，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -109310,7 +111544,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH9000无线款",
       "productModel": "MV-IDH9000B/13HHD/16RP/LS(国内标配)/套包",
       "materialCode": "313202518",
@@ -109320,7 +111554,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -109330,6 +111564,13 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-HIP-P-S-RJ45-RPE-BR-3m",
           "code": "310102819",
           "detail": "10P10C转DB9F(DC-J)+RJ45M,3m,黑色"
+        },
+        {
+          "category": "FA镜头",
+          "series": "IDH9000电池",
+          "name": "MV-IDA-H90B–BATTERY-02",
+          "code": "101901097",
+          "detail": "3.69V,4650mAh,可更换，适配IDH2000无线款"
         },
         {
           "category": "扩展配件",
@@ -109342,7 +111583,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH9000无线款",
       "productModel": "MV-IDH9000B/13HHD/16RP/LS(国内中性)/套包",
       "materialCode": "313202746",
@@ -109352,7 +111593,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -109364,17 +111605,17 @@ window.PEIDAN_DATA = {
           "detail": "10P10C转DB9F(DC-J)+RJ45M,3m,黑色"
         },
         {
-          "category": "扩展配件",
-          "series": "IDH9000B底座网口",
-          "name": "MV-IDH9000B/SBASE/L/国内中性无包装",
-          "code": "313202741",
-          "detail": "IDH9000B无线巴枪底座，网口接口"
+          "category": "FA镜头",
+          "series": "IDH9000电池",
+          "name": "MV-IDA-H90B–BATTERY-02",
+          "code": "101901097",
+          "detail": "3.69V,4650mAh,可更换，适配IDH2000无线款"
         }
       ],
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH9000有线款",
       "productModel": "MV-IDH9000/13DP/04RP/U(国内标配)",
       "materialCode": "313202034",
@@ -109384,7 +111625,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -109399,7 +111640,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH9000有线款",
       "productModel": "MV-IDH9000/13DP/04RP/U(国内中性)",
       "materialCode": "313202088",
@@ -109409,7 +111650,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -109424,7 +111665,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH9000有线款",
       "productModel": "MV-IDH9000/13DP/04RP/L(国内标配)",
       "materialCode": "313202033",
@@ -109434,7 +111675,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -109449,7 +111690,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH9000有线款",
       "productModel": "MV-IDH9000/13DP/04RP/L(国内中性)",
       "materialCode": "313202086",
@@ -109459,7 +111700,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -109474,7 +111715,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH9000有线款",
       "productModel": "MV-IDH9000/13HHD/16RP/U(国内标配)",
       "materialCode": "313201883",
@@ -109484,7 +111725,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -109499,7 +111740,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH9000有线款",
       "productModel": "MV-IDH9000/13HHD/16RP/U(国内中性)",
       "materialCode": "313202041",
@@ -109509,7 +111750,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -109524,7 +111765,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH9000有线款",
       "productModel": "MV-IDH9000/13HHD/16RP/L(国内标配)",
       "materialCode": "313201875",
@@ -109534,7 +111775,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -109549,7 +111790,7 @@ window.PEIDAN_DATA = {
       "optionalAccessories": []
     },
     {
-      "productCategory": "IDH手持式系列",
+      "productCategory": "IDH手持读码器",
       "productSeries": "IDH9000有线款",
       "productModel": "MV-IDH9000/13HHD/16RP/L(国内中性)",
       "materialCode": "313202038",
@@ -109559,7 +111800,7 @@ window.PEIDAN_DATA = {
         {
           "category": "电源",
           "series": "电源适配器(圆头)",
-          "name": "ADS-26FSG-12 12024EPCN(圆头)(全球通中性)",
+          "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
         },
@@ -109572,6 +111813,523 @@ window.PEIDAN_DATA = {
         }
       ],
       "optionalAccessories": []
+    },
+    {
+      "productCategory": "IDP智能移动终端",
+      "productSeries": "IDP3204系列4寸短键盘",
+      "productModel": "MV-IDP3204/32G(国内标配)",
+      "materialCode": "313201125",
+      "description": "4英寸短键盘型号，八核2.0GHz处理器，基于Android 13.0操作系统，RAM 3GB，ROM 32GB，支持NFC",
+      "remark": "",
+      "standardAccessories": [],
+      "optionalAccessories": [
+        {
+          "category": "扩展配件",
+          "series": "IDP3204电池",
+          "name": "BAT-EDA40K",
+          "code": "365009478",
+          "detail": "标称电压3.85V，额定容量4850mAh，充电电压4.4V，适配IDP3204系列"
+        },
+        {
+          "category": "扩展配件",
+          "series": "IDP3204四联充",
+          "name": "MV-IDA-P32-CBASE-04",
+          "code": "363300497",
+          "detail": "键盘款四联充充电底座，适配IDP3204系列"
+        },
+        {
+          "category": "扩展配件",
+          "series": "IDP系列挂绳",
+          "name": "扫码1-挂绳",
+          "code": "190609307",
+          "detail": "防摔绳（挂绳）"
+        }
+      ]
+    },
+    {
+      "productCategory": "IDP智能移动终端",
+      "productSeries": "IDP3204系列4寸短键盘",
+      "productModel": "MV-IDP3204/64G(国内标配)",
+      "materialCode": "313201237",
+      "description": "4英寸短键盘型号，八核2.0GHz处理器，基于Android 13.0操作系统，RAM 4GB，ROM 64GB，支持NFC",
+      "remark": "",
+      "standardAccessories": [],
+      "optionalAccessories": [
+        {
+          "category": "扩展配件",
+          "series": "IDP3204电池",
+          "name": "BAT-EDA40K",
+          "code": "365009478",
+          "detail": "标称电压3.85V，额定容量4850mAh，充电电压4.4V，适配IDP3204系列"
+        },
+        {
+          "category": "扩展配件",
+          "series": "IDP3204四联充",
+          "name": "MV-IDA-P32-CBASE-04",
+          "code": "363300497",
+          "detail": "键盘款四联充充电底座，适配IDP3204系列"
+        },
+        {
+          "category": "扩展配件",
+          "series": "IDP系列挂绳",
+          "name": "扫码1-挂绳",
+          "code": "190609307",
+          "detail": "防摔绳（挂绳）"
+        }
+      ]
+    },
+    {
+      "productCategory": "IDP智能移动终端",
+      "productSeries": "IDP3204系列4寸短键盘",
+      "productModel": "MV-IDP3204/A/4&64(国内标配)",
+      "materialCode": "313201896",
+      "description": "4英寸短键盘型号，八核2.0GHz处理器，基于Android 13.0操作系统，RAM 4GB，ROM 64GB，不支持NFC",
+      "remark": "",
+      "standardAccessories": [],
+      "optionalAccessories": [
+        {
+          "category": "扩展配件",
+          "series": "IDP3204电池",
+          "name": "BAT-EDA40K",
+          "code": "365009478",
+          "detail": "标称电压3.85V，额定容量4850mAh，充电电压4.4V，适配IDP3204系列"
+        },
+        {
+          "category": "扩展配件",
+          "series": "IDP3204四联充",
+          "name": "MV-IDA-P32-CBASE-04",
+          "code": "363300497",
+          "detail": "键盘款四联充充电底座，适配IDP3204系列"
+        },
+        {
+          "category": "扩展配件",
+          "series": "IDP系列挂绳",
+          "name": "扫码1-挂绳",
+          "code": "190609307",
+          "detail": "防摔绳（挂绳）"
+        }
+      ]
+    },
+    {
+      "productCategory": "IDP智能移动终端",
+      "productSeries": "IDP3304系列4寸短键盘",
+      "productModel": "MV-IDP3304/4&64 (国内标配)",
+      "materialCode": "313201638",
+      "description": "4英寸短键盘型号，八核2.2GHz处理器，基于Android 11.0操作系统，RAM 4GB，ROM 64GB，支持NFC",
+      "remark": "",
+      "standardAccessories": [],
+      "optionalAccessories": [
+        {
+          "category": "扩展配件",
+          "series": "IDP系列挂绳",
+          "name": "扫码1-挂绳",
+          "code": "190609307",
+          "detail": "防摔绳（挂绳）"
+        }
+      ]
+    },
+    {
+      "productCategory": "IDP智能移动终端",
+      "productSeries": "IDP3304系列4寸短键盘",
+      "productModel": "MV-IDP3304/A/3&32(国内标配)",
+      "materialCode": "313201637",
+      "description": "4英寸短键盘型号，八核2.2GHz处理器，基于Android 11.0操作系统，RAM 3GB，ROM 32GB，不支持NFC和前置摄像头",
+      "remark": "",
+      "standardAccessories": [],
+      "optionalAccessories": [
+        {
+          "category": "扩展配件",
+          "series": "IDP系列挂绳",
+          "name": "扫码1-挂绳",
+          "code": "190609307",
+          "detail": "防摔绳（挂绳）"
+        }
+      ]
+    },
+    {
+      "productCategory": "IDP智能移动终端",
+      "productSeries": "IDP4104系列4寸长键盘",
+      "productModel": "MV-IDP4104/4&64/DP/05NR(海康机器人)",
+      "materialCode": "303201780",
+      "description": "DPM款，4英寸短键盘型号，八核2.0GHz处理器，基于Android 11.0操作系统，RAM 4GB，ROM 64GB，可选配NFC",
+      "remark": "",
+      "standardAccessories": [
+        {
+          "category": "电源",
+          "series": "充电头",
+          "name": "DYS05200CQ-A",
+          "code": "101701998",
+          "detail": "(新)适配器,DYS05200CQ-A,AC100-240V,5V2A,国标,V,USB,白色"
+        },
+        {
+          "category": "一体线",
+          "series": "1m充电线",
+          "name": "USB/AM to USB/CM",
+          "code": "101527067",
+          "detail": "USB2.0线缆,USB/AM转USB/CM,1000mm,海康白"
+        }
+      ],
+      "optionalAccessories": [
+        {
+          "category": "扩展配件",
+          "series": "IDP4104电池",
+          "name": "PDA18650-2P",
+          "code": "101900799",
+          "detail": "C,可充电锂离子电池,PDA18650-2P,3.6V,5000mA*h,可更换，适配IDP4104系列"
+        },
+        {
+          "category": "扩展配件",
+          "series": "IDP4104单座充",
+          "name": "DS-MH1421-501(国内中性)",
+          "code": "307500543",
+          "detail": "单电池、单设备混充，适配IDP4104系列"
+        },
+        {
+          "category": "扩展配件",
+          "series": "IDP4104长键盘手柄",
+          "name": "DS-MH1721-501(国内中性)",
+          "code": "307500835",
+          "detail": "手柄，适配IDP4104系列"
+        },
+        {
+          "category": "扩展配件",
+          "series": "IDP系列挂绳",
+          "name": "扫码1-挂绳",
+          "code": "190609307",
+          "detail": "防摔绳（挂绳）"
+        }
+      ]
+    },
+    {
+      "productCategory": "IDP智能移动终端",
+      "productSeries": "IDP5006系列6寸全面屏",
+      "productModel": "MV-IDP5006/5G/4&64/05FR(国内标配)",
+      "materialCode": "313201746",
+      "description": "6英寸全面屏型号，八核2.6GHz处理器，基于Android 14.0操作系统，RAM 4GB，ROM 64GB，支持NFC",
+      "remark": "",
+      "standardAccessories": [],
+      "optionalAccessories": [
+        {
+          "category": "扩展配件",
+          "series": "IDP系列挂绳",
+          "name": "扫码1-挂绳",
+          "code": "190609307",
+          "detail": "防摔绳（挂绳）"
+        }
+      ]
+    },
+    {
+      "productCategory": "IDP智能移动终端",
+      "productSeries": "IDP5006系列6寸全面屏",
+      "productModel": "MV-IDP5006/5G/A/4&64/05FR(国内标配)/经济款",
+      "materialCode": "313201744",
+      "description": "6英寸全面屏型号，八核2.6GHz处理器，基于Android 14.0操作系统，RAM 4GB，ROM 64GB，不支持NFC",
+      "remark": "",
+      "standardAccessories": [],
+      "optionalAccessories": [
+        {
+          "category": "扩展配件",
+          "series": "IDP系列挂绳",
+          "name": "扫码1-挂绳",
+          "code": "190609307",
+          "detail": "防摔绳（挂绳）"
+        }
+      ]
+    },
+    {
+      "productCategory": "IDP智能移动终端",
+      "productSeries": "IDP5006系列6寸全面屏",
+      "productModel": "MV-IDP5006/5G/4&64/05FR/H(国内标配)",
+      "materialCode": "313201931",
+      "description": "医疗专用抗菌耐酒精材质，6英寸全面屏型号，八核2.6GHz处理器，基于Android 14.0操作系统，RAM 4GB，ROM 64GB，支持NFC",
+      "remark": "",
+      "standardAccessories": [],
+      "optionalAccessories": [
+        {
+          "category": "扩展配件",
+          "series": "IDP系列挂绳",
+          "name": "扫码1-挂绳",
+          "code": "190609307",
+          "detail": "防摔绳（挂绳）"
+        }
+      ]
+    },
+    {
+      "productCategory": "IDP智能移动终端",
+      "productSeries": "IDP5102系列5寸全面屏",
+      "productModel": "MV-IDP5102/4&64(海康机器人)",
+      "materialCode": "303201911",
+      "description": "5英寸全面屏型号，八核2.0GHz处理器，基于Android 11.0操作系统，RAM 4GB，ROM 64GB，可选配NFC",
+      "remark": "",
+      "standardAccessories": [
+        {
+          "category": "电源",
+          "series": "充电头",
+          "name": "DYS05200CQ-A",
+          "code": "101701998",
+          "detail": "(新)适配器,DYS05200CQ-A,AC100-240V,5V2A,国标,V,USB,白色"
+        },
+        {
+          "category": "一体线",
+          "series": "1m充电线",
+          "name": "USB/AM to USB/CM",
+          "code": "101527067",
+          "detail": "USB2.0线缆,USB/AM转USB/CM,1000mm,海康白"
+        }
+      ],
+      "optionalAccessories": [
+        {
+          "category": "扩展配件",
+          "series": "IDP5102单座充",
+          "name": "DS-MH1421-200(国内中性)",
+          "code": "303201782",
+          "detail": "设备单座充，适配IDP5102系列"
+        },
+        {
+          "category": "扩展配件",
+          "series": "IDP5102六联充",
+          "name": "DS-MH1426-200(国内标配)",
+          "code": "307500636",
+          "detail": "支持6个PDA同时充电，适配IDP5102系列"
+        },
+        {
+          "category": "扩展配件",
+          "series": "IDP510X全面屏手柄",
+          "name": "DS-MH1731(国内标配)",
+          "code": "307500369",
+          "detail": "手柄，适配IDP5102系列"
+        },
+        {
+          "category": "扩展配件",
+          "series": "IDP系列挂绳",
+          "name": "扫码1-挂绳",
+          "code": "190609307",
+          "detail": "防摔绳（挂绳）"
+        }
+      ]
+    },
+    {
+      "productCategory": "IDP智能移动终端",
+      "productSeries": "IDP5104系列5.5寸全面屏",
+      "productModel": "MV-IDP5104/4&64(海康机器人)",
+      "materialCode": "303201791",
+      "description": "5.5英寸全面屏型号，八核2.0GHz处理器，基于Android 10.0操作系统，RAM 4GB，ROM 64GB，支持NFC",
+      "remark": "",
+      "standardAccessories": [
+        {
+          "category": "电源",
+          "series": "充电头",
+          "name": "DYS05200CQ-A",
+          "code": "101701998",
+          "detail": "(新)适配器,DYS05200CQ-A,AC100-240V,5V2A,国标,V,USB,白色"
+        },
+        {
+          "category": "一体线",
+          "series": "1m充电线",
+          "name": "USB/AM to USB/CM",
+          "code": "101527067",
+          "detail": "USB2.0线缆,USB/AM转USB/CM,1000mm,海康白"
+        }
+      ],
+      "optionalAccessories": [
+        {
+          "category": "扩展配件",
+          "series": "IDP510X全面屏手柄",
+          "name": "DS-MH1731(国内标配)",
+          "code": "307500369",
+          "detail": "手柄，适配IDP5102系列"
+        },
+        {
+          "category": "扩展配件",
+          "series": "IDP5104单座充",
+          "name": "DS-MH1421-201(国内中性)",
+          "code": "303201600",
+          "detail": "设备单座充，适配IDP5104系列"
+        },
+        {
+          "category": "扩展配件",
+          "series": "IDP5104六联充",
+          "name": "DS-MH1426-201(国内标配)",
+          "code": "303201715",
+          "detail": "支持6个PDA同时充电，适配IDP5104系列"
+        },
+        {
+          "category": "扩展配件",
+          "series": "IDP系列挂绳",
+          "name": "扫码1-挂绳",
+          "code": "190609307",
+          "detail": "防摔绳（挂绳）"
+        }
+      ]
+    },
+    {
+      "productCategory": "IDP智能移动终端",
+      "productSeries": "IDP5104系列5.5寸全面屏",
+      "productModel": "MV-IDP5104/AI 4&64(海康机器人)",
+      "materialCode": "303201723",
+      "description": "OCR款，5.5英寸全面屏型号，八核2.0GHz处理器，基于Android 10.0操作系统，RAM 4GB，ROM 64GB，支持NFC",
+      "remark": "",
+      "standardAccessories": [
+        {
+          "category": "电源",
+          "series": "充电头",
+          "name": "DYS05200CQ-A",
+          "code": "101701998",
+          "detail": "(新)适配器,DYS05200CQ-A,AC100-240V,5V2A,国标,V,USB,白色"
+        },
+        {
+          "category": "一体线",
+          "series": "1m充电线",
+          "name": "USB/AM to USB/CM",
+          "code": "101527067",
+          "detail": "USB2.0线缆,USB/AM转USB/CM,1000mm,海康白"
+        }
+      ],
+      "optionalAccessories": [
+        {
+          "category": "扩展配件",
+          "series": "IDP510X全面屏手柄",
+          "name": "DS-MH1731(国内标配)",
+          "code": "307500369",
+          "detail": "手柄，适配IDP5102系列"
+        },
+        {
+          "category": "扩展配件",
+          "series": "IDP5104单座充",
+          "name": "DS-MH1421-201(国内中性)",
+          "code": "303201600",
+          "detail": "设备单座充，适配IDP5104系列"
+        },
+        {
+          "category": "扩展配件",
+          "series": "IDP5104六联充",
+          "name": "DS-MH1426-201(国内标配)",
+          "code": "303201715",
+          "detail": "支持6个PDA同时充电，适配IDP5104系列"
+        },
+        {
+          "category": "扩展配件",
+          "series": "IDP系列挂绳",
+          "name": "扫码1-挂绳",
+          "code": "190609307",
+          "detail": "防摔绳（挂绳）"
+        }
+      ]
+    },
+    {
+      "productCategory": "IDP智能移动终端",
+      "productSeries": "IDP5114系列5.5寸全面屏",
+      "productModel": "MV-IDP5114/4&64/05FR(海康机器人)",
+      "materialCode": "303202199",
+      "description": "5.5英寸全面屏型号，八核2.0GHz处理器，基于Android 11.0操作系统，RAM 4GB，ROM 64GB，不支持NFC",
+      "remark": "",
+      "standardAccessories": [
+        {
+          "category": "电源",
+          "series": "充电头",
+          "name": "DYS05200CQ-A",
+          "code": "101701998",
+          "detail": "(新)适配器,DYS05200CQ-A,AC100-240V,5V2A,国标,V,USB,白色"
+        },
+        {
+          "category": "一体线",
+          "series": "1m充电线",
+          "name": "USB/AM to USB/CM",
+          "code": "101527067",
+          "detail": "USB2.0线缆,USB/AM转USB/CM,1000mm,海康白"
+        }
+      ],
+      "optionalAccessories": [
+        {
+          "category": "扩展配件",
+          "series": "IDP5114电池",
+          "name": "DS-MH1324-202",
+          "code": "101900989",
+          "detail": "DS-MH1324-202,3.85V,5000mA*h,可更换，适配IDP5114系列"
+        },
+        {
+          "category": "扩展配件",
+          "series": "IDP5114单座充",
+          "name": "DS-MH1421-202(国内中性)",
+          "code": "307500688",
+          "detail": "设备单座充，适配IDP5114系列"
+        },
+        {
+          "category": "扩展配件",
+          "series": "IDP5114四联充",
+          "name": "DS-MH1424-L(国内标配)",
+          "code": "307500619",
+          "detail": "支持4个电池同时充电，适配IDP5114系列"
+        },
+        {
+          "category": "扩展配件",
+          "series": "IDP5114全面屏手柄",
+          "name": "DS-MH1721-202(国内中性)",
+          "code": "307500788",
+          "detail": "手柄，适配IDP5114系列"
+        },
+        {
+          "category": "扩展配件",
+          "series": "IDP系列挂绳",
+          "name": "扫码1-挂绳",
+          "code": "190609307",
+          "detail": "防摔绳（挂绳）"
+        }
+      ]
+    },
+    {
+      "productCategory": "IDP智能移动终端",
+      "productSeries": "IDP5204系列6.2寸全面屏",
+      "productModel": "MV-IDP5204/4&64(国内标配)V2.0",
+      "materialCode": "313202668",
+      "description": "6.2英寸全面屏型号，八核2.2GHz处理器，基于Android 14.0操作系统，RAM 4GB，ROM 64GB，支持NFC",
+      "remark": "",
+      "standardAccessories": [],
+      "optionalAccessories": [
+        {
+          "category": "扩展配件",
+          "series": "IDP系列挂绳",
+          "name": "扫码1-挂绳",
+          "code": "190609307",
+          "detail": "防摔绳（挂绳）"
+        }
+      ]
+    },
+    {
+      "productCategory": "IDP智能移动终端",
+      "productSeries": "IDP5204系列6.2寸全面屏",
+      "productModel": "MV-IDP5204/4&64/DP(国内标配)V2.0",
+      "materialCode": "313203541",
+      "description": "DPM款，6.2英寸全面屏型号，八核2.2GHz处理器，基于Android 14.0操作系统，RAM 4GB，ROM 64GB，不支持NFC",
+      "remark": "",
+      "standardAccessories": [],
+      "optionalAccessories": [
+        {
+          "category": "扩展配件",
+          "series": "IDP系列挂绳",
+          "name": "扫码1-挂绳",
+          "code": "190609307",
+          "detail": "防摔绳（挂绳）"
+        }
+      ]
+    },
+    {
+      "productCategory": "IDP智能移动终端",
+      "productSeries": "IDP5304系列6寸全面屏",
+      "productModel": "MV-IDP5304/4&64(国内标配)",
+      "materialCode": "313203084",
+      "description": "6英寸全面屏型号，八核2.2GHz处理器，基于Android 14.0操作系统，RAM 4GB，ROM 64GB，支持NFC",
+      "remark": "",
+      "standardAccessories": [],
+      "optionalAccessories": [
+        {
+          "category": "扩展配件",
+          "series": "IDP系列挂绳",
+          "name": "扫码1-挂绳",
+          "code": "190609307",
+          "detail": "防摔绳（挂绳）"
+        }
+      ]
     },
     {
       "productCategory": "物流读码器",
@@ -114639,6 +117397,476 @@ window.PEIDAN_DATA = {
         }
       ],
       "optionalAccessories": []
+    },
+    {
+      "productCategory": "行业型号",
+      "productSeries": "IVD行业",
+      "productModel": "MV-HY-MED-A13-03N-WBP-S(国内标配)",
+      "materialCode": "313203076",
+      "description": "1.3MP，2.48mm镜头，视场角69°*58°，4颗白光(偏振)，网口型号",
+      "remark": "标配1.2m高柔线缆：医疗专用型号供电通讯一体线，DB15转RJ45、DB9，散线（2入2出）",
+      "standardAccessories": [],
+      "optionalAccessories": []
+    },
+    {
+      "productCategory": "行业型号",
+      "productSeries": "IVD行业",
+      "productModel": "MV-HY-MED-A13-03N-WBP-S(国内中性)",
+      "materialCode": "313203321",
+      "description": "1.3MP，2.48mm镜头，视场角69°*58°，4颗白光(偏振)，网口型号",
+      "remark": "标配1.2m高柔线缆：医疗专用型号供电通讯一体线，DB15转RJ45、DB9，散线（2入2出）",
+      "standardAccessories": [],
+      "optionalAccessories": []
+    },
+    {
+      "productCategory": "行业型号",
+      "productSeries": "IVD行业",
+      "productModel": "MV-HY-MED-A13-05S-WBP-S(国内标配)",
+      "materialCode": "313203077",
+      "description": "1.3MP，4.63mm镜头，视场角40°*33°，4颗白光(偏振)，网口型号",
+      "remark": "标配1.2m高柔线缆：医疗专用型号供电通讯一体线，DB15转RJ45、DB9，散线（2入2出）",
+      "standardAccessories": [],
+      "optionalAccessories": []
+    },
+    {
+      "productCategory": "行业型号",
+      "productSeries": "IVD行业",
+      "productModel": "MV-HY-MED-A13-05S-WBP-S(国内中性)",
+      "materialCode": "313203320",
+      "description": "1.3MP，4.63mm镜头，视场角40°*33°，4颗白光(偏振)，网口型号",
+      "remark": "标配1.2m高柔线缆：医疗专用型号供电通讯一体线，DB15转RJ45、DB9，散线（2入2出）",
+      "standardAccessories": [],
+      "optionalAccessories": []
+    },
+    {
+      "productCategory": "行业型号",
+      "productSeries": "IVD行业",
+      "productModel": "MV-HY-MED-B10-03S-WBP(国内标配)",
+      "materialCode": "313203088",
+      "description": "1MP，2.48mm镜头，视场角71°*51°，1颗白光(偏振)，网口型号",
+      "remark": "一体化1m甩线",
+      "standardAccessories": [],
+      "optionalAccessories": []
+    },
+    {
+      "productCategory": "行业型号",
+      "productSeries": "IVD行业",
+      "productModel": "MV-HY-MED-B10-05S-WBN(国内标配)",
+      "materialCode": "313203089",
+      "description": "1MP，4.63mm镜头，视场角42°*29°，1颗白光，网口型号",
+      "remark": "一体化1m甩线",
+      "standardAccessories": [],
+      "optionalAccessories": []
+    },
+    {
+      "productCategory": "行业型号",
+      "productSeries": "医药一体机",
+      "productModel": "MV-IDM-B08(国内标配)V3.0",
+      "materialCode": "313202264",
+      "description": "B08一体机，200万像素，6mm机械调焦镜头，预设参数，即插即用;智能语音播报，高度可调(340~440mm)，默认360mm",
+      "remark": "一体化1m甩线",
+      "standardAccessories": [
+        {
+          "category": "电源",
+          "series": "电源适配器(圆头)",
+          "name": "ADS-25FSG-19 24024EPCN",
+          "code": "101702114",
+          "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
+        },
+        {
+          "category": "一体线",
+          "series": "1.5m普通U口",
+          "name": "USB3-AM转USB-CM,1.5m",
+          "code": "101523176",
+          "detail": "转接线-USB,USB3-AM转USB-CM,1.5m,黑"
+        }
+      ],
+      "optionalAccessories": [
+        {
+          "category": "一体线",
+          "series": "3m普通U口",
+          "name": "USB3-AM转USB-CM,3m",
+          "code": "101530003",
+          "detail": "转接线-USB,USB3-AM转USB-CM,3m,黑"
+        }
+      ]
+    },
+    {
+      "productCategory": "行业型号",
+      "productSeries": "医药一体机",
+      "productModel": "MV-IDM-B08(国内中性)V3.0",
+      "materialCode": "313202265",
+      "description": "B08一体机，200万像素，6mm机械调焦镜头，预设参数，即插即用;智能语音播报，高度可调(340~440mm)，默认360mm",
+      "remark": "一体化1m甩线",
+      "standardAccessories": [
+        {
+          "category": "电源",
+          "series": "电源适配器(圆头)",
+          "name": "ADS-25FSG-19 24024EPCN",
+          "code": "101702114",
+          "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
+        },
+        {
+          "category": "一体线",
+          "series": "1.5m普通U口",
+          "name": "USB3-AM转USB-CM,1.5m",
+          "code": "101523176",
+          "detail": "转接线-USB,USB3-AM转USB-CM,1.5m,黑"
+        }
+      ],
+      "optionalAccessories": [
+        {
+          "category": "一体线",
+          "series": "3m普通U口",
+          "name": "USB3-AM转USB-CM,3m",
+          "code": "101530003",
+          "detail": "转接线-USB,USB3-AM转USB-CM,3m,黑"
+        }
+      ]
+    },
+    {
+      "productCategory": "行业型号",
+      "productSeries": "医药一体机",
+      "productModel": "MV-IDM-C08(国内标配)V3.0",
+      "materialCode": "313202269",
+      "description": "C08一体机，200万像素，6mm机械调焦镜头，预设参数，即插即用;智能语音播报，高度可调(340~440mm)，默认380mm",
+      "remark": "一体化1m甩线",
+      "standardAccessories": [
+        {
+          "category": "电源",
+          "series": "电源适配器(圆头)",
+          "name": "ADS-25FSG-19 24024EPCN",
+          "code": "101702114",
+          "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
+        },
+        {
+          "category": "一体线",
+          "series": "1.5m普通U口",
+          "name": "USB3-AM转USB-CM,1.5m",
+          "code": "101523176",
+          "detail": "转接线-USB,USB3-AM转USB-CM,1.5m,黑"
+        }
+      ],
+      "optionalAccessories": [
+        {
+          "category": "一体线",
+          "series": "3m普通U口",
+          "name": "USB3-AM转USB-CM,3m",
+          "code": "101530003",
+          "detail": "转接线-USB,USB3-AM转USB-CM,3m,黑"
+        }
+      ]
+    },
+    {
+      "productCategory": "行业型号",
+      "productSeries": "医药一体机",
+      "productModel": "MV-IDM-C08(国内中性)V3.0",
+      "materialCode": "313202268",
+      "description": "C08一体机，200万像素，6mm机械调焦镜头，预设参数，即插即用;智能语音播报，高度可调(340~440mm)，默认380mm",
+      "remark": "一体化1m甩线",
+      "standardAccessories": [
+        {
+          "category": "电源",
+          "series": "电源适配器(圆头)",
+          "name": "ADS-25FSG-19 24024EPCN",
+          "code": "101702114",
+          "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
+        },
+        {
+          "category": "一体线",
+          "series": "1.5m普通U口",
+          "name": "USB3-AM转USB-CM,1.5m",
+          "code": "101523176",
+          "detail": "转接线-USB,USB3-AM转USB-CM,1.5m,黑"
+        }
+      ],
+      "optionalAccessories": [
+        {
+          "category": "一体线",
+          "series": "3m普通U口",
+          "name": "USB3-AM转USB-CM,3m",
+          "code": "101530003",
+          "detail": "转接线-USB,USB3-AM转USB-CM,3m,黑"
+        }
+      ]
+    },
+    {
+      "productCategory": "行业型号",
+      "productSeries": "医药一体机",
+      "productModel": "MV-IDM-C09(国内标配)V3.0",
+      "materialCode": "313202273",
+      "description": "C09一体机，400万像素，8mm机械调焦镜头，预设参数，即插即用;智能语音播报，高度可调(340~440mm)，默认380mm",
+      "remark": "一体化1m甩线",
+      "standardAccessories": [
+        {
+          "category": "电源",
+          "series": "电源适配器(圆头)",
+          "name": "ADS-25FSG-19 24024EPCN",
+          "code": "101702114",
+          "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
+        },
+        {
+          "category": "一体线",
+          "series": "1.5m普通U口",
+          "name": "USB3-AM转USB-CM,1.5m",
+          "code": "101523176",
+          "detail": "转接线-USB,USB3-AM转USB-CM,1.5m,黑"
+        }
+      ],
+      "optionalAccessories": [
+        {
+          "category": "一体线",
+          "series": "3m普通U口",
+          "name": "USB3-AM转USB-CM,3m",
+          "code": "101530003",
+          "detail": "转接线-USB,USB3-AM转USB-CM,3m,黑"
+        }
+      ]
+    },
+    {
+      "productCategory": "行业型号",
+      "productSeries": "医药一体机",
+      "productModel": "MV-IDM-C09(国内中性)V3.0",
+      "materialCode": "313202272",
+      "description": "C09一体机，400万像素，8mm机械调焦镜头，预设参数，即插即用;智能语音播报，高度可调(340~440mm)，默认380mm",
+      "remark": "一体化1m甩线",
+      "standardAccessories": [
+        {
+          "category": "电源",
+          "series": "电源适配器(圆头)",
+          "name": "ADS-25FSG-19 24024EPCN",
+          "code": "101702114",
+          "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
+        },
+        {
+          "category": "一体线",
+          "series": "1.5m普通U口",
+          "name": "USB3-AM转USB-CM,1.5m",
+          "code": "101523176",
+          "detail": "转接线-USB,USB3-AM转USB-CM,1.5m,黑"
+        }
+      ],
+      "optionalAccessories": [
+        {
+          "category": "一体线",
+          "series": "3m普通U口",
+          "name": "USB3-AM转USB-CM,3m",
+          "code": "101530003",
+          "detail": "转接线-USB,USB3-AM转USB-CM,3m,黑"
+        }
+      ]
+    },
+    {
+      "productCategory": "行业型号",
+      "productSeries": "医药一体机",
+      "productModel": "MV-IDM-E10(V2.0)(国内标配)",
+      "materialCode": "313202208",
+      "description": "E10一体机，600万像素，8mm机械调焦镜头，预设参数，即插即用;智能语音播报，高度可调(560~660mm)，默认580mm",
+      "remark": "一体化1m甩线",
+      "standardAccessories": [
+        {
+          "category": "电源",
+          "series": "电源适配器(圆头)",
+          "name": "ADS-25FSG-19 24024EPCN",
+          "code": "101702114",
+          "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
+        },
+        {
+          "category": "安装板",
+          "series": "安装板",
+          "name": "一体机支架",
+          "code": "192131621",
+          "detail": "可调高度560~660mm，20mm一个档位，E10 V2.0专用"
+        },
+        {
+          "category": "一体线",
+          "series": "1.5m普通U口",
+          "name": "USB3-AM转USB-CM,1.5m",
+          "code": "101523176",
+          "detail": "转接线-USB,USB3-AM转USB-CM,1.5m,黑"
+        }
+      ],
+      "optionalAccessories": [
+        {
+          "category": "一体线",
+          "series": "3m普通U口",
+          "name": "USB3-AM转USB-CM,3m",
+          "code": "101530003",
+          "detail": "转接线-USB,USB3-AM转USB-CM,3m,黑"
+        }
+      ]
+    },
+    {
+      "productCategory": "行业型号",
+      "productSeries": "医药一体机",
+      "productModel": "MV-IDM-E10(V2.0)(国内中性)",
+      "materialCode": "313202153",
+      "description": "E10一体机，600万像素，8mm机械调焦镜头，预设参数，即插即用;智能语音播报，高度可调(560~660mm)，默认580mm",
+      "remark": "一体化1m甩线",
+      "standardAccessories": [
+        {
+          "category": "电源",
+          "series": "电源适配器(圆头)",
+          "name": "ADS-25FSG-19 24024EPCN",
+          "code": "101702114",
+          "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
+        },
+        {
+          "category": "安装板",
+          "series": "安装板",
+          "name": "一体机支架",
+          "code": "192131621",
+          "detail": "可调高度560~660mm，20mm一个档位，E10 V2.0专用"
+        },
+        {
+          "category": "一体线",
+          "series": "1.5m普通U口",
+          "name": "USB3-AM转USB-CM,1.5m",
+          "code": "101523176",
+          "detail": "转接线-USB,USB3-AM转USB-CM,1.5m,黑"
+        }
+      ],
+      "optionalAccessories": [
+        {
+          "category": "一体线",
+          "series": "3m普通U口",
+          "name": "USB3-AM转USB-CM,3m",
+          "code": "101530003",
+          "detail": "转接线-USB,USB3-AM转USB-CM,3m,黑"
+        }
+      ]
+    },
+    {
+      "productCategory": "行业型号",
+      "productSeries": "医药一体机",
+      "productModel": "MV-HY-MED-B08-PD(国内中性)V3.0",
+      "materialCode": "313202266",
+      "description": "B08套包，200万像素，6mm机械调焦镜头，预设参数，即插即用;包含单机、接口板、扬声器、状态指示灯、按键、适配器，1.5m Type-C线缆",
+      "remark": "一体化1m甩线",
+      "standardAccessories": [
+        {
+          "category": "电源",
+          "series": "电源适配器(圆头)",
+          "name": "ADS-25FSG-19 24024EPCN",
+          "code": "101702114",
+          "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
+        },
+        {
+          "category": "一体线",
+          "series": "1.5m普通U口",
+          "name": "USB3-AM转USB-CM,1.5m",
+          "code": "101523176",
+          "detail": "转接线-USB,USB3-AM转USB-CM,1.5m,黑"
+        }
+      ],
+      "optionalAccessories": [
+        {
+          "category": "一体线",
+          "series": "3m普通U口",
+          "name": "USB3-AM转USB-CM,3m",
+          "code": "101530003",
+          "detail": "转接线-USB,USB3-AM转USB-CM,3m,黑"
+        }
+      ]
+    },
+    {
+      "productCategory": "行业型号",
+      "productSeries": "医药一体机",
+      "productModel": "MV-HY-MED-C08-PD(国内中性)V3.0",
+      "materialCode": "313202270",
+      "description": "C08套包，200万像素，6mm机械调焦镜头，预设参数，即插即用;包含单机、接口板、扬声器、状态指示灯、按键、适配器，1.5m Type-C线缆",
+      "remark": "一体化1m甩线",
+      "standardAccessories": [
+        {
+          "category": "电源",
+          "series": "电源适配器(圆头)",
+          "name": "ADS-25FSG-19 24024EPCN",
+          "code": "101702114",
+          "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
+        },
+        {
+          "category": "一体线",
+          "series": "1.5m普通U口",
+          "name": "USB3-AM转USB-CM,1.5m",
+          "code": "101523176",
+          "detail": "转接线-USB,USB3-AM转USB-CM,1.5m,黑"
+        }
+      ],
+      "optionalAccessories": [
+        {
+          "category": "一体线",
+          "series": "3m普通U口",
+          "name": "USB3-AM转USB-CM,3m",
+          "code": "101530003",
+          "detail": "转接线-USB,USB3-AM转USB-CM,3m,黑"
+        }
+      ]
+    },
+    {
+      "productCategory": "行业型号",
+      "productSeries": "医药一体机",
+      "productModel": "MV-HY-MED-C09-PD(国内中性)V3.0",
+      "materialCode": "313202274",
+      "description": "C09套包，400万像素，8mm机械调焦镜头，预设参数，即插即用;包含单机、接口板、扬声器、状态指示灯、按键、适配器，1.5m Type-C线缆",
+      "remark": "一体化1m甩线",
+      "standardAccessories": [
+        {
+          "category": "电源",
+          "series": "电源适配器(圆头)",
+          "name": "ADS-25FSG-19 24024EPCN",
+          "code": "101702114",
+          "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
+        },
+        {
+          "category": "一体线",
+          "series": "1.5m普通U口",
+          "name": "USB3-AM转USB-CM,1.5m",
+          "code": "101523176",
+          "detail": "转接线-USB,USB3-AM转USB-CM,1.5m,黑"
+        }
+      ],
+      "optionalAccessories": [
+        {
+          "category": "一体线",
+          "series": "3m普通U口",
+          "name": "USB3-AM转USB-CM,3m",
+          "code": "101530003",
+          "detail": "转接线-USB,USB3-AM转USB-CM,3m,黑"
+        }
+      ]
+    },
+    {
+      "productCategory": "行业型号",
+      "productSeries": "医药一体机",
+      "productModel": "MV-HY-MED-E10-PD(国内中性)V2.0",
+      "materialCode": "313202154",
+      "description": "E10套包，600万像素，8mm机械调焦镜头，预设参数，即插即用;包含单机、接口板、扬声器、状态指示灯、按键、适配器，1.5m Type-C线缆",
+      "remark": "一体化1m甩线",
+      "standardAccessories": [
+        {
+          "category": "电源",
+          "series": "电源适配器(圆头)",
+          "name": "ADS-25FSG-19 24024EPCN",
+          "code": "101702114",
+          "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1"
+        },
+        {
+          "category": "一体线",
+          "series": "1.5m普通U口",
+          "name": "USB3-AM转USB-CM,1.5m",
+          "code": "101523176",
+          "detail": "转接线-USB,USB3-AM转USB-CM,1.5m,黑"
+        }
+      ],
+      "optionalAccessories": [
+        {
+          "category": "一体线",
+          "series": "3m普通U口",
+          "name": "USB3-AM转USB-CM,3m",
+          "code": "101530003",
+          "detail": "转接线-USB,USB3-AM转USB-CM,3m,黑"
+        }
+      ]
     }
   ]
 };

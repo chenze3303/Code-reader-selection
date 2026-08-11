@@ -92,7 +92,7 @@ node scripts/gen_download_urls.js                  # → js/data/download_urls.j
 |------|------|
 | `js/data/product_db.js` | 选型产品数据库（`const PRODUCT_DB`） |
 | `js/data/mapping.js` | 产品表数据（`window.MAPPING_DATA`） |
-| `js/data/peidan.js` | 配单数据（`window.PEIDAN_DATA`，含 503 个型号） |
+| `js/data/peidan.js` | 配单数据（`window.PEIDAN_DATA`，含 707 个型号） |
 | `js/data/competitor.js` | 竞品对标模块（IIFE 内 `var competitorDB` + UI 逻辑） |
 | `js/data/status_codes.js` | 状态码数据（`var STATUS_CODES`，257 条，162 条含解决方法） |
 | `js/data/download_urls.js` | 各系列下载 URL（IIFE），**自动生成，勿手动编辑** |
