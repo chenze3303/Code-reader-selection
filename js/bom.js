@@ -673,6 +673,9 @@
         if (match) {
           dlUrl = window.MAPPING_DOWNLOAD_URLS.getBaseUrl(match.cat) || '';
         }
+        if (!dlUrl && window.MAPPING_DOWNLOAD_URLS.getSpecUrl) {
+          dlUrl = window.MAPPING_DOWNLOAD_URLS.getSpecUrl(modelName) || '';
+        }
       }
       if (dlUrl) {
         dlBtn.href = dlUrl;
