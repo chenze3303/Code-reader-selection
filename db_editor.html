@@ -131,6 +131,30 @@ header{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 100%);heig
 .tbl-del{width:24px;height:24px;border:none;border-radius:4px;background:transparent;color:var(--text-3);cursor:pointer;font-size:.8rem;display:flex;align-items:center;justify-content:center;transition:all .15s;margin:auto}
 .tbl-del:hover{background:var(--red-lt);color:var(--red)}
 
+/* ── Accessory image column ── */
+.acc-img-thumb{width:44px;height:44px;border-radius:6px;object-fit:contain;background:var(--surface);border:1px solid var(--border-lt);cursor:pointer;display:block;margin:auto}
+.acc-img-add{width:44px;height:44px;border-radius:6px;border:1.5px dashed var(--border);background:var(--surface);color:var(--text-3);font-size:.62rem;cursor:pointer;display:flex;align-items:center;justify-content:center;margin:auto;transition:all .15s}
+.acc-img-add:hover{border-color:var(--brand);color:var(--brand);background:var(--brand-lt)}
+.acc-img-clear{display:block;margin:2px auto 0;background:none;border:none;color:var(--text-3);font-size:.6rem;cursor:pointer;padding:1px 4px;border-radius:4px}
+.acc-img-clear:hover{color:var(--red);background:var(--red-lt)}
+.acc-img-ok{color:var(--green);font-size:.55rem;text-align:center;display:block;margin-top:2px}
+
+/* ── Image picker modal ── */
+.accimg-search{padding:.6rem .8rem;border-bottom:1px solid var(--border-lt);display:flex;gap:.4rem;align-items:center}
+.accimg-search input{flex:1;border:1.5px solid var(--border);border-radius:8px;padding:.35rem .7rem;font-size:.75rem;outline:none;background:var(--surface)}
+.accimg-search input:focus{border-color:var(--brand);background:#fff}
+.accimg-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:.5rem;padding:.8rem;max-height:52vh;overflow-y:auto}
+.accimg-item{display:flex;flex-direction:column;align-items:center;gap:.3rem;cursor:pointer;border:2px solid var(--border-lt);border-radius:8px;padding:.35rem;transition:all .15s;background:var(--card)}
+.accimg-item:hover{border-color:var(--brand);box-shadow:var(--shadow)}
+.accimg-item.selected{border-color:var(--brand);background:var(--brand-lt);box-shadow:0 0 0 2px rgba(247,101,4,0.15)}
+.accimg-item img{width:100%;height:70px;object-fit:contain;background:var(--surface);border-radius:4px}
+.accimg-item .fname{font-size:.55rem;color:var(--text-3);text-align:center;word-break:break-all;line-height:1.2;max-height:2.4em;overflow:hidden}
+.accimg-empty{grid-column:1/-1;text-align:center;color:var(--text-3);font-size:.75rem;padding:2rem 0}
+.accimg-foot{display:flex;gap:.5rem;justify-content:flex-end;padding:.7rem .8rem;border-top:1px solid var(--border-lt);align-items:center}
+.accimg-info{font-size:.7rem;color:var(--text-2);padding:.5rem .8rem;border-bottom:1px solid var(--border-lt);display:flex;align-items:center;gap:.4rem;flex-wrap:wrap}
+.accimg-info b{color:var(--text);font-weight:700}
+.accimg-key{font-size:.62rem;color:var(--text-3);background:var(--surface);border:1px solid var(--border-lt);padding:.15rem .4rem;border-radius:4px;font-family:monospace}
+
 /* ── Stats ── */
 .stats-bar{display:flex;gap:1rem;padding:.5rem 0;margin-bottom:1rem}
 .stat-item{display:flex;align-items:center;gap:.4rem;font-size:.72rem;color:var(--text-3)}
@@ -226,6 +250,7 @@ header{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 100%);heig
   <div class="hd-right">
     <button class="btn btn-ghost btn-sm" onclick="importFile()">📥 导入</button>
     <button class="btn btn-brand btn-sm" onclick="exportFile()">📤 导出</button>
+    <button class="btn btn-ghost btn-sm" onclick="exportAccImgs()" title="导出配件图映射 js/data/acc_imgs.js">🖼 导出配件图</button>
   </div>
 </header>
 
@@ -297,6 +322,25 @@ header{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 100%);heig
 </div>
 
 <input type="file" id="fileInput" accept=".js,.json" style="display:none" onchange="handleImport(event)">
+
+<!-- 配件图片选择弹窗 -->
+<div class="overlay" id="imgOverlay">
+  <div class="dialog" style="max-width:640px;width:94%">
+    <div class="dlg-title">🖼 选择配件图片</div>
+    <div class="accimg-info" id="imgInfo"></div>
+    <div class="accimg-search">
+      <input id="imgSearch" placeholder="搜索图片文件名..." oninput="renderImgGrid()">
+      <button class="btn btn-brand btn-sm" onclick="triggerImgUpload()">📤 本地上传</button>
+    </div>
+    <div class="accimg-grid" id="imgGrid"></div>
+    <div class="accimg-foot">
+      <span style="font-size:.62rem;color:var(--text-3);flex:1">点击图片应用到当前配件</span>
+      <button class="btn btn-outline btn-sm" onclick="clearAccImg()">🗑 清除图片</button>
+      <button class="btn btn-outline btn-sm" onclick="closeImgModal()">取消</button>
+    </div>
+  </div>
+</div>
+<input type="file" id="accImgFileInput" accept="image/*" style="display:none" onchange="handleImgUpload(event)">
 <div class="toast" id="toast"></div>
 
 <div class="shortcuts">
@@ -310,6 +354,7 @@ header{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 100%);heig
 <script src="js/data/mapping.js"></script>
 <script src="js/data/peidan.js"></script>
 <script src="js/data/status_codes.js"></script>
+<script src="js/data/acc_imgs.js"></script>
 
 <script>
 // ═══════════════════════════ STATE ═══════════════════════════
@@ -323,7 +368,9 @@ var state = {
   idx: null,
   dirty: {},       // which tabs have unsaved changes
   filter: null,    // current filter value
-  templateIdx: null // selected template index
+  templateIdx: null, // selected template index
+  accImgs: {},     // 配件图映射（归一化名称→webp 文件），从 ACC_IMGS 加载
+  imgCtx: null     // 当前图片选择上下文 {kind, i}
 };
 
 var CAT_OPTS = ['大类','一体线','IO线','网线','电源线','电源','安装','安装板','镜头','FA镜头','测试镜头','镜头罩','光源','微码光源','爆闪光源','灯板','外置配件','扩展配件','其他'];
@@ -340,6 +387,15 @@ function getProductSeries(){ return getUniqueValues(state.peidan, 'productSeries
 // ═══════════════════════════ UTILS ═══════════════════════════
 function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
 function clone(x){ return JSON.parse(JSON.stringify(x)); }
+
+// 配件名称长度归一化（与前端 bom.js getAccImg 保持一致）
+function accImgKey(name){
+  return String(name||'').replace(/([,_-])(\d+(?:\.\d+)?)m\b/g,'$1{LEN}m').replace(/([,_-])(\d+(?:\.\d+)?)米/g,'$1{LEN}米').replace(/(\d+(?:\.\d+)?)米/g,'{LEN}米');
+}
+function accImgFor(name){
+  if(!name || !state.accImgs) return '';
+  return state.accImgs[accImgKey(name)]||'';
+}
 
 var _toastTm;
 function toast(msg, type){
@@ -568,7 +624,12 @@ function accSection(kind, title, accs, tagColor){
   var badgeCls = tagColor==='blue'?'style="background:var(--blue-lt);color:var(--blue)"':'style="background:var(--brand-lt);color:var(--brand)"';
   var rows = accs.map(function(a,i){
     var catOpts = CAT_OPTS.map(function(c){return '<option'+(c===a.category?' selected':'')+'>'+c+'</option>';}).join('');
+    var img = accImgFor(a.name);
+    var imgCell = img
+      ? '<img src="assets/accessories/webp/'+esc(img)+'" class="acc-img-thumb" onclick="openImgModal(\''+kind+'\','+i+')" title="点击更换图片"><button class="acc-img-clear" onclick="clearAccImgDirect(\''+kind+'\','+i+')" title="清除图片">✕</button>'
+      : '<button class="acc-img-add" onclick="openImgModal(\''+kind+'\','+i+')" title="添加图片">＋ 图</button>';
     return '<tr>'+
+      '<td style="width:56px;text-align:center;vertical-align:middle">'+imgCell+'</td>'+
       '<td style="width:85px"><select onchange="updateAcc(\''+kind+'\','+i+',\'category\',this.value)">'+catOpts+'</select></td>'+
       '<td style="width:110px"><input value="'+esc(a.series||'')+'" placeholder="系列" oninput="updateAcc(\''+kind+'\','+i+',\'series\',this.value)"></td>'+
       '<td style="width:140px"><input value="'+esc(a.name)+'" placeholder="名称" oninput="updateAcc(\''+kind+'\','+i+',\'name\',this.value)"></td>'+
@@ -583,9 +644,9 @@ function accSection(kind, title, accs, tagColor){
       '<button class="btn btn-xs btn-outline" onclick="addAcc(\''+kind+'\')">＋ 添加</button>'+
     '</div>'+
     '<table class="tbl"><thead><tr>'+
-      '<th style="width:100px">大类</th><th style="width:120px">系列</th><th style="width:160px">名称</th><th style="width:130px">物料代码</th><th>描述</th><th></th>'+
+      '<th style="width:64px">图片</th><th style="width:100px">大类</th><th style="width:120px">系列</th><th style="width:160px">名称</th><th style="width:130px">物料代码</th><th>描述</th><th></th>'+
     '</tr></thead><tbody id="acc_'+kind+'">'+
-      (rows||'<tr><td colspan="6" style="padding:1.2rem;text-align:center;color:var(--text-3)">暂无配件，点击上方「＋ 添加」</td></tr>')+
+      (rows||'<tr><td colspan="7" style="padding:1.2rem;text-align:center;color:var(--text-3)">暂无配件，点击上方「＋ 添加」</td></tr>')+
     '</tbody></table></div>';
 }
 
@@ -603,6 +664,184 @@ function delAcc(kind,i){
   var arr = kind==='std' ? state.peidan[state.idx].standardAccessories : state.peidan[state.idx].optionalAccessories;
   arr.splice(i,1);
   renderPeidan(state.peidan[state.idx]);
+}
+
+// ─── 配件图片 ───
+var _imgManifest = [];
+var _accImgsLoaded = false;
+
+function loadAccImgs(){
+  // 读取 ACC_IMGS（已在 script 标签加载）
+  if(window.ACC_IMGS){ state.accImgs = JSON.parse(JSON.stringify(window.ACC_IMGS)); }
+  _accImgsLoaded = true;
+  // 读取图片清单 manifest.json
+  fetch('assets/accessories/manifest.json').then(function(r){ return r.json(); })
+    .then(function(list){ _imgManifest = list||[]; })
+    .catch(function(){ _imgManifest = []; console.warn('manifest.json 不存在，先运行 scripts/acc_compress.js 生成'); });
+}
+
+function getAcc(kind,i){
+  var arr = kind==='std' ? state.peidan[state.idx].standardAccessories : state.peidan[state.idx].optionalAccessories;
+  return arr[i];
+}
+
+function openImgModal(kind,i){
+  state.imgCtx = {kind:kind, i:i};
+  var acc = getAcc(kind,i);
+  var cur = accImgFor(acc.name);
+  document.getElementById('imgInfo').innerHTML =
+    '<b>'+esc(acc.name||'（未命名）')+'</b>'+
+    (cur?' <span class="accimg-key">当前: '+esc(cur)+'</span>':' <span style="color:var(--text-3)">未配图</span>');
+  document.getElementById('imgSearch').value='';
+  renderImgGrid(cur);
+  document.getElementById('imgOverlay').classList.add('open');
+}
+
+function renderImgGrid(selected){
+  var kw=(document.getElementById('imgSearch').value||'').trim().toLowerCase();
+  var list = _imgManifest.filter(function(m){ return !kw || m.file.toLowerCase().indexOf(kw)!==-1; });
+  var html = list.map(function(m){
+    return '<div class="accimg-item'+(m.file===selected?' selected':'')+'" onclick="applyAccImg(\''+esc(m.file)+'\')" title="'+esc(m.file)+'">'+
+      '<img src="assets/accessories/webp/'+esc(m.file)+'" loading="lazy" onerror="this.parentNode.style.opacity=\'.3\'">'+
+      '<span class="fname">'+esc(m.file)+'</span></div>';
+  }).join('');
+  document.getElementById('imgGrid').innerHTML = html || '<div class="accimg-empty">无图片。请先运行 scripts/acc_compress.js 生成 manifest.json</div>';
+}
+
+function applyAccImg(file){
+  if(!state.imgCtx) return;
+  var acc = getAcc(state.imgCtx.kind, state.imgCtx.i);
+  if(!acc.name){ toast('⚠️ 请先填写配件名称再配图','error'); return; }
+  state.accImgs[accImgKey(acc.name)] = file;
+  toast('✅ 已为「'+acc.name+'」配图: '+file,'success');
+  closeImgModal();
+  renderPeidan(state.peidan[state.idx]);
+}
+
+function clearAccImg(){
+  if(!state.imgCtx) return;
+  var acc = getAcc(state.imgCtx.kind, state.imgCtx.i);
+  delete state.accImgs[accImgKey(acc.name)];
+  toast('已清除图片');
+  closeImgModal();
+  renderPeidan(state.peidan[state.idx]);
+}
+
+function clearAccImgDirect(kind,i){
+  state.imgCtx = {kind:kind, i:i};
+  clearAccImg();
+}
+
+function closeImgModal(){
+  document.getElementById('imgOverlay').classList.remove('open');
+  state.imgCtx = null;
+}
+
+function triggerImgUpload(){ document.getElementById('accImgFileInput').click(); }
+
+function handleImgUpload(e){
+  var file = e.target.files[0];
+  if(!file) return;
+  e.target.value='';
+  if(!state.imgCtx){ toast('请先选中一个配件行','error'); return; }
+  var acc = getAcc(state.imgCtx.kind, state.imgCtx.i);
+  if(!acc.name){ toast('⚠️ 请先填写配件名称再上传','error'); return; }
+  var key = accImgKey(acc.name);
+  var base = key.replace(/\{LEN\}m/g,'').replace(/[{}\s]/g,'').replace(/[,_-]+$/,'');
+  toast('⏳ 正在复制原图并压缩 webp...');
+  var fr = new FileReader();
+  fr.onload = function(ev){
+    var dataUrl = ev.target.result;
+    copyFileToAssets(file, dataUrl, base);
+  };
+  fr.readAsDataURL(file);
+}
+
+// 拷贝原图到 assets/accessories，并压缩 webp（前端 sharp 不可用，用 canvas + toDataURL 保守方案提示手动压缩）
+function copyFileToAssets(file, dataUrl, base){
+  var ext = (file.name.match(/\.(png|jpe?g)$/i)||[])[1]||'png';
+  var origName = base + '.' + ext;
+  var srcEl = new Image();
+  srcEl.onload = function(){
+    var c = document.createElement('canvas');
+    var scale = Math.min(1, 1200/Math.max(srcEl.width, srcEl.height));
+    c.width = Math.round(srcEl.width*scale);
+    c.height = Math.round(srcEl.height*scale);
+    c.getContext('2d').drawImage(srcEl,0,0,c.width,c.height);
+    var webpData = c.toDataURL('image/webp',0.82);
+    saveAccImageFiles(origName, base+'.webp', dataUrl, webpData);
+  };
+  srcEl.onerror = function(){ toast('图片解码失败','error'); };
+  srcEl.src = dataUrl;
+}
+
+// 通过导航器 API 请求保存到本地目录
+function saveAccImageFiles(origName, webpName, origData, webpData){
+  var b2b = function(dataUrl){
+    var parts = dataUrl.split(',');
+    var mime = parts[0].match(/:(.*?);/)[1];
+    var bin = atob(parts[1]);
+    var arr = new Uint8Array(bin.length);
+    for(var i=0;i<bin.length;i++) arr[i]=bin.charCodeAt(i);
+    return new Blob([arr],{type:mime});
+  };
+  var download = function(blob, name){
+    var a=document.createElement('a');
+    a.href=URL.createObjectURL(blob); a.download=name;
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(function(){ URL.revokeObjectURL(a.href); },1000);
+  };
+  if(window.showDirectoryPicker){
+    showDirectoryPicker().then(function(dir){
+      return Promise.all([
+        dir.getFileHandle(origName,{create:true}),
+        (async function(){ var wd; try{ wd=await dir.getDirectoryHandle('webp',{create:true}); }catch(e){ wd=dir; } return wd.getFileHandle(webpName,{create:true}); })()
+      ]).then(function(hs){
+        return Promise.all([
+          hs[0].createWritable().then(function(w){ return w.write(b2b(origData)).then(function(){ return w.close(); }); }),
+          hs[1].createWritable().then(function(w){ return w.write(b2b(webpData)).then(function(){ return w.close(); }); })
+        ]);
+      });
+    }).then(function(){
+      var acc = getAcc(state.imgCtx.kind, state.imgCtx.i);
+      state.accImgs[accImgKey(acc.name)] = webpName;
+      _imgManifest.push({file:webpName, size:0});
+      toast('✅ 已保存 '+origName+' 与 '+webpName+'，请点击图片应用到配件','success');
+      renderImgGrid(webpName);
+      renderPeidan(state.peidan[state.idx]);
+    }).catch(function(err){
+      toast('保存取消或失败，已改为下载原图与 webp','error');
+      download(b2b(origData), origName);
+      download(b2b(webpData), webpName);
+    });
+  } else {
+    toast('浏览器不支持目录保存，已下载文件，请放入 assets/accessories/','error');
+    download(b2b(origData), origName);
+    download(b2b(webpData), webpName);
+  }
+}
+
+// 导出 acc_imgs.js
+function exportAccImgs(){
+  var keys = Object.keys(state.accImgs||{}).sort();
+  var lines = keys.map(function(k){
+    return '  '+JSON.stringify(k)+': '+JSON.stringify(state.accImgs[k])+',';
+  }).join('\n');
+  var content = [
+    '// acc_imgs.js - 配件名称→配件图映射',
+    '// key 使用"长度归一化后的配件名称"，同一根线缆不同长度共用一张图',
+    '// 前端查找时会先对配件名称做长度归一化再查本表',
+    'window.ACC_IMGS = {',
+    lines,
+    '};'
+  ].join('\n');
+  var blob=new Blob([content],{type:'text/javascript;charset=utf-8'});
+  var a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download='acc_imgs.js';
+  a.click();
+  setTimeout(function(){ URL.revokeObjectURL(a.href); },1000);
+  toast('✅ 已导出 acc_imgs.js（'+keys.length+' 条映射）','success');
 }
 
 // ─── 对照表 ───
@@ -1065,6 +1304,7 @@ function exportFile(){
 document.addEventListener('keydown',function(e){
   if((e.ctrlKey||e.metaKey)&&e.key==='s'){ e.preventDefault(); if(state.idx!==null) saveItem(); }
   if(e.key==='Escape'){
+    if(document.getElementById('imgOverlay').classList.contains('open')){ closeImgModal(); return; }
     if(document.getElementById('templateOverlay').classList.contains('open')){
       closeTemplateModal();
     } else {
@@ -1113,6 +1353,7 @@ setTimeout(autoLoadData, 500);
 updateCounts();
 renderFilters();
 renderList();
+loadAccImgs();
 </script>
 </body>
 </html>

@@ -1214,6 +1214,28 @@ select:focus, input:focus {
 .bom-select:focus { outline: none; border-color: var(--brand-red); box-shadow: 0 0 0 3px rgba(247,101,4,0.1); }
 .bom-select:disabled { opacity: 0.4; cursor: not-allowed; background-color: var(--bg-panel); }
 
+/* 产品主图预览（配单明细表格内主机行的图片列） */
+.bom-q-img {
+  padding: 0.35rem 0.4rem !important;
+  text-align: center;
+}
+.bom-q-img .bom-model-img {
+  width: 44px;
+  height: 44px;
+  max-width: none;
+  max-height: none;
+  border-radius: 8px;
+  object-fit: contain;
+  background: transparent;
+  cursor: zoom-in;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: inline-block;
+}
+.bom-q-img .bom-model-img:hover {
+  transform: scale(1.15);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+}
+
 /* 快速搜索 */
 .bom-search-wrap { position: relative; }
 .bom-search-input {
@@ -1426,19 +1448,19 @@ select:focus, input:focus {
 }
 .bom-q-table th:nth-child(4),
 .bom-q-table td:nth-child(4) {
+  width: 56px;
+  text-align: center;
+}
+.bom-q-table th:nth-child(5),
+.bom-q-table td:nth-child(5) {
   width: auto;
   text-align: center;
   word-break: break-word;
   white-space: normal;
 }
-.bom-q-table th:nth-child(5),
-.bom-q-table td:nth-child(5) {
-  width: 96px;
-  text-align: center;
-}
 .bom-q-table th:nth-child(6),
 .bom-q-table td:nth-child(6) {
-  width: 36px;
+  width: 96px;
   text-align: center;
 }
 
@@ -1708,6 +1730,29 @@ select:focus, input:focus {
 .acc-modal-item.checked .acc-modal-check {
   background: var(--brand-red);
   border-color: var(--brand-red);
+}
+
+.acc-modal-img {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.acc-modal-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  cursor: zoom-in;
+  transition: transform 0.2s ease;
+}
+.acc-modal-img img:hover {
+  transform: scale(1.1);
 }
 
 .acc-modal-info { flex: 1; min-width: 0; }
@@ -2263,11 +2308,11 @@ select:focus, input:focus {
   .bom-q-table th:nth-child(3),
   .bom-q-table td:nth-child(3) { width: 130px; }
   .bom-q-table th:nth-child(4),
-  .bom-q-table td:nth-child(4) { width: 200px; }
+  .bom-q-table td:nth-child(4) { width: 56px; }
   .bom-q-table th:nth-child(5),
-  .bom-q-table td:nth-child(5) { width: 80px; }
+  .bom-q-table td:nth-child(5) { width: 200px; }
   .bom-q-table th:nth-child(6),
-  .bom-q-table td:nth-child(6) { width: 32px; }
+  .bom-q-table td:nth-child(6) { width: 80px; }
 
   .bom-q-type-badge {
     font-size: 0.5rem;

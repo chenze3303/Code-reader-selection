@@ -9,7 +9,7 @@
   <!-- 预连接到可能的外部资源 -->
   <link rel="dns-prefetch" href="https://www.v-club.com">
   <!-- CSS 同步加载（避免弹窗闪烁） -->
-  <link rel="stylesheet" href="css/style.min.css?v=36">
+  <link rel="stylesheet" href="css/style.min.css?v=41">
   <style>
     .bom-reverse-info{background:var(--warning-bg,#fffbeb);border:1px solid var(--warning-border,#fde68a);border-radius:6px;padding:10px;margin-top:8px}
     .bom-reverse-name{font-size:13px;font-weight:700;color:var(--text,#1e293b);margin-bottom:4px}
@@ -25,7 +25,7 @@
   <link rel="preload" href="js/data/mapping.min.js" as="script">
   <link rel="preload" href="js/data/status_codes.min.js" as="script">
   <!-- 预加载关键模块 -->
-  <link rel="preload" href="js/app.min.js?v=47" as="script">
+  <link rel="preload" href="js/app.min.js?v=48" as="script">
 </head>
 <body>
 <div class="app-window">
@@ -702,12 +702,13 @@
                   <th style="width:28px;text-align:center" data-i18n="bomThIdx">#</th>
                   <th style="width:88px;text-align:center" data-i18n="bomThType">类型</th>
                   <th style="min-width:120px;text-align:center" data-i18n="bomThName">物料名称</th>
+                  <th style="width:56px;text-align:center" data-i18n="bomThImg">主图</th>
                   <th style="text-align:center" data-i18n="bomThDesc">描述</th>
                   <th style="width:96px;text-align:center" data-i18n="bomThCode">物料代码</th>
                 </tr>
               </thead>
               <tbody id="bomQBody">
-                <tr><td colspan="7" class="bom-q-empty" data-i18n="bomEmpty">请选择型号，配单将自动生成</td></tr>
+                <tr><td colspan="6" class="bom-q-empty" data-i18n="bomEmpty">请选择型号，配单将自动生成</td></tr>
               </tbody>
             </table>
           </div>
@@ -1853,6 +1854,12 @@ nRet = device.<span class="fn">MV_CODEREADER_OpenDevice_NET</span>();</code></pr
     <div class="contact-lightbox-hint" data-i18n="lightboxCloseHint">点击任意位置关闭</div>
   </div>
 
+  <!-- 产品主图放大 Lightbox -->
+  <div class="contact-lightbox-overlay" id="modelLightbox">
+    <img src="" alt="产品图" data-i18n-alt="previewAlt" id="modelLightboxImg">
+    <div class="contact-lightbox-hint" data-i18n="lightboxCloseHint">点击任意位置关闭</div>
+  </div>
+
   <!-- ===== 脚本加载（数据优先，模块在后，使用 defer 优化） ===== -->
   <!-- peidan.min.js 和 three.min.js 改为按需动态加载，减少首屏体积 -->
   <script src="js/data/product_db.min.js" defer></script>
@@ -1860,8 +1867,10 @@ nRet = device.<span class="fn">MV_CODEREADER_OpenDevice_NET</span>();</code></pr
   <script src="js/data/mapping.min.js" defer></script>
   <script src="js/data/download_urls.min.js" defer></script>
   <script src="js/data/announcement.min.js" defer></script>
-  <script src="js/app.min.js?v=47" defer></script>
-  <script src="js/bom.min.js?v=23" defer></script>
+  <script src="js/data/product_imgs.js" defer></script>
+  <script src="js/data/acc_imgs.js" defer></script>
+  <script src="js/app.min.js?v=48" defer></script>
+  <script src="js/bom.min.js?v=26" defer></script>
   <script src="js/mapping_module.min.js?v=19" defer></script>
   <script src="js/data/status_codes.min.js" defer></script>
   <script src="js/statuscode_module.min.js?v=19" defer></script>

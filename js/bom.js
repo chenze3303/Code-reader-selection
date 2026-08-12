@@ -337,6 +337,16 @@
     return { lengths: lengths, textures: textures };
   }
 
+  // 配件图片查找：长度归一化后查 ACC_IMGS
+  function getAccImg(name) {
+    if (!name || !window.ACC_IMGS) return '';
+    var n = name
+      .replace(/([,_-])(\d+(?:\.\d+)?)m\b/g, '$1{LEN}m')
+      .replace(/([,_-])(\d+(?:\.\d+)?)米/g, '$1{LEN}米')
+      .replace(/(\d+(?:\.\d+)?)米/g, '{LEN}米');
+    return window.ACC_IMGS[n] || '';
+  }
+
   // 渲染弹窗配件列表（支持筛选）
   function renderAccModalList(listEl, items, filterLen, filterTex, catName) {
     var html = '';
@@ -355,8 +365,10 @@
 
     filtered.forEach(function(a) {
       var checked = !!selState.accCodes[a._key];
+      var img = getAccImg(a.name);
       html += '<div class="acc-modal-item' + (checked ? ' checked' : '') + '" data-key="' + esc(a._key) + '">' +
         '<div class="acc-modal-check">' + (checked ? '✓' : '') + '</div>' +
+        (img ? '<div class="acc-modal-img"><img src="assets/accessories/webp/' + esc(img) + '" alt="" loading="lazy" data-lightbox-src="assets/accessories/webp/' + esc(img) + '"></div>' : '') +
         '<div class="acc-modal-info">' +
           '<div class="acc-modal-name">' + esc(a.name) + '</div>' +
           '<div class="acc-modal-code">' + esc(a.code) + '</div>' +
@@ -524,6 +536,17 @@
     }
 
     modal.classList.add('active');
+    // 配件图片点击放大预览
+    listEl.querySelectorAll('.acc-modal-img img').forEach(function(imgEl) {
+      imgEl.addEventListener('click', function(e) {
+        e.stopPropagation();
+        var lb = document.getElementById('modelLightbox');
+        var lbImg = document.getElementById('modelLightboxImg');
+        if (!lb || !lbImg) return;
+        lbImg.src = imgEl.getAttribute('data-lightbox-src') || imgEl.src;
+        lb.classList.add('active');
+      });
+    });
   }
 
   function initAccModal() {
@@ -639,9 +662,16 @@
     if (!bomList.length) {
       tbody.innerHTML = 
         '<tr>' +
-          '<td colspan="5" class="bom-q-empty" style="text-align:center; padding:2.5rem 1rem; color:var(--text-muted);">' + _t('bomEmpty') + '</td>' +
+          '<td colspan="6" class="bom-q-empty" style="text-align:center; padding:2.5rem 1rem; color:var(--text-muted);">' + _t('bomEmpty') + '</td>' +
         '</tr>';
       return;
+    }
+
+    // 主机型号图片（仅主机行展示，点击可放大）
+    var hostImgName = '';
+    var hostRow = bomList.find(function(r) { return r.type === '主机'; });
+    if (hostRow && hostRow.n && window.PRODUCT_IMGS) {
+      hostImgName = window.PRODUCT_IMGS[hostRow.n] || '';
     }
 
     tbody.innerHTML = bomList.map(function(row, i) {
@@ -652,11 +682,31 @@
       var codeDisplay = row.c || '—';
       var descText = row.d || '';
       if (row.type === '主机' && row.remark) descText += ' (' + row.remark + ')';
+
+      // 图片列：主机行显示产品图，配件行显示配件图
+      var imgCell = '';
+      if (row.type === '主机' && hostImgName) {
+        imgCell = '<td class="bom-q-img" style="text-align:center;">' +
+          '<img class="bom-model-img" src="assets/products/webp/' + esc(hostImgName) + '" alt="' + esc(row.n || '') + '" data-lightbox-src="assets/products/webp/' + esc(hostImgName) + '">' +
+        '</td>';
+      } else if (row.type === '配件') {
+        var accImgName = getAccImg(row.n);
+        if (accImgName) {
+          imgCell = '<td class="bom-q-img" style="text-align:center;">' +
+            '<img class="bom-model-img" src="assets/accessories/webp/' + esc(accImgName) + '" alt="' + esc(row.n || '') + '" data-lightbox-src="assets/accessories/webp/' + esc(accImgName) + '">' +
+          '</td>';
+        } else {
+          imgCell = '<td class="bom-q-img" style="text-align:center;"></td>';
+        }
+      } else {
+        imgCell = '<td class="bom-q-img" style="text-align:center;"></td>';
+      }
       
       return '<tr data-i="' + i + '" class="' + rowBg + '">' +
         '<td class="bom-q-idx" style="text-align:center;">' + (i + 1) + '</td>' +
         '<td style="text-align:center;"><span class="bom-q-type-badge' + typeClass + '">' + esc(typeLabel) + '</span></td>' +
         '<td class="bom-td-name" style="text-align:center;">' + esc(row.n || '') + '</td>' +
+        imgCell +
         '<td class="bom-q-desc" style="text-align:center;">' + esc(descText.slice(0, 80)) + '</td>' +
         '<td style="text-align:center;"><span class="bom-q-code">' + esc(codeDisplay) + '</span></td>' +
       '</tr>';
@@ -798,6 +848,23 @@
       return;
     }
 
+    // 产品主图 Lightbox（事件委托，兼容表格重渲染）
+    var modelLightbox = document.getElementById('modelLightbox');
+    var modelLightboxImg = document.getElementById('modelLightboxImg');
+    if (modelLightbox && modelLightboxImg) {
+      document.addEventListener('click', function(e) {
+        var imgEl = e.target.closest('.bom-model-img');
+        if (imgEl) {
+          var src = imgEl.getAttribute('data-lightbox-src') || imgEl.src;
+          modelLightboxImg.src = src;
+          modelLightbox.classList.add('active');
+        }
+      });
+      modelLightbox.addEventListener('click', function() {
+        modelLightbox.classList.remove('active');
+      });
+    }
+
     catSel.addEventListener('change', function() {
       selState.cat = this.value;
       selState.ser = '';
@@ -829,10 +896,12 @@
       selState.accCodes = {};
       bomList = [];
       save();
+      if (getCurrentModel()) {
+        autoGenerateBOM();
+      }
       renderTable();
       renderAccList();
       updateAddBtn();
-      if (selState.modelIdx !== null) setTimeout(autoGenerateBOM, 50);
     });
 
     var addBtn = document.getElementById('bomAddToListBtn');
