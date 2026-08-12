@@ -1,4 +1,4 @@
-# HIKROBOT 读码器选型工具 V3.10
+# HIKROBOT 读码器选型工具 V3.11
 
 海康机器人读码器（Code Reader）智能选型 / 竞品对标 / 配单生成 / 产品对照 / 状态码查询 / SDK 参考 / 资料下载工具🤖
 
@@ -12,7 +12,7 @@ https://chenze3303.github.io/Code-reader-selection/
 
 ```
 ├── index.html                      # 主页面：智能选型/多相机拼接/PPM/竞品/配单/产品/状态码/方案解决
-├── db_editor.html                  # 数据库编辑器（可视化编辑全部数据文件）
+├── db_editor.html                  # 数据库编辑器（可视化编辑全部数据文件，含配件图片管理）
 ├── sdk-guide.html                  # 独立 SDK 参考页面（C/C++ & C# 指南）
 ├── peidan.html                     # 独立配单表页面（自包含）
 ├── 海康读码器命名规则_副本.html      # 命名规则参考页面（独立静态文件）
@@ -24,13 +24,17 @@ https://chenze3303.github.io/Code-reader-selection/
 │   ├── code-type-desc-dark.png     # 码制类型说明图（暗黑模式）
 │   ├── contact-wechat.jpg          # 联系方式
 │   ├── contact-bilibili.jpg
-│   └── contact-douyin.jpg
+│   ├── contact-douyin.jpg
+│   ├── accessories/                # 配件图片（原图 PNG/JPG + manifest.json）
+│   │   └── webp/                   # 配件图片 webp 压缩版（供前端展示）
+│   └── products/                   # 产品型号图片（原图 PNG + webp 压缩版）
+│       └── webp/                   # 产品图片 webp 压缩版
 ├── css/
 │   ├── style.css                   # 全局样式（PC + 移动端响应式，含暗黑模式全面优化）
 │   └── style.min.css               # 压缩版样式
 ├── js/
 │   ├── app.js                      # 智能选型主逻辑：导航 + PPM/视野计算 + i18n + 拼接方案/3D
-│   ├── bom.js                      # 配单表：型号树、选配件弹窗、电源联动、快速搜索、导出 CSV
+│   ├── bom.js                      # 配单表：型号树、选配件弹窗、电源联动、快速搜索、导出 CSV、配件图片显示
 │   ├── mapping_module.js           # 产品表：搜索、筛选、分组折叠、资料下载、命名规则弹窗
 │   ├── statuscode_module.js        # 状态码查询：搜索、筛选、点击复制
 │   ├── three.min.js                # Three.js 3D 渲染（拼接方案示意图，按需加载）
@@ -40,6 +44,8 @@ https://chenze3303.github.io/Code-reader-selection/
 │       ├── peidan.js               # 配单数据（型号 + 标配/选配配件）
 │       ├── mapping.js              # 产品表数据（503 条基线 ↔ 经销对照）
 │       ├── status_codes.js         # 状态码数据（257 条，10 个分类，162 条含解决方法）
+│       ├── acc_imgs.js             # 配件图片映射（归一化名称 → webp 文件名，62 条）
+│       ├── product_imgs.js         # 产品型号图片映射（型号 → webp 文件名，459 条）
 │       ├── download_urls.js        # 各系列资料下载页面 URL（自动生成，勿手改）
 │       ├── cat_dist_map.js         # 系列 → 经销型号前缀映射
 │       └── announcement.js         # 公告弹窗内容
@@ -51,6 +57,8 @@ https://chenze3303.github.io/Code-reader-selection/
     ├── convert_product_data.js     # product_data.json → peidan.js
     ├── excel2js.js                 # Excel 转 JS 数据文件
     ├── js2excel.js                 # JS 数据文件转 Excel
+    ├── acc_compress.js             # 配件图片 webp 压缩 + manifest.json 生成
+    ├── hik_compress.js             # 海康产品图片压缩
     ├── scrape_base_downloads.js    # 抓取基线型号资料下载列表
     ├── scrape_dist_downloads.js    # 抓取经销型号资料下载列表
     ├── gen_download_urls.js        # 从下载数据生成 URL 映射文件
@@ -104,6 +112,7 @@ https://chenze3303.github.io/Code-reader-selection/
 
 - 选定型号后自动生成 BOM（主机 + 全部标配）
 - 选配配件按类别分组（线缆、电源、安装、光源等 16 类），点击弹窗勾选
+- 配件图片：配件弹窗和 BOM 表格自动显示配件缩略图（99 个配件、33 张图）
 - 支持导出 CSV、重置、删除单行
 - 数据自动持久化到 localStorage，刷新页面不丢失
 - **快速搜索**：支持按型号名称或物料代码搜索；搜索配件时显示其适配的产品系列标签，点击跳转选中该系列并自动把配件加入配单
@@ -159,20 +168,21 @@ https://chenze3303.github.io/Code-reader-selection/
 
 ## 数据库编辑器
 
-`db_editor.html` 是一个独立的可视化编辑工具，支持编辑全部四种数据。
+`db_editor.html` 是一个独立的可视化编辑工具，支持编辑全部五种数据。
 
 **打开方式**：双击直接打开，或在主页面 **连续点击左上角 logo 图标 3 次** 跳转。
 
 | 标签 | 编辑内容 | 导出格式 |
 |---|---|---|
-| 📋 配单数据 | 产品大类/系列/型号、标配/选配配件 | `peidan.js` |
+| 📋 配单数据 | 产品大类/系列/型号、标配/选配配件、**配件图片管理** | `peidan.js` + `acc_imgs.js` |
 | 🔄 产品表 | 系列分类、基线/经销型号及代码 | `mapping.js` |
 | 🔬 竞品对标 | 品牌、型号、友商特点、海康优势 | `competitor_data.js` |
 | ⚡ 选型产品库 | 分辨率、焦距、像素尺寸、工作距离 | `product_db.js` |
 
 功能：
 - **自动加载**：打开即自动读取 `js/data/` 下全部数据文件，无需手动导入
-- 导入 JS/JSON 文件、导出标准格式
+- **配件图片管理**：配单 tab 新增"图片"列，显示缩略图预览、图片选择弹窗（33 张 webp）、本地上传（自动压缩 webp）、清除图片
+- 导入 JS/JSON 文件、导出标准格式（含导出 `acc_imgs.js`）
 - 新建/复制/删除条目、搜索筛选
 - Ctrl+S 快捷保存
 - 左上角「← 返回」按钮回到主页面
@@ -193,7 +203,21 @@ https://chenze3303.github.io/Code-reader-selection/
 
 所有数据文件通过 `<script>` 标签以全局变量形式加载，直接用文本编辑器修改后刷新 `index.html` 即可生效（兼容 `file://` 本地打开）。
 
-### 方式三：自动抓取资料下载数据
+### 方式三：配件图片管理
+
+```bash
+# 压缩配件图片为 webp（quality 82）并生成 manifest.json
+node scripts/acc_compress.js
+```
+
+操作步骤：
+1. 将配件原图（PNG/JPG）放入 `assets/accessories/`
+2. 运行 `node scripts/acc_compress.js`，自动生成 `assets/accessories/webp/` 下的 webp 文件和 `manifest.json`
+3. 在 `db_editor.html` 的配单 tab 中通过图片选择弹窗应用到对应配件
+4. 或直接编辑 `js/data/acc_imgs.js` 添加映射条目
+5. 导出 acc_imgs.js 保存映射关系
+
+### 方式四：自动抓取资料下载数据
 
 `scripts/` 目录下提供三个自动化脚本，用于从海康官网批量抓取各系列的资料下载信息：
 
@@ -291,6 +315,35 @@ var competitorDB = [
 ];
 ```
 
+**配件图片映射** `js/data/acc_imgs.js`
+
+```js
+// key 使用"长度归一化后的配件名称"，同一根线缆不同长度共用一张图
+window.ACC_IMGS = {
+  "MV-IDA-P-M12A12pF-open-ST-{LEN}m": "MV-IDA-P-M12A12pF-open-ST-3m.webp",
+  "MV-IDA-P-M12A12pF-open-HF-{LEN}m": "MV-IDA-P-M12A12pF-open-ST-3m.webp",
+  "ID2000M隔离支架": "ID2000M隔离支架.webp",
+  "MV-IDA-C-Y-62-62-HP(国内中性)": "MV-IDA-C-Y-62-62-Y.webp"
+};
+```
+
+- key 为归一化名称（长度替换为 `{LEN}m`），前端 `getAccImg()` 会自动归一化查找
+- value 为 `assets/accessories/webp/` 下的 webp 文件名
+- 同一 key 共享一张图（不同颜色/材质的同型号配件共用）
+
+**产品型号图片映射** `js/data/product_imgs.js`
+
+```js
+window.PRODUCT_IMGS = {
+  "MV-ID2013EM-05-RBN(国内标配)V1.5": "20260728060115043.webp",
+  "MV-ID803M-03S-WBN(国内标配)": "20260811120020440.webp"
+};
+```
+
+- key 为完整产品型号名称
+- value 为 `assets/products/webp/` 下的 webp 文件名
+- 产品图片在配单表 BOM 显示时自动匹配
+
 **选型产品库** `js/data/product_db.js`
 
 ```js
@@ -368,6 +421,30 @@ node scripts/test-all.js
 ---
 
 ## 更新日志
+
+### V3.11 · 2026-08-12
+
+**配件图片系统**
+- 新增配件图片映射：99 个配件、33 张 webp 图，通过 `acc_imgs.js` 归一化名称映射
+- 配件弹窗（选配件）和 BOM 表格自动显示配件缩略图
+- 配件图片按长度归一化：同一型号不同长度（2m/3m/5m）共用一张图
+- 新增 `assets/accessories/` 目录：原图 PNG + webp 压缩版 + manifest.json
+
+**产品型号图片系统**
+- 新增产品型号图片映射：459 个型号、459 张 webp 缩略图，通过 `product_imgs.js` 映射
+- 产品图片在配单表 BOM 显示时自动匹配
+- 新增 `assets/products/` 目录：原图 PNG + webp 压缩版
+
+**数据库编辑器图片管理**
+- 配单 tab 新增"图片"列：显示配件缩略图预览
+- 图片选择弹窗：浏览全部 webp 图片，搜索过滤，点击即应用
+- 本地上传：浏览器端自动压缩 webp（canvas quality 0.82），支持 File System Access API 直接写入目录
+- 导出 acc_imgs.js：一键导出配件图片映射文件
+- ESC 快捷键关闭弹窗
+
+**新增脚本**
+- `scripts/acc_compress.js`：配件图片 webp 压缩（sharp quality 82）+ manifest.json 生成
+- `scripts/hik_compress.js`：海康产品图片压缩
 
 ### V3.10 · 2026-08-05
 

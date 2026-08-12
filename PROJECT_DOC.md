@@ -40,6 +40,13 @@
 
 三级联动选型：产品大类 → 产品系列 → 具体型号，自动生成 BOM。
 
+#### 配件图片显示
+
+- `getAccImg(name)` 函数：对配件名称做长度归一化后查找 `ACC_IMGS` 映射表
+- 归一化规则：`([,_-])(\d+(?:\.\d+)?)m\b` → `$1{LEN}m`（仅匹配小写 m+分隔符，避免误伤 `060M` 等型号）
+- 同一型号不同长度（2m/3m/5m）共用一张图（key 中 `{LEN}m` 为占位符）
+- 图片文件位于 `assets/accessories/webp/`，映射关系在 `js/data/acc_imgs.js`
+
 #### 数据结构
 
 ```javascript
@@ -161,6 +168,70 @@ PEIDAN_DATA = {
 - **代码块**：带复制按钮与语法高亮，注释随语言切换翻译
 - **全量双语**：约 160 个 i18n 词条，覆盖 TOC、横幅、路径卡片、章节标题、表格、代码注释
 - 独立完整版：`sdk-guide.html`（72KB 静态页，含全部章节与代码示例）
+
+### 11. 配件图片系统
+
+#### 数据结构
+
+`js/data/acc_imgs.js` — 配件名称→webp 文件名映射（归一化名称为 key）：
+
+```javascript
+window.ACC_IMGS = {
+  "MV-IDA-P-M12A12pF-open-ST-{LEN}m": "MV-IDA-P-M12A12pF-open-ST-3m.webp",
+  "MV-IDA-P-M12A12pF-open-HF-{LEN}m": "MV-IDA-P-M12A12pF-open-ST-3m.webp",
+  "ID2000M隔离支架": "ID2000M隔离支架.webp",
+  "MV-IDA-C-Y-62-62-HP(国内中性)": "MV-IDA-C-Y-62-62-Y.webp"
+};
+```
+
+- key 为归一化名称（长度替换为 `{LEN}m`），value 为 webp 文件名
+- 同一 key 共享一张图（不同颜色/材质的同型号配件共用）
+- 当前 62 条映射，覆盖 99 个配件、33 张图
+
+`js/data/product_imgs.js` — 产品型号→webp 文件名映射：
+
+```javascript
+window.PRODUCT_IMGS = {
+  "MV-ID2013EM-05-RBN(国内标配)V1.5": "20260728060115043.webp",
+  "MV-ID803M-03S-WBN(国内标配)": "20260811120020440.webp"
+};
+```
+
+- key 为完整产品型号名称，value 为 webp 文件名
+- 当前 459 条映射
+
+#### 图片文件管理
+
+- 原图：`assets/accessories/`（PNG/JPG）
+- webp 压缩版：`assets/accessories/webp/`（sharp quality 82）
+- 清单：`assets/accessories/manifest.json`（由 `scripts/acc_compress.js` 生成）
+- 压缩脚本：`node scripts/acc_compress.js`（扫描原图→压缩 webp→生成 manifest）
+
+#### 配件图片归一化算法
+
+```javascript
+function getAccImg(name) {
+  if (!name || !window.ACC_IMGS) return '';
+  var n = name
+    .replace(/([,_-])(\d+(?:\.\d+)?)m\b/g, '$1{LEN}m')     // 2m → {LEN}m
+    .replace(/([,_-])(\d+(?:\.\d+)?)米/g, '$1{LEN}米')      // 2米 → {LEN}米
+    .replace(/(\d+(?:\.\d+)?)米/g, '{LEN}米');               // 2米 → {LEN}米（无分隔符）
+  return window.ACC_IMGS[n] || '';
+}
+```
+
+- 仅匹配小写 m + 前置分隔符（`_-` 或 `,`），避免误伤 `060M` 等型号中的大写 M
+- db_editor.html 中有同名 `accImgKey()` 函数保持一致
+
+### 12. 数据库编辑器图片管理（db_editor.html）
+
+配单 tab 新增图片列，支持：
+- 缩略图预览（44×44，已配图）或"＋ 图"按钮（未配图）
+- 图片选择弹窗：浏览全部 webp 图片，搜索过滤，点击即应用
+- 本地上传：浏览器端 canvas 压缩 webp（quality 0.82），File System Access API 写入目录
+- 清除图片：行内 ✕ 按钮 + 弹窗内清除
+- 导出 acc_imgs.js：header 按钮，生成与现有格式一致的映射文件
+- ESC 快捷键关闭弹窗
 
 ---
 

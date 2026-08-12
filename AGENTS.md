@@ -2,7 +2,7 @@
 
 ## 项目概述
 
-海康机器人读码器选型工具 V3.10。纯前端，无需构建系统或服务器——浏览器直接打开 `index.html` 即可运行。
+海康机器人读码器选型工具 V3.11。纯前端，无需构建系统或服务器——浏览器直接打开 `index.html` 即可运行。
 
 ## 架构
 
@@ -10,7 +10,7 @@
 - **数据文件**（`js/data/*.js`）：通过 `<script>` 标签注入的全局变量，**不是 ES 模块**
 - **模块文件**（`js/*.js`）：各功能模块逻辑（app.js、bom.js、mapping_module.js、statuscode_module.js）
 - **Three.js**（`js/three.min.js`）：3D 拼接方案渲染，`defer` 加载
-- **数据库编辑器**：`db_editor.html` — 独立数据编辑工具。隐藏入口：主页面连续点击左上角 logo 3 次（600ms 内）
+- **数据库编辑器**：`db_editor.html` — 独立数据编辑工具，含配件图片管理（图片列/选择弹窗/上传/导出 acc_imgs.js）。隐藏入口：主页面连续点击左上角 logo 3 次（600ms 内）
 - **SDK 参考**：`sdk-guide.html` — 独立 SDK 参考页面
 - **独立配单页**：`peidan.html` — 独立的 ID 产品配单表页面（自包含，内联 CSS/JS）
 - **机器人浮动组件**：`index.html` 中 `.floating-robot-wrap`，纯 CSS 机器人吉祥物 + 15 秒气泡提示，点击跳转 v-club 智能助手
@@ -18,8 +18,10 @@
 ## 关键约定
 
 - 数据全局变量模式**不统一**，修改时需逐文件确认：
-  - `peidan.js` → `window.PEIDAN_DATA`（含 `modelList` 数组，每项含 `materialCode`、`description`、`remark`、`standardAccessories`、`optionalAccessories`）
-  - `mapping.js` → `window.MAPPING_DATA`
+   - `peidan.js` → `window.PEIDAN_DATA`（含 `modelList` 数组，每项含 `materialCode`、`description`、`remark`、`standardAccessories`、`optionalAccessories`）
+   - `acc_imgs.js` → `window.ACC_IMGS`（配件图片映射：归一化名称 → webp 文件名，62 条）
+   - `product_imgs.js` → `window.PRODUCT_IMGS`（产品型号图片映射：型号 → webp 文件名，459 条）
+   - `mapping.js` → `window.MAPPING_DATA`
   - `cat_dist_map.js` → `window.CAT_DIST_MAP`
   - `product_db.js` → `const PRODUCT_DB`（无 `window.`，但可通过 `typeof PRODUCT_DB` 检查）
   - `status_codes.js` → `var STATUS_CODES`（无 `window.`）
@@ -37,7 +39,7 @@
 
 浏览器加载的是 `.min.js` 文件（非源码 `.js`）。`defer` 保证按声明顺序执行：
 
-1. `product_db.min.js` / `competitor.min.js` / `mapping.min.js` / `download_urls.min.js` — 数据文件
+1. `product_db.min.js` / `competitor.min.js` / `mapping.min.js` / `download_urls.min.js` / `acc_imgs.js` / `product_imgs.js` — 数据文件
 2. `app.min.js` — 主模块（依赖上述数据）
 3. `bom.min.js` — 配单模块
 4. `mapping_module.min.js` — 产品表模块
@@ -61,6 +63,9 @@ node scripts/minify-js.js --check   # 仅验证已有 .min.js 的语法正确性
 # CSS 压缩（编辑 css/style.css 后运行）
 node scripts/minify-css.js
 
+# 配件图片压缩（原图放 assets/accessories/ 后运行）
+node scripts/acc_compress.js
+
 # 压力测试（115 项自动化测试）
 node scripts/test-stress.js
 
@@ -82,7 +87,8 @@ node scripts/gen_download_urls.js                  # → js/data/download_urls.j
 
 1. **推荐**：打开 `db_editor.html` → 编辑 → 导出 → 替换 `js/data/` 下的对应文件 → 运行 `node scripts/minify-js.js`
 2. **直接编辑**：修改 `js/data/` 下的 `.js` 文件 → 运行 `node scripts/minify-js.js` → 刷新 `index.html`
-3. **配单数据**：修改 `product_data.json` → 运行 `node scripts/convert_product_data.js` → 运行 `node scripts/minify-js.js`
+3. **配件图片**：原图放 `assets/accessories/` → 运行 `node scripts/acc_compress.js`（压缩 webp + 生成 manifest）→ 在 `db_editor.html` 配单 tab 中应用图片 → 导出 acc_imgs.js
+4. **配单数据**：修改 `product_data.json` → 运行 `node scripts/convert_product_data.js` → 运行 `node scripts/minify-js.js`
 
 注意：`db_editor.html` 导出竞品数据时文件名为 `competitor_data.js`，但实际数据文件是 `competitor.js`——导出后需手动重命名。
 
@@ -93,20 +99,24 @@ node scripts/gen_download_urls.js                  # → js/data/download_urls.j
 | `js/data/product_db.js` | 选型产品数据库（`const PRODUCT_DB`） |
 | `js/data/mapping.js` | 产品表数据（`window.MAPPING_DATA`） |
 | `js/data/peidan.js` | 配单数据（`window.PEIDAN_DATA`，含 707 个型号） |
+| `js/data/acc_imgs.js` | 配件图片映射（`window.ACC_IMGS`，62 条，归一化名称 → webp） |
+| `js/data/product_imgs.js` | 产品型号图片映射（`window.PRODUCT_IMGS`，459 条，型号 → webp） |
 | `js/data/competitor.js` | 竞品对标模块（IIFE 内 `var competitorDB` + UI 逻辑） |
 | `js/data/status_codes.js` | 状态码数据（`var STATUS_CODES`，257 条，162 条含解决方法） |
 | `js/data/download_urls.js` | 各系列下载 URL（IIFE），**自动生成，勿手动编辑** |
 | `js/data/cat_dist_map.js` | 系列→经销型号前缀映射（`window.CAT_DIST_MAP`） |
 | `product_data.json` | 配单原始数据源（24 列扁平格式，通过转换脚本生成 peidan.js） |
 | `js/app.js` | 智能选型主逻辑（PPM/视野计算、i18n、Toast、导航、PPM计算器、拼接方案含排序工具栏） |
-| `js/bom.js` | 配单表（型号树、选配件弹窗、电源联动、标配替换、CSV 导出、资料下载、快速搜索配件反查/系列标签跳转） |
+| `js/bom.js` | 配单表（型号树、选配件弹窗、电源联动、标配替换、CSV 导出、资料下载、快速搜索配件反查/系列标签跳转、配件图片显示） |
 | `js/mapping_module.js` | 产品表（搜索、筛选、分组、资料下载、命名规则弹窗） |
 | `js/statuscode_module.js` | 状态码查询（搜索、筛选、复制） |
 | `scripts/test-stress.js` | 压力测试脚本（115 项自动化测试） |
+| `scripts/acc_compress.js` | 配件图片 webp 压缩 + manifest.json 生成 |
 | `js/three.min.js` | Three.js 3D 渲染（拼接方案示意图） |
 | `css/style.css` | 全局样式（PC + 移动端响应式 + 暗黑模式） |
 | `index.html` 内 `.floating-robot-wrap` | 机器人浮动吉祥物组件（纯 CSS + 内联 JS 气泡） |
-| `assets/` | 图片资源（联系方式、码制说明图） |
+| `assets/accessories/` | 配件图片（原图 PNG/JPG + webp 压缩版 + manifest.json） |
+| `assets/products/` | 产品型号图片（原图 PNG + webp 压缩版） |
 | `exports/` | 导出的 Excel 数据文件 |
 | `sdk-guide.html` | 独立 SDK 参考完整文档页（72KB） |
 | `peidan.html` | 独立配单表页面（自包含，内联所有 CSS/JS） |
