@@ -266,8 +266,9 @@ table, td, th { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 }
 
 .contact-lightbox-overlay img {
-  max-width: 90vw;
-  max-height: 90vh;
+  width: 480px;
+  height: 480px;
+  object-fit: contain;
   border-radius: 12px;
   box-shadow: 0 8px 32px rgba(0,0,0,0.18);
   filter: none;
@@ -282,6 +283,13 @@ table, td, th { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
   font-size: 0.72rem;
   letter-spacing: 0.5px;
   pointer-events: none;
+}
+
+@media (max-width: 540px) {
+  .contact-lightbox-overlay img {
+    width: 90vw;
+    height: 90vw;
+  }
 }
 
 .contact-card-label {
