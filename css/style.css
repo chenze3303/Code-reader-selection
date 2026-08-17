@@ -5873,6 +5873,31 @@ select:focus, input:focus {
 .announcement-history-item .announcement-item-content {
   font-size: 0.82rem;
 }
+.announcement-doc {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 5px 12px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--brand-red);
+  background: rgba(247, 101, 4, 0.08);
+  border: 1px solid rgba(247, 101, 4, 0.25);
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+.announcement-doc:hover {
+  background: var(--brand-red);
+  color: #fff;
+}
+.dark .announcement-doc {
+  background: rgba(255, 122, 47, 0.12);
+  border-color: rgba(255, 122, 47, 0.35);
+}
+.dark .announcement-doc:hover {
+  background: var(--brand-red);
+  color: #fff;
+}
 .announcement-footer {
   padding: 0.75rem 1.25rem;
   border-top: 1px solid var(--border-light);

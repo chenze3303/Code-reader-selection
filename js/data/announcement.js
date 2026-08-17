@@ -1,5 +1,15 @@
 window.ANNOUNCEMENTS = [
   {
+    id: 8,
+    date: '2026-08-17',
+    title: '固定式读码器料号归一市场通知',
+    content: '基于 2026 年市场端策略调整，每个型号出货渠道唯一，避免型号冗余，仅保留一套命名规则。替换型号和历史型号命名规则不同，性能一致。为提供客户更优质的产品及服务，现对上述型号进行停产预告。',
+    file: {
+      name: '固定式读码器料号归一市场通知Product Change Notification.pdf',
+      url: 'assets/announcements/固定式读码器料号归一市场通知Product Change Notification.pdf'
+    }
+  },
+  {
     id: 7,
     date: '2026-08-11',
     title: '配单表内容更新',

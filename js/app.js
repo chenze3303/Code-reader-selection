@@ -2445,11 +2445,18 @@
     // 只填充一次数据
     if (!_announcementPopulated) {
       _announcementPopulated = true;
+      function announcementDocHtml(a) {
+        if (!a.file || !a.file.url) return '';
+        return '<a class="announcement-doc" href="' + a.file.url + '" target="_blank" rel="noopener">📄 ' +
+          (a.file.name || '查看文档') + '</a>';
+      }
+
       var latest = list[0];
       var latestEl = document.getElementById('announcementLatest');
       latestEl.innerHTML = '<div class="announcement-item-title">' + latest.title + '</div>' +
         '<div class="announcement-item-date">' + latest.date + '</div>' +
-        '<div class="announcement-item-content">' + latest.content + '</div>';
+        '<div class="announcement-item-content">' + latest.content + '</div>' +
+        announcementDocHtml(latest);
 
       var historyList = document.getElementById('announcementHistoryList');
       historyList.innerHTML = '';
@@ -2459,7 +2466,8 @@
         div.className = 'announcement-history-item';
         div.innerHTML = '<div class="announcement-item-title">' + a.title + '</div>' +
           '<div class="announcement-item-date">' + a.date + '</div>' +
-          '<div class="announcement-item-content">' + a.content + '</div>';
+          '<div class="announcement-item-content">' + a.content + '</div>' +
+          announcementDocHtml(a);
         historyList.appendChild(div);
       }
 
