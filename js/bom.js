@@ -707,7 +707,7 @@
         '<td style="text-align:center;"><span class="bom-q-type-badge' + typeClass + '">' + esc(typeLabel) + '</span></td>' +
         '<td class="bom-td-name" style="text-align:center;">' + esc(row.n || '') + '</td>' +
         imgCell +
-        '<td class="bom-q-desc" style="text-align:center;">' + esc(descText.slice(0, 80)) + '</td>' +
+        '<td class="bom-q-desc" style="text-align:center;">' + esc(descText) + '</td>' +
         '<td style="text-align:center;"><span class="bom-q-code">' + esc(codeDisplay) + '</span></td>' +
       '</tr>';
     }).join('');
