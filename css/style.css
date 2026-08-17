@@ -3451,17 +3451,9 @@ select:focus, input:focus {
   font-size: 1.5rem;
   line-height: 1;
 }
-.sol-icon-fw {
-  background: linear-gradient(135deg, #e8f5ec, #c8e6c9);
-  border: 1.5px solid #a5d6a7;
-}
 .sol-icon-v {
   background: linear-gradient(135deg, #e8eaf6, #c5cae9);
   border: 1.5px solid #9fa8da;
-}
-.sol-icon-hh {
-  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
-  border: 1.5px solid #90caf9;
 }
 .sol-icon-doc {
   background: linear-gradient(135deg, #fff3e0, #ffe0b2);
@@ -3620,8 +3612,6 @@ select:focus, input:focus {
 .dark .sol-card-desc { color: #8b949e; }
 .dark .sol-card-url { background: #1c2128; border-color: #30363d; color: #8b949e; }
 .dark .sol-card-arrow { color: #ff7a2f; }
-.dark .sol-icon-fw { background: linear-gradient(135deg, #0a2e1a, #143d24); border-color: #1a5c30; }
-.dark .sol-icon-hh { background: linear-gradient(135deg, #0a1e33, #132d4a); border-color: #1a4070; }
 .dark .sol-icon-doc { background: linear-gradient(135deg, #2a1a08, #3d2510); border-color: #5a3a18; }
 .dark .sol-icon-repair { background: linear-gradient(135deg, #2a0f18, #3d1520); border-color: #5a2030; }
 .dark .sol-icon-v { background: linear-gradient(135deg, #1a1a30, #252548); border-color: #3a3a60; }

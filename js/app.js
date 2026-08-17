@@ -116,8 +116,6 @@
       // Solutions page
       solTitle: '方案解决', solDesc: '固件下载与技术方案文档，点击卡片即可跳转',
       solVTitle: '小V智能助手', solVDesc: '在线智能问答，快速解决产品使用与选型问题',
-      solFwTitle: '读码器固件下载', solFwDesc: '包含各系列读码器最新固件版本，支持在线升级',
-      solHhTitle: '手持巴枪固件下载', solHhDesc: '手持式读码器专用固件，适用于移动扫码场景',
       solDocTitle: '方案解决文档', solDocDesc: '读码器应用方案、接线指南、调试教程等技术文档',
       solRepairTitle: '维修状态查询', solRepairDesc: '查询产品维修进度与售后状态',
       solHint: '💡 所有链接将在新标签页中打开',
@@ -416,8 +414,6 @@
       homeAct1: 'Start Selection', homeAct2: 'View Comparison', homeAct3: 'Generate BOM', homeAct4: 'View Mapping', homeAct5: 'Query Codes', homeActSdk: 'Learn SDK', homeAct6: 'View Solutions',
       solTitle: 'Solutions', solDesc: 'Firmware downloads and technical documentation — click a card to open',
       solVTitle: 'V Assistant', solVDesc: 'Online Q&A for product usage and selection questions',
-      solFwTitle: 'Code Reader Firmware', solFwDesc: 'Latest firmware for all code reader series, supports online upgrade',
-      solHhTitle: 'Handheld Reader Firmware', solHhDesc: 'Firmware for handheld code readers, ideal for mobile scanning',
       solDocTitle: 'Solution Documents', solDocDesc: 'Application guides, wiring diagrams, debugging tutorials and more',
       solRepairTitle: 'Repair Status', solRepairDesc: 'Check product repair progress and after-sales status',
       solHint: '💡 All links open in a new tab',
