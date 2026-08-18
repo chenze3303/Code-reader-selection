@@ -322,8 +322,11 @@
   function getCableTags(name, detail) {
     var text = (name || '') + ' ' + (detail || '');
     var lengths = [], textures = [];
+    // 先提取所有形如 Nm 的长度标记（如 3m/3.5m/15m），再做精确匹配，
+    // 避免子串误匹配（如 15m 中误识别出 5m、1.2m 中误识别出 2m）
+    var found = text.match(/(\d+(?:\.\d+)?)m(?!m)/g) || [];
     CABLE_LENGTHS.forEach(function(l) {
-      if (text.indexOf(l) !== -1) lengths.push(l);
+      if (found.indexOf(l) !== -1) lengths.push(l);
     });
     CABLE_TEXTURES.forEach(function(t) {
       if (text.indexOf(t) !== -1) textures.push(t);
