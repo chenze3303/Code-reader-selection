@@ -299,7 +299,7 @@
   }
 
   // ─── 选配配件 Modal ───
-  var CABLE_CATS = ['线缆', '电源线', '网线', '一体线', 'IO线'];
+  var CABLE_CATS = ['线缆', '电源线', '网线', '一体线', 'IO线', 'IO电源线'];
 
   // 各大类的提示信息，key 为 category 名称
   var CAT_WARNINGS = {
@@ -315,7 +315,7 @@
   var POWER_ADAPTER_SERIES = ['电源适配器', '电源适配器DC'];
   var POWER_SUPPLY_SERIES = ['开关电源1', '开关电源2'];
   var POWER_CABLE_SERIES = ['电源适配器线缆', '开关电源线缆'];
-  var CABLE_LENGTHS = ['2m', '3m', '3.5m', '5m', '7m', '10m', '15m','20m','30m'];
+  var CABLE_LENGTHS = ['1m', '2m', '3m', '3.5m', '5m', '7m', '10m', '15m','20m','30m'];
   var CABLE_TEXTURES = ['普通', '高柔', '超柔', '弯头'];
 
   // 从名称/描述中提取长度/材质标签（用于筛选）
