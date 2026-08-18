@@ -9,7 +9,7 @@
   <!-- 预连接到可能的外部资源 -->
   <link rel="dns-prefetch" href="https://www.v-club.com">
   <!-- CSS 同步加载（避免弹窗闪烁） -->
-  <link rel="stylesheet" href="css/style.min.css?v=41">
+  <link rel="stylesheet" href="css/style.min.css?v=42">
   <style>
     .bom-reverse-info{background:var(--warning-bg,#fffbeb);border:1px solid var(--warning-border,#fde68a);border-radius:6px;padding:10px;margin-top:8px}
     .bom-reverse-name{font-size:13px;font-weight:700;color:var(--text,#1e293b);margin-bottom:4px}
@@ -25,7 +25,7 @@
   <link rel="preload" href="js/data/mapping.min.js" as="script">
   <link rel="preload" href="js/data/status_codes.min.js" as="script">
   <!-- 预加载关键模块 -->
-  <link rel="preload" href="js/app.min.js?v=48" as="script">
+  <link rel="preload" href="js/app.min.js?v=51" as="script">
 </head>
 <body>
 <div class="app-window">
@@ -108,6 +108,9 @@
       <button class="nav-tab" data-page="page-statuscode" role="tab">
         <span class="nav-tab-icon">🔍</span><span data-i18n="tab5">状态码查询</span>
       </button>
+      <button class="nav-tab" data-page="page-pda" role="tab">
+        <span class="nav-tab-icon">📱</span><span data-i18n="tabPDA">PDA 选型</span>
+      </button>
       <button class="nav-tab" data-page="page-solutions" role="tab">
         <span class="nav-tab-icon">📦</span><span data-i18n="tab6">方案解决</span>
       </button>
@@ -132,7 +135,7 @@
               <div class="home-hero-eyebrow">HIKROBOT Code Reader Toolkit</div>
               <div class="home-hero-title" data-i18n="homeTitle">读码器工具箱</div>
               <div class="home-hero-desc" data-i18n="homeDesc">集成智能选型、竞品对标、配单生成、产品对照、状态码查询五大功能模块，一站式解决读码器选型与配置需求。</div>
-              <div class="home-hero-badge">V3.6</div>
+              <div class="home-hero-badge">V4.1</div>
             </div>
             <div class="home-hero-visual">
               <svg viewBox="0 0 200 140" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -243,11 +246,22 @@
                 <span class="home-card-link" data-i18n="homeAct5">查询状态码 <span class="home-card-link-arrow">→</span></span>
               </div>
             </button>
+            <button class="home-card" data-goto="page-pda">
+              <div class="home-card-top">
+                <div class="home-card-icon">📱</div>
+                <div class="home-card-title" data-i18n="tabPDA">PDA 选型</div>
+                <div class="home-card-num">07</div>
+              </div>
+              <div class="home-card-desc" data-i18n="homeDescPDA">IDP 系列智能移动终端 19 个型号的参数对比，支持按系列、防护等级、NFC 等条件筛选，快速锁定合适机型。</div>
+              <div class="home-card-footer">
+                <span class="home-card-link" data-i18n="homeActPDA">选择 PDA <span class="home-card-link-arrow">→</span></span>
+              </div>
+            </button>
             <button class="home-card" data-goto="page-solutions">
               <div class="home-card-top">
                 <div class="home-card-icon">📦</div>
                 <div class="home-card-title" data-i18n="tab6">方案解决</div>
-                <div class="home-card-num">07</div>
+                <div class="home-card-num">08</div>
               </div>
               <div class="home-card-desc" data-i18n="homeDesc6">固件下载、SDK 参考文档、技术方案等常用资源快速入口。</div>
               <div class="home-card-footer">
@@ -1483,6 +1497,32 @@ nRet = device.<span class="fn">MV_CODEREADER_OpenDevice_NET</span>();</code></pr
       </div> <!-- sdk-layout close -->
     </div>
 
+    <!-- PAGE: PDA 选型 -->
+    <div class="page" id="page-pda">
+      <div class="pda-page-wrap">
+        <div class="pda-page">
+
+          <!-- 筛选区 -->
+          <div class="pda-filter-bar" id="pdaFilterBar">
+          </div>
+
+          <!-- 型号统计 + 表格 -->
+          <div class="pda-table-wrap">
+            <div class="pda-table-toolbar">
+              <span class="pda-table-count" id="pdaTableCount"></span>
+            </div>
+            <div class="pda-table-scroll" id="pdaTableScroll">
+              <table class="pda-table" id="pdaTable">
+                <thead id="pdaTableHead"></thead>
+                <tbody id="pdaTableBody"></tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
     <!-- PAGE: 方案解决 -->
     <div class="page" id="page-solutions">
       <div class="sol-page-wrap">
@@ -1731,6 +1771,11 @@ nRet = device.<span class="fn">MV_CODEREADER_OpenDevice_NET</span>();</code></pr
         <span class="more-popup-label" data-i18n="tab5">状态码查询</span>
         <span class="more-popup-arrow">›</span>
       </button>
+      <button class="more-popup-item" data-page="page-pda">
+        <span class="more-popup-icon">📱</span>
+        <span class="more-popup-label" data-i18n="tabPDA">PDA 选型</span>
+        <span class="more-popup-arrow">›</span>
+      </button>
       <button class="more-popup-item" data-page="page-solutions">
         <span class="more-popup-icon">📦</span>
         <span class="more-popup-label" data-i18n="tab6">方案解决</span>
@@ -1841,7 +1886,8 @@ nRet = device.<span class="fn">MV_CODEREADER_OpenDevice_NET</span>();</code></pr
   <script src="js/data/announcement.min.js" defer></script>
   <script src="js/data/product_imgs.js" defer></script>
   <script src="js/data/acc_imgs.js" defer></script>
-  <script src="js/app.min.js?v=48" defer></script>
+  <script src="js/data/pda.js" defer></script>
+  <script src="js/app.min.js?v=51" defer></script>
   <script src="js/bom.min.js?v=26" defer></script>
   <script src="js/mapping_module.min.js?v=19" defer></script>
   <script src="js/data/status_codes.min.js" defer></script>

@@ -101,7 +101,7 @@
       title: 'HIKROBOT · 读码器工具箱',
       status: '计算结果仅供参考，建议实测验证',
       // Nav tabs
-      tab0: '首页', tab1: '智能选型', tabStitch: '多相机拼接', tab2: '竞品对标', tab3: '配单表', tab4: '产品表', tab5: '状态码查询', tab6: '方案解决', tabMore: '更多', moreTitle: '更多功能',
+      tab0: '首页', tab1: '智能选型', tabStitch: '多相机拼接', tab2: '竞品对标', tab3: '配单表', tab4: '产品表', tab5: '状态码查询', tab6: '方案解决', tabPDA: 'PDA 选型', tabMore: '更多', moreTitle: '更多功能',
       homeTitle: '读码器工具箱', homeDesc: '集成智能选型、竞品对标、配单生成、产品对照、状态码查询五大功能模块，一站式解决读码器选型与配置需求。', homeFeatures: '功能模块',
       homeDesc1: '输入码制类型、模块尺寸、工作距离，自动计算 PPM，从产品库中推荐最佳读码器型号。',
       homeDescStitch: '单相机视野不足时，自动计算多相机拼接方案，支持 3D 视野图和方案下载。',
@@ -111,8 +111,14 @@
       homeDesc4: '424 条基线 ↔ 经销型号物料代码对照，含资料下载按钮可直达海康官网下载页面。',
       homeDesc5: '257 条海康读码器 SDK 状态码定义，支持模糊搜索、分类筛选、点击复制。',
       homeDesc6: '固件下载、智能助手、技术文档等常用资源快速入口。',
+      homeDescPDA: 'IDP 系列智能移动终端 19 个型号的参数对比，支持按系列、防护等级、NFC 等条件筛选，快速锁定合适机型。',
       homeDescSdk: 'MvCodeReader SDK C/C# 编程学习指南，从环境搭建到完整示例。',
-      homeAct1: '开始选型', homeAct2: '查看对标', homeAct3: '生成配单', homeAct4: '查看对照', homeAct5: '查询状态码', homeActSdk: '学习开发', homeAct6: '查看方案',
+      homeAct1: '开始选型', homeAct2: '查看对标', homeAct3: '生成配单', homeAct4: '查看对照', homeAct5: '查询状态码', homeActSdk: '学习开发', homeAct6: '查看方案', homeActPDA: '选择 PDA',
+      // PDA page
+      pdaTitle: 'PDA 选型', pdaDesc: 'IDP 系列智能移动终端型号参数对比，支持多条件筛选，快速锁定合适机型。',
+      pdaSeries: '系列', pdaIp: '防护等级', pdaNfc: 'NFC', pdaOs: '操作系统', pdaScreen: '屏幕尺寸', pdaCpu: '处理器', pdaOcr: 'OCR', pdaBattery: '电池容量',
+      pdaAll: '全部', pdaSupported: '支持', pdaNotSupported: '不支持',
+      pdaModelCol: '型号', pdaCount: '共 {n} 款', pdaEmpty: '没有符合条件的型号', pdaMainCol: '主型号',
       // Solutions page
       solTitle: '方案解决', solDesc: '固件下载与技术方案文档，点击卡片即可跳转',
       solVTitle: '小V智能助手', solVDesc: '在线智能问答，快速解决产品使用与选型问题',
@@ -400,7 +406,7 @@
     en: {
       title: 'HIKROBOT · CodeReader Toolbox',
       status: 'Results are for reference only, please verify with actual tests',
-      tab0: 'Home', tab1: 'Selection', tabStitch: 'Stitching', tab2: 'Competitor', tab3: 'BOM', tab4: 'Product Table', tab5: 'Status Codes', tab6: 'Solutions', tabMore: 'More', moreTitle: 'More Features',
+      tab0: 'Home', tab1: 'Selection', tabStitch: 'Stitching', tab2: 'Competitor', tab3: 'BOM', tab4: 'Product Table', tab5: 'Status Codes', tab6: 'Solutions', tabPDA: 'PDA Selector', tabMore: 'More', moreTitle: 'More Features',
       homeTitle: 'Code Reader Toolkit', homeDesc: 'Integrated selection, competitor comparison, BOM generation, product mapping, and status code lookup — all in one place.', homeFeatures: 'Features',
       homeDesc1: 'Enter code type, module size, and working distance to auto-calculate PPM and recommend the best reader model.',
       homeDescStitch: 'When single camera FOV is insufficient, auto-calculate multi-camera stitching with 3D view and download.',
@@ -410,8 +416,14 @@
       homeDesc4: '424 baseline ↔ distribution model mappings with download buttons linking to Hikrobotics official site.',
       homeDesc5: '257 Hikrobotics SDK status code definitions with fuzzy search, category filter, and click-to-copy.',
       homeDesc6: 'Firmware download, smart assistant, technical docs and more resource links.',
+      homeDescPDA: 'Compare 19 IDP series smart mobile terminals by series, IP rating, NFC and more — find the right model fast.',
       homeDescSdk: 'MvCodeReader SDK C/C# programming guide, from setup to complete examples.',
-      homeAct1: 'Start Selection', homeAct2: 'View Comparison', homeAct3: 'Generate BOM', homeAct4: 'View Mapping', homeAct5: 'Query Codes', homeActSdk: 'Learn SDK', homeAct6: 'View Solutions',
+      homeAct1: 'Start Selection', homeAct2: 'View Comparison', homeAct3: 'Generate BOM', homeAct4: 'View Mapping', homeAct5: 'Query Codes', homeActSdk: 'Learn SDK', homeAct6: 'View Solutions', homeActPDA: 'Select PDA',
+      // PDA page
+      pdaTitle: 'PDA Selector', pdaDesc: 'Compare IDP series smart mobile terminals with multi-condition filtering to find the right model fast.',
+      pdaSeries: 'Series', pdaIp: 'IP Rating', pdaNfc: 'NFC', pdaOs: 'OS', pdaScreen: 'Screen', pdaCpu: 'CPU', pdaOcr: 'OCR', pdaBattery: 'Battery',
+      pdaAll: 'All', pdaSupported: 'Supported', pdaNotSupported: 'Not Supported',
+      pdaModelCol: 'Model', pdaCount: '{n} models', pdaEmpty: 'No matching models', pdaMainCol: 'Main Model',
       solTitle: 'Solutions', solDesc: 'Firmware downloads and technical documentation — click a card to open',
       solVTitle: 'V Assistant', solVDesc: 'Online Q&A for product usage and selection questions',
       solDocTitle: 'Solution Documents', solDocDesc: 'Application guides, wiring diagrams, debugging tutorials and more',
@@ -757,6 +769,12 @@
     if (window.BOM && window.BOM.rerender) window.BOM.rerender();
     if (window.MAPPING && window.MAPPING.rerender) window.MAPPING.rerender();
     if (window.COMPETITOR && window.COMPETITOR.reset) window.COMPETITOR.reset();
+
+    // 7. 重渲染 PDA 选型筛选栏（词条随语言切换）
+    if (_pdaInit) {
+      buildPdaFilters();
+      renderPdaTable();
+    }
   }
 
   function toggleLang() {
@@ -2428,9 +2446,176 @@
     initTheme();
     applyLang(currentLang);
     init();
+    initPda();
     initAnnouncement();
     // 空闲预加载：首页渲染完后后台静默下载大文件，用户无感知
     idlePreload();
+  }
+
+  // ─── PDA 选型 ───
+  var _pdaInit = false;
+  var _pdaFilters = {};
+
+  // 筛选维度配置：label=i18n key, get=从型号提取值(返回数组或字符串), match=判断是否匹配
+  var PDA_FILTERS = [
+    { key: 'series', label: 'pdaSeries', get: function(m) { return m.main; } },
+    { key: 'ip', label: 'pdaIp', get: function(m) { return pdaIpValue(m); } },
+    { key: 'nfc', label: 'pdaNfc', get: function(m) { return pdaNfcText(m); }, values: [['yes', 'pdaSupported'], ['no', 'pdaNotSupported']] },
+    { key: 'os', label: 'pdaOs', get: function(m) { return pdaOsValue(m); } },
+    { key: 'screen', label: 'pdaScreen', get: function(m) { return pdaScreenValue(m); } },
+    { key: 'cpu', label: 'pdaCpu', get: function(m) { return pdaCpuValue(m); } },
+    { key: 'ocr', label: 'pdaOcr', get: function(m) { return pdaOcrText(m); }, values: [['yes', 'pdaSupported'], ['no', 'pdaNotSupported']] },
+    { key: 'battery', label: 'pdaBattery', get: function(m) { return pdaBatteryValue(m); } }
+  ];
+
+  function initPda() {
+    if (_pdaInit) return;
+    _pdaInit = true;
+    var page = document.getElementById('page-pda');
+    if (!page) return;
+
+    buildPdaFilters();
+    bindPdaFilters();
+    renderPdaTable();
+  }
+
+  function buildPdaFilters() {
+    var bar = document.getElementById('pdaFilterBar');
+    if (!bar) return;
+    var html = '';
+    PDA_FILTERS.forEach(function(f) {
+      var vals = [];
+      var models = (window.PDA_DATA || {}).models || [];
+      models.forEach(function(m) {
+        var v = f.get(m);
+        if (!v) return;
+        if (Array.isArray(v)) v.forEach(function(x) { if (x && vals.indexOf(x) === -1) vals.push(x); });
+        else if (vals.indexOf(v) === -1) vals.push(v);
+      });
+      html += '<div class="pda-filter-item">';
+      html += '<label class="acc-filter-label">' + t(f.label) + '</label>';
+      html += '<select class="pda-filter-select" data-fkey="' + f.key + '">';
+      html += '<option value="">' + t('pdaAll') + '</option>';
+      if (f.values) {
+        f.values.forEach(function(pair) {
+          html += '<option value="' + pair[0] + '">' + t(pair[1]) + '</option>';
+        });
+      } else {
+        vals.forEach(function(v) {
+          html += '<option value="' + esc(v) + '">' + esc(v) + '</option>';
+        });
+      }
+      html += '</select>';
+      html += '</div>';
+    });
+    bar.innerHTML = html;
+  }
+
+  function bindPdaFilters() {
+    var bar = document.getElementById('pdaFilterBar');
+    if (!bar) return;
+    bar.addEventListener('change', function(e) {
+      var sel = e.target.closest('.pda-filter-select');
+      if (!sel || !sel.dataset.fkey) return;
+      _pdaFilters[sel.dataset.fkey] = sel.value;
+      renderPdaTable();
+    });
+  }
+
+  function pdaIpValue(m) {
+    var v = (m.params['IP防护等级'] || '').toUpperCase();
+    var mch = v.match(/IP\d+/);
+    return mch ? mch[0] : v;
+  }
+
+  function pdaNfcText(m) {
+    var v = m.params['工作频率'] || m.params['NFC/工作频率'] || '';
+    if (!v || v.indexOf('不支持') !== -1) return 'no';
+    return 'yes';
+  }
+
+  function pdaOsValue(m) {
+    var v = (m.params['操作系统'] || '').match(/Android\s*V?(\d+(?:\.\d+)?)/i);
+    return v ? 'Android ' + v[1] : (m.params['操作系统'] || '').trim();
+  }
+
+  function pdaScreenValue(m) {
+    var v = (m.params['显示屏'] || '').match(/(\d+(?:\.\d+)?)英寸/);
+    return v ? v[1] + '英寸' : '';
+  }
+
+  function pdaCpuValue(m) {
+    var v = (m.params['处理器'] || '').match(/(\d+\.\d+)\s*GHz/);
+    return v ? v[1] + 'GHz' : '';
+  }
+
+  function pdaOcrText(m) {
+    var v = (m.params['OCR'] || '').trim();
+    if (!v || v.indexOf('不支持') !== -1) return 'no';
+    return 'yes';
+  }
+
+  function pdaBatteryValue(m) {
+    var v = (m.params['电池'] || '').match(/(\d+)\s*mAh/);
+    return v ? v[1] + 'mAh' : '';
+  }
+
+  function pdaFilterMatch(m) {
+    for (var i = 0; i < PDA_FILTERS.length; i++) {
+      var f = PDA_FILTERS[i];
+      var val = _pdaFilters[f.key];
+      if (!val) continue;
+      var mv = f.get(m);
+      if (Array.isArray(mv)) {
+        if (mv.indexOf(val) === -1) return false;
+      } else if (mv !== val) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  function renderPdaTable() {
+    var data = window.PDA_DATA;
+    if (!data) return;
+    var list = data.models.filter(pdaFilterMatch);
+
+    var countEl = document.getElementById('pdaTableCount');
+    if (countEl) countEl.textContent = t('pdaCount', list.length);
+
+    var headEl = document.getElementById('pdaTableHead');
+    var bodyEl = document.getElementById('pdaTableBody');
+    if (!headEl || !bodyEl) return;
+
+    if (!list.length) {
+      headEl.innerHTML = '';
+      bodyEl.innerHTML = '<tr><td class="pda-empty">' + t('pdaEmpty') + '</td></tr>';
+      return;
+    }
+
+    // 表头：参数名 + 型号列
+    var headHtml = '<tr><th class="pda-th-param">' + t('pdaModelCol') + '</th>';
+    list.forEach(function(m) {
+      headHtml += '<th title="' + esc(m.sub) + '">' + esc(m.sub) + '</th>';
+    });
+    headHtml += '</tr>';
+    headEl.innerHTML = headHtml;
+
+    var rowsHtml = '';
+    data.paramOrder.forEach(function(p) {
+      rowsHtml += '<tr><td class="pda-td-param" title="' + esc(p) + '">' + esc(p) + '</td>';
+      list.forEach(function(m) {
+        rowsHtml += '<td title="' + esc(m.params[p] || '') + '">' + esc(m.params[p] || '-') + '</td>';
+      });
+      rowsHtml += '</tr>';
+    });
+    bodyEl.innerHTML = rowsHtml;
+
+    var scrollEl = document.getElementById('pdaTableScroll');
+    if (scrollEl) {
+      var total = 130 + list.length * 150;
+      scrollEl.classList.toggle('has-hscroll', total > scrollEl.clientWidth);
+    }
   }
 
   // ─── 公告弹窗 ───

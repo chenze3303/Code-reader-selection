@@ -3298,6 +3298,7 @@ select:focus, input:focus {
   .nav-tab[data-page="page-bom"],
   .nav-tab[data-page="page-mapping"],
   .nav-tab[data-page="page-statuscode"],
+  .nav-tab[data-page="page-pda"],
   .nav-tab[data-page="page-solutions"] {
     display: none !important;
   }
@@ -3360,6 +3361,192 @@ select:focus, input:focus {
   color: var(--text-muted);
   margin-top: 0.25rem;
 }
+
+/* ─── PDA 选型页 ─── */
+.pda-page-wrap {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  min-height: 0;
+  padding: 12px;
+  background: var(--bg-panel);
+}
+.pda-page {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+  min-height: 0;
+  background: var(--bg-card);
+  border-radius: 10px;
+  border: 1px solid var(--border-light);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  padding: 1.5rem 2rem;
+}
+.pda-filter-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--bg-panel);
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  max-height: 40%;
+  overflow-y: auto;
+}
+#pdaFilterBar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem 1.2rem;
+}
+#pdaFilterBar .pda-filter-item {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-width: 0;
+  height: 25px;
+  line-height: 25px;
+}
+#pdaFilterBar .acc-filter-label {
+  flex-shrink: 0;
+  width: 3.4rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  height: 25px;
+  box-sizing: border-box;
+  margin: 0;
+}
+#pdaFilterBar .pda-filter-select {
+  flex: 1;
+  min-width: 0;
+  padding: 0 7px;
+  font-size: 0.7rem;
+  line-height: 25px;
+  height: 25px;
+  border-radius: 5px;
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border: 1.5px solid var(--border);
+  cursor: pointer;
+  transition: border-color 0.15s;
+  box-sizing: border-box;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='5'%3E%3Cpath d='M0 0l4 5 4-5z' fill='%239ba3af'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 7px center;
+  padding-right: 20px;
+}
+#pdaFilterBar .pda-filter-select:hover {
+  border-color: var(--brand-red-mid);
+}
+.dark #pdaFilterBar .pda-filter-select {
+  background: #0d1117;
+  border-color: #30363d;
+}
+.pda-table-wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
+}
+.pda-table-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.pda-table-count {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+.pda-table-scroll {
+  flex: 1;
+  overflow: auto;
+  min-height: 0;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+}
+.pda-table-scroll.has-hscroll {
+  background-image: linear-gradient(to right, rgba(247,101,4,0.18) 0px, rgba(247,101,4,0) 14px);
+  background-attachment: local;
+}
+.pda-table-scroll::-webkit-scrollbar { width: 6px; height: 6px; }
+.pda-table-scroll::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+.pda-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.78rem;
+}
+.pda-table thead th:not(.pda-th-param),
+.pda-table td:not(.pda-td-param) {
+  min-width: 150px;
+}
+.pda-table thead th {
+  position: sticky;
+  top: 0;
+  background: var(--bg-panel);
+  color: var(--text-primary);
+  font-weight: 700;
+  padding: 0.6rem 0.5rem;
+  border-bottom: 2px solid var(--border-light);
+  text-align: center;
+  white-space: normal;
+  word-break: break-all;
+  z-index: 1;
+}
+.pda-table .pda-th-param {
+  text-align: left;
+  width: 130px;
+  min-width: 130px;
+  max-width: 130px;
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  background: var(--bg-panel);
+}
+.pda-table td {
+  padding: 0.5rem 0.5rem;
+  border-bottom: 1px solid var(--border-light);
+  vertical-align: top;
+  text-align: left;
+  word-break: break-word;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+.pda-table .pda-td-param {
+  font-weight: 700;
+  color: var(--text-primary);
+  white-space: normal;
+  position: sticky;
+  left: 0;
+  width: 130px;
+  min-width: 130px;
+  max-width: 130px;
+  background: var(--bg-card);
+  z-index: 1;
+}
+.pda-table tbody tr:hover td {
+  background: rgba(247, 101, 4, 0.04);
+}
+.pda-table .pda-empty {
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-muted);
+}
+.dark .pda-table thead th { background: #161b22; }
+.dark .pda-table .pda-th-param { background: #161b22; }
+.dark .pda-table .pda-td-param { background: #1c2128; }
+.dark .pda-table td { border-bottom-color: #21262d; color: #8b949e; }
+.dark .pda-table tbody tr:hover td { background: rgba(255,122,47,0.05); }
 
 /* 鍗＄墖瀹瑰櫒 */
 .sol-cards {
@@ -3533,6 +3720,12 @@ select:focus, input:focus {
 @media (max-width: 768px) {
   .sol-page-wrap { padding: 8px; }
   .sol-page { padding: 1.2rem 1rem; }
+  .pda-page-wrap { padding: 8px; }
+  .pda-page { padding: 1rem 0.8rem; }
+  .pda-filter-bar { padding: 0.6rem 0.7rem; }
+  .pda-table { font-size: 0.7rem; }
+  .pda-table thead th, .pda-table td { padding: 0.45rem 0.5rem; }
+  .pda-table .pda-th-param { min-width: 100px; }
   .sol-header { gap: 0.8rem; margin-bottom: 1.2rem; padding-bottom: 0.8rem; }
   .sol-header-icon { width: 40px; height: 40px; font-size: 1.2rem; border-radius: 10px; }
   .sol-header-title { font-size: 1rem; }
@@ -3601,6 +3794,10 @@ select:focus, input:focus {
 
 .dark .sol-page-wrap { background: #0d1117; }
 .dark .sol-page { background: #1c2128; border-color: #21262d; }
+.dark .pda-page-wrap { background: #0d1117; }
+.dark .pda-page { background: #1c2128; border-color: #21262d; }
+.dark .pda-filter-bar { background: #161b22; border-color: #21262d; }
+.dark .pda-table-scroll { border-color: #21262d; }
 .dark .sol-header { border-bottom-color: #ff7a2f; }
 .dark .sol-header-icon { background: #ff7a2f; box-shadow: 0 4px 12px rgba(255,122,47,0.3); }
 .dark .sol-header-title { color: #e6edf3; }

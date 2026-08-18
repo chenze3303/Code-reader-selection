@@ -145,7 +145,19 @@ PEIDAN_DATA = {
 
 固件下载、SDK 参考文档、STEP/DXF 在线查看器、技术方案等常用资源快速入口。
 
-### 9. 机器人智能助手 · 小V（浮动组件）
+### 9. PDA 选型（app.js → page-pda）
+
+IDP 系列智能移动终端型号参数对比，数据来自机器人 PDA 在售设备参数梳理 Excel。
+
+- **数据**：`js/data/pda.js` → `window.PDA_DATA`（`paramOrder` 39 项参数 + `models` 19 款型号，直接加载不压缩）
+- **变体继承**：Excel 稀疏表中变体型号（`/64G`、`/A/4&64`、`/5G`、`/07ER`、`/DP`）只记录差异参数，构建时自动继承同系列基准型号参数并覆盖差异项（`main` 字段归一化：去掉 `/机器人`、`/海康机器人` 后缀）
+- **筛选**：`PDA_FILTERS` 配置数组驱动，8 个维度（系列/防护等级/NFC/操作系统/屏幕尺寸/处理器/OCR/电池容量），`buildPdaFilters()` 动态生成下拉、`pdaFilterMatch()` 统一过滤、`renderPdaTable()` 渲染表头+39 行参数
+- **取值函数**：`pdaIpValue`（正则 `/IP\d+/`）、`pdaOsValue`（归一化 Android 版本）、`pdaScreenValue`（英寸）、`pdaCpuValue`（GHz）、`pdaOcrText`（不支持→no）、`pdaBatteryValue`（mAh）
+- **表格**：`table-layout: auto` + 型号列 `min-width:150px`，型号多时自动横向滚动（`#pdaTableScroll` 加 `has-hscroll` 类提示），型号少时填满视口；参数列 130px 固定 + `position: sticky` 冻结吸附
+- **布局**：页面仅含筛选栏 + 型号统计 + 表格；筛选栏 3 列 grid 下拉（label 3.4rem 固定宽、select 等宽 268px、`margin:0` 保证垂直居中）
+- **移动端**：`@media (max-width:768px)` 下顶栏隐藏 PDA tab，入口移入「更多」弹窗（`more-popup-item[data-page="page-pda"]`）；首页卡片保留
+
+### 10. 机器人智能助手 · 小V（浮动组件）
 
 右下角浮动的纯 CSS 机器人吉祥物，点击跳转海康机器视觉 v-club 智能助手。
 
@@ -159,7 +171,7 @@ PEIDAN_DATA = {
 
 相关 CSS 类：`.floating-robot-wrap`、`.floating-robot`、`.robot`、`.robot-antenna`、`.robot-head`、`.robot-face`、`.robot-eye`、`.robot-body`、`.robot-heart`、`.robot-label`、`.robot-bubble`、`.robot-bubble-text`
 
-### 10. SDK 参考（page-sdk）
+### 11. SDK 参考（page-sdk）
 
 页面内嵌的二次开发学习指南，提供 C / C# 两套语言的开发文档（MvCodeReader SDK v1.0）。
 
@@ -169,7 +181,7 @@ PEIDAN_DATA = {
 - **全量双语**：约 160 个 i18n 词条，覆盖 TOC、横幅、路径卡片、章节标题、表格、代码注释
 - 独立完整版：`sdk-guide.html`（72KB 静态页，含全部章节与代码示例）
 
-### 11. 配件图片系统
+### 12. 配件图片系统
 
 #### 数据结构
 
@@ -223,7 +235,7 @@ function getAccImg(name) {
 - 仅匹配小写 m + 前置分隔符（`_-` 或 `,`），避免误伤 `060M` 等型号中的大写 M
 - db_editor.html 中有同名 `accImgKey()` 函数保持一致
 
-### 12. 数据库编辑器图片管理（db_editor.html）
+### 13. 数据库编辑器图片管理（db_editor.html）
 
 配单 tab 新增图片列，支持：
 - 缩略图预览（44×44，已配图）或"＋ 图"按钮（未配图）
@@ -237,9 +249,9 @@ function getAccImg(name) {
 
 ## 导航结构
 
-桌面端显示全部 8 个导航项：首页、智能选型、多相机拼接、竞品对标、配单表、产品表、状态码查询、方案解决。
+桌面端显示全部 9 个导航项：首页、智能选型、多相机拼接、竞品对标、配单表、产品表、状态码查询、PDA 选型、方案解决。
 
-手机端只显示 3 个：首页、智能选型、更多（其余 6 个放入更多弹窗）。
+手机端只显示 3 个：首页、智能选型、更多（其余 7 个放入更多弹窗：多相机拼接、竞品对标、配单表、产品表、状态码查询、PDA 选型、方案解决）。
 
 多相机拼接复用选型页面，点击后自动展开拼接卡片并隐藏选型 UI。
 
@@ -354,7 +366,7 @@ node scripts/convert_product_data.js  # 修改 product_data.json 后
 - JS 中：`_t('key')` 或 `window._i18n.t('key')`，支持 `{n}` 占位符
 - 占位符：`data-i18n-ph="key"` 属性（placeholder）
 - 其他属性：`data-i18n-alt="key"`（alt）、`data-i18n-title="key"`（title）、`data-i18n-html="key"`（innerHTML，可含 HTML 标签）
-- 翻译文件：`js/app.js` 中的 `zh` 和 `en` 对象（zh 约 467 条 / en 约 471 条，两侧需对应）
+- 翻译文件：`js/app.js` 中的 `zh` 和 `en` 对象（zh 约 497 条 / en 约 507 条，两侧需对应）
 - 切换语言时 `applyLang()` 会重新渲染 BOM、产品表、竞品模块
 - 命名规则弹窗 `NAMING_DATA`（mapping_module.js）含 `title/html` 与 `titleEn/htmlEn` 双版本，渲染时按当前语言选择
 - 数据文件（`js/data/*`）与品牌名（思谋/华睿/视界/新大陆）保持不翻译

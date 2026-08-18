@@ -2,7 +2,7 @@
 
 ## 项目概述
 
-海康机器人读码器选型工具 V3.11。纯前端，无需构建系统或服务器——浏览器直接打开 `index.html` 即可运行。
+海康机器人读码器选型工具 V4.1。纯前端，无需构建系统或服务器——浏览器直接打开 `index.html` 即可运行。
 
 ## 架构
 
@@ -21,6 +21,7 @@
    - `peidan.js` → `window.PEIDAN_DATA`（含 `modelList` 数组，每项含 `materialCode`、`description`、`remark`、`standardAccessories`、`optionalAccessories`）
    - `acc_imgs.js` → `window.ACC_IMGS`（配件图片映射：归一化名称 → webp 文件名，62 条）
    - `product_imgs.js` → `window.PRODUCT_IMGS`（产品型号图片映射：型号 → webp 文件名，459 条）
+   - `pda.js` → `window.PDA_DATA`（PDA 选型数据：`paramOrder` 39 项参数顺序 + `models` 19 款型号，每项含 `sub/main/name/intro/features/apps/params`）
    - `mapping.js` → `window.MAPPING_DATA`
   - `cat_dist_map.js` → `window.CAT_DIST_MAP`
   - `product_db.js` → `const PRODUCT_DB`（无 `window.`，但可通过 `typeof PRODUCT_DB` 检查）
@@ -32,14 +33,14 @@
 - 暗黑模式：切换 `<html>` 元素的 `dark` class
 - 搜索归一化：去除 `MV-` 前缀，大小写不敏感
 - 样式规范：12px 外边距，10px 圆角卡片，38px 统一控件高度
-- CSS 版本通过 `index.html` 中的查询字符串控制（当前 `style.min.css?v=36`）
+- CSS 版本通过 `index.html` 中的查询字符串控制（当前 `style.min.css?v=42`）
 - 缓存破坏：编辑 JS/CSS 后需同步更新 `index.html` 中对应的 `?v=N` 参数（CSS/JS 与数据模块均带版本号）
 
 ## 脚本加载顺序
 
 浏览器加载的是 `.min.js` 文件（非源码 `.js`）。`defer` 保证按声明顺序执行：
 
-1. `product_db.min.js` / `competitor.min.js` / `mapping.min.js` / `download_urls.min.js` / `acc_imgs.js` / `product_imgs.js` — 数据文件
+1. `product_db.min.js` / `competitor.min.js` / `mapping.min.js` / `download_urls.min.js` / `acc_imgs.js` / `product_imgs.js` / `pda.js` — 数据文件
 2. `app.min.js` — 主模块（依赖上述数据）
 3. `bom.min.js` — 配单模块
 4. `mapping_module.min.js` — 产品表模块
@@ -101,12 +102,13 @@ node scripts/gen_download_urls.js                  # → js/data/download_urls.j
 | `js/data/peidan.js` | 配单数据（`window.PEIDAN_DATA`，含 707 个型号） |
 | `js/data/acc_imgs.js` | 配件图片映射（`window.ACC_IMGS`，62 条，归一化名称 → webp） |
 | `js/data/product_imgs.js` | 产品型号图片映射（`window.PRODUCT_IMGS`，459 条，型号 → webp） |
+| `js/data/pda.js` | PDA 选型数据（`window.PDA_DATA`，19 款 IDP 型号 × 39 项参数，未压缩直接加载） |
 | `js/data/competitor.js` | 竞品对标模块（IIFE 内 `var competitorDB` + UI 逻辑） |
 | `js/data/status_codes.js` | 状态码数据（`var STATUS_CODES`，257 条，162 条含解决方法） |
 | `js/data/download_urls.js` | 各系列下载 URL（IIFE），**自动生成，勿手动编辑** |
 | `js/data/cat_dist_map.js` | 系列→经销型号前缀映射（`window.CAT_DIST_MAP`） |
 | `product_data.json` | 配单原始数据源（24 列扁平格式，通过转换脚本生成 peidan.js） |
-| `js/app.js` | 智能选型主逻辑（PPM/视野计算、i18n、Toast、导航、PPM计算器、拼接方案含排序工具栏） |
+| `js/app.js` | 智能选型主逻辑（PPM/视野计算、i18n、Toast、导航、PPM计算器、拼接方案含排序工具栏、PDA 选型模块 PDA_FILTERS/initPda） |
 | `js/bom.js` | 配单表（型号树、选配件弹窗、电源联动、标配替换、CSV 导出、资料下载、快速搜索配件反查/系列标签跳转、配件图片显示） |
 | `js/mapping_module.js` | 产品表（搜索、筛选、分组、资料下载、命名规则弹窗） |
 | `js/statuscode_module.js` | 状态码查询（搜索、筛选、复制） |
