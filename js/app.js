@@ -40,10 +40,13 @@
     var isDark = document.documentElement.classList.contains('dark');
     localStorage.setItem('theme', isDark ? 'dark' : 'light');
     var icon = isDark ? '☀️' : '🌙';
+    var label = isDark ? '切换到亮色模式' : '切换到暗色模式';
     var btn = document.getElementById('themeBtn');
-    if (btn) btn.textContent = icon;
+    if (btn) { btn.textContent = icon; btn.setAttribute('aria-label', label); }
     var btnM = document.getElementById('themeBtnMobile');
-    if (btnM) btnM.textContent = icon;
+    if (btnM) { btnM.textContent = icon; btnM.setAttribute('aria-label', label); }
+    var meta = document.getElementById('themeColorMeta');
+    if (meta) meta.content = isDark ? '#0d1117' : '#f5f7fa';
     swapThemeImages(isDark);
 
     // 重新渲染拼接3D场景以适配主题
@@ -80,16 +83,32 @@
   }
   window.showToast = showToast;
 
+  // ─── 全局 Escape 关闭弹窗/弹层 ───
+  function closeOpenOverlays() {
+    var overlays = document.querySelectorAll('.contact-modal-overlay.active, .more-popup-overlay.active, .announcement-overlay.active, .stitch-plan-modal-overlay.active, .stitch-lightbox-overlay.active, .img-modal-overlay.active');
+    overlays.forEach(function(o) { o.classList.remove('active'); });
+    if (window._stitchLightbox) { try { window._stitchLightbox.hide(); } catch (e) {} }
+  }
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' || e.keyCode === 27) {
+      closeOpenOverlays();
+    }
+  });
+
   function initTheme() {
     var saved = localStorage.getItem('theme');
     var isDark = saved === 'dark';
+    var meta = document.getElementById('themeColorMeta');
     if (isDark) {
       document.documentElement.classList.add('dark');
       var icon = '☀️';
       var btn = document.getElementById('themeBtn');
-      if (btn) btn.textContent = icon;
+      if (btn) { btn.textContent = icon; btn.setAttribute('aria-label', '切换到亮色模式'); }
       var btnM = document.getElementById('themeBtnMobile');
-      if (btnM) btnM.textContent = icon;
+      if (btnM) { btnM.textContent = icon; btnM.setAttribute('aria-label', '切换到亮色模式'); }
+      if (meta) meta.content = '#0d1117';
+    } else if (meta) {
+      meta.content = '#f5f7fa';
     }
     swapThemeImages(isDark);
   }
@@ -99,6 +118,7 @@
     zh: {
       // Titlebar
       title: 'HIKROBOT · 读码器工具箱',
+      skipLink: '跳到主要内容',
       status: '计算结果仅供参考，建议实测验证',
       // Nav tabs
       tab0: '首页', tab1: '智能选型', tabStitch: '多相机拼接', tab2: '竞品对标', tab3: '配单表', tab4: '产品表', tab5: '状态码查询', tab6: '方案解决', tabPDA: 'PDA 选型', tabMore: '更多', moreTitle: '更多功能',
@@ -405,6 +425,7 @@
     },
     en: {
       title: 'HIKROBOT · CodeReader Toolbox',
+      skipLink: 'Skip to main content',
       status: 'Results are for reference only, please verify with actual tests',
       tab0: 'Home', tab1: 'Selection', tabStitch: 'Stitching', tab2: 'Competitor', tab3: 'BOM', tab4: 'Product Table', tab5: 'Status Codes', tab6: 'Solutions', tabPDA: 'PDA Selector', tabMore: 'More', moreTitle: 'More Features',
       homeTitle: 'Code Reader Toolkit', homeDesc: 'Integrated selection, competitor comparison, BOM generation, product mapping, and status code lookup — all in one place.', homeFeatures: 'Features',
@@ -759,8 +780,9 @@
     });
 
     // 4. Logo 区域（包含 SVG）
+    var logoText = t('title').replace('HIKROBOT', '<span translate="no">HIKROBOT</span>');
     document.querySelector('.logo-area h1').innerHTML = 
-      '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" style="flex-shrink:0"><rect x="2" y="2" width="9" height="9" rx="1" fill="#f76504"/><rect x="13" y="2" width="9" height="9" rx="1" fill="rgba(255,255,255,0.25)"/><rect x="2" y="13" width="9" height="9" rx="1" fill="rgba(255,255,255,0.25)"/><rect x="13" y="13" width="9" height="9" rx="1" fill="rgba(255,255,255,0.15)"/></svg> ' + t('title') + ' <span class="contact-link" id="contactLink" data-i18n="contactUs">' + t('contactUs') + '</span>';
+      '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" style="flex-shrink:0" aria-hidden="true"><rect x="2" y="2" width="9" height="9" rx="1" fill="#f76504"/><rect x="13" y="2" width="9" height="9" rx="1" fill="rgba(255,255,255,0.25)"/><rect x="2" y="13" width="9" height="9" rx="1" fill="rgba(255,255,255,0.25)"/><rect x="13" y="13" width="9" height="9" rx="1" fill="rgba(255,255,255,0.15)"/></svg> ' + logoText + ' <span class="contact-link" id="contactLink" data-i18n="contactUs">' + t('contactUs') + '</span>';
 
     // 5. 更新页面标题
     document.title = t('title');
@@ -1984,7 +2006,7 @@
     container.innerHTML = '';
 
     if (typeof THREE === 'undefined') {
-      container.innerHTML = '<div style="padding:40px;text-align:center;color:#888">Three.js loading, please wait...</div>';
+      container.innerHTML = '<div style="padding:40px;text-align:center;color:#888">Three.js loading, please wait…</div>';
       if (!container._3dLoading) {
         container._3dLoading = true;
         var s = document.createElement('script');

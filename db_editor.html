@@ -626,7 +626,7 @@ function accSection(kind, title, accs, tagColor){
     var catOpts = CAT_OPTS.map(function(c){return '<option'+(c===a.category?' selected':'')+'>'+c+'</option>';}).join('');
     var img = accImgFor(a.name);
     var imgCell = img
-      ? '<img src="assets/accessories/webp/'+esc(img)+'" class="acc-img-thumb" onclick="openImgModal(\''+kind+'\','+i+')" title="点击更换图片"><button class="acc-img-clear" onclick="clearAccImgDirect(\''+kind+'\','+i+')" title="清除图片">✕</button>'
+      ? '<img src="assets/accessories/webp/'+esc(img)+'" class="acc-img-thumb" alt="配件图片" onclick="openImgModal(\''+kind+'\','+i+')" title="点击更换图片"><button class="acc-img-clear" onclick="clearAccImgDirect(\''+kind+'\','+i+')" title="清除图片">✕</button>'
       : '<button class="acc-img-add" onclick="openImgModal(\''+kind+'\','+i+')" title="添加图片">＋ 图</button>';
     return '<tr>'+
       '<td style="width:56px;text-align:center;vertical-align:middle">'+imgCell+'</td>'+
@@ -702,7 +702,7 @@ function renderImgGrid(selected){
   var list = _imgManifest.filter(function(m){ return !kw || m.file.toLowerCase().indexOf(kw)!==-1; });
   var html = list.map(function(m){
     return '<div class="accimg-item'+(m.file===selected?' selected':'')+'" onclick="applyAccImg(\''+esc(m.file)+'\')" title="'+esc(m.file)+'">'+
-      '<img src="assets/accessories/webp/'+esc(m.file)+'" loading="lazy" onerror="this.parentNode.style.opacity=\'.3\'">'+
+      '<img src="assets/accessories/webp/'+esc(m.file)+'" alt="配件缩略图" loading="lazy" onerror="this.parentNode.style.opacity=\'.3\'">'+
       '<span class="fname">'+esc(m.file)+'</span></div>';
   }).join('');
   document.getElementById('imgGrid').innerHTML = html || '<div class="accimg-empty">无图片。请先运行 scripts/acc_compress.js 生成 manifest.json</div>';

@@ -455,6 +455,18 @@ node scripts/test-all.js
 - 删除方案解决中「读码器固件下载」「手持巴枪固件下载」两个卡片
 - lightbox 图片放大背景改白、固定 480×480 尺寸，移动端自适应
 
+**无障碍（Web 设计规范）修复**
+- 移除 `user-scalable=no` / `maximum-scale=1`（恢复缩放，符合 WCAG 1.4.4）
+- 新增 `<meta name="theme-color">`（随暗黑模式联动更新）
+- 全局 `:focus-visible` 焦点指示 + `prefers-reduced-motion` 减弱动画支持
+- 主题切换等图标按钮补 `aria-label`，装饰性 SVG 补 `aria-hidden`
+- `transition: all` 全部替换为具体属性列表（动画性能）
+- 弹窗/搜索框补 `overscroll-behavior`、控件补 `touch-action: manipulation`
+- 数据表格数字列 `tabular-nums`、表单输入框补 `name`/`autocomplete`
+- 新增 skip link（跳到主要内容）、Escape 键关闭全部弹窗
+- 品牌名 `HIKROBOT` 加 `translate="no"`，加载占位 `...` 改为 `…`
+- db_editor 动态图片补 `alt`
+
 ### V3.11 · 2026-08-12
 
 **配件图片系统**

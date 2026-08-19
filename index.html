@@ -2,14 +2,15 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="海康机器人读码器智能选型工具 - 竞品对标、配单生成、产品对照、状态码查询">
+  <meta name="theme-color" content="#f5f7fa" id="themeColorMeta">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title data-i18n="title">海康机器人 · 读码器工具箱</title>
   <!-- 预连接到可能的外部资源 -->
   <link rel="dns-prefetch" href="https://www.v-club.com">
   <!-- CSS 同步加载（避免弹窗闪烁） -->
-  <link rel="stylesheet" href="css/style.min.css?v=42">
+  <link rel="stylesheet" href="css/style.min.css?v=43">
   <style>
     .bom-reverse-info{background:var(--warning-bg,#fffbeb);border:1px solid var(--warning-border,#fde68a);border-radius:6px;padding:10px;margin-top:8px}
     .bom-reverse-name{font-size:13px;font-weight:700;color:var(--text,#1e293b);margin-bottom:4px}
@@ -25,28 +26,29 @@
   <link rel="preload" href="js/data/mapping.min.js" as="script">
   <link rel="preload" href="js/data/status_codes.min.js" as="script">
   <!-- 预加载关键模块 -->
-  <link rel="preload" href="js/app.min.js?v=51" as="script">
+  <link rel="preload" href="js/app.min.js?v=52" as="script">
 </head>
 <body>
+<a href="#page-home" class="skip-link" data-i18n="skipLink">跳到主要内容</a>
 <div class="app-window">
 
   <!-- TITLEBAR -->
   <div class="titlebar">
     <div class="logo-area">
       <h1>
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" style="flex-shrink:0">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" style="flex-shrink:0" aria-hidden="true">
           <rect x="2" y="2" width="9" height="9" rx="1" fill="#f76504"/>
           <rect x="13" y="2" width="9" height="9" rx="1" fill="rgba(255,255,255,0.25)"/>
           <rect x="2" y="13" width="9" height="9" rx="1" fill="rgba(255,255,255,0.25)"/>
           <rect x="13" y="13" width="9" height="9" rx="1" fill="rgba(255,255,255,0.15)"/>
         </svg>
-        HIKROBOT · 读码器工具箱
+        <span translate="no">HIKROBOT</span> · 读码器工具箱
         <span class="contact-link" id="contactLink" data-i18n="contactUs">联系我们</span>
       </h1>
     </div>
     <div class="titlebar-actions">
-      <button class="titlebar-btn" id="langBtnMobile" onclick="toggleLang()" data-i18n="langBtn">EN</button>
-      <button class="titlebar-btn" id="themeBtnMobile" onclick="toggleTheme()">🌙</button>
+      <button class="titlebar-btn" id="langBtnMobile" onclick="toggleLang()" data-i18n="langBtn" aria-label="切换语言">EN</button>
+      <button class="titlebar-btn" id="themeBtnMobile" onclick="toggleTheme()" aria-label="切换到暗色模式">🌙</button>
     </div>
     <div class="status-badge" data-i18n="status">计算结果仅供参考，建议实测验证</div>
   </div>
@@ -119,8 +121,8 @@
         <span class="nav-tab-icon">⋯</span><span data-i18n="tabMore">更多</span>
       </button>
       <div class="nav-footer">
-        <button class="nav-footer-btn" id="langBtn" onclick="toggleLang()" data-i18n="langBtn">EN</button>
-        <button class="nav-footer-btn" id="themeBtn" onclick="toggleTheme()">🌙</button>
+        <button class="nav-footer-btn" id="langBtn" onclick="toggleLang()" data-i18n="langBtn" aria-label="切换语言">EN</button>
+        <button class="nav-footer-btn" id="themeBtn" onclick="toggleTheme()" aria-label="切换到暗色模式">🌙</button>
       </div>
     </nav>
 
@@ -132,13 +134,13 @@
         <div class="home-hero">
           <div class="home-hero-inner">
             <div class="home-hero-text">
-              <div class="home-hero-eyebrow">HIKROBOT Code Reader Toolkit</div>
+              <div class="home-hero-eyebrow" translate="no">HIKROBOT Code Reader Toolkit</div>
               <div class="home-hero-title" data-i18n="homeTitle">读码器工具箱</div>
               <div class="home-hero-desc" data-i18n="homeDesc">集成智能选型、竞品对标、配单生成、产品对照、状态码查询五大功能模块，一站式解决读码器选型与配置需求。</div>
               <div class="home-hero-badge">V4.1</div>
             </div>
             <div class="home-hero-visual">
-              <svg viewBox="0 0 200 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg viewBox="0 0 200 140" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <!-- 读码器外壳 -->
                 <rect x="40" y="15" width="120" height="80" rx="8" stroke="#f76504" stroke-width="3" fill="rgba(247,101,4,0.04)"/>
                 <!-- 镜头 -->
@@ -304,7 +306,7 @@
                 <div>
                   <label data-i18n="moduleSize">模块尺寸 *</label>
                   <div class="input-row">
-                    <input type="number" id="moduleSize" value="" data-i18n-ph="placeholder" placeholder="请输入">
+                    <input name="moduleSize" type="number" id="moduleSize" value="" data-i18n-ph="placeholder" placeholder="请输入" autocomplete="off">
                     <select id="moduleUnit"><option value="mil">mil</option><option value="mm" selected>mm</option></select>
                   </div>
                 </div>
@@ -321,21 +323,21 @@
                 <div>
                   <label data-i18n="workDist">工作距离 *</label>
                   <div class="input-row">
-                    <input type="number" id="workingDistance" value="" data-i18n-ph="placeholder" placeholder="请输入">
+                    <input name="workingDistance" type="number" id="workingDistance" value="" data-i18n-ph="placeholder" placeholder="请输入" autocomplete="off">
                     <select id="distanceUnit"><option value="mm" selected>mm</option><option value="cm">cm</option></select>
                   </div>
                 </div>
                 <div>
                   <label data-i18n="fovW">期望视野宽度 *</label>
                   <div class="input-row">
-                    <input type="number" id="fovWidth" value="" data-i18n-ph="placeholder" placeholder="请输入">
+                    <input name="fovWidth" type="number" id="fovWidth" value="" data-i18n-ph="placeholder" placeholder="请输入" autocomplete="off">
                     <select id="fovUnit"><option value="mm" selected>mm</option><option value="cm">cm</option></select>
                   </div>
                 </div>
                 <div>
                   <label data-i18n="fovH">期望视野高度 *</label>
                   <div class="input-row">
-                    <input type="number" id="fovHeight" value="" data-i18n-ph="placeholder" placeholder="请输入">
+                    <input name="fovHeight" type="number" id="fovHeight" value="" data-i18n-ph="placeholder" placeholder="请输入" autocomplete="off">
                     <select id="fovHeightUnit"><option value="mm" selected>mm</option><option value="cm">cm</option></select>
                   </div>
                 </div>
@@ -355,7 +357,7 @@
               <div>
                 <label data-i18n="overlapMM">重叠区域 (mm)</label>
                 <div class="input-row">
-                  <input type="number" id="overlapMM" value="20" min="0" max="500" step="1">
+                  <input name="overlapMM" type="number" id="overlapMM" value="20" min="0" max="500" step="1" autocomplete="off">
                   <select id="overlapMMUnit"><option value="mm" selected>mm</option></select>
                 </div>
               </div>
@@ -470,7 +472,7 @@
               <div class="form-section">
                 <div class="form-section-title" data-i18n="verifyDist">📐 工作距离</div>
                 <div class="input-row">
-                  <input type="number" id="verifyWD" placeholder="工作距离" data-i18n-ph="verifyWDPh" style="flex:1;">
+                  <input name="verifyWD" type="number" id="verifyWD" placeholder="工作距离" data-i18n-ph="verifyWDPh" style="flex:1;" autocomplete="off">
                   <select id="verifyWDUnit"><option value="mm" selected>mm</option><option value="cm">cm</option></select>
                 </div>
                 <div id="verifyWDRange" style="margin-top:4px;font-size:11px;color:#888;"></div>
@@ -488,7 +490,7 @@
                 <div>
                   <label style="font-size:12px;color:#666;" data-i18n="moduleSize">模块尺寸 *</label>
                   <div class="input-row">
-                    <input type="number" id="verifyModuleSize" placeholder="模块尺寸" data-i18n-ph="verifyModuleSizePh">
+                    <input name="verifyModuleSize" type="number" id="verifyModuleSize" placeholder="模块尺寸" data-i18n-ph="verifyModuleSizePh" autocomplete="off">
                     <select id="verifyModuleUnit"><option value="mm" selected>mm</option><option value="mil">mil</option></select>
                   </div>
                 </div>
@@ -497,7 +499,7 @@
               <div class="form-section">
                 <div class="form-section-title" data-i18n="verifySpeedTitle">🏃 运动速度（选填）</div>
                 <div class="input-row">
-                  <input type="number" id="verifySpeed" placeholder="运动速度" data-i18n-ph="verifySpeedPh" style="flex:1;">
+                  <input name="verifySpeed" type="number" id="verifySpeed" placeholder="运动速度" data-i18n-ph="verifySpeedPh" style="flex:1;" autocomplete="off">
                   <select id="verifySpeedUnit"><option value="mm/s" selected>mm/s</option><option value="m/s">m/s</option><option value="cm/s">cm/s</option></select>
                 </div>
                 <div style="font-size:11px;color:#888;margin-top:2px;" data-i18n="verifySpeedHint">不填则不计算最大曝光时间</div>
@@ -1887,7 +1889,7 @@ nRet = device.<span class="fn">MV_CODEREADER_OpenDevice_NET</span>();</code></pr
   <script src="js/data/product_imgs.js" defer></script>
   <script src="js/data/acc_imgs.js" defer></script>
   <script src="js/data/pda.js" defer></script>
-  <script src="js/app.min.js?v=51" defer></script>
+  <script src="js/app.min.js?v=52" defer></script>
   <script src="js/bom.min.js?v=26" defer></script>
   <script src="js/mapping_module.min.js?v=19" defer></script>
   <script src="js/data/status_codes.min.js" defer></script>

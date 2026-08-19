@@ -843,7 +843,7 @@ select:focus, input:focus {
   font-size: 0.62rem;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.15s;
+  transition: background-color, border-color, color 0.15s;
 }
 .stitch-back-btn:hover {
   background: var(--bg-panel);
@@ -1255,7 +1255,7 @@ select:focus, input:focus {
   outline: none;
   background: var(--bg-panel);
   color: var(--text-main);
-  transition: all 0.2s;
+  transition: border-color, box-shadow 0.2s;
 }
 .bom-search-input:focus { border-color: var(--brand-red); box-shadow: 0 0 0 3px rgba(247,101,4,0.1); }
 .bom-search-input::placeholder { color: var(--text-muted); }
@@ -1297,7 +1297,7 @@ select:focus, input:focus {
   padding: 1px 6px;
   margin: 2px 2px 0 0;
   cursor: pointer;
-  transition: all 0.15s;
+  transition: background-color, border-color 0.15s;
 }
 .bom-search-ser b { color: var(--primary, #f97316); margin-left: 2px; }
 .bom-search-ser:hover { background: var(--brand-red-light, rgba(247,101,4,0.08)); border-color: var(--primary, #f97316); }
@@ -4646,7 +4646,7 @@ select:focus, input:focus {
   font-weight: 600;
   text-align: center;
   margin-bottom: 16px;
-  transition: all .2s;
+  transition: background-color, color .2s;
 }
 .sdk-full-link:hover {
   background: #e55a00;
@@ -4689,7 +4689,7 @@ select:focus, input:focus {
   font-size: 13px;
   font-weight: 700;
   white-space: nowrap;
-  transition: all .2s;
+  transition: background-color, transform .2s;
 }
 .sdk-banner-btn:hover {
   background: #fff8f0;
@@ -4714,7 +4714,7 @@ select:focus, input:focus {
   cursor: pointer;
   background: transparent;
   color: var(--text-secondary, #555);
-  transition: all .2s;
+  transition: background-color, color .2s;
 }
 .sdk-toc-lang-btn.active {
   background: var(--brand-red, #f76504);
@@ -4736,7 +4736,7 @@ select:focus, input:focus {
   color: var(--text-secondary, #555);
   text-decoration: none;
   border-radius: 6px;
-  transition: all .2s;
+  transition: background-color, color .2s;
   margin-bottom: 2px;
 }
 .sdk-toc-link:hover {
@@ -4838,7 +4838,7 @@ select:focus, input:focus {
   border: none;
   background: transparent;
   color: var(--text-secondary, #555);
-  transition: all .2s;
+  transition: background-color, color .2s;
 }
 .sdk-lang-btn.active {
   background: var(--brand-red, #f76504);
@@ -4868,7 +4868,7 @@ select:focus, input:focus {
   padding: 18px;
   text-decoration: none;
   color: var(--text, #1a1a2e);
-  transition: all .2s;
+  transition: border-color, background-color, transform .2s;
 }
 .sdk-path-card:hover {
   border-color: var(--brand-red, #f76504);
@@ -5006,7 +5006,7 @@ select:focus, input:focus {
   font-weight: 600;
   min-width: 80px;
   text-align: center;
-  transition: all .2s;
+  transition: background-color, color, border-color .2s;
 }
 .sdk-flow-step.highlight {
   background: var(--brand-red, #f76504);
@@ -5047,7 +5047,7 @@ select:focus, input:focus {
   border-radius: 4px;
   font-size: 11px;
   cursor: pointer;
-  transition: all .2s;
+  transition: background-color, color .2s;
 }
 .sdk-copy-btn:hover {
   background: var(--brand-red, #f76504);
@@ -5162,7 +5162,7 @@ select:focus, input:focus {
   text-decoration: none;
   font-size: 13px;
   font-weight: 600;
-  transition: all .2s;
+  transition: background-color .2s;
 }
 .sdk-footer-link:hover {
   background: #e55a00;
@@ -5608,7 +5608,7 @@ select:focus, input:focus {
   font-size: 0.85rem;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.15s;
+  transition: background-color, border-color, border-style 0.15s;
   margin-bottom: 8px;
 }
 .stitch-plan-switch-btn:hover {
@@ -5701,7 +5701,7 @@ select:focus, input:focus {
   border: 2px solid transparent;
   border-radius: 8px;
   cursor: pointer;
-  transition: all 0.15s;
+  transition: border-color, background-color, box-shadow 0.15s;
 }
 .stitch-plan-item:hover {
   border-color: var(--orange);
@@ -5874,7 +5874,7 @@ select:focus, input:focus {
   border: 1px dashed rgba(247,101,4,0.3);
   border-radius: 6px;
   cursor: pointer;
-  transition: all 0.15s;
+  transition: background-color, border-color 0.15s;
   margin-bottom: 10px;
 }
 .stitch-more-btn:hover {
@@ -5940,7 +5940,7 @@ select:focus, input:focus {
   color: var(--orange);
   border-radius: 6px;
   cursor: pointer;
-  transition: all 0.15s;
+  transition: background-color, color 0.15s;
   white-space: nowrap;
 }
 .stitch-download-btn:hover {
@@ -6229,7 +6229,7 @@ select:focus, input:focus {
   background: #ff8c42;
   border-radius: 50%;
   box-shadow: 0 0 12px #ff8c42aa;
-  transition: all 0.4s ease;
+  transition: background-color, box-shadow 0.4s ease;
 }
 .floating-robot-wrap:hover .robot-antenna span:first-child {
   transform: rotate(-8deg);
@@ -6254,7 +6254,7 @@ select:focus, input:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.2s ease;
+  transition: background-color, border-color, box-shadow 0.2s ease;
 }
 /* 脸 */
 .robot-face {
@@ -6276,7 +6276,7 @@ select:focus, input:focus {
   background: #7bed9f;
   border-radius: 3px;
   box-shadow: 0 0 14px #7bed9f88;
-  transition: all 0.15s ease;
+  transition: background-color, box-shadow, width, height, border-radius, transform 0.15s ease;
   animation: robotEyeMove 3s infinite alternate ease-in-out;
 }
 .robot-eye:last-child {
@@ -6312,7 +6312,7 @@ select:focus, input:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.2s ease;
+  transition: background-color, border-color, box-shadow 0.2s ease;
 }
 /* 心脏 */
 .robot-heart {
@@ -6322,7 +6322,7 @@ select:focus, input:focus {
   border-radius: 50%;
   border: 3px solid #b0c4de;
   box-shadow: inset 0 -5px 0 #1e3a8a, 0 0 14px #3b82f644;
-  transition: all 0.3s ease;
+  transition: background-color, border-color, box-shadow, transform 0.3s ease;
   animation: robotBreathe 2.5s infinite alternate ease-in-out;
 }
 @keyframes robotBreathe {
@@ -6343,7 +6343,7 @@ select:focus, input:focus {
   background: #fff;
   box-shadow: 0 0 50px #ffffffdd;
   transform: scale(0.8);
-  transition: all 0.05s ease;
+  transition: background-color, box-shadow, transform 0.05s ease;
 }
 /* 标签文字 */
 .robot-label {
@@ -6355,7 +6355,7 @@ select:focus, input:focus {
   border-radius: 30px;
   backdrop-filter: blur(4px);
   border: 1px solid var(--border-light);
-  transition: all 0.3s ease;
+  transition: color, border-color, box-shadow 0.3s ease;
   pointer-events: none;
 }
 .floating-robot-wrap:hover .robot-label {
@@ -6379,4 +6379,70 @@ select:focus, input:focus {
 .dark .robot-label {
   color: #8b9eb0;
   border-color: #4a5568;
+}
+
+/* ═══ 无障碍 (Accessibility) ═══ */
+:root { color-scheme: light; }
+.dark { color-scheme: dark; }
+
+:focus-visible {
+  outline: 2px solid var(--brand-red, #f76504);
+  outline-offset: 2px;
+}
+select:focus-visible, input:focus-visible, button:focus-visible, textarea:focus-visible, [tabindex]:focus-visible {
+  outline: 2px solid var(--brand-red, #f76504);
+  outline-offset: 1px;
+}
+
+.cp-brand-select:focus-visible,
+.mp-cat-select:focus-visible,
+.sc-cat-select:focus-visible {
+  outline: 2px solid var(--brand-red, #f76504);
+  outline-offset: 1px;
+}
+
+html, body {
+  overscroll-behavior-y: none;
+}
+.modal-overlay, .announcement-overlay, .contact-modal-overlay, .more-popup-overlay,
+.stitch-plan-modal-overlay, .stitch-lightbox-overlay, .img-modal-overlay {
+  overscroll-behavior: contain;
+}
+
+button, select, input, a, .home-card, .nav-tab {
+  touch-action: manipulation;
+}
+
+td, th { font-variant-numeric: tabular-nums; }
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  background: var(--brand-red, #f76504);
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 0 0 6px 0;
+  z-index: 10000;
+  font-size: 0.75rem;
+  text-decoration: none;
+}
+.skip-link:focus {
+  left: 0;
+  width: auto;
+  height: auto;
+  clip: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .robot-eye, .robot-heart { animation: none !important; }
 }

@@ -33,7 +33,7 @@
 - 暗黑模式：切换 `<html>` 元素的 `dark` class
 - 搜索归一化：去除 `MV-` 前缀，大小写不敏感
 - 样式规范：12px 外边距，10px 圆角卡片，38px 统一控件高度
-- CSS 版本通过 `index.html` 中的查询字符串控制（当前 `style.min.css?v=42`）
+- CSS 版本通过 `index.html` 中的查询字符串控制（当前 `style.min.css?v=43`）
 - 缓存破坏：编辑 JS/CSS 后需同步更新 `index.html` 中对应的 `?v=N` 参数（CSS/JS 与数据模块均带版本号）
 
 ## 脚本加载顺序
