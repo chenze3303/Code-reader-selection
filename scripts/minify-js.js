@@ -13,18 +13,18 @@ const ROOT = path.join(__dirname, '..');
 const CHECK_MODE = process.argv.includes('--check');
 
 const JS_FILES = [
-  'js/data/product_db.js',
-  'js/data/competitor.js',
-  'js/data/mapping.js',
-  'js/data/download_urls.js',
-  'js/app.js',
-  'js/bom.js',
-  'js/data/peidan.js',
-  'js/mapping_module.js',
-  'js/data/status_codes.js',
-  'js/statuscode_module.js',
-  'js/data/cat_dist_map.js',
-  'js/data/announcement.js'
+  'public/js/data/product_db.js',
+  'public/js/data/competitor.js',
+  'public/js/data/mapping.js',
+  'public/js/data/download_urls.js',
+  'public/js/app.js',
+  'public/js/bom.js',
+  'public/js/data/peidan.js',
+  'public/js/mapping_module.js',
+  'public/js/data/status_codes.js',
+  'public/js/statuscode_module.js',
+  'public/js/data/cat_dist_map.js',
+  'public/js/data/announcement.js'
 ];
 
 function syntaxCheck(code, label) {

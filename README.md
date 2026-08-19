@@ -1,74 +1,83 @@
-# HIKROBOT 读码器选型工具 V4.1
+# HIKROBOT 读码器选型工具 V4.2
 
 海康机器人读码器（Code Reader）智能选型 / 竞品对标 / 配单生成 / 产品对照 / 状态码查询 / SDK 参考 / 资料下载工具🤖
 
-纯前端实现，无需服务器，双击 `index.html` 即可在浏览器中打开使用。
+基于 **Vue 3 + Vite** 构建的纯前端单页应用，无需后端服务器。构建产物部署到 GitHub Pages 即可使用。
 
-https://chenze3303.github.io/Code-reader-selection/
+在线地址：**https://chenze3303.github.io/Code-reader-selection/**
+
+---
+
+## 开发与部署
+
+```bash
+# 安装依赖
+npm install
+
+# 本地开发（默认 http://localhost:5173）
+npm run dev
+
+# 生产构建（输出到 dist/）
+npm run build
+
+# 本地预览构建产物
+npm run preview
+```
+
+**部署到 GitHub Pages（自动）**
+
+仓库已配置 `.github/workflows/deploy-pages.yml`：push `main` 分支后自动执行 `npm run build` 并部署 `dist/`。
+
+> 首次部署前需在 GitHub 仓库 **Settings → Pages → Source** 选择 **GitHub Actions**。
 
 ---
 
 ## 目录结构
 
 ```
-├── index.html                      # 主页面：智能选型/多相机拼接/PPM/竞品/配单/产品/状态码/PDA选型/方案解决
-├── db_editor.html                  # 数据库编辑器（可视化编辑全部数据文件，含配件图片管理）
-├── sdk-guide.html                  # 独立 SDK 参考页面（C/C++ & C# 指南）
-├── peidan.html                     # 独立配单表页面（自包含）
-├── 海康读码器命名规则_副本.html      # 命名规则参考页面（独立静态文件）
-├── product_data.json               # 配单原始数据源（通过脚本生成 peidan.js）
-├── package.json                    # 脚本依赖与元数据（CommonJS）
-├── README.md / AGENTS.md / PROJECT_DOC.md / USER_GUIDE.md   # 项目文档
-├── assets/
-│   ├── code-type-desc.png          # 码制类型说明图（明亮模式）
-│   ├── code-type-desc-dark.png     # 码制类型说明图（暗黑模式）
-│   ├── contact-wechat.jpg          # 联系方式
-│   ├── contact-bilibili.jpg
-│   ├── contact-douyin.jpg
-│   ├── accessories/                # 配件图片（原图 PNG/JPG + manifest.json）
-│   │   └── webp/                   # 配件图片 webp 压缩版（供前端展示）
-│   └── products/                   # 产品型号图片（原图 PNG + webp 压缩版）
-│       └── webp/                   # 产品图片 webp 压缩版
+├── index.html                      # Vite 入口（加载 src/main.js）
+├── package.json                    # 依赖与脚本（Vue 3 / Vite）
+├── src/
+│   ├── main.js                     # 入口：挂载 Vue 应用 + 按序加载 legacy 数据脚本
+│   ├── App.vue                     # 根组件：导航侧栏 + 「更多」弹窗 + 页面切换
+│   ├── components/
+│   │   ├── PageHome.vue            # 首页（功能卡片 + 机器人助手）
+│   │   ├── PageSelection.vue       # 智能选型 + 多相机拼接 + 3D 方案 + 选型验算（内嵌）
+│   │   ├── PageCompetitor.vue      # 竞品对标
+│   │   ├── PageBom.vue             # 配单表
+│   │   ├── PageMapping.vue         # 产品对照表
+│   │   ├── PageStatuscode.vue      # 状态码查询
+│   │   ├── PagePda.vue             # PDA 选型
+│   │   ├── PageSdk.vue             # SDK 参考
+│   │   ├── PageSolutions.vue       # 方案解决
+│   │   └── GlobalOverlays.vue      # 全局弹窗（公告 / 联系我们）
+│   └── composables/
+│       ├── useI18n.js              # 中英双语 t()（语言切换响应式）
+│       └── useLegacy.js            # legacy 全局数据读取 / legacy-ready 侦听
+├── public/                         # 静态资源（构建时原样复制到 dist/ 根）
+│   ├── assets/
+│   │   ├── code-type-desc.png / -dark.png  # 码制类型说明图（亮/暗模式）
+│   │   ├── contact-*.jpg           # 联系方式图片
+│   │   ├── accessories/            # 配件图片（原图 + webp/ 压缩版 + manifest.json）
+│   │   ├── announcements/          # 公告附件
+│   │   └── products/               # 产品型号图片（原图 + webp/ 压缩版）
+│   ├── js/
+│   │   ├── app.js                  # 全局逻辑：导航 / i18n / 主题 / 公告 / 联系弹窗
+│   │   ├── bom.js                  # 配单表 legacy 模块
+│   │   ├── mapping_module.js       # 产品表 legacy 模块
+│   │   ├── statuscode_module.js    # 状态码 legacy 模块
+│   │   ├── three.min.js            # Three.js 3D 引擎（按需加载，不阻塞首屏）
+│   │   └── data/                   # 全部业务数据（PRODUCT_DB / PEIDAN_DATA / MAPPING_DATA 等）
+│   ├── db_editor.html              # 数据库编辑器（独立页面，logo 连点 3 次进入）
+│   ├── sdk-guide.html              # SDK 完整参考（独立页面，自包含）
+│   ├── peidan.html                 # 独立配单表页面（自包含）
+│   └── 海康读码器命名规则_副本.html  # 命名规则参考页
 ├── css/
-│   ├── style.css                   # 全局样式（PC + 移动端响应式，含暗黑模式全面优化）
-│   └── style.min.css               # 压缩版样式
-├── js/
-│   ├── app.js                      # 智能选型主逻辑：导航 + PPM/视野计算 + i18n + 拼接方案/3D
-│   ├── bom.js                      # 配单表：型号树、选配件弹窗、电源联动、快速搜索、导出 CSV、配件图片显示
-│   ├── mapping_module.js           # 产品表：搜索、筛选、分组折叠、资料下载、命名规则弹窗
-│   ├── statuscode_module.js        # 状态码查询：搜索、筛选、点击复制
-│   ├── three.min.js                # Three.js 3D 渲染（拼接方案示意图，按需加载）
-│   └── data/
-│       ├── product_db.js           # 选型产品数据库（PRODUCT_DB）
-│       ├── competitor.js           # 竞品对标数据（IIFE，含 UI 逻辑）
-│       ├── peidan.js               # 配单数据（型号 + 标配/选配配件）
-│       ├── mapping.js              # 产品表数据（503 条基线 ↔ 经销对照）
-│       ├── status_codes.js         # 状态码数据（257 条，10 个分类，162 条含解决方法）
-│       ├── acc_imgs.js             # 配件图片映射（归一化名称 → webp 文件名，62 条）
-│       ├── product_imgs.js         # 产品型号图片映射（型号 → webp 文件名，459 条）
-│       ├── pda.js                  # PDA 选型数据（19 款 IDP 系列型号 × 39 项参数）
-│       ├── download_urls.js        # 各系列资料下载页面 URL（自动生成，勿手改）
-│       ├── cat_dist_map.js         # 系列 → 经销型号前缀映射
-│       └── announcement.js         # 公告弹窗内容
-├── exports/
-│   └── data_export.xlsx            # 导出的 Excel 数据文件
-└── scripts/
-    ├── minify-js.js                # JS 压缩（源码 → .min.js）
-    ├── minify-css.js               # CSS 压缩
-    ├── convert_product_data.js     # product_data.json → peidan.js
-    ├── excel2js.js                 # Excel 转 JS 数据文件
-    ├── js2excel.js                 # JS 数据文件转 Excel
-    ├── acc_compress.js             # 配件图片 webp 压缩 + manifest.json 生成
-    ├── hik_compress.js             # 海康产品图片压缩
-    ├── scrape_base_downloads.js    # 抓取基线型号资料下载列表
-    ├── scrape_dist_downloads.js    # 抓取经销型号资料下载列表
-    ├── gen_download_urls.js        # 从下载数据生成 URL 映射文件
-    ├── compress-images.js          # 图片压缩脚本
-    ├── replace-images.js           # 替换压缩后的图片
-    ├── test-stress.js              # 压力测试（115 项自动化测试）
-    ├── perf-optimize.js            # 性能优化报告
-    ├── test-performance.js         # 性能对比测试
-    └── test-all.js                 # 完整性能测试
+│   ├── style.css                   # 全局样式源文件（Vite 打包）
+│   └── style.min.css               # 压缩版（脚本生成）
+├── scripts/                        # 数据生成 / 压缩 / 抓取 / 测试脚本
+├── exports/                        # 导出的 Excel 数据文件
+└── dist/                           # 构建产物（自动生成，不入库）
 ```
 
 ---
@@ -205,15 +214,15 @@ IDP 系列智能移动终端（PDA）型号参数对比工具，支持多条件�
 
 ### 方式一：使用编辑器（推荐）
 
-1. 双击打开 `db_editor.html`（数据自动加载）
+1. 启动本地开发服务（`npm run dev`）后访问 `db_editor.html`（或部署后的站点根路径），也可直接双击打开
 2. 在界面中编辑数据
 3. 点击「导出」生成新的 `.js` 文件
-4. 替换 `js/data/` 下的对应文件
-5. 刷新 `index.html` 查看效果
+4. 替换 `public/js/data/` 下的对应文件
+5. `npm run build` 后重新部署即可生效
 
 ### 方式二：直接编辑 JS 文件
 
-所有数据文件通过 `<script>` 标签以全局变量形式加载，直接用文本编辑器修改后刷新 `index.html` 即可生效（兼容 `file://` 本地打开）。
+所有数据文件通过 `<script>` 标签以全局变量形式加载（位于 `public/js/data/`），直接用文本编辑器修改后重新构建部署（或本地 `npm run dev`）即可生效。
 
 ### 方式三：配件图片管理
 
@@ -389,11 +398,13 @@ const PRODUCT_DB = [
 
 ## 技术特点
 
-- **纯前端、零依赖**：不需要 Node / 构建工具 / 服务器，所有数据通过 `<script>` 标签注入
+- **Vue 3 + Vite**：组件化单页应用，虚拟 DOM 渲染，`base: './'` 相对路径构建，可直接部署到 GitHub Pages 任意子路径
+- **按需加载**：Three.js（约 590KB）与配单数据（约 3.3MB）不阻塞首屏，进入对应页面时才注入（preload 预缓存）
+- **混合架构**：业务数据与 legacy 模块通过 `<script>` 注入全局变量，Vue 组件通过 `window` 桥接读取
 - **响应式适配**：桌面端左右分栏，移动端底部 Tab 栏 + 统一滚动
 - **搜索归一化**：统一 `MV-` 前缀剥离 + 大小写不敏感
 - **样式一致**：12px 外边距 + 10px 圆角卡片 + 38px 统一控件高度
-- **性能优化**：CSS/JS/图片压缩，总体积从 1.14MB 降至 0.75MB（节省 33.6%）
+- **性能优化**：app.js 裁剪约 40%，CSS/JS/图片压缩
 
 ---
 
@@ -433,6 +444,17 @@ node scripts/test-all.js
 ---
 
 ## 更新日志
+
+### V4.2 · 2026-08-19
+
+**Vue 3 + Vite 架构重构**
+- 全部页面组件化重构（首页 / 智能选型 / 多相机拼接 3D / PPM 验算 / 竞品 / 配单 / 产品表 / 状态码 / PDA / SDK / 方案解决）
+- app.js 裁剪约 40%（2967 行 → 1060 行），移除已迁移到 Vue 组件的选型/拼接/3D/PDA/验证逻辑
+- 全新 i18n 实现：`useI18n` composable + 组件内 `t()`，语言切换响应式更新全站
+- PageVerify 修复 legacy 数据响应式读取（legacy-ready 后自动重算）
+- 修复验算页重复渲染（独立渲染 + 选型页内嵌套共存），改为选型页内嵌
+- 修复角度单位符号显示（°* → °×）
+- 配置 GitHub Actions 自动部署 `dist/` 到 GitHub Pages
 
 ### V4.1 · 2026-08-18
 

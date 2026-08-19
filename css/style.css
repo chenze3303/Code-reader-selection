@@ -36,6 +36,10 @@ body {
   color: var(--text-primary);
 }
 
+/* Vue 挂载点：#app 仅为 #app 容器，不参与 body 的 flex 布局，
+   使 .app-window 恢复为 body 的直接 flex 子项（与原版一致，保持全宽布局） */
+#app { display: contents; }
+
 .app-window {
   max-width: 1280px;
   width: 100%;
@@ -4594,10 +4598,6 @@ select:focus, input:focus {
 .dark .home-footer { background: #0d1117; border-color: #21262d; }
 .dark .home-section-head .home-section-line { background: #21262d; }
 
-/* ===== 灏廣鏅鸿兘鍔╂墜鎮诞鎸夐挳 ===== */
-  font-size: 22px;
-  line-height: 1;
-}
 /* 绉诲姩绔湪瀵艰埅鏍忎笂鏂?*/
 @media (max-width: 768px) {
 }

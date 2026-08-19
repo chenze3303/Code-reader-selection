@@ -16,5 +16,5 @@ Thumbs.db
 # 日志
 *.log
 
-# package-lock.json
-package-lock.json
+# 构建产物
+dist/

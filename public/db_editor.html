@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>数据库编辑器 · HIKROBOT V3.0</title>
+<style>
+:root{
+  --brand:#f76504;--brand-dk:#d95800;--brand-lt:#fff4eb;--brand-mid:#fcd9be;
+  --navy:#0A1628;--navy-2:#1A2B4A;--navy-3:#243556;
+  --surface:#F5F7FA;--card:#fff;--border:#DDE5EF;--border-lt:#EEF2F8;
+  --text:#1A2332;--text-2:#4A5A6A;--text-3:#8A9BAC;
+  --green:#0b5e42;--green-lt:#e8f5ec;--red:#dc2626;--red-lt:#fee2e2;
+  --blue:#2a4a8c;--blue-lt:#e8edf8;
+  --shadow:0 2px 8px rgba(0,0,0,0.08);
+  --shadow-lg:0 8px 24px rgba(0,0,0,0.12);
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-text-size-adjust:100%}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--surface);color:var(--text);height:100vh;display:flex;flex-direction:column;overflow:hidden;font-size:14px}
+button,input,select,textarea{font-family:inherit}
+
+/* ── Header ── */
+header{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 100%);height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 1.5rem;flex-shrink:0;box-shadow:var(--shadow)}
+.hd-left{display:flex;align-items:center;gap:.8rem}
+.hd-logo{font-size:.92rem;font-weight:800;color:#fff;letter-spacing:0.5px}
+.hd-badge{background:var(--brand);color:#fff;font-size:.6rem;font-weight:700;padding:.2rem .6rem;border-radius:4px;letter-spacing:0.5px}
+.hd-right{display:flex;gap:.5rem}
+
+/* ── Tab bar ── */
+.tab-bar{background:var(--card);display:flex;gap:0;padding:0 1.5rem;flex-shrink:0;border-bottom:1px solid var(--border);box-shadow:0 1px 3px rgba(0,0,0,0.04)}
+.tab{padding:.75rem 1.2rem;font-size:.78rem;font-weight:600;color:var(--text-3);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;transition:all .2s;display:flex;align-items:center;gap:.5rem}
+.tab:hover{color:var(--text);background:var(--surface)}
+.tab.active{color:var(--brand);border-bottom-color:var(--brand)}
+.tab-count{background:var(--surface);color:var(--text-3);font-size:.62rem;font-weight:700;padding:.15rem .5rem;border-radius:12px;transition:all .2s}
+.tab.active .tab-count{background:var(--brand-lt);color:var(--brand)}
+
+/* ── Layout ── */
+.layout{display:flex;flex:1;overflow:hidden;padding:12px;gap:12px}
+
+/* ── Buttons ── */
+.btn{display:inline-flex;align-items:center;gap:.4rem;padding:.5rem 1rem;border-radius:8px;font-size:.78rem;font-weight:600;cursor:pointer;border:none;transition:all .2s;white-space:nowrap;line-height:1}
+.btn:hover{transform:translateY(-1px);box-shadow:var(--shadow)}
+.btn:active{transform:translateY(0)}
+.btn-sm{padding:.35rem .75rem;font-size:.72rem}
+.btn-xs{padding:.25rem .55rem;font-size:.65rem}
+.btn-ghost{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.2)}
+.btn-ghost:hover{background:rgba(255,255,255,.2)}
+.btn-brand{background:linear-gradient(135deg,var(--brand) 0%,var(--brand-dk) 100%);color:#fff}
+.btn-brand:hover{box-shadow:0 4px 12px rgba(247,101,4,0.4)}
+.btn-outline{background:var(--card);color:var(--text-2);border:1.5px solid var(--border)}
+.btn-outline:hover{border-color:var(--brand);color:var(--brand)}
+.btn-danger{background:var(--red-lt);color:var(--red);border:1.5px solid #fca5a5}
+.btn-danger:hover{background:#fde8e8;border-color:var(--red)}
+.btn-success{background:var(--green-lt);color:var(--green);border:1.5px solid #6ee7b7}
+.btn-success:hover{background:#d1fae5;border-color:var(--green)}
+
+/* ── Sidebar ── */
+.sidebar{width:300px;flex-shrink:0;background:var(--card);border-radius:12px;border:1px solid var(--border-lt);display:flex;flex-direction:column;overflow:hidden;box-shadow:var(--shadow)}
+.sb-head{padding:.6rem .8rem;border-bottom:1px solid var(--border-lt);display:flex;align-items:center;justify-content:space-between;flex-shrink:0;background:linear-gradient(180deg,var(--card) 0%,var(--surface) 100%)}
+.sb-title{font-size:.75rem;font-weight:700;color:var(--text)}
+.sb-count{font-size:.6rem;font-weight:600;color:var(--text-3);background:var(--border-lt);padding:.15rem .5rem;border-radius:20px}
+.sb-search{padding:.5rem .7rem;border-bottom:1px solid var(--border-lt);flex-shrink:0}
+.sb-search input{width:100%;border:1.5px solid var(--border);border-radius:8px;padding:.4rem .7rem;font-size:.75rem;outline:none;background:var(--surface);transition:all .2s}
+.sb-search input:focus{border-color:var(--brand);background:#fff;box-shadow:0 0 0 3px rgba(247,101,4,0.1)}
+.sb-search input::placeholder{color:var(--text-3)}
+.item-list{flex:1;overflow-y:auto;padding:.4rem}
+.list-item{display:flex;align-items:center;padding:.5rem .6rem;border-radius:6px;cursor:pointer;gap:.4rem;border:1.5px solid transparent;margin-bottom:2px;transition:all .15s}
+.list-item:hover{background:var(--brand-lt);border-color:transparent}
+.list-item.active{background:var(--brand-lt);border-color:var(--brand);box-shadow:0 2px 8px rgba(247,101,4,0.15)}
+.item-tag{font-size:.58rem;font-weight:700;padding:.15rem .4rem;border-radius:3px;flex-shrink:0;white-space:nowrap}
+.item-tag.blue{background:var(--blue-lt);color:var(--blue)}
+.item-tag.orange{background:var(--brand-lt);color:var(--brand)}
+.item-tag.navy{background:var(--navy-2);color:#fff}
+.item-tag.gray{background:var(--surface);color:var(--text-3)}
+.item-tag.green{background:var(--green-lt);color:var(--green)}
+.item-name{font-size:.72rem;font-weight:600;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text)}
+.sb-foot{padding:.5rem .7rem;border-top:1px solid var(--border-lt);flex-shrink:0}
+
+/* ── Main ── */
+.main{flex:1;background:var(--card);border-radius:12px;border:1px solid var(--border-lt);display:flex;flex-direction:column;overflow:hidden;box-shadow:var(--shadow)}
+.main-head{padding:.6rem 1rem;border-bottom:1px solid var(--border-lt);display:flex;align-items:center;gap:.5rem;flex-shrink:0;background:linear-gradient(180deg,var(--card) 0%,var(--surface) 100%)}
+.main-title{font-size:.85rem;font-weight:800;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text)}
+.main-body{flex:1;overflow-y:auto;padding:.8rem 1rem}
+.empty{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;gap:.8rem;color:var(--text-3)}
+.empty-icon{font-size:2.5rem;opacity:0.4}
+.empty-msg{font-size:.78rem;text-align:center;line-height:1.5}
+
+/* ── Form - 横向紧凑布局 ── */
+.section{margin-bottom:.8rem;background:var(--card);border:1px solid var(--border-lt);border-radius:6px;padding:.6rem .8rem;box-shadow:0 1px 2px rgba(0,0,0,0.02)}
+.section-title{font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--text-3);margin-bottom:.5rem;padding-bottom:.35rem;border-bottom:1px solid var(--border-lt);display:flex;align-items:center;gap:.35rem}
+.section-title::before{content:'';width:3px;height:9px;background:var(--brand);border-radius:2px}
+
+/* 横向字段布局 */
+.field-row{display:flex;align-items:center;gap:.5rem;margin-bottom:.35rem}
+.field-row:last-child{margin-bottom:0}
+.field-row label{font-size:.62rem;font-weight:600;color:var(--text-2);white-space:nowrap;min-width:60px;text-align:right}
+.field-row input,.field-row select{flex:1;border:1px solid var(--border);border-radius:4px;padding:.3rem .5rem;font-size:.72rem;outline:none;background:var(--surface);color:var(--text);transition:all .15s}
+.field-row input:focus,.field-row select:focus{border-color:var(--brand);background:#fff}
+.field-row input::placeholder{color:var(--text-3)}
+
+/* 多行字段布局 */
+.field-grid{display:grid;gap:.4rem;margin-bottom:.35rem}
+.field-grid.cols-2{grid-template-columns:1fr 1fr}
+.field-grid.cols-3{grid-template-columns:1fr 1fr 1fr}
+.field-grid.cols-4{grid-template-columns:1fr 1fr 1fr 1fr}
+.field-grid .field-item{display:flex;align-items:center;gap:.4rem}
+.field-grid .field-item label{font-size:.58rem;font-weight:600;color:var(--text-3);white-space:nowrap;min-width:50px}
+.field-grid .field-item input{flex:1;border:1px solid var(--border);border-radius:4px;padding:.25rem .4rem;font-size:.7rem;outline:none;background:var(--surface);color:var(--text);transition:all .15s}
+.field-grid .field-item input:focus{border-color:var(--brand);background:#fff}
+
+/* 文本域 */
+.field-textarea{margin-bottom:.35rem}
+.field-textarea label{display:block;font-size:.58rem;font-weight:600;color:var(--text-3);margin-bottom:.2rem}
+.field-textarea textarea{width:100%;border:1px solid var(--border);border-radius:4px;padding:.3rem .5rem;font-size:.7rem;outline:none;background:var(--surface);color:var(--text);font-family:inherit;resize:none;height:44px;transition:all .15s}
+.field-textarea textarea:focus{border-color:var(--brand);background:#fff}
+
+/* ── Accessory table ── */
+.acc-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:.5rem}
+.acc-label{font-size:.65rem;font-weight:700;color:var(--text-2);display:flex;align-items:center;gap:.4rem}
+.acc-badge{display:inline-block;font-size:.58rem;font-weight:700;padding:.15rem .4rem;border-radius:3px;background:var(--brand-lt);color:var(--brand)}
+.tbl{width:100%;border-collapse:separate;border-spacing:0;font-size:.72rem;margin-bottom:1rem;border:1px solid var(--border-lt);border-radius:6px;overflow:hidden}
+.tbl th{background:var(--navy-2);color:rgba(255,255,255,.9);font-size:.62rem;font-weight:700;padding:.4rem .5rem;text-align:left;white-space:nowrap}
+.tbl th:first-child{border-radius:0}
+.tbl th:last-child{border-radius:0;text-align:center}
+.tbl td{padding:.35rem .4rem;border-bottom:1px solid var(--border-lt);vertical-align:middle;background:var(--card)}
+.tbl tr:last-child td{border-bottom:none}
+.tbl tr:hover td{background:var(--surface)}
+.tbl input,.tbl select,.tbl textarea{width:100%;border:1.5px solid transparent;border-radius:4px;padding:.25rem .4rem;font-size:.72rem;outline:none;background:transparent;color:var(--text);font-family:inherit;resize:none;transition:all .15s}
+.tbl input:focus,.tbl select:focus,.tbl textarea:focus{border-color:var(--brand);background:#fff;box-shadow:0 0 0 2px rgba(247,101,4,0.08)}
+.tbl textarea{height:40px;min-height:32px}
+.tbl-del{width:24px;height:24px;border:none;border-radius:4px;background:transparent;color:var(--text-3);cursor:pointer;font-size:.8rem;display:flex;align-items:center;justify-content:center;transition:all .15s;margin:auto}
+.tbl-del:hover{background:var(--red-lt);color:var(--red)}
+
+/* ── Accessory image column ── */
+.acc-img-thumb{width:44px;height:44px;border-radius:6px;object-fit:contain;background:var(--surface);border:1px solid var(--border-lt);cursor:pointer;display:block;margin:auto}
+.acc-img-add{width:44px;height:44px;border-radius:6px;border:1.5px dashed var(--border);background:var(--surface);color:var(--text-3);font-size:.62rem;cursor:pointer;display:flex;align-items:center;justify-content:center;margin:auto;transition:all .15s}
+.acc-img-add:hover{border-color:var(--brand);color:var(--brand);background:var(--brand-lt)}
+.acc-img-clear{display:block;margin:2px auto 0;background:none;border:none;color:var(--text-3);font-size:.6rem;cursor:pointer;padding:1px 4px;border-radius:4px}
+.acc-img-clear:hover{color:var(--red);background:var(--red-lt)}
+.acc-img-ok{color:var(--green);font-size:.55rem;text-align:center;display:block;margin-top:2px}
+
+/* ── Image picker modal ── */
+.accimg-search{padding:.6rem .8rem;border-bottom:1px solid var(--border-lt);display:flex;gap:.4rem;align-items:center}
+.accimg-search input{flex:1;border:1.5px solid var(--border);border-radius:8px;padding:.35rem .7rem;font-size:.75rem;outline:none;background:var(--surface)}
+.accimg-search input:focus{border-color:var(--brand);background:#fff}
+.accimg-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:.5rem;padding:.8rem;max-height:52vh;overflow-y:auto}
+.accimg-item{display:flex;flex-direction:column;align-items:center;gap:.3rem;cursor:pointer;border:2px solid var(--border-lt);border-radius:8px;padding:.35rem;transition:all .15s;background:var(--card)}
+.accimg-item:hover{border-color:var(--brand);box-shadow:var(--shadow)}
+.accimg-item.selected{border-color:var(--brand);background:var(--brand-lt);box-shadow:0 0 0 2px rgba(247,101,4,0.15)}
+.accimg-item img{width:100%;height:70px;object-fit:contain;background:var(--surface);border-radius:4px}
+.accimg-item .fname{font-size:.55rem;color:var(--text-3);text-align:center;word-break:break-all;line-height:1.2;max-height:2.4em;overflow:hidden}
+.accimg-empty{grid-column:1/-1;text-align:center;color:var(--text-3);font-size:.75rem;padding:2rem 0}
+.accimg-foot{display:flex;gap:.5rem;justify-content:flex-end;padding:.7rem .8rem;border-top:1px solid var(--border-lt);align-items:center}
+.accimg-info{font-size:.7rem;color:var(--text-2);padding:.5rem .8rem;border-bottom:1px solid var(--border-lt);display:flex;align-items:center;gap:.4rem;flex-wrap:wrap}
+.accimg-info b{color:var(--text);font-weight:700}
+.accimg-key{font-size:.62rem;color:var(--text-3);background:var(--surface);border:1px solid var(--border-lt);padding:.15rem .4rem;border-radius:4px;font-family:monospace}
+
+/* ── Stats ── */
+.stats-bar{display:flex;gap:1rem;padding:.5rem 0;margin-bottom:1rem}
+.stat-item{display:flex;align-items:center;gap:.4rem;font-size:.72rem;color:var(--text-3)}
+.stat-dot{width:8px;height:8px;border-radius:50%}
+.stat-dot.blue{background:var(--blue)}
+.stat-dot.orange{background:var(--brand)}
+.stat-dot.green{background:var(--green)}
+
+/* ── Toast ── */
+.toast{position:fixed;bottom:24px;right:24px;background:var(--navy-2);color:#fff;padding:.75rem 1.25rem;border-radius:10px;font-size:.8rem;font-weight:600;z-index:9999;box-shadow:var(--shadow-lg);transition:all .3s;pointer-events:none;display:none;transform:translateY(20px);opacity:0}
+.toast.show{display:block;transform:translateY(0);opacity:1}
+.toast.success{background:linear-gradient(135deg,#059669,#047857)}
+.toast.error{background:linear-gradient(135deg,#dc2626,#b91c1c)}
+
+/* ── Confirm ── */
+.overlay{position:fixed;inset:0;background:rgba(10,22,40,.6);backdrop-filter:blur(4px);z-index:1000;display:none;align-items:center;justify-content:center;opacity:0;transition:opacity .2s}
+.overlay.open{display:flex;opacity:1}
+.dialog{background:var(--card);border-radius:12px;padding:1.5rem;max-width:400px;width:90%;box-shadow:var(--shadow-lg);transform:scale(0.95);transition:transform .2s}
+.overlay.open .dialog{transform:scale(1)}
+.dlg-title{font-size:.92rem;font-weight:800;margin-bottom:.5rem;color:var(--text)}
+.dlg-msg{font-size:.8rem;color:var(--text-2);margin-bottom:1.2rem;line-height:1.6}
+.dlg-btns{display:flex;justify-content:flex-end;gap:.5rem}
+
+/* ── Keyboard shortcuts hint ── */
+.shortcuts{position:fixed;bottom:12px;left:12px;font-size:.65rem;color:var(--text-3);display:flex;gap:1rem}
+.shortcut{display:flex;align-items:center;gap:.3rem}
+.shortcut kbd{background:var(--surface);border:1px solid var(--border);border-radius:4px;padding:.1rem .35rem;font-size:.6rem;font-family:monospace;color:var(--text-2)}
+
+/* scrollbar */
+*{scrollbar-width:thin;scrollbar-color:var(--border) transparent}
+*::-webkit-scrollbar{width:6px;height:6px}
+*::-webkit-scrollbar-track{background:transparent}
+*::-webkit-scrollbar-thumb{background:var(--border);border-radius:4px}
+*::-webkit-scrollbar-thumb:hover{background:var(--text-3)}
+
+/* ── 响应式布局 ── */
+@media (max-width: 768px) {
+  .layout{flex-direction:column;padding:8px;gap:8px}
+  .sidebar{width:100%;max-height:40vh;border-radius:10px}
+  .main{border-radius:10px}
+  .item-list{max-height:200px}
+  .field-row{flex-wrap:wrap}
+  .field-row label{min-width:50px}
+  .field-grid.cols-4{grid-template-columns:1fr 1fr}
+  .field-grid.cols-3{grid-template-columns:1fr 1fr}
+  .hd-logo{font-size:.78rem}
+  .hd-badge{display:none}
+  .btn span.btn-text{display:none}
+}
+
+@media (max-width: 480px) {
+  .tab-bar{overflow-x:auto;flex-wrap:nowrap;padding:0 .5rem}
+  .tab{padding:.5rem .8rem;font-size:.7rem;white-space:nowrap}
+  .sidebar{max-height:35vh}
+  .main-body{padding:.6rem}
+  .section{padding:.5rem .6rem}
+  .field-grid.cols-4{grid-template-columns:1fr}
+  .field-grid.cols-2{grid-template-columns:1fr}
+  .shortcuts{display:none}
+}
+
+/* ── Animations ── */
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.fade-in{animation:fadeIn .2s ease-out}
+
+/* ── Filter bar ── */
+.filter-bar{padding:.4rem .6rem;border-bottom:1px solid var(--border-lt);flex-shrink:0;display:flex;gap:.4rem;align-items:center}
+.filter-select{flex:1;border:1px solid var(--border);border-radius:6px;padding:.3rem .5rem;font-size:.68rem;background:var(--card);color:var(--text);outline:none;cursor:pointer}
+.filter-select:focus{border-color:var(--brand)}
+.filter-clear{font-size:.6rem;color:var(--text-3);cursor:pointer;padding:.2rem .4rem;border-radius:4px;transition:all .15s;white-space:nowrap;border:1px solid var(--border)}
+.filter-clear:hover{color:var(--red);background:var(--red-lt);border-color:var(--red)}
+
+/* ── Template modal ── */
+.template-list{max-height:300px;overflow-y:auto;margin:.8rem 0;border:1px solid var(--border-lt);border-radius:8px}
+.template-item{display:flex;align-items:center;gap:.6rem;padding:.6rem .8rem;cursor:pointer;border-bottom:1px solid var(--border-lt);transition:background .15s}
+.template-item:last-child{border-bottom:none}
+.template-item:hover{background:var(--brand-lt)}
+.template-item.selected{background:var(--brand-lt);outline:2px solid var(--brand)}
+.template-tag{font-size:.6rem;font-weight:700;padding:.15rem .4rem;border-radius:3px;background:var(--blue-lt);color:var(--blue)}
+.template-name{font-size:.78rem;font-weight:600;flex:1}
+.template-desc{font-size:.65rem;color:var(--text-3)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="hd-left">
+    <a href="index.html" class="btn btn-ghost btn-sm" style="text-decoration:none">← 返回</a>
+    <svg width="20" height="20" viewBox="0 0 24 24"><rect x="2" y="2" width="9" height="9" rx="2" fill="#f76504"/><rect x="13" y="2" width="9" height="9" rx="2" fill="rgba(255,255,255,.3)"/><rect x="2" y="13" width="9" height="9" rx="2" fill="rgba(255,255,255,.3)"/><rect x="13" y="13" width="9" height="9" rx="2" fill="rgba(255,255,255,.15)"/></svg>
+    <span class="hd-logo">HIKROBOT · 数据库编辑器</span>
+    <span class="hd-badge">V3.0</span>
+  </div>
+  <div class="hd-right">
+    <button class="btn btn-ghost btn-sm" onclick="importFile()">📥 导入</button>
+    <button class="btn btn-brand btn-sm" onclick="exportFile()">📤 导出</button>
+    <button class="btn btn-ghost btn-sm" onclick="exportAccImgs()" title="导出配件图映射 js/data/acc_imgs.js">🖼 导出配件图</button>
+  </div>
+</header>
+
+<div class="tab-bar">
+  <div class="tab active" onclick="switchTab('peidan')" id="tab_peidan">📋 配单 <span class="tab-count" id="tc_peidan">0</span></div>
+  <div class="tab" onclick="switchTab('mapping')" id="tab_mapping">🔄 产品表 <span class="tab-count" id="tc_mapping">0</span></div>
+  <div class="tab" onclick="switchTab('competitor')" id="tab_competitor">🔬 竞品 <span class="tab-count" id="tc_competitor">0</span></div>
+  <div class="tab" onclick="switchTab('product')" id="tab_product">⚡ 产品库 <span class="tab-count" id="tc_product">0</span></div>
+  <div class="tab" onclick="switchTab('statuscode')" id="tab_statuscode">🔍 状态码 <span class="tab-count" id="tc_statuscode">0</span></div>
+</div>
+
+<div class="layout" id="appLayout">
+  <!-- 侧边栏 -->
+  <div class="sidebar">
+    <div class="sb-head">
+      <span class="sb-title" id="sbTitle">列表</span>
+      <span class="sb-count" id="sbCount">0 条</span>
+    </div>
+    <div class="sb-search"><input id="sbSearch" placeholder="搜索型号、名称..." oninput="renderList()"></div>
+    <div class="filter-bar" id="filterBar"></div>
+    <div class="item-list" id="itemList"></div>
+    <div class="sb-foot">
+      <div style="display:flex;gap:.5rem">
+        <button class="btn btn-outline" style="flex:1" onclick="addItem()">＋ 新建</button>
+        <button class="btn btn-brand btn-sm" onclick="showTemplateModal()" title="从模板新建">📋 模板</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 编辑区 -->
+  <div class="main">
+    <div class="main-head" id="mainHead" style="display:none">
+      <span class="main-title" id="mainTitle"></span>
+      <button class="btn btn-sm btn-outline" onclick="duplicateItem()">⧉ 复制</button>
+      <button class="btn btn-sm btn-danger" onclick="confirmDelete()">🗑️ 删除</button>
+      <button class="btn btn-sm btn-success" onclick="saveItem()">✓ 保存</button>
+    </div>
+    <div class="main-body" id="mainBody">
+      <div class="empty">
+        <div class="empty-icon">🗄️</div>
+        <div class="empty-msg">选择左侧条目开始编辑<br>或点击「＋ 新建」创建新条目</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="overlay" id="overlay">
+  <div class="dialog">
+    <div class="dlg-title" id="dlgTitle">确认</div>
+    <div class="dlg-msg" id="dlgMsg"></div>
+    <div class="dlg-btns">
+      <button class="btn btn-outline btn-sm" onclick="closeDialog()">取消</button>
+      <button class="btn btn-danger btn-sm" id="dlgOk">确认删除</button>
+    </div>
+  </div>
+</div>
+
+<!-- 模板选择弹窗 -->
+<div class="overlay" id="templateOverlay">
+  <div class="dialog" style="max-width:500px">
+    <div class="dlg-title">📋 从模板新建</div>
+    <div class="dlg-msg">选择一个已有条目作为模板，快速创建相似型号：</div>
+    <div class="template-list" id="templateList"></div>
+    <div class="dlg-btns">
+      <button class="btn btn-outline btn-sm" onclick="closeTemplateModal()">取消</button>
+      <button class="btn btn-brand btn-sm" id="templateOk" onclick="createFromTemplate()">创建</button>
+    </div>
+  </div>
+</div>
+
+<input type="file" id="fileInput" accept=".js,.json" style="display:none" onchange="handleImport(event)">
+
+<!-- 配件图片选择弹窗 -->
+<div class="overlay" id="imgOverlay">
+  <div class="dialog" style="max-width:640px;width:94%">
+    <div class="dlg-title">🖼 选择配件图片</div>
+    <div class="accimg-info" id="imgInfo"></div>
+    <div class="accimg-search">
+      <input id="imgSearch" placeholder="搜索图片文件名..." oninput="renderImgGrid()">
+      <button class="btn btn-brand btn-sm" onclick="triggerImgUpload()">📤 本地上传</button>
+    </div>
+    <div class="accimg-grid" id="imgGrid"></div>
+    <div class="accimg-foot">
+      <span style="font-size:.62rem;color:var(--text-3);flex:1">点击图片应用到当前配件</span>
+      <button class="btn btn-outline btn-sm" onclick="clearAccImg()">🗑 清除图片</button>
+      <button class="btn btn-outline btn-sm" onclick="closeImgModal()">取消</button>
+    </div>
+  </div>
+</div>
+<input type="file" id="accImgFileInput" accept="image/*" style="display:none" onchange="handleImgUpload(event)">
+<div class="toast" id="toast"></div>
+
+<div class="shortcuts">
+  <span class="shortcut"><kbd>Ctrl</kbd>+<kbd>S</kbd> 保存</span>
+  <span class="shortcut"><kbd>Esc</kbd> 关闭弹窗</span>
+</div>
+
+<!-- 数据文件必须在内联脚本之前加载 -->
+<script src="js/data/product_db.js"></script>
+<script src="js/data/competitor.js"></script>
+<script src="js/data/mapping.js"></script>
+<script src="js/data/peidan.js"></script>
+<script src="js/data/status_codes.js"></script>
+<script src="js/data/acc_imgs.js"></script>
+
+<script>
+// ═══════════════════════════ STATE ═══════════════════════════
+var state = {
+  tab: 'peidan',
+  peidan: [],      // modelList
+  mapping: [],     // MAPPING_DATA
+  competitor: [],  // competitorDB
+  product: [],     // PRODUCT_DB
+  statuscode: [],  // STATUS_CODES
+  idx: null,
+  dirty: {},       // which tabs have unsaved changes
+  filter: null,    // current filter value
+  templateIdx: null, // selected template index
+  accImgs: {},     // 配件图映射（归一化名称→webp 文件），从 ACC_IMGS 加载
+  imgCtx: null     // 当前图片选择上下文 {kind, i}
+};
+
+var CAT_OPTS = ['大类','一体线','IO线','网线','电源线','电源','安装','安装板','镜头','FA镜头','测试镜头','镜头罩','光源','微码光源','爆闪光源','灯板','外置配件','扩展配件','其他'];
+
+// 从数据中自动提取所有产品大类和系列
+function getUniqueValues(arr, key){
+  var seen = {};
+  arr.forEach(function(item){ var v = item[key]; if(v && !seen[v]) seen[v] = 1; });
+  return Object.keys(seen).sort();
+}
+function getProductCategories(){ return getUniqueValues(state.peidan, 'productCategory'); }
+function getProductSeries(){ return getUniqueValues(state.peidan, 'productSeries'); }
+
+// ═══════════════════════════ UTILS ═══════════════════════════
+function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function clone(x){ return JSON.parse(JSON.stringify(x)); }
+
+// 配件名称长度归一化（与前端 bom.js getAccImg 保持一致）
+function accImgKey(name){
+  return String(name||'').replace(/([,_-])(\d+(?:\.\d+)?)m\b/g,'$1{LEN}m').replace(/([,_-])(\d+(?:\.\d+)?)米/g,'$1{LEN}米').replace(/(\d+(?:\.\d+)?)米/g,'{LEN}米');
+}
+function accImgFor(name){
+  if(!name || !state.accImgs) return '';
+  return state.accImgs[accImgKey(name)]||'';
+}
+
+var _toastTm;
+function toast(msg, type){
+  clearTimeout(_toastTm);
+  var t = document.getElementById('toast');
+  t.textContent = msg;
+  t.className = 'toast show' + (type?' '+type:'');
+  _toastTm = setTimeout(function(){ t.className='toast'; }, 2800);
+}
+
+function field(id, label, value, type, ph, opts){
+  type = type || 'text';
+  var inp;
+  if(type==='select' && opts){
+    var optArr = Array.isArray(opts) ? opts : (opts.opts || []);
+    var optHtml = optArr.map(function(o){
+      var v=typeof o==='object'?o.v:o, l=typeof o==='object'?o.l:o;
+      return '<option value="'+esc(v)+'"'+(v==value?' selected':'')+'>'+esc(l)+'</option>';
+    }).join('');
+    if(value && optArr.every(function(o){ var v=typeof o==='object'?o.v:o; return v!==value; })){
+      optHtml = '<option value="'+esc(value)+'" selected>'+esc(value)+'</option>' + optHtml;
+    }
+    inp = '<select id="f_'+id+'">' + optHtml + '</select>';
+  } else if(type==='textarea'){
+    return '<div class="field-textarea"><label>'+label+'</label><textarea id="f_'+id+'" placeholder="'+esc(ph||'')+'">'+esc(value||'')+'</textarea></div>';
+  } else {
+    inp = '<input id="f_'+id+'" type="'+type+'" value="'+esc(value||'')+'" placeholder="'+esc(ph||'')+'">';
+  }
+  return '<div class="field-row"><label>'+label+'</label>'+inp+'</div>';
+}
+
+function get(id){ var el=document.getElementById(id); return el?el.value:''; }
+
+function showEmpty(){
+  document.getElementById('mainHead').style.display='none';
+  document.getElementById('mainBody').innerHTML='<div class="empty fade-in"><div class="empty-icon">🗄️</div><div class="empty-msg">选择左侧条目开始编辑<br>或点击「＋ 新建」创建新条目</div></div>';
+}
+
+// ═══════════════════════════ TAB ═══════════════════════════
+function switchTab(tab){
+  state.tab = tab;
+  state.idx = null;
+  state.filter = null;
+  document.querySelectorAll('.tab').forEach(function(t){ t.classList.remove('active'); });
+  document.getElementById('tab_'+tab).classList.add('active');
+  document.getElementById('sbSearch').value = '';
+  showEmpty();
+  renderFilters();
+  renderList();
+  updateCounts();
+}
+
+function updateCounts(){
+  document.getElementById('tc_peidan').textContent = state.peidan.length;
+  document.getElementById('tc_mapping').textContent = state.mapping.length;
+  document.getElementById('tc_competitor').textContent = state.competitor.length;
+  document.getElementById('tc_product').textContent = state.product.length;
+  document.getElementById('tc_statuscode').textContent = state.statuscode.length;
+}
+
+// ═══════════════════════════ FILTER ═══════════════════════════
+function renderFilters(){
+  var arr = state[state.tab];
+  var filterKey = '';
+  if(state.tab==='peidan') filterKey = 'productSeries';
+  else if(state.tab==='mapping') filterKey = 'cat';
+  else if(state.tab==='competitor') filterKey = 'brand';
+  else if(state.tab==='product') filterKey = 'series';
+  else if(state.tab==='statuscode') filterKey = 'category';
+
+  if(!filterKey || !arr.length){
+    document.getElementById('filterBar').innerHTML = '';
+    return;
+  }
+
+  // 统计每个分组的数量
+  var groups = {};
+  arr.forEach(function(item){
+    var val = item[filterKey] || '未分类';
+    groups[val] = (groups[val] || 0) + 1;
+  });
+
+  // 按数量排序
+  var sorted = Object.keys(groups).sort(function(a,b){ return groups[b] - groups[a]; });
+  _filterValues = sorted;
+
+  // 构建下拉选项
+  var optionsHtml = '<option value="">全部 (' + arr.length + ')</option>';
+  sorted.forEach(function(g){
+    var selected = state.filter === g ? ' selected' : '';
+    optionsHtml += '<option value="'+esc(g)+'"'+selected+'>'+esc(g)+' ('+groups[g]+')</option>';
+  });
+
+  var html = '<select class="filter-select" onchange="onFilterChange(this.value)">'+optionsHtml+'</select>';
+  if(state.filter){
+    html += '<span class="filter-clear" onclick="clearFilter()">✕ 清除</span>';
+  }
+
+  document.getElementById('filterBar').innerHTML = html;
+}
+
+function onFilterChange(val){
+  state.filter = val || null;
+  renderFilters();
+  renderList();
+}
+
+function toggleFilter(val){
+  state.filter = state.filter === val ? null : val;
+  renderFilters();
+  renderList();
+}
+
+var _filterValues = [];
+function toggleFilterByIndex(idx){
+  var val = _filterValues[idx];
+  if(val !== undefined) toggleFilter(val);
+}
+
+function clearFilter(){
+  state.filter = null;
+  renderFilters();
+  renderList();
+}
+
+// ═══════════════════════════ LIST ═══════════════════════════
+function renderList(){
+  var kw = (document.getElementById('sbSearch').value||'').trim().toLowerCase();
+  var arr = state[state.tab];
+  var titles = { peidan:'配单型号', mapping:'对照型号', competitor:'竞品对标', product:'选型产品', statuscode:'状态码' };
+  document.getElementById('sbTitle').textContent = titles[state.tab];
+  document.getElementById('sbCount').textContent = arr.length+' 条';
+
+  // 获取筛选字段
+  var filterKey = '';
+  if(state.tab==='peidan') filterKey = 'productSeries';
+  else if(state.tab==='mapping') filterKey = 'cat';
+  else if(state.tab==='competitor') filterKey = 'brand';
+  else if(state.tab==='product') filterKey = 'series';
+  else if(state.tab==='statuscode') filterKey = 'category';
+
+  var html = '';
+  var matchCount = 0;
+  arr.forEach(function(item, i){
+    var tag='', name='';
+    if(state.tab==='peidan'){
+      tag='<span class="item-tag blue">'+esc(item.productSeries||'—')+'</span>';
+      name=item.productModel||'（未命名）';
+    } else if(state.tab==='mapping'){
+      tag='<span class="item-tag gray">'+esc(item.cat||'—')+'</span>';
+      name=item.baseName||'（未命名）';
+    } else if(state.tab==='competitor'){
+      tag='<span class="item-tag navy">'+esc(item.brand||'—')+'</span>';
+      name=item.model||'（未命名）';
+    } else if(state.tab==='product'){
+      tag='<span class="item-tag orange">'+esc(item.series||'—')+'</span>';
+      name=item.model||'（未命名）';
+    } else {
+      tag='<span class="item-tag green">'+esc(item.category||'—')+'</span>';
+      name=item.name||'（未命名）';
+    }
+
+    // 应用筛选
+    if(state.filter && filterKey){
+      var filterVal = item[filterKey] || '未分类';
+      if(filterVal !== state.filter) return;
+    }
+
+    // 应用搜索
+    if(kw && name.toLowerCase().indexOf(kw)===-1 && (tag.toLowerCase().indexOf(kw)===-1)) return;
+
+    matchCount++;
+    html+='<div class="list-item fade-in'+(i===state.idx?' active':'')+'" onclick="selectItem('+i+')">'+tag+'<span class="item-name" title="'+esc(name)+'">'+esc(name)+'</span></div>';
+  });
+  if(!html) html='<div style="padding:1rem;font-size:.78rem;color:var(--text-3);text-align:center">无匹配结果</div>';
+  document.getElementById('itemList').innerHTML = html;
+
+  // 更新搜索提示
+  if((kw || state.filter) && matchCount > 0){
+    document.getElementById('sbCount').textContent = matchCount+' / '+arr.length+' 条';
+  }
+}
+
+// ═══════════════════════════ SELECT / EDIT ═══════════════════════════
+function selectItem(idx){
+  state.idx = idx;
+  renderList();
+  var item = state[state.tab][idx];
+  document.getElementById('mainHead').style.display='flex';
+
+  if(state.tab==='peidan') renderPeidan(item);
+  else if(state.tab==='mapping') renderMapping(item);
+  else if(state.tab==='competitor') renderCompetitor(item);
+  else if(state.tab==='product') renderProduct(item);
+  else renderStatuscode(item);
+}
+
+// ─── 配单 ───
+function renderPeidan(m){
+  document.getElementById('mainTitle').textContent = m.productModel||'（未命名）';
+  document.getElementById('mainBody').innerHTML =
+    '<div class="section fade-in"><div class="section-title">基本信息</div>' +
+      field('pm','型号',m.productModel,'text','如 MV-ID803M-U(基线)') +
+      field('pc','大类',m.productCategory,'select','',{v:'',l:'── 选择 ──', opts: getProductCategories()}) +
+      field('ps','系列',m.productSeries,'select','',{v:'',l:'── 选择 ──', opts: getProductSeries()}) +
+      field('mc','物料代码',m.materialCode,'text','相机自身物料代码') +
+      field('md','描述',m.description,'text','如 0.3MP，3.1m镜头') +
+      field('mr','备注',m.remark,'text','如 支持U口/串口线缆互换') +
+    '</div>' +
+    accSection('std','标配配件',m.standardAccessories,'blue') +
+    accSection('opt','选配配件',m.optionalAccessories,'orange');
+
+  bind('pc',function(v){ state.peidan[state.idx].productCategory=v; });
+  bind('ps',function(v){ state.peidan[state.idx].productSeries=v; });
+  bind('pm',function(v){
+    state.peidan[state.idx].productModel=v;
+    document.getElementById('mainTitle').textContent=v||'（未命名）';
+    renderList();
+  });
+  bind('mc',function(v){ state.peidan[state.idx].materialCode=v; });
+  bind('md',function(v){ state.peidan[state.idx].description=v; });
+  bind('mr',function(v){ state.peidan[state.idx].remark=v; });
+}
+
+function accSection(kind, title, accs, tagColor){
+  var badgeCls = tagColor==='blue'?'style="background:var(--blue-lt);color:var(--blue)"':'style="background:var(--brand-lt);color:var(--brand)"';
+  var rows = accs.map(function(a,i){
+    var catOpts = CAT_OPTS.map(function(c){return '<option'+(c===a.category?' selected':'')+'>'+c+'</option>';}).join('');
+    var img = accImgFor(a.name);
+    var imgCell = img
+      ? '<img src="assets/accessories/webp/'+esc(img)+'" class="acc-img-thumb" alt="配件图片" onclick="openImgModal(\''+kind+'\','+i+')" title="点击更换图片"><button class="acc-img-clear" onclick="clearAccImgDirect(\''+kind+'\','+i+')" title="清除图片">✕</button>'
+      : '<button class="acc-img-add" onclick="openImgModal(\''+kind+'\','+i+')" title="添加图片">＋ 图</button>';
+    return '<tr>'+
+      '<td style="width:56px;text-align:center;vertical-align:middle">'+imgCell+'</td>'+
+      '<td style="width:85px"><select onchange="updateAcc(\''+kind+'\','+i+',\'category\',this.value)">'+catOpts+'</select></td>'+
+      '<td style="width:110px"><input value="'+esc(a.series||'')+'" placeholder="系列" oninput="updateAcc(\''+kind+'\','+i+',\'series\',this.value)"></td>'+
+      '<td style="width:140px"><input value="'+esc(a.name)+'" placeholder="名称" oninput="updateAcc(\''+kind+'\','+i+',\'name\',this.value)"></td>'+
+      '<td style="width:110px"><input value="'+esc(a.code)+'" placeholder="物料代码" oninput="updateAcc(\''+kind+'\','+i+',\'code\',this.value)"></td>'+
+      '<td><textarea placeholder="描述" oninput="updateAcc(\''+kind+'\','+i+',\'detail\',this.value)">'+esc(a.detail)+'</textarea></td>'+
+      '<td style="width:36px"><button class="tbl-del" onclick="delAcc(\''+kind+'\','+i+')">✕</button></td>'+
+    '</tr>';
+  }).join('');
+  return '<div class="section fade-in">'+
+    '<div class="acc-head">'+
+      '<span class="acc-label">'+title+' <span class="acc-badge" '+badgeCls+'>'+accs.length+'</span></span>'+
+      '<button class="btn btn-xs btn-outline" onclick="addAcc(\''+kind+'\')">＋ 添加</button>'+
+    '</div>'+
+    '<table class="tbl"><thead><tr>'+
+      '<th style="width:64px">图片</th><th style="width:100px">大类</th><th style="width:120px">系列</th><th style="width:160px">名称</th><th style="width:130px">物料代码</th><th>描述</th><th></th>'+
+    '</tr></thead><tbody id="acc_'+kind+'">'+
+      (rows||'<tr><td colspan="7" style="padding:1.2rem;text-align:center;color:var(--text-3)">暂无配件，点击上方「＋ 添加」</td></tr>')+
+    '</tbody></table></div>';
+}
+
+function updateAcc(kind,i,key,val){
+  var arr = kind==='std' ? state.peidan[state.idx].standardAccessories : state.peidan[state.idx].optionalAccessories;
+  arr[i][key]=val;
+}
+function addAcc(kind){
+  var arr = kind==='std' ? state.peidan[state.idx].standardAccessories : state.peidan[state.idx].optionalAccessories;
+  arr.push({category: kind==='opt'?'其他':'大类', series:'', name:'', code:'', detail:''});
+  renderPeidan(state.peidan[state.idx]);
+  toast('✅ 已添加配件');
+}
+function delAcc(kind,i){
+  var arr = kind==='std' ? state.peidan[state.idx].standardAccessories : state.peidan[state.idx].optionalAccessories;
+  arr.splice(i,1);
+  renderPeidan(state.peidan[state.idx]);
+}
+
+// ─── 配件图片 ───
+var _imgManifest = [];
+var _accImgsLoaded = false;
+
+function loadAccImgs(){
+  // 读取 ACC_IMGS（已在 script 标签加载）
+  if(window.ACC_IMGS){ state.accImgs = JSON.parse(JSON.stringify(window.ACC_IMGS)); }
+  _accImgsLoaded = true;
+  // 读取图片清单 manifest.json
+  fetch('assets/accessories/manifest.json').then(function(r){ return r.json(); })
+    .then(function(list){ _imgManifest = list||[]; })
+    .catch(function(){ _imgManifest = []; console.warn('manifest.json 不存在，先运行 scripts/acc_compress.js 生成'); });
+}
+
+function getAcc(kind,i){
+  var arr = kind==='std' ? state.peidan[state.idx].standardAccessories : state.peidan[state.idx].optionalAccessories;
+  return arr[i];
+}
+
+function openImgModal(kind,i){
+  state.imgCtx = {kind:kind, i:i};
+  var acc = getAcc(kind,i);
+  var cur = accImgFor(acc.name);
+  document.getElementById('imgInfo').innerHTML =
+    '<b>'+esc(acc.name||'（未命名）')+'</b>'+
+    (cur?' <span class="accimg-key">当前: '+esc(cur)+'</span>':' <span style="color:var(--text-3)">未配图</span>');
+  document.getElementById('imgSearch').value='';
+  renderImgGrid(cur);
+  document.getElementById('imgOverlay').classList.add('open');
+}
+
+function renderImgGrid(selected){
+  var kw=(document.getElementById('imgSearch').value||'').trim().toLowerCase();
+  var list = _imgManifest.filter(function(m){ return !kw || m.file.toLowerCase().indexOf(kw)!==-1; });
+  var html = list.map(function(m){
+    return '<div class="accimg-item'+(m.file===selected?' selected':'')+'" onclick="applyAccImg(\''+esc(m.file)+'\')" title="'+esc(m.file)+'">'+
+      '<img src="assets/accessories/webp/'+esc(m.file)+'" alt="配件缩略图" loading="lazy" onerror="this.parentNode.style.opacity=\'.3\'">'+
+      '<span class="fname">'+esc(m.file)+'</span></div>';
+  }).join('');
+  document.getElementById('imgGrid').innerHTML = html || '<div class="accimg-empty">无图片。请先运行 scripts/acc_compress.js 生成 manifest.json</div>';
+}
+
+function applyAccImg(file){
+  if(!state.imgCtx) return;
+  var acc = getAcc(state.imgCtx.kind, state.imgCtx.i);
+  if(!acc.name){ toast('⚠️ 请先填写配件名称再配图','error'); return; }
+  state.accImgs[accImgKey(acc.name)] = file;
+  toast('✅ 已为「'+acc.name+'」配图: '+file,'success');
+  closeImgModal();
+  renderPeidan(state.peidan[state.idx]);
+}
+
+function clearAccImg(){
+  if(!state.imgCtx) return;
+  var acc = getAcc(state.imgCtx.kind, state.imgCtx.i);
+  delete state.accImgs[accImgKey(acc.name)];
+  toast('已清除图片');
+  closeImgModal();
+  renderPeidan(state.peidan[state.idx]);
+}
+
+function clearAccImgDirect(kind,i){
+  state.imgCtx = {kind:kind, i:i};
+  clearAccImg();
+}
+
+function closeImgModal(){
+  document.getElementById('imgOverlay').classList.remove('open');
+  state.imgCtx = null;
+}
+
+function triggerImgUpload(){ document.getElementById('accImgFileInput').click(); }
+
+function handleImgUpload(e){
+  var file = e.target.files[0];
+  if(!file) return;
+  e.target.value='';
+  if(!state.imgCtx){ toast('请先选中一个配件行','error'); return; }
+  var acc = getAcc(state.imgCtx.kind, state.imgCtx.i);
+  if(!acc.name){ toast('⚠️ 请先填写配件名称再上传','error'); return; }
+  var key = accImgKey(acc.name);
+  var base = key.replace(/\{LEN\}m/g,'').replace(/[{}\s]/g,'').replace(/[,_-]+$/,'');
+  toast('⏳ 正在复制原图并压缩 webp...');
+  var fr = new FileReader();
+  fr.onload = function(ev){
+    var dataUrl = ev.target.result;
+    copyFileToAssets(file, dataUrl, base);
+  };
+  fr.readAsDataURL(file);
+}
+
+// 拷贝原图到 assets/accessories，并压缩 webp（前端 sharp 不可用，用 canvas + toDataURL 保守方案提示手动压缩）
+function copyFileToAssets(file, dataUrl, base){
+  var ext = (file.name.match(/\.(png|jpe?g)$/i)||[])[1]||'png';
+  var origName = base + '.' + ext;
+  var srcEl = new Image();
+  srcEl.onload = function(){
+    var c = document.createElement('canvas');
+    var scale = Math.min(1, 1200/Math.max(srcEl.width, srcEl.height));
+    c.width = Math.round(srcEl.width*scale);
+    c.height = Math.round(srcEl.height*scale);
+    c.getContext('2d').drawImage(srcEl,0,0,c.width,c.height);
+    var webpData = c.toDataURL('image/webp',0.82);
+    saveAccImageFiles(origName, base+'.webp', dataUrl, webpData);
+  };
+  srcEl.onerror = function(){ toast('图片解码失败','error'); };
+  srcEl.src = dataUrl;
+}
+
+// 通过导航器 API 请求保存到本地目录
+function saveAccImageFiles(origName, webpName, origData, webpData){
+  var b2b = function(dataUrl){
+    var parts = dataUrl.split(',');
+    var mime = parts[0].match(/:(.*?);/)[1];
+    var bin = atob(parts[1]);
+    var arr = new Uint8Array(bin.length);
+    for(var i=0;i<bin.length;i++) arr[i]=bin.charCodeAt(i);
+    return new Blob([arr],{type:mime});
+  };
+  var download = function(blob, name){
+    var a=document.createElement('a');
+    a.href=URL.createObjectURL(blob); a.download=name;
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(function(){ URL.revokeObjectURL(a.href); },1000);
+  };
+  if(window.showDirectoryPicker){
+    showDirectoryPicker().then(function(dir){
+      return Promise.all([
+        dir.getFileHandle(origName,{create:true}),
+        (async function(){ var wd; try{ wd=await dir.getDirectoryHandle('webp',{create:true}); }catch(e){ wd=dir; } return wd.getFileHandle(webpName,{create:true}); })()
+      ]).then(function(hs){
+        return Promise.all([
+          hs[0].createWritable().then(function(w){ return w.write(b2b(origData)).then(function(){ return w.close(); }); }),
+          hs[1].createWritable().then(function(w){ return w.write(b2b(webpData)).then(function(){ return w.close(); }); })
+        ]);
+      });
+    }).then(function(){
+      var acc = getAcc(state.imgCtx.kind, state.imgCtx.i);
+      state.accImgs[accImgKey(acc.name)] = webpName;
+      _imgManifest.push({file:webpName, size:0});
+      toast('✅ 已保存 '+origName+' 与 '+webpName+'，请点击图片应用到配件','success');
+      renderImgGrid(webpName);
+      renderPeidan(state.peidan[state.idx]);
+    }).catch(function(err){
+      toast('保存取消或失败，已改为下载原图与 webp','error');
+      download(b2b(origData), origName);
+      download(b2b(webpData), webpName);
+    });
+  } else {
+    toast('浏览器不支持目录保存，已下载文件，请放入 assets/accessories/','error');
+    download(b2b(origData), origName);
+    download(b2b(webpData), webpName);
+  }
+}
+
+// 导出 acc_imgs.js
+function exportAccImgs(){
+  var keys = Object.keys(state.accImgs||{}).sort();
+  var lines = keys.map(function(k){
+    return '  '+JSON.stringify(k)+': '+JSON.stringify(state.accImgs[k])+',';
+  }).join('\n');
+  var content = [
+    '// acc_imgs.js - 配件名称→配件图映射',
+    '// key 使用"长度归一化后的配件名称"，同一根线缆不同长度共用一张图',
+    '// 前端查找时会先对配件名称做长度归一化再查本表',
+    'window.ACC_IMGS = {',
+    lines,
+    '};'
+  ].join('\n');
+  var blob=new Blob([content],{type:'text/javascript;charset=utf-8'});
+  var a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download='acc_imgs.js';
+  a.click();
+  setTimeout(function(){ URL.revokeObjectURL(a.href); },1000);
+  toast('✅ 已导出 acc_imgs.js（'+keys.length+' 条映射）','success');
+}
+
+// ─── 对照表 ───
+function renderMapping(m){
+  document.getElementById('mainTitle').textContent = (m.baseName||'（未命名）');
+  document.getElementById('mainBody').innerHTML =
+    '<div class="section fade-in"><div class="section-title">对照信息</div>' +
+      field('mcat','系列',m.cat,'text','如 ID803M系列') +
+      field('mseq','序号',m.seq,'number','') +
+      field('mbn','基线型号',m.baseName,'text','') +
+      field('mbc','基线代码',m.baseCode,'text','') +
+      field('mdn','经销型号',m.distName,'text','') +
+      field('mdc','经销代码',m.distCode,'text','') +
+    '</div>';
+
+  ['mcat','mseq','mbn','mbc','mdn','mdc'].forEach(function(id){
+    var keyMap={mcat:'cat',mseq:'seq',mbn:'baseName',mbc:'baseCode',mdn:'distName',mdc:'distCode'};
+    bind(id, function(v){
+      state.mapping[state.idx][keyMap[id]] = id==='mseq' ? (parseInt(v)||v) : v;
+      if(id==='mbn'){ document.getElementById('mainTitle').textContent=v||'（未命名）'; renderList(); }
+    });
+  });
+}
+
+// ─── 竞品 ───
+function renderCompetitor(m){
+  document.getElementById('mainTitle').textContent = (m.brand||'')+(m.model?' · '+m.model:'');
+  var brandOpts = ['Cognex','Keyence','Datalogic','思谋','华睿','视界','新大陆'].map(function(b){
+    return {v:b,l:b};
+  });
+  brandOpts.unshift({v:'',l:'── 选择品牌 ──'});
+  document.getElementById('mainBody').innerHTML =
+    '<div class="section fade-in"><div class="section-title">竞品信息</div>' +
+      field('cbrand','品牌',m.brand,'select','',brandOpts) +
+      field('cmodel','型号',m.model,'text','如 SR-1000') +
+      field('chik','海康型号',m.hikModel,'text','如 ID3013PM') +
+      field('cdesc','友商特点',m.competitorDesc,'textarea','核心规格和特点') +
+      field('cadv','海康优势',m.advantageDesc,'textarea','竞争优势') +
+    '</div>';
+
+  var keys={cbrand:'brand',cmodel:'model',cdesc:'competitorDesc',chik:'hikModel',cadv:'advantageDesc'};
+  Object.keys(keys).forEach(function(id){
+    bind(id,function(v){
+      state.competitor[state.idx][keys[id]]=v;
+      if(id==='cbrand'||id==='cmodel'){
+        var m2=state.competitor[state.idx];
+        document.getElementById('mainTitle').textContent=(m2.brand||'')+(m2.model?' · '+m2.model:'');
+        renderList();
+      }
+    });
+  });
+}
+
+// ─── 选型产品库 ───
+function renderProduct(m){
+  document.getElementById('mainTitle').textContent = m.model||'（未命名）';
+  var protOpts=[{v:'IP54',l:'IP54'},{v:'IP65',l:'IP65'},{v:'IP67',l:'IP67'}];
+  document.getElementById('mainBody').innerHTML =
+    '<div class="section fade-in"><div class="section-title">基本信息</div>' +
+      field('pmodel','型号',m.model,'text','如 ID803M-03M') +
+      field('pseries','系列',m.series,'text','如 ID800') +
+      field('pprot','防护',m.protection,'select','',protOpts) +
+      field('piface','接口',m.interface,'text','如 USB2.0、RS232') +
+    '</div>' +
+    '<div class="section fade-in"><div class="section-title">光学参数</div>' +
+    '<div class="field-grid cols-4">' +
+      '<div class="field-item"><label>宽</label><input id="f_prw" type="number" value="'+(m.resolution.w||0)+'"></div>' +
+      '<div class="field-item"><label>高</label><input id="f_prh" type="number" value="'+(m.resolution.h||0)+'"></div>' +
+      '<div class="field-item"><label>像素</label><input id="f_ppx" type="number" value="'+(m.pixelSize||0)+'"></div>' +
+      '<div class="field-item"><label>焦距</label><input id="f_pfocal" type="number" value="'+(m.focal||'')+'"></div>' +
+    '</div>' +
+    '<div class="field-grid cols-2">' +
+      '<div class="field-item"><label>最小距离</label><input id="f_pwdmin" type="number" value="'+(m.workingDist.min||0)+'"></div>' +
+      '<div class="field-item"><label>最大距离</label><input id="f_pwdmax" type="number" value="'+(m.workingDist.max||0)+'"></div>' +
+    '</div></div>';
+
+  var simpleKeys={pmodel:'model',pseries:'series',pprot:'protection',piface:'interface'};
+  Object.keys(simpleKeys).forEach(function(id){
+    bind(id,function(v){
+      state.product[state.idx][simpleKeys[id]]=v;
+      if(id==='pmodel'){ document.getElementById('mainTitle').textContent=v||'（未命名）'; renderList(); }
+    });
+  });
+  [{id:'prw',p:'resolution',k:'w'},{id:'prh',p:'resolution',k:'h'}].forEach(function(x){
+    bind(x.id,function(v){ state.product[state.idx][x.p][x.k]=parseFloat(v)||0; });
+  });
+  [{id:'ppx',k:'pixelSize'},{id:'pfocal',k:'focal'},{id:'pwdmin',k:'_wdmin'},{id:'pwdmax',k:'_wdmax'}].forEach(function(x){
+    bind(x.id,function(v){
+      var num = parseFloat(v)||0;
+      if(x.k==='_wdmin') state.product[state.idx].workingDist.min=num;
+      else if(x.k==='_wdmax') state.product[state.idx].workingDist.max=num;
+      else state.product[state.idx][x.k] = num||undefined;
+    });
+  });
+}
+
+// ─── 状态码 ───
+function renderStatuscode(m){
+  document.getElementById('mainTitle').textContent = m.name||'（未命名）';
+  var catOpts = ['正确码','通用错误码','IDMVS自定义','读码器控制','GenICam相关','网口读码器','U口读码器','升级组件','底层组件','网络组件'];
+  document.getElementById('mainBody').innerHTML =
+    '<div class="section fade-in"><div class="section-title">状态码信息</div>' +
+      field('sname','名称',m.name,'text','如 MV_CODEREADER_OK') +
+      field('svalue','十六进制值',m.value,'text','如 0x00000000') +
+      field('scat','分类',m.category,'select','',{v:'',l:'── 选择 ──', opts: catOpts}) +
+      field('sdesc','描述',m.description,'textarea','状态码的含义说明') +
+    '</div>';
+
+  var keys={sname:'name',svalue:'value',scat:'category',sdesc:'description'};
+  Object.keys(keys).forEach(function(id){
+    bind(id,function(v){
+      state.statuscode[state.idx][keys[id]]=v;
+      if(id==='sname'){
+        document.getElementById('mainTitle').textContent=v||'（未命名）';
+        renderList();
+      }
+    });
+  });
+}
+
+function bind(id, fn){
+  var el=document.getElementById('f_'+id);
+  if(el) el.addEventListener('input',function(){ fn(this.value); });
+}
+
+// ═══════════════════════════ ADD / DELETE ═══════════════════════════
+function duplicateItem(){
+  if(state.idx===null) return;
+  var original = state[state.tab][state.idx];
+  var copy = clone(original);
+  // 加后缀区分
+  if(state.tab==='peidan' && copy.productModel) copy.productModel += ' (副本)';
+  else if(state.tab==='mapping' && copy.baseName) copy.baseName += ' (副本)';
+  else if(state.tab==='competitor' && copy.model) copy.model += ' (副本)';
+  else if(state.tab==='product' && copy.model) copy.model += ' (副本)';
+  else if(state.tab==='statuscode' && copy.name) copy.name += ' (副本)';
+  state[state.tab].splice(state.idx+1, 0, copy);
+  state.idx = state.idx + 1;
+  renderFilters();
+  renderList();
+  selectItem(state.idx);
+  updateCounts();
+  toast('✅ 已复制条目','success');
+}
+
+function addItem(){
+  var newItem;
+  if(state.tab==='peidan'){
+    newItem={productCategory:'',productSeries:'',productModel:'',materialCode:'',description:'',remark:'',standardAccessories:[],optionalAccessories:[]};
+  } else if(state.tab==='mapping'){
+    newItem={cat:'',seq:state.mapping.length+1,baseName:'',baseCode:'',distName:'',distCode:''};
+  } else if(state.tab==='competitor'){
+    newItem={brand:'',model:'',competitorDesc:'',hikModel:'',advantageDesc:''};
+  } else if(state.tab==='product'){
+    newItem={model:'',series:'',resolution:{w:0,h:0},pixelSize:0,focal:0,interface:'',protection:'IP54',workingDist:{min:0,max:0}};
+  } else {
+    newItem={category:'',name:'',value:'',description:''};
+  }
+  state[state.tab].push(newItem);
+  state.idx = state[state.tab].length-1;
+  renderFilters();
+  renderList();
+  selectItem(state.idx);
+  updateCounts();
+  toast('✅ 已新建条目');
+}
+
+function saveItem(){
+  toast('✅ 已保存', 'success');
+  renderList();
+  updateCounts();
+}
+
+function confirmDelete(){
+  var arr=state[state.tab], item=arr[state.idx];
+  var name = item.productModel||item.baseName||item.model||'该条目';
+  document.getElementById('dlgTitle').textContent='删除确认';
+  document.getElementById('dlgMsg').textContent='确定删除「'+name+'」？此操作不可撤销。';
+  document.getElementById('dlgOk').onclick=doDelete;
+  document.getElementById('overlay').classList.add('open');
+}
+function doDelete(){
+  state[state.tab].splice(state.idx,1);
+  state.idx = state[state.tab].length>0 ? Math.min(state.idx,state[state.tab].length-1) : null;
+  closeDialog();
+  renderList();
+  updateCounts();
+  if(state.idx!==null) selectItem(state.idx);
+  else showEmpty();
+  toast('已删除条目','error');
+}
+function closeDialog(){ document.getElementById('overlay').classList.remove('open'); }
+
+// ═══════════════════════════ TEMPLATE ═══════════════════════════
+function showTemplateModal(){
+  var arr = state[state.tab];
+  if(!arr.length){
+    toast('没有可用的模板，请先创建条目','error');
+    return;
+  }
+
+  state.templateIdx = null;
+  var html = '';
+  arr.forEach(function(item, i){
+    var name = '';
+    if(state.tab==='peidan') name = item.productModel || '（未命名）';
+    else if(state.tab==='mapping') name = item.baseName || '（未命名）';
+    else if(state.tab==='competitor') name = (item.brand||'') + (item.model?' · '+item.model:'');
+    else name = item.model || '（未命名）';
+
+    var tag = '';
+    if(state.tab==='peidan') tag = item.productSeries || '';
+    else if(state.tab==='mapping') tag = item.cat || '';
+    else if(state.tab==='competitor') tag = item.brand || '';
+    else tag = item.series || '';
+
+    html += '<div class="template-item" onclick="selectTemplate('+i+', this)">';
+    if(tag) html += '<span class="template-tag">'+esc(tag)+'</span>';
+    html += '<span class="template-name">'+esc(name)+'</span>';
+    html += '</div>';
+  });
+
+  document.getElementById('templateList').innerHTML = html;
+  document.getElementById('templateOverlay').classList.add('open');
+}
+
+function selectTemplate(idx, el){
+  state.templateIdx = idx;
+  document.querySelectorAll('.template-item').forEach(function(item){ item.classList.remove('selected'); });
+  el.classList.add('selected');
+}
+
+function closeTemplateModal(){
+  document.getElementById('templateOverlay').classList.remove('open');
+  state.templateIdx = null;
+}
+
+function createFromTemplate(){
+  if(state.templateIdx === null){
+    toast('请先选择一个模板','error');
+    return;
+  }
+
+  var template = state[state.tab][state.templateIdx];
+  var copy = clone(template);
+
+  // 清空名称字段，方便用户输入新名称
+  if(state.tab==='peidan'){
+    copy.productModel = '';
+  } else if(state.tab==='mapping'){
+    copy.baseName = '';
+    copy.baseCode = '';
+    copy.distName = '';
+    copy.distCode = '';
+  } else if(state.tab==='competitor'){
+    copy.model = '';
+  } else {
+    copy.model = '';
+  }
+
+  state[state.tab].push(copy);
+  state.idx = state[state.tab].length - 1;
+  closeTemplateModal();
+  renderFilters();
+  renderList();
+  selectItem(state.idx);
+  updateCounts();
+  toast('✅ 已从模板创建，清修改型号名称','success');
+}
+
+// ═══════════════════════════ IMPORT ═══════════════════════════
+function importFile(){ document.getElementById('fileInput').click(); }
+
+function handleImport(e){
+  var file=e.target.files[0]; if(!file) return;
+  var reader=new FileReader();
+  reader.onload=function(ev){
+    try{
+      var raw=ev.target.result.trim();
+      var name=file.name;
+
+      if(name.endsWith('.js')){
+        // 检测是哪种 JS 文件
+        if(raw.indexOf('window.PEIDAN_DATA')!==-1){
+          var start=raw.indexOf('{',raw.indexOf('window.PEIDAN_DATA'));
+          var end=raw.lastIndexOf('};');
+          var data=JSON.parse(raw.slice(start,end+1));
+          state.peidan=data.modelList||[];
+          switchTab('peidan');
+          toast('✅ 配单数据已导入，共 '+state.peidan.length+' 个型号','success');
+        } else if(raw.indexOf('window.MAPPING_DATA')!==-1){
+          var start=raw.indexOf('[',raw.indexOf('window.MAPPING_DATA'));
+          var end=raw.lastIndexOf('];');
+          // mapping.js 是 JS 对象字面量格式，用 eval 解析
+          var arr = parseJsArray(raw.slice(start,end+1));
+          state.mapping=arr;
+          switchTab('mapping');
+          toast('✅ 对照表已导入，共 '+state.mapping.length+' 条','success');
+        } else if(raw.indexOf('competitorDB')!==-1 || raw.indexOf('var competitorDB')!==-1){
+          var marker = raw.indexOf('var competitorDB')!==-1 ? 'var competitorDB' : 'competitorDB';
+          var start=raw.indexOf('[',raw.indexOf(marker));
+          // 找到对应的结束 ]，用括号计数而非 lastIndexOf
+          var depth=0, end=-1;
+          for(var ci=start;ci<raw.length;ci++){
+            if(raw[ci]==='[') depth++;
+            else if(raw[ci]===']') depth--;
+            if(depth===0){end=ci;break;}
+          }
+          if(end===-1) throw new Error('无法解析 competitorDB 数组');
+          var arr=parseJsArray(raw.slice(start,end+1));
+          state.competitor=arr;
+          switchTab('competitor');
+          toast('✅ 竞品数据已导入，共 '+state.competitor.length+' 条','success');
+        } else if(raw.indexOf('PRODUCT_DB')!==-1){
+          var start=raw.indexOf('[',raw.indexOf('PRODUCT_DB'));
+          var end=raw.lastIndexOf('];');
+          var arr=parseJsArray(raw.slice(start,end+1));
+          state.product=arr;
+          switchTab('product');
+          toast('✅ 产品库已导入，共 '+state.product.length+' 条','success');
+        } else if(raw.indexOf('STATUS_CODES')!==-1){
+          var start=raw.indexOf('[',raw.indexOf('STATUS_CODES'));
+          var end=raw.lastIndexOf('];');
+          var arr=parseJsArray(raw.slice(start,end+1));
+          state.statuscode=arr;
+          switchTab('statuscode');
+          toast('✅ 状态码已导入，共 '+state.statuscode.length+' 条','success');
+        } else {
+          toast('❌ 无法识别的 JS 文件','error');
+        }
+      } else {
+        var data=JSON.parse(raw);
+        if(data.modelList){ state.peidan=data.modelList; switchTab('peidan'); toast('✅ 配单数据已导入','success'); }
+        else if(Array.isArray(data)){ toast('❌ 请指定数据类型','error'); }
+        else { toast('❌ 无法识别的 JSON 格式','error'); }
+      }
+      updateCounts();
+    } catch(err){ toast('❌ 导入失败：'+err.message,'error'); }
+    e.target.value='';
+  };
+  reader.readAsText(file,'utf-8');
+}
+
+// 安全解析 JS 数组字面量（使用 Function 沙箱）
+function parseJsArray(str){
+  try {
+    return (new Function('return '+str))();
+  } catch(e){
+    // fallback: JSON 模式
+    var json = str
+      .replace(/\/\/.*$/gm,'')                      // 移除行注释
+      .replace(/,(\s*[\]}])/g,'$1')                 // 移除尾逗号
+      // 只替换行首/逗号后的属性名，不破坏字符串内的冒号
+      .replace(/([{,]\s*)(\w+):/g,'$1"$2":');      // 属性名加引号
+    return JSON.parse(json);
+  }
+}
+
+// ═══════════════════════════ EXPORT ═══════════════════════════
+function exportFile(){
+  var tab=state.tab, arr=state[tab];
+  if(!arr.length){ toast('没有数据可导出','error'); return; }
+  var filename, content;
+
+  if(tab==='peidan'){
+    var payload={currentConfig: arr[0]||{}, modelList: arr};
+    content=[
+      '// peidan.js - 配单数据文件',
+      '// 导出时间：'+new Date().toLocaleString('zh-CN'),
+      '',
+      'window.PEIDAN_DATA = '+JSON.stringify(payload,null,2)+';',
+      '',
+      'if (window.BOM && window.BOM.applyData) { window.BOM.applyData(window.PEIDAN_DATA); }'
+    ].join('\n');
+    filename='peidan.js';
+
+  } else if(tab==='mapping'){
+    var lines = arr.map(function(r){
+      return '  { cat: '+JSON.stringify(r.cat||'')+', seq: '+(r.seq||0)+
+        ', baseName: '+JSON.stringify(r.baseName||'')+', baseCode: '+JSON.stringify(r.baseCode||'')+
+        ', distName: '+JSON.stringify(r.distName||'')+', distCode: '+JSON.stringify(r.distCode||'')+' },';
+    }).join('\n');
+    content=[
+      '// mapping.js - 基线-经销对照表',
+      '// 导出时间：'+new Date().toLocaleString('zh-CN'),
+      '',
+      'window.MAPPING_DATA = [',
+      lines,
+      '];',
+      '',
+      'if (window.MAPPING && window.MAPPING.applyData) { window.MAPPING.applyData(window.MAPPING_DATA); }'
+    ].join('\n');
+    filename='mapping.js';
+
+  } else if(tab==='competitor'){
+    var lines = arr.map(function(r){
+      return '    { brand: '+JSON.stringify(r.brand||'')+', model: '+JSON.stringify(r.model||'')+
+        ', competitorDesc: '+JSON.stringify(r.competitorDesc||'')+
+        ', hikModel: '+JSON.stringify(r.hikModel||'')+
+        ', advantageDesc: '+JSON.stringify(r.advantageDesc||'')+' },';
+    }).join('\n');
+    content=[
+      '// competitor.js 内的 competitorDB 数据部分',
+      '// 请将下方数组内容替换到 competitor.js 的 competitorDB 变量中',
+      '// 导出时间：'+new Date().toLocaleString('zh-CN'),
+      '',
+      'var competitorDB = [',
+      lines,
+      '];'
+    ].join('\n');
+    filename='competitor_data.js';
+
+  } else if(tab==='statuscode'){
+    var lines = arr.map(function(r){
+      return '  { category: '+JSON.stringify(r.category||'')+', name: '+JSON.stringify(r.name||'')+
+        ', value: '+JSON.stringify(r.value||'')+', description: '+JSON.stringify(r.description||'')+' },';
+    }).join('\n');
+    content=[
+      '// status_codes.js - 状态码数据',
+      '// 导出时间：'+new Date().toLocaleString('zh-CN'),
+      '',
+      'var STATUS_CODES = [',
+      lines,
+      '];'
+    ].join('\n');
+    filename='status_codes.js';
+
+  } else {
+    var lines = arr.map(function(r){
+      return '  { model: '+JSON.stringify(r.model||'')+
+        ', series: '+JSON.stringify(r.series||'')+
+        ', resolution: { w: '+(r.resolution&&r.resolution.w||0)+', h: '+(r.resolution&&r.resolution.h||0)+' }'+
+        ', pixelSize: '+(r.pixelSize||0)+
+        (r.focal?', focal: '+r.focal:'')+
+        ', interface: '+JSON.stringify(r.interface||'')+
+        ', protection: '+JSON.stringify(r.protection||'IP54')+
+        ', workingDist: { min: '+(r.workingDist&&r.workingDist.min||0)+', max: '+(r.workingDist&&r.workingDist.max||0)+' } },';
+    }).join('\n');
+    content=[
+      '// product_db.js',
+      '// 导出时间：'+new Date().toLocaleString('zh-CN'),
+      '',
+      'const PRODUCT_DB = [',
+      lines,
+      '];'
+    ].join('\n');
+    filename='product_db.js';
+  }
+
+  var blob=new Blob([content],{type:'text/javascript;charset=utf-8'});
+  var a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download=filename;
+  a.click();
+  URL.revokeObjectURL(a.href);
+  toast('✅ 已导出 '+filename,'success');
+}
+
+// ═══════════════════════════ KEYBOARD ═══════════════════════════
+document.addEventListener('keydown',function(e){
+  if((e.ctrlKey||e.metaKey)&&e.key==='s'){ e.preventDefault(); if(state.idx!==null) saveItem(); }
+  if(e.key==='Escape'){
+    if(document.getElementById('imgOverlay').classList.contains('open')){ closeImgModal(); return; }
+    if(document.getElementById('templateOverlay').classList.contains('open')){
+      closeTemplateModal();
+    } else {
+      closeDialog();
+    }
+  }
+});
+
+// ═══════════════════════════ INIT ═══════════════════════════
+
+// 自动加载已有数据文件
+function autoLoadData() {
+  // 配单数据
+  if (window.PEIDAN_DATA && window.PEIDAN_DATA.modelList) {
+    state.peidan = window.PEIDAN_DATA.modelList;
+    console.log('✅ 自动加载配单数据：' + state.peidan.length + ' 条');
+  }
+  // 对照表
+  if (window.MAPPING_DATA && Array.isArray(window.MAPPING_DATA)) {
+    state.mapping = window.MAPPING_DATA;
+    console.log('✅ 自动加载对照表：' + state.mapping.length + ' 条');
+  }
+  // 竞品对标（competitor.js 通过 window.COMPETITOR 暴露）
+  if (window.COMPETITOR && window.COMPETITOR.getData) {
+    state.competitor = window.COMPETITOR.getData();
+    console.log('✅ 自动加载竞品数据：' + state.competitor.length + ' 条');
+  }
+  // 选型产品库（product_db.js 用 const 声明，挂在顶层）
+  if (typeof PRODUCT_DB !== 'undefined' && Array.isArray(PRODUCT_DB)) {
+    state.product = PRODUCT_DB;
+    console.log('✅ 自动加载产品库：' + state.product.length + ' 条');
+  }
+  // 状态码
+  if (typeof STATUS_CODES !== 'undefined' && Array.isArray(STATUS_CODES)) {
+    state.statuscode = STATUS_CODES;
+    console.log('✅ 自动加载状态码：' + state.statuscode.length + ' 条');
+  }
+  updateCounts();
+  renderFilters();
+  renderList();
+}
+
+// 延迟加载：等待数据脚本执行完毕
+setTimeout(autoLoadData, 500);
+
+updateCounts();
+renderFilters();
+renderList();
+loadAccImgs();
+</script>
+</body>
+</html>
