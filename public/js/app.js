@@ -52,6 +52,8 @@
     }
     var el = document.createElement('div');
     el.className = 'toast' + (type ? ' ' + type : '');
+    el.setAttribute('role', 'status');
+    el.setAttribute('aria-live', 'polite');
     el.textContent = msg;
     container.appendChild(el);
     setTimeout(function() {
@@ -135,7 +137,7 @@
       imgCaption: '💡 码制类型与模块尺寸说明',
       runBtn: '⚡ 开始智能选型',
       showModal: '📋 查看所有满足条件的型号清单',
-      emptyState: '等待选型结果...',
+      emptyState: '等待选型结果…',
       // SVG schematic
       svgEstW: '预估宽度', svgEstH: '预估高度', svgWd: '工作距离', svgFovAngle: '视场角',
       // Modal
@@ -236,7 +238,7 @@
       resultNoMatch: '⚠️ 没有找到同时满足所有条件的型号<br>请调整参数后重试',
       resultNoMatchShort: '⚠️ 当前勾选的系列中无匹配型号，请勾选其他系列',
       resultModalEmpty: '暂无满足条件的型号，请调整参数后重新选型',
-      resultWaitParam: '等待参数输入...',
+      resultWaitParam: '等待参数输入…',
       resultFovStatus: '📐 预估视野 {w}×{h}mm',
 
       // Competitor dynamic
@@ -399,7 +401,7 @@
       copiedShort: '已复制', threeJsLoadErr: 'Three.js 加载失败',
       stSortLabel: '排序', stSortDefault: '默认', stSortCountAsc: '数量 ↑', stSortCountDesc: '数量 ↓', stSortResAsc: '分辨率 ↑', stSortResDesc: '分辨率 ↓', stSeriesLabel: '系列',
       verifyMPUnit: '万', verifyWdRec: '推荐工作距离：', verifyWdRange: '工作距离范围：',
-      verifyMaxExposure: '最大曝光', verifyEmptyWait: '等待参数输入...',
+      verifyMaxExposure: '最大曝光', verifyEmptyWait: '等待参数输入…',
       mpLoadErr: '模块加载出错，请刷新页面重试'
     },
     en: {
@@ -439,7 +441,7 @@
       imgCaption: '💡 Code Type & Module Size Guide',
       runBtn: '⚡ Start Selection',
       showModal: '📋 View All Matching Models',
-      emptyState: 'Waiting for selection...',
+      emptyState: 'Waiting for selection…',
       svgEstW: 'Est. Width', svgEstH: 'Est. Height', svgWd: 'Work Dist.', svgFovAngle: 'FOV Angle',
       modalTitle: '📌 Matching Models',
       filterLabel: '🔍 Filter by Series', filterReset: 'Select All',
@@ -532,7 +534,7 @@
       resultNoMatch: '⚠️ No model matches all criteria.<br>Adjust parameters and retry.',
       resultNoMatchShort: '⚠️ No matching models in selected series.',
       resultModalEmpty: 'No matching models. Adjust parameters and re-run selection.',
-      resultWaitParam: 'Waiting for parameters...',
+      resultWaitParam: 'Waiting for parameters…',
       resultFovStatus: '📐 Est. FOV {w}×{h}mm',
 
       // Competitor dynamic
@@ -695,7 +697,7 @@
       copiedShort: 'Copied', threeJsLoadErr: 'Three.js failed to load',
       stSortLabel: 'Sort', stSortDefault: 'Default', stSortCountAsc: 'Count ↑', stSortCountDesc: 'Count ↓', stSortResAsc: 'Resolution ↑', stSortResDesc: 'Resolution ↓', stSeriesLabel: 'Series',
       verifyMPUnit: 'MP', verifyWdRec: 'Recommended WD: ', verifyWdRange: 'WD range: ',
-      verifyMaxExposure: 'Max Exposure', verifyEmptyWait: 'Waiting for parameters...',
+      verifyMaxExposure: 'Max Exposure', verifyEmptyWait: 'Waiting for parameters…',
       mpLoadErr: 'Module failed to load. Please refresh the page.'
     }
   };

@@ -17,17 +17,17 @@
                 <input type="text" id="bomQuickSearch" class="bom-search-input" v-model="searchKw" :placeholder="t('bomQuickSearchPh')" @input="onSearchInput" @blur="onSearchBlur" autocomplete="off">
                 <div class="bom-search-results" id="bomSearchResults" v-show="searchOpen">
                   <template v-for="(res, i) in searchResults" :key="i">
-                    <div v-if="res.type === 'product'" class="bom-search-item bom-search-product" @click="selectProductByMatch(res)">
+                    <div v-if="res.type === 'product'" class="bom-search-item bom-search-product" role="button" tabindex="0" @click="selectProductByMatch(res)" @keydown.enter.prevent="selectProductByMatch(res)" @keydown.space.prevent="selectProductByMatch(res)">
                       <div class="bom-search-item-name">{{ res.name }}</div>
                       <div class="bom-search-item-code">{{ res.code }}</div>
                       <div class="bom-search-item-cat">{{ res.cat }} › {{ res.ser }}</div>
                     </div>
                     <div v-else-if="res.type === 'divider'" style="border-top:1px solid var(--border,#e2e8f0);margin:4px 0"></div>
-                    <div v-else class="bom-search-item bom-search-acc" @click="addAccToBom(res.code)">
+                    <div v-else class="bom-search-item bom-search-acc" role="button" tabindex="0" @click="addAccToBom(res.code)" @keydown.enter.prevent="addAccToBom(res.code)" @keydown.space.prevent="addAccToBom(res.code)">
                       <div class="bom-search-item-name">{{ res.name }} <span style="font-size:10px;color:var(--primary,#f97316)">{{ res.category }}</span></div>
                       <div class="bom-search-item-code">{{ t('bomMatCode') }}{{ res.code }}<template v-if="res.detail"> | {{ res.detail }}</template></div>
                       <div class="bom-search-item-cat">{{ t('bomFitSeriesLabel') }}
-                        <span v-for="g in res.seriesGroups" :key="g.cat + '\u0001' + g.ser" class="bom-search-ser" @click.stop="onSerTagClick(g, res.code)">{{ g.ser || g.cat }} <b>{{ g.count }}</b></span>
+                        <span v-for="g in res.seriesGroups" :key="g.cat + '\u0001' + g.ser" class="bom-search-ser" role="button" tabindex="0" @click.stop="onSerTagClick(g, res.code)" @keydown.enter.stop.prevent="onSerTagClick(g, res.code)" @keydown.space.stop.prevent="onSerTagClick(g, res.code)">{{ g.ser || g.cat }} <b>{{ g.count }}</b></span>
                       </div>
                     </div>
                   </template>
@@ -40,21 +40,21 @@
             <div class="bom-group">
               <div class="bom-group-label">{{ t('bomModelSel') }}</div>
               <div class="bom-field">
-                <div class="bom-field-label"><span class="bom-step-num">1</span> <span>{{ t('bomStep1') }}</span></div>
+                <label class="bom-field-label" for="bomCatSel"><span class="bom-step-num">1</span> <span>{{ t('bomStep1') }}</span></label>
                 <select class="bom-select" id="bomCatSel" v-model="selCat" @change="onCatChange">
                   <option value="">{{ t('bomCatPh') }}</option>
                   <option v-for="c in cats" :key="c" :value="c">{{ c }}</option>
                 </select>
               </div>
               <div class="bom-field">
-                <div class="bom-field-label"><span class="bom-step-num">2</span> <span>{{ t('bomStep2') }}</span></div>
+                <label class="bom-field-label" for="bomSerSel"><span class="bom-step-num">2</span> <span>{{ t('bomStep2') }}</span></label>
                 <select class="bom-select" id="bomSerSel" v-model="selSer" @change="onSerChange" :disabled="!selCat">
                   <option value="">{{ t('bomSerPh') }}</option>
                   <option v-for="s in serOptions" :key="s" :value="s">{{ s }}</option>
                 </select>
               </div>
               <div class="bom-field">
-                <div class="bom-field-label"><span class="bom-step-num">3</span> <span>{{ t('bomStep3') }}</span></div>
+                <label class="bom-field-label" for="bomModelSel"><span class="bom-step-num">3</span> <span>{{ t('bomStep3') }}</span></label>
                 <select class="bom-select" id="bomModelSel" v-model="selModelIdx" @change="onModelChange" :disabled="!selCat || !selSer">
                   <option value="">{{ t('bomModelPh') }}</option>
                   <option v-for="(m, i) in modelOptions" :key="i" :value="i">{{ m.n }}</option>
@@ -69,7 +69,7 @@
                 <div v-if="!currentModel" class="bom-acc-empty">{{ t('bomAccEmpty') }}</div>
                 <div v-else-if="accGroups.length === 0" class="bom-acc-empty" style="color:#0b5e42;">✅ {{ t('bomNoOptAcc', currentModel.standardAcc.length) }}</div>
                 <template v-else>
-                  <div v-for="g in accGroups" :key="g.cat" class="bom-cat-card" @click="openAccModal(g.cat, g.items)">
+                  <div v-for="g in accGroups" :key="g.cat" class="bom-cat-card" role="button" tabindex="0" @click="openAccModal(g.cat, g.items)" @keydown.enter.prevent="openAccModal(g.cat, g.items)" @keydown.space.prevent="openAccModal(g.cat, g.items)">
                     <div class="bom-cat-icon">{{ g.icon }}</div>
                     <div class="bom-cat-info">
                       <div class="bom-cat-name">{{ g.cat }}</div>
@@ -152,7 +152,7 @@
                   <td style="text-align:center;"><span class="bom-q-type-badge" :class="row.type === '配件' ? ' acc' : ''">{{ row.accType || row.type }}</span></td>
                   <td class="bom-td-name" style="text-align:center;">{{ row.n }}</td>
                   <td class="bom-q-img" style="text-align:center;">
-                    <img v-if="rowImgSrc(row)" class="bom-model-img" :src="rowImgSrc(row)" :alt="row.n || ''" @click="openLightbox(rowImgSrc(row))">
+                    <img v-if="rowImgSrc(row)" class="bom-model-img" :src="rowImgSrc(row)" width="44" height="44" :alt="row.n || ''" role="button" tabindex="0" @click="openLightbox(rowImgSrc(row))" @keydown.enter.prevent="openLightbox(rowImgSrc(row))" @keydown.space.prevent="openLightbox(rowImgSrc(row))">
                   </td>
                   <td class="bom-q-desc" style="text-align:center;">{{ rowDesc(row) }}</td>
                   <td style="text-align:center;"><span class="bom-q-code">{{ row.c || '—' }}</span></td>
@@ -194,9 +194,9 @@
             </div>
             <div class="acc-modal-list">
               <div v-if="modalAccList.length === 0" class="acc-modal-no-result">{{ t('bomNoMatchAcc') }}</div>
-              <div v-for="a in modalAccList" :key="a._key" class="acc-modal-item" :class="{ checked: accCodes[a._key] }" @click="toggleAccInModal(a)">
+              <div v-for="a in modalAccList" :key="a._key" class="acc-modal-item" :class="{ checked: accCodes[a._key] }" role="button" tabindex="0" @click="toggleAccInModal(a)" @keydown.enter.prevent="toggleAccInModal(a)" @keydown.space.prevent="toggleAccInModal(a)">
                 <div class="acc-modal-check">{{ accCodes[a._key] ? '✓' : '' }}</div>
-                <div v-if="accImgSrc(a.name)" class="acc-modal-img"><img :src="accImgSrc(a.name)" alt="" loading="lazy" @click.stop="openLightbox(accImgSrc(a.name))"></div>
+                <div v-if="accImgSrc(a.name)" class="acc-modal-img"><img :src="accImgSrc(a.name)" width="56" height="56" alt="" loading="lazy" role="button" tabindex="0" @click.stop="openLightbox(accImgSrc(a.name))" @keydown.enter.stop.prevent="openLightbox(accImgSrc(a.name))" @keydown.space.stop.prevent="openLightbox(accImgSrc(a.name))"></div>
                 <div class="acc-modal-info">
                   <div class="acc-modal-name">{{ a.name }}</div>
                   <div class="acc-modal-code">{{ a.code }}</div>
@@ -213,8 +213,8 @@
       </div>
 
       <!-- 产品主图放大 Lightbox -->
-      <div v-if="lightboxOpen" class="contact-lightbox-overlay" @click="lightboxOpen = false">
-        <img :src="lightboxImg" alt="产品图">
+      <div v-if="lightboxOpen" class="contact-lightbox-overlay" :class="{ active: lightboxOpen }" @click="lightboxOpen = false">
+        <img :src="lightboxImg" width="480" height="480" alt="产品图">
         <div class="contact-lightbox-hint">{{ t('lightboxCloseHint') }}</div>
       </div>
 
@@ -582,7 +582,7 @@ function exportCSV() {
   const a = document.createElement('a')
   a.href = URL.createObjectURL(blob)
   const now = new Date()
-  const dateStr = now.getFullYear() + '-' + String(now.getMonth() + 1).padStart(2, '0') + '-' + String(now.getDate()).padStart(2, '0')
+  const dateStr = new Intl.DateTimeFormat('en-CA').format(now)
   a.download = 'HIKROBOT_' + t('bomCsvNameFile') + '_' + dateStr + '.csv'
   a.click()
   URL.revokeObjectURL(a.href)

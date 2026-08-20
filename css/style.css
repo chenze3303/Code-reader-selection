@@ -2070,6 +2070,7 @@ select:focus, input:focus {
     width: 100%;
     height: 52px;
     padding: 0;
+    padding-bottom: env(safe-area-inset-bottom);
     gap: 0;
     border-right: none;
     border-top: 1px solid rgba(255,255,255,0.08);
@@ -6384,6 +6385,10 @@ select:focus, input:focus {
 /* ═══ 无障碍 (Accessibility) ═══ */
 :root { color-scheme: light; }
 .dark { color-scheme: dark; }
+
+.card-header, .form-section-title, .bom-left-title, .bom-group-label, .acc-modal-title, .home-hero-title {
+  text-wrap: balance;
+}
 
 :focus-visible {
   outline: 2px solid var(--brand-red, #f76504);

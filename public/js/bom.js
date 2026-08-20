@@ -755,7 +755,7 @@
     var a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
     var now = new Date();
-    var dateStr = now.getFullYear() + '-' + String(now.getMonth()+1).padStart(2,'0') + '-' + String(now.getDate()).padStart(2,'0');
+    var dateStr = new Intl.DateTimeFormat('en-CA').format(now);
     a.download = 'HIKROBOT_' + _t('bomCsvNameFile') + '_' + dateStr + '.csv';
     a.click();
     URL.revokeObjectURL(a.href);

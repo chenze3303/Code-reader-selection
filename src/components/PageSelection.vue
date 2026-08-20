@@ -9,23 +9,23 @@
             <div class="form-section-title">{{ t('sec1') }}</div>
             <div class="compact-grid">
               <div>
-                <label>{{ t('codeType') }}</label>
-                <select v-model="form.codeType">
+                <label for="selCodeType">{{ t('codeType') }}</label>
+                <select id="selCodeType" v-model="form.codeType">
                   <option value="" disabled>{{ t('codeTypePh') }}</option>
                   <option value="QR">{{ t('codeType2D') }}</option>
                   <option value="Code39">{{ t('codeType1D') }}</option>
                 </select>
               </div>
               <div>
-                <label>{{ t('moduleSize') }}</label>
+                <label for="inpModuleSize">{{ t('moduleSize') }}</label>
                 <div class="input-row">
-                  <input name="moduleSize" type="number" v-model="form.moduleSize" :placeholder="t('placeholder')" autocomplete="off">
-                  <select v-model="form.moduleUnit"><option value="mil">mil</option><option value="mm">mm</option></select>
+                  <input name="moduleSize" id="inpModuleSize" type="number" v-model="form.moduleSize" :placeholder="t('placeholder')" autocomplete="off">
+                  <select id="selModuleUnit" v-model="form.moduleUnit"><option value="mil">mil</option><option value="mm">mm</option></select>
                 </div>
               </div>
             </div>
             <div class="code-img-container" id="codeImgContainer" v-show="!stitchMode">
-              <img :src="'assets/code-type-desc.png'" data-dark-src="assets/code-type-desc-dark.png" :alt="t('imgCaption')" class="code-type-img" loading="lazy" decoding="async" @error="imgFallback">
+              <img :src="'assets/code-type-desc.png'" data-dark-src="assets/code-type-desc-dark.png" width="575" height="241" :alt="t('imgCaption')" class="code-type-img" loading="lazy" decoding="async" @error="imgFallback">
               <div class="img-caption">{{ t('imgCaption') }}</div>
             </div>
           </div>
@@ -34,24 +34,24 @@
             <div class="form-section-title">{{ t('sec2') }}</div>
             <div class="compact-grid compact-grid-1">
               <div>
-                <label>{{ t('workDist') }}</label>
+                <label for="inpWorkingDistance">{{ t('workDist') }}</label>
                 <div class="input-row">
-                  <input name="workingDistance" type="number" v-model="form.workingDistance" :placeholder="t('placeholder')" autocomplete="off">
-                  <select v-model="form.distanceUnit"><option value="mm">mm</option><option value="cm">cm</option></select>
+                  <input name="workingDistance" id="inpWorkingDistance" type="number" v-model="form.workingDistance" :placeholder="t('placeholder')" autocomplete="off">
+                  <select id="selDistanceUnit" v-model="form.distanceUnit"><option value="mm">mm</option><option value="cm">cm</option></select>
                 </div>
               </div>
               <div>
-                <label>{{ t('fovW') }}</label>
+                <label for="inpFovW">{{ t('fovW') }}</label>
                 <div class="input-row">
-                  <input name="fovWidth" type="number" v-model="form.fovWidth" :placeholder="t('placeholder')" autocomplete="off">
-                  <select v-model="form.fovUnit"><option value="mm">mm</option><option value="cm">cm</option></select>
+                  <input name="fovWidth" id="inpFovW" type="number" v-model="form.fovWidth" :placeholder="t('placeholder')" autocomplete="off">
+                  <select id="selFovUnit" v-model="form.fovUnit"><option value="mm">mm</option><option value="cm">cm</option></select>
                 </div>
               </div>
               <div>
-                <label>{{ t('fovH') }}</label>
+                <label for="inpFovH">{{ t('fovH') }}</label>
                 <div class="input-row">
-                  <input name="fovHeight" type="number" v-model="form.fovHeight" :placeholder="t('placeholder')" autocomplete="off">
-                  <select v-model="form.fovHeightUnit"><option value="mm">mm</option><option value="cm">cm</option></select>
+                  <input name="fovHeight" id="inpFovH" type="number" v-model="form.fovHeight" :placeholder="t('placeholder')" autocomplete="off">
+                  <select id="selFovHUnit" v-model="form.fovHeightUnit"><option value="mm">mm</option><option value="cm">cm</option></select>
                 </div>
               </div>
             </div>
@@ -67,9 +67,9 @@
             </div>
             <div class="compact-grid compact-grid-1">
               <div>
-                <label>{{ t('overlapMM') }}</label>
+                <label for="inpOverlap">{{ t('overlapMM') }}</label>
                 <div class="input-row">
-                  <input name="overlapMM" type="number" v-model="form.overlapMM" min="0" max="500" step="1" autocomplete="off">
+                  <input name="overlapMM" id="inpOverlap" type="number" v-model="form.overlapMM" min="0" max="500" step="1" autocomplete="off">
                   <select><option value="mm">mm</option></select>
                 </div>
               </div>
@@ -135,12 +135,12 @@
 
         <div class="card" v-show="!stitchMode">
           <div class="card-header">{{ t('card3') }}</div>
-          <div id="top1Content" v-html="top1Html" @click="onTop1ContentClick"></div>
+          <div id="top1Content" v-html="top1Html" aria-live="polite" @click="onTop1ContentClick"></div>
           <button class="btn-outline" id="showModalBtn" :disabled="!modalEnabled" @click="openModal">{{ t('showModal') }}</button>
         </div>
 
         <div class="card" id="stitchPlanCard" v-show="stitchMode && hasStitchResults">
-          <div id="stitchPlanArea" class="stitch-plan-area" v-html="planAreaHtml"></div>
+          <div id="stitchPlanArea" class="stitch-plan-area" v-html="planAreaHtml" aria-live="polite"></div>
         </div>
       </div>
     </div>
@@ -184,7 +184,7 @@
           </select></label>
         </div>
         <div class="stitch-plan-list" id="stitchPlanList">
-          <div class="stitch-plan-item" :class="{active: i === stitchActiveIdx}" v-for="(r, i) in planDisplayList" :key="r.model.model + '_' + i" @click="selectPlan(i)">
+          <div class="stitch-plan-item" :class="{active: i === stitchActiveIdx}" v-for="(r, i) in planDisplayList" :key="r.model.model + '_' + i" role="button" tabindex="0" @click="selectPlan(i)" @keydown.enter.prevent="selectPlan(i)" @keydown.space.prevent="selectPlan(i)">
             <div class="stitch-plan-left">
               <span class="stitch-plan-model">{{ r.model.model }}</span>
               <span class="stitch-plan-spec">{{ r.model.resolution.w }}×{{ r.model.resolution.h }}</span>

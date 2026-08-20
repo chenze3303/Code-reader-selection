@@ -56,19 +56,19 @@
       <div class="contact-modal-body">
         <div class="contact-card">
           <div class="contact-card-img-wrap" data-src="assets/contact-wechat.jpg">
-            <img :src="'assets/contact-wechat.jpg'" alt="微信视频号" class="contact-card-img" data-i18n-alt="contactWechatAlt" loading="lazy" decoding="async">
+            <img :src="'assets/contact-wechat.jpg'" width="160" height="160" alt="微信视频号" class="contact-card-img" data-i18n-alt="contactWechatAlt" loading="lazy" decoding="async">
           </div>
           <div class="contact-card-label" data-i18n="contactWechat">微信视频号</div>
         </div>
         <div class="contact-card">
           <div class="contact-card-img-wrap" data-src="assets/contact-douyin.jpg">
-            <img :src="'assets/contact-douyin.jpg'" alt="抖音视频号" class="contact-card-img" data-i18n-alt="contactDouyinAlt" loading="lazy" decoding="async">
+            <img :src="'assets/contact-douyin.jpg'" width="160" height="160" alt="抖音视频号" class="contact-card-img" data-i18n-alt="contactDouyinAlt" loading="lazy" decoding="async">
           </div>
           <div class="contact-card-label" data-i18n="contactDouyin">抖音视频号</div>
         </div>
         <div class="contact-card">
           <div class="contact-card-img-wrap" data-src="assets/contact-bilibili.jpg">
-            <img :src="'assets/contact-bilibili.jpg'" alt="B站视频号" class="contact-card-img" data-i18n-alt="contactBiliAlt" loading="lazy" decoding="async">
+            <img :src="'assets/contact-bilibili.jpg'" width="160" height="160" alt="B站视频号" class="contact-card-img" data-i18n-alt="contactBiliAlt" loading="lazy" decoding="async">
           </div>
           <div class="contact-card-label" data-i18n="contactBili">B站视频号</div>
         </div>
@@ -87,7 +87,7 @@
   </div>
 
   <div class="contact-lightbox-overlay" id="contactLightbox">
-    <img src="" alt="预览" data-i18n-alt="previewAlt" id="contactLightboxImg">
+    <img src="" width="480" height="480" alt="预览" data-i18n-alt="previewAlt" id="contactLightboxImg">
     <div class="contact-lightbox-hint" data-i18n="lightboxCloseHint">点击任意位置关闭</div>
   </div>
 

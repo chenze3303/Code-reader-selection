@@ -11,21 +11,21 @@
           <div class="form-section">
             <div class="form-section-title">{{ t('verifyModelSel') }}</div>
             <div style="margin-bottom:6px;">
-              <label style="font-size:12px;color:#666;">{{ t('verifySeriesLabel') }}</label>
+              <label for="verifySeriesSel" style="font-size:12px;color:#666;">{{ t('verifySeriesLabel') }}</label>
               <select id="verifySeriesSel" style="width:100%;" v-model="series">
                 <option value="">{{ t('verifySeriesPh') }}</option>
                 <option v-for="s in seriesOptions" :key="s" :value="s">{{ s }}</option>
               </select>
             </div>
             <div style="margin-bottom:6px;">
-              <label style="font-size:12px;color:#666;">{{ t('verifyResLabel') }}</label>
+              <label for="verifyResSel" style="font-size:12px;color:#666;">{{ t('verifyResLabel') }}</label>
               <select id="verifyResSel" style="width:100%;" v-model="res" :disabled="!series">
                 <option value="">{{ t('verifyResPh') }}</option>
                 <option v-for="r in resOptions" :key="r" :value="r">{{ r }}</option>
               </select>
             </div>
             <div>
-              <label style="font-size:12px;color:#666;">{{ t('verifyModelLabel') }}</label>
+              <label for="verifyModelSel" style="font-size:12px;color:#666;">{{ t('verifyModelLabel') }}</label>
               <select id="verifyModelSel" style="width:100%;" v-model="modelIdx" :disabled="!series">
                 <option value="">{{ t('verifyModelPh') }}</option>
                 <option v-for="opt in modelOptions" :key="opt.idx" :value="opt.idx">{{ opt.model.model }} ({{ opt.model.focal ? opt.model.focal + 'mm' : 'C-Mount' }})</option>
@@ -37,7 +37,7 @@
           <div class="form-section">
             <div class="form-section-title">{{ t('verifyDist') }}</div>
             <div class="input-row">
-              <input name="verifyWD" type="number" v-model="wd" :placeholder="t('verifyWDPh')" style="flex:1;" autocomplete="off">
+              <input name="verifyWD" id="inpVerifyWD" type="number" v-model="wd" :placeholder="t('verifyWDPh')" style="flex:1;" autocomplete="off" :aria-label="t('verifyDist')">
               <select v-model="wdUnit"><option value="mm">mm</option><option value="cm">cm</option></select>
             </div>
             <div id="verifyWDRange" style="margin-top:4px;font-size:11px;color:#f76504;" v-html="wdRangeHtml"></div>
@@ -46,16 +46,16 @@
           <div class="form-section">
             <div class="form-section-title">{{ t('verifyBarcode') }}</div>
             <div style="margin-bottom:6px;">
-              <label style="font-size:12px;color:#666;">{{ t('verifyCodeTypeLabel') }}</label>
-              <select style="width:100%;" v-model="codeType">
+              <label for="selVerifyCodeType" style="font-size:12px;color:#666;">{{ t('verifyCodeTypeLabel') }}</label>
+              <select id="selVerifyCodeType" style="width:100%;" v-model="codeType">
                 <option value="QR">{{ t('codeType2D') }}</option>
                 <option value="Code39">{{ t('codeType1D') }}</option>
               </select>
             </div>
             <div>
-              <label style="font-size:12px;color:#666;">{{ t('moduleSize') }}</label>
+              <label for="inpVerifyModuleSize" style="font-size:12px;color:#666;">{{ t('moduleSize') }}</label>
               <div class="input-row">
-                <input name="verifyModuleSize" type="number" v-model="moduleSize" :placeholder="t('verifyModuleSizePh')" autocomplete="off">
+                <input name="verifyModuleSize" id="inpVerifyModuleSize" type="number" v-model="moduleSize" :placeholder="t('verifyModuleSizePh')" autocomplete="off">
                 <select v-model="moduleUnit"><option value="mm">mm</option><option value="mil">mil</option></select>
               </div>
             </div>

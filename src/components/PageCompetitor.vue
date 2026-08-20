@@ -37,7 +37,7 @@
           </div>
           <div v-else class="cp-grid">
             <div v-for="(item, idx) in filtered" :key="idx" class="cp-card">
-              <div class="cp-card-header" @click="toggleCard(idx)">
+              <div class="cp-card-header" role="button" tabindex="0" @click="toggleCard(idx)" @keydown.enter.prevent="toggleCard(idx)" @keydown.space.prevent="toggleCard(idx)">
                 <div class="cp-card-left">
                   <span class="cp-brand-tag">{{ item.brand }}</span>
                   <span class="cp-model-name">{{ item.model }}</span>
