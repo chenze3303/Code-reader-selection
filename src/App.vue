@@ -143,9 +143,9 @@ const toggleLang = () => { if (window.toggleLang) window.toggleLang() }
 const toggleTheme = () => { if (window.toggleTheme) window.toggleTheme() }
 
 onMounted(() => {
-  var bubble = document.getElementById('robotBubble')
-  if (!bubble) return
-  setTimeout(function () { bubble.style.display = 'none' }, 15000)
+  var wrap = document.querySelector('.floating-robot-wrap')
+  if (!wrap) return
+  setTimeout(function () { wrap.classList.add('robot-hidden') }, 15000)
 })
 
 </script>

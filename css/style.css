@@ -41,6 +41,7 @@ body {
 #app { display: contents; }
 
 .app-window {
+  position: relative;
   max-width: none;
   width: 100%;
   height: calc(100vh - 3rem);
@@ -6126,6 +6127,14 @@ select:focus, input:focus {
   z-index: 100;
   width: 72px;
   height: 90px;
+  transition: transform 0.6s cubic-bezier(0.34, 1.2, 0.64, 1);
+}
+.floating-robot-wrap.robot-hidden {
+  transform: translateX(128px);
+}
+.floating-robot-wrap.robot-hidden .robot-bubble {
+  opacity: 0;
+  visibility: hidden;
 }
 .floating-robot {
   display: flex;
@@ -6137,10 +6146,10 @@ select:focus, input:focus {
   width: 72px;
   height: 90px;
 }
-.floating-robot-wrap:hover {
+.floating-robot-wrap:not(.robot-hidden):hover {
   transform: translateY(-8px) rotate(-2deg);
 }
-.floating-robot-wrap:active {
+.floating-robot-wrap:not(.robot-hidden):active {
   transform: scale(0.92);
 }
 /* 气泡 */
@@ -6158,6 +6167,7 @@ select:focus, input:focus {
   line-height: 1.7;
   color: var(--text-primary);
   pointer-events: auto;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
 }
 .robot-bubble::after {
   content: '';
