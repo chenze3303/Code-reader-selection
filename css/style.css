@@ -41,6 +41,7 @@ body {
 #app { display: contents; }
 
 .app-window {
+  position: relative;
   max-width: none;
   width: 100%;
   height: calc(100vh - 3rem);
@@ -6122,7 +6123,7 @@ select:focus, input:focus {
 .floating-robot-wrap {
   position: absolute;
   top: 80%;
-  right: 100px;
+  right: 0;
   z-index: 100;
   width: 72px;
   height: 90px;
@@ -6130,16 +6131,12 @@ select:focus, input:focus {
   touch-action: none;
   user-select: none;
   -webkit-user-select: none;
-  cursor: grab;
 }
-.floating-robot-wrap:active {
-  cursor: grabbing;
+.floating-robot-wrap.robot-side-left.robot-hidden {
+  transform: translateX(-42px) rotate(18deg);
 }
-.floating-robot-wrap.robot-hidden {
-  transform: rotate(-20deg);
-}
-.floating-robot-wrap.robot-hidden .robot-body {
-  display: none;
+.floating-robot-wrap.robot-side-right.robot-hidden {
+  transform: translateX(42px) rotate(-18deg);
 }
 .floating-robot-wrap.robot-hidden .robot-bubble {
   opacity: 0;
