@@ -139,10 +139,7 @@
           <button class="btn-outline" id="showModalBtn" :disabled="!modalEnabled" @click="openModal">{{ t('showModal') }}</button>
         </div>
 
-        <div class="card" id="stitchPlanCard" v-show="stitchMode && hasStitchResults">
-          <div id="stitchPlanArea" class="stitch-plan-area" v-html="planAreaHtml" aria-live="polite"></div>
-        </div>
-      </div>
+    </div>
     </div>
 
     <div class="modal-overlay" id="modelModal" :class="{active: modalOpen}" @click.self="modalOpen = false">
