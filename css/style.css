@@ -4302,7 +4302,9 @@ select:focus, input:focus {
 .home-hero {
   background: linear-gradient(135deg, #0A1628 0%, #1A2B4A 60%, #243556 100%);
   padding: 36px 32px 32px;
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 5;
   overflow: hidden;
   flex-shrink: 0;
 }
