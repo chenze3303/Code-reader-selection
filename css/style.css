@@ -366,6 +366,8 @@ table, td, th { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
   padding: 1rem 0;
   border-right: 1px solid rgba(255,255,255,0.06);
   gap: 2px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
 }
 
 .nav-footer {
@@ -375,6 +377,10 @@ table, td, th { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
   flex-direction: column;
   gap: 4px;
   border-top: 1px solid rgba(255,255,255,0.06);
+  position: sticky;
+  bottom: 0;
+  background: var(--navy-2);
+  z-index: 2;
 }
 
 .nav-footer-btn {
