@@ -401,7 +401,7 @@ const accGroups = computed(() => {
   const seen = {}
   ;(m.optionalAcc || []).forEach((a) => {
     const cat = a.category || t('bomOther')
-    if (!seen[cat]) { seen[cat] = groups.length; groups.push({ cat, items: [] }) }
+    if (seen[cat] === undefined) { seen[cat] = groups.length; groups.push({ cat, items: [] }) }
     groups[seen[cat]].items.push(a)
   })
   return groups.map((g) => ({
