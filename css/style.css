@@ -6127,9 +6127,19 @@ select:focus, input:focus {
   width: 72px;
   height: 90px;
   transition: transform 0.6s cubic-bezier(0.34, 1.2, 0.64, 1);
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: grab;
+}
+.floating-robot-wrap:active {
+  cursor: grabbing;
 }
 .floating-robot-wrap.robot-hidden {
-  transform: translateX(92px);
+  transform: rotate(-20deg);
+}
+.floating-robot-wrap.robot-hidden .robot-body {
+  display: none;
 }
 .floating-robot-wrap.robot-hidden .robot-bubble {
   opacity: 0;

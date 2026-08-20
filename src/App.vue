@@ -145,7 +145,71 @@ const toggleTheme = () => { if (window.toggleTheme) window.toggleTheme() }
 onMounted(() => {
   var wrap = document.querySelector('.floating-robot-wrap')
   if (!wrap) return
-  setTimeout(function () { wrap.classList.add('robot-hidden') }, 10000)
+
+  var ROBOT_KEY = 'robotPos'
+  try {
+    var saved = JSON.parse(localStorage.getItem(ROBOT_KEY) || '')
+    if (saved && typeof saved.left === 'number') {
+      wrap.style.left = saved.left + 'px'
+      wrap.style.top = saved.top + 'px'
+      wrap.style.right = 'auto'
+    }
+  } catch (e) {}
+
+  var hideTimer = null
+  function startTimer() {
+    clearTimeout(hideTimer)
+    hideTimer = setTimeout(function () { wrap.classList.add('robot-hidden') }, 10000)
+  }
+  startTimer()
+
+  var dragging = false, moved = false
+  var startX = 0, startY = 0, origLeft = 0, origTop = 0
+  wrap.addEventListener('pointerdown', function (e) {
+    if (e.target.closest('.robot-bubble')) return
+    dragging = true
+    moved = false
+    wrap.classList.remove('robot-hidden')
+    clearTimeout(hideTimer)
+    var rect = wrap.getBoundingClientRect()
+    startX = e.clientX
+    startY = e.clientY
+    origLeft = rect.left
+    origTop = rect.top
+    wrap.setPointerCapture(e.pointerId)
+    e.preventDefault()
+  })
+  wrap.addEventListener('pointermove', function (e) {
+    if (!dragging) return
+    var dx = e.clientX - startX
+    var dy = e.clientY - startY
+    if (Math.abs(dx) > 4 || Math.abs(dy) > 4) moved = true
+    var left = Math.max(0, Math.min(origLeft + dx, window.innerWidth - wrap.offsetWidth))
+    var top = Math.max(0, Math.min(origTop + dy, window.innerHeight - wrap.offsetHeight))
+    wrap.style.left = left + 'px'
+    wrap.style.top = top + 'px'
+    wrap.style.right = 'auto'
+  })
+  function endDrag(e) {
+    if (!dragging) return
+    dragging = false
+    if (moved) {
+      var l = parseFloat(wrap.style.left)
+      var vw = window.innerWidth
+      if (l < 40) l = 0
+      else if (l > vw - wrap.offsetWidth - 40) l = vw - wrap.offsetWidth
+      wrap.style.left = l + 'px'
+      try {
+        localStorage.setItem(ROBOT_KEY, JSON.stringify({ left: l, top: parseFloat(wrap.style.top) }))
+      } catch (err) {}
+    }
+    startTimer()
+  }
+  wrap.addEventListener('pointerup', endDrag)
+  wrap.addEventListener('pointercancel', endDrag)
+  wrap.addEventListener('click', function (e) {
+    if (moved) { e.preventDefault(); e.stopPropagation() }
+  })
 })
 
 </script>
