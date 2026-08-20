@@ -1427,7 +1427,7 @@ select:focus, input:focus {
 .bom-q-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   table-layout: fixed;
   min-width: 100%;
 }
@@ -1436,7 +1436,7 @@ select:focus, input:focus {
 .bom-q-table thead th {
   background: var(--navy-2);
   color: rgba(255,255,255,0.55);
-  font-size: 0.58rem;
+  font-size: 0.62rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
