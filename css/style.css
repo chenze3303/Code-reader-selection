@@ -41,7 +41,7 @@ body {
 #app { display: contents; }
 
 .app-window {
-  max-width: 1280px;
+  max-width: none;
   width: 100%;
   height: calc(100vh - 3rem);
   height: calc(100dvh - 3rem);
@@ -4419,7 +4419,7 @@ select:focus, input:focus {
 /* 鍔熻兘鍗＄墖缃戞牸 */
 .home-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 12px;
 }
 @media (max-width: 768px) {
@@ -4455,7 +4455,7 @@ select:focus, input:focus {
   .floating-robot-wrap { display: none; }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 540px) {
   .home-grid { grid-template-columns: 1fr; }
 }
 
