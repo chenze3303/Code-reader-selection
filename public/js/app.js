@@ -98,7 +98,7 @@
   var i18n = {
     zh: {
       // Titlebar
-      title: 'HIKROBOT · 读码器工具箱',
+      title: '海康读码器工具箱',
       skipLink: '跳到主要内容',
       status: '计算结果仅供参考，建议实测验证',
       // Nav tabs
