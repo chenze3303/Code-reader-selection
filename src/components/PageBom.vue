@@ -70,7 +70,7 @@
                 <div v-else-if="accGroups.length === 0" class="bom-acc-empty" style="color:#0b5e42;"><UiIcon name="ok" /> {{ t('bomNoOptAcc', currentModel.standardAcc.length) }}</div>
                 <template v-else>
                   <div v-for="g in accGroups" :key="g.cat" class="bom-cat-card" role="button" tabindex="0" @click="openAccModal(g.cat, g.items)" @keydown.enter.prevent="openAccModal(g.cat, g.items)" @keydown.space.prevent="openAccModal(g.cat, g.items)">
-                    <div class="bom-cat-icon">{{ g.icon }}</div>
+                    <div class="bom-cat-icon" v-html="g.icon"></div>
                     <div class="bom-cat-info">
                       <div class="bom-cat-name">{{ g.cat }}</div>
                       <div class="bom-cat-count">{{ t('bomAccCount', g.items.length) }}<template v-if="g.checkedCount"> · <span class="bom-cat-checked">{{ t('bomSelected', g.checkedCount) }}</span></template></div>
@@ -173,7 +173,7 @@
       <div v-if="accModalOpen" class="acc-modal-overlay" :class="{ active: accModalOpen }" @click.self="closeAccModal">
         <div class="acc-modal-box">
           <div class="acc-modal-header">
-            <span class="acc-modal-title">{{ accModalTitle }}</span>
+            <span class="acc-modal-title"><span v-html="accModalTitleIcon"></span> {{ accCatName }}</span>
             <button class="acc-modal-close" @click="closeAccModal"><UiIcon name="x" /></button>
           </div>
           <div class="acc-modal-body">
@@ -681,7 +681,7 @@ const accCatName = ref('')
 const accItems = ref([])
 const accLenFilter = ref('')
 const accTexFilter = ref('')
-const accModalTitle = computed(() => getCatIcon(accCatName.value) + ' ' + accCatName.value)
+const accModalTitleIcon = computed(() => getCatIcon(accCatName.value))
 const accWarning = computed(() => CAT_WARNINGS[accCatName.value] || '')
 const accAvailLen = computed(() => {
   const seen = []
