@@ -1433,8 +1433,8 @@ select:focus, input:focus {
 
 /* 琛ㄥご */
 .bom-q-table thead th {
-  background: var(--navy-2);
-  color: rgba(255,255,255,0.55);
+  background: var(--bg-card);
+  color: var(--text-muted);
   font-size: 0.62rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -3954,7 +3954,7 @@ select:focus, input:focus {
 .dark .bom-cat-card { background: #161b22; border-color: #21262d; }
 .dark .bom-cat-card:hover { background: #2a1a10; border-color: #3d2518; }
 .dark .bom-cat-name { color: #e6edf3; }
-.dark .bom-q-table thead th { background: #161b22; }
+.dark .bom-q-table thead th { background: var(--bg-card); }
 .dark .bom-q-table tbody td { border-bottom-color: #21262d; }
 .dark .bom-q-table tbody tr:hover td { background: rgba(255,122,47,0.05); }
 .dark .bom-row-main td { background: #21262d !important; }
