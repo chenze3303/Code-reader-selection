@@ -170,7 +170,7 @@
       </div>
 
       <!-- 选配配件 Modal -->
-      <div v-if="accModalOpen" class="acc-modal-overlay" @click.self="closeAccModal">
+      <div v-if="accModalOpen" class="acc-modal-overlay" :class="{ active: accModalOpen }" @click.self="closeAccModal">
         <div class="acc-modal-box">
           <div class="acc-modal-header">
             <span class="acc-modal-title">{{ accModalTitle }}</span>

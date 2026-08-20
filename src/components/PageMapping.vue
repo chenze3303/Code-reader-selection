@@ -81,7 +81,7 @@
       </div>
 
       <!-- 命名规则弹窗 -->
-      <div v-if="namingOpen" class="naming-modal-overlay" id="namingModal" @click.self="closeNamingModal">
+      <div v-if="namingOpen" class="naming-modal-overlay" id="namingModal" :class="{ active: namingOpen }" @click.self="closeNamingModal">
         <div class="naming-modal">
           <div class="naming-modal-header">
             <span class="naming-modal-title">{{ t('namingTitle') }}</span>
