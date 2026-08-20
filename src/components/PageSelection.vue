@@ -25,7 +25,7 @@
               </div>
             </div>
             <div class="code-img-container" id="codeImgContainer" v-show="!stitchMode">
-              <img :src="'assets/code-type-desc.png'" data-dark-src="assets/code-type-desc-dark.png" width="575" height="241" :alt="t('imgCaption')" class="code-type-img" loading="lazy" decoding="async" @error="imgFallback">
+              <img :src="'assets/code-type-desc.png'" data-dark-src="assets/code-type-desc-dark.png" width="575" height="241" :alt="t('imgCaption')" class="code-type-img" loading="lazy" decoding="async" @error="imgFallback" role="button" tabindex="0" @click="openCodeTypeLightbox" @keydown.enter.prevent="openCodeTypeLightbox" @keydown.space.prevent="openCodeTypeLightbox">
               <div class="img-caption">{{ t('imgCaption') }}</div>
             </div>
           </div>
@@ -196,6 +196,12 @@
     </div>
 
     <PageVerify v-show="verifyOpen" @close="verifyOpen = false" />
+
+    <!-- 码制类型与模块尺寸说明图片放大 -->
+    <div v-if="codeTypeLightboxOpen" class="contact-lightbox-overlay" :class="{ active: codeTypeLightboxOpen }" @click="codeTypeLightboxOpen = false">
+      <img :src="codeTypeLightboxSrc" class="code-type-lightbox-img" :alt="t('imgCaption')">
+      <div class="contact-lightbox-hint">{{ t('lightboxCloseHint') }}</div>
+    </div>
   </div>
 </template>
 
@@ -206,6 +212,15 @@ import { useI18n } from '../composables/useI18n'
 import UiIcon from './UiIcon.vue'
 
 const { currentLang, t } = useI18n()
+
+const codeTypeLightboxOpen = ref(false)
+const codeTypeLightboxSrc = ref('')
+function openCodeTypeLightbox(e) {
+  var tgt = e && e.target
+  var src = (tgt && tgt.getAttribute && tgt.getAttribute('src')) || 'assets/code-type-desc.png'
+  codeTypeLightboxSrc.value = src
+  codeTypeLightboxOpen.value = true
+}
 
 const imgFallbackSvg = 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22120%22%3E%3Crect width=%22400%22 height=%22120%22 fill=%22%23fef3e8%22 rx=%2212%22/%3E%3Ctext x=%2250%%22 y=%2250%%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22 fill=%22%23f76504%22 font-size=%2214%22%3E码制示意：QR / Code39%3C/text%3E%3C/svg%3E'
 const imgFallback = (e) => { if (e && e.target) e.target.src = imgFallbackSvg }

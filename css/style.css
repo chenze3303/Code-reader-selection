@@ -279,6 +279,15 @@ table, td, th { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
   filter: none;
 }
 
+.contact-lightbox-overlay img.code-type-lightbox-img {
+  width: auto;
+  height: auto;
+  max-width: min(1200px, 90vw);
+  max-height: 85vh;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+
 .contact-lightbox-hint {
   position: absolute;
   bottom: 1.2rem;
@@ -765,6 +774,12 @@ select:focus, input:focus {
   height: auto;
   border-radius: 6px;
   background: var(--bg-panel);
+  cursor: zoom-in;
+  outline: none;
+}
+.code-type-img:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
 }
 .img-caption {
   font-size: 0.55rem;
