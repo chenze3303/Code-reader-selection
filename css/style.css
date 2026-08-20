@@ -41,7 +41,6 @@ body {
 #app { display: contents; }
 
 .app-window {
-  position: relative;
   max-width: none;
   width: 100%;
   height: calc(100vh - 3rem);
@@ -6130,7 +6129,7 @@ select:focus, input:focus {
   transition: transform 0.6s cubic-bezier(0.34, 1.2, 0.64, 1);
 }
 .floating-robot-wrap.robot-hidden {
-  transform: translateX(128px);
+  transform: translateX(92px);
 }
 .floating-robot-wrap.robot-hidden .robot-bubble {
   opacity: 0;
@@ -6210,7 +6209,7 @@ select:focus, input:focus {
   align-items: center;
   transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
-.floating-robot-wrap:hover .robot {
+.floating-robot-wrap:not(.robot-hidden):hover .robot {
   transform: translateY(-8px) rotate(-2deg);
 }
 /* 天线 */
@@ -6243,13 +6242,13 @@ select:focus, input:focus {
   box-shadow: 0 0 12px #ff8c42aa;
   transition: background-color, box-shadow 0.4s ease;
 }
-.floating-robot-wrap:hover .robot-antenna span:first-child {
+.floating-robot-wrap:not(.robot-hidden):hover .robot-antenna span:first-child {
   transform: rotate(-8deg);
 }
-.floating-robot-wrap:hover .robot-antenna span:last-child {
+.floating-robot-wrap:not(.robot-hidden):hover .robot-antenna span:last-child {
   transform: rotate(8deg);
 }
-.floating-robot-wrap:hover .robot-antenna span::after {
+.floating-robot-wrap:not(.robot-hidden):hover .robot-antenna span::after {
   background: #ffbb77;
   box-shadow: 0 0 24px #ff8c42ff;
 }
@@ -6298,7 +6297,7 @@ select:focus, input:focus {
   0% { transform: translateX(-4px) scale(1, 1); }
   100% { transform: translateX(4px) scale(0.8, 1.2); }
 }
-.floating-robot-wrap:hover .robot-eye {
+.floating-robot-wrap:not(.robot-hidden):hover .robot-eye {
   animation: none;
   width: 18px;
   height: 10px;
@@ -6307,7 +6306,7 @@ select:focus, input:focus {
   border-radius: 4px;
   transform: translateX(0) scale(1, 0.8);
 }
-.floating-robot-wrap:hover .robot-eye:last-child {
+.floating-robot-wrap:not(.robot-hidden):hover .robot-eye:last-child {
   transform: translateX(0) scale(1, 0.8);
 }
 /* 身体 */
@@ -6341,7 +6340,7 @@ select:focus, input:focus {
   0% { transform: scale(0.85); opacity: 0.7; box-shadow: 0 0 10px #3b82f644; }
   100% { transform: scale(1.1); opacity: 1; box-shadow: 0 0 30px #3b82f6aa; }
 }
-.floating-robot-wrap:hover .robot-heart {
+.floating-robot-wrap:not(.robot-hidden):hover .robot-heart {
   background: radial-gradient(circle at 30% 30%, #f97316, #ea580c);
   border-color: #fdba74;
   animation: robotHeartBeat 0.6s infinite alternate ease-in-out;
@@ -6370,7 +6369,7 @@ select:focus, input:focus {
   transition: color, border-color, box-shadow 0.3s ease;
   pointer-events: none;
 }
-.floating-robot-wrap:hover .robot-label {
+.floating-robot-wrap:not(.robot-hidden):hover .robot-label {
   color: var(--text-primary);
   border-color: #ff8c42aa;
   box-shadow: 0 0 14px #ff8c4222;

@@ -145,7 +145,7 @@ const toggleTheme = () => { if (window.toggleTheme) window.toggleTheme() }
 onMounted(() => {
   var wrap = document.querySelector('.floating-robot-wrap')
   if (!wrap) return
-  setTimeout(function () { wrap.classList.add('robot-hidden') }, 15000)
+  setTimeout(function () { wrap.classList.add('robot-hidden') }, 10000)
 })
 
 </script>
