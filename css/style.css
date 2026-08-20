@@ -4454,7 +4454,7 @@ select:focus, input:focus {
   }
   .home-card-footer { margin-top: 8px; padding-top: 8px; }
   .home-card-link { font-size: 0.62rem; }
-  .home-footer { flex-direction: column; gap: 8px; padding: 12px 16px; }
+  .home-footer { gap: 8px; padding: 12px 16px; }
   .floating-robot-wrap { display: none; }
 }
 
