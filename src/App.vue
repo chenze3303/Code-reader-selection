@@ -18,7 +18,7 @@
     </div>
     <div class="titlebar-actions">
       <button class="titlebar-btn" id="langBtnMobile" @click="toggleLang" data-i18n="langBtn" aria-label="切换语言">EN</button>
-      <button class="titlebar-btn" id="themeBtnMobile" @click="toggleTheme" aria-label="切换到暗色模式">🌙</button>
+      <button class="titlebar-btn" id="themeBtnMobile" @click="toggleTheme" aria-label="切换到暗色模式"><UiIcon name="moon" /></button>
     </div>
     <div class="status-badge" data-i18n="status">计算结果仅供参考，建议实测验证</div>
   </div>
@@ -54,39 +54,39 @@
     <!-- NAV SIDEBAR -->
     <nav class="nav-tabs" role="tablist">
       <button class="nav-tab active" data-page="page-home" role="tab">
-        <span class="nav-tab-icon">🏠</span><span data-i18n="tab0">首页</span>
+        <span class="nav-tab-icon"><UiIcon name="home" /></span><span data-i18n="tab0">首页</span>
       </button>
       <button class="nav-tab" data-page="page-selection" role="tab">
-        <span class="nav-tab-icon">⚡</span><span data-i18n="tab1">智能选型</span>
+        <span class="nav-tab-icon"><UiIcon name="zap" /></span><span data-i18n="tab1">智能选型</span>
       </button>
       <button class="nav-tab" data-page="page-stitch" role="tab">
-        <span class="nav-tab-icon">🔗</span><span data-i18n="tabStitch">多相机拼接</span>
+        <span class="nav-tab-icon"><UiIcon name="link" /></span><span data-i18n="tabStitch">多相机拼接</span>
       </button>
       <button class="nav-tab" data-page="page-competitor" role="tab">
-        <span class="nav-tab-icon">🔬</span><span data-i18n="tab2">竞品对标</span>
+        <span class="nav-tab-icon"><UiIcon name="microscope" /></span><span data-i18n="tab2">竞品对标</span>
       </button>
       <button class="nav-tab" data-page="page-bom" role="tab">
-        <span class="nav-tab-icon">📋</span><span data-i18n="tab3">配单表</span>
+        <span class="nav-tab-icon"><UiIcon name="clipboard" /></span><span data-i18n="tab3">配单表</span>
       </button>
       <button class="nav-tab" data-page="page-mapping" role="tab">
-        <span class="nav-tab-icon">🔄</span><span data-i18n="tab4">产品表</span>
+        <span class="nav-tab-icon"><UiIcon name="refresh" /></span><span data-i18n="tab4">产品表</span>
       </button>
       <button class="nav-tab" data-page="page-statuscode" role="tab">
-        <span class="nav-tab-icon">🔍</span><span data-i18n="tab5">状态码查询</span>
+        <span class="nav-tab-icon"><UiIcon name="search" /></span><span data-i18n="tab5">状态码查询</span>
       </button>
       <button class="nav-tab" data-page="page-pda" role="tab">
-        <span class="nav-tab-icon">📱</span><span data-i18n="tabPDA">PDA 选型</span>
+        <span class="nav-tab-icon"><UiIcon name="phone" /></span><span data-i18n="tabPDA">PDA 选型</span>
       </button>
       <button class="nav-tab" data-page="page-solutions" role="tab">
-        <span class="nav-tab-icon">📦</span><span data-i18n="tab6">方案解决</span>
+        <span class="nav-tab-icon"><UiIcon name="package" /></span><span data-i18n="tab6">方案解决</span>
       </button>
       <!-- 移动端：更多按钮 -->
       <button class="nav-tab nav-tab-more" id="navMoreBtn" role="tab">
-        <span class="nav-tab-icon">⋯</span><span data-i18n="tabMore">更多</span>
+        <UiIcon name="more" /><span data-i18n="tabMore">更多</span>
       </button>
       <div class="nav-footer">
         <button class="nav-footer-btn" id="langBtn" @click="toggleLang" data-i18n="langBtn" aria-label="切换语言">EN</button>
-        <button class="nav-footer-btn" id="themeBtn" @click="toggleTheme" aria-label="切换到暗色模式">🌙</button>
+        <button class="nav-footer-btn" id="themeBtn" @click="toggleTheme" aria-label="切换到暗色模式"><UiIcon name="moon" /></button>
       </div>
     </nav>
 
@@ -137,6 +137,7 @@ import PagePda from './components/PagePda.vue'
 import PageSolutions from './components/PageSolutions.vue'
 import PageMapping from './components/PageMapping.vue'
 import GlobalOverlays from './components/GlobalOverlays.vue'
+import UiIcon from './components/UiIcon.vue'
 
 const toggleLang = () => { if (window.toggleLang) window.toggleLang() }
 const toggleTheme = () => { if (window.toggleTheme) window.toggleTheme() }

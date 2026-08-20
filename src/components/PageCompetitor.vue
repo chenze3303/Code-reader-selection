@@ -20,7 +20,7 @@
               <option value="新大陆">新大陆</option>
             </select>
           </div>
-          <button class="cp-btn-expand" id="cpExpandAllBtn" @click="toggleExpandAll">{{ allOpen ? t('cpCollapse') : t('cpExpand') }}</button>
+          <button class="cp-btn-expand" id="cpExpandAllBtn" @click="toggleExpandAll"><UiIcon :name="allOpen ? 'folder' : 'folderopen'" /> {{ allOpen ? t('cpCollapse') : t('cpExpand') }}</button>
         </div>
 
         <!-- 状态栏 -->
@@ -32,7 +32,7 @@
         <!-- 结果区 -->
         <div class="cp-result-area" id="cpResultArea">
           <div v-if="filtered.length === 0" class="cp-empty cp-empty-state">
-            <span class="cp-empty-icon">🔍</span>
+            <span class="cp-empty-icon"><UiIcon name="search" /></span>
             <p>{{ t('cpNoMatch') }}<br><span>{{ t('cpNoMatchHint') }}</span></p>
           </div>
           <div v-else class="cp-grid">
@@ -41,21 +41,21 @@
                 <div class="cp-card-left">
                   <span class="cp-brand-tag">{{ item.brand }}</span>
                   <span class="cp-model-name">{{ item.model }}</span>
-                  <span class="cp-hik-badge">🔗 {{ item.hikModel }}</span>
+                  <span class="cp-hik-badge"><UiIcon name="link" /> {{ item.hikModel }}</span>
                 </div>
                 <span class="cp-expand-icon">{{ isOpen(idx) ? '▼' : '▶' }}</span>
               </div>
               <div class="cp-card-detail" :class="{ open: isOpen(idx) }">
                 <div class="cp-detail-row">
-                  <div class="cp-detail-label competitor">📌 {{ t('cpFeatLabel') }}</div>
+                  <div class="cp-detail-label competitor"><UiIcon name="pin" /> {{ t('cpFeatLabel') }}</div>
                   <div class="cp-detail-value competitor-desc">{{ item.competitorDesc }}</div>
                 </div>
                 <div class="cp-detail-row">
-                  <div class="cp-detail-label advantage">✨ {{ t('cpAdvLabel') }}</div>
+                  <div class="cp-detail-label advantage"><UiIcon name="sparkles" /> {{ t('cpAdvLabel') }}</div>
                   <div class="cp-detail-value advantage-text">{{ item.advantageDesc }}</div>
                 </div>
                 <div class="cp-detail-row last">
-                  <div class="cp-detail-label">🎯 {{ t('cpRecLabel') }}</div>
+                  <div class="cp-detail-label"><UiIcon name="target" /> {{ t('cpRecLabel') }}</div>
                   <div class="cp-detail-value"><strong class="cp-hik-model">{{ item.hikModel }}</strong></div>
                 </div>
               </div>
@@ -71,6 +71,7 @@
 import { ref, computed, watch } from 'vue'
 import { useI18n } from '../composables/useI18n'
 import competitorDB from '../data/competitorData'
+import UiIcon from './UiIcon.vue'
 
 const { t } = useI18n()
 

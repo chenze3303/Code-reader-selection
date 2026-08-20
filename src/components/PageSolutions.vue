@@ -5,7 +5,7 @@
 
         <!-- 顶部说明 -->
         <div class="sol-header">
-          <div class="sol-header-icon">📦</div>
+          <div class="sol-header-icon"><UiIcon name="package" /></div>
           <div class="sol-header-info">
             <div class="sol-header-title">{{ t('solTitle') }}</div>
             <div class="sol-header-desc">{{ t('solDesc') }}</div>
@@ -17,7 +17,7 @@
 
           <a class="sol-card sol-card-hero" href="https://www.v-club.com/vAssistant" target="_blank" rel="noopener">
             <div class="sol-card-icon-wrap sol-icon-v">
-              <span class="sol-card-icon">🤖</span>
+              <span class="sol-card-icon"><UiIcon name="bot" /></span>
             </div>
             <div class="sol-card-body">
               <div class="sol-card-title">{{ t('solVTitle') }}</div>
@@ -31,7 +31,7 @@
 
           <a class="sol-card" href="https://docs.qq.com/aio/DVXBrVm9QaURLRGZC" target="_blank" rel="noopener">
             <div class="sol-card-icon-wrap sol-icon-doc">
-              <span class="sol-card-icon">📄</span>
+              <span class="sol-card-icon"><UiIcon name="file" /></span>
             </div>
             <div class="sol-card-body">
               <div class="sol-card-title">{{ t('solDocTitle') }}</div>
@@ -45,7 +45,7 @@
 
           <a class="sol-card" href="https://www.hikrobotics.com/cn/service/aftersale/repair/?module=1AUZFRERGRkxER0ZERjYm" target="_blank" rel="noopener">
             <div class="sol-card-icon-wrap sol-icon-repair">
-              <span class="sol-card-icon">🔧</span>
+              <span class="sol-card-icon"><UiIcon name="wrench" /></span>
             </div>
             <div class="sol-card-body">
               <div class="sol-card-title">{{ t('solRepairTitle') }}</div>
@@ -59,7 +59,7 @@
 
           <a class="sol-card" href="sdk-guide.html" target="_blank" rel="noopener">
             <div class="sol-card-icon-wrap sol-icon-sdk">
-              <span class="sol-card-icon">💻</span>
+              <span class="sol-card-icon"><UiIcon name="laptop" /></span>
             </div>
             <div class="sol-card-body">
               <div class="sol-card-title">{{ t('solSdkTitle') }}</div>
@@ -73,7 +73,7 @@
 
           <a class="sol-card" href="https://jiaze3303.github.io/Viewer/" target="_blank" rel="noopener">
             <div class="sol-card-icon-wrap sol-icon-viewer">
-              <span class="sol-card-icon">📐</span>
+              <span class="sol-card-icon"><UiIcon name="ruler" /></span>
             </div>
             <div class="sol-card-body">
               <div class="sol-card-title">{{ t('solViewerTitle') }}</div>
@@ -99,6 +99,7 @@
 
 <script setup>
 import { useI18n } from '../composables/useI18n'
+import UiIcon from './UiIcon.vue'
 const { currentLang, t } = useI18n()
 currentLang.value
 </script>

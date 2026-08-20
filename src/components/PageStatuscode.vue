@@ -6,9 +6,9 @@
           <!-- 工具栏 -->
           <div class="sc-toolbar">
             <div class="sc-search-wrap">
-              <span class="sc-search-icon">🔍</span>
+              <span class="sc-search-icon"><UiIcon name="search" /></span>
               <input type="text" id="scSearchInput" class="sc-search-input" v-model="keyword" :placeholder="t('scSearch')" autocomplete="off">
-              <button class="sc-search-clear" id="scSearchClear" :title="t('scClear')" @click="onClearSearch">✕</button>
+              <button class="sc-search-clear" id="scSearchClear" :title="t('scClear')" @click="onClearSearch"><UiIcon name="x" /></button>
             </div>
             <div class="sc-filter-wrap">
               <span class="sc-filter-label">{{ t('scCatLabel') }}</span>
@@ -22,7 +22,7 @@
           <!-- 统计栏 -->
           <div class="sc-statsbar">
             <span id="scStats">{{ statsText }}</span>
-            <span class="sc-statsbar-hint">{{ t('scStatsHint') }}</span>
+            <span class="sc-statsbar-hint"><UiIcon name="lightbulb" /> {{ t('scStatsHint') }}</span>
           </div>
 
           <!-- 结果表格 -->
@@ -40,7 +40,7 @@
               </thead>
               <tbody id="scTableBody">
                 <tr v-if="!ready"><td colspan="6" class="sc-empty">{{ t('scLoading') }}</td></tr>
-                <tr v-else-if="filtered.length === 0"><td colspan="6" class="sc-empty">{{ t('scNoMatch') }}</td></tr>
+                <tr v-else-if="filtered.length === 0"><td colspan="6" class="sc-empty"><UiIcon name="frown" /> {{ t('scNoMatch') }}</td></tr>
                 <tr v-else v-for="(item, index) in filtered" :key="item.name" :class="rowClass(item)" @click="copyName(item.name)">
                   <td style="text-align:center">{{ index + 1 }}</td>
                   <td><span class="sc-cat-tag" :class="catClass(item.category)">{{ item.category }}</span></td>
@@ -55,7 +55,7 @@
 
           <div class="sc-footer">
             <span id="scFooterCount">{{ countText }}</span>
-            <span class="sc-footer-hint">{{ t('scFooterHint') }}</span>
+            <span class="sc-footer-hint"><UiIcon name="lightbulb" /> {{ t('scFooterHint') }}</span>
           </div>
         </div>
       </div>
@@ -66,6 +66,7 @@
 import { ref, computed } from 'vue'
 import { useI18n } from '../composables/useI18n'
 import { useGlobalData } from '../composables/useLegacy'
+import UiIcon from './UiIcon.vue'
 
 const { t } = useI18n()
 const codes = useGlobalData('STATUS_CODES')

@@ -4,41 +4,41 @@
   <div class="more-popup">
     <div class="more-popup-header">
       <span class="more-popup-title" data-i18n="moreTitle">更多功能</span>
-      <button class="more-popup-close" id="morePopupClose">✕</button>
+      <button class="more-popup-close" id="morePopupClose"><UiIcon name="x" /></button>
     </div>
     <div class="more-popup-list">
       <button class="more-popup-item" data-page="page-stitch">
-        <span class="more-popup-icon">🔗</span>
+        <span class="more-popup-icon"><UiIcon name="link" /></span>
         <span class="more-popup-label" data-i18n="tabStitch">多相机拼接</span>
         <span class="more-popup-arrow">›</span>
       </button>
       <button class="more-popup-item" data-page="page-competitor">
-        <span class="more-popup-icon">🔬</span>
+        <span class="more-popup-icon"><UiIcon name="microscope" /></span>
         <span class="more-popup-label" data-i18n="tab2">竞品对标</span>
         <span class="more-popup-arrow">›</span>
       </button>
       <button class="more-popup-item" data-page="page-bom">
-        <span class="more-popup-icon">📋</span>
+        <span class="more-popup-icon"><UiIcon name="clipboard" /></span>
         <span class="more-popup-label" data-i18n="tab3">配单表</span>
         <span class="more-popup-arrow">›</span>
       </button>
       <button class="more-popup-item" data-page="page-mapping">
-        <span class="more-popup-icon">🔄</span>
+        <span class="more-popup-icon"><UiIcon name="refresh" /></span>
         <span class="more-popup-label" data-i18n="tab4">产品表</span>
         <span class="more-popup-arrow">›</span>
       </button>
       <button class="more-popup-item" data-page="page-statuscode">
-        <span class="more-popup-icon">🔍</span>
+        <span class="more-popup-icon"><UiIcon name="search" /></span>
         <span class="more-popup-label" data-i18n="tab5">状态码查询</span>
         <span class="more-popup-arrow">›</span>
       </button>
       <button class="more-popup-item" data-page="page-pda">
-        <span class="more-popup-icon">📱</span>
+        <span class="more-popup-icon"><UiIcon name="phone" /></span>
         <span class="more-popup-label" data-i18n="tabPDA">PDA 选型</span>
         <span class="more-popup-arrow">›</span>
       </button>
       <button class="more-popup-item" data-page="page-solutions">
-        <span class="more-popup-icon">📦</span>
+        <span class="more-popup-icon"><UiIcon name="package" /></span>
         <span class="more-popup-label" data-i18n="tab6">方案解决</span>
         <span class="more-popup-arrow">›</span>
       </button>
@@ -50,8 +50,8 @@
   <div class="contact-modal-overlay" id="contactModal">
     <div class="contact-modal">
       <div class="contact-modal-header">
-        <span class="contact-modal-title" data-i18n="contactTitle">📱 关注我们</span>
-        <button class="contact-modal-close" id="contactModalClose">✕</button>
+        <span class="contact-modal-title"><UiIcon name="phone" /><span data-i18n="contactTitle">关注我们</span></span>
+        <button class="contact-modal-close" id="contactModalClose"><UiIcon name="x" /></button>
       </div>
       <div class="contact-modal-body">
         <div class="contact-card">
@@ -74,7 +74,7 @@
         </div>
       </div>
       <div class="contact-modal-footer">
-        <span class="contact-modal-hint" data-i18n="contactHint">💡 扫码关注，获取最新资讯 </span>
+        <span class="contact-modal-hint"><UiIcon name="lightbulb" /><span data-i18n="contactHint">扫码关注，获取最新资讯</span></span>
       </div>
     </div>
   </div>
@@ -95,8 +95,8 @@
   <div class="announcement-overlay" id="announcementOverlay">
     <div class="announcement-modal">
       <div class="announcement-header">
-        <span data-i18n="announcementTitle">📢 公告</span>
-        <button class="announcement-close" id="announcementClose">✕</button>
+        <span class="announcement-header-icon"><UiIcon name="megaphone" /></span><span data-i18n="announcementTitle">公告</span>
+        <button class="announcement-close" id="announcementClose"><UiIcon name="x" /></button>
       </div>
       <div class="announcement-body">
         <div class="announcement-latest" id="announcementLatest"></div>
@@ -114,3 +114,7 @@
   <!-- Toast 通知容器 -->
   <div class="toast-container" id="toastContainer"></div>
 </template>
+
+<script setup>
+import UiIcon from './UiIcon.vue'
+</script>

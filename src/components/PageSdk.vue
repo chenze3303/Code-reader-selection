@@ -3,8 +3,8 @@
     <div class="sdk-layout">
       <!-- 侧边目录 -->
       <aside class="sdk-toc" id="sdkToc">
-        <div class="sdk-toc-title">{{ t('sdkTocTitle') }}</div>
-        <a href="sdk-guide.html" class="sdk-full-link" target="_blank">{{ t('sdkFullDoc') }}</a>
+        <div class="sdk-toc-title"><UiIcon name="bookmark" /> {{ t('sdkTocTitle') }}</div>
+        <a href="sdk-guide.html" class="sdk-full-link" target="_blank"><UiIcon name="book" /> {{ t('sdkFullDoc') }}</a>
         <div class="sdk-toc-lang">
           <button class="sdk-toc-lang-btn" :class="{active: sdkLang === 'c'}" @click="sdkLang = 'c'">C</button>
           <button class="sdk-toc-lang-btn" :class="{active: sdkLang === 'csharp'}" @click="sdkLang = 'csharp'">C#</button>
@@ -12,26 +12,26 @@
         <nav class="sdk-toc-nav" id="sdkTocNav">
           <!-- C 语言目录 -->
           <div class="sdk-toc-section" :class="{active: sdkLang === 'c'}">
-            <a href="#sdk-c-overview" class="sdk-toc-link">{{ t('sdkTocOverview') }}</a>
-            <a href="#sdk-c-env" class="sdk-toc-link">{{ t('sdkTocEnv') }}</a>
-            <a href="#sdk-c-flow" class="sdk-toc-link">{{ t('sdkTocFlow') }}</a>
-            <a href="#sdk-c-param" class="sdk-toc-link">{{ t('sdkTocParam') }}</a>
-            <a href="#sdk-c-grab" class="sdk-toc-link">{{ t('sdkTocGrab') }}</a>
-            <a href="#sdk-c-trigger" class="sdk-toc-link">{{ t('sdkTocTrigger') }}</a>
-            <a href="#sdk-c-error" class="sdk-toc-link">{{ t('sdkTocError') }}</a>
-            <a href="#sdk-c-api" class="sdk-toc-link">{{ t('sdkTocApi') }}</a>
+            <a href="#sdk-c-overview" class="sdk-toc-link"><UiIcon name="clipboard" /> {{ t('sdkTocOverview') }}</a>
+            <a href="#sdk-c-env" class="sdk-toc-link"><UiIcon name="wrench" /> {{ t('sdkTocEnv') }}</a>
+            <a href="#sdk-c-flow" class="sdk-toc-link"><UiIcon name="star" /> {{ t('sdkTocFlow') }}</a>
+            <a href="#sdk-c-param" class="sdk-toc-link"><UiIcon name="settings" /> {{ t('sdkTocParam') }}</a>
+            <a href="#sdk-c-grab" class="sdk-toc-link"><UiIcon name="camera" /> {{ t('sdkTocGrab') }}</a>
+            <a href="#sdk-c-trigger" class="sdk-toc-link"><UiIcon name="target" /> {{ t('sdkTocTrigger') }}</a>
+            <a href="#sdk-c-error" class="sdk-toc-link"><UiIcon name="search" /> {{ t('sdkTocError') }}</a>
+            <a href="#sdk-c-api" class="sdk-toc-link"><UiIcon name="library" /> {{ t('sdkTocApi') }}</a>
           </div>
           <!-- C# 语言目录 -->
           <div class="sdk-toc-section" :class="{active: sdkLang === 'csharp'}">
-            <a href="#sdk-cs-overview" class="sdk-toc-link">{{ t('sdkTocOverview') }}</a>
-            <a href="#sdk-cs-env" class="sdk-toc-link">{{ t('sdkTocEnv') }}</a>
-            <a href="#sdk-cs-flow" class="sdk-toc-link">{{ t('sdkTocFlow') }}</a>
-            <a href="#sdk-cs-param" class="sdk-toc-link">{{ t('sdkTocParam') }}</a>
-            <a href="#sdk-cs-grab" class="sdk-toc-link">{{ t('sdkTocGrab') }}</a>
-            <a href="#sdk-cs-trigger" class="sdk-toc-link">{{ t('sdkTocTrigger') }}</a>
-            <a href="#sdk-cs-advanced" class="sdk-toc-link">{{ t('sdkTocAdvanced') }}</a>
-            <a href="#sdk-cs-error" class="sdk-toc-link">{{ t('sdkTocError') }}</a>
-            <a href="#sdk-cs-api" class="sdk-toc-link">{{ t('sdkTocApi') }}</a>
+            <a href="#sdk-cs-overview" class="sdk-toc-link"><UiIcon name="clipboard" /> {{ t('sdkTocOverview') }}</a>
+            <a href="#sdk-cs-env" class="sdk-toc-link"><UiIcon name="wrench" /> {{ t('sdkTocEnv') }}</a>
+            <a href="#sdk-cs-flow" class="sdk-toc-link"><UiIcon name="star" /> {{ t('sdkTocFlow') }}</a>
+            <a href="#sdk-cs-param" class="sdk-toc-link"><UiIcon name="settings" /> {{ t('sdkTocParam') }}</a>
+            <a href="#sdk-cs-grab" class="sdk-toc-link"><UiIcon name="camera" /> {{ t('sdkTocGrab') }}</a>
+            <a href="#sdk-cs-trigger" class="sdk-toc-link"><UiIcon name="target" /> {{ t('sdkTocTrigger') }}</a>
+            <a href="#sdk-cs-advanced" class="sdk-toc-link"><UiIcon name="link" /> {{ t('sdkTocAdvanced') }}</a>
+            <a href="#sdk-cs-error" class="sdk-toc-link"><UiIcon name="search" /> {{ t('sdkTocError') }}</a>
+            <a href="#sdk-cs-api" class="sdk-toc-link"><UiIcon name="library" /> {{ t('sdkTocApi') }}</a>
           </div>
         </nav>
         <div class="sdk-toc-progress">
@@ -44,7 +44,7 @@
       <!-- 完整文档横幅 -->
       <div class="sdk-banner">
         <div class="sdk-banner-text">
-          <h2>{{ t('sdkBannerTitle') }}</h2>
+          <h2><UiIcon name="book" /> {{ t('sdkBannerTitle') }}</h2>
           <p>{{ t('sdkBannerDesc') }}</p>
         </div>
         <a href="sdk-guide.html" class="sdk-banner-btn" target="_blank">{{ t('sdkBannerBtn') }}</a>
@@ -100,7 +100,7 @@
               <li>{{ t('sdkPrereq3') }}</li>
             </ul>
             <div class="sdk-warning">
-              <span class="sdk-warning-icon">⚠️</span>
+              <span class="sdk-warning-icon"><UiIcon name="warn" /></span>
               <span>{{ t('sdkBitnessWarn') }}</span>
             </div>
           </div>
@@ -192,7 +192,7 @@
 <span class="fn">MV_CODEREADER_OpenDevice</span>(handle);</code></pre>
             </div>
             <div class="sdk-tip">
-              <span class="sdk-tip-icon">💡</span>
+              <span class="sdk-tip-icon"><UiIcon name="lightbulb" /></span>
               <span>{{ t('sdkAreaTip') }}</span>
             </div>
           </div>
@@ -283,7 +283,7 @@
             </div>
           </div>
           <div class="sdk-warning">
-            <span class="sdk-warning-icon">⚠️</span>
+            <span class="sdk-warning-icon"><UiIcon name="warn" /></span>
             <span>{{ t('sdkEnumWarn') }}</span>
           </div>
         </div>
@@ -540,7 +540,7 @@ nRet = device.<span class="fn">MV_CODEREADER_CreateHandle_NET</span>(<span class
 nRet = device.<span class="fn">MV_CODEREADER_OpenDevice_NET</span>();</code></pre>
             </div>
             <div class="sdk-warning">
-              <span class="sdk-warning-icon">⚠️</span>
+              <span class="sdk-warning-icon"><UiIcon name="warn" /></span>
               <span>{{ t('sdkCsDllImport') }}</span>
             </div>
           </div>
@@ -562,7 +562,7 @@ nRet = device.<span class="fn">MV_CODEREADER_OpenDevice_NET</span>();</code></pr
 }</code></pre>
             </div>
             <div class="sdk-tip">
-              <span class="sdk-tip-icon">💡</span>
+              <span class="sdk-tip-icon"><UiIcon name="lightbulb" /></span>
               <span>{{ t('sdkCsGC') }}</span>
             </div>
           </div>
@@ -706,6 +706,7 @@ nRet = device.<span class="fn">MV_CODEREADER_OpenDevice_NET</span>();</code></pr
 <script setup>
 import { ref, onMounted } from 'vue'
 import { useI18n } from '../composables/useI18n'
+import UiIcon from './UiIcon.vue'
 
 const { currentLang, t } = useI18n()
 const sdkLang = ref('c')

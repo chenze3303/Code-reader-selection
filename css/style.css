@@ -6451,3 +6451,20 @@ td, th { font-variant-numeric: tabular-nums; }
   }
   .robot-eye, .robot-heart { animation: none !important; }
 }
+
+/* ─── 统一图标规范（lucide SVG） ─── */
+.lucide-icon {
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  vertical-align: -0.125em;
+  stroke-width: 2;
+  color: currentColor;
+}
+.ui-icon {
+  display: inline-flex;
+  line-height: 0;
+  vertical-align: -0.125em;
+}
+.icon-lg { width: 1.4em; height: 1.4em; }
+.icon-xl { width: 1.8em; height: 1.8em; }

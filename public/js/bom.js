@@ -258,7 +258,7 @@
     });
 
     if (!optionalAccs.length) {
-      container.innerHTML = '<div class="bom-acc-empty" style="color:#0b5e42;">✅ ' + _t('bomNoOptAcc', standardAccs.length) + '</div>';
+      container.innerHTML = '<div class="bom-acc-empty" style="color:#0b5e42;">' + (window.uiIcon ? window.uiIcon('ok') : '') + ' ' + _t('bomNoOptAcc', standardAccs.length) + '</div>';
       return;
     }
 
@@ -294,8 +294,8 @@
   }
 
   function getCatIcon(cat) {
-    var map = { '线缆': '🔌', '网线': '🌐', '电源线': '🔋', '电源': '⚡', '安装': '🔩', '安装板': '📐', '其他': '📦', '外置配件': '🔧', '镜头': '🔍', '测试镜头': '👁', '镜头罩': '🛡', '光源': '💡', '微码光源': '🔬', '爆闪光源': '✨', '灯板': '💎', '大类': '📋', '一体线': '🔌', 'IO线': '🔗', 'FA镜头': '🔭', '扩展配件': '📦' };
-    return map[cat] || '📦';
+    var map = { '线缆': 'cable', '网线': 'globe', '电源线': 'battery', '电源': 'zap', '安装': 'wrench', '安装板': 'ruler', '其他': 'package', '外置配件': 'wrench', '镜头': 'aperture', '测试镜头': 'eye', '镜头罩': 'shield', '光源': 'lightbulb', '微码光源': 'microscope', '爆闪光源': 'sparkles', '灯板': 'gem', '大类': 'clipboard', '一体线': 'cable', 'IO线': 'link', 'FA镜头': 'aperture', '扩展配件': 'package' };
+    return window.uiIcon ? window.uiIcon(map[cat] || 'package') : '';
   }
 
   // ─── 选配配件 Modal ───
@@ -370,7 +370,7 @@
       var checked = !!selState.accCodes[a._key];
       var img = getAccImg(a.name);
       html += '<div class="acc-modal-item' + (checked ? ' checked' : '') + '" data-key="' + esc(a._key) + '">' +
-        '<div class="acc-modal-check">' + (checked ? '✓' : '') + '</div>' +
+        '<div class="acc-modal-check">' + (checked ? (window.uiIcon ? window.uiIcon('check') : '✓') : '') + '</div>' +
         (img ? '<div class="acc-modal-img"><img src="assets/accessories/webp/' + esc(img) + '" alt="" loading="lazy" data-lightbox-src="assets/accessories/webp/' + esc(img) + '"></div>' : '') +
         '<div class="acc-modal-info">' +
           '<div class="acc-modal-name">' + esc(a.name) + '</div>' +
@@ -389,7 +389,7 @@
         var isChecked = !wasChecked;
         el.classList.toggle('checked', isChecked);
         var checkEl = el.querySelector('.acc-modal-check');
-        if (checkEl) checkEl.textContent = isChecked ? '✓' : '';
+        if (checkEl) checkEl.innerHTML = isChecked ? (window.uiIcon ? window.uiIcon('check') : '✓') : '';
 
 
         // 电源适配器/线缆自动联动（按 series 匹配，参考 peidan.html 逻辑）
@@ -415,7 +415,7 @@
                     if (itemEl.dataset.key === target._key) {
                       itemEl.classList.add('checked');
                       var targetCheck = itemEl.querySelector('.acc-modal-check');
-                      if (targetCheck) targetCheck.textContent = '✓';
+                      if (targetCheck) targetCheck.innerHTML = (window.uiIcon ? window.uiIcon('check') : '✓');
                     }
                   });
                 }
@@ -456,7 +456,7 @@
     // 从映射表获取提示信息（线缆/电源等各类别可独立配置）
     var warningMsg = CAT_WARNINGS[catName] || '';
     var warningHtml = warningMsg
-      ? '<div class="acc-modal-warning"><span class="acc-modal-warning-icon">⚠️</span>' + warningMsg + '</div>'
+      ? '<div class="acc-modal-warning"><span class="acc-modal-warning-icon">' + (window.uiIcon ? window.uiIcon('warn') : '') + '</span>' + warningMsg + '</div>'
       : '';
 
     // 线缆类：警告 + 筛选器
@@ -912,8 +912,8 @@
       addBtn.addEventListener('click', function() {
         if (getCurrentModel()) {
           autoGenerateBOM();
-          addBtn.textContent = '✓ ' + _t('bomUpdated');
-          setTimeout(function() { addBtn.textContent = '✓ ' + _t('bomAutoGen'); }, 1000);
+          addBtn.innerHTML = (window.uiIcon ? window.uiIcon('check') : '✓') + ' ' + _t('bomUpdated');
+          setTimeout(function() { addBtn.innerHTML = (window.uiIcon ? window.uiIcon('check') : '✓') + ' ' + _t('bomAutoGen'); }, 1000);
         }
       });
     }

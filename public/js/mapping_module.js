@@ -88,7 +88,7 @@
       html += '<tr class="mp-cat-row' + (isOpen ? ' open' : '') + '" data-cat="' + esc(cat) + '">' +
         '<td colspan="' + colCount + '">' +
           '<span class="mp-cat-toggle">' + (isOpen ? '▼' : '▶') + '</span>' +
-          '📂 ' + esc(cat) +
+          (window.uiIcon ? window.uiIcon('folderopen') : '') + ' ' + esc(cat) +
           '<span class="mp-cat-badge">' + _t('mpRecords', rows.length) + '</span>' +
         '</td></tr>';
 
@@ -96,8 +96,8 @@
         rows.forEach(function(r) {
           var baseUrl = window.MAPPING_DOWNLOAD_URLS ? window.MAPPING_DOWNLOAD_URLS.getBaseUrl(r.cat) : '';
           var distUrl = window.MAPPING_DOWNLOAD_URLS ? window.MAPPING_DOWNLOAD_URLS.getDistUrl(r.cat) : '';
-          var baseDlBtn = baseUrl ? '<a class="mp-dl-btn base" href="' + esc(baseUrl) + '" target="_blank" title="' + _t('mpDlBase') + '">📥</a>' : '<span class="mp-dl-btn disabled" title="' + _t('mpNone') + '">—</span>';
-          var distDlBtn = distUrl ? '<a class="mp-dl-btn dist" href="' + esc(distUrl) + '" target="_blank" title="' + _t('mpDlDist') + '">📥</a>' : '<span class="mp-dl-btn disabled" title="' + _t('mpNone') + '">—</span>';
+          var baseDlBtn = baseUrl ? '<a class="mp-dl-btn base" href="' + esc(baseUrl) + '" target="_blank" title="' + _t('mpDlBase') + '">' + (window.uiIcon ? window.uiIcon('download') : '') + '</a>' : '<span class="mp-dl-btn disabled" title="' + _t('mpNone') + '">—</span>';
+          var distDlBtn = distUrl ? '<a class="mp-dl-btn dist" href="' + esc(distUrl) + '" target="_blank" title="' + _t('mpDlDist') + '">' + (window.uiIcon ? window.uiIcon('download') : '') + '</a>' : '<span class="mp-dl-btn disabled" title="' + _t('mpNone') + '">—</span>';
           html += '<tr class="mp-data-row" data-parent-cat="' + esc(cat) + '">' +
             '<td class="mp-seq">' + esc(r.seq) + '</td>' +
             '<td class="mp-base-name">' + esc(r.baseName) + '</td>';

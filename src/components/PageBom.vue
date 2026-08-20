@@ -5,14 +5,14 @@
         <!-- 左侧：选型配置面板 -->
         <div class="bom-left">
           <div class="bom-left-header">
-            <span class="bom-left-icon">📋</span>
+            <span class="bom-left-icon"><UiIcon name="clipboard" /></span>
             <span class="bom-left-title">{{ t('bomConfig') }}</span>
           </div>
           <div class="bom-left-inner">
 
             <!-- 快速搜索 -->
             <div class="bom-group">
-              <div class="bom-group-label">{{ t('bomQuickSearch') }}</div>
+              <div class="bom-group-label"><UiIcon name="search" /> {{ t('bomQuickSearch') }}</div>
               <div class="bom-search-wrap">
                 <input type="text" id="bomQuickSearch" class="bom-search-input" v-model="searchKw" :placeholder="t('bomQuickSearchPh')" @input="onSearchInput" @blur="onSearchBlur" autocomplete="off">
                 <div class="bom-search-results" id="bomSearchResults" v-show="searchOpen">
@@ -67,7 +67,7 @@
               <div class="bom-group-label">{{ t('bomAcc') }}</div>
               <div class="bom-acc-list" id="bomAccList">
                 <div v-if="!currentModel" class="bom-acc-empty">{{ t('bomAccEmpty') }}</div>
-                <div v-else-if="accGroups.length === 0" class="bom-acc-empty" style="color:#0b5e42;">✅ {{ t('bomNoOptAcc', currentModel.standardAcc.length) }}</div>
+                <div v-else-if="accGroups.length === 0" class="bom-acc-empty" style="color:#0b5e42;"><UiIcon name="ok" /> {{ t('bomNoOptAcc', currentModel.standardAcc.length) }}</div>
                 <template v-else>
                   <div v-for="g in accGroups" :key="g.cat" class="bom-cat-card" role="button" tabindex="0" @click="openAccModal(g.cat, g.items)" @keydown.enter.prevent="openAccModal(g.cat, g.items)" @keydown.space.prevent="openAccModal(g.cat, g.items)">
                     <div class="bom-cat-icon">{{ g.icon }}</div>
@@ -85,7 +85,7 @@
 
           <!-- 生成按钮固定在底部 -->
           <div class="bom-left-footer">
-            <button class="bom-add-btn" id="bomAddToListBtn" :disabled="!currentModel" @click="onAddToList">{{ addBtnText || t('bomAdd') }}</button>
+            <button class="bom-add-btn" id="bomAddToListBtn" :disabled="!currentModel" @click="onAddToList"><span v-if="addBtnText" v-html="addBtnText"></span><span v-else><UiIcon name="zap" /> {{ t('bomAdd') }}</span></button>
           </div>
         </div>
 
@@ -94,7 +94,7 @@
 
           <!-- 右侧顶部 header（与左侧配单配置对齐） -->
           <div class="bom-right-header">
-            <span class="bom-left-icon">📊</span>
+            <span class="bom-left-icon"><UiIcon name="chart" /></span>
             <span class="bom-left-title">{{ t('bomDetail') }}</span>
           </div>
 
@@ -127,7 +127,7 @@
               <div class="bom-toolbar-btns">
                 <button class="bom-btn-reset" id="bomQClearBtn" @click="clearBOM">{{ t('bomReset') }}</button>
                 <a class="bom-btn-export" id="bomDownloadBtn" :href="dlUrl" target="_blank" v-show="dlUrl" style="text-decoration:none;">{{ t('bomDownload') }}</a>
-                <button class="bom-btn-export" id="bomQExportBtn" @click="exportCSV">{{ t('bomExport') }}</button>
+                <button class="bom-btn-export" id="bomQExportBtn" @click="exportCSV"><UiIcon name="download" /> {{ t('bomExport') }}</button>
               </div>
             </div>
           </div>
@@ -163,7 +163,7 @@
 
           <div class="bom-right-footer">
             <span id="bomQCount">{{ t('bomCount', bomList.length) }}</span>
-            <span class="bom-footer-hint">{{ t('bomFooterHint') }}</span>
+            <span class="bom-footer-hint"><UiIcon name="lightbulb" /> {{ t('bomFooterHint') }}</span>
           </div>
         </div>
 
@@ -174,11 +174,11 @@
         <div class="acc-modal-box">
           <div class="acc-modal-header">
             <span class="acc-modal-title">{{ accModalTitle }}</span>
-            <button class="acc-modal-close" @click="closeAccModal">✕</button>
+            <button class="acc-modal-close" @click="closeAccModal"><UiIcon name="x" /></button>
           </div>
           <div class="acc-modal-body">
             <div class="acc-modal-filter-wrap" id="accModalFilter" v-if="accWarning || accAvailLen.length || accAvailTex.length">
-              <div v-if="accWarning" class="acc-modal-warning"><span class="acc-modal-warning-icon">⚠️</span>{{ accWarning }}</div>
+              <div v-if="accWarning" class="acc-modal-warning"><span class="acc-modal-warning-icon"><UiIcon name="warn" /></span>{{ accWarning }}</div>
               <div v-if="accAvailLen.length || accAvailTex.length" class="acc-modal-filter">
                 <div v-if="accAvailLen.length" class="acc-filter-row">
                   <span class="acc-filter-label">{{ t('bomLen') }}</span>
@@ -195,7 +195,7 @@
             <div class="acc-modal-list">
               <div v-if="modalAccList.length === 0" class="acc-modal-no-result">{{ t('bomNoMatchAcc') }}</div>
               <div v-for="a in modalAccList" :key="a._key" class="acc-modal-item" :class="{ checked: accCodes[a._key] }" role="button" tabindex="0" @click="toggleAccInModal(a)" @keydown.enter.prevent="toggleAccInModal(a)" @keydown.space.prevent="toggleAccInModal(a)">
-                <div class="acc-modal-check">{{ accCodes[a._key] ? '✓' : '' }}</div>
+                <div class="acc-modal-check" v-html="accCodes[a._key] ? CHECK_ICON : ''"></div>
                 <div v-if="accImgSrc(a.name)" class="acc-modal-img"><img :src="accImgSrc(a.name)" width="56" height="56" alt="" loading="lazy" role="button" tabindex="0" @click.stop="openLightbox(accImgSrc(a.name))" @keydown.enter.stop.prevent="openLightbox(accImgSrc(a.name))" @keydown.space.stop.prevent="openLightbox(accImgSrc(a.name))"></div>
                 <div class="acc-modal-info">
                   <div class="acc-modal-name">{{ a.name }}</div>
@@ -225,6 +225,8 @@
 import { ref, computed, onMounted } from 'vue'
 import { useI18n } from '../composables/useI18n'
 import { useGlobalData } from '../composables/useLegacy'
+import UiIcon from './UiIcon.vue'
+const CHECK_ICON = (window.uiIcon ? window.uiIcon('check') : '✓')
 
 const { t } = useI18n()
 const accImgs = useGlobalData('ACC_IMGS')
@@ -247,12 +249,12 @@ const POWER_ADAPTER_SERIES = ['电源适配器', '电源适配器DC']
 const POWER_SUPPLY_SERIES = ['开关电源1', '开关电源2']
 const CABLE_LENGTHS = ['1m', '2m', '3m', '3.5m', '5m', '7m', '10m', '15m', '20m', '30m']
 const CABLE_TEXTURES = ['普通', '高柔', '超柔', '弯头']
-const CAT_ICONS = { '线缆': '🔌', '网线': '🌐', '电源线': '🔋', '电源': '⚡', '安装': '🔩', '安装板': '📐', '其他': '📦', '外置配件': '🔧', '镜头': '🔍', '测试镜头': '👁', '镜头罩': '🛡', '光源': '💡', '微码光源': '🔬', '爆闪光源': '✨', '灯板': '💎', '大类': '📋', '一体线': '🔌', 'IO线': '🔗', 'FA镜头': '🔭', '扩展配件': '📦' }
+const CAT_ICONS = { '线缆': 'cable', '网线': 'globe', '电源线': 'battery', '电源': 'zap', '安装': 'wrench', '安装板': 'ruler', '其他': 'package', '外置配件': 'wrench', '镜头': 'aperture', '测试镜头': 'eye', '镜头罩': 'shield', '光源': 'lightbulb', '微码光源': 'microscope', '爆闪光源': 'sparkles', '灯板': 'gem', '大类': 'clipboard', '一体线': 'cable', 'IO线': 'link', 'FA镜头': 'aperture', '扩展配件': 'package' }
 
 function getAccKey(acc, index) {
   return (acc.code || 'no-code') + '||' + (acc.name || 'no-name') + '||' + index
 }
-function getCatIcon(cat) { return CAT_ICONS[cat] || '📦' }
+function getCatIcon(cat) { return window.uiIcon ? window.uiIcon(CAT_ICONS[cat] || 'package') : '' }
 function getCableTags(name, detail) {
   const text = (name || '') + ' ' + (detail || '')
   const found = text.match(/(\d+(?:\.\d+)?)m(?!m)/g) || []
@@ -487,8 +489,8 @@ function onModelChange() {
 function onAddToList() {
   if (!currentModel.value) return
   autoGenerateBOM()
-  addBtnText.value = '✓ ' + t('bomUpdated')
-  setTimeout(() => { addBtnText.value = '✓ ' + t('bomAutoGen') }, 1000)
+  addBtnText.value = CHECK_ICON + ' ' + t('bomUpdated')
+  setTimeout(() => { addBtnText.value = CHECK_ICON + ' ' + t('bomAutoGen') }, 1000)
 }
 function clearBOM() {
   if (!bomList.value.length) return

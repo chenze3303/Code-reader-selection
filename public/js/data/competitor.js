@@ -95,7 +95,7 @@
 
     if (currentDisplayData.length === 0) {
       resultArea.innerHTML = '<div class="cp-empty cp-empty-state">' +
-        '<span class="cp-empty-icon">🔍</span>' +
+        '<span class="cp-empty-icon">' + (window.uiIcon ? window.uiIcon('search') : '') + '</span>' +
         '<p>' + _t('cpNoMatch') + '<br><span>' + _t('cpNoMatchHint') + '</span></p>' +
       '</div>';
       if (statsMsg) statsMsg.textContent = _t('cpStats', 0);
@@ -111,21 +111,21 @@
           '<div class="cp-card-left">' +
             '<span class="cp-brand-tag">' + escapeHtml(item.brand) + '</span>' +
             '<span class="cp-model-name">' + escapeHtml(item.model) + '</span>' +
-            '<span class="cp-hik-badge">🔗 ' + escapeHtml(item.hikModel) + '</span>' +
+            '<span class="cp-hik-badge">' + (window.uiIcon ? window.uiIcon('link') : '') + ' ' + escapeHtml(item.hikModel) + '</span>' +
           '</div>' +
           '<span class="cp-expand-icon" id="icon_' + cardId + '">' + (isOpen ? '▼' : '▶') + '</span>' +
         '</div>' +
         '<div class="cp-card-detail' + (isOpen ? ' open' : '') + '" id="' + cardId + '">' +
           '<div class="cp-detail-row">' +
-            '<div class="cp-detail-label competitor">📌 ' + _t('cpFeatLabel') + '</div>' +
+            '<div class="cp-detail-label competitor">' + (window.uiIcon ? window.uiIcon('pin') : '') + ' ' + _t('cpFeatLabel') + '</div>' +
             '<div class="cp-detail-value competitor-desc">' + escapeHtml(item.competitorDesc) + '</div>' +
           '</div>' +
           '<div class="cp-detail-row">' +
-            '<div class="cp-detail-label advantage">✨ ' + _t('cpAdvLabel') + '</div>' +
+            '<div class="cp-detail-label advantage">' + (window.uiIcon ? window.uiIcon('sparkles') : '') + ' ' + _t('cpAdvLabel') + '</div>' +
             '<div class="cp-detail-value advantage-text">' + escapeHtml(item.advantageDesc) + '</div>' +
           '</div>' +
           '<div class="cp-detail-row last">' +
-            '<div class="cp-detail-label">🎯 ' + _t('cpRecLabel') + '</div>' +
+            '<div class="cp-detail-label">' + (window.uiIcon ? window.uiIcon('target') : '') + ' ' + _t('cpRecLabel') + '</div>' +
             '<div class="cp-detail-value"><strong class="cp-hik-model">' + escapeHtml(item.hikModel) + '</strong></div>' +
           '</div>' +
         '</div>' +

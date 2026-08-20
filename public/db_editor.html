@@ -237,6 +237,11 @@ header{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 100%);heig
 .template-name{font-size:.78rem;font-weight:600;flex:1}
 .template-desc{font-size:.65rem;color:var(--text-3)}
 </style>
+    <script src="js/ui-icons.js"></script>
+    <script>
+    function _uiInit(){document.querySelectorAll('[data-ui]').forEach(function(e){if(window.uiIcon)e.innerHTML=window.uiIcon(e.getAttribute('data-ui'));});}
+    if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',_uiInit)}else{_uiInit()}
+    </script>
 </head>
 <body>
 
@@ -248,18 +253,18 @@ header{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 100%);heig
     <span class="hd-badge">V3.0</span>
   </div>
   <div class="hd-right">
-    <button class="btn btn-ghost btn-sm" onclick="importFile()">📥 导入</button>
-    <button class="btn btn-brand btn-sm" onclick="exportFile()">📤 导出</button>
-    <button class="btn btn-ghost btn-sm" onclick="exportAccImgs()" title="导出配件图映射 js/data/acc_imgs.js">🖼 导出配件图</button>
+    <button class="btn btn-ghost btn-sm" onclick="importFile()"><span data-ui="download"></span> 导入</button>
+    <button class="btn btn-brand btn-sm" onclick="exportFile()"><span data-ui="upload"></span> 导出</button>
+    <button class="btn btn-ghost btn-sm" onclick="exportAccImgs()" title="导出配件图映射 js/data/acc_imgs.js"><span data-ui="image"></span> 导出配件图</button>
   </div>
 </header>
 
 <div class="tab-bar">
-  <div class="tab active" onclick="switchTab('peidan')" id="tab_peidan">📋 配单 <span class="tab-count" id="tc_peidan">0</span></div>
-  <div class="tab" onclick="switchTab('mapping')" id="tab_mapping">🔄 产品表 <span class="tab-count" id="tc_mapping">0</span></div>
-  <div class="tab" onclick="switchTab('competitor')" id="tab_competitor">🔬 竞品 <span class="tab-count" id="tc_competitor">0</span></div>
-  <div class="tab" onclick="switchTab('product')" id="tab_product">⚡ 产品库 <span class="tab-count" id="tc_product">0</span></div>
-  <div class="tab" onclick="switchTab('statuscode')" id="tab_statuscode">🔍 状态码 <span class="tab-count" id="tc_statuscode">0</span></div>
+  <div class="tab active" onclick="switchTab('peidan')" id="tab_peidan"><span data-ui="clipboard"></span> 配单 <span class="tab-count" id="tc_peidan">0</span></div>
+  <div class="tab" onclick="switchTab('mapping')" id="tab_mapping"><span data-ui="refresh"></span> 产品表 <span class="tab-count" id="tc_mapping">0</span></div>
+  <div class="tab" onclick="switchTab('competitor')" id="tab_competitor"><span data-ui="microscope"></span> 竞品 <span class="tab-count" id="tc_competitor">0</span></div>
+  <div class="tab" onclick="switchTab('product')" id="tab_product"><span data-ui="zap"></span> 产品库 <span class="tab-count" id="tc_product">0</span></div>
+  <div class="tab" onclick="switchTab('statuscode')" id="tab_statuscode"><span data-ui="search"></span> 状态码 <span class="tab-count" id="tc_statuscode">0</span></div>
 </div>
 
 <div class="layout" id="appLayout">
@@ -275,7 +280,7 @@ header{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 100%);heig
     <div class="sb-foot">
       <div style="display:flex;gap:.5rem">
         <button class="btn btn-outline" style="flex:1" onclick="addItem()">＋ 新建</button>
-        <button class="btn btn-brand btn-sm" onclick="showTemplateModal()" title="从模板新建">📋 模板</button>
+        <button class="btn btn-brand btn-sm" onclick="showTemplateModal()" title="从模板新建"><span data-ui="clipboard"></span> 模板</button>
       </div>
     </div>
   </div>
@@ -285,12 +290,12 @@ header{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 100%);heig
     <div class="main-head" id="mainHead" style="display:none">
       <span class="main-title" id="mainTitle"></span>
       <button class="btn btn-sm btn-outline" onclick="duplicateItem()">⧉ 复制</button>
-      <button class="btn btn-sm btn-danger" onclick="confirmDelete()">🗑️ 删除</button>
-      <button class="btn btn-sm btn-success" onclick="saveItem()">✓ 保存</button>
+      <button class="btn btn-sm btn-danger" onclick="confirmDelete()"><span data-ui="trash"></span> 删除</button>
+      <button class="btn btn-sm btn-success" onclick="saveItem()"><span data-ui="check"></span> 保存</button>
     </div>
     <div class="main-body" id="mainBody">
       <div class="empty">
-        <div class="empty-icon">🗄️</div>
+        <div class="empty-icon" data-ui="database"></div>
         <div class="empty-msg">选择左侧条目开始编辑<br>或点击「＋ 新建」创建新条目</div>
       </div>
     </div>
@@ -311,7 +316,7 @@ header{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 100%);heig
 <!-- 模板选择弹窗 -->
 <div class="overlay" id="templateOverlay">
   <div class="dialog" style="max-width:500px">
-    <div class="dlg-title">📋 从模板新建</div>
+    <div class="dlg-title"><span data-ui="clipboard"></span> 从模板新建</div>
     <div class="dlg-msg">选择一个已有条目作为模板，快速创建相似型号：</div>
     <div class="template-list" id="templateList"></div>
     <div class="dlg-btns">
@@ -326,16 +331,16 @@ header{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 100%);heig
 <!-- 配件图片选择弹窗 -->
 <div class="overlay" id="imgOverlay">
   <div class="dialog" style="max-width:640px;width:94%">
-    <div class="dlg-title">🖼 选择配件图片</div>
+    <div class="dlg-title"><span data-ui="image"></span> 选择配件图片</div>
     <div class="accimg-info" id="imgInfo"></div>
     <div class="accimg-search">
       <input id="imgSearch" placeholder="搜索图片文件名..." oninput="renderImgGrid()">
-      <button class="btn btn-brand btn-sm" onclick="triggerImgUpload()">📤 本地上传</button>
+      <button class="btn btn-brand btn-sm" onclick="triggerImgUpload()"><span data-ui="upload"></span> 本地上传</button>
     </div>
     <div class="accimg-grid" id="imgGrid"></div>
     <div class="accimg-foot">
       <span style="font-size:.62rem;color:var(--text-3);flex:1">点击图片应用到当前配件</span>
-      <button class="btn btn-outline btn-sm" onclick="clearAccImg()">🗑 清除图片</button>
+      <button class="btn btn-outline btn-sm" onclick="clearAccImg()"><span data-ui="trash"></span> 清除图片</button>
       <button class="btn btn-outline btn-sm" onclick="closeImgModal()">取消</button>
     </div>
   </div>
@@ -431,7 +436,7 @@ function get(id){ var el=document.getElementById(id); return el?el.value:''; }
 
 function showEmpty(){
   document.getElementById('mainHead').style.display='none';
-  document.getElementById('mainBody').innerHTML='<div class="empty fade-in"><div class="empty-icon">🗄️</div><div class="empty-msg">选择左侧条目开始编辑<br>或点击「＋ 新建」创建新条目</div></div>';
+  document.getElementById('mainBody').innerHTML='<div class="empty fade-in"><div class="empty-icon" data-ui="database"></div><div class="empty-msg">选择左侧条目开始编辑<br>或点击「＋ 新建」创建新条目</div></div>';
 }
 
 // ═══════════════════════════ TAB ═══════════════════════════
@@ -658,7 +663,7 @@ function addAcc(kind){
   var arr = kind==='std' ? state.peidan[state.idx].standardAccessories : state.peidan[state.idx].optionalAccessories;
   arr.push({category: kind==='opt'?'其他':'大类', series:'', name:'', code:'', detail:''});
   renderPeidan(state.peidan[state.idx]);
-  toast('✅ 已添加配件');
+  toast('已添加配件');
 }
 function delAcc(kind,i){
   var arr = kind==='std' ? state.peidan[state.idx].standardAccessories : state.peidan[state.idx].optionalAccessories;
@@ -711,9 +716,9 @@ function renderImgGrid(selected){
 function applyAccImg(file){
   if(!state.imgCtx) return;
   var acc = getAcc(state.imgCtx.kind, state.imgCtx.i);
-  if(!acc.name){ toast('⚠️ 请先填写配件名称再配图','error'); return; }
+  if(!acc.name){ toast('请先填写配件名称再配图','error'); return; }
   state.accImgs[accImgKey(acc.name)] = file;
-  toast('✅ 已为「'+acc.name+'」配图: '+file,'success');
+  toast('已为「'+acc.name+'」配图: '+file,'success');
   closeImgModal();
   renderPeidan(state.peidan[state.idx]);
 }
@@ -745,7 +750,7 @@ function handleImgUpload(e){
   e.target.value='';
   if(!state.imgCtx){ toast('请先选中一个配件行','error'); return; }
   var acc = getAcc(state.imgCtx.kind, state.imgCtx.i);
-  if(!acc.name){ toast('⚠️ 请先填写配件名称再上传','error'); return; }
+  if(!acc.name){ toast('请先填写配件名称再上传','error'); return; }
   var key = accImgKey(acc.name);
   var base = key.replace(/\{LEN\}m/g,'').replace(/[{}\s]/g,'').replace(/[,_-]+$/,'');
   toast('⏳ 正在复制原图并压缩 webp...');
@@ -806,7 +811,7 @@ function saveAccImageFiles(origName, webpName, origData, webpData){
       var acc = getAcc(state.imgCtx.kind, state.imgCtx.i);
       state.accImgs[accImgKey(acc.name)] = webpName;
       _imgManifest.push({file:webpName, size:0});
-      toast('✅ 已保存 '+origName+' 与 '+webpName+'，请点击图片应用到配件','success');
+      toast('已保存 '+origName+' 与 '+webpName+'，请点击图片应用到配件','success');
       renderImgGrid(webpName);
       renderPeidan(state.peidan[state.idx]);
     }).catch(function(err){
@@ -841,7 +846,7 @@ function exportAccImgs(){
   a.download='acc_imgs.js';
   a.click();
   setTimeout(function(){ URL.revokeObjectURL(a.href); },1000);
-  toast('✅ 已导出 acc_imgs.js（'+keys.length+' 条映射）','success');
+  toast('已导出 acc_imgs.js（'+keys.length+' 条映射）','success');
 }
 
 // ─── 对照表 ───
@@ -984,7 +989,7 @@ function duplicateItem(){
   renderList();
   selectItem(state.idx);
   updateCounts();
-  toast('✅ 已复制条目','success');
+  toast('已复制条目','success');
 }
 
 function addItem(){
@@ -1006,11 +1011,11 @@ function addItem(){
   renderList();
   selectItem(state.idx);
   updateCounts();
-  toast('✅ 已新建条目');
+  toast('已新建条目');
 }
 
 function saveItem(){
-  toast('✅ 已保存', 'success');
+  toast('已保存', 'success');
   renderList();
   updateCounts();
 }
@@ -1109,7 +1114,7 @@ function createFromTemplate(){
   renderList();
   selectItem(state.idx);
   updateCounts();
-  toast('✅ 已从模板创建，清修改型号名称','success');
+  toast('已从模板创建，清修改型号名称','success');
 }
 
 // ═══════════════════════════ IMPORT ═══════════════════════════
@@ -1131,7 +1136,7 @@ function handleImport(e){
           var data=JSON.parse(raw.slice(start,end+1));
           state.peidan=data.modelList||[];
           switchTab('peidan');
-          toast('✅ 配单数据已导入，共 '+state.peidan.length+' 个型号','success');
+          toast('配单数据已导入，共 '+state.peidan.length+' 个型号','success');
         } else if(raw.indexOf('window.MAPPING_DATA')!==-1){
           var start=raw.indexOf('[',raw.indexOf('window.MAPPING_DATA'));
           var end=raw.lastIndexOf('];');
@@ -1139,7 +1144,7 @@ function handleImport(e){
           var arr = parseJsArray(raw.slice(start,end+1));
           state.mapping=arr;
           switchTab('mapping');
-          toast('✅ 对照表已导入，共 '+state.mapping.length+' 条','success');
+          toast('对照表已导入，共 '+state.mapping.length+' 条','success');
         } else if(raw.indexOf('competitorDB')!==-1 || raw.indexOf('var competitorDB')!==-1){
           var marker = raw.indexOf('var competitorDB')!==-1 ? 'var competitorDB' : 'competitorDB';
           var start=raw.indexOf('[',raw.indexOf(marker));
@@ -1154,32 +1159,32 @@ function handleImport(e){
           var arr=parseJsArray(raw.slice(start,end+1));
           state.competitor=arr;
           switchTab('competitor');
-          toast('✅ 竞品数据已导入，共 '+state.competitor.length+' 条','success');
+          toast('竞品数据已导入，共 '+state.competitor.length+' 条','success');
         } else if(raw.indexOf('PRODUCT_DB')!==-1){
           var start=raw.indexOf('[',raw.indexOf('PRODUCT_DB'));
           var end=raw.lastIndexOf('];');
           var arr=parseJsArray(raw.slice(start,end+1));
           state.product=arr;
           switchTab('product');
-          toast('✅ 产品库已导入，共 '+state.product.length+' 条','success');
+          toast('产品库已导入，共 '+state.product.length+' 条','success');
         } else if(raw.indexOf('STATUS_CODES')!==-1){
           var start=raw.indexOf('[',raw.indexOf('STATUS_CODES'));
           var end=raw.lastIndexOf('];');
           var arr=parseJsArray(raw.slice(start,end+1));
           state.statuscode=arr;
           switchTab('statuscode');
-          toast('✅ 状态码已导入，共 '+state.statuscode.length+' 条','success');
+          toast('状态码已导入，共 '+state.statuscode.length+' 条','success');
         } else {
-          toast('❌ 无法识别的 JS 文件','error');
+          toast('无法识别的 JS 文件','error');
         }
       } else {
         var data=JSON.parse(raw);
-        if(data.modelList){ state.peidan=data.modelList; switchTab('peidan'); toast('✅ 配单数据已导入','success'); }
-        else if(Array.isArray(data)){ toast('❌ 请指定数据类型','error'); }
-        else { toast('❌ 无法识别的 JSON 格式','error'); }
+        if(data.modelList){ state.peidan=data.modelList; switchTab('peidan'); toast('配单数据已导入','success'); }
+        else if(Array.isArray(data)){ toast('请指定数据类型','error'); }
+        else { toast('无法识别的 JSON 格式','error'); }
       }
       updateCounts();
-    } catch(err){ toast('❌ 导入失败：'+err.message,'error'); }
+    } catch(err){ toast('导入失败：'+err.message,'error'); }
     e.target.value='';
   };
   reader.readAsText(file,'utf-8');
@@ -1297,7 +1302,7 @@ function exportFile(){
   a.download=filename;
   a.click();
   URL.revokeObjectURL(a.href);
-  toast('✅ 已导出 '+filename,'success');
+  toast('已导出 '+filename,'success');
 }
 
 // ═══════════════════════════ KEYBOARD ═══════════════════════════

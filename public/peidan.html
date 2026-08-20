@@ -127,6 +127,11 @@
         .cable-warn em{font-style:normal;color:#f97316}
         @media(max-width:1024px){.container{flex-direction:column}.sidebar{width:100%}}
     </style>
+    <script src="js/ui-icons.js"></script>
+    <script>
+    function _uiInit(){document.querySelectorAll('[data-ui]').forEach(function(e){if(window.uiIcon)e.innerHTML=window.uiIcon(e.getAttribute('data-ui'));});}
+    if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',_uiInit)}else{_uiInit()}
+    </script>
 </head>
 <body>
     <div class="header">
@@ -139,7 +144,7 @@
     <div class="container">
         <div class="sidebar">
             <div class="search-panel">
-                <div class="panel-title"><div class="panel-title-icon">🔍</div>物料号反查</div>
+                <div class="panel-title"><div class="panel-title-icon" data-ui="search"></div>物料号反查</div>
                 <div class="search-input-wrap">
                     <input id="searchCodeInput" placeholder="输入物料号..." onkeyup="if(event.keyCode===13)doCodeSearch()">
                     <button onclick="doCodeSearch()">查询</button>
@@ -148,7 +153,7 @@
                 <div id="searchResult" class="search-result"></div>
             </div>
             <div class="panel">
-                <div class="panel-title"><div class="panel-title-icon">📋</div>配单配置</div>
+                <div class="panel-title"><div class="panel-title-icon" data-ui="clipboard"></div>配单配置</div>
                 <div class="step-section">
                     <div class="step-label"><span class="step-number">1</span>产品大类</div>
                     <select id="categorySelect" class="step-select" onchange="onCategoryChange()"><option value="">请选择产品大类</option></select>
@@ -169,7 +174,7 @@
         <div class="content">
             <div class="content-panel">
                 <div class="content-header">
-                    <div class="content-title"><div class="content-title-icon">📊</div>配单明细</div>
+                    <div class="content-title"><div class="content-title-icon" data-ui="chart"></div>配单明细</div>
                     <div class="content-toolbar">
                         <div class="legend">
                             <div class="legend-item"><div class="legend-dot host"></div>主机</div>
@@ -183,11 +188,11 @@
                                 <div class="stat-item"><div class="stat-value orange" id="statAccessory">0</div><div class="stat-label">配件</div></div>
                             </div>
                             <button class="btn-reset" onclick="resetConfig()">重置</button>
-                            <button class="btn-export" onclick="exportCSV()">📥 导出CSV</button>
+                            <button class="btn-export" onclick="exportCSV()"><span data-ui="download"></span> 导出CSV</button>
                         </div>
                     </div>
                 </div>
-                <div id="tableArea"><div class="empty-state"><div class="empty-state-icon">📦</div><h3>请选择产品配置</h3><p>在左侧选择产品后，自动生成配单</p></div></div>
+                <div id="tableArea"><div class="empty-state"><div class="empty-state-icon" data-ui="package"></div><h3>请选择产品配置</h3><p>在左侧选择产品后，自动生成配单</p></div></div>
             </div>
         </div>
     </div>
@@ -20562,7 +20567,7 @@
                 if(info.remark)h+='备注：<span>'+info.remark+'</span>';
                 h+='</div></div>';
                 if(info.models.length>0){
-                    h+='<div class="search-models-title">📦 适用型号 ('+info.models.length+')</div>';
+                    h+='<div class="search-models-title"><span data-ui="package"></span> 适用型号 ('+info.models.length+')</div>';
                     info.models.forEach(function(m){
                         var tagClass=m.type==='standard'?'standard':'optional';
                         var tagText=m.type==='standard'?'标配':'选配';

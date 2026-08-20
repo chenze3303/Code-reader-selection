@@ -5,11 +5,11 @@
         <div class="card">
           <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
             <button class="stitch-back-btn" @click="emit('close')">{{ t('verifyBack') }}</button>
-            <span style="font-size:15px;font-weight:700;">{{ t('verifyTitle') }}</span>
+            <span style="font-size:15px;font-weight:700;"><UiIcon name="chart" /> {{ t('verifyTitle') }}</span>
           </div>
 
           <div class="form-section">
-            <div class="form-section-title">{{ t('verifyModelSel') }}</div>
+            <div class="form-section-title"><UiIcon name="camera" /> {{ t('verifyModelSel') }}</div>
             <div style="margin-bottom:6px;">
               <label for="verifySeriesSel" style="font-size:12px;color:#666;">{{ t('verifySeriesLabel') }}</label>
               <select id="verifySeriesSel" style="width:100%;" v-model="series">
@@ -35,7 +35,7 @@
           </div>
 
           <div class="form-section">
-            <div class="form-section-title">{{ t('verifyDist') }}</div>
+            <div class="form-section-title"><UiIcon name="ruler" /> {{ t('verifyDist') }}</div>
             <div class="input-row">
               <input name="verifyWD" id="inpVerifyWD" type="number" v-model="wd" :placeholder="t('verifyWDPh')" style="flex:1;" autocomplete="off" :aria-label="t('verifyDist')">
               <select v-model="wdUnit"><option value="mm">mm</option><option value="cm">cm</option></select>
@@ -44,7 +44,7 @@
           </div>
 
           <div class="form-section">
-            <div class="form-section-title">{{ t('verifyBarcode') }}</div>
+            <div class="form-section-title"><UiIcon name="tag" /> {{ t('verifyBarcode') }}</div>
             <div style="margin-bottom:6px;">
               <label for="selVerifyCodeType" style="font-size:12px;color:#666;">{{ t('verifyCodeTypeLabel') }}</label>
               <select id="selVerifyCodeType" style="width:100%;" v-model="codeType">
@@ -62,7 +62,7 @@
           </div>
 
           <div class="form-section">
-            <div class="form-section-title">{{ t('verifySpeedTitle') }}</div>
+            <div class="form-section-title"><UiIcon name="timer" /> {{ t('verifySpeedTitle') }}</div>
             <div class="input-row">
               <input name="verifySpeed" type="number" v-model="speed" :placeholder="t('verifySpeedPh')" style="flex:1;" autocomplete="off">
               <select v-model="speedUnit"><option value="mm/s">mm/s</option><option value="m/s">m/s</option><option value="cm/s">cm/s</option></select>
@@ -70,13 +70,13 @@
             <div style="font-size:11px;color:#888;margin-top:2px;">{{ t('verifySpeedHint') }}</div>
           </div>
 
-          <button class="btn-primary" id="verifyRunBtn" @click="runVerify" style="width:100%;">{{ t('verifyRunBtn') }}</button>
+          <button class="btn-primary" id="verifyRunBtn" @click="runVerify" style="width:100%;"><UiIcon name="zap" /> {{ t('verifyRunBtn') }}</button>
         </div>
       </div>
 
       <div class="right-panel" style="overflow-y:auto;">
         <div class="card">
-          <div class="card-header">{{ t('verifySchematicTitle') }}</div>
+          <div class="card-header"><UiIcon name="ruler" /> {{ t('verifySchematicTitle') }}</div>
           <div id="verifyCalcContent">
             <div class="schematic-wrap">
               <svg id="verifySchematicSvg" viewBox="0 0 580 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;background:#F5F7FA;border-radius:8px;">
@@ -122,7 +122,7 @@
         </div>
 
         <div class="card">
-          <div class="card-header">{{ t('verifyResultTitle') }}</div>
+          <div class="card-header"><UiIcon name="trophy" /> {{ t('verifyResultTitle') }}</div>
           <div id="verifyResult">
             <div class="empty-state" style="padding:30px;text-align:center;color:#999;" v-if="!resultHtml">{{ t('verifyEmpty') }}</div>
             <div v-else v-html="resultHtml"></div>
@@ -137,6 +137,7 @@
 import { ref, computed, watch } from 'vue'
 import { useI18n } from '../composables/useI18n'
 import { useLegacyReady } from '../composables/useLegacy'
+import UiIcon from './UiIcon.vue'
 
 const { currentLang, t } = useI18n()
 const emit = defineEmits(['close'])

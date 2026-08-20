@@ -27,12 +27,12 @@
     document.documentElement.classList.toggle('dark');
     var isDark = document.documentElement.classList.contains('dark');
     localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    var icon = isDark ? '☀️' : '🌙';
+    var icon = isDark ? (window.uiIcon ? window.uiIcon('sun') : '☀️') : (window.uiIcon ? window.uiIcon('moon') : '🌙');
     var label = isDark ? '切换到亮色模式' : '切换到暗色模式';
     var btn = document.getElementById('themeBtn');
-    if (btn) { btn.textContent = icon; btn.setAttribute('aria-label', label); }
+    if (btn) { btn.innerHTML = icon; btn.setAttribute('aria-label', label); }
     var btnM = document.getElementById('themeBtnMobile');
-    if (btnM) { btnM.textContent = icon; btnM.setAttribute('aria-label', label); }
+    if (btnM) { btnM.innerHTML = icon; btnM.setAttribute('aria-label', label); }
     var meta = document.getElementById('themeColorMeta');
     if (meta) meta.content = isDark ? '#0d1117' : '#f5f7fa';
     swapThemeImages(isDark);
@@ -82,11 +82,11 @@
     var meta = document.getElementById('themeColorMeta');
     if (isDark) {
       document.documentElement.classList.add('dark');
-      var icon = '☀️';
+      var icon = (window.uiIcon ? window.uiIcon('sun') : '☀️');
       var btn = document.getElementById('themeBtn');
-      if (btn) { btn.textContent = icon; btn.setAttribute('aria-label', '切换到亮色模式'); }
+      if (btn) { btn.innerHTML = icon; btn.setAttribute('aria-label', '切换到亮色模式'); }
       var btnM = document.getElementById('themeBtnMobile');
-      if (btnM) { btnM.textContent = icon; btnM.setAttribute('aria-label', '切换到亮色模式'); }
+      if (btnM) { btnM.innerHTML = icon; btnM.setAttribute('aria-label', '切换到亮色模式'); }
       if (meta) meta.content = '#0d1117';
     } else if (meta) {
       meta.content = '#f5f7fa';
@@ -125,65 +125,65 @@
       solVTitle: '小V智能助手', solVDesc: '在线智能问答，快速解决产品使用与选型问题',
       solDocTitle: '方案解决文档', solDocDesc: '读码器应用方案、接线指南、调试教程等技术文档',
       solRepairTitle: '维修状态查询', solRepairDesc: '查询产品维修进度与售后状态',
-      solHint: '💡 所有链接将在新标签页中打开',
+      solHint: '所有链接将在新标签页中打开',
       // Selection page
-      card1: '📋 核心参数配置', card2: '📐 方案示意图', card3: '🏆 最佳推荐型号',
-      sec1: '🔖 码制 & 模块尺寸', sec2: '📐 距离 & 视野参数',
+      card1: '核心参数配置', card2: '方案示意图', card3: '最佳推荐型号',
+      sec1: '码制 & 模块尺寸', sec2: '距离 & 视野参数',
       codeType: '码制类型 *', moduleSize: '模块尺寸 *',
       codeTypePh: '-- 请选择 --',
       codeType2D: '二维码 (2D)', codeType1D: '一维码 (1D)',
       workDist: '工作距离 *', fovW: '期望视野宽度 *', fovH: '期望视野高度 *',
       placeholder: '请输入',
-      imgCaption: '💡 码制类型与模块尺寸说明',
-      runBtn: '⚡ 开始智能选型',
-      showModal: '📋 查看所有满足条件的型号清单',
+      imgCaption: '码制类型与模块尺寸说明',
+      runBtn: '开始智能选型',
+      showModal: '查看所有满足条件的型号清单',
       emptyState: '等待选型结果…',
       // SVG schematic
       svgEstW: '预估宽度', svgEstH: '预估高度', svgWd: '工作距离', svgFovAngle: '视场角',
       // Modal
-      modalTitle: '📌 满足过滤条件的推荐型号',
-      filterLabel: '🔍 按系列筛选', filterReset: '全选',
+      modalTitle: '满足过滤条件的推荐型号',
+      filterLabel: '按系列筛选', filterReset: '全选',
       modalEmpty: '请先进行选型',
       // Competitor page
       cpSearch: '搜索友商型号 / 海康型号，如 SR-1000、ID3013PM…',
       cpBrandLabel: '品牌筛选',
       cpBrandAll: '全部品牌',
-      cpExpand: '📂 展开所有',
+      cpExpand: '展开所有',
       cpStats: '共 {n} 条对标记录',
       cpStatsHint: '蓝色 = 友商核心特点 · 绿色 = 海康竞争优势',
-      cpEmpty: '✨ 点击「展开所有」浏览全部对标数据，或在搜索框输入关键词自动匹配',
+      cpEmpty: '点击「展开所有」浏览全部对标数据，或在搜索框输入关键词自动匹配',
       // BOM page
       bomConfig: '配单配置',
       bomModelSel: '型号选择',
       bomStep1: '产品大类', bomStep2: '产品系列', bomStep3: '具体型号',
       bomCatPh: '-- 请选择产品大类 --', bomSerPh: '-- 请先选择大类 --', bomModelPh: '-- 请先选择系列 --',
-      bomQuickSearch: '🔍 快速搜索', bomQuickSearchPh: '输入型号名称或物料代码…',
+      bomQuickSearch: '快速搜索', bomQuickSearchPh: '输入型号名称或物料代码…',
       bomAcc: '选装配件',
       bomAccEmpty: '请先完成产品型号选择',
-      bomAdd: '⚡ 生成配单',
+      bomAdd: '生成配单',
       bomDetail: '配单明细',
       bomLegendMain: '■ 主机', bomLegendStd: '■ 标配', bomLegendOpt: '■ 选配',
       bomStatTotal: '总计', bomStatMain: '主机', bomStatAcc: '配件',
-      bomReset: '重置', bomExport: '⬇ 导出 CSV',
+      bomReset: '重置', bomExport: '导出 CSV',
       bomThIdx: '#', bomThType: '类型', bomThName: '物料名称', bomThImg: '主图', bomThDesc: '描述', bomThCode: '物料代码', bomThAction: '操作',
       bomEmpty: '请选择型号，配单将自动生成',
       bomCount: '共 {n} 行',
-      bomFooterHint: '💡 蓝色 = 主机 · 浅蓝 = 标配 · 浅橙 = 选配',
+      bomFooterHint: '蓝色 = 主机 · 浅蓝 = 标配 · 浅橙 = 选配',
       // Verify page
-      verifyTitle: '📊 PPM 计算', verifyModelSel: '📷 选择型号', verifyDist: '📐 工作距离',
-      verifyBarcode: '🔖 条码参数',
+      verifyTitle: 'PPM 计算', verifyModelSel: '选择型号', verifyDist: '工作距离',
+      verifyBarcode: '条码参数',
       // Mapping page
       mpSearch: '搜索基线/经销 型号名称或物料代码，如 MV-ID803、IDA02X…',
       mpCatLabel: '系列筛选', mpCatAll: '全部系列',
-      mpExpand: '📂 全部展开', mpCollapse: '📁 全部收起',
+      mpExpand: '全部展开', mpCollapse: '全部收起',
       mpStats: '共 {n} 条记录',
       mpStatsHint: '基线 = 直销物料 · 经销 = 渠道物料 · 每行一一对应',
       mpThBaseModel: '基线型号', mpThBaseCode: '基线代码',
       mpThDistModel: '经销型号', mpThDistCode: '经销代码',
       mpLoading: '正在加载产品表数据…',
       mpCount: '共 {n} 条',
-      mpFooterHint: '💡 支持搜索基线和经销的型号名称及物料代码',
-      mpNoMatch: '😔 未找到匹配记录，请调整搜索条件',
+      mpFooterHint: '支持搜索基线和经销的型号名称及物料代码',
+      mpNoMatch: '未找到匹配记录，请调整搜索条件',
       mpRecords: '{n} 条',
       // Acc modal
       accTitle: '选装配件',
@@ -191,23 +191,23 @@
       accDone: '完成',
       // BOM dynamic
       bomReadHost: '读码器主机',
-      bomNoOptAcc: '✅ 无选装配件，标配 {n} 项已自动包含',
+      bomNoOptAcc: '无选装配件，标配 {n} 项已自动包含',
       bomAccCount: '{n} 个配件',
       bomSelected: '{n} 已选',
       // Mapping dynamic
-      mpNoResult: '😔 未找到匹配记录，请调整搜索条件',
+      mpNoResult: '未找到匹配记录，请调整搜索条件',
 
       // Status code page
       scSearch: '输入状态码名称或十六进制值，如 MV_CODEREADER_E_HANDLE 或 0x80020000',
       scCatLabel: '分类筛选', scCatAll: '全部分类',
       scStats: '共 {n} 条状态码',
-      scStatsHint: '💡 支持按名称、值、描述模糊搜索',
+      scStatsHint: '支持按名称、值、描述模糊搜索',
       scThCategory: '分类', scThName: '名称', scThValue: '值', scThDesc: '说明', scThSolution: '解决方法',
       scLoading: '正在加载状态码数据…',
       scCount: '共 {n} 条',
-      scFooterHint: '💡 点击行可复制状态码名称',
-      scNoMatch: '😔 未找到匹配的状态码，请调整搜索条件',
-      scCopied: '✅ 已复制: ',
+      scFooterHint: '点击行可复制状态码名称',
+      scNoMatch: '未找到匹配的状态码，请调整搜索条件',
+      scCopied: '已复制: ',
 
       // PPM levels
       ppmExcellent: '优秀', ppmGood: '良好', ppmPass: '合格',
@@ -220,10 +220,10 @@
       reasonCMount: 'C-Mount',
 
       // Stitch
-      stitchTitle: '🔗 多相机拼接方案', stitchHint: '⚠️ 单相机视野不足，可使用多相机拼接覆盖', stitchBack: '← 返回单相机',
+      stitchTitle: '多相机拼接方案', stitchHint: '单相机视野不足，可使用多相机拼接覆盖', stitchBack: '返回单相机',
       barcodeW: '条码实际宽度 *', barcodeH: '条码实际高度 *',
       barcodeOrient: '条码摆放方向', orientAuto: '自动推荐', orientH: '水平（沿宽度方向）', orientV: '垂直（沿高度方向）',
-      safetyMargin: '安全余量', overlapMM: '重叠区域 (mm)', stitchBtn: '⚡ 计算拼接方案',
+      safetyMargin: '安全余量', overlapMM: '重叠区域 (mm)', stitchBtn: '计算拼接方案',
       stitchAlertBase: '请先完成基础选型参数填写（码制、模块尺寸、工作距离、视野宽高）',
       stitchAlertBarcode: '请填写条码实际尺寸（宽度和高度）',
 
@@ -232,14 +232,14 @@
       alertNoDB: '产品数据库未加载，请确保 product_db.js 已引入',
 
       // Result display
-      resultEstFOV: '📐 预估视野 {w}×{h}mm',
-      resultPPM: '📊 真实 PPM',
-      resultDist: '📏 工作距离 {min}-{max}mm',
-      resultNoMatch: '⚠️ 没有找到同时满足所有条件的型号<br>请调整参数后重试',
-      resultNoMatchShort: '⚠️ 当前勾选的系列中无匹配型号，请勾选其他系列',
+      resultEstFOV: '预估视野 {w}×{h}mm',
+      resultPPM: '真实 PPM',
+      resultDist: '工作距离 {min}-{max}mm',
+      resultNoMatch: '没有找到同时满足所有条件的型号<br>请调整参数后重试',
+      resultNoMatchShort: '当前勾选的系列中无匹配型号，请勾选其他系列',
       resultModalEmpty: '暂无满足条件的型号，请调整参数后重新选型',
       resultWaitParam: '等待参数输入…',
-      resultFovStatus: '📐 预估视野 {w}×{h}mm',
+      resultFovStatus: '预估视野 {w}×{h}mm',
 
       // Competitor dynamic
       cpNoMatch: '未找到匹配记录',
@@ -247,7 +247,7 @@
       cpFeatLabel: '友商特点',
       cpAdvLabel: '我方优势',
       cpRecLabel: '推荐型号',
-      cpCollapse: '📁 折叠所有',
+      cpCollapse: '折叠所有',
 
       // BOM defaults
       bomUncategorized: '未分类',
@@ -255,7 +255,7 @@
       bomOther: '其他',
       langBtn: 'EN',
       // Contact modal
-      contactUs: '联系我们', contactTitle: '📱 关注我们~了解更多海康机器人最新动态！', contactHint: '💡 扫码关注，获取最新资讯，存在疑问请及时联系陈嘉泽',
+      contactUs: '联系我们', contactTitle: '关注我们~了解更多海康机器人最新动态！', contactHint: '扫码关注，获取最新资讯，存在疑问请及时联系陈嘉泽',
 
       // Verify page
       verifyBack: '← 返回智能选型',
@@ -265,19 +265,19 @@
       verifyWDPh: '工作距离',
       verifyCodeTypeLabel: '条码类型',
       verifyModuleSizePh: '模块尺寸',
-      verifySpeedTitle: '🏃 运动速度（选填）', verifySpeedPh: '运动速度',
+      verifySpeedTitle: '运动速度（选填）', verifySpeedPh: '运动速度',
       verifySpeedHint: '不填则不计算最大曝光时间',
-      verifyRunBtn: '⚡ 开始验算',
-      verifySchematicTitle: '📐 验算示意图', verifyResultTitle: '🏆 验算结果',
+      verifyRunBtn: '开始验算',
+      verifySchematicTitle: '验算示意图', verifyResultTitle: '验算结果',
       verifyEmpty: '选择型号并输入参数后点击「开始验算」',
 
       // Home footer / misc
-      footerSite: '🌐 海康机器人官网',
-      announcementBtn: '📢 公告',
-      bomDownload: '📥 资料下载',
+      footerSite: '海康机器人官网',
+      announcementBtn: '公告',
+      bomDownload: '资料下载',
       stitchDownloadBtn: '下载示意图',
       mpThDocs: '资料',
-      mpNamingBtn: '📖 命名规则',
+      mpNamingBtn: '命名规则',
 
       // Solutions page cards
       solSdkTitle: 'SDK 参考文档',
@@ -294,7 +294,7 @@
       previewAlt: '预览',
 
       // Announcement
-      announcementTitle: '📢 公告',
+      announcementTitle: '公告',
       announcementHistory: '历史公告 ▾', announcementHistoryOpen: '历史公告 ▴',
       announcementDismiss: '好的',
 
@@ -302,7 +302,7 @@
       robotBubble: '您好！我是海康机器人机器视觉助手「小V」。无论您正在安装工业相机、调试读码器、使用3D产品，还是搭建 VisionMaster，只需一句话：<br><b>“产品信息 + 问题/需求”</b>，我即刻为您输出专业、可落地的解决方案。',
 
       // Naming rules modal
-      namingTitle: '📖 海康机器人 MV-ID 读码器型号命名规则',
+      namingTitle: '海康机器人 MV-ID 读码器型号命名规则',
       namingStructure: '型号结构', namingExamples: '型号解析示例',
       namingFullModel: '完整型号', namingParse: '解析',
       namingBrand: '品牌', namingCategory: '品类', namingSeries: '系列', namingSeriesDesc: '2系·240万',
@@ -320,11 +320,11 @@
       namingEx8: '<b>5系</b> · <b>2000万</b> · 基础款 — <b>C口外接镜头</b> — 无自带光源',
 
       // SDK page
-      sdkTocTitle: '📑 快速导航', sdkFullDoc: '📖 查看完整文档',
-      sdkTocOverview: '📋 SDK 概述', sdkTocEnv: '🔧 开发环境配置', sdkTocFlow: '⭐ 编程流程',
-      sdkTocParam: '⚙️ 参数设置', sdkTocGrab: '📷 取图方式', sdkTocTrigger: '🎯 触发模式',
-      sdkTocError: '🔍 错误排查', sdkTocApi: '📚 API 速查', sdkTocAdvanced: '🔗 进阶场景',
-      sdkBannerTitle: '📖 完整 SDK 文档已上线', sdkBannerDesc: '包含完整的代码示例、API参考、进阶场景等内容',
+      sdkTocTitle: '快速导航', sdkFullDoc: '查看完整文档',
+      sdkTocOverview: 'SDK 概述', sdkTocEnv: '开发环境配置', sdkTocFlow: '编程流程',
+      sdkTocParam: '参数设置', sdkTocGrab: '取图方式', sdkTocTrigger: '触发模式',
+      sdkTocError: '错误排查', sdkTocApi: 'API 速查', sdkTocAdvanced: '进阶场景',
+      sdkBannerTitle: '完整 SDK 文档已上线', sdkBannerDesc: '包含完整的代码示例、API参考、进阶场景等内容',
       sdkBannerBtn: '查看完整文档 →',
       sdkHeroTitle: '二次开发学习指南', sdkHeroDesc: '海康机器人读码器 C / C# 编程开发套件 · 从入门到实战',
       sdkLangC: 'C 语言', sdkLangCS: 'C# 语言',
@@ -332,7 +332,7 @@
       sdkPathFlowT: '编写程序', sdkPathFlowD: '三段式流程',
       sdkPathParamT: '参数设置', sdkPathParamD: '节点类型映射', sdkPathCsParamD: '节点映射',
       sdkPathApiT: 'API 速查', sdkPathApiD: '常用接口参考', sdkPathCsApiD: '常用接口',
-      sdkEnvTitle: '🔧 开发环境配置', sdkPrereq: '前置条件',
+      sdkEnvTitle: '开发环境配置', sdkPrereq: '前置条件',
       sdkPrereq1: '已安装 <strong>IDMVS</strong> 或 <strong>MVS Runtime</strong>',
       sdkPrereq2: '配置 SDK 的 include 和 lib 路径',
       sdkPrereq3: '程序位数与 DLL 位数一致（x64 对应 x64）',
@@ -340,7 +340,7 @@
       sdkHeaders: '核心头文件', sdkHdr1: '所有 SDK 函数声明（主接口）', sdkHdr2: '结构体、枚举定义', sdkHdr3: '错误码定义',
       sdkGige: 'GigE 网络配置', sdkGige1: '启用网卡<strong>巨帧（Jumbo Frame）</strong>，建议 9000+',
       sdkGige2: '设备 IP 与 PC 网卡在同一网段', sdkGige3: '建议关闭防火墙或添加端口例外',
-      sdkFlowTitle: '⭐ 编程流程（重点）', sdkConnPhase: '连接阶段', sdkRunPhase: '运行阶段', sdkRelPhase: '释放阶段',
+      sdkFlowTitle: '编程流程（重点）', sdkConnPhase: '连接阶段', sdkRunPhase: '运行阶段', sdkRelPhase: '释放阶段',
       sdkEnumDev: '枚举设备', sdkCreateHandle: '创建句柄', sdkSetArea: '设置地域', sdkOpenDev: '打开设备',
       sdkSetParam: '设置参数', sdkStartGrab: '开始取流', sdkGetResult: '获取结果',
       sdkStopGrab: '停止取流', sdkCloseDev: '关闭设备', sdkDestroyHandle: '销毁句柄',
@@ -350,20 +350,20 @@
       sdkCodeRun: '运行阶段代码', sdkCodeRunC: 'C — 参数设置与取流',
       sdkC5: '// 设置连续采集模式', sdkC6: '// 开始取流', sdkC7: '// 获取一帧图像',
       sdkCodeRel: '释放阶段代码', sdkCodeRelC: 'C — 释放资源',
-      sdkParamTitle: '⚙️ 参数设置', sdkNodeMap: '节点类型与接口映射',
+      sdkParamTitle: '参数设置', sdkNodeMap: '节点类型与接口映射',
       sdkType: '类型', sdkGet: '读取', sdkSet: '设置', sdkTypical: '典型参数',
       sdkEnumWarn: '<strong>枚举节点必须用整数值！</strong><br>❌ SetEnumValue(handle, "TriggerMode", "On")<br>✅ SetEnumValue(handle, "TriggerMode", MV_CODEREADER_TRIGGER_MODE_ON)',
-      sdkTriggerTitle: '🎯 触发模式', sdkMode: '模式',
+      sdkTriggerTitle: '触发模式', sdkMode: '模式',
       sdkCont: '连续采集', sdkSoftTrig: '软触发', sdkHardTrig: '硬触发',
       sdkSoftExample: '软触发配置示例', sdkCodeSoftC: 'C — 软触发',
       sdkSoftComment: '// 然后 GetOneFrameTimeoutEx2 取图',
-      sdkErrTitle: '🔍 常见错误排查', sdkSymptom: '现象', sdkCheck: '排查方向',
+      sdkErrTitle: '常见错误排查', sdkSymptom: '现象', sdkCheck: '排查方向',
       sdkErr1: '枚举不到设备', sdkErr1D: '网卡IP、设备IP、网线、防火墙、供电',
       sdkErr2: '能枚举但打不开', sdkErr2D: '是否设置地域、设备被占用、IP冲突',
       sdkErr3: '打开成功但无图', sdkErr3D: '未开始取流、触发模式错误、无触发信号',
       sdkErr4: '参数设置失败', sdkErr4D: '节点类型不匹配、值超范围、取流状态不允许',
       sdkErr5: '读码结果为空', sdkErr5D: '码制未开启、曝光不合适、ROI设置错误',
-      sdkApiTitle: '📚 API 速查', sdkApiDev: '设备管理', sdkApiArea: '设置地域（中国：0xa80, 0x10000）',
+      sdkApiTitle: 'API 速查', sdkApiDev: '设备管理', sdkApiArea: '设置地域（中国：0xa80, 0x10000）',
       sdkOpenClose: '打开/关闭设备', sdkApiParamRW: '参数读写',
       sdkIntNode: 'Integer 节点', sdkFloatNode: 'Float 节点', sdkEnumNode: 'Enumeration 节点（用整数值）',
       sdkBoolNode: 'Boolean 节点', sdkStringNode: 'String 节点', sdkCmdNode: 'Command 节点（如 TriggerSoftware）',
@@ -391,12 +391,12 @@
       bomCsvNameFile: '配单表',
       bomFitSeriesLabel: '适配系列：',
       stReasonFov: '视野超出单机极限', stReasonDist: '工作距离受限', stReasonPpm: 'PPM超出范围',
-      stViewPlan: '📐 查看拼接方案', stHintTitle: '单相机方案无法满足当前需求',
+      stViewPlan: '查看拼接方案', stHintTitle: '单相机方案无法满足当前需求',
       stHintDescCan: '您输入的视野范围较大，单台读码器无法完整覆盖。建议采用多相机组网拼接方案，通过多台读码器协同工作实现完整视野覆盖。',
       stHintDescNo: '当前参数下所有型号的PPM均超出合理范围，请调整模块尺寸、工作距离或视野参数。',
       stSingleFov: '单机视野', stTotalCover: '总覆盖', stOverlapH: '水平重叠', stOverlapV: '垂直重叠',
       stReqCover: '需求覆盖', stNoPlan: '未找到合适的拼接方案', stNoPlanHint: '请调整参数：增大工作距离、减小覆盖区域、或选择更高分辨率型号',
-      stViewAll: '📋 查看全部方案', stSelectPlan: '选择拼接方案', stAll: '全部', stUnits: '台',      stResetView: '重置视角', stTopView: '俯视图', stCamCount: '相机数量', stMountHeight: '安装高度',
+      stViewAll: '查看全部方案', stSelectPlan: '选择拼接方案', stAll: '全部', stUnits: '台',      stResetView: '重置视角', stTopView: '俯视图', stCamCount: '相机数量', stMountHeight: '安装高度',
       stHrz: '水平', stVrt: '垂直', stOverlap: '重叠区域', stCamGap: '相机间距',
       copiedShort: '已复制', threeJsLoadErr: 'Three.js 加载失败',
       stSortLabel: '排序', stSortDefault: '默认', stSortCountAsc: '数量 ↑', stSortCountDesc: '数量 ↓', stSortResAsc: '分辨率 ↑', stSortResDesc: '分辨率 ↓', stSeriesLabel: '系列',
@@ -430,80 +430,80 @@
       solVTitle: 'V Assistant', solVDesc: 'Online Q&A for product usage and selection questions',
       solDocTitle: 'Solution Documents', solDocDesc: 'Application guides, wiring diagrams, debugging tutorials and more',
       solRepairTitle: 'Repair Status', solRepairDesc: 'Check product repair progress and after-sales status',
-      solHint: '💡 All links open in a new tab',
-      card1: '📋 Core Parameters', card2: '📐 Schematic', card3: '🏆 Best Match',
-      sec1: '🔖 Code Type & Module Size', sec2: '📐 Distance & FOV',
+      solHint: 'All links open in a new tab',
+      card1: 'Core Parameters', card2: 'Schematic', card3: 'Best Match',
+      sec1: 'Code Type & Module Size', sec2: 'Distance & FOV',
       codeType: 'Code Type *', moduleSize: 'Module Size *',
       codeTypePh: '-- Select --',
       codeType2D: 'QR Code (2D)', codeType1D: 'Barcode (1D)',
       workDist: 'Working Distance *', fovW: 'FOV Width *', fovH: 'FOV Height *',
       placeholder: 'Enter value',
-      imgCaption: '💡 Code Type & Module Size Guide',
-      runBtn: '⚡ Start Selection',
-      showModal: '📋 View All Matching Models',
+      imgCaption: 'Code Type & Module Size Guide',
+      runBtn: 'Start Selection',
+      showModal: 'View All Matching Models',
       emptyState: 'Waiting for selection…',
       svgEstW: 'Est. Width', svgEstH: 'Est. Height', svgWd: 'Work Dist.', svgFovAngle: 'FOV Angle',
-      modalTitle: '📌 Matching Models',
-      filterLabel: '🔍 Filter by Series', filterReset: 'Select All',
+      modalTitle: 'Matching Models',
+      filterLabel: 'Filter by Series', filterReset: 'Select All',
       modalEmpty: 'Run selection first',
       cpSearch: 'Search competitor / HIKROBOT model, e.g. SR-1000, ID3013PM…',
       cpBrandLabel: 'Brand',
       cpBrandAll: 'All Brands',
-      cpExpand: '📂 Expand All',
+      cpExpand: 'Expand All',
       cpStats: '{n} records',
       cpStatsHint: 'Blue = Competitor Features · Green = HIKROBOT Advantages',
-      cpEmpty: '✨ Click "Expand All" to browse, or type keywords to search',
+      cpEmpty: 'Click "Expand All" to browse, or type keywords to search',
       bomConfig: 'BOM Config',
       bomModelSel: 'Model Selection',
       bomStep1: 'Category', bomStep2: 'Series', bomStep3: 'Model',
       bomCatPh: '-- Select Category --', bomSerPh: '-- Select Category First --', bomModelPh: '-- Select Series First --',
-      bomQuickSearch: '🔍 Quick Search', bomQuickSearchPh: 'Search model name or material code…',
+      bomQuickSearch: 'Quick Search', bomQuickSearchPh: 'Search model name or material code…',
       bomAcc: 'Optional Accessories',
       bomAccEmpty: 'Select a model first',
-      bomAdd: '⚡ Generate BOM',
+      bomAdd: 'Generate BOM',
       bomDetail: 'BOM Details',
       bomLegendMain: '■ Main Unit', bomLegendStd: '■ Standard', bomLegendOpt: '■ Optional',
       bomStatTotal: 'Total', bomStatMain: 'Main', bomStatAcc: 'Accessories',
-      bomReset: 'Reset', bomExport: '⬇ Export CSV',
+      bomReset: 'Reset', bomExport: 'Export CSV',
       bomThIdx: '#', bomThType: 'Type', bomThName: 'Part Name', bomThImg: 'Image', bomThDesc: 'Description', bomThCode: 'Part Code', bomThAction: 'Action',
       bomEmpty: 'Select a model to auto-generate BOM',
       bomCount: '{n} rows',
-      bomFooterHint: '💡 Blue = Main · Light Blue = Standard · Light Orange = Optional',
+      bomFooterHint: 'Blue = Main · Light Blue = Standard · Light Orange = Optional',
       // Verify page
-      verifyTitle: '📊 PPM Calculator', verifyModelSel: '📷 Select Model', verifyDist: '📐 Working Distance',
-      verifyBarcode: '🔖 Barcode Parameters',
+      verifyTitle: 'PPM Calculator', verifyModelSel: 'Select Model', verifyDist: 'Working Distance',
+      verifyBarcode: 'Barcode Parameters',
       mpSearch: 'Search model name or material code, e.g. MV-ID803, IDA02X…',
       mpCatLabel: 'Series', mpCatAll: 'All Series',
-      mpExpand: '📂 Expand All', mpCollapse: '📁 Collapse All',
+      mpExpand: 'Expand All', mpCollapse: 'Collapse All',
       mpStats: '{n} records',
       mpStatsHint: 'Baseline = Direct Sales · Distribution = Channel · One-to-one mapping',
       mpThBaseModel: 'Baseline Model', mpThBaseCode: 'Baseline Code',
       mpThDistModel: 'Dist. Model', mpThDistCode: 'Dist. Code',
       mpLoading: 'Loading product table data…',
       mpCount: '{n} items',
-      mpFooterHint: '💡 Search baseline/distribution model names and material codes',
-      mpNoMatch: '😔 No matching records found',
+      mpFooterHint: 'Search baseline/distribution model names and material codes',
+      mpNoMatch: 'No matching records found',
       mpRecords: '{n} items',
       accTitle: 'Accessories',
       accHint: 'Click an item to toggle selection',
       accDone: 'Done',
       bomReadHost: 'Code Reader',
-      bomNoOptAcc: '✅ No optional accessories, {n} standard items included',
+      bomNoOptAcc: 'No optional accessories, {n} standard items included',
       bomAccCount: '{n} items',
       bomSelected: '{n} selected',
-      mpNoResult: '😔 No matching records, adjust search criteria',
+      mpNoResult: 'No matching records, adjust search criteria',
 
       // Status code page
       scSearch: 'Enter status code name or hex value, e.g. MV_CODEREADER_E_HANDLE or 0x80020000',
       scCatLabel: 'Category', scCatAll: 'All Categories',
       scStats: '{n} status codes',
-      scStatsHint: '💡 Search by name, value, or description',
+      scStatsHint: 'Search by name, value, or description',
       scThCategory: 'Category', scThName: 'Name', scThValue: 'Value', scThDesc: 'Description', scThSolution: 'Solution',
       scLoading: 'Loading status codes…',
       scCount: '{n} items',
-      scFooterHint: '💡 Click a row to copy the status code name',
-      scNoMatch: '😔 No matching status codes found',
-      scCopied: '✅ Copied: ',
+      scFooterHint: 'Click a row to copy the status code name',
+      scNoMatch: 'No matching status codes found',
+      scCopied: 'Copied: ',
 
       // PPM levels
       ppmExcellent: 'Excellent', ppmGood: 'Good', ppmPass: 'Pass',
@@ -516,10 +516,10 @@
       reasonCMount: 'C-Mount',
 
       // Stitch
-      stitchTitle: '🔗 Multi-Camera Stitching', stitchHint: '⚠️ Single camera FOV insufficient, use multi-camera stitching', stitchBack: '← Back to Single',
+      stitchTitle: 'Multi-Camera Stitching', stitchHint: 'Single camera FOV insufficient, use multi-camera stitching', stitchBack: 'Back to Single',
       barcodeW: 'Barcode Width *', barcodeH: 'Barcode Height *',
       barcodeOrient: 'Barcode Orientation', orientAuto: 'Auto Recommend', orientH: 'Horizontal', orientV: 'Vertical',
-      safetyMargin: 'Safety Margin', overlapMM: 'Overlap (mm)', stitchBtn: '⚡ Calculate Stitching',
+      safetyMargin: 'Safety Margin', overlapMM: 'Overlap (mm)', stitchBtn: 'Calculate Stitching',
       stitchAlertBase: 'Please complete basic selection parameters first',
       stitchAlertBarcode: 'Please enter barcode dimensions (width and height)',
 
@@ -528,14 +528,14 @@
       alertNoDB: 'Product database not loaded. Ensure product_db.js is included.',
 
       // Result display
-      resultEstFOV: '📐 Est. FOV {w}×{h}mm',
-      resultPPM: '📊 True PPM',
-      resultDist: '📏 Distance {min}-{max}mm',
-      resultNoMatch: '⚠️ No model matches all criteria.<br>Adjust parameters and retry.',
-      resultNoMatchShort: '⚠️ No matching models in selected series.',
+      resultEstFOV: 'Est. FOV {w}×{h}mm',
+      resultPPM: 'True PPM',
+      resultDist: 'Distance {min}-{max}mm',
+      resultNoMatch: 'No model matches all criteria.<br>Adjust parameters and retry.',
+      resultNoMatchShort: 'No matching models in selected series.',
       resultModalEmpty: 'No matching models. Adjust parameters and re-run selection.',
       resultWaitParam: 'Waiting for parameters…',
-      resultFovStatus: '📐 Est. FOV {w}×{h}mm',
+      resultFovStatus: 'Est. FOV {w}×{h}mm',
 
       // Competitor dynamic
       cpNoMatch: 'No matching records',
@@ -543,14 +543,14 @@
       cpFeatLabel: 'Competitor Features',
       cpAdvLabel: 'Our Advantages',
       cpRecLabel: 'Recommended Model',
-      cpCollapse: '📁 Collapse All',
+      cpCollapse: 'Collapse All',
 
       // BOM defaults
       bomUncategorized: 'Uncategorized',
       bomUnknownModel: 'Unknown Model',
       bomOther: 'Other',
       langBtn: '中',
-      contactUs: 'Contact Us', contactTitle: '📱 Follow Us~Learn more about HIKROBOT latest updates！', contactHint: '💡 Scan to follow for latest updates, contact Chen Jiaze for any questions',
+      contactUs: 'Contact Us', contactTitle: 'Follow Us~Learn more about HIKROBOT latest updates！', contactHint: 'Scan to follow for latest updates, contact Chen Jiaze for any questions',
 
       // Verify page
       verifyBack: '← Back to Smart Selection',
@@ -560,19 +560,19 @@
       verifyWDPh: 'Working Distance',
       verifyCodeTypeLabel: 'Code Type',
       verifyModuleSizePh: 'Module Size',
-      verifySpeedTitle: '🏃 Motion Speed (Optional)', verifySpeedPh: 'Motion Speed',
+      verifySpeedTitle: 'Motion Speed (Optional)', verifySpeedPh: 'Motion Speed',
       verifySpeedHint: 'Leave blank to skip max exposure time calculation',
-      verifyRunBtn: '⚡ Run Verification',
-      verifySchematicTitle: '📐 Verification Schematic', verifyResultTitle: '🏆 Verification Result',
+      verifyRunBtn: 'Run Verification',
+      verifySchematicTitle: 'Verification Schematic', verifyResultTitle: 'Verification Result',
       verifyEmpty: 'Select a model and enter parameters, then click "Run Verification"',
 
       // Home footer / misc
-      footerSite: '🌐 HIKROBOT Official Website',
-      announcementBtn: '📢 Notice',
-      bomDownload: '📥 Docs Download',
+      footerSite: 'HIKROBOT Official Website',
+      announcementBtn: 'Notice',
+      bomDownload: 'Docs Download',
       stitchDownloadBtn: 'Download Schematic',
       mpThDocs: 'Docs',
-      mpNamingBtn: '📖 Naming Rules',
+      mpNamingBtn: 'Naming Rules',
 
       // Solutions page cards
       solSdkTitle: 'SDK Reference Docs',
@@ -589,7 +589,7 @@
       previewAlt: 'Preview',
 
       // Announcement
-      announcementTitle: '📢 Notice',
+      announcementTitle: 'Notice',
       announcementHistory: 'History ▾', announcementHistoryOpen: 'History ▴',
       announcementDismiss: 'OK',
 
@@ -597,7 +597,7 @@
       robotBubble: 'Hello! I am "V", the HIKROBOT machine vision assistant. Whether you are installing industrial cameras, debugging code readers, using 3D products, or setting up VisionMaster, just say:<br><b>"Product info + Question / Requirement"</b>, and I will provide professional, actionable solutions right away.',
 
       // Naming rules modal
-      namingTitle: '📖 HIKROBOT MV-ID Code Reader Naming Rules',
+      namingTitle: 'HIKROBOT MV-ID Code Reader Naming Rules',
       namingStructure: 'Model Structure', namingExamples: 'Parsing Examples',
       namingFullModel: 'Full Model', namingParse: 'Parsing',
       namingBrand: 'Brand', namingCategory: 'Category', namingSeries: 'Series', namingSeriesDesc: 'Series 2 · 2.4MP',
@@ -615,11 +615,11 @@
       namingEx8: '<b>Series 5</b> · <b>20MP</b> · Basic — <b>C-mount Lens</b> — No Built-in Light',
 
       // SDK page
-      sdkTocTitle: '📑 Quick Navigation', sdkFullDoc: '📖 View Full Docs',
-      sdkTocOverview: '📋 SDK Overview', sdkTocEnv: '🔧 Dev Environment', sdkTocFlow: '⭐ Programming Flow',
-      sdkTocParam: '⚙️ Parameters', sdkTocGrab: '📷 Image Acquisition', sdkTocTrigger: '🎯 Trigger Modes',
-      sdkTocError: '🔍 Troubleshooting', sdkTocApi: '📚 API Quick Ref', sdkTocAdvanced: '🔗 Advanced Scenarios',
-      sdkBannerTitle: '📖 Full SDK Docs Now Online', sdkBannerDesc: 'Complete code examples, API reference, advanced scenarios and more',
+      sdkTocTitle: 'Quick Navigation', sdkFullDoc: 'View Full Docs',
+      sdkTocOverview: 'SDK Overview', sdkTocEnv: 'Dev Environment', sdkTocFlow: 'Programming Flow',
+      sdkTocParam: 'Parameters', sdkTocGrab: 'Image Acquisition', sdkTocTrigger: 'Trigger Modes',
+      sdkTocError: 'Troubleshooting', sdkTocApi: 'API Quick Ref', sdkTocAdvanced: 'Advanced Scenarios',
+      sdkBannerTitle: 'Full SDK Docs Now Online', sdkBannerDesc: 'Complete code examples, API reference, advanced scenarios and more',
       sdkBannerBtn: 'View Full Docs →',
       sdkHeroTitle: 'Secondary Development Guide', sdkHeroDesc: 'HIKROBOT code reader C / C# development kit · from beginner to pro',
       sdkLangC: 'C Language', sdkLangCS: 'C# Language',
@@ -627,7 +627,7 @@
       sdkPathFlowT: 'Write Code', sdkPathFlowD: 'Three-phase flow',
       sdkPathParamT: 'Parameters', sdkPathParamD: 'Node type mapping', sdkPathCsParamD: 'Node mapping',
       sdkPathApiT: 'API Quick Ref', sdkPathApiD: 'Common APIs', sdkPathCsApiD: 'Common APIs',
-      sdkEnvTitle: '🔧 Dev Environment Setup', sdkPrereq: 'Prerequisites',
+      sdkEnvTitle: 'Dev Environment Setup', sdkPrereq: 'Prerequisites',
       sdkPrereq1: '<strong>IDMVS</strong> or <strong>MVS Runtime</strong> installed',
       sdkPrereq2: 'Configure SDK include and lib paths',
       sdkPrereq3: 'Program bitness must match DLL bitness (x64 for x64)',
@@ -635,7 +635,7 @@
       sdkHeaders: 'Core Headers', sdkHdr1: 'All SDK function declarations (main interface)', sdkHdr2: 'Struct & enum definitions', sdkHdr3: 'Error code definitions',
       sdkGige: 'GigE Network Setup', sdkGige1: 'Enable <strong>Jumbo Frame</strong> on NIC, 9000+ recommended',
       sdkGige2: 'Device IP and PC NIC on the same subnet', sdkGige3: 'Disable firewall or add port exceptions',
-      sdkFlowTitle: '⭐ Programming Flow (Key)', sdkConnPhase: 'Connection', sdkRunPhase: 'Runtime', sdkRelPhase: 'Release',
+      sdkFlowTitle: 'Programming Flow (Key)', sdkConnPhase: 'Connection', sdkRunPhase: 'Runtime', sdkRelPhase: 'Release',
       sdkEnumDev: 'Enumerate Devices', sdkCreateHandle: 'Create Handle', sdkSetArea: 'Set Area', sdkOpenDev: 'Open Device',
       sdkSetParam: 'Set Parameters', sdkStartGrab: 'Start Grabbing', sdkGetResult: 'Get Result',
       sdkStopGrab: 'Stop Grabbing', sdkCloseDev: 'Close Device', sdkDestroyHandle: 'Destroy Handle',
@@ -645,20 +645,20 @@
       sdkCodeRun: 'Runtime Phase Code', sdkCodeRunC: 'C — Params & Grabbing',
       sdkC5: '// Set continuous acquisition mode', sdkC6: '// Start grabbing', sdkC7: '// Get one frame',
       sdkCodeRel: 'Release Phase Code', sdkCodeRelC: 'C — Release Resources',
-      sdkParamTitle: '⚙️ Parameters', sdkNodeMap: 'Node Types & Interface Mapping',
+      sdkParamTitle: 'Parameters', sdkNodeMap: 'Node Types & Interface Mapping',
       sdkType: 'Type', sdkGet: 'Get', sdkSet: 'Set', sdkTypical: 'Typical Params',
       sdkEnumWarn: '<strong>Enum nodes MUST use integer values!</strong><br>❌ SetEnumValue(handle, "TriggerMode", "On")<br>✅ SetEnumValue(handle, "TriggerMode", MV_CODEREADER_TRIGGER_MODE_ON)',
-      sdkTriggerTitle: '🎯 Trigger Modes', sdkMode: 'Mode',
+      sdkTriggerTitle: 'Trigger Modes', sdkMode: 'Mode',
       sdkCont: 'Continuous', sdkSoftTrig: 'Software Trigger', sdkHardTrig: 'Hardware Trigger',
       sdkSoftExample: 'Software Trigger Example', sdkCodeSoftC: 'C — Software Trigger',
       sdkSoftComment: '// Then grab with GetOneFrameTimeoutEx2',
-      sdkErrTitle: '🔍 Common Troubleshooting', sdkSymptom: 'Symptom', sdkCheck: 'Check',
+      sdkErrTitle: 'Common Troubleshooting', sdkSymptom: 'Symptom', sdkCheck: 'Check',
       sdkErr1: 'Cannot enumerate device', sdkErr1D: 'NIC IP, device IP, cable, firewall, power',
       sdkErr2: 'Enum OK but cannot open', sdkErr2D: 'Area set? Device in use? IP conflict?',
       sdkErr3: 'Opens but no image', sdkErr3D: 'Not grabbing, wrong trigger mode, no trigger signal',
       sdkErr4: 'Parameter set failed', sdkErr4D: 'Node type mismatch, value out of range, grab state not allowed',
       sdkErr5: 'Empty read result', sdkErr5D: 'Code type off, bad exposure, ROI misconfigured',
-      sdkApiTitle: '📚 API Quick Ref', sdkApiDev: 'Device Management', sdkApiArea: 'Set area (China: 0xa80, 0x10000)',
+      sdkApiTitle: 'API Quick Ref', sdkApiDev: 'Device Management', sdkApiArea: 'Set area (China: 0xa80, 0x10000)',
       sdkOpenClose: 'Open / Close Device', sdkApiParamRW: 'Param Read / Write',
       sdkIntNode: 'Integer node', sdkFloatNode: 'Float node', sdkEnumNode: 'Enumeration node (use integer)',
       sdkBoolNode: 'Boolean node', sdkStringNode: 'String node', sdkCmdNode: 'Command node (e.g. TriggerSoftware)',
@@ -686,12 +686,12 @@
       bomCsvNameFile: 'BOM',
       bomFitSeriesLabel: 'Fits series: ',
       stReasonFov: 'FOV exceeds single-unit limit', stReasonDist: 'Working distance limited', stReasonPpm: 'PPM out of range',
-      stViewPlan: '📐 View Stitching Plan', stHintTitle: 'Single-camera plan cannot meet the requirement',
+      stViewPlan: 'View Stitching Plan', stHintTitle: 'Single-camera plan cannot meet the requirement',
       stHintDescCan: 'The requested FOV is too large for one code reader. We recommend a multi-camera stitching setup where multiple readers work together for full coverage.',
       stHintDescNo: 'PPM of all models is out of the valid range under current parameters. Adjust module size, working distance, or FOV.',
       stSingleFov: 'Single FOV', stTotalCover: 'Total coverage', stOverlapH: 'H-overlap', stOverlapV: 'V-overlap',
       stReqCover: 'Requested', stNoPlan: 'No suitable stitching plan found', stNoPlanHint: 'Adjust parameters: increase working distance, reduce coverage, or choose higher resolution',
-      stViewAll: '📋 View All Plans', stSelectPlan: 'Select Stitching Plan', stAll: 'All', stUnits: ' units',
+      stViewAll: 'View All Plans', stSelectPlan: 'Select Stitching Plan', stAll: 'All', stUnits: ' units',
       stResetView: 'Reset view', stTopView: 'Top view', stCamCount: 'Cameras', stMountHeight: 'Mount height',
       stHrz: 'H', stVrt: 'V', stOverlap: 'Overlap', stCamGap: 'Camera spacing',
       copiedShort: 'Copied', threeJsLoadErr: 'Three.js failed to load',
@@ -970,7 +970,7 @@
       _announcementPopulated = true;
       function announcementDocHtml(a) {
         if (!a.file || !a.file.url) return '';
-        return '<a class="announcement-doc" href="' + a.file.url + '" target="_blank" rel="noopener">📄 ' +
+        return '<a class="announcement-doc" href="' + a.file.url + '" target="_blank" rel="noopener">' + (window.uiIcon ? window.uiIcon('file') : '') + ' ' +
           (a.file.name || '查看文档') + '</a>';
       }
 

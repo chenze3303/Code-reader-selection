@@ -50,7 +50,7 @@
         <div class="home-grid">
           <button class="home-card" data-goto="page-selection">
             <div class="home-card-top">
-              <div class="home-card-icon">⚡</div>
+              <div class="home-card-icon"><UiIcon name="zap" /></div>
               <div class="home-card-title">{{ t('tab1') }}</div>
               <div class="home-card-num">01</div>
             </div>
@@ -61,7 +61,7 @@
           </button>
           <button class="home-card" data-goto="page-stitch">
             <div class="home-card-top">
-              <div class="home-card-icon">🔗</div>
+              <div class="home-card-icon"><UiIcon name="link" /></div>
               <div class="home-card-title">{{ t('tabStitch') }}</div>
               <div class="home-card-num">02</div>
             </div>
@@ -72,7 +72,7 @@
           </button>
           <button class="home-card" data-goto="page-competitor">
             <div class="home-card-top">
-              <div class="home-card-icon">🔬</div>
+              <div class="home-card-icon"><UiIcon name="microscope" /></div>
               <div class="home-card-title">{{ t('tab2') }}</div>
               <div class="home-card-num">03</div>
             </div>
@@ -83,7 +83,7 @@
           </button>
           <button class="home-card" data-goto="page-bom">
             <div class="home-card-top">
-              <div class="home-card-icon">📋</div>
+              <div class="home-card-icon"><UiIcon name="clipboard" /></div>
               <div class="home-card-title">{{ t('tab3') }}</div>
               <div class="home-card-num">04</div>
             </div>
@@ -94,7 +94,7 @@
           </button>
           <button class="home-card" data-goto="page-mapping">
             <div class="home-card-top">
-              <div class="home-card-icon">🔄</div>
+              <div class="home-card-icon"><UiIcon name="refresh" /></div>
               <div class="home-card-title">{{ t('tab4') }}</div>
               <div class="home-card-num">05</div>
             </div>
@@ -105,7 +105,7 @@
           </button>
           <button class="home-card" data-goto="page-statuscode">
             <div class="home-card-top">
-              <div class="home-card-icon">🔍</div>
+              <div class="home-card-icon"><UiIcon name="search" /></div>
               <div class="home-card-title">{{ t('tab5') }}</div>
               <div class="home-card-num">06</div>
             </div>
@@ -116,7 +116,7 @@
           </button>
           <button class="home-card" data-goto="page-pda">
             <div class="home-card-top">
-              <div class="home-card-icon">📱</div>
+              <div class="home-card-icon"><UiIcon name="phone" /></div>
               <div class="home-card-title">{{ t('tabPDA') }}</div>
               <div class="home-card-num">07</div>
             </div>
@@ -127,7 +127,7 @@
           </button>
           <button class="home-card" data-goto="page-solutions">
             <div class="home-card-top">
-              <div class="home-card-icon">📦</div>
+              <div class="home-card-icon"><UiIcon name="package" /></div>
               <div class="home-card-title">{{ t('tab6') }}</div>
               <div class="home-card-num">08</div>
             </div>
@@ -142,7 +142,7 @@
       <!-- 底部 -->
       <div class="home-footer">
         <div class="home-footer-links">
-          <a href="https://www.hikrobotics.com" target="_blank">{{ t('footerSite') }}</a>
+          <a href="https://www.hikrobotics.com" target="_blank"><UiIcon name="globe" /> {{ t('footerSite') }}</a>
         </div>
         <button class="home-footer-ver" id="announcementBtn">{{ t('announcementBtn') }}</button>
       </div>
@@ -153,6 +153,7 @@
 
 <script setup>
 import { useI18n } from '../composables/useI18n'
+import UiIcon from './UiIcon.vue'
 const { currentLang, t } = useI18n()
 currentLang.value
 </script>

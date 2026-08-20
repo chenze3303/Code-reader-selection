@@ -15,8 +15,8 @@
               <option v-for="c in cats" :key="c" :value="c">{{ c }}</option>
             </select>
           </div>
-          <button class="mp-btn-expand" id="mpToggleAllBtn" @click="toggleAll">{{ allExpanded ? t('mpCollapse') : t('mpExpand') }}</button>
-          <button class="mp-btn-naming" id="mpNamingBtn" :class="{ show: showCodeColumns }" @click="namingOpen = true">{{ t('mpNamingBtn') }}</button>
+          <button class="mp-btn-expand" id="mpToggleAllBtn" @click="toggleAll"><UiIcon :name="allExpanded ? 'folder' : 'folderopen'" /> {{ allExpanded ? t('mpCollapse') : t('mpExpand') }}</button>
+          <button class="mp-btn-naming" id="mpNamingBtn" :class="{ show: showCodeColumns }" @click="namingOpen = true"><UiIcon name="book" /> {{ t('mpNamingBtn') }}</button>
         </div>
 
         <!-- 状态栏 -->
@@ -41,12 +41,12 @@
             </thead>
             <tbody id="mpTableBody">
               <tr v-if="!ready"><td :colspan="7" class="mp-empty">{{ t('mpLoading') }}</td></tr>
-              <tr v-else-if="filtered.length === 0"><td :colspan="colCount" class="mp-empty">{{ t('mpNoMatch') }}</td></tr>
+              <tr v-else-if="filtered.length === 0"><td :colspan="colCount" class="mp-empty"><UiIcon name="frown" /> {{ t('mpNoMatch') }}</td></tr>
               <template v-for="g in groups" :key="g.cat">
                 <tr class="mp-cat-row" :class="{ open: isCatOpen(g.cat) }" @click="toggleCat(g.cat)">
                   <td :colspan="colCount">
                     <span class="mp-cat-toggle">{{ isCatOpen(g.cat) ? '▼' : '▶' }}</span>
-                    📂 {{ g.cat }}
+                    <UiIcon name="folderopen" /> {{ g.cat }}
                     <span class="mp-cat-badge">{{ t('mpRecords', g.items.length) }}</span>
                   </td>
                 </tr>
@@ -56,13 +56,13 @@
                     <td class="mp-base-name">{{ r.baseName }}</td>
                     <td v-if="showCodeColumns" class="mp-base-code"><span class="mp-code-tag base">{{ r.baseCode || '—' }}</span></td>
                     <td class="mp-dl-cell">
-                      <a v-if="baseUrl(r)" class="mp-dl-btn base" :href="baseUrl(r)" target="_blank" :title="t('mpDlBase')">📥</a>
+                      <a v-if="baseUrl(r)" class="mp-dl-btn base" :href="baseUrl(r)" target="_blank" :title="t('mpDlBase')"><UiIcon name="download" /></a>
                       <span v-else class="mp-dl-btn disabled" :title="t('mpNone')">—</span>
                     </td>
                     <td class="mp-dist-name">{{ r.distName }}</td>
                     <td v-if="showCodeColumns" class="mp-dist-code"><span class="mp-code-tag dist">{{ r.distCode || '—' }}</span></td>
                     <td class="mp-dl-cell">
-                      <a v-if="distUrl(r)" class="mp-dl-btn dist" :href="distUrl(r)" target="_blank" :title="t('mpDlDist')">📥</a>
+                      <a v-if="distUrl(r)" class="mp-dl-btn dist" :href="distUrl(r)" target="_blank" :title="t('mpDlDist')"><UiIcon name="download" /></a>
                       <span v-else class="mp-dl-btn disabled" :title="t('mpNone')">—</span>
                     </td>
                   </tr>
@@ -74,7 +74,7 @@
 
         <div class="mp-footer">
           <span id="mpFooterCount">{{ t('mpCount', filtered.length) }}</span>
-          <span class="mp-footer-hint">{{ t('mpFooterHint') }}</span>
+          <span class="mp-footer-hint"><UiIcon name="lightbulb" /> {{ t('mpFooterHint') }}</span>
         </div>
 
       </div>
@@ -84,7 +84,7 @@
       <div v-if="namingOpen" class="naming-modal-overlay" id="namingModal" :class="{ active: namingOpen }" @click.self="closeNamingModal">
         <div class="naming-modal">
           <div class="naming-modal-header">
-            <span class="naming-modal-title">{{ t('namingTitle') }}</span>
+            <span class="naming-modal-title"><UiIcon name="book" /> {{ t('namingTitle') }}</span>
             <button class="naming-modal-close" id="namingModalClose" @click="closeNamingModal">&times;</button>
           </div>
           <div class="naming-modal-body" id="namingModalBody">
@@ -145,6 +145,7 @@ import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useI18n } from '../composables/useI18n'
 import { useGlobalData } from '../composables/useLegacy'
 import namingData from '../data/namingData'
+import UiIcon from './UiIcon.vue'
 
 const { t, currentLang } = useI18n()
 const mappingData = useGlobalData('MAPPING_DATA')

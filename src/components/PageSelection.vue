@@ -3,10 +3,10 @@
     <div class="main-content" v-show="!verifyOpen">
       <div class="left-panel">
         <div class="card">
-          <div class="card-header">{{ t('card1') }}</div>
+          <div class="card-header"><UiIcon name="clipboard" /> <span>{{ t('card1') }}</span></div>
 
           <div class="form-section">
-            <div class="form-section-title">{{ t('sec1') }}</div>
+            <div class="form-section-title"><UiIcon name="tag" /> <span>{{ t('sec1') }}</span></div>
             <div class="compact-grid">
               <div>
                 <label for="selCodeType">{{ t('codeType') }}</label>
@@ -31,7 +31,7 @@
           </div>
 
           <div class="form-section">
-            <div class="form-section-title">{{ t('sec2') }}</div>
+            <div class="form-section-title"><UiIcon name="ruler" /> <span>{{ t('sec2') }}</span></div>
             <div class="compact-grid compact-grid-1">
               <div>
                 <label for="inpWorkingDistance">{{ t('workDist') }}</label>
@@ -57,13 +57,13 @@
             </div>
           </div>
 
-          <button class="btn-primary" id="runBtn" :class="{loading: running}" style="width:100%;" v-show="!stitchMode" @click="runSelection">{{ running ? '' : t('runBtn') }}</button>
-          <button class="btn-primary" id="verifyBtn" @click="showVerifyPage" style="width:100%;margin-top:8px;background:linear-gradient(135deg,#2a4a8c,#1a3366);" v-show="!stitchMode">{{ t('verifyTitle') }}</button>
+          <button class="btn-primary" id="runBtn" :class="{loading: running}" style="width:100%;" v-show="!stitchMode" @click="runSelection"><span v-if="!running"><UiIcon name="zap" /> {{ t('runBtn') }}</span></button>
+          <button class="btn-primary" id="verifyBtn" @click="showVerifyPage" style="width:100%;margin-top:8px;background:linear-gradient(135deg,#2a4a8c,#1a3366);" v-show="!stitchMode"><UiIcon name="chart" /> {{ t('verifyTitle') }}</button>
 
           <div class="form-section" id="stitchCard" v-show="stitchMode">
             <div class="form-section-title" style="display:flex;justify-content:space-between;align-items:center;">
-              <span>{{ t('stitchTitle') }}</span>
-              <button class="stitch-back-btn" id="stitchBackBtn" @click="goBackSingle">{{ t('stitchBack') }}</button>
+              <span><UiIcon name="link" /> {{ t('stitchTitle') }}</span>
+              <button class="stitch-back-btn" id="stitchBackBtn" @click="goBackSingle"><UiIcon name="back" /> {{ t('stitchBack') }}</button>
             </div>
             <div class="compact-grid compact-grid-1">
               <div>
@@ -74,7 +74,7 @@
                 </div>
               </div>
             </div>
-            <button class="btn-primary" id="stitchBtn" :class="{loading: stitchRunning}" @click="runStitchCalculation">{{ stitchRunning ? '' : t('stitchBtn') }}</button>
+            <button class="btn-primary" id="stitchBtn" :class="{loading: stitchRunning}" @click="runStitchCalculation"><span v-if="!stitchRunning"><UiIcon name="zap" /> {{ t('stitchBtn') }}</span></button>
             <button class="stitch-plan-switch-btn" id="stitchPlanSwitchBtn" v-show="hasStitchResults" style="margin-top:10px;" @click="planModalOpen = true">{{ t('stViewAll') }} ({{ planDisplayList.length }})</button>
           </div>
         </div>
@@ -83,7 +83,7 @@
       <div class="right-panel">
         <div class="card">
           <div class="card-header" style="display:flex;align-items:center;justify-content:space-between">
-            <span>{{ t('card2') }}</span>
+            <span><UiIcon name="ruler" /> {{ t('card2') }}</span>
             <button class="stitch-download-btn" id="stitchDownloadBtn" v-show="stitchMode && hasStitchResults" title="" @click="downloadStitchImage">{{ t('stitchDownloadBtn') }}</button>
           </div>
           <div id="calcContent">
@@ -134,7 +134,7 @@
         </div>
 
         <div class="card" v-show="!stitchMode">
-          <div class="card-header">{{ t('card3') }}</div>
+          <div class="card-header"><UiIcon name="trophy" /> <span>{{ t('card3') }}</span></div>
           <div id="top1Content" v-html="top1Html" aria-live="polite" @click="onTop1ContentClick"></div>
           <button class="btn-outline" id="showModalBtn" :disabled="!modalEnabled" @click="openModal">{{ t('showModal') }}</button>
         </div>
@@ -148,11 +148,11 @@
     <div class="modal-overlay" id="modelModal" :class="{active: modalOpen}" @click.self="modalOpen = false">
       <div class="modal">
         <div class="modal-header">
-          <h2>{{ t('modalTitle') }}</h2>
+          <h2><UiIcon name="pin" /> {{ t('modalTitle') }}</h2>
           <button class="modal-close" @click="modalOpen = false">&times;</button>
         </div>
         <div class="series-filter-bar">
-          <span class="filter-label">{{ t('filterLabel') }}</span>
+          <span class="filter-label"><UiIcon name="search" /> {{ t('filterLabel') }}</span>
           <div class="filter-check-group" id="seriesCheckGroup">
             <label class="series-check" v-for="s in modalSeriesList" :key="s">
               <input type="checkbox" :value="s" v-model="modalSeriesSelected"> <span class="check-dot"></span> {{ s }}
@@ -206,10 +206,11 @@
 import { ref, reactive, computed, watch, nextTick, onMounted } from 'vue'
 import PageVerify from './PageVerify.vue'
 import { useI18n } from '../composables/useI18n'
+import UiIcon from './UiIcon.vue'
 
 const { currentLang, t } = useI18n()
 
-const imgFallbackSvg = 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22120%22%3E%3Crect width=%22400%22 height=%22120%22 fill=%22%23fef3e8%22 rx=%2212%22/%3E%3Ctext x=%2250%%22 y=%2250%%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22 fill=%22%23f76504%22 font-size=%2214%22%3E📖 码制示意：QR / Code39%3C/text%3E%3C/svg%3E'
+const imgFallbackSvg = 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22120%22%3E%3Crect width=%22400%22 height=%22120%22 fill=%22%23fef3e8%22 rx=%2212%22/%3E%3Ctext x=%2250%%22 y=%2250%%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22 fill=%22%23f76504%22 font-size=%2214%22%3E码制示意：QR / Code39%3C/text%3E%3C/svg%3E'
 const imgFallback = (e) => { if (e && e.target) e.target.src = imgFallbackSvg }
 
 function esc(s) {
@@ -308,7 +309,7 @@ const top1Html = computed(() => {
     var ppmDisplay = s.ppm !== null ? s.ppm.toFixed(2) : '—'
     var ppmLevelDisplay = s.ppmLevel ? ' (' + s.ppmLevel + ')' : ''
     return '<div class="result-main">' +
-      '<div class="result-card"><strong>' + t('showModal').replace('📋 ', '') + '</strong><span>' + best.model + '</span></div>' +
+      '<div class="result-card"><strong>' + t('showModal') + '</strong><span>' + best.model + '</span></div>' +
       '<div class="result-card"><strong>PPM</strong><span>' + ppmDisplay + ppmLevelDisplay + '</span></div>' +
     '</div>' +
     '<div class="model-preview">' +
@@ -323,7 +324,7 @@ const top1Html = computed(() => {
   if (!reasonTags) reasonTags = '<span class="stitch-hint-reason">' + t('stReasonFov') + '</span>'
   var stitchBtnHtml = s.canStitch ? '<button class="stitch-hint-btn" id="showStitchBtn">' + t('stViewPlan') + '</button>' : ''
   return '<div class="stitch-hint-card">' +
-    '<div class="stitch-hint-icon">📷</div>' +
+    '<div class="stitch-hint-icon">' + window.uiIcon('camera') + '</div>' +
     '<div class="stitch-hint-title">' + t('stHintTitle') + '</div>' +
     '<div class="stitch-hint-desc">' + (s.canStitch ? t('stHintDescCan') : t('stHintDescNo')) + '</div>' +
     stitchBtnHtml +
@@ -504,7 +505,7 @@ function renderModalWithSeriesFilter() {
     return selectedSeries.indexOf(item.model.series) !== -1
   })
   if (filteredBySeries.length === 0) {
-    modalListHtml.value = '<div class="warning-badge">' + t('resultNoMatchShort') + '</div>'
+    modalListHtml.value = '<div class="warning-badge">' + (window.uiIcon ? window.uiIcon('warn') : '') + ' ' + t('resultNoMatchShort') + '</div>'
     return
   }
   var html = ''
@@ -513,24 +514,24 @@ function renderModalWithSeriesFilter() {
     var fovEst = item.fovEst
     var ppmDisplay = item.ppm !== null ? item.ppm.toFixed(2) : '— (C-Mount)'
     var ppmLevelDisplay = item.ppmLevel ? ' (' + item.ppmLevel + ')' : ''
-    var fovStatus = fovEst ? t('resultFovStatus', { w: fovEst.width, h: fovEst.height }) : '🔧 C-Mount'
+    var fovStatus = fovEst ? t('resultFovStatus', { w: fovEst.width, h: fovEst.height }) : window.uiIcon('wrench') + ' C-Mount'
     html += '<div class="modal-model-entry ' + (idx === 0 ? 'recommended' : '') + '">' +
       '<div class="modal-entry-header">' +
         '<span class="modal-model-name">' + m.model + '</span>' +
         '<span class="modal-model-series">' + m.series + '</span>' +
       '</div>' +
       '<div class="modal-spec-grid">' +
-        '<div class="spec-item">🔘 ' + m.resolution.w + '×' + m.resolution.h + '</div>' +
-        '<div class="spec-item">🔌 ' + m.interface + '</div>' +
-        '<div class="spec-item">🛡️ ' + m.protection + '</div>' +
-        '<div class="spec-item">' + (m.focal ? '🔍 ' + m.focal + 'mm' : '🔧 C-Mount') + '</div>' +
+        '<div class="spec-item">' + window.uiIcon('dot') + ' ' + m.resolution.w + '×' + m.resolution.h + '</div>' +
+        '<div class="spec-item">' + window.uiIcon('cable') + ' ' + m.interface + '</div>' +
+        '<div class="spec-item">' + window.uiIcon('shield') + ' ' + m.protection + '</div>' +
+        '<div class="spec-item">' + (m.focal ? window.uiIcon('search') + ' ' + m.focal + 'mm' : window.uiIcon('wrench') + ' C-Mount') + '</div>' +
       '</div>' +
-      '<div class="ppm-value-row"><span>' + t('resultPPM') + '：<span class="ppm-value-highlight">' + ppmDisplay + '</span>' + ppmLevelDisplay + '</span></div>' +
+      '<div class="ppm-value-row"><span>' + (window.uiIcon ? window.uiIcon('chart') : '') + ' ' + t('resultPPM') + '：<span class="ppm-value-highlight">' + ppmDisplay + '</span>' + ppmLevelDisplay + '</span></div>' +
       '<div class="info-row">' +
         '<span class="info-tag">' + t('resultDist', { min: m.workingDist.min, max: m.workingDist.max }) + '</span>' +
         '<span class="info-tag">' + fovStatus + '</span>' +
       '</div>' +
-      '<div class="reasons-row">' + item.reasons.map(function (r) { return '<span class="reason-badge">✨ ' + esc(r) + '</span>'; }).join('') + '</div>' +
+      '<div class="reasons-row">' + item.reasons.map(function (r) { return '<span class="reason-badge">' + window.uiIcon('sparkles') + ' ' + esc(r) + '</span>'; }).join('') + '</div>' +
     '</div>'
   })
   modalListHtml.value = html
@@ -725,7 +726,7 @@ function runStitchCalculation() {
 function renderCurrentPlan(themeOnly) {
   var results = stitchResults.value
   if (!results || results.length === 0) {
-    planAreaHtml.value = '<div class="stitch-warning">😔 ' + t('stNoPlan') + '<br>' + t('stNoPlanHint') + '</div>'
+    planAreaHtml.value = '<div class="stitch-warning">' + window.uiIcon('frown') + ' ' + t('stNoPlan') + '<br>' + t('stNoPlanHint') + '</div>'
     return
   }
   var display = planDisplayList.value
