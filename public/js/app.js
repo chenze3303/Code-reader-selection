@@ -856,11 +856,10 @@
       });
     });
 
-    // 首页卡片点击跳转
-    document.querySelectorAll('.home-card[data-goto]').forEach(function(card) {
-      card.addEventListener('click', function() {
-        switchToPage(card.dataset.goto);
-      });
+    // 首页卡片点击跳转（事件委托，兼容 Vue 重渲染）
+    document.addEventListener('click', function(e) {
+      var card = e.target.closest('.home-card[data-goto]');
+      if (card) switchToPage(card.dataset.goto);
     });
   }
 
