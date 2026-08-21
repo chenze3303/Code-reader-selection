@@ -1,6 +1,26 @@
 <template>
   <div class="page active" id="page-home">
-    <div class="home-page">
+    <!-- 骨架屏：i18n 加载前 -->
+    <div v-if="!currentLang" class="home-page">
+      <div class="home-hero">
+        <div class="home-hero-inner">
+          <div class="home-hero-text">
+            <div class="skeleton-pulse" style="width:180px;height:12px;border-radius:3px;margin-bottom:1rem"></div>
+            <div class="skeleton-pulse" style="width:260px;height:28px;border-radius:4px;margin-bottom:0.8rem"></div>
+            <div class="skeleton-pulse" style="width:380px;height:14px;border-radius:3px;margin-bottom:0.5rem"></div>
+            <div class="skeleton-pulse" style="width:300px;height:14px;border-radius:3px"></div>
+          </div>
+        </div>
+      </div>
+      <div class="home-section" style="padding:0 1.5rem">
+        <div class="home-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1rem;padding:1.5rem 0">
+          <div v-for="i in 6" :key="i" class="skeleton-card" style="height:140px"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 正常内容 -->
+    <div v-else class="home-page">
 
       <!-- Hero Banner -->
       <div class="home-hero">
