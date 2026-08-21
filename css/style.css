@@ -42,7 +42,7 @@ body {
 
 .app-window {
   position: relative;
-  max-width: none;
+  max-width: 1600px;
   width: 100%;
   height: calc(100vh - 3rem);
   height: calc(100dvh - 3rem);
@@ -1300,7 +1300,7 @@ select:focus, input:focus {
 .bom-q-img .bom-model-img {
   width: 44px;
   height: 44px;
-  max-width: none;
+  max-width: 1600px;
   max-height: none;
   border-radius: 8px;
   object-fit: contain;
@@ -2553,7 +2553,7 @@ select:focus, input:focus {
     padding: 1rem;
   }
   .contact-card {
-    max-width: none;
+    max-width: 1600px;
     width: 100%;
     flex-direction: row;
     gap: 0.9rem;
@@ -4491,7 +4491,7 @@ select:focus, input:focus {
 @media (max-width: 768px) {
   .home-hero-inner { flex-direction: column; text-align: center; }
   .home-hero-text { flex: none; }
-  .home-hero-desc { max-width: none; margin: 0 auto; }
+  .home-hero-desc { max-width: 1600px; margin: 0 auto; }
   .home-hero-visual { display: none; }
   .home-hero { padding: 16px 12px 14px; }
   .home-hero-eyebrow { font-size: 0.5rem; margin-bottom: 4px; }
@@ -5933,7 +5933,7 @@ select:focus, input:focus {
 .stitch-toolbar .stitch-select {
   flex: 1;
   min-width: 0;
-  max-width: none;
+  max-width: 1600px;
 }
 /* 更多按钮 */
 .stitch-more-btn {
