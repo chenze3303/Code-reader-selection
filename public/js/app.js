@@ -1019,9 +1019,10 @@
   }
 
   function initAnnouncement() {
-    // 绑定首页公告按钮（始终可用）
-    var btn = document.getElementById('announcementBtn');
-    if (btn) btn.onclick = function() { showAnnouncement(false); };
+    // 绑定首页公告按钮（事件委托，兼容 Vue 重渲染）
+    document.addEventListener('click', function(e) {
+      if (e.target.closest('#announcementBtn')) showAnnouncement(false);
+    });
 
     // 有新公告时自动弹出
     var list = window.ANNOUNCEMENTS;
