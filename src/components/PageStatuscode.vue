@@ -39,7 +39,14 @@
                 </tr>
               </thead>
               <tbody id="scTableBody">
-                <tr v-if="!ready"><td colspan="6" class="sc-empty">{{ t('scLoading') }}</td></tr>
+                <tr v-if="!ready" v-for="i in 8" :key="'sk'+i" class="skeleton-row">
+                  <td><div class="skeleton-cell skeleton-pulse w56"></div></td>
+                  <td><div class="skeleton-cell skeleton-pulse w88"></div></td>
+                  <td><div class="skeleton-cell skeleton-pulse w120"></div></td>
+                  <td><div class="skeleton-cell skeleton-pulse w56"></div></td>
+                  <td><div class="skeleton-cell skeleton-pulse flex1"></div></td>
+                  <td><div class="skeleton-cell skeleton-pulse w120"></div></td>
+                </tr>
                 <tr v-else-if="filtered.length === 0"><td colspan="6" class="sc-empty"><UiIcon name="frown" /> {{ t('scNoMatch') }}</td></tr>
                 <tr v-else v-for="(item, index) in filtered" :key="item.name" :class="rowClass(item)" @click="copyName(item.name)">
                   <td style="text-align:center">{{ index + 1 }}</td>

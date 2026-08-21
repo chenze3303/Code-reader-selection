@@ -312,6 +312,9 @@ const modalEnabled = ref(false)
 
 const top1State = ref({ type: 'empty' })
 const top1Html = computed(() => {
+  if (running.value) {
+    return '<div class="skeleton-card"><div class="skeleton-line skeleton-pulse w60" style="height:16px"></div><div class="skeleton-line skeleton-pulse w80" style="height:14px;margin-top:0.5rem"></div><div class="skeleton-line skeleton-pulse w40" style="height:14px;margin-top:0.5rem"></div></div>'
+  }
   var s = top1State.value
   if (s.type === 'empty') {
     return '<div class="empty-state">' + t(s.wait ? 'verifyEmptyWait' : 'emptyState') + '</div>'
@@ -790,7 +793,7 @@ function renderStitch3D(plan, barcodeW, barcodeH, orient, reqW, reqH) {
   container.innerHTML = ''
 
   if (typeof THREE === 'undefined') {
-    container.innerHTML = '<div style="padding:40px;text-align:center;color:#888">Three.js loading, please wait…</div>'
+    container.innerHTML = '<div class="stitch-3d-skeleton" style="width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem;gap:1rem"><div class="skeleton-pulse" style="width:60%;height:12px;border-radius:3px"></div><div class="skeleton-pulse" style="width:80%;height:12px;border-radius:3px"></div><div class="skeleton-pulse" style="width:40%;height:12px;border-radius:3px"></div></div>'
     if (!container._3dLoading) {
       container._3dLoading = true
       var s = document.createElement('script')

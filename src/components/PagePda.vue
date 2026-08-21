@@ -31,7 +31,13 @@
                 </tr>
               </thead>
               <tbody id="pdaTableBody">
-                <template v-if="filteredModels.length">
+                <template v-if="pdaData === null">
+                  <tr v-for="i in 8" :key="'pda-sk'+i" class="skeleton-row">
+                    <td class="pda-td-param"><div class="skeleton-cell skeleton-pulse w120"></div></td>
+                    <td v-for="j in 5" :key="j"><div class="skeleton-cell skeleton-pulse" style="width:60px"></div></td>
+                  </tr>
+                </template>
+                <template v-else-if="filteredModels.length">
                   <tr v-for="p in (pdaData ? pdaData.paramOrder : [])" :key="p">
                     <td class="pda-td-param" :title="p">{{ p }}</td>
                     <td v-for="m in filteredModels" :key="m.sub + '_' + p" :title="m.params[p] || ''">{{ m.params[p] || '-' }}</td>

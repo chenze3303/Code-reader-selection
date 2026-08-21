@@ -40,7 +40,15 @@
               </tr>
             </thead>
             <tbody id="mpTableBody">
-              <tr v-if="!ready"><td :colspan="7" class="mp-empty">{{ t('mpLoading') }}</td></tr>
+              <tr v-if="!ready" v-for="i in 6" :key="'sk'+i" class="skeleton-row">
+                <td><div class="skeleton-cell skeleton-pulse w28"></div></td>
+                <td><div class="skeleton-cell skeleton-pulse w120"></div></td>
+                <td v-if="showCodeColumns"><div class="skeleton-cell skeleton-pulse w88"></div></td>
+                <td><div class="skeleton-cell skeleton-pulse w28"></div></td>
+                <td><div class="skeleton-cell skeleton-pulse w120"></div></td>
+                <td v-if="showCodeColumns"><div class="skeleton-cell skeleton-pulse w88"></div></td>
+                <td><div class="skeleton-cell skeleton-pulse w28"></div></td>
+              </tr>
               <tr v-else-if="filtered.length === 0"><td :colspan="colCount" class="mp-empty"><UiIcon name="frown" /> {{ t('mpNoMatch') }}</td></tr>
               <template v-for="g in groups" :key="g.cat">
                 <tr class="mp-cat-row" :class="{ open: isCatOpen(g.cat) }" @click="toggleCat(g.cat)">
