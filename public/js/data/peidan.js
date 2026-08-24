@@ -129595,7 +129595,7 @@ window.PEIDAN_DATA = {
           "series": "IDH7000电池",
           "name": "MV-IDA-H70-BATTERY-01",
           "code": "101900934",
-          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款",
+          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI",
           "remark": ""
         },
         {
@@ -129655,7 +129655,7 @@ window.PEIDAN_DATA = {
           "series": "IDH7000电池",
           "name": "MV-IDA-H70-BATTERY-01",
           "code": "101900934",
-          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款",
+          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI",
           "remark": ""
         },
         {
@@ -129739,7 +129739,7 @@ window.PEIDAN_DATA = {
           "series": "IDH7000电池",
           "name": "MV-IDA-H70-BATTERY-01",
           "code": "101900934",
-          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款",
+          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI",
           "remark": ""
         },
         {
@@ -129823,7 +129823,7 @@ window.PEIDAN_DATA = {
           "series": "IDH7000电池",
           "name": "MV-IDA-H70-BATTERY-01",
           "code": "101900934",
-          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款",
+          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI",
           "remark": ""
         },
         {
@@ -129883,7 +129883,7 @@ window.PEIDAN_DATA = {
           "series": "IDH7000电池",
           "name": "MV-IDA-H70-BATTERY-01",
           "code": "101900934",
-          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款",
+          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI",
           "remark": ""
         },
         {
@@ -129943,7 +129943,7 @@ window.PEIDAN_DATA = {
           "series": "IDH7000电池",
           "name": "MV-IDA-H70-BATTERY-01",
           "code": "101900934",
-          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款",
+          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI",
           "remark": ""
         },
         {
@@ -130027,7 +130027,7 @@ window.PEIDAN_DATA = {
           "series": "IDH7000电池",
           "name": "MV-IDA-H70-BATTERY-01",
           "code": "101900934",
-          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款",
+          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI",
           "remark": ""
         },
         {
@@ -130111,7 +130111,7 @@ window.PEIDAN_DATA = {
           "series": "IDH7000电池",
           "name": "MV-IDA-H70-BATTERY-01",
           "code": "101900934",
-          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款",
+          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI",
           "remark": ""
         },
         {
@@ -130171,7 +130171,7 @@ window.PEIDAN_DATA = {
           "series": "IDH7000电池",
           "name": "MV-IDA-H70-BATTERY-01",
           "code": "101900934",
-          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款",
+          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI",
           "remark": ""
         },
         {
@@ -130231,7 +130231,7 @@ window.PEIDAN_DATA = {
           "series": "IDH7000电池",
           "name": "MV-IDA-H70-BATTERY-01",
           "code": "101900934",
-          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款",
+          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI",
           "remark": ""
         },
         {
@@ -130315,7 +130315,7 @@ window.PEIDAN_DATA = {
           "series": "IDH7000电池",
           "name": "MV-IDA-H70-BATTERY-01",
           "code": "101900934",
-          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款",
+          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI",
           "remark": ""
         },
         {
@@ -130399,7 +130399,7 @@ window.PEIDAN_DATA = {
           "series": "IDH7000电池",
           "name": "MV-IDA-H70-BATTERY-01",
           "code": "101900934",
-          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款",
+          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI",
           "remark": ""
         },
         {
@@ -130459,7 +130459,7 @@ window.PEIDAN_DATA = {
           "series": "IDH7000电池",
           "name": "MV-IDA-H70-BATTERY-01",
           "code": "101900934",
-          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款",
+          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI",
           "remark": ""
         },
         {
@@ -130519,7 +130519,7 @@ window.PEIDAN_DATA = {
           "series": "IDH7000电池",
           "name": "MV-IDA-H70-BATTERY-01",
           "code": "101900934",
-          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款",
+          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI",
           "remark": ""
         },
         {
@@ -130603,7 +130603,7 @@ window.PEIDAN_DATA = {
           "series": "IDH7000电池",
           "name": "MV-IDA-H70-BATTERY-01",
           "code": "101900934",
-          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款",
+          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI",
           "remark": ""
         },
         {
@@ -132079,7 +132079,7 @@ window.PEIDAN_DATA = {
           "series": "IDH7000电池",
           "name": "MV-IDA-H70-BATTERY-01",
           "code": "101900934",
-          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI，适配IDH2000无线款",
+          "detail": "CMV-IDA-H70-BATTERY-01,3.6V3150mAh,TI",
           "remark": ""
         },
         {
