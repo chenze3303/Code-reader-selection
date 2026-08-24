@@ -1530,8 +1530,7 @@ select:focus, input:focus {
 }
 .bom-q-table th:nth-child(5),
 .bom-q-table td:nth-child(5) {
-  width: auto;
-  max-width: 320px;
+  width: 45%;
   text-align: center;
   word-break: break-word;
   white-space: normal;
@@ -1540,6 +1539,13 @@ select:focus, input:focus {
 }
 .bom-q-table th:nth-child(6),
 .bom-q-table td:nth-child(6) {
+  width: 45%;
+  text-align: center;
+  word-break: break-word;
+  white-space: normal;
+}
+.bom-q-table th:nth-child(7),
+.bom-q-table td:nth-child(7) {
   width: 96px;
   text-align: center;
 }

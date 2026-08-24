@@ -10,7 +10,7 @@ const ROOT = path.join(__dirname, '..');
 const INPUT = path.join(ROOT, 'product_data.json');
 const OUTPUT = path.join(ROOT, 'js', 'data', 'peidan.js');
 
-// 相机行的配件列配置（25列格式）
+// 相机行的配件列配置（支持25列和26列格式）
 // col: 配件引用列, flagCol: 标配/选配标志列, accCategory: 配件行[1]的类别名
 const ACCESSORY_COLUMNS = {
   '电源':     { name: '电源',     col: 7,  flagCol: 8,  accCategory: '电源' },
@@ -23,6 +23,13 @@ const ACCESSORY_COLUMNS = {
   'FA镜头':   { name: 'FA镜头',   col: 21, flagCol: 22, accCategory: 'FA镜头' },
   '扩展配件': { name: '扩展配件', col: 23, flagCol: 24, accCategory: '扩展配件' },
 };
+
+// 自动检测列数并调整映射
+function detectColumnFormat(rows) {
+  const maxCols = Math.max(...rows.map(r => r.length));
+  console.log(`📊 检测到最大列数: ${maxCols}`);
+  return maxCols;
+}
 
 // 产品大类排序优先级
 const CATEGORY_ORDER = [
@@ -46,6 +53,11 @@ function sortOrder(a, b) {
 function main() {
   const raw = JSON.parse(fs.readFileSync(INPUT, 'utf8').replace(/^\uFEFF/, ''));
   const rows = raw.map(item => item.value || item);
+
+  // 自动检测列数
+  const maxCols = detectColumnFormat(rows);
+  const is26ColFormat = maxCols >= 26;
+  console.log(`📋 使用 ${is26ColFormat ? '26列' : '25列'} 格式`);
 
   // 分离相机行和配件行
   const cameraRows = [];
@@ -127,13 +139,15 @@ function main() {
                 const accName = (ar[3] || '').trim();
                 const accCode = (ar[4] || '').trim();
                 const accDesc = (ar[5] || '').trim();
+                const accRemark = (ar[6] || '').trim();
                 if (!standardAcc.some(a => a.name === accName && a.code === accCode)) {
                   standardAcc.push({
                     category: cfg.accCategory,
                     series: (ar[2] || '').trim(),
                     name: accName,
                     code: accCode,
-                    detail: accDesc
+                    detail: accDesc,
+                    remark: accRemark
                   });
                 }
               }
@@ -149,6 +163,7 @@ function main() {
             const accName = (ar[3] || '').trim();
             const accCode = (ar[4] || '').trim();
             const accDesc = (ar[5] || '').trim();
+            const accRemark = (ar[6] || '').trim();
 
             if (accCat !== cfg.accCategory) return;
             if (!accName || !accCode) return;
@@ -174,7 +189,8 @@ function main() {
                   series: (ar[2] || '').trim(),
                   name: accName,
                   code: accCode,
-                  detail: accDesc
+                  detail: accDesc,
+                  remark: accRemark
                 });
               }
             }

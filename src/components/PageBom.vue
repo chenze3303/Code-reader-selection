@@ -142,11 +142,12 @@
                   <th style="min-width:120px;text-align:center">{{ t('bomThName') }}</th>
                   <th style="width:56px;text-align:center">{{ t('bomThImg') }}</th>
                   <th style="text-align:center">{{ t('bomThDesc') }}</th>
+                  <th style="text-align:center">{{ t('bomThRemark') }}</th>
                   <th style="width:96px;text-align:center">{{ t('bomThCode') }}</th>
                 </tr>
               </thead>
               <tbody id="bomQBody">
-                <tr v-if="bomList.length === 0"><td colspan="6" class="bom-q-empty">{{ t('bomEmpty') }}</td></tr>
+                <tr v-if="bomList.length === 0"><td colspan="7" class="bom-q-empty">{{ t('bomEmpty') }}</td></tr>
                 <tr v-for="(row, i) in bomList" :key="i" :class="rowClass(row)">
                   <td class="bom-q-idx" style="text-align:center;">{{ i + 1 }}</td>
                   <td style="text-align:center;"><span class="bom-q-type-badge" :class="row.type === '配件' ? ' acc' : ''">{{ row.accType || row.type }}</span></td>
@@ -155,6 +156,7 @@
                     <img v-if="rowImgSrc(row)" class="bom-model-img" :src="rowImgSrc(row)" width="44" height="44" :alt="row.n || ''" role="button" tabindex="0" @click="openLightbox(rowImgSrc(row))" @keydown.enter.prevent="openLightbox(rowImgSrc(row))" @keydown.space.prevent="openLightbox(rowImgSrc(row))">
                   </td>
                   <td class="bom-q-desc" style="text-align:center;">{{ rowDesc(row) }}</td>
+                  <td style="text-align:center;"><span class="bom-q-remark" v-if="row.remark">{{ row.remark }}</span></td>
                   <td style="text-align:center;"><span class="bom-q-code">{{ row.c || '—' }}</span></td>
                 </tr>
               </tbody>
@@ -305,10 +307,10 @@ function buildTreeData(modelList) {
         remark: item.remark || '',
         index,
         standardAcc: (item.standardAccessories || []).map((a, idx) => ({
-          name: a.name, code: a.code, detail: a.detail || '', category: a.category || '大类', series: a.series || '', _key: getAccKey(a, idx)
+          name: a.name, code: a.code, detail: a.detail || '', remark: a.remark || '', category: a.category || '大类', series: a.series || '', _key: getAccKey(a, idx)
         })),
         optionalAcc: (item.optionalAccessories || []).map((a, idx) => ({
-          name: a.name, code: a.code, detail: a.detail || '', category: a.category || '其他', series: a.series || '', _key: getAccKey(a, idx)
+          name: a.name, code: a.code, detail: a.detail || '', remark: a.remark || '', category: a.category || '其他', series: a.series || '', _key: getAccKey(a, idx)
         }))
       })
     }
@@ -346,7 +348,7 @@ function buildReverseIndex(modelList) {
       if (!code) return
       const isStd = i < std.length
       if (!idx[code]) {
-        idx[code] = { name: acc.name || '', category: acc.category || '', series: acc.series || '', detail: acc.detail || '', models: [] }
+        idx[code] = { name: acc.name || '', category: acc.category || '', series: acc.series || '', detail: acc.detail || '', remark: acc.remark || '', models: [] }
       }
       const exists = idx[code].models.some((m) => m.name === model && m.cat === cat && m.ser === ser)
       if (!exists) idx[code].models.push({ name: model, type: isStd ? 'standard' : 'optional', cat, ser })
@@ -453,12 +455,12 @@ function autoGenerateBOM() {
   })
   ;(m.standardAcc || []).forEach((a) => {
     if (a.code && a.name && !selectedOptCats[a.category]) {
-      newBom.push({ type: '配件', n: a.name, c: a.code, d: a.detail || '', qty, accType: '标配', cat: selCat.value, ser: selSer.value })
+      newBom.push({ type: '配件', n: a.name, c: a.code, d: a.detail || '', remark: a.remark || '', qty, accType: '标配', cat: selCat.value, ser: selSer.value })
     }
   })
   ;(m.optionalAcc || []).forEach((a) => {
     if (a.code && a.name && accCodes.value[a._key]) {
-      newBom.push({ type: '配件', n: a.name, c: a.code, d: a.detail || '', qty, accType: '选配', cat: selCat.value, ser: selSer.value })
+      newBom.push({ type: '配件', n: a.name, c: a.code, d: a.detail || '', remark: a.remark || '', qty, accType: '选配', cat: selCat.value, ser: selSer.value })
     }
   })
   bomList.value = newBom
@@ -648,7 +650,7 @@ function selectProductByMatch(m, extraAccCode) {
     if (info) {
       const exists = bomList.value.some((r) => r.c === extraAccCode)
       if (!exists) {
-        bomList.value.push({ type: '配件', n: info.name, c: extraAccCode, d: info.detail || '', qty: 1, accType: '选配', cat: info.category, ser: info.series })
+        bomList.value.push({ type: '配件', n: info.name, c: extraAccCode, d: info.detail || '', remark: info.remark || '', qty: 1, accType: '选配', cat: info.category, ser: info.series })
       }
     }
   }
@@ -665,7 +667,7 @@ function addAccToBom(code) {
     searchOpen.value = false
     return
   }
-  bomList.value.push({ type: '配件', n: info.name, c: code, d: info.detail || '', qty: 1, accType: '选配', cat: info.category, ser: info.series })
+  bomList.value.push({ type: '配件', n: info.name, c: code, d: info.detail || '', remark: info.remark || '', qty: 1, accType: '选配', cat: info.category, ser: info.series })
   saveState()
   searchKw.value = ''
   searchOpen.value = false
