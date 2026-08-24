@@ -97,6 +97,15 @@ code.inline{background:var(--bg-secondary);border:1px solid var(--border);paddin
 .back-btn{display:inline-flex;align-items:center;gap:6px;padding:8px 16px;background:var(--accent);color:#fff;border-radius:8px;text-decoration:none;font-size:13px;font-weight:600;margin-bottom:20px;transition:all .2s}
 .back-btn:hover{background:#e55a00;text-decoration:none;color:#fff}
 
+[data-ui]{display:inline-flex;align-items:center;vertical-align:middle}
+[data-ui] .lucide-icon{width:1em!important;height:1em!important;flex-shrink:0}
+.hero [data-ui] .lucide-icon{width:1.2em!important;height:1.2em!important}
+.nav-section-title [data-ui] .lucide-icon{width:1em!important;height:1em!important}
+.info-box-title [data-ui] .lucide-icon{width:1.1em!important;height:1.1em!important}
+.sidebar-header [data-ui] .lucide-icon{width:48px!important;height:48px!important}
+.menu-btn [data-ui] .lucide-icon{width:22px!important;height:22px!important}
+.download-btn [data-ui] .lucide-icon{width:14px!important;height:14px!important}
+
 @media(max-width:900px){
   .sidebar{transform:translateX(-100%)}.sidebar.open{transform:translateX(0)}.main{margin-left:0}.menu-btn{display:block}
   .content{padding:20px 18px 60px}.hero{padding:22px}.hero h1{font-size:24px}
