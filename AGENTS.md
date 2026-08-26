@@ -11,14 +11,13 @@
 - **页面**：`src/App.vue` 为组合根（skip-link + titlebar + 导航 + 各页面组件），已拆分为独立 SFC：
   - `src/components/PageHome.vue`、`PageSelection.vue`、`PageVerify.vue`（**嵌套在 PageSelection 内**）、`PageCompetitor.vue`、`PageBom.vue`、`PageStatuscode.vue`、`PageSdk.vue`、`PagePda.vue`、`PageSolutions.vue`、`PageMapping.vue`、`GlobalOverlays.vue`（所有弹窗/Lightbox/Toast）
   - 各组件模板由原 `index.html` body 对应区块迁移；**已用 Vue 响应式重写**的组件（`PageCompetitor`、`PageStatuscode`、`PageMapping`、`PageBom`）不再依赖 legacy 脚本：数据经 `useGlobalData` 读取、文案经 `useI18n` 的 `t()` 响应式绑定（模板内不再出现 `data-i18n`）；其余组件仍由 legacy 脚本驱动，模板内的 `@click`/`@change` 桥接函数定义在各组件自身 `<script setup>`（App.vue 仅保留 toggleLang/toggleTheme）
-- **静态资源根**：`public/` 即站点根（构建时复制到 `dist/`）。含 `js/`（legacy 脚本与数据）、`assets/`（图片）、`db_editor.html`、`sdk-guide.html`、`peidan.html` 等独立页
 - **数据文件**（`public/js/data/*.js`）：经典 `<script>` 注入的全局变量，**不是 ES 模块**
 - **模块文件**（`public/js/*.js`）：app.js 主模块；`mapping_module.js`/`statuscode_module.js`/`competitor.js`/`bom.js` 已由 Vue 重写不再加载
 - **Vue 重写数据抽取**：`src/data/competitorData.js`（竞品 39 条）、`src/data/namingData.js`（命名规则 8 部分 `title/html` + `titleEn/htmlEn`）为 ES module 导入
 - **Three.js**（`public/js/three.min.js`）：3D 拼接方案渲染，由 `app.js` 动态加载
 - **数据库编辑器**：`db_editor.html` — 独立数据编辑工具，含配件图片管理（图片列/选择弹窗/上传/导出 acc_imgs.js）。隐藏入口：主页面连续点击左上角 logo 3 次（600ms 内）
 - **SDK 参考**：`sdk-guide.html` — 独立 SDK 参考页面
-- **独立配单页**：`peidan.html` — 独立的 ID 产品配单表页面（自包含，内联 CSS/JS）
+- **静态资源根**：`public/` 即站点根（构建时复制到 `dist/`）。含 `js/`（legacy 脚本与数据）、`assets/`（图片）、`db_editor.html`、`sdk-guide.html` 等独立页
 - **机器人浮动组件**：`src/App.vue` 中 `.floating-robot-wrap`，纯 CSS 机器人吉祥物 + 15 秒气泡提示（`onMounted` 隐藏），点击跳转 v-club 智能助手
 
 ## 关键约定
@@ -149,7 +148,6 @@ node scripts/gen_download_urls.js                  # → public/js/data/download
 | `public/assets/products/` | 产品型号图片（原图 PNG + webp 压缩版） |
 | `public/exports/` | 导出的 Excel 数据文件 |
 | `public/sdk-guide.html` | 独立 SDK 参考完整文档页（72KB） |
-| `public/peidan.html` | 独立配单表页面（自包含，内联所有 CSS/JS） |
 | `public/海康读码器命名规则_副本.html` | 命名规则参考页面（独立静态文件） |
 | `index.legacy.html` | 迁移前的原始 `index.html` 完整备份（模板回退参考，勿部署） |
 
@@ -164,5 +162,4 @@ node scripts/gen_download_urls.js                  # → public/js/data/download
 - 主题/语言持久化使用 `localStorage` 键 `theme` / `lang`
 - 配单表状态持久化使用 `localStorage` 键 `hikrob…tate`（含大类/系列/型号/配件勾选/bomList）
 - `db_editor.html` 打开时自动加载数据，无需手动导入
-- `peidan.html` 是独立自包含页面，不依赖 `index.html` 或共享模块
 - **迁移注意**：Vue 模板为静态（无响应式绑定），legacy 脚本直接改 DOM 不会触发 Vue 重渲染；不要给模板元素添加 `v-for`/响应式绑定，否则会与 legacy DOM 操作冲突

@@ -70,7 +70,6 @@ npm run preview
 │   │   └── data/                   # 全部业务数据（PRODUCT_DB / PEIDAN_DATA / MAPPING_DATA 等）
 │   ├── db_editor.html              # 数据库编辑器（独立页面，logo 连点 3 次进入）
 │   ├── sdk-guide.html              # SDK 完整参考（独立页面，自包含）
-│   ├── peidan.html                 # 独立配单表页面（自包含）
 │   └── 海康读码器命名规则_副本.html  # 命名规则参考页
 ├── css/
 │   ├── style.css                   # 全局样式源文件（Vite 打包）
