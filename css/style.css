@@ -6211,7 +6211,10 @@ select:focus, input:focus {
   transform: translateX(-42px) rotate(18deg);
 }
 .floating-robot-wrap.robot-side-right.robot-hidden {
-  transform: translateX(42px) rotate(-18deg);
+  /* Move back toward the card: the later .app-body paints over its left half,
+     leaving the right-side peek outside the page. */
+  transform: translateX(-42px) rotate(8deg);
+  z-index: 0;
 }
 .floating-robot-wrap.robot-hidden .robot-bubble {
   opacity: 0;
