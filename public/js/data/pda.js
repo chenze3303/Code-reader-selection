@@ -176,5 +176,31 @@ window.PDA_DATA = {
       apps: "",
       params: {"性能/条码类别": "一维码：Code 11，Code 39，Code 93，Code 128，GS1，EAN，UPC-A，UPC-E，Interleaved 2 of 5，Codabar，Matrix 2 of 5，Industrial 2 of 5，Datalogic 2 of 5 (China Post)，MSI Plessey，Pharmacode\n矩阵式二维码：Data Matrix，QR Code，Micro QR Code，Aztec，Han Xin Code， MaxiCode，Data Matrix ECC140\n堆叠式二维码：MicroPDF，PDF417", "条码最小精度": "3 mil", "检测角度": "水平 42°，垂直 28°", "视场角度": "倾斜角度±60°，偏斜角度±45°，旋转角度 360°", "景深": "Code 39（10 mil）：40 mm ~ 340 mm\nCode 39（25 mil）：70 mm ~ 480 mm \nCode 128（5 mil）：70 mm ~ 200 mm\nCode 128（100 mil）：0 ~ 1450 mm\nData Matrix（10 mil）：60 mm ~ 200 mm\nQR Code（20 mil）：45 mm ~ 370 mm\nQR Code（100 mil）：0 ~ 1000 mm", "OCR": "不支持", "处理器": "8核2.2 GHz处理器", "内存": "RAM 3GB，ROM 32GB", "扩展卡槽": "Micro SD卡，最大支持512GB", "操作系统": "Android V11.0", "SIM": "1个Nano-SIM卡槽，1个Nano-SIM/TF二选一卡槽，支持双卡双待", "摄像头": "后置摄像头：1300万像素（彩色变焦）", "传感器": "重力传感器、光线传感器、距离传感器，电子罗盘、陀螺仪", "显示屏": "6.2英寸显示屏（1520 × 720）", "触摸屏": "电容式触摸，支持手套模式", "音频": "内置扬声器，内置双麦克风", "键盘": "音量+、- 键、开关机键、2个侧扫描键", "NFC/工作频率": "不支持", "协议标准": "不支持", "读写距离": "不支持", "电气特性/接口": "Type-C，USB 2.0，OTG", "电池": "5000 mAh，不可拆卸电池\n默认配5 V、2 A适配器", "通信方式/移动通信": "2G：GSM B2/B3/B5/B8\n3G：WCDMA B1/B2/ B5/B8\n4G：FDD-LTE B1/B2/B3/B5/B7/B8/B20/B28a&b，TDD-LTE：B34/B38/B39/B40/B41", "Wi-Fi": "IEEE802.11 a/b/g/n/ac，IEEE802.11 d/e/h/i/j/k/r/v", "蓝牙": "BT5.0", "定位": "GPS，北斗，GLONASS", "结构/外形尺寸": "166.4 mm × 80.6 mm × 13.5 mm", "重量": "267 g（含电池）", "IP防护等级": "IP68", "温度": "工作温度-20 ~ 55℃\n存储温度-30 ~ 70℃", "湿度": "5 ~ 95%RH无冷凝", "跌落规格": "1.5 m水泥地防摔", "静电防护": "±12KV（空气放电）±8KV（接触放电）", "激光性能/激光安全等级": "Class 2", "波长": "650 nm", "脉冲宽度": "4 ms", "最大功率": "1 mW", "一般规范/软件": "扫描助手、企业桌面等", "认证": "CCC，CTA，SRRC"}
     },
+    {
+      sub: "MV-IDP5304/4&64(国内标配)",
+      main: "MV-IDP5304",
+      name: "IDP智能移动终端",
+      intro: "MV-IDP5304 型智能移动终端基于Android 14 操作系统，并搭载高性能八核2.2GHz处理器，运行速度全面提升。设备内置自主研发的深度学习算法，支持主流一维码和二维码。可满足智能制造、物流、仓储、零售、资产管理和企事业单位等多行业应用需求。",
+      features: "1、采用自研深度学习算法，可高效读取行业疑难码，例如断帧、溢墨、欠墨、覆膜、污损码\n2、八核2.2 GHz处理器，基于Android 14操作系统，4G全网通蜂窝网络\n3、6英寸显示屏，1440 × 720屏幕分辨率\n4、前800W，后1300W高清摄像头\n5、高防护等级及结构设计，IP67防护以及1.5米多次跌落\n6、5000 mAh大容量电池确保长时间续航，且支持拆卸更换\n7、支持快速漫游功能，Wi-Fi性能强大\n8、NFC近场通讯功能\n9、可选配热启动备电等功能",
+      apps: "智能制造、物流、仓储、零售、医疗、企事业单位等",
+      params: {
+        "性能/条码类别": "一维码：Code 11，Code 39，Code 93，Code 128，GS1，EAN，UPC-A，UPC-E，\nInterleaved 2 of 5，Codabar，Matrix 2 of 5，Industrial 2 of 5，Datalogic 2 of 5 (China Post)，MSI Plessey，Pharmacode\n矩阵式二维码：Data Matrix，QR Code，Micro QR Code，Aztec，Han Xin Code，MaxiCode，Data Matrix ECC140\n堆叠式二维码：MicroPDF，PDF417",
+        "条码最小精度": "5 mil",
+        "检测角度": "水平46°，垂直38°",
+        "视场角度": "倾斜角度±60°，偏斜角度±45°，旋转角度360°",
+        "景深": "Code 39（10 mil）：42 ~ 370 mm\nCode 39（25 mil）：90 ~ 730 mm\nCode 128（5 mil）：30 ~ 320 mm\nCode 128（100 mil）：250 ~ 4500 mm\nQR Code（20 mil）：10 ~ 610 mm\nQR Code（100 mil）：70 ~ 3200 mm\nData Matrix（10 mil）：30 ~ 290 mm",
+        "OCR": "支持选配", "处理器": "8核2.2 GHz处理器", "内存": "RAM 4GB，ROM 64GB", "扩展卡槽": "Micro SD卡，最大可支持1TB", "操作系统": "Android 14",
+        "SIM": "2个Nano-SIM卡槽，支持双卡双待（SIM卡2与Micro SD卡为二选一方式）",
+        "摄像头": "前置摄像头：500万像素（彩色定焦）\n后置摄像头：1300万像素（彩色变焦）",
+        "传感器": "光线距离传感器、重力传感器（G-sensor）", "显示屏": "6.0英寸高清全面屏（1440 × 720）", "触摸屏": "INCELL全贴合电容触摸屏，支持多点触控、被动笔签名", "音频": "内置2个麦克风、1个扬声器",
+        "键盘": "侧面电源键×1，侧面扫描键×2，侧面音量键×2，侧面FN键×1", "NFC/工作频率": "13.56 MHz NFC", "协议标准": "ISO14443A/B，ISO15693", "读写距离": "3 cm以内",
+        "电气特性/接口": "Type-C（支持耳机），USB 2.0 HighSpeed，OTG\n2PIN座充专用充电端口", "电池": "一体可拆卸式5000 mAh（4.4V）锂聚合物电池\n默认配5 V、2 A适配器",
+        "通信方式/移动通信": "2G：GSM B2/B3/B5/B8\n3G：WCDMA B1/B2/B4/B5/B8\n4G：FDD-LTE B1/B2/B3/B4/B5/B7/B8/B20/B28，TDD-LTE B34/B38/B39/B40/B41",
+        "Wi-Fi": "IEEE 802.11 a/b/g/n/ac/d/h/i/k/r/v/ac/ax", "蓝牙": "BT5.2（2.4 GHz ~ 2.48 GHz）", "定位": "GPS，北斗，GLONASS，Galileo",
+        "结构/外形尺寸": "163.5 mm × 77.15 mm × 14.15 mm", "重量": "约275 g（含电池）", "IP防护等级": "IP67",
+        "温度": "工作温度：-20℃ ~ 50℃\n存储温度：-30℃ ~ 60℃", "湿度": "0 ~ 95%RH无冷凝", "跌落规格": "1.5 m大理石台面8次跌落", "静电防护": "±12 KV（空气放电），±8 KV（接触放电）",
+        "激光性能/激光安全等级": "Class 2", "波长": "650 nm", "脉冲宽度": "4 ms", "最大功率": "1 mW", "一般规范/软件": "扫码工具、企业桌面等", "认证": "CCC，CTA，SRRC"
+      }
+    },
   ]
 };
