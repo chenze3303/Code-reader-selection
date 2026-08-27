@@ -6211,10 +6211,8 @@ select:focus, input:focus {
   transform: translateX(-42px) rotate(18deg);
 }
 .floating-robot-wrap.robot-side-right.robot-hidden {
-  /* Move back toward the card: the later .app-body paints over its left half,
-     leaving the right-side peek outside the page. */
-  transform: translateX(-42px) rotate(8deg);
-  z-index: 0;
+  /* After the greeting, slide the complete mascot out to the far right. */
+  transform: translateX(100%);
 }
 .floating-robot-wrap.robot-hidden .robot-bubble {
   opacity: 0;
