@@ -215,7 +215,7 @@ window.ACC_IMGS = {
   "MV-IDA-L-8-55-55-W(国内中性)": "L-8-55.webp",
   "MV-IDA-L-8-55-55-R(国内中性)": "L-8-55.webp",
   "MV-IDA-L-8-55-55-B(国内中性)": "L-8-55.webp",
-  "MV-IDA-L-8-55-55-IR(国内中性)": "L-48-55.webp",
+  "MV-IDA-L-8-55-55-IR(国内中性)": "L-8-55.webp",
   "MV-IDA-L-48-55-55-WH(国内中性)": "L-48-55.webp",
   "MV-IDA-L-48-55-55-RH(国内中性)": "L-48-55.webp",
   "MV-IDA-L-48-55-55-BH(国内中性)": "L-48-55.webp",
