@@ -7,7 +7,7 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
-const INPUT = path.join(ROOT, 'product_data.json');
+const INPUT = process.argv[2] ? path.resolve(process.argv[2]) : path.join(ROOT, 'product_data.json');
 const OUTPUT = path.join(ROOT, 'public', 'js', 'data', 'peidan.js');
 
 // 相机行的配件列配置（支持25列和26列格式）
