@@ -76,6 +76,11 @@ function pdaNfcText(m) {
   if (!v || v.indexOf('不支持') !== -1) return 'no'
   return 'yes'
 }
+function pdaBluetoothValue(m) {
+  var v = (m.params['蓝牙'] || '').trim()
+  var match = v.match(/BT\s*(\d+(?:\.\d+)?)/i)
+  return match ? 'BT' + match[1] : v
+}
 function pdaOsValue(m) {
   var v = (m.params['操作系统'] || '').match(/Android\s*V?(\d+(?:\.\d+)?)/i)
   return v ? 'Android ' + v[1] : (m.params['操作系统'] || '').trim()
@@ -102,6 +107,7 @@ const filterDefs = [
   { key: 'series', label: 'pdaSeries', get: function (m) { return m.main } },
   { key: 'ip', label: 'pdaIp', get: pdaIpValue },
   { key: 'nfc', label: 'pdaNfc', get: pdaNfcText, values: [['yes', 'pdaSupported'], ['no', 'pdaNotSupported']] },
+  { key: 'bluetooth', label: 'pdaBluetooth', get: pdaBluetoothValue },
   { key: 'os', label: 'pdaOs', get: pdaOsValue },
   { key: 'screen', label: 'pdaScreen', get: pdaScreenValue },
   { key: 'cpu', label: 'pdaCpu', get: pdaCpuValue },

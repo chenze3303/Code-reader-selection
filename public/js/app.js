@@ -117,7 +117,7 @@
       homeAct1: '开始选型', homeAct2: '查看对标', homeAct3: '生成配单', homeAct4: '查看对照', homeAct5: '查询状态码', homeActSdk: '学习开发', homeAct6: '查看方案', homeActPDA: '选择 PDA',
       // PDA page
       pdaTitle: 'PDA 选型', pdaDesc: 'IDP 系列智能移动终端型号参数对比，支持多条件筛选，快速锁定合适机型。',
-      pdaSeries: '系列', pdaIp: '防护等级', pdaNfc: 'NFC', pdaOs: '操作系统', pdaScreen: '屏幕尺寸', pdaCpu: '处理器', pdaOcr: 'OCR', pdaBattery: '电池容量',
+      pdaSeries: '系列', pdaIp: '防护等级', pdaNfc: 'NFC', pdaBluetooth: '蓝牙', pdaOs: '操作系统', pdaScreen: '屏幕尺寸', pdaCpu: '处理器', pdaOcr: 'OCR', pdaBattery: '电池容量',
       pdaAll: '全部', pdaSupported: '支持', pdaNotSupported: '不支持',
       pdaModelCol: '型号', pdaCount: '共 {n} 款', pdaEmpty: '没有符合条件的型号', pdaMainCol: '主型号',
       // Solutions page
@@ -423,7 +423,7 @@
       homeAct1: 'Start Selection', homeAct2: 'View Comparison', homeAct3: 'Generate BOM', homeAct4: 'View Mapping', homeAct5: 'Query Codes', homeActSdk: 'Learn SDK', homeAct6: 'View Solutions', homeActPDA: 'Select PDA',
       // PDA page
       pdaTitle: 'PDA Selector', pdaDesc: 'Compare IDP series smart mobile terminals with multi-condition filtering to find the right model fast.',
-      pdaSeries: 'Series', pdaIp: 'IP Rating', pdaNfc: 'NFC', pdaOs: 'OS', pdaScreen: 'Screen', pdaCpu: 'CPU', pdaOcr: 'OCR', pdaBattery: 'Battery',
+      pdaSeries: 'Series', pdaIp: 'IP Rating', pdaNfc: 'NFC', pdaBluetooth: 'Bluetooth', pdaOs: 'OS', pdaScreen: 'Screen', pdaCpu: 'CPU', pdaOcr: 'OCR', pdaBattery: 'Battery',
       pdaAll: 'All', pdaSupported: 'Supported', pdaNotSupported: 'Not Supported',
       pdaModelCol: 'Model', pdaCount: '{n} models', pdaEmpty: 'No matching models', pdaMainCol: 'Main Model',
       solTitle: 'Solutions', solDesc: 'Firmware downloads and technical documentation — click a card to open',
