@@ -3586,7 +3586,7 @@ select:focus, input:focus {
   max-width: 130px;
   position: sticky;
   left: 0;
-  z-index: 2;
+  z-index: 3;
   background: var(--bg-panel);
 }
 .pda-table td {
@@ -3608,10 +3608,14 @@ select:focus, input:focus {
   min-width: 130px;
   max-width: 130px;
   background: var(--bg-card);
-  z-index: 1;
+  z-index: 2;
 }
 .pda-table tbody tr:hover td {
   background: rgba(247, 101, 4, 0.04);
+}
+.pda-table tbody tr:hover .pda-td-param {
+  /* 固定首列保持不透明，避免横向滚动时后方单元格内容穿透。 */
+  background: var(--bg-card);
 }
 .pda-table .pda-empty {
   text-align: center;
@@ -3623,6 +3627,7 @@ select:focus, input:focus {
 .dark .pda-table .pda-td-param { background: #1c2128; }
 .dark .pda-table td { border-bottom-color: #21262d; color: #8b949e; }
 .dark .pda-table tbody tr:hover td { background: rgba(255,122,47,0.05); }
+.dark .pda-table tbody tr:hover .pda-td-param { background: #1c2128; }
 
 /* 鍗＄墖瀹瑰櫒 */
 .sol-cards {
