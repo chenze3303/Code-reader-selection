@@ -227,6 +227,8 @@
 import { ref, computed, onMounted } from 'vue'
 import { useI18n } from '../composables/useI18n'
 import { useGlobalData } from '../composables/useLegacy'
+import { bomCatalogRepository } from '../services/bomCatalogRepository'
+import { buildBomCatalogIndex } from '../services/bomCatalogIndex'
 import UiIcon from './UiIcon.vue'
 const CHECK_ICON = (window.uiIcon ? window.uiIcon('check') : '✓')
 
@@ -253,9 +255,6 @@ const CABLE_LENGTHS = ['1m', '2m', '3m', '3.5m', '5m', '7m', '10m', '15m', '20m'
 const CABLE_TEXTURES = ['普通', '高柔', '超柔', '弯头']
 const CAT_ICONS = { '线缆': 'cable', '网线': 'globe', '电源线': 'battery', '电源': 'zap', '安装': 'wrench', '安装板': 'ruler', '其他': 'package', '外置配件': 'wrench', '镜头': 'aperture', '测试镜头': 'eye', '镜头罩': 'shield', '光源': 'lightbulb', '微码光源': 'microscope', '爆闪光源': 'sparkles', '灯板': 'gem', '大类': 'clipboard', '一体线': 'cable', 'IO线': 'link', 'FA镜头': 'aperture', '扩展配件': 'package' }
 
-function getAccKey(acc, index) {
-  return (acc.code || 'no-code') + '||' + (acc.name || 'no-name') + '||' + index
-}
 function getCatIcon(cat) { return window.uiIcon ? window.uiIcon(CAT_ICONS[cat] || 'package') : '' }
 function getCableTags(name, detail) {
   const text = (name || '') + ' ' + (detail || '')
@@ -290,95 +289,21 @@ const accCodes = ref({})
 const bomList = ref([])
 const addBtnText = ref('')
 
-function buildTreeData(modelList) {
-  const tr = {}
-  modelList.forEach((item, index) => {
-    const cat = (item.productCategory || '未分类').trim()
-    const ser = (item.productSeries || '未分类').trim()
-    const model = (item.productModel || '未知型号').trim()
-    if (!tr[cat]) tr[cat] = {}
-    if (!tr[cat][ser]) tr[cat][ser] = { mains: [] }
-    const exists = tr[cat][ser].mains.some((m) => m.n === model)
-    if (!exists) {
-      tr[cat][ser].mains.push({
-        n: model,
-        c: item.materialCode || model,
-        d: item.description || '读码器主机',
-        remark: item.remark || '',
-        index,
-        standardAcc: (item.standardAccessories || []).map((a, idx) => ({
-          name: a.name, code: a.code, detail: a.detail || '', remark: a.remark || '', category: a.category || '大类', series: a.series || '', _key: getAccKey(a, idx)
-        })),
-        optionalAcc: (item.optionalAccessories || []).map((a, idx) => ({
-          name: a.name, code: a.code, detail: a.detail || '', remark: a.remark || '', category: a.category || '其他', series: a.series || '', _key: getAccKey(a, idx)
-        }))
-      })
-    }
-  })
-  const catList = Object.keys(tr).sort((a, b) => {
-    let ia = -1, ib = -1
-    for (let i = 0; i < CAT_PRIORITY.length; i++) {
-      if (a.indexOf(CAT_PRIORITY[i]) === 0) ia = i
-      if (b.indexOf(CAT_PRIORITY[i]) === 0) ib = i
-    }
-    if (ia === -1 && ib === -1) return a.localeCompare(b)
-    if (ia === -1) return 1
-    if (ib === -1) return -1
-    return ia - ib
-  })
-  const sorted = {}
-  catList.forEach((cat) => {
-    const sers = Object.keys(tr[cat]).sort()
-    sorted[cat] = {}
-    sers.forEach((s) => { sorted[cat][s] = tr[cat][s] })
-  })
-  return { tree: sorted, cats: catList }
-}
-
-function buildReverseIndex(modelList) {
-  const idx = {}
-  modelList.forEach((item) => {
-    const model = item.productModel || ''
-    const cat = (item.productCategory || '').trim()
-    const ser = (item.productSeries || '').trim()
-    const std = item.standardAccessories || []
-    const allAcc = std.concat(item.optionalAccessories || [])
-    allAcc.forEach((acc, i) => {
-      const code = acc.code || ''
-      if (!code) return
-      const isStd = i < std.length
-      if (!idx[code]) {
-        idx[code] = { name: acc.name || '', category: acc.category || '', series: acc.series || '', detail: acc.detail || '', remark: acc.remark || '', models: [] }
-      }
-      const exists = idx[code].models.some((m) => m.name === model && m.cat === cat && m.ser === ser)
-      if (!exists) idx[code].models.push({ name: model, type: isStd ? 'standard' : 'optional', cat, ser })
-    })
-  })
-  return idx
-}
-
 function buildData(raw) {
   if (!raw || !raw.modelList || raw.modelList.length === 0) { console.warn('PEIDAN_DATA invalid or empty'); return }
-  const built = buildTreeData(raw.modelList)
+  const built = buildBomCatalogIndex(raw.modelList, { categoryPriority: CAT_PRIORITY })
   tree.value = built.tree
   cats.value = built.cats
-  reverseIndex.value = buildReverseIndex(raw.modelList)
+  reverseIndex.value = built.reverseIndex
   loadState()
 }
 
-function loadPeidan() {
-  const done = () => {
-    if (window.PEIDAN_DATA) buildData(window.PEIDAN_DATA)
-    else console.warn('PEIDAN_DATA not defined')
+async function loadBomCatalog() {
+  try {
+    buildData(await bomCatalogRepository.load())
+  } catch (error) {
+    console.error('BOM catalog load failed:', error)
   }
-  if (window.PEIDAN_DATA) { buildData(window.PEIDAN_DATA); return }
-  const existing = document.querySelector('script[src*="peidan.min.js"]')
-  if (existing) { existing.addEventListener('load', done); return }
-  const script = document.createElement('script')
-  script.src = 'js/data/peidan.min.js'
-  script.onload = done
-  script.onerror = () => { console.error('peidan.min.js load failed') }
-  document.head.appendChild(script)
 }
 
 const currentModel = computed(() => {
@@ -759,6 +684,6 @@ onMounted(() => {
     getReverseIndex: () => reverseIndex.value,
     rerender: () => {}
   }
-  loadPeidan()
+  loadBomCatalog()
 })
 </script>

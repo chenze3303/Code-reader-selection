@@ -22,6 +22,15 @@ npm run build
 
 # 本地预览构建产物
 npm run preview
+
+# 生成统一运行时数据（编辑 public/js/data 后执行）
+npm run data:runtime
+
+# 生成归一化配单目录（编辑 peidan.js 后执行）
+npm run data:bom
+
+# 数据层测试
+npm run test:data
 ```
 
 **部署到 GitHub Pages（自动）**
@@ -38,7 +47,7 @@ npm run preview
 ├── index.html                      # Vite 入口（加载 src/main.js）
 ├── package.json                    # 依赖与脚本（Vue 3 / Vite）
 ├── src/
-│   ├── main.js                     # 入口：挂载 Vue 应用 + 按序加载 legacy 数据脚本
+│   ├── main.js                     # 入口：挂载 Vue 应用 + 数据桥接 + legacy UI 脚本
 │   ├── App.vue                     # 根组件：导航侧栏 + 「更多」弹窗 + 页面切换
 │   ├── components/
 │   │   ├── PageHome.vue            # 首页（功能卡片 + 机器人助手）
@@ -54,6 +63,10 @@ npm run preview
 │   └── composables/
 │       ├── useI18n.js              # 中英双语 t()（语言切换响应式）
 │       └── useLegacy.js            # legacy 全局数据读取 / legacy-ready 侦听
+│   └── services/
+│       ├── legacyDataBridge.js     # JSON 数据加载、校验及 legacy 全局接口兼容
+│       ├── bomCatalogRepository.js # 配单目录仓库：缓存、校验、反归一化
+│       └── bomCatalogIndex.js      # 配单树与配件反查索引
 ├── public/                         # 静态资源（构建时原样复制到 dist/ 根）
 │   ├── assets/
 │   │   ├── code-type-desc.png / -dark.png  # 码制类型说明图（亮/暗模式）
@@ -67,7 +80,10 @@ npm run preview
 │   │   ├── mapping_module.js       # 产品表 legacy 模块
 │   │   ├── statuscode_module.js    # 状态码 legacy 模块
 │   │   ├── three.min.js            # Three.js 3D 引擎（按需加载，不阻塞首屏）
-│   │   └── data/                   # 全部业务数据（PRODUCT_DB / PEIDAN_DATA / MAPPING_DATA 等）
+│   │   └── data/                   # 编辑器兼容数据源与生成源
+│   ├── data/
+│   │   ├── bom-catalog.json        # 归一化配单目录（网站运行时按需加载）
+│   │   └── runtime/                # 统一运行时 JSON（产品库、PDA、状态码、公告等）
 │   ├── db_editor.html              # 数据库编辑器（独立页面，logo 连点 3 次进入）
 │   ├── sdk-guide.html              # SDK 完整参考（独立页面，自包含）
 │   └── 海康读码器命名规则_副本.html  # 命名规则参考页
@@ -209,6 +225,25 @@ IDP 系列智能移动终端（PDA）型号参数对比工具，支持多条件�
 
 ---
 
+## 数据架构与维护
+
+网站运行时不再直接加载 `public/js/data/*.js`。所有页面统一经由 JSON 数据层读取，组件不直接依赖文件路径或全局变量：
+
+```text
+维护数据源 → 生成脚本 → public/data/*.json → 数据仓库/桥接层 → Vue 页面
+```
+
+- **低耦合**：页面通过仓库接口获取数据；兼容桥接层集中提供旧选型逻辑所需的全局接口。
+- **高内聚**：配单加载、校验、缓存、反归一化位于 `bomCatalogRepository`；树形分类和配件反查位于 `bomCatalogIndex`。
+- **可扩展**：新增数据集只需添加 JSON 生成项与桥接映射，不需要在多个组件重复改动。
+- **可测试**：`npm run test:data` 校验归一化目录、真实数据数量、加载缓存和 legacy 兼容接口。
+
+配单数据采用归一化结构：型号只保存配件 ID，配件详情仅保留一份。当前 686 个型号、16,432 次配件引用归并为 341 个唯一配件，运行时目录约 374KB。
+
+> `public/js/data/` 内的旧 JS 数据源继续保留，仅用于数据库编辑器和数据生成，不能手动删除。
+
+---
+
 ## 数据更新方式
 
 ### 方式一：使用编辑器（推荐）
@@ -217,11 +252,26 @@ IDP 系列智能移动终端（PDA）型号参数对比工具，支持多条件�
 2. 在界面中编辑数据
 3. 点击「导出」生成新的 `.js` 文件
 4. 替换 `public/js/data/` 下的对应文件
-5. `npm run build` 后重新部署即可生效
+5. 运行 `npm run data:runtime`；如更新配单，再运行 `npm run data:bom`
+6. 运行 `npm run test:data && npm run build` 后重新部署
 
-### 方式二：直接编辑 JS 文件
+### 方式二：直接编辑数据源
 
-所有数据文件通过 `<script>` 标签以全局变量形式加载（位于 `public/js/data/`），直接用文本编辑器修改后重新构建部署（或本地 `npm run dev`）即可生效。
+编辑 `public/js/data/` 下的数据源后，按类型生成运行时 JSON：
+
+```bash
+# 产品库、产品表、资料下载、公告、PDA、状态码、图片映射等
+npm run data:runtime
+
+# 配单数据（生成归一化目录）
+npm run data:bom
+
+# 从 product_data.json 重新生成配单源与目录
+npm run data:convert
+
+npm run test:data
+npm run build
+```
 
 ### 方式三：配件图片管理
 

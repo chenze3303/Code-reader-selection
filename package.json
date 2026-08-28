@@ -8,7 +8,11 @@
     "build": "vite build",
     "preview": "vite preview",
     "minify:js": "node scripts/minify-js.js",
-    "minify:css": "node scripts/minify-css.js"
+    "minify:css": "node scripts/minify-css.js",
+    "data:convert": "node scripts/convert_product_data.js && node scripts/build-bom-catalog.js",
+    "data:bom": "node scripts/build-bom-catalog.js",
+    "data:runtime": "node scripts/build-runtime-data.js",
+    "test:data": "node scripts/test-bom-catalog.mjs && node scripts/test-runtime-data.mjs"
   },
   "dependencies": {
     "lucide": "^1.33.0",

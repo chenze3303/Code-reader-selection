@@ -8,7 +8,7 @@ const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
 const INPUT = path.join(ROOT, 'product_data.json');
-const OUTPUT = path.join(ROOT, 'js', 'data', 'peidan.js');
+const OUTPUT = path.join(ROOT, 'public', 'js', 'data', 'peidan.js');
 
 // 相机行的配件列配置（支持25列和26列格式）
 // col: 配件引用列, flagCol: 标配/选配标志列, accCategory: 配件行[1]的类别名

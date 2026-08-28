@@ -1033,9 +1033,10 @@
     showAnnouncement(true);
   }
 
-  // ─── 空闲预加载（peidan + three） ───
+  // ─── 空闲预加载（3D 引擎） ───
+  // 配单数据由 Vue 数据仓库按需请求 data/bom-catalog.json，避免预加载旧版大体积脚本。
   function idlePreload() {
-    var srcs = ['js/data/peidan.min.js', 'js/three.min.js'];
+    var srcs = ['js/three.min.js'];
     function doPreload() {
       srcs.forEach(function(src) {
         if (document.querySelector('script[src="' + src + '"]')) return;
