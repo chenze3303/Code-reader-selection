@@ -1192,7 +1192,8 @@ select:focus, input:focus {
 
 .bom-left-inner {
   flex: 1;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
   padding: 1rem 1.2rem;
   display: flex;
   flex-direction: column;
