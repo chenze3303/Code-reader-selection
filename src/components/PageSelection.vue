@@ -61,9 +61,8 @@
           <button class="btn-primary" id="verifyBtn" @click="showVerifyPage" style="width:100%;margin-top:8px;background:linear-gradient(135deg,#2a4a8c,#1a3366);" v-show="!stitchMode"><UiIcon name="chart" /> {{ t('verifyTitle') }}</button>
 
           <div class="form-section" id="stitchCard" v-show="stitchMode">
-            <div class="form-section-title" style="display:flex;justify-content:space-between;align-items:center;">
+            <div class="form-section-title">
               <span><UiIcon name="link" /> {{ t('stitchTitle') }}</span>
-              <button class="stitch-back-btn" id="stitchBackBtn" @click="goBackSingle"><UiIcon name="back" /> {{ t('stitchBack') }}</button>
             </div>
             <div class="compact-grid compact-grid-1">
               <div>
@@ -765,10 +764,6 @@ function selectPlan(i) {
   renderCurrentPlan()
 }
 
-function goBackSingle() {
-  stitchMode.value = false
-  verifyOpen.value = false
-}
 function showVerifyPage() {
   verifyOpen.value = true
   stitchMode.value = false
