@@ -1248,7 +1248,8 @@ select:focus, input:focus {
   gap: 0.4rem;
   flex: 1;
   min-height: 0;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .bom-field {
