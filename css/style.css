@@ -484,6 +484,10 @@ table, td, th { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
   flex-direction: column;
   animation: pageIn 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
+#page-bom.active {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
 @keyframes pageIn {
   from { opacity: 0; transform: translateY(8px); }
   to { opacity: 1; transform: translateY(0); }
@@ -1142,7 +1146,7 @@ select:focus, input:focus {
 .bom-page-wrap {
   display: flex;
   flex: 1;
-  overflow: hidden;
+  overflow: visible;
   min-height: 0;
   gap: 12px;
   padding: 12px;
@@ -1157,7 +1161,7 @@ select:focus, input:focus {
   flex-direction: column;
   background: var(--bg-card);
   border-radius: 10px;
-  overflow: hidden;
+  overflow: visible;
   border: 1px solid var(--border-light);
   box-shadow: 0 1px 3px rgba(0,0,0,0.04);
   max-height: 100%;
