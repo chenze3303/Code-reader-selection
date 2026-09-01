@@ -127,7 +127,7 @@
       solRepairTitle: '维修状态查询', solRepairDesc: '查询产品维修进度与售后状态',
       solHint: '所有链接将在新标签页中打开',
       // Selection page
-      card1: '核心参数配置', card2: '方案示意图', card3: '最佳推荐型号',
+      card1: '核心参数配置', card2: '方案示意图', card3: '最佳推荐型号', card3Manual: '当前选定型号',
       sec1: '码制 & 模块尺寸', sec2: '距离 & 视野参数',
       codeType: '码制类型 *', moduleSize: '模块尺寸 *',
       codeTypePh: '-- 请选择 --',
@@ -141,7 +141,7 @@
       // SVG schematic
       svgEstW: '预估宽度', svgEstH: '预估高度', svgWd: '工作距离', svgFovAngle: '视场角',
       // Modal
-      modalTitle: '满足过滤条件的推荐型号',
+      modalTitle: '满足过滤条件的推荐型号', selectModel: '选择型号 {model}',
       filterLabel: '按系列筛选', filterReset: '全选',
       modalEmpty: '请先进行选型',
       // Competitor page
@@ -431,7 +431,7 @@
       solDocTitle: 'Solution Documents', solDocDesc: 'Application guides, wiring diagrams, debugging tutorials and more',
       solRepairTitle: 'Repair Status', solRepairDesc: 'Check product repair progress and after-sales status',
       solHint: 'All links open in a new tab',
-      card1: 'Core Parameters', card2: 'Schematic', card3: 'Best Match',
+      card1: 'Core Parameters', card2: 'Schematic', card3: 'Best Match', card3Manual: 'Selected Model',
       sec1: 'Code Type & Module Size', sec2: 'Distance & FOV',
       codeType: 'Code Type *', moduleSize: 'Module Size *',
       codeTypePh: '-- Select --',
@@ -443,7 +443,7 @@
       showModal: 'View All Matching Models',
       emptyState: 'Waiting for selection…',
       svgEstW: 'Est. Width', svgEstH: 'Est. Height', svgWd: 'Work Dist.', svgFovAngle: 'FOV Angle',
-      modalTitle: 'Matching Models',
+      modalTitle: 'Matching Models', selectModel: 'Select model {model}',
       filterLabel: 'Filter by Series', filterReset: 'Select All',
       modalEmpty: 'Run selection first',
       cpSearch: 'Search competitor / HIKROBOT model, e.g. SR-1000, ID3013PM…',

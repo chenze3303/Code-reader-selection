@@ -133,7 +133,7 @@
         </div>
 
         <div class="card" v-show="!stitchMode">
-          <div class="card-header"><UiIcon name="trophy" /> <span>{{ t('card3') }}</span></div>
+          <div class="card-header"><UiIcon name="trophy" /> <span>{{ topResultTitle }}</span></div>
           <div id="top1Content" v-html="top1Html" aria-live="polite" @click="onTop1ContentClick"></div>
           <button class="btn-outline" id="showModalBtn" :disabled="!modalEnabled" @click="openModal">{{ t('showModal') }}</button>
         </div>
@@ -156,7 +156,7 @@
           </div>
           <button class="filter-reset-btn" id="resetSeriesFilterBtn" @click="modalSeriesSelected = modalSeriesList.slice()">{{ t('filterReset') }}</button>
         </div>
-        <div id="modalModelList" class="modal-model-list" v-html="modalListHtml"></div>
+        <div id="modalModelList" class="modal-model-list" v-html="modalListHtml" @click="onModalModelListClick" @keydown="onModalModelListKeydown"></div>
       </div>
     </div>
 
@@ -308,8 +308,13 @@ function getPPMScoreAndLevel(ppm, codeType) {
 
 const cachedFilteredList = ref([])
 const modalEnabled = ref(false)
+const lastWorkingDistanceMM = ref(null)
 
 const top1State = ref({ type: 'empty' })
+const topResultTitle = computed(() => {
+  var state = top1State.value
+  return state.type === 'result' && state.manuallySelected ? t('card3Manual') : t('card3')
+})
 const top1Html = computed(() => {
   if (running.value) {
     return '<div class="skeleton-card"><div class="skeleton-line skeleton-pulse w60" style="height:16px"></div><div class="skeleton-line skeleton-pulse w80" style="height:14px;margin-top:0.5rem"></div><div class="skeleton-line skeleton-pulse w40" style="height:14px;margin-top:0.5rem"></div></div>'
@@ -352,6 +357,20 @@ function onTop1ContentClick(e) {
   }
 }
 
+function applySelectedModel(item, manuallySelected) {
+  if (!item || !item.model || lastWorkingDistanceMM.value === null) return
+  top1State.value = {
+    type: 'result',
+    model: item.model,
+    ppm: item.ppm,
+    ppmLevel: item.ppmLevel,
+    manuallySelected: !!manuallySelected
+  }
+  var estW = item.fovEst ? item.fovEst.width : null
+  var estH = item.fovEst ? item.fovEst.height : null
+  updateSchematic(lastWorkingDistanceMM.value, estW, estH)
+}
+
 function runSelection() {
   var codeType = form.codeType
   var mSize = parseFloat(form.moduleSize)
@@ -370,6 +389,7 @@ function runSelection() {
     top1State.value = { type: 'empty', wait: true }
     modalEnabled.value = false
     cachedFilteredList.value = []
+    lastWorkingDistanceMM.value = null
     return
   }
 
@@ -381,6 +401,7 @@ function runSelection() {
       var fovReqW_mm = toMM(fovW, fovWUnit)
       var fovReqH_mm = toMM(fovH, fovHUnit)
       var wdMM = toMM(wd, dUnit)
+      lastWorkingDistanceMM.value = wdMM
       var is2D = isCodeType2D(codeType)
       var divisor = is2D ? 5 : 1.5
       var requiredPrecision = moduleMM / divisor
@@ -468,10 +489,7 @@ function runSelection() {
 
       if (filtered.length > 0) {
         var best = filtered[0]
-        top1State.value = { type: 'result', model: best.model, ppm: best.ppm, ppmLevel: best.ppmLevel }
-        var estW = best.fovEst ? best.fovEst.width : null
-        var estH = best.fovEst ? best.fovEst.height : null
-        updateSchematic(wdMM, estW, estH)
+        applySelectedModel(best, false)
         stitchMode.value = false
         verifyOpen.value = false
       } else {
@@ -523,13 +541,14 @@ function renderModalWithSeriesFilter() {
     return
   }
   var html = ''
-  filteredBySeries.forEach(function (item, idx) {
+  filteredBySeries.forEach(function (item) {
     var m = item.model
     var fovEst = item.fovEst
     var ppmDisplay = item.ppm !== null ? item.ppm.toFixed(2) : '— (C-Mount)'
     var ppmLevelDisplay = item.ppmLevel ? ' (' + item.ppmLevel + ')' : ''
     var fovStatus = fovEst ? t('resultFovStatus', { w: fovEst.width, h: fovEst.height }) : window.uiIcon('wrench') + ' C-Mount'
-    html += '<div class="modal-model-entry ' + (idx === 0 ? 'recommended' : '') + '">' +
+    var isRecommended = item === cachedFilteredList.value[0]
+    html += '<div class="modal-model-entry ' + (isRecommended ? 'recommended' : '') + '" role="button" tabindex="0" data-model-name="' + esc(m.model) + '" aria-label="' + esc(t('selectModel', { model: m.model })) + '">' +
       '<div class="modal-entry-header">' +
         '<span class="modal-model-name">' + m.model + '</span>' +
         '<span class="modal-model-series">' + m.series + '</span>' +
@@ -549,6 +568,32 @@ function renderModalWithSeriesFilter() {
     '</div>'
   })
   modalListHtml.value = html
+}
+
+function selectModalModel(modelName) {
+  var item = cachedFilteredList.value.find(function (entry) {
+    return entry.model && entry.model.model === modelName
+  })
+  if (!item) return
+  applySelectedModel(item, true)
+  modalOpen.value = false
+}
+
+function getModalModelEntry(target) {
+  return target && target.closest ? target.closest('.modal-model-entry[data-model-name]') : null
+}
+
+function onModalModelListClick(e) {
+  var entry = getModalModelEntry(e.target)
+  if (entry) selectModalModel(entry.getAttribute('data-model-name'))
+}
+
+function onModalModelListKeydown(e) {
+  if (e.key !== 'Enter' && e.key !== ' ') return
+  var entry = getModalModelEntry(e.target)
+  if (!entry) return
+  e.preventDefault()
+  selectModalModel(entry.getAttribute('data-model-name'))
 }
 watch(modalSeriesSelected, function () {
   if (modalOpen.value) renderModalWithSeriesFilter()

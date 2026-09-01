@@ -1066,6 +1066,7 @@ select:focus, input:focus {
   margin-bottom: 0.75rem;
   transition: color, background-color, border-color, box-shadow, transform, opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   background: var(--bg-card);
+  cursor: pointer;
   animation: entryFadeIn 0.3s ease-out both;
 }
 .modal-model-entry:nth-child(1) { animation-delay: 0s; }
@@ -1079,6 +1080,11 @@ select:focus, input:focus {
   to { opacity: 1; transform: translateY(0); }
 }
 .modal-model-entry:hover { border-color: var(--brand-red-mid); background: #FAFAFA; transform: translateX(2px); }
+.modal-model-entry:focus-visible {
+  outline: 3px solid rgba(247, 101, 4, 0.3);
+  outline-offset: 2px;
+  border-color: var(--brand-red);
+}
 .modal-model-entry.recommended {
   border-left: 4px solid var(--brand-red);
   background: var(--brand-red-lt);
