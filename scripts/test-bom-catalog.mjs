@@ -30,7 +30,7 @@ const productionCatalog = JSON.parse(fs.readFileSync(new URL('../public/data/bom
 const productionData = hydrateBomCatalog(productionCatalog)
 assert.equal(productionCatalog.schemaVersion, 1)
 assert.equal(productionData.modelList.length, 706)
-assert.equal(productionCatalog.accessories.length, 360)
+assert.equal(productionCatalog.accessories.length, 391)
 assert.ok(productionData.modelList.some((model) => model.productCategory === 'ID800系列'))
 
 let calls = 0
