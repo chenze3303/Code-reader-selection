@@ -253,7 +253,7 @@ const POWER_ADAPTER_SERIES = ['电源适配器', '电源适配器DC']
 const POWER_SUPPLY_SERIES = ['开关电源1', '开关电源2']
 const CABLE_LENGTHS = ['1m', '2m', '3m', '3.5m', '5m', '7m', '10m', '15m', '20m', '30m']
 const CABLE_TEXTURES = ['普通', '高柔', '超柔', '弯头']
-const CAT_ICONS = { '线缆': 'cable', '网线': 'globe', '电源线': 'battery', '电源': 'zap', '安装': 'wrench', '安装板': 'ruler', '其他': 'package', '外置配件': 'wrench', '镜头': 'aperture', '测试镜头': 'eye', '镜头罩': 'shield', '光源': 'lightbulb', '微码光源': 'microscope', '爆闪光源': 'sparkles', '灯板': 'gem', '大类': 'clipboard', '一体线': 'cable', 'IO线': 'link', 'FA镜头': 'aperture', '扩展配件': 'package' }
+const CAT_ICONS = { '线缆': 'cable', '网线': 'globe', '电源线': 'battery', '电源': 'zap', '安装': 'wrench', '安装板': 'ruler', '其他': 'package', '外置配件': 'wrench', '镜头': 'aperture', '测试镜头': 'eye', '镜头罩': 'shield', '光源': 'lightbulb', '微码光源': 'microscope', '爆闪光源': 'sparkles', '灯板': 'gem', '大类': 'clipboard', '一体线': 'cable', 'IO线': 'link', 'FA镜头': 'aperture', 'M12镜头': 'aperture', '扩展配件': 'package' }
 
 function getCatIcon(cat) { return window.uiIcon ? window.uiIcon(CAT_ICONS[cat] || 'package') : '' }
 function getCableTags(name, detail) {

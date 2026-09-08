@@ -294,7 +294,7 @@
   }
 
   function getCatIcon(cat) {
-    var map = { '线缆': 'cable', '网线': 'globe', '电源线': 'battery', '电源': 'zap', '安装': 'wrench', '安装板': 'ruler', '其他': 'package', '外置配件': 'wrench', '镜头': 'aperture', '测试镜头': 'eye', '镜头罩': 'shield', '光源': 'lightbulb', '微码光源': 'microscope', '爆闪光源': 'sparkles', '灯板': 'gem', '大类': 'clipboard', '一体线': 'cable', 'IO线': 'link', 'FA镜头': 'aperture', '扩展配件': 'package' };
+    var map = { '线缆': 'cable', '网线': 'globe', '电源线': 'battery', '电源': 'zap', '安装': 'wrench', '安装板': 'ruler', '其他': 'package', '外置配件': 'wrench', '镜头': 'aperture', '测试镜头': 'eye', '镜头罩': 'shield', '光源': 'lightbulb', '微码光源': 'microscope', '爆闪光源': 'sparkles', '灯板': 'gem', '大类': 'clipboard', '一体线': 'cable', 'IO线': 'link', 'FA镜头': 'aperture', 'M12镜头': 'aperture', '扩展配件': 'package' };
     return window.uiIcon ? window.uiIcon(map[cat] || 'package') : '';
   }
 
