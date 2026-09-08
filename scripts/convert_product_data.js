@@ -108,58 +108,19 @@ function main() {
           const val = (r[cfg.col] || '').trim();
           if (!val) return; // 相机行该列为空，跳过
 
-          const flag = cfg.flagCol ? (r[cfg.flagCol] || '').trim() : '';
-
-          // 解析相机行的配件引用标签（分号分隔）
+          // 解析相机行的配件引用标签及逐标签标配标志（分号分隔）
           const refTags = val.split(';')
             .map(s => s.trim().toLowerCase())
             .filter(s => s.length > 0);
-
-          // 标配配件：flag === '1'
-          if (flag === '1') {
-            for (let j = 0; j < accessoryRows.length; j++) {
-              const ar = accessoryRows[j];
-              const accCat = (ar[1] || '').trim();    // 配件类别名
-              const accRef = (ar[7] || '').trim().toLowerCase(); // 配件行的匹配标签
-              const accFlag = (ar[8] || '').trim();   // 配件标志
-
-              if (accCat !== cfg.accCategory) continue;
-              if (accFlag !== '1') continue;
-
-              // 检查配件行的ref标签是否匹配相机行的ref标签
-              let matched = false;
-              for (let k = 0; k < refTags.length; k++) {
-                if (accRef.indexOf(refTags[k]) >= 0 || refTags[k].indexOf(accRef) >= 0) {
-                  matched = true;
-                  break;
-                }
-              }
-
-              if (matched) {
-                const accName = (ar[3] || '').trim();
-                const accCode = (ar[4] || '').trim();
-                const accDesc = (ar[5] || '').trim();
-                const accRemark = (ar[6] || '').trim();
-                if (!standardAcc.some(a => a.name === accName && a.code === accCode)) {
-                  standardAcc.push({
-                    category: cfg.accCategory,
-                    series: (ar[2] || '').trim(),
-                    name: accName,
-                    code: accCode,
-                    detail: accDesc,
-                    remark: accRemark
-                  });
-                }
-              }
-            }
-          }
-
-          // 选配配件：匹配所有可用配件（排除已作为标配的）
-          const standardNames = new Set(standardAcc.map(a => a.name));
+          const refFlags = (r[cfg.flagCol] || '').split(';').map(s => s.trim());
+          const standardTags = new Set(refTags.filter((tag, index) => refFlags[index] === '1'));
 
           accessoryRows.forEach(ar => {
             const accCat = (ar[1] || '').trim();
-            const accRef = (ar[7] || '').trim().toLowerCase();
+            const accRefs = (ar[7] || '').split(';')
+              .map(s => s.trim().toLowerCase())
+              .filter(Boolean);
+            const accFlag = (ar[8] || '').trim();
             const accName = (ar[3] || '').trim();
             const accCode = (ar[4] || '').trim();
             const accDesc = (ar[5] || '').trim();
@@ -167,33 +128,26 @@ function main() {
 
             if (accCat !== cfg.accCategory) return;
             if (!accName || !accCode) return;
-            if (standardNames.has(accName)) return;
+            const matchedTag = refTags.find(tag => accRefs.includes(tag));
+            if (!matchedTag) return;
 
-            // 检查匹配
-            let match = false;
-            if (refTags.length === 0) {
-              match = true; // 无ref标签时匹配所有
-            } else {
-              for (let k = 0; k < refTags.length; k++) {
-                if (accRef.indexOf(refTags[k]) >= 0 || refTags[k].indexOf(accRef) >= 0) {
-                  match = true;
-                  break;
-                }
-              }
+            const item = {
+              category: cfg.accCategory,
+              series: (ar[2] || '').trim(),
+              name: accName,
+              code: accCode,
+              detail: accDesc,
+              remark: accRemark
+            };
+            const isStandard = standardTags.has(matchedTag) && accFlag === '1';
+            if (isStandard) {
+              if (!standardAcc.some(a => a.name === accName && a.code === accCode)) standardAcc.push(item);
+              return;
             }
 
-            if (match) {
-              if (!optionalAcc.some(a => a.name === accName && a.code === accCode)) {
-                optionalAcc.push({
-                  category: cfg.accCategory,
-                  series: (ar[2] || '').trim(),
-                  name: accName,
-                  code: accCode,
-                  detail: accDesc,
-                  remark: accRemark
-                });
-              }
-            }
+            // 参考站对 ID2000XM 的该旧款 USB 尾线做了显式排除。
+            if (key === '一体线' && cat.indexOf('ID2000XM') >= 0 && accCode === '101515363') return;
+            if (!optionalAcc.some(a => a.name === accName && a.code === accCode)) optionalAcc.push(item);
           });
         });
 
