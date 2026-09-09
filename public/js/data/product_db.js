@@ -13,7 +13,7 @@ const PRODUCT_DB = [
   { model: "ID2013M-25M", series: "ID2000", resolution: { w: 1280, h: 1024 }, pixelSize: 4, focal: 25, interface: "Fast Ethernet、RS232", protection: "IP65", workingDist: { min: 170, max: 200 } },
   { model: "ID2013XM-05M", series: "ID2000", resolution: { w: 1280, h: 1024 }, pixelSize: 2.7, focal: 5, interface: "Fast Ethernet、USB2.0", protection: "IP65", workingDist: { min: 25, max: 1000 } },
   { model: "ID2013XM-08M", series: "ID2000", resolution: { w: 1280, h: 1024 }, pixelSize: 2.7, focal: 8, interface: "Fast Ethernet、USB2.0", protection: "IP65", workingDist: { min: 40, max: 1000 } },
-  { model: "ID2013XM-12M", series: "ID2000", resolution: { w: 1280, h: 1024 }, pixelSize: 2.7, focal: 12, interface: "Fast Ethernet、USB2.0", protection: "IP65", workingDist: { min: 60, max: 1000 } },
+  { model: "ID2013XM-12M", series: "ID2000", resolution: { w: 1280, h: 1024 }, pixelSize: 2.7, focal: 12, interface: "Fast Ethernet、USB2.0", protection: "IP65", workingDist: { min: 75, max: 1000 } },
   { model: "ID2013XM-16M", series: "ID2000", resolution: { w: 1280, h: 1024 }, pixelSize: 2.7, focal: 16, interface: "Fast Ethernet、USB2.0", protection: "IP65", workingDist: { min: 125, max: 1000 } },
   { model: "ID2013XM-08L", series: "ID2000", resolution: { w: 1280, h: 1024 }, pixelSize: 2.7, focal: 8, interface: "Fast Ethernet、USB2.0", protection: "IP65", workingDist: { min: 40, max: 1000 } },
   { model: "ID2013XM-12L", series: "ID2000", resolution: { w: 1280, h: 1024 }, pixelSize: 2.7, focal: 12, interface: "Fast Ethernet、USB2.0", protection: "IP65", workingDist: { min: 75, max: 1000 } },
