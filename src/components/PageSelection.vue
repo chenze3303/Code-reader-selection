@@ -129,6 +129,22 @@
             <div id="stitchSvgArea" class="stitch-svg-area" v-show="stitchMode && hasStitchResults">
               <div ref="stitch3dContainerRef" id="stitch3dContainer" class="stitch-3d-container"></div>
             </div>
+            <div v-if="stitchMode && stitchFeedback" class="stitch-no-plan" role="status" aria-live="polite">
+              <div class="stitch-no-plan-head">
+                <span class="stitch-no-plan-icon"><UiIcon name="frown" /></span>
+                <div>
+                  <div class="stitch-no-plan-title">{{ t('stNoPlan') }}</div>
+                  <div class="stitch-no-plan-lead">{{ t('stNoPlanLead') }}</div>
+                </div>
+              </div>
+              <div class="stitch-no-plan-list">
+                <div v-for="item in stitchFeedbackItems" :key="item.code" class="stitch-no-plan-item">
+                  <div class="stitch-no-plan-reason">{{ item.title }}</div>
+                  <div class="stitch-no-plan-detail">{{ item.detail }}</div>
+                  <div class="stitch-no-plan-suggestion"><strong>{{ t('stNoPlanSuggestionLabel') }}</strong>{{ item.suggestion }}</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -615,8 +631,21 @@ const stitchActiveIdx = ref(0)
 const planModalOpen = ref(false)
 const planSeriesFilter = ref('all')
 const planSortKey = ref(':')
-const planAreaHtml = ref('')
+const stitchFeedback = ref(null)
 const hasStitchResults = computed(() => stitchResults.value.length > 0)
+
+const stitchFeedbackItems = computed(() => {
+  if (!stitchFeedback.value) return []
+  return stitchFeedback.value.reasons.map(function (reason) {
+    var suffix = reason.code.charAt(0).toUpperCase() + reason.code.slice(1)
+    return {
+      code: reason.code,
+      title: t('stNoPlan' + suffix + 'Title'),
+      detail: t('stNoPlan' + suffix + 'Detail', reason.params || {}),
+      suggestion: t('stNoPlan' + suffix + 'Suggestion')
+    }
+  })
+})
 
 const planSeriesOptions = computed(() => {
   var counts = {}
@@ -710,6 +739,7 @@ function runStitchCalculation() {
   if (isNaN(overlapInput) || overlapInput < 0) overlapInput = 0
 
   stitchRunning.value = true
+  stitchFeedback.value = null
 
   requestAnimationFrame(function () {
     setTimeout(function () {
@@ -721,15 +751,28 @@ function runStitchCalculation() {
       var effW = totalW
       var effH = totalH
       var results = []
+      var diagnostics = {
+        databaseReady: typeof PRODUCT_DB !== 'undefined' && Array.isArray(PRODUCT_DB),
+        calculableModels: 0,
+        distanceModels: 0,
+        ppmValues: [],
+        ppmEligible: 0,
+        gridRejected: 0,
+        minRequiredCameras: Infinity
+      }
 
-      if (typeof PRODUCT_DB !== 'undefined') {
+      if (diagnostics.databaseReady) {
         PRODUCT_DB.forEach(function (model) {
-          if (!model.focal) return
+          if (!model.focal || !model.pixelSize) return
+          diagnostics.calculableModels++
           if (wdMM < model.workingDist.min || wdMM > model.workingDist.max) return
+          diagnostics.distanceModels++
           ;[0, 90].forEach(function (rot) {
             var fov = getCameraFOV(model, wdMM, rot, moduleMM)
             if (!fov) return
+            diagnostics.ppmValues.push(fov.ppm)
             if (fov.ppm < ppmRange.min || fov.ppm > ppmRange.max) return
+            diagnostics.ppmEligible++
             var overlapW = overlapInput
             var overlapH = overlapInput
             var grid
@@ -738,7 +781,11 @@ function runStitchCalculation() {
             } else {
               grid = calcGrid(effW, effH, fov.width, fov.height, overlapW, overlapH)
             }
-            if (grid.total >= 33) return
+            if (grid.total >= 33) {
+              diagnostics.gridRejected++
+              diagnostics.minRequiredCameras = Math.min(diagnostics.minRequiredCameras, grid.total)
+              return
+            }
             results.push({
               model: model, rotation: rot, fov: fov, grid: grid,
               overlapW: grid.total > 1 ? grid.overlapW : 0,
@@ -775,17 +822,49 @@ function runStitchCalculation() {
       stitchBarcodeW.value = 0
       stitchBarcodeH.value = 0
       planSeriesFilter.value = 'all'
-      planAreaHtml.value = ''
+      stitchFeedback.value = deduped.length ? null : buildStitchFeedback(diagnostics, wdMM, ppmRange)
       renderCurrentPlan()
       stitchRunning.value = false
     }, 80)
   })
 }
 
+function buildStitchFeedback(diagnostics, wdMM, ppmRange) {
+  var reasons = []
+  if (!diagnostics.databaseReady || diagnostics.calculableModels === 0) {
+    reasons.push({ code: 'data', params: {} })
+  } else if (diagnostics.distanceModels === 0) {
+    reasons.push({ code: 'distance', params: { distance: Math.round(wdMM) } })
+  } else if (diagnostics.ppmEligible === 0) {
+    var below = diagnostics.ppmValues.filter(function (ppm) { return ppm < ppmRange.min })
+    var above = diagnostics.ppmValues.filter(function (ppm) { return ppm > ppmRange.max })
+    if (below.length) {
+      reasons.push({
+        code: 'ppmLow',
+        params: { value: Math.max.apply(null, below).toFixed(2), limit: ppmRange.min }
+      })
+    }
+    if (above.length) {
+      reasons.push({
+        code: 'ppmHigh',
+        params: { value: Math.min.apply(null, above).toFixed(2), limit: ppmRange.max }
+      })
+    }
+    if (!reasons.length) reasons.push({ code: 'data', params: {} })
+  } else if (diagnostics.gridRejected > 0) {
+    reasons.push({
+      code: 'count',
+      params: { count: Number.isFinite(diagnostics.minRequiredCameras) ? diagnostics.minRequiredCameras : 33 }
+    })
+  } else {
+    reasons.push({ code: 'data', params: {} })
+  }
+  return { reasons: reasons }
+}
+
 function renderCurrentPlan(themeOnly) {
   var results = stitchResults.value
   if (!results || results.length === 0) {
-    planAreaHtml.value = '<div class="stitch-warning">' + window.uiIcon('frown') + ' ' + t('stNoPlan') + '<br>' + t('stNoPlanHint') + '</div>'
     return
   }
   var display = planDisplayList.value
