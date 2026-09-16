@@ -1,5 +1,5 @@
 // peidan.js - 配单数据文件
-// 自动生成于 2026/9/8 11:48:13
+// 自动生成于 2026/9/16 19:04:06
 // 数据来源: product_data.json
 
 window.PEIDAN_DATA = {
@@ -4965,6 +4965,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -5080,6 +5088,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -5197,6 +5213,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -5312,6 +5336,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -5429,6 +5461,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -5544,6 +5584,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -5661,6 +5709,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -5776,6 +5832,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -5893,6 +5957,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -6008,6 +6080,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -6125,6 +6205,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -6240,6 +6328,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -6357,6 +6453,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -6472,6 +6576,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -6589,6 +6701,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -6704,6 +6824,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -6821,6 +6949,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -6936,6 +7072,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -7053,6 +7197,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -7168,6 +7320,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -7285,6 +7445,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -7400,6 +7568,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -7517,6 +7693,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -7632,6 +7816,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -7781,6 +7973,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -7928,6 +8128,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -8077,6 +8285,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -8224,6 +8440,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -8373,6 +8597,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -8520,6 +8752,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -8669,6 +8909,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -8816,6 +9064,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -8965,6 +9221,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -9112,6 +9376,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -9261,6 +9533,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -9408,6 +9688,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -9557,6 +9845,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -9704,6 +10000,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -9853,6 +10157,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -10000,6 +10312,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -10149,6 +10469,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -10296,6 +10624,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -10445,6 +10781,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -10592,6 +10936,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -10741,6 +11093,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -10888,6 +11248,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -11037,6 +11405,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -11184,6 +11560,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -11333,6 +11717,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -11480,6 +11872,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -11629,6 +12029,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -11776,6 +12184,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -11925,6 +12341,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -12072,6 +12496,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -12221,6 +12653,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -12369,6 +12809,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -12476,6 +12924,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -12585,6 +13041,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -12692,6 +13156,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -12801,6 +13273,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -12908,6 +13388,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -13017,6 +13505,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -13124,6 +13620,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -13233,6 +13737,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -13340,6 +13852,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -13449,6 +13969,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -13556,6 +14084,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -13665,6 +14201,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -13772,6 +14316,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -13881,6 +14433,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -13988,6 +14548,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -14097,6 +14665,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -14204,6 +14780,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -14313,6 +14897,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -14420,6 +15012,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -14529,6 +15129,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -14636,6 +15244,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -14745,6 +15361,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -14853,6 +15477,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -14960,6 +15592,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -15117,6 +15757,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -15272,6 +15920,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -15429,6 +16085,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -15584,6 +16248,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -15741,6 +16413,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -15896,6 +16576,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -16053,6 +16741,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -16208,6 +16904,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -16365,6 +17069,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -16520,6 +17232,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -16677,6 +17397,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -16832,6 +17560,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -16989,6 +17725,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -17144,6 +17888,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -17301,6 +18053,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -17456,6 +18216,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -17613,6 +18381,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -17768,6 +18544,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -17925,6 +18709,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -18080,6 +18872,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -18237,6 +19037,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -18392,6 +19200,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -18549,6 +19365,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -18704,6 +19528,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -18861,6 +19693,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -19016,6 +19856,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -19173,6 +20021,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -19328,6 +20184,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -19485,6 +20349,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -19640,6 +20512,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -19797,6 +20677,14 @@ window.PEIDAN_DATA = {
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
+          "remark": ""
         }
       ]
     },
@@ -19952,6 +20840,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-IO-22(国内中性)",
           "code": "310101339",
           "detail": "仅适配ID2013EM网口型号使用，6路IO，可直接搭配优化版本线缆绿色端子头使用",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-N-43-25-DOME(国内中性)",
+          "code": "310103226",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2013EM系列",
           "remark": ""
         }
       ]
@@ -33694,6 +34590,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -33836,6 +34740,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -33898,6 +34810,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -34040,6 +34960,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -34102,6 +35030,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -34244,6 +35180,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -34306,6 +35250,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -34448,6 +35400,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -34510,6 +35470,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -34652,6 +35620,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -34714,6 +35690,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -34856,6 +35840,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -34918,6 +35910,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -35060,6 +36060,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -35122,6 +36130,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -35264,6 +36280,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -35326,6 +36350,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -35468,6 +36500,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -35530,6 +36570,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -35672,6 +36720,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -35734,6 +36790,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -35876,6 +36940,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -35938,6 +37010,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -36080,6 +37160,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -36142,6 +37230,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -36284,6 +37380,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -36346,6 +37450,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -36488,6 +37600,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -36550,6 +37670,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -36804,6 +37932,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -36866,6 +38002,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -37120,6 +38264,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -37182,6 +38334,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -37436,6 +38596,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -37498,6 +38666,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -37752,6 +38928,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -37814,6 +38998,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -38068,6 +39260,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -38130,6 +39330,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -38384,6 +39592,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -38446,6 +39662,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -38700,6 +39924,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -38762,6 +39994,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -39016,6 +40256,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -39078,6 +40326,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -39332,6 +40588,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -39394,6 +40658,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -39648,6 +40920,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -39710,6 +40990,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -39964,6 +41252,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -40026,6 +41322,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -40280,6 +41584,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -40342,6 +41654,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -40596,6 +41916,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -40658,6 +41986,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -40916,6 +42252,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-51.5-31.5-ESD(国内中性)",
           "code": "310103028",
@@ -40927,8 +42271,8 @@ window.PEIDAN_DATA = {
     {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2016XM系列U口",
-      "productModel": "MV-IDBX007X-05ARHU(国内标配)",
-      "materialCode": "328500514",
+      "productModel": "MV-ID2016XM-05M-RBN-U(国内标配)",
+      "materialCode": "313202973",
       "description": "1.6MP，5mm镜头，4颗红色LED，半偏镜头罩，机械调焦，U口型号",
       "remark": "不配线缆，需额外下单，U口型号须额外供电",
       "standardAccessories": [
@@ -40974,6 +42318,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -41120,6 +42472,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-51.5-31.5-ESD(国内中性)",
           "code": "310103028",
@@ -41131,8 +42491,8 @@ window.PEIDAN_DATA = {
     {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2016XM系列U口",
-      "productModel": "MV-IDBX007X-05ARHU(国内中性)",
-      "materialCode": "328500513",
+      "productModel": "MV-ID2016XM-05M-RBN-U(国内中性)",
+      "materialCode": "313202974",
       "description": "1.6MP，5mm镜头，4颗红色LED，半偏镜头罩，机械调焦，U口型号",
       "remark": "不配线缆，需额外下单，U口型号须额外供电",
       "standardAccessories": [
@@ -41178,6 +42538,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -41324,6 +42692,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-51.5-31.5-ESD(国内中性)",
           "code": "310103028",
@@ -41335,8 +42711,8 @@ window.PEIDAN_DATA = {
     {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2016XM系列U口",
-      "productModel": "MV-IDBX007X-08ARHU(国内标配)",
-      "materialCode": "328500521",
+      "productModel": "MV-ID2016XM-08M-RBN-U(国内标配)",
+      "materialCode": "313202977",
       "description": "1.6MP，8mm镜头，4颗红色LED，半偏镜头罩，机械调焦，U口型号",
       "remark": "不配线缆，需额外下单，U口型号须额外供电",
       "standardAccessories": [
@@ -41382,6 +42758,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -41528,6 +42912,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-51.5-31.5-ESD(国内中性)",
           "code": "310103028",
@@ -41539,8 +42931,8 @@ window.PEIDAN_DATA = {
     {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2016XM系列U口",
-      "productModel": "MV-IDBX007X-08ARHU(国内中性)",
-      "materialCode": "328500528",
+      "productModel": "MV-ID2016XM-08M-RBN-U(国内中性)",
+      "materialCode": "313202978",
       "description": "1.6MP，8mm镜头，4颗红色LED，半偏镜头罩，机械调焦，U口型号",
       "remark": "不配线缆，需额外下单，U口型号须额外供电",
       "standardAccessories": [
@@ -41586,6 +42978,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -41732,6 +43132,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-51.5-31.5-ESD(国内中性)",
           "code": "310103028",
@@ -41743,8 +43151,8 @@ window.PEIDAN_DATA = {
     {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2016XM系列U口",
-      "productModel": "MV-IDBX007X-12ARHU(国内标配)",
-      "materialCode": "328500522",
+      "productModel": "MV-ID2016XM-12M-RBN-U(国内标配)",
+      "materialCode": "313202981",
       "description": "1.6MP，12mm镜头，4颗红色LED，半偏镜头罩，机械调焦，U口型号",
       "remark": "不配线缆，需额外下单，U口型号须额外供电",
       "standardAccessories": [
@@ -41790,6 +43198,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -41936,6 +43352,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-51.5-31.5-ESD(国内中性)",
           "code": "310103028",
@@ -41947,8 +43371,8 @@ window.PEIDAN_DATA = {
     {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2016XM系列U口",
-      "productModel": "MV-IDBX007X-12ARHU(国内中性)",
-      "materialCode": "328500518",
+      "productModel": "MV-ID2016XM-12M-RBN-U(国内中性)",
+      "materialCode": "313202982",
       "description": "1.6MP，12mm镜头，4颗红色LED，半偏镜头罩，机械调焦，U口型号",
       "remark": "不配线缆，需额外下单，U口型号须额外供电",
       "standardAccessories": [
@@ -41994,6 +43418,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -42140,6 +43572,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-51.5-31.5-ESD(国内中性)",
           "code": "310103028",
@@ -42151,8 +43591,8 @@ window.PEIDAN_DATA = {
     {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2016XM系列U口",
-      "productModel": "MV-IDBX007X-16ARHU(国内标配)",
-      "materialCode": "328500524",
+      "productModel": "MV-ID2016XM-16M-RBN-U(国内标配)",
+      "materialCode": "313202985",
       "description": "1.6MP，16mm镜头，4颗红色LED，半偏镜头罩，机械调焦，U口型号",
       "remark": "不配线缆，需额外下单，U口型号须额外供电",
       "standardAccessories": [
@@ -42198,6 +43638,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -42344,6 +43792,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-51.5-31.5-ESD(国内中性)",
           "code": "310103028",
@@ -42355,8 +43811,8 @@ window.PEIDAN_DATA = {
     {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2016XM系列U口",
-      "productModel": "MV-IDBX007X-16ARHU(国内中性)",
-      "materialCode": "328500525",
+      "productModel": "MV-ID2016XM-16M-RBN-U(国内中性)",
+      "materialCode": "313202986",
       "description": "1.6MP，16mm镜头，4颗红色LED，半偏镜头罩，机械调焦，U口型号",
       "remark": "不配线缆，需额外下单，U口型号须额外供电",
       "standardAccessories": [
@@ -42402,6 +43858,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -42548,6 +44012,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-51.5-31.5-ESD(国内中性)",
           "code": "310103028",
@@ -42559,8 +44031,8 @@ window.PEIDAN_DATA = {
     {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2016XM系列U口",
-      "productModel": "MV-IDBX007X-08LRHU(国内标配)",
-      "materialCode": "328500511",
+      "productModel": "MV-ID2016XM-08L-RBN-U(国内标配)",
+      "materialCode": "313203027",
       "description": "1.6MP，8mm镜头，4颗红色LED，半偏镜头罩，液态调焦，U口型号",
       "remark": "不配线缆，需额外下单，U口型号须额外供电",
       "standardAccessories": [
@@ -42602,6 +44074,14 @@ window.PEIDAN_DATA = {
           "name": "泡棉EPE-ID2000XM/ID3000XM",
           "code": "194407130",
           "detail": "192X140X80,ID3000XM读码器EPE，适配ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
           "remark": ""
         },
         {
@@ -42752,6 +44232,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-51.5-31.5-ESD(国内中性)",
           "code": "310103028",
@@ -42763,8 +44251,8 @@ window.PEIDAN_DATA = {
     {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2016XM系列U口",
-      "productModel": "MV-IDBX007X-08LRHU(国内中性)",
-      "materialCode": "328500510",
+      "productModel": "MV-ID2016XM-08L-RBN-U(国内中性)",
+      "materialCode": "313203028",
       "description": "1.6MP，8mm镜头，4颗红色LED，半偏镜头罩，液态调焦，U口型号",
       "remark": "不配线缆，需额外下单，U口型号须额外供电",
       "standardAccessories": [
@@ -42806,6 +44294,14 @@ window.PEIDAN_DATA = {
           "name": "泡棉EPE-ID2000XM/ID3000XM",
           "code": "194407130",
           "detail": "192X140X80,ID3000XM读码器EPE，适配ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
           "remark": ""
         },
         {
@@ -42956,6 +44452,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-51.5-31.5-ESD(国内中性)",
           "code": "310103028",
@@ -42967,8 +44471,8 @@ window.PEIDAN_DATA = {
     {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2016XM系列U口",
-      "productModel": "MV-IDBX007X-12LRHU(国内标配)",
-      "materialCode": "328500509",
+      "productModel": "MV-ID2016XM-12L-RBN-U(国内标配)",
+      "materialCode": "313203030",
       "description": "1.6MP，12mm镜头，4颗红色LED，半偏镜头罩，液态调焦，U口型号",
       "remark": "不配线缆，需额外下单，U口型号须额外供电",
       "standardAccessories": [
@@ -43014,6 +44518,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -43160,6 +44672,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-51.5-31.5-ESD(国内中性)",
           "code": "310103028",
@@ -43171,8 +44691,8 @@ window.PEIDAN_DATA = {
     {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2016XM系列U口",
-      "productModel": "MV-IDBX007X-12LRHU(国内中性)",
-      "materialCode": "328500502",
+      "productModel": "MV-ID2016XM-12L-RBN-U(国内中性)",
+      "materialCode": "313203031",
       "description": "1.6MP，12mm镜头，4颗红色LED，半偏镜头罩，液态调焦，U口型号",
       "remark": "不配线缆，需额外下单，U口型号须额外供电",
       "standardAccessories": [
@@ -43218,6 +44738,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -43364,6 +44892,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-51.5-31.5-ESD(国内中性)",
           "code": "310103028",
@@ -43375,8 +44911,8 @@ window.PEIDAN_DATA = {
     {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2016XM系列U口",
-      "productModel": "MV-IDBX007X-16LRHU(国内标配)",
-      "materialCode": "328500501",
+      "productModel": "MV-ID2016XM-16L-RBN-U(国内标配)",
+      "materialCode": "313203033",
       "description": "1.6MP，16mm镜头，4颗红色LED，半偏镜头罩，液态调焦，U口型号",
       "remark": "不配线缆，需额外下单，U口型号须额外供电",
       "standardAccessories": [
@@ -43422,6 +44958,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -43568,6 +45112,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-51.5-31.5-ESD(国内中性)",
           "code": "310103028",
@@ -43579,8 +45131,8 @@ window.PEIDAN_DATA = {
     {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2016XM系列U口",
-      "productModel": "MV-IDBX007X-16LRHU(国内中性)",
-      "materialCode": "328500507",
+      "productModel": "MV-ID2016XM-16L-RBN-U(国内中性)",
+      "materialCode": "313203034",
       "description": "1.6MP，16mm镜头，4颗红色LED，半偏镜头罩，液态调焦，U口型号",
       "remark": "不配线缆，需额外下单，U口型号须额外供电",
       "standardAccessories": [
@@ -43626,6 +45178,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -43768,6 +45328,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -43783,8 +45351,8 @@ window.PEIDAN_DATA = {
     {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2016XM系列网口",
-      "productModel": "MV-IDBX007X-05ARH(国内标配)",
-      "materialCode": "328500520",
+      "productModel": "MV-ID2016XM-05M-RBN(国内标配)",
+      "materialCode": "313202957",
       "description": "1.6MP，5mm镜头，4颗红色LED，半偏镜头罩，机械调焦，网口型号",
       "remark": "不配线缆，需额外下单",
       "standardAccessories": [
@@ -43826,6 +45394,14 @@ window.PEIDAN_DATA = {
           "name": "泡棉EPE-ID2000XM/ID3000XM",
           "code": "194407130",
           "detail": "192X140X80,ID3000XM读码器EPE，适配ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
           "remark": ""
         },
         {
@@ -44088,6 +45664,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-51.5-31.5-ESD(国内中性)",
           "code": "310103028",
@@ -44099,8 +45683,8 @@ window.PEIDAN_DATA = {
     {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2016XM系列网口",
-      "productModel": "MV-IDBX007X-05ARH(国内中性)",
-      "materialCode": "328500517",
+      "productModel": "MV-ID2016XM-05M-RBN(国内中性)",
+      "materialCode": "313202958",
       "description": "1.6MP，5mm镜头，4颗红色LED，半偏镜头罩，机械调焦，网口型号",
       "remark": "不配线缆，需额外下单",
       "standardAccessories": [
@@ -44142,6 +45726,14 @@ window.PEIDAN_DATA = {
           "name": "泡棉EPE-ID2000XM/ID3000XM",
           "code": "194407130",
           "detail": "192X140X80,ID3000XM读码器EPE，适配ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
           "remark": ""
         },
         {
@@ -44404,6 +45996,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-51.5-31.5-ESD(国内中性)",
           "code": "310103028",
@@ -44415,8 +46015,8 @@ window.PEIDAN_DATA = {
     {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2016XM系列网口",
-      "productModel": "MV-IDBX007X-08ARH(国内标配)",
-      "materialCode": "328500515",
+      "productModel": "MV-ID2016XM-08M-RBN(国内标配)",
+      "materialCode": "313202961",
       "description": "1.6MP，8mm镜头，4颗红色LED，半偏镜头罩，机械调焦，网口型号",
       "remark": "不配线缆，需额外下单",
       "standardAccessories": [
@@ -44458,6 +46058,14 @@ window.PEIDAN_DATA = {
           "name": "泡棉EPE-ID2000XM/ID3000XM",
           "code": "194407130",
           "detail": "192X140X80,ID3000XM读码器EPE，适配ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
           "remark": ""
         },
         {
@@ -44720,6 +46328,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-51.5-31.5-ESD(国内中性)",
           "code": "310103028",
@@ -44731,8 +46347,8 @@ window.PEIDAN_DATA = {
     {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2016XM系列网口",
-      "productModel": "MV-IDBX007X-08ARH(国内中性)",
-      "materialCode": "328500516",
+      "productModel": "MV-ID2016XM-08M-RBN(国内中性)",
+      "materialCode": "313202962",
       "description": "1.6MP，8mm镜头，4颗红色LED，半偏镜头罩，机械调焦，网口型号",
       "remark": "不配线缆，需额外下单",
       "standardAccessories": [
@@ -44774,6 +46390,14 @@ window.PEIDAN_DATA = {
           "name": "泡棉EPE-ID2000XM/ID3000XM",
           "code": "194407130",
           "detail": "192X140X80,ID3000XM读码器EPE，适配ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
           "remark": ""
         },
         {
@@ -45036,6 +46660,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-51.5-31.5-ESD(国内中性)",
           "code": "310103028",
@@ -45047,8 +46679,8 @@ window.PEIDAN_DATA = {
     {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2016XM系列网口",
-      "productModel": "MV-IDBX007X-12ARH(国内标配)",
-      "materialCode": "328500527",
+      "productModel": "MV-ID2016XM-12M-RBN(国内标配)",
+      "materialCode": "313202965",
       "description": "1.6MP，12mm镜头，4颗红色LED，半偏镜头罩，机械调焦，网口型号",
       "remark": "不配线缆，需额外下单",
       "standardAccessories": [
@@ -45094,6 +46726,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -45352,6 +46992,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-51.5-31.5-ESD(国内中性)",
           "code": "310103028",
@@ -45363,8 +47011,8 @@ window.PEIDAN_DATA = {
     {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2016XM系列网口",
-      "productModel": "MV-IDBX007X-12ARH(国内中性)",
-      "materialCode": "328500526",
+      "productModel": "MV-ID2016XM-12M-RBN(国内中性)",
+      "materialCode": "313202966",
       "description": "1.6MP，12mm镜头，4颗红色LED，半偏镜头罩，机械调焦，网口型号",
       "remark": "不配线缆，需额外下单",
       "standardAccessories": [
@@ -45410,6 +47058,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -45668,6 +47324,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-51.5-31.5-ESD(国内中性)",
           "code": "310103028",
@@ -45679,8 +47343,8 @@ window.PEIDAN_DATA = {
     {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2016XM系列网口",
-      "productModel": "MV-IDBX007X-16ARH(国内标配)",
-      "materialCode": "328500519",
+      "productModel": "MV-ID2016XM-16M-RBN(国内标配)",
+      "materialCode": "313202969",
       "description": "1.6MP，16mm镜头，4颗红色LED，半偏镜头罩，机械调焦，网口型号",
       "remark": "不配线缆，需额外下单",
       "standardAccessories": [
@@ -45726,6 +47390,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -45984,6 +47656,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-51.5-31.5-ESD(国内中性)",
           "code": "310103028",
@@ -45995,8 +47675,8 @@ window.PEIDAN_DATA = {
     {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2016XM系列网口",
-      "productModel": "MV-IDBX007X-16ARH(国内中性)",
-      "materialCode": "328500523",
+      "productModel": "MV-ID2016XM-16M-RBN(国内中性)",
+      "materialCode": "313202970",
       "description": "1.6MP，16mm镜头，4颗红色LED，半偏镜头罩，机械调焦，网口型号",
       "remark": "不配线缆，需额外下单",
       "standardAccessories": [
@@ -46042,6 +47722,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -46300,6 +47988,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-51.5-31.5-ESD(国内中性)",
           "code": "310103028",
@@ -46311,8 +48007,8 @@ window.PEIDAN_DATA = {
     {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2016XM系列网口",
-      "productModel": "MV-IDBX007X-08LRH(国内标配)",
-      "materialCode": "328500503",
+      "productModel": "MV-ID2016XM-08L-RBN(国内标配)",
+      "materialCode": "313202956",
       "description": "1.6MP，8mm镜头，4颗红色LED，半偏镜头罩，液态调焦，网口型号",
       "remark": "不配线缆，需额外下单",
       "standardAccessories": [
@@ -46354,6 +48050,14 @@ window.PEIDAN_DATA = {
           "name": "泡棉EPE-ID2000XM/ID3000XM",
           "code": "194407130",
           "detail": "192X140X80,ID3000XM读码器EPE，适配ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
           "remark": ""
         },
         {
@@ -46616,6 +48320,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-51.5-31.5-ESD(国内中性)",
           "code": "310103028",
@@ -46627,8 +48339,8 @@ window.PEIDAN_DATA = {
     {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2016XM系列网口",
-      "productModel": "MV-IDBX007X-08LRH(国内中性)",
-      "materialCode": "328500512",
+      "productModel": "MV-ID2016XM-08L-RBN(国内中性)",
+      "materialCode": "313203008",
       "description": "1.6MP，8mm镜头，4颗红色LED，半偏镜头罩，液态调焦，网口型号",
       "remark": "不配线缆，需额外下单",
       "standardAccessories": [
@@ -46670,6 +48382,14 @@ window.PEIDAN_DATA = {
           "name": "泡棉EPE-ID2000XM/ID3000XM",
           "code": "194407130",
           "detail": "192X140X80,ID3000XM读码器EPE，适配ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
           "remark": ""
         },
         {
@@ -46932,6 +48652,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-51.5-31.5-ESD(国内中性)",
           "code": "310103028",
@@ -46943,8 +48671,8 @@ window.PEIDAN_DATA = {
     {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2016XM系列网口",
-      "productModel": "MV-IDBX007X-12LRH(国内标配)",
-      "materialCode": "328500508",
+      "productModel": "MV-ID2016XM-12L-RBN(国内标配)",
+      "materialCode": "313203020",
       "description": "1.6MP，12mm镜头，4颗红色LED，半偏镜头罩，液态调焦，网口型号",
       "remark": "不配线缆，需额外下单",
       "standardAccessories": [
@@ -46990,6 +48718,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -47248,6 +48984,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-51.5-31.5-ESD(国内中性)",
           "code": "310103028",
@@ -47259,8 +49003,8 @@ window.PEIDAN_DATA = {
     {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2016XM系列网口",
-      "productModel": "MV-IDBX007X-12LRH(国内中性)",
-      "materialCode": "328500505",
+      "productModel": "MV-ID2016XM-12L-RBN(国内中性)",
+      "materialCode": "313203022",
       "description": "1.6MP，12mm镜头，4颗红色LED，半偏镜头罩，液态调焦，网口型号",
       "remark": "不配线缆，需额外下单",
       "standardAccessories": [
@@ -47306,6 +49050,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -47564,6 +49316,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-51.5-31.5-ESD(国内中性)",
           "code": "310103028",
@@ -47575,8 +49335,8 @@ window.PEIDAN_DATA = {
     {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2016XM系列网口",
-      "productModel": "MV-IDBX007X-16LRH(国内标配)",
-      "materialCode": "328500504",
+      "productModel": "MV-ID2016XM-16L-RBN(国内标配)",
+      "materialCode": "313203024",
       "description": "1.6MP，16mm镜头，4颗红色LED，半偏镜头罩，液态调焦，网口型号",
       "remark": "不配线缆，需额外下单",
       "standardAccessories": [
@@ -47622,6 +49382,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -47880,6 +49648,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-51.5-31.5-ESD(国内中性)",
           "code": "310103028",
@@ -47891,8 +49667,8 @@ window.PEIDAN_DATA = {
     {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2016XM系列网口",
-      "productModel": "MV-IDBX007X-16LRH(国内中性)",
-      "materialCode": "328500506",
+      "productModel": "MV-ID2016XM-16L-RBN(国内中性)",
+      "materialCode": "313203025",
       "description": "1.6MP，16mm镜头，4颗红色LED，半偏镜头罩，液态调焦，网口型号",
       "remark": "不配线缆，需额外下单",
       "standardAccessories": [
@@ -47938,6 +49714,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -48192,6 +49976,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -48254,6 +50046,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -48508,6 +50308,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -48570,6 +50378,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -48824,6 +50640,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -48886,6 +50710,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -49140,6 +50972,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -49202,6 +51042,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -49456,6 +51304,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -49518,6 +51374,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -49772,6 +51636,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -49834,6 +51706,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -50088,6 +51968,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -50150,6 +52038,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -50404,6 +52300,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -50466,6 +52370,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -50720,6 +52632,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -50782,6 +52702,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -51036,6 +52964,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -51098,6 +53034,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -51352,6 +53296,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -51414,6 +53366,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -51668,6 +53628,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -51730,6 +53698,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -51984,6 +53960,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -52046,6 +54030,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -52300,6 +54292,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -52362,6 +54362,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -52616,6 +54624,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -52678,6 +54694,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -52932,6 +54956,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -52994,6 +55026,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -53248,6 +55288,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -53310,6 +55358,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -53564,6 +55620,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -53626,6 +55690,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -53880,6 +55952,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -53942,6 +56022,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -54196,6 +56284,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -54258,6 +56354,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -54512,6 +56616,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -54574,6 +56686,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -54716,6 +56836,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -54778,6 +56906,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -54920,6 +57056,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -54982,6 +57126,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -55124,6 +57276,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -55186,6 +57346,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -55328,6 +57496,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -55390,6 +57566,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -55532,6 +57716,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -55594,6 +57786,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -55736,6 +57936,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -55798,6 +58006,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -55940,6 +58156,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -56002,6 +58226,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -56144,6 +58376,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -56206,6 +58446,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -56348,6 +58596,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -56410,6 +58666,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -56552,6 +58816,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -56614,6 +58886,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -56756,6 +59036,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -56818,6 +59106,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -56960,6 +59256,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -57022,6 +59326,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -57164,6 +59476,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -57226,6 +59546,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -57372,6 +59700,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-51.5-31.5-ESD(国内中性)",
           "code": "310103028",
@@ -57426,6 +59762,14 @@ window.PEIDAN_DATA = {
           "name": "泡棉EPE-ID2000XM/ID3000XM",
           "code": "194407130",
           "detail": "192X140X80,ID3000XM读码器EPE，适配ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
           "remark": ""
         },
         {
@@ -57684,6 +60028,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -57746,6 +60098,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -58004,6 +60364,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-51.5-31.5-ESD(国内中性)",
           "code": "310103028",
@@ -58058,6 +60426,14 @@ window.PEIDAN_DATA = {
           "name": "泡棉EPE-ID2000XM/ID3000XM",
           "code": "194407130",
           "detail": "192X140X80,ID3000XM读码器EPE，适配ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
           "remark": ""
         },
         {
@@ -58316,6 +60692,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -58378,6 +60762,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -58636,6 +61028,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-51.5-31.5-ESD(国内中性)",
           "code": "310103028",
@@ -58690,6 +61090,14 @@ window.PEIDAN_DATA = {
           "name": "泡棉EPE-ID2000XM/ID3000XM",
           "code": "194407130",
           "detail": "192X140X80,ID3000XM读码器EPE，适配ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
           "remark": ""
         },
         {
@@ -58948,6 +61356,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -59010,6 +61426,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -59264,6 +61688,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -59326,6 +61758,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -59580,6 +62020,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -59642,6 +62090,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -59900,6 +62356,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-51.5-31.5-ESD(国内中性)",
           "code": "310103028",
@@ -59954,6 +62418,14 @@ window.PEIDAN_DATA = {
           "name": "泡棉EPE-ID2000XM/ID3000XM",
           "code": "194407130",
           "detail": "192X140X80,ID3000XM读码器EPE，适配ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
           "remark": ""
         },
         {
@@ -60212,6 +62684,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -60274,6 +62754,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -60532,6 +63020,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-51.5-31.5-ESD(国内中性)",
           "code": "310103028",
@@ -60586,6 +63082,14 @@ window.PEIDAN_DATA = {
           "name": "泡棉EPE-ID2000XM/ID3000XM",
           "code": "194407130",
           "detail": "192X140X80,ID3000XM读码器EPE，适配ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
           "remark": ""
         },
         {
@@ -60844,6 +63348,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -60906,6 +63418,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -61160,6 +63680,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -61222,6 +63750,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -61476,6 +64012,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
           "detail": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
           "remark": ""
         },
         {
@@ -61538,6 +64082,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -61796,1811 +64348,19 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "匀光罩",
+          "name": "MV-IDA-C-Y-51.5-31.5-DOME(全球通中性)",
+          "code": "310103285",
+          "detail": "DOME匀光罩，推荐工作距离：20~100mm，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-51.5-31.5-ESD(国内中性)",
           "code": "310103028",
           "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
           "remark": ""
-        }
-      ]
-    },
-    {
-      "productCategory": "ID3000PM系列",
-      "productSeries": "ID3013PM-8系列V2.0",
-      "productModel": "MV-ID3013PM-06M-WBN-8(国内标配)V2.0",
-      "materialCode": "313201861",
-      "description": "1.3MP，6mm镜头，8颗白色LED，全透镜头罩，机械调焦",
-      "remark": "",
-      "standardAccessories": [
-        {
-          "category": "安装板",
-          "series": "安装板",
-          "name": "ID3000PM安装板",
-          "code": "190162231",
-          "detail": "V020-安装支架，适配ID3000PM",
-          "remark": ""
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
-          "code": "310101292",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": ""
-        },
-        {
-          "category": "灯板",
-          "series": "白光灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-W(国内中性)",
-          "code": "310100047",
-          "detail": "基础款，8颗粒LED白光，色温5700K，仅适配ID3000PM-8灯珠款",
-          "remark": "半成品物料：202401178（下配置订单请备注半成品物料号）"
-        },
-        {
-          "category": "镜头罩",
-          "series": "全透镜头罩-8灯珠",
-          "name": "MV-IDA-C-N-62-62-T(国内中性)",
-          "code": "190214704",
-          "detail": "ID3013PM-8/ID3016PM透明镜头罩",
-          "remark": "半成品物料：190214704（下配置订单请备注半成品物料号）"
-        },
-        {
-          "category": "扩展配件",
-          "series": "外包装",
-          "name": "包装盒-ID2000/ID3000",
-          "code": "194213827",
-          "detail": "195x145x135 机器视觉 视觉传感器黄包，适配ID800/ID2013EM/ID2000XM/ID3000系列",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "泡棉EPE",
-          "name": "泡棉EPE-ID3000PM",
-          "code": "194406336",
-          "detail": "192X140X80,机器视觉 三进三出IO盒子+相机 EPE，适配ID3000PM系列",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "螺丝包",
-          "name": "螺丝包M4×8",
-          "code": "193100772",
-          "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
-          "remark": ""
-        }
-      ],
-      "optionalAccessories": [
-        {
-          "category": "电源",
-          "series": "电源适配器",
-          "name": "KPL-060M-VI(全球通中性)",
-          "code": "310100901",
-          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线",
-          "remark": "桌面式适配器，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "电源适配器线缆",
-          "name": "交流电源线_国标_弯三插_C13_1.2米",
-          "code": "310100840",
-          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)",
-          "remark": "搭配适配器应用"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源1",
-          "name": "LRS-50-24(全球通中性)",
-          "code": "310100905",
-          "detail": "开关电源,24V2.09A,50W,接线端子",
-          "remark": "开关电源1，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源2",
-          "name": "LRS-150F-24(全球通中性)",
-          "code": "310100904",
-          "detail": "开关电源,24V6.25A,150W,接线端子",
-          "remark": "开关电源2，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源线缆",
-          "name": "交流电源线_国标_弯三插_open_2米",
-          "code": "310100843",
-          "detail": "交流电源线_国标_弯三插_open_2米(中性)",
-          "remark": "搭配开关电源应用"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
-          "code": "310101293",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "网口型号出货配置为5m普通线缆，订单中备注：删除：310101292，添加：310101293"
-        },
-        {
-          "category": "一体线",
-          "series": "7m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
-          "code": "310101873",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
-          "code": "310101294",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
-          "code": "310101310",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
-          "code": "310101296",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m高柔线缆，订单中备注：删除：310101292，添加：310101296"
-        },
-        {
-          "category": "一体线",
-          "series": "5m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
-          "code": "310102637",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为5m高柔线缆，订单中备注：删除：310101292，添加：310102637"
-        },
-        {
-          "category": "一体线",
-          "series": "5m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
-          "code": "310101876",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "若网口型号出货配置为5m超柔线缆，订单中备注：删除：310101292，添加：310101876"
-        },
-        {
-          "category": "一体线",
-          "series": "7m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
-          "code": "310103217",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "7m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
-          "code": "310101874",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
-          "code": "310101875",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
-          "code": "310101307",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
-          "code": "310101869",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为3m弯头普通线缆，订单中备注：删除：310101292，添加：310101869"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通弯头网口母头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45FDB9-ST-5m",
-          "code": "310101877",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为5m弯头普通线缆，订单中备注：删除：310101292，添加：310101877"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
-          "code": "310101878",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
-          "code": "310101870",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m弯头高柔线缆，订单中备注：删除：310101292，添加：310101870"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
-          "code": "310101871",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为3m普通母头，订单中备注：删除：310101292，添加：310101871"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
-          "code": "310101872",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m高柔母头，订单中备注：删除：310101292，添加：310101872"
-        },
-        {
-          "category": "灯板",
-          "series": "红光灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-R(国内中性)",
-          "code": "310100048",
-          "detail": "基础款，8颗粒LED红光，光源波长620nm~630nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为红光，订单中备注：删除：202401178，添加：202401179"
-        },
-        {
-          "category": "灯板",
-          "series": "蓝光灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-B(国内中性)",
-          "code": "310100049",
-          "detail": "基础款，8颗粒LED蓝光，光源波长465nm~475nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为蓝光，订单中备注：删除：202401178，添加：202401232"
-        },
-        {
-          "category": "灯板",
-          "series": "红外灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-IR(国内中性)",
-          "code": "310100485",
-          "detail": "基础款，8颗粒LED红外光，光源波长850nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为红外光，订单中备注：删除：202401178，添加：202401665"
-        },
-        {
-          "category": "灯板",
-          "series": "白光灯板-48灯珠",
-          "name": "MV-IDA-L-48-55-55-WH(国内中性)",
-          "code": "310100050",
-          "detail": "广角款，48颗粒LED白光，色温5700K，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为高功率白光，订单中备注：删除：202401178，添加：202401177"
-        },
-        {
-          "category": "灯板",
-          "series": "红光灯板-48灯珠",
-          "name": "MV-IDA-L-48-55-55-RH(国内中性)",
-          "code": "310100378",
-          "detail": "广角款，48颗粒LED红光，光源波长620nm~630nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为高功率红光，订单中备注：删除：202401178，添加：202401331"
-        },
-        {
-          "category": "灯板",
-          "series": "蓝光灯板-48灯珠",
-          "name": "MV-IDA-L-48-55-55-BH(国内中性)",
-          "code": "310100051",
-          "detail": "广角款，48颗粒LED蓝光，光源波长465nm~475nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为高功率蓝光，订单中备注：删除：202401178，添加：202401249"
-        },
-        {
-          "category": "镜头罩",
-          "series": "全偏镜头罩-8灯珠",
-          "name": "MV-IDA-C-N-62-62-P(国内中性)",
-          "code": "310100046",
-          "detail": "ID3013PM-8/ID3016PM偏振镜头罩",
-          "remark": "若ID3013-8/ID3016出货配置为全偏镜头罩，订单中备注：删除：190214704，添加：202402640"
-        }
-      ]
-    },
-    {
-      "productCategory": "ID3000PM系列",
-      "productSeries": "ID3013PM-8系列V2.0",
-      "productModel": "MV-ID3013PM-06M-WBN-8(国内中性)V2.0",
-      "materialCode": "313201862",
-      "description": "1.3MP，6mm镜头，8颗白色LED，全透镜头罩，机械调焦",
-      "remark": "",
-      "standardAccessories": [
-        {
-          "category": "安装板",
-          "series": "安装板",
-          "name": "ID3000PM安装板",
-          "code": "190162231",
-          "detail": "V020-安装支架，适配ID3000PM",
-          "remark": ""
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
-          "code": "310101292",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": ""
-        },
-        {
-          "category": "灯板",
-          "series": "白光灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-W(国内中性)",
-          "code": "310100047",
-          "detail": "基础款，8颗粒LED白光，色温5700K，仅适配ID3000PM-8灯珠款",
-          "remark": "半成品物料：202401178（下配置订单请备注半成品物料号）"
-        },
-        {
-          "category": "镜头罩",
-          "series": "全透镜头罩-8灯珠",
-          "name": "MV-IDA-C-N-62-62-T(国内中性)",
-          "code": "190214704",
-          "detail": "ID3013PM-8/ID3016PM透明镜头罩",
-          "remark": "半成品物料：190214704（下配置订单请备注半成品物料号）"
-        },
-        {
-          "category": "扩展配件",
-          "series": "外包装",
-          "name": "包装盒-ID2000/ID3000",
-          "code": "194213827",
-          "detail": "195x145x135 机器视觉 视觉传感器黄包，适配ID800/ID2013EM/ID2000XM/ID3000系列",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "泡棉EPE",
-          "name": "泡棉EPE-ID3000PM",
-          "code": "194406336",
-          "detail": "192X140X80,机器视觉 三进三出IO盒子+相机 EPE，适配ID3000PM系列",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "螺丝包",
-          "name": "螺丝包M4×8",
-          "code": "193100772",
-          "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
-          "remark": ""
-        }
-      ],
-      "optionalAccessories": [
-        {
-          "category": "电源",
-          "series": "电源适配器",
-          "name": "KPL-060M-VI(全球通中性)",
-          "code": "310100901",
-          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线",
-          "remark": "桌面式适配器，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "电源适配器线缆",
-          "name": "交流电源线_国标_弯三插_C13_1.2米",
-          "code": "310100840",
-          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)",
-          "remark": "搭配适配器应用"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源1",
-          "name": "LRS-50-24(全球通中性)",
-          "code": "310100905",
-          "detail": "开关电源,24V2.09A,50W,接线端子",
-          "remark": "开关电源1，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源2",
-          "name": "LRS-150F-24(全球通中性)",
-          "code": "310100904",
-          "detail": "开关电源,24V6.25A,150W,接线端子",
-          "remark": "开关电源2，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源线缆",
-          "name": "交流电源线_国标_弯三插_open_2米",
-          "code": "310100843",
-          "detail": "交流电源线_国标_弯三插_open_2米(中性)",
-          "remark": "搭配开关电源应用"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
-          "code": "310101293",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "网口型号出货配置为5m普通线缆，订单中备注：删除：310101292，添加：310101293"
-        },
-        {
-          "category": "一体线",
-          "series": "7m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
-          "code": "310101873",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
-          "code": "310101294",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
-          "code": "310101310",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
-          "code": "310101296",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m高柔线缆，订单中备注：删除：310101292，添加：310101296"
-        },
-        {
-          "category": "一体线",
-          "series": "5m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
-          "code": "310102637",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为5m高柔线缆，订单中备注：删除：310101292，添加：310102637"
-        },
-        {
-          "category": "一体线",
-          "series": "5m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
-          "code": "310101876",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "若网口型号出货配置为5m超柔线缆，订单中备注：删除：310101292，添加：310101876"
-        },
-        {
-          "category": "一体线",
-          "series": "7m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
-          "code": "310103217",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "7m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
-          "code": "310101874",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
-          "code": "310101875",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
-          "code": "310101307",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
-          "code": "310101869",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为3m弯头普通线缆，订单中备注：删除：310101292，添加：310101869"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通弯头网口母头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45FDB9-ST-5m",
-          "code": "310101877",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为5m弯头普通线缆，订单中备注：删除：310101292，添加：310101877"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
-          "code": "310101878",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
-          "code": "310101870",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m弯头高柔线缆，订单中备注：删除：310101292，添加：310101870"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
-          "code": "310101871",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为3m普通母头，订单中备注：删除：310101292，添加：310101871"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
-          "code": "310101872",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m高柔母头，订单中备注：删除：310101292，添加：310101872"
-        },
-        {
-          "category": "灯板",
-          "series": "红光灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-R(国内中性)",
-          "code": "310100048",
-          "detail": "基础款，8颗粒LED红光，光源波长620nm~630nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为红光，订单中备注：删除：202401178，添加：202401179"
-        },
-        {
-          "category": "灯板",
-          "series": "蓝光灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-B(国内中性)",
-          "code": "310100049",
-          "detail": "基础款，8颗粒LED蓝光，光源波长465nm~475nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为蓝光，订单中备注：删除：202401178，添加：202401232"
-        },
-        {
-          "category": "灯板",
-          "series": "红外灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-IR(国内中性)",
-          "code": "310100485",
-          "detail": "基础款，8颗粒LED红外光，光源波长850nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为红外光，订单中备注：删除：202401178，添加：202401665"
-        },
-        {
-          "category": "灯板",
-          "series": "白光灯板-48灯珠",
-          "name": "MV-IDA-L-48-55-55-WH(国内中性)",
-          "code": "310100050",
-          "detail": "广角款，48颗粒LED白光，色温5700K，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为高功率白光，订单中备注：删除：202401178，添加：202401177"
-        },
-        {
-          "category": "灯板",
-          "series": "红光灯板-48灯珠",
-          "name": "MV-IDA-L-48-55-55-RH(国内中性)",
-          "code": "310100378",
-          "detail": "广角款，48颗粒LED红光，光源波长620nm~630nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为高功率红光，订单中备注：删除：202401178，添加：202401331"
-        },
-        {
-          "category": "灯板",
-          "series": "蓝光灯板-48灯珠",
-          "name": "MV-IDA-L-48-55-55-BH(国内中性)",
-          "code": "310100051",
-          "detail": "广角款，48颗粒LED蓝光，光源波长465nm~475nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为高功率蓝光，订单中备注：删除：202401178，添加：202401249"
-        },
-        {
-          "category": "镜头罩",
-          "series": "全偏镜头罩-8灯珠",
-          "name": "MV-IDA-C-N-62-62-P(国内中性)",
-          "code": "310100046",
-          "detail": "ID3013PM-8/ID3016PM偏振镜头罩",
-          "remark": "若ID3013-8/ID3016出货配置为全偏镜头罩，订单中备注：删除：190214704，添加：202402640"
-        }
-      ]
-    },
-    {
-      "productCategory": "ID3000PM系列",
-      "productSeries": "ID3013PM-8系列V2.0",
-      "productModel": "MV-ID3013PM-12M-WBN-8(国内标配)V2.0",
-      "materialCode": "313201863",
-      "description": "1.3MP，12mm镜头，8颗白色LED，全透镜头罩，机械调焦",
-      "remark": "",
-      "standardAccessories": [
-        {
-          "category": "安装板",
-          "series": "安装板",
-          "name": "ID3000PM安装板",
-          "code": "190162231",
-          "detail": "V020-安装支架，适配ID3000PM",
-          "remark": ""
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
-          "code": "310101292",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": ""
-        },
-        {
-          "category": "灯板",
-          "series": "白光灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-W(国内中性)",
-          "code": "310100047",
-          "detail": "基础款，8颗粒LED白光，色温5700K，仅适配ID3000PM-8灯珠款",
-          "remark": "半成品物料：202401178（下配置订单请备注半成品物料号）"
-        },
-        {
-          "category": "镜头罩",
-          "series": "全透镜头罩-8灯珠",
-          "name": "MV-IDA-C-N-62-62-T(国内中性)",
-          "code": "190214704",
-          "detail": "ID3013PM-8/ID3016PM透明镜头罩",
-          "remark": "半成品物料：190214704（下配置订单请备注半成品物料号）"
-        },
-        {
-          "category": "扩展配件",
-          "series": "外包装",
-          "name": "包装盒-ID2000/ID3000",
-          "code": "194213827",
-          "detail": "195x145x135 机器视觉 视觉传感器黄包，适配ID800/ID2013EM/ID2000XM/ID3000系列",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "泡棉EPE",
-          "name": "泡棉EPE-ID3000PM",
-          "code": "194406336",
-          "detail": "192X140X80,机器视觉 三进三出IO盒子+相机 EPE，适配ID3000PM系列",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "螺丝包",
-          "name": "螺丝包M4×8",
-          "code": "193100772",
-          "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
-          "remark": ""
-        }
-      ],
-      "optionalAccessories": [
-        {
-          "category": "电源",
-          "series": "电源适配器",
-          "name": "KPL-060M-VI(全球通中性)",
-          "code": "310100901",
-          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线",
-          "remark": "桌面式适配器，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "电源适配器线缆",
-          "name": "交流电源线_国标_弯三插_C13_1.2米",
-          "code": "310100840",
-          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)",
-          "remark": "搭配适配器应用"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源1",
-          "name": "LRS-50-24(全球通中性)",
-          "code": "310100905",
-          "detail": "开关电源,24V2.09A,50W,接线端子",
-          "remark": "开关电源1，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源2",
-          "name": "LRS-150F-24(全球通中性)",
-          "code": "310100904",
-          "detail": "开关电源,24V6.25A,150W,接线端子",
-          "remark": "开关电源2，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源线缆",
-          "name": "交流电源线_国标_弯三插_open_2米",
-          "code": "310100843",
-          "detail": "交流电源线_国标_弯三插_open_2米(中性)",
-          "remark": "搭配开关电源应用"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
-          "code": "310101293",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "网口型号出货配置为5m普通线缆，订单中备注：删除：310101292，添加：310101293"
-        },
-        {
-          "category": "一体线",
-          "series": "7m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
-          "code": "310101873",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
-          "code": "310101294",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
-          "code": "310101310",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
-          "code": "310101296",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m高柔线缆，订单中备注：删除：310101292，添加：310101296"
-        },
-        {
-          "category": "一体线",
-          "series": "5m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
-          "code": "310102637",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为5m高柔线缆，订单中备注：删除：310101292，添加：310102637"
-        },
-        {
-          "category": "一体线",
-          "series": "5m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
-          "code": "310101876",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "若网口型号出货配置为5m超柔线缆，订单中备注：删除：310101292，添加：310101876"
-        },
-        {
-          "category": "一体线",
-          "series": "7m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
-          "code": "310103217",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "7m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
-          "code": "310101874",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
-          "code": "310101875",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
-          "code": "310101307",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
-          "code": "310101869",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为3m弯头普通线缆，订单中备注：删除：310101292，添加：310101869"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通弯头网口母头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45FDB9-ST-5m",
-          "code": "310101877",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为5m弯头普通线缆，订单中备注：删除：310101292，添加：310101877"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
-          "code": "310101878",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
-          "code": "310101870",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m弯头高柔线缆，订单中备注：删除：310101292，添加：310101870"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
-          "code": "310101871",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为3m普通母头，订单中备注：删除：310101292，添加：310101871"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
-          "code": "310101872",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m高柔母头，订单中备注：删除：310101292，添加：310101872"
-        },
-        {
-          "category": "灯板",
-          "series": "红光灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-R(国内中性)",
-          "code": "310100048",
-          "detail": "基础款，8颗粒LED红光，光源波长620nm~630nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为红光，订单中备注：删除：202401178，添加：202401179"
-        },
-        {
-          "category": "灯板",
-          "series": "蓝光灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-B(国内中性)",
-          "code": "310100049",
-          "detail": "基础款，8颗粒LED蓝光，光源波长465nm~475nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为蓝光，订单中备注：删除：202401178，添加：202401232"
-        },
-        {
-          "category": "灯板",
-          "series": "红外灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-IR(国内中性)",
-          "code": "310100485",
-          "detail": "基础款，8颗粒LED红外光，光源波长850nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为红外光，订单中备注：删除：202401178，添加：202401665"
-        },
-        {
-          "category": "灯板",
-          "series": "白光灯板-48灯珠",
-          "name": "MV-IDA-L-48-55-55-WH(国内中性)",
-          "code": "310100050",
-          "detail": "广角款，48颗粒LED白光，色温5700K，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为高功率白光，订单中备注：删除：202401178，添加：202401177"
-        },
-        {
-          "category": "灯板",
-          "series": "红光灯板-48灯珠",
-          "name": "MV-IDA-L-48-55-55-RH(国内中性)",
-          "code": "310100378",
-          "detail": "广角款，48颗粒LED红光，光源波长620nm~630nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为高功率红光，订单中备注：删除：202401178，添加：202401331"
-        },
-        {
-          "category": "灯板",
-          "series": "蓝光灯板-48灯珠",
-          "name": "MV-IDA-L-48-55-55-BH(国内中性)",
-          "code": "310100051",
-          "detail": "广角款，48颗粒LED蓝光，光源波长465nm~475nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为高功率蓝光，订单中备注：删除：202401178，添加：202401249"
-        },
-        {
-          "category": "镜头罩",
-          "series": "全偏镜头罩-8灯珠",
-          "name": "MV-IDA-C-N-62-62-P(国内中性)",
-          "code": "310100046",
-          "detail": "ID3013PM-8/ID3016PM偏振镜头罩",
-          "remark": "若ID3013-8/ID3016出货配置为全偏镜头罩，订单中备注：删除：190214704，添加：202402640"
-        }
-      ]
-    },
-    {
-      "productCategory": "ID3000PM系列",
-      "productSeries": "ID3013PM-8系列V2.0",
-      "productModel": "MV-ID3013PM-12M-WBN-8(国内中性)V2.0",
-      "materialCode": "313201864",
-      "description": "1.3MP，12mm镜头，8颗白色LED，全透镜头罩，机械调焦",
-      "remark": "",
-      "standardAccessories": [
-        {
-          "category": "安装板",
-          "series": "安装板",
-          "name": "ID3000PM安装板",
-          "code": "190162231",
-          "detail": "V020-安装支架，适配ID3000PM",
-          "remark": ""
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
-          "code": "310101292",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": ""
-        },
-        {
-          "category": "灯板",
-          "series": "白光灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-W(国内中性)",
-          "code": "310100047",
-          "detail": "基础款，8颗粒LED白光，色温5700K，仅适配ID3000PM-8灯珠款",
-          "remark": "半成品物料：202401178（下配置订单请备注半成品物料号）"
-        },
-        {
-          "category": "镜头罩",
-          "series": "全透镜头罩-8灯珠",
-          "name": "MV-IDA-C-N-62-62-T(国内中性)",
-          "code": "190214704",
-          "detail": "ID3013PM-8/ID3016PM透明镜头罩",
-          "remark": "半成品物料：190214704（下配置订单请备注半成品物料号）"
-        },
-        {
-          "category": "扩展配件",
-          "series": "外包装",
-          "name": "包装盒-ID2000/ID3000",
-          "code": "194213827",
-          "detail": "195x145x135 机器视觉 视觉传感器黄包，适配ID800/ID2013EM/ID2000XM/ID3000系列",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "泡棉EPE",
-          "name": "泡棉EPE-ID3000PM",
-          "code": "194406336",
-          "detail": "192X140X80,机器视觉 三进三出IO盒子+相机 EPE，适配ID3000PM系列",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "螺丝包",
-          "name": "螺丝包M4×8",
-          "code": "193100772",
-          "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
-          "remark": ""
-        }
-      ],
-      "optionalAccessories": [
-        {
-          "category": "电源",
-          "series": "电源适配器",
-          "name": "KPL-060M-VI(全球通中性)",
-          "code": "310100901",
-          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线",
-          "remark": "桌面式适配器，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "电源适配器线缆",
-          "name": "交流电源线_国标_弯三插_C13_1.2米",
-          "code": "310100840",
-          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)",
-          "remark": "搭配适配器应用"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源1",
-          "name": "LRS-50-24(全球通中性)",
-          "code": "310100905",
-          "detail": "开关电源,24V2.09A,50W,接线端子",
-          "remark": "开关电源1，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源2",
-          "name": "LRS-150F-24(全球通中性)",
-          "code": "310100904",
-          "detail": "开关电源,24V6.25A,150W,接线端子",
-          "remark": "开关电源2，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源线缆",
-          "name": "交流电源线_国标_弯三插_open_2米",
-          "code": "310100843",
-          "detail": "交流电源线_国标_弯三插_open_2米(中性)",
-          "remark": "搭配开关电源应用"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
-          "code": "310101293",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "网口型号出货配置为5m普通线缆，订单中备注：删除：310101292，添加：310101293"
-        },
-        {
-          "category": "一体线",
-          "series": "7m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
-          "code": "310101873",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
-          "code": "310101294",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
-          "code": "310101310",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
-          "code": "310101296",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m高柔线缆，订单中备注：删除：310101292，添加：310101296"
-        },
-        {
-          "category": "一体线",
-          "series": "5m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
-          "code": "310102637",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为5m高柔线缆，订单中备注：删除：310101292，添加：310102637"
-        },
-        {
-          "category": "一体线",
-          "series": "5m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
-          "code": "310101876",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "若网口型号出货配置为5m超柔线缆，订单中备注：删除：310101292，添加：310101876"
-        },
-        {
-          "category": "一体线",
-          "series": "7m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
-          "code": "310103217",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "7m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
-          "code": "310101874",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
-          "code": "310101875",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
-          "code": "310101307",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
-          "code": "310101869",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为3m弯头普通线缆，订单中备注：删除：310101292，添加：310101869"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通弯头网口母头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45FDB9-ST-5m",
-          "code": "310101877",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为5m弯头普通线缆，订单中备注：删除：310101292，添加：310101877"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
-          "code": "310101878",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
-          "code": "310101870",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m弯头高柔线缆，订单中备注：删除：310101292，添加：310101870"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
-          "code": "310101871",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为3m普通母头，订单中备注：删除：310101292，添加：310101871"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
-          "code": "310101872",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m高柔母头，订单中备注：删除：310101292，添加：310101872"
-        },
-        {
-          "category": "灯板",
-          "series": "红光灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-R(国内中性)",
-          "code": "310100048",
-          "detail": "基础款，8颗粒LED红光，光源波长620nm~630nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为红光，订单中备注：删除：202401178，添加：202401179"
-        },
-        {
-          "category": "灯板",
-          "series": "蓝光灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-B(国内中性)",
-          "code": "310100049",
-          "detail": "基础款，8颗粒LED蓝光，光源波长465nm~475nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为蓝光，订单中备注：删除：202401178，添加：202401232"
-        },
-        {
-          "category": "灯板",
-          "series": "红外灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-IR(国内中性)",
-          "code": "310100485",
-          "detail": "基础款，8颗粒LED红外光，光源波长850nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为红外光，订单中备注：删除：202401178，添加：202401665"
-        },
-        {
-          "category": "灯板",
-          "series": "白光灯板-48灯珠",
-          "name": "MV-IDA-L-48-55-55-WH(国内中性)",
-          "code": "310100050",
-          "detail": "广角款，48颗粒LED白光，色温5700K，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为高功率白光，订单中备注：删除：202401178，添加：202401177"
-        },
-        {
-          "category": "灯板",
-          "series": "红光灯板-48灯珠",
-          "name": "MV-IDA-L-48-55-55-RH(国内中性)",
-          "code": "310100378",
-          "detail": "广角款，48颗粒LED红光，光源波长620nm~630nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为高功率红光，订单中备注：删除：202401178，添加：202401331"
-        },
-        {
-          "category": "灯板",
-          "series": "蓝光灯板-48灯珠",
-          "name": "MV-IDA-L-48-55-55-BH(国内中性)",
-          "code": "310100051",
-          "detail": "广角款，48颗粒LED蓝光，光源波长465nm~475nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为高功率蓝光，订单中备注：删除：202401178，添加：202401249"
-        },
-        {
-          "category": "镜头罩",
-          "series": "全偏镜头罩-8灯珠",
-          "name": "MV-IDA-C-N-62-62-P(国内中性)",
-          "code": "310100046",
-          "detail": "ID3013PM-8/ID3016PM偏振镜头罩",
-          "remark": "若ID3013-8/ID3016出货配置为全偏镜头罩，订单中备注：删除：190214704，添加：202402640"
-        }
-      ]
-    },
-    {
-      "productCategory": "ID3000PM系列",
-      "productSeries": "ID3013PM-8系列V2.0",
-      "productModel": "MV-ID3013PM-15M-WBN-8(国内标配)V2.0",
-      "materialCode": "313201865",
-      "description": "1.3MP，14.8mm镜头，8颗白色LED，全透镜头罩，机械调焦",
-      "remark": "",
-      "standardAccessories": [
-        {
-          "category": "安装板",
-          "series": "安装板",
-          "name": "ID3000PM安装板",
-          "code": "190162231",
-          "detail": "V020-安装支架，适配ID3000PM",
-          "remark": ""
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
-          "code": "310101292",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": ""
-        },
-        {
-          "category": "灯板",
-          "series": "白光灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-W(国内中性)",
-          "code": "310100047",
-          "detail": "基础款，8颗粒LED白光，色温5700K，仅适配ID3000PM-8灯珠款",
-          "remark": "半成品物料：202401178（下配置订单请备注半成品物料号）"
-        },
-        {
-          "category": "镜头罩",
-          "series": "全透镜头罩-8灯珠",
-          "name": "MV-IDA-C-N-62-62-T(国内中性)",
-          "code": "190214704",
-          "detail": "ID3013PM-8/ID3016PM透明镜头罩",
-          "remark": "半成品物料：190214704（下配置订单请备注半成品物料号）"
-        },
-        {
-          "category": "扩展配件",
-          "series": "外包装",
-          "name": "包装盒-ID2000/ID3000",
-          "code": "194213827",
-          "detail": "195x145x135 机器视觉 视觉传感器黄包，适配ID800/ID2013EM/ID2000XM/ID3000系列",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "泡棉EPE",
-          "name": "泡棉EPE-ID3000PM",
-          "code": "194406336",
-          "detail": "192X140X80,机器视觉 三进三出IO盒子+相机 EPE，适配ID3000PM系列",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "螺丝包",
-          "name": "螺丝包M4×8",
-          "code": "193100772",
-          "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
-          "remark": ""
-        }
-      ],
-      "optionalAccessories": [
-        {
-          "category": "电源",
-          "series": "电源适配器",
-          "name": "KPL-060M-VI(全球通中性)",
-          "code": "310100901",
-          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线",
-          "remark": "桌面式适配器，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "电源适配器线缆",
-          "name": "交流电源线_国标_弯三插_C13_1.2米",
-          "code": "310100840",
-          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)",
-          "remark": "搭配适配器应用"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源1",
-          "name": "LRS-50-24(全球通中性)",
-          "code": "310100905",
-          "detail": "开关电源,24V2.09A,50W,接线端子",
-          "remark": "开关电源1，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源2",
-          "name": "LRS-150F-24(全球通中性)",
-          "code": "310100904",
-          "detail": "开关电源,24V6.25A,150W,接线端子",
-          "remark": "开关电源2，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源线缆",
-          "name": "交流电源线_国标_弯三插_open_2米",
-          "code": "310100843",
-          "detail": "交流电源线_国标_弯三插_open_2米(中性)",
-          "remark": "搭配开关电源应用"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
-          "code": "310101293",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "网口型号出货配置为5m普通线缆，订单中备注：删除：310101292，添加：310101293"
-        },
-        {
-          "category": "一体线",
-          "series": "7m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
-          "code": "310101873",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
-          "code": "310101294",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
-          "code": "310101310",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
-          "code": "310101296",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m高柔线缆，订单中备注：删除：310101292，添加：310101296"
-        },
-        {
-          "category": "一体线",
-          "series": "5m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
-          "code": "310102637",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为5m高柔线缆，订单中备注：删除：310101292，添加：310102637"
-        },
-        {
-          "category": "一体线",
-          "series": "5m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
-          "code": "310101876",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "若网口型号出货配置为5m超柔线缆，订单中备注：删除：310101292，添加：310101876"
-        },
-        {
-          "category": "一体线",
-          "series": "7m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
-          "code": "310103217",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "7m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
-          "code": "310101874",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
-          "code": "310101875",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
-          "code": "310101307",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
-          "code": "310101869",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为3m弯头普通线缆，订单中备注：删除：310101292，添加：310101869"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通弯头网口母头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45FDB9-ST-5m",
-          "code": "310101877",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为5m弯头普通线缆，订单中备注：删除：310101292，添加：310101877"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
-          "code": "310101878",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
-          "code": "310101870",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m弯头高柔线缆，订单中备注：删除：310101292，添加：310101870"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
-          "code": "310101871",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为3m普通母头，订单中备注：删除：310101292，添加：310101871"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
-          "code": "310101872",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m高柔母头，订单中备注：删除：310101292，添加：310101872"
-        },
-        {
-          "category": "灯板",
-          "series": "红光灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-R(国内中性)",
-          "code": "310100048",
-          "detail": "基础款，8颗粒LED红光，光源波长620nm~630nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为红光，订单中备注：删除：202401178，添加：202401179"
-        },
-        {
-          "category": "灯板",
-          "series": "蓝光灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-B(国内中性)",
-          "code": "310100049",
-          "detail": "基础款，8颗粒LED蓝光，光源波长465nm~475nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为蓝光，订单中备注：删除：202401178，添加：202401232"
-        },
-        {
-          "category": "灯板",
-          "series": "红外灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-IR(国内中性)",
-          "code": "310100485",
-          "detail": "基础款，8颗粒LED红外光，光源波长850nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为红外光，订单中备注：删除：202401178，添加：202401665"
-        },
-        {
-          "category": "灯板",
-          "series": "白光灯板-48灯珠",
-          "name": "MV-IDA-L-48-55-55-WH(国内中性)",
-          "code": "310100050",
-          "detail": "广角款，48颗粒LED白光，色温5700K，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为高功率白光，订单中备注：删除：202401178，添加：202401177"
-        },
-        {
-          "category": "灯板",
-          "series": "红光灯板-48灯珠",
-          "name": "MV-IDA-L-48-55-55-RH(国内中性)",
-          "code": "310100378",
-          "detail": "广角款，48颗粒LED红光，光源波长620nm~630nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为高功率红光，订单中备注：删除：202401178，添加：202401331"
-        },
-        {
-          "category": "灯板",
-          "series": "蓝光灯板-48灯珠",
-          "name": "MV-IDA-L-48-55-55-BH(国内中性)",
-          "code": "310100051",
-          "detail": "广角款，48颗粒LED蓝光，光源波长465nm~475nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为高功率蓝光，订单中备注：删除：202401178，添加：202401249"
-        },
-        {
-          "category": "镜头罩",
-          "series": "全偏镜头罩-8灯珠",
-          "name": "MV-IDA-C-N-62-62-P(国内中性)",
-          "code": "310100046",
-          "detail": "ID3013PM-8/ID3016PM偏振镜头罩",
-          "remark": "若ID3013-8/ID3016出货配置为全偏镜头罩，订单中备注：删除：190214704，添加：202402640"
-        }
-      ]
-    },
-    {
-      "productCategory": "ID3000PM系列",
-      "productSeries": "ID3013PM-8系列V2.0",
-      "productModel": "MV-ID3013PM-15M-WBN-8(国内中性)V2.0",
-      "materialCode": "313201866",
-      "description": "1.3MP，14.8mm镜头，8颗白色LED，全透镜头罩，机械调焦",
-      "remark": "",
-      "standardAccessories": [
-        {
-          "category": "安装板",
-          "series": "安装板",
-          "name": "ID3000PM安装板",
-          "code": "190162231",
-          "detail": "V020-安装支架，适配ID3000PM",
-          "remark": ""
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
-          "code": "310101292",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": ""
-        },
-        {
-          "category": "灯板",
-          "series": "白光灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-W(国内中性)",
-          "code": "310100047",
-          "detail": "基础款，8颗粒LED白光，色温5700K，仅适配ID3000PM-8灯珠款",
-          "remark": "半成品物料：202401178（下配置订单请备注半成品物料号）"
-        },
-        {
-          "category": "镜头罩",
-          "series": "全透镜头罩-8灯珠",
-          "name": "MV-IDA-C-N-62-62-T(国内中性)",
-          "code": "190214704",
-          "detail": "ID3013PM-8/ID3016PM透明镜头罩",
-          "remark": "半成品物料：190214704（下配置订单请备注半成品物料号）"
-        },
-        {
-          "category": "扩展配件",
-          "series": "外包装",
-          "name": "包装盒-ID2000/ID3000",
-          "code": "194213827",
-          "detail": "195x145x135 机器视觉 视觉传感器黄包，适配ID800/ID2013EM/ID2000XM/ID3000系列",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "泡棉EPE",
-          "name": "泡棉EPE-ID3000PM",
-          "code": "194406336",
-          "detail": "192X140X80,机器视觉 三进三出IO盒子+相机 EPE，适配ID3000PM系列",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "螺丝包",
-          "name": "螺丝包M4×8",
-          "code": "193100772",
-          "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
-          "remark": ""
-        }
-      ],
-      "optionalAccessories": [
-        {
-          "category": "电源",
-          "series": "电源适配器",
-          "name": "KPL-060M-VI(全球通中性)",
-          "code": "310100901",
-          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线",
-          "remark": "桌面式适配器，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "电源适配器线缆",
-          "name": "交流电源线_国标_弯三插_C13_1.2米",
-          "code": "310100840",
-          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)",
-          "remark": "搭配适配器应用"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源1",
-          "name": "LRS-50-24(全球通中性)",
-          "code": "310100905",
-          "detail": "开关电源,24V2.09A,50W,接线端子",
-          "remark": "开关电源1，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源2",
-          "name": "LRS-150F-24(全球通中性)",
-          "code": "310100904",
-          "detail": "开关电源,24V6.25A,150W,接线端子",
-          "remark": "开关电源2，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源线缆",
-          "name": "交流电源线_国标_弯三插_open_2米",
-          "code": "310100843",
-          "detail": "交流电源线_国标_弯三插_open_2米(中性)",
-          "remark": "搭配开关电源应用"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
-          "code": "310101293",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "网口型号出货配置为5m普通线缆，订单中备注：删除：310101292，添加：310101293"
-        },
-        {
-          "category": "一体线",
-          "series": "7m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
-          "code": "310101873",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
-          "code": "310101294",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
-          "code": "310101310",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
-          "code": "310101296",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m高柔线缆，订单中备注：删除：310101292，添加：310101296"
-        },
-        {
-          "category": "一体线",
-          "series": "5m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
-          "code": "310102637",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为5m高柔线缆，订单中备注：删除：310101292，添加：310102637"
-        },
-        {
-          "category": "一体线",
-          "series": "5m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
-          "code": "310101876",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "若网口型号出货配置为5m超柔线缆，订单中备注：删除：310101292，添加：310101876"
-        },
-        {
-          "category": "一体线",
-          "series": "7m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
-          "code": "310103217",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "7m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
-          "code": "310101874",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
-          "code": "310101875",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
-          "code": "310101307",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
-          "code": "310101869",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为3m弯头普通线缆，订单中备注：删除：310101292，添加：310101869"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通弯头网口母头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45FDB9-ST-5m",
-          "code": "310101877",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为5m弯头普通线缆，订单中备注：删除：310101292，添加：310101877"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
-          "code": "310101878",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
-          "code": "310101870",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m弯头高柔线缆，订单中备注：删除：310101292，添加：310101870"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
-          "code": "310101871",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为3m普通母头，订单中备注：删除：310101292，添加：310101871"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
-          "code": "310101872",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m高柔母头，订单中备注：删除：310101292，添加：310101872"
-        },
-        {
-          "category": "灯板",
-          "series": "红光灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-R(国内中性)",
-          "code": "310100048",
-          "detail": "基础款，8颗粒LED红光，光源波长620nm~630nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为红光，订单中备注：删除：202401178，添加：202401179"
-        },
-        {
-          "category": "灯板",
-          "series": "蓝光灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-B(国内中性)",
-          "code": "310100049",
-          "detail": "基础款，8颗粒LED蓝光，光源波长465nm~475nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为蓝光，订单中备注：删除：202401178，添加：202401232"
-        },
-        {
-          "category": "灯板",
-          "series": "红外灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-IR(国内中性)",
-          "code": "310100485",
-          "detail": "基础款，8颗粒LED红外光，光源波长850nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为红外光，订单中备注：删除：202401178，添加：202401665"
-        },
-        {
-          "category": "灯板",
-          "series": "白光灯板-48灯珠",
-          "name": "MV-IDA-L-48-55-55-WH(国内中性)",
-          "code": "310100050",
-          "detail": "广角款，48颗粒LED白光，色温5700K，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为高功率白光，订单中备注：删除：202401178，添加：202401177"
-        },
-        {
-          "category": "灯板",
-          "series": "红光灯板-48灯珠",
-          "name": "MV-IDA-L-48-55-55-RH(国内中性)",
-          "code": "310100378",
-          "detail": "广角款，48颗粒LED红光，光源波长620nm~630nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为高功率红光，订单中备注：删除：202401178，添加：202401331"
-        },
-        {
-          "category": "灯板",
-          "series": "蓝光灯板-48灯珠",
-          "name": "MV-IDA-L-48-55-55-BH(国内中性)",
-          "code": "310100051",
-          "detail": "广角款，48颗粒LED蓝光，光源波长465nm~475nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为高功率蓝光，订单中备注：删除：202401178，添加：202401249"
-        },
-        {
-          "category": "镜头罩",
-          "series": "全偏镜头罩-8灯珠",
-          "name": "MV-IDA-C-N-62-62-P(国内中性)",
-          "code": "310100046",
-          "detail": "ID3013PM-8/ID3016PM偏振镜头罩",
-          "remark": "若ID3013-8/ID3016出货配置为全偏镜头罩，订单中备注：删除：190214704，添加：202402640"
         }
       ]
     },
@@ -65401,2046 +66161,6 @@ window.PEIDAN_DATA = {
           "code": "310100046",
           "detail": "ID3013PM-8/ID3016PM偏振镜头罩",
           "remark": "若ID3013-8/ID3016出货配置为全偏镜头罩，订单中备注：删除：190214704，添加：202402640"
-        }
-      ]
-    },
-    {
-      "productCategory": "ID3000PM系列",
-      "productSeries": "ID3013PM系列V2.0",
-      "productModel": "MV-ID3013PM-06M-WBN(国内标配)V2.0",
-      "materialCode": "313200851",
-      "description": "1.3MP，6mm镜头，14颗白色LED，半偏镜头罩，机械调焦",
-      "remark": "",
-      "standardAccessories": [
-        {
-          "category": "安装板",
-          "series": "安装板",
-          "name": "ID3000PM安装板",
-          "code": "190162231",
-          "detail": "V020-安装支架，适配ID3000PM",
-          "remark": ""
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
-          "code": "310101292",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": ""
-        },
-        {
-          "category": "灯板",
-          "series": "白光灯板-14灯珠",
-          "name": "MV-IDA-L-14-55-55-W(国内中性)",
-          "code": "310100789",
-          "detail": "14颗粒LED白光，色温5700K，仅适配14灯珠款",
-          "remark": "半成品物料：202403882（下配置订单请备注半成品物料号）"
-        },
-        {
-          "category": "镜头罩",
-          "series": "半偏镜头罩-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-HP(国内中性)",
-          "code": "310100787",
-          "detail": "ID3013PM/ID3050PM/ID5050M半偏镜头罩",
-          "remark": "半成品物料：202402547（下配置订单请备注半成品物料号）"
-        },
-        {
-          "category": "扩展配件",
-          "series": "外包装",
-          "name": "包装盒-ID2000/ID3000",
-          "code": "194213827",
-          "detail": "195x145x135 机器视觉 视觉传感器黄包，适配ID800/ID2013EM/ID2000XM/ID3000系列",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "泡棉EPE",
-          "name": "泡棉EPE-ID3000PM",
-          "code": "194406336",
-          "detail": "192X140X80,机器视觉 三进三出IO盒子+相机 EPE，适配ID3000PM系列",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "螺丝包",
-          "name": "螺丝包M4×8",
-          "code": "193100772",
-          "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
-          "remark": ""
-        }
-      ],
-      "optionalAccessories": [
-        {
-          "category": "电源",
-          "series": "电源适配器",
-          "name": "KPL-060M-VI(全球通中性)",
-          "code": "310100901",
-          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线",
-          "remark": "桌面式适配器，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "电源适配器线缆",
-          "name": "交流电源线_国标_弯三插_C13_1.2米",
-          "code": "310100840",
-          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)",
-          "remark": "搭配适配器应用"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源1",
-          "name": "LRS-50-24(全球通中性)",
-          "code": "310100905",
-          "detail": "开关电源,24V2.09A,50W,接线端子",
-          "remark": "开关电源1，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源2",
-          "name": "LRS-150F-24(全球通中性)",
-          "code": "310100904",
-          "detail": "开关电源,24V6.25A,150W,接线端子",
-          "remark": "开关电源2，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源线缆",
-          "name": "交流电源线_国标_弯三插_open_2米",
-          "code": "310100843",
-          "detail": "交流电源线_国标_弯三插_open_2米(中性)",
-          "remark": "搭配开关电源应用"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
-          "code": "310101293",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "网口型号出货配置为5m普通线缆，订单中备注：删除：310101292，添加：310101293"
-        },
-        {
-          "category": "一体线",
-          "series": "7m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
-          "code": "310101873",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
-          "code": "310101294",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
-          "code": "310101310",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
-          "code": "310101296",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m高柔线缆，订单中备注：删除：310101292，添加：310101296"
-        },
-        {
-          "category": "一体线",
-          "series": "5m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
-          "code": "310102637",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为5m高柔线缆，订单中备注：删除：310101292，添加：310102637"
-        },
-        {
-          "category": "一体线",
-          "series": "5m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
-          "code": "310101876",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "若网口型号出货配置为5m超柔线缆，订单中备注：删除：310101292，添加：310101876"
-        },
-        {
-          "category": "一体线",
-          "series": "7m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
-          "code": "310103217",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "7m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
-          "code": "310101874",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
-          "code": "310101875",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
-          "code": "310101307",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
-          "code": "310101869",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为3m弯头普通线缆，订单中备注：删除：310101292，添加：310101869"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通弯头网口母头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45FDB9-ST-5m",
-          "code": "310101877",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为5m弯头普通线缆，订单中备注：删除：310101292，添加：310101877"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
-          "code": "310101878",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
-          "code": "310101870",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m弯头高柔线缆，订单中备注：删除：310101292，添加：310101870"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
-          "code": "310101871",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为3m普通母头，订单中备注：删除：310101292，添加：310101871"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
-          "code": "310101872",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m高柔母头，订单中备注：删除：310101292，添加：310101872"
-        },
-        {
-          "category": "灯板",
-          "series": "红光灯板-14灯珠",
-          "name": "MV-IDA-L-14-55-55-R(国内中性)",
-          "code": "310100790",
-          "detail": "14颗粒LED红光，光源波长620nm~630nm，仅适配14灯珠款",
-          "remark": "若出货配置为红光，订单中备注：删除：202403882，添加：202403880"
-        },
-        {
-          "category": "灯板",
-          "series": "蓝光灯板-14灯珠",
-          "name": "MV-IDA-L-14-55-55-B(国内中性)",
-          "code": "310100791",
-          "detail": "14颗粒LED蓝光，光源波长465nm~475nm，仅适配14灯珠款",
-          "remark": "若出货配置为蓝光，订单中备注：删除：202403882，添加：202403881"
-        },
-        {
-          "category": "灯板",
-          "series": "红蓝灯板-14灯珠",
-          "name": "MV-IDA-L-14-55-55-RB(国内中性)",
-          "code": "202408084",
-          "detail": "14颗粒LED红蓝双色，上面红色，光源波长620nm~630nm，下面蓝色，光源波长465nm~475nm，建议镜头罩配置成全透或者全偏，仅适配14灯珠款",
-          "remark": "若出货配置为红蓝，订单中备注：删除：202403882，添加：202408084"
-        },
-        {
-          "category": "灯板",
-          "series": "红外灯板-14灯珠",
-          "name": "MV-IDA-L-14-55-55-IR(国内中性)",
-          "code": "310100792",
-          "detail": "14颗粒LED红外光，光源波长850nm，仅适配14灯珠款",
-          "remark": "若出货配置为红外光，订单中备注：删除：202403882，添加：202402649，更换红外灯板；除：202402547，添加：202402542，更换全透镜头罩"
-        },
-        {
-          "category": "灯板",
-          "series": "紫外灯板-14灯珠",
-          "name": "MV-IDA-L-14-55-55-UV(国内中性)",
-          "code": "310102554",
-          "detail": "14颗粒LED紫外光，光源波长360nm~370nm，紫外光会损伤皮肤、眼睛等，请避免长时间接触！！仅适配14灯珠款",
-          "remark": "若出货配置为紫外光，订单中备注：删除数量2：191300506,；(删除透镜)；除：202403882，添加：202407522；(更换紫外灯板)；除：202402547，添加：202402542；(更换全透镜头罩)；备注上线需要ME联系项目经理修改维护对应的高清ID"
-        },
-        {
-          "category": "镜头罩",
-          "series": "全偏镜头罩-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-P(国内中性)",
-          "code": "310100785",
-          "detail": "ID3013PM/ID3050PM/ID5050M全偏镜头罩",
-          "remark": "若出货配置为全偏镜头罩，订单中备注：删除：202402547，添加：202402673"
-        },
-        {
-          "category": "镜头罩",
-          "series": "全透镜头罩-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-T(国内中性)",
-          "code": "310100788",
-          "detail": "ID3013PM/ID3050PM/ID5050M全透镜头罩",
-          "remark": "若出货配置为透明镜头罩，订单中备注：删除：202402547，添加：202402542"
-        },
-        {
-          "category": "镜头罩",
-          "series": "扩散镜头罩-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-K(国内中性)",
-          "code": "310101825",
-          "detail": "ID3013PM/ID3050PM/ID5050M扩散镜头罩",
-          "remark": "若出货配置为扩散镜头罩，订单中备注：删除：202402547，添加：202404885"
-        },
-        {
-          "category": "镜头罩",
-          "series": "长波通镜头罩-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-IR775(国内中性)",
-          "code": "310102605",
-          "detail": "ID3013PM/ID3050PM/ID5050M长波通镜头罩，775nm长波通，用于屏蔽工厂内部环境光干扰，通常搭配红外灯板使用",
-          "remark": "若出货配置为红外长波镜头罩，订单中备注：删除：202402547，添加：202407776"
-        },
-        {
-          "category": "镜头罩",
-          "series": "紫外T565镜头罩-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-T565nm(国内中性)",
-          "code": "310103225",
-          "detail": "ID3013PM/ID3050PM/ID5050M紫外T565镜头罩，过滤565nm以下波段光源，通常搭配紫外灯板使用，用于提升隐形码的对比度",
-          "remark": "若出货配置为紫外T565镜头罩，订单中备注：删除：202402547，添加：202409870"
-        },
-        {
-          "category": "镜头罩",
-          "series": "极小码配件1-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-M1",
-          "code": "310101674",
-          "detail": "ID3013PM/ID3050PM/ID5050M极小码配件1，对焦距离34~47mm，读码精度可达0.012mm，建议采用倾斜8°-15°的架设方式",
-          "remark": "若出货配置为极小码配件一，订单中备注：删除：202402547，添加：202404355"
-        },
-        {
-          "category": "镜头罩",
-          "series": "极小码配件2-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-M2",
-          "code": "310101675",
-          "detail": "ID3013PM/ID3050PM/ID5050M极小码配件2，对焦距离42~76mm，读码精度可达0.016mm，建议采用倾斜8°-15°的架设方式",
-          "remark": "若出货配置为极小码配件二，订单中备注：删除：202402547，添加：202404356"
-        }
-      ]
-    },
-    {
-      "productCategory": "ID3000PM系列",
-      "productSeries": "ID3013PM系列V2.0",
-      "productModel": "MV-ID3013PM-06M-WBN(国内中性)V2.0",
-      "materialCode": "313200850",
-      "description": "1.3MP，6mm镜头，14颗白色LED，半偏镜头罩，机械调焦",
-      "remark": "",
-      "standardAccessories": [
-        {
-          "category": "安装板",
-          "series": "安装板",
-          "name": "ID3000PM安装板",
-          "code": "190162231",
-          "detail": "V020-安装支架，适配ID3000PM",
-          "remark": ""
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
-          "code": "310101292",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": ""
-        },
-        {
-          "category": "灯板",
-          "series": "白光灯板-14灯珠",
-          "name": "MV-IDA-L-14-55-55-W(国内中性)",
-          "code": "310100789",
-          "detail": "14颗粒LED白光，色温5700K，仅适配14灯珠款",
-          "remark": "半成品物料：202403882（下配置订单请备注半成品物料号）"
-        },
-        {
-          "category": "镜头罩",
-          "series": "半偏镜头罩-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-HP(国内中性)",
-          "code": "310100787",
-          "detail": "ID3013PM/ID3050PM/ID5050M半偏镜头罩",
-          "remark": "半成品物料：202402547（下配置订单请备注半成品物料号）"
-        },
-        {
-          "category": "扩展配件",
-          "series": "外包装",
-          "name": "包装盒-ID2000/ID3000",
-          "code": "194213827",
-          "detail": "195x145x135 机器视觉 视觉传感器黄包，适配ID800/ID2013EM/ID2000XM/ID3000系列",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "泡棉EPE",
-          "name": "泡棉EPE-ID3000PM",
-          "code": "194406336",
-          "detail": "192X140X80,机器视觉 三进三出IO盒子+相机 EPE，适配ID3000PM系列",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "螺丝包",
-          "name": "螺丝包M4×8",
-          "code": "193100772",
-          "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
-          "remark": ""
-        }
-      ],
-      "optionalAccessories": [
-        {
-          "category": "电源",
-          "series": "电源适配器",
-          "name": "KPL-060M-VI(全球通中性)",
-          "code": "310100901",
-          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线",
-          "remark": "桌面式适配器，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "电源适配器线缆",
-          "name": "交流电源线_国标_弯三插_C13_1.2米",
-          "code": "310100840",
-          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)",
-          "remark": "搭配适配器应用"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源1",
-          "name": "LRS-50-24(全球通中性)",
-          "code": "310100905",
-          "detail": "开关电源,24V2.09A,50W,接线端子",
-          "remark": "开关电源1，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源2",
-          "name": "LRS-150F-24(全球通中性)",
-          "code": "310100904",
-          "detail": "开关电源,24V6.25A,150W,接线端子",
-          "remark": "开关电源2，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源线缆",
-          "name": "交流电源线_国标_弯三插_open_2米",
-          "code": "310100843",
-          "detail": "交流电源线_国标_弯三插_open_2米(中性)",
-          "remark": "搭配开关电源应用"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
-          "code": "310101293",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "网口型号出货配置为5m普通线缆，订单中备注：删除：310101292，添加：310101293"
-        },
-        {
-          "category": "一体线",
-          "series": "7m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
-          "code": "310101873",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
-          "code": "310101294",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
-          "code": "310101310",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
-          "code": "310101296",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m高柔线缆，订单中备注：删除：310101292，添加：310101296"
-        },
-        {
-          "category": "一体线",
-          "series": "5m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
-          "code": "310102637",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为5m高柔线缆，订单中备注：删除：310101292，添加：310102637"
-        },
-        {
-          "category": "一体线",
-          "series": "5m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
-          "code": "310101876",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "若网口型号出货配置为5m超柔线缆，订单中备注：删除：310101292，添加：310101876"
-        },
-        {
-          "category": "一体线",
-          "series": "7m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
-          "code": "310103217",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "7m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
-          "code": "310101874",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
-          "code": "310101875",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
-          "code": "310101307",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
-          "code": "310101869",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为3m弯头普通线缆，订单中备注：删除：310101292，添加：310101869"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通弯头网口母头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45FDB9-ST-5m",
-          "code": "310101877",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为5m弯头普通线缆，订单中备注：删除：310101292，添加：310101877"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
-          "code": "310101878",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
-          "code": "310101870",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m弯头高柔线缆，订单中备注：删除：310101292，添加：310101870"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
-          "code": "310101871",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为3m普通母头，订单中备注：删除：310101292，添加：310101871"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
-          "code": "310101872",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m高柔母头，订单中备注：删除：310101292，添加：310101872"
-        },
-        {
-          "category": "灯板",
-          "series": "红光灯板-14灯珠",
-          "name": "MV-IDA-L-14-55-55-R(国内中性)",
-          "code": "310100790",
-          "detail": "14颗粒LED红光，光源波长620nm~630nm，仅适配14灯珠款",
-          "remark": "若出货配置为红光，订单中备注：删除：202403882，添加：202403880"
-        },
-        {
-          "category": "灯板",
-          "series": "蓝光灯板-14灯珠",
-          "name": "MV-IDA-L-14-55-55-B(国内中性)",
-          "code": "310100791",
-          "detail": "14颗粒LED蓝光，光源波长465nm~475nm，仅适配14灯珠款",
-          "remark": "若出货配置为蓝光，订单中备注：删除：202403882，添加：202403881"
-        },
-        {
-          "category": "灯板",
-          "series": "红蓝灯板-14灯珠",
-          "name": "MV-IDA-L-14-55-55-RB(国内中性)",
-          "code": "202408084",
-          "detail": "14颗粒LED红蓝双色，上面红色，光源波长620nm~630nm，下面蓝色，光源波长465nm~475nm，建议镜头罩配置成全透或者全偏，仅适配14灯珠款",
-          "remark": "若出货配置为红蓝，订单中备注：删除：202403882，添加：202408084"
-        },
-        {
-          "category": "灯板",
-          "series": "红外灯板-14灯珠",
-          "name": "MV-IDA-L-14-55-55-IR(国内中性)",
-          "code": "310100792",
-          "detail": "14颗粒LED红外光，光源波长850nm，仅适配14灯珠款",
-          "remark": "若出货配置为红外光，订单中备注：删除：202403882，添加：202402649，更换红外灯板；除：202402547，添加：202402542，更换全透镜头罩"
-        },
-        {
-          "category": "灯板",
-          "series": "紫外灯板-14灯珠",
-          "name": "MV-IDA-L-14-55-55-UV(国内中性)",
-          "code": "310102554",
-          "detail": "14颗粒LED紫外光，光源波长360nm~370nm，紫外光会损伤皮肤、眼睛等，请避免长时间接触！！仅适配14灯珠款",
-          "remark": "若出货配置为紫外光，订单中备注：删除数量2：191300506,；(删除透镜)；除：202403882，添加：202407522；(更换紫外灯板)；除：202402547，添加：202402542；(更换全透镜头罩)；备注上线需要ME联系项目经理修改维护对应的高清ID"
-        },
-        {
-          "category": "镜头罩",
-          "series": "全偏镜头罩-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-P(国内中性)",
-          "code": "310100785",
-          "detail": "ID3013PM/ID3050PM/ID5050M全偏镜头罩",
-          "remark": "若出货配置为全偏镜头罩，订单中备注：删除：202402547，添加：202402673"
-        },
-        {
-          "category": "镜头罩",
-          "series": "全透镜头罩-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-T(国内中性)",
-          "code": "310100788",
-          "detail": "ID3013PM/ID3050PM/ID5050M全透镜头罩",
-          "remark": "若出货配置为透明镜头罩，订单中备注：删除：202402547，添加：202402542"
-        },
-        {
-          "category": "镜头罩",
-          "series": "扩散镜头罩-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-K(国内中性)",
-          "code": "310101825",
-          "detail": "ID3013PM/ID3050PM/ID5050M扩散镜头罩",
-          "remark": "若出货配置为扩散镜头罩，订单中备注：删除：202402547，添加：202404885"
-        },
-        {
-          "category": "镜头罩",
-          "series": "长波通镜头罩-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-IR775(国内中性)",
-          "code": "310102605",
-          "detail": "ID3013PM/ID3050PM/ID5050M长波通镜头罩，775nm长波通，用于屏蔽工厂内部环境光干扰，通常搭配红外灯板使用",
-          "remark": "若出货配置为红外长波镜头罩，订单中备注：删除：202402547，添加：202407776"
-        },
-        {
-          "category": "镜头罩",
-          "series": "紫外T565镜头罩-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-T565nm(国内中性)",
-          "code": "310103225",
-          "detail": "ID3013PM/ID3050PM/ID5050M紫外T565镜头罩，过滤565nm以下波段光源，通常搭配紫外灯板使用，用于提升隐形码的对比度",
-          "remark": "若出货配置为紫外T565镜头罩，订单中备注：删除：202402547，添加：202409870"
-        },
-        {
-          "category": "镜头罩",
-          "series": "极小码配件1-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-M1",
-          "code": "310101674",
-          "detail": "ID3013PM/ID3050PM/ID5050M极小码配件1，对焦距离34~47mm，读码精度可达0.012mm，建议采用倾斜8°-15°的架设方式",
-          "remark": "若出货配置为极小码配件一，订单中备注：删除：202402547，添加：202404355"
-        },
-        {
-          "category": "镜头罩",
-          "series": "极小码配件2-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-M2",
-          "code": "310101675",
-          "detail": "ID3013PM/ID3050PM/ID5050M极小码配件2，对焦距离42~76mm，读码精度可达0.016mm，建议采用倾斜8°-15°的架设方式",
-          "remark": "若出货配置为极小码配件二，订单中备注：删除：202402547，添加：202404356"
-        }
-      ]
-    },
-    {
-      "productCategory": "ID3000PM系列",
-      "productSeries": "ID3013PM系列V2.0",
-      "productModel": "MV-ID3013PM-12M-WBN(国内标配)V2.0",
-      "materialCode": "313200854",
-      "description": "1.3MP，12mm镜头，14颗白色LED，半偏镜头罩，机械调焦",
-      "remark": "",
-      "standardAccessories": [
-        {
-          "category": "安装板",
-          "series": "安装板",
-          "name": "ID3000PM安装板",
-          "code": "190162231",
-          "detail": "V020-安装支架，适配ID3000PM",
-          "remark": ""
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
-          "code": "310101292",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": ""
-        },
-        {
-          "category": "灯板",
-          "series": "白光灯板-14灯珠",
-          "name": "MV-IDA-L-14-55-55-W(国内中性)",
-          "code": "310100789",
-          "detail": "14颗粒LED白光，色温5700K，仅适配14灯珠款",
-          "remark": "半成品物料：202403882（下配置订单请备注半成品物料号）"
-        },
-        {
-          "category": "镜头罩",
-          "series": "半偏镜头罩-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-HP(国内中性)",
-          "code": "310100787",
-          "detail": "ID3013PM/ID3050PM/ID5050M半偏镜头罩",
-          "remark": "半成品物料：202402547（下配置订单请备注半成品物料号）"
-        },
-        {
-          "category": "扩展配件",
-          "series": "外包装",
-          "name": "包装盒-ID2000/ID3000",
-          "code": "194213827",
-          "detail": "195x145x135 机器视觉 视觉传感器黄包，适配ID800/ID2013EM/ID2000XM/ID3000系列",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "泡棉EPE",
-          "name": "泡棉EPE-ID3000PM",
-          "code": "194406336",
-          "detail": "192X140X80,机器视觉 三进三出IO盒子+相机 EPE，适配ID3000PM系列",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "螺丝包",
-          "name": "螺丝包M4×8",
-          "code": "193100772",
-          "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
-          "remark": ""
-        }
-      ],
-      "optionalAccessories": [
-        {
-          "category": "电源",
-          "series": "电源适配器",
-          "name": "KPL-060M-VI(全球通中性)",
-          "code": "310100901",
-          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线",
-          "remark": "桌面式适配器，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "电源适配器线缆",
-          "name": "交流电源线_国标_弯三插_C13_1.2米",
-          "code": "310100840",
-          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)",
-          "remark": "搭配适配器应用"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源1",
-          "name": "LRS-50-24(全球通中性)",
-          "code": "310100905",
-          "detail": "开关电源,24V2.09A,50W,接线端子",
-          "remark": "开关电源1，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源2",
-          "name": "LRS-150F-24(全球通中性)",
-          "code": "310100904",
-          "detail": "开关电源,24V6.25A,150W,接线端子",
-          "remark": "开关电源2，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源线缆",
-          "name": "交流电源线_国标_弯三插_open_2米",
-          "code": "310100843",
-          "detail": "交流电源线_国标_弯三插_open_2米(中性)",
-          "remark": "搭配开关电源应用"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
-          "code": "310101293",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "网口型号出货配置为5m普通线缆，订单中备注：删除：310101292，添加：310101293"
-        },
-        {
-          "category": "一体线",
-          "series": "7m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
-          "code": "310101873",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
-          "code": "310101294",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
-          "code": "310101310",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
-          "code": "310101296",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m高柔线缆，订单中备注：删除：310101292，添加：310101296"
-        },
-        {
-          "category": "一体线",
-          "series": "5m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
-          "code": "310102637",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为5m高柔线缆，订单中备注：删除：310101292，添加：310102637"
-        },
-        {
-          "category": "一体线",
-          "series": "5m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
-          "code": "310101876",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "若网口型号出货配置为5m超柔线缆，订单中备注：删除：310101292，添加：310101876"
-        },
-        {
-          "category": "一体线",
-          "series": "7m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
-          "code": "310103217",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "7m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
-          "code": "310101874",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
-          "code": "310101875",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
-          "code": "310101307",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
-          "code": "310101869",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为3m弯头普通线缆，订单中备注：删除：310101292，添加：310101869"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通弯头网口母头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45FDB9-ST-5m",
-          "code": "310101877",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为5m弯头普通线缆，订单中备注：删除：310101292，添加：310101877"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
-          "code": "310101878",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
-          "code": "310101870",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m弯头高柔线缆，订单中备注：删除：310101292，添加：310101870"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
-          "code": "310101871",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为3m普通母头，订单中备注：删除：310101292，添加：310101871"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
-          "code": "310101872",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m高柔母头，订单中备注：删除：310101292，添加：310101872"
-        },
-        {
-          "category": "灯板",
-          "series": "红光灯板-14灯珠",
-          "name": "MV-IDA-L-14-55-55-R(国内中性)",
-          "code": "310100790",
-          "detail": "14颗粒LED红光，光源波长620nm~630nm，仅适配14灯珠款",
-          "remark": "若出货配置为红光，订单中备注：删除：202403882，添加：202403880"
-        },
-        {
-          "category": "灯板",
-          "series": "蓝光灯板-14灯珠",
-          "name": "MV-IDA-L-14-55-55-B(国内中性)",
-          "code": "310100791",
-          "detail": "14颗粒LED蓝光，光源波长465nm~475nm，仅适配14灯珠款",
-          "remark": "若出货配置为蓝光，订单中备注：删除：202403882，添加：202403881"
-        },
-        {
-          "category": "灯板",
-          "series": "红蓝灯板-14灯珠",
-          "name": "MV-IDA-L-14-55-55-RB(国内中性)",
-          "code": "202408084",
-          "detail": "14颗粒LED红蓝双色，上面红色，光源波长620nm~630nm，下面蓝色，光源波长465nm~475nm，建议镜头罩配置成全透或者全偏，仅适配14灯珠款",
-          "remark": "若出货配置为红蓝，订单中备注：删除：202403882，添加：202408084"
-        },
-        {
-          "category": "灯板",
-          "series": "红外灯板-14灯珠",
-          "name": "MV-IDA-L-14-55-55-IR(国内中性)",
-          "code": "310100792",
-          "detail": "14颗粒LED红外光，光源波长850nm，仅适配14灯珠款",
-          "remark": "若出货配置为红外光，订单中备注：删除：202403882，添加：202402649，更换红外灯板；除：202402547，添加：202402542，更换全透镜头罩"
-        },
-        {
-          "category": "灯板",
-          "series": "紫外灯板-14灯珠",
-          "name": "MV-IDA-L-14-55-55-UV(国内中性)",
-          "code": "310102554",
-          "detail": "14颗粒LED紫外光，光源波长360nm~370nm，紫外光会损伤皮肤、眼睛等，请避免长时间接触！！仅适配14灯珠款",
-          "remark": "若出货配置为紫外光，订单中备注：删除数量2：191300506,；(删除透镜)；除：202403882，添加：202407522；(更换紫外灯板)；除：202402547，添加：202402542；(更换全透镜头罩)；备注上线需要ME联系项目经理修改维护对应的高清ID"
-        },
-        {
-          "category": "镜头罩",
-          "series": "全偏镜头罩-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-P(国内中性)",
-          "code": "310100785",
-          "detail": "ID3013PM/ID3050PM/ID5050M全偏镜头罩",
-          "remark": "若出货配置为全偏镜头罩，订单中备注：删除：202402547，添加：202402673"
-        },
-        {
-          "category": "镜头罩",
-          "series": "全透镜头罩-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-T(国内中性)",
-          "code": "310100788",
-          "detail": "ID3013PM/ID3050PM/ID5050M全透镜头罩",
-          "remark": "若出货配置为透明镜头罩，订单中备注：删除：202402547，添加：202402542"
-        },
-        {
-          "category": "镜头罩",
-          "series": "扩散镜头罩-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-K(国内中性)",
-          "code": "310101825",
-          "detail": "ID3013PM/ID3050PM/ID5050M扩散镜头罩",
-          "remark": "若出货配置为扩散镜头罩，订单中备注：删除：202402547，添加：202404885"
-        },
-        {
-          "category": "镜头罩",
-          "series": "长波通镜头罩-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-IR775(国内中性)",
-          "code": "310102605",
-          "detail": "ID3013PM/ID3050PM/ID5050M长波通镜头罩，775nm长波通，用于屏蔽工厂内部环境光干扰，通常搭配红外灯板使用",
-          "remark": "若出货配置为红外长波镜头罩，订单中备注：删除：202402547，添加：202407776"
-        },
-        {
-          "category": "镜头罩",
-          "series": "紫外T565镜头罩-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-T565nm(国内中性)",
-          "code": "310103225",
-          "detail": "ID3013PM/ID3050PM/ID5050M紫外T565镜头罩，过滤565nm以下波段光源，通常搭配紫外灯板使用，用于提升隐形码的对比度",
-          "remark": "若出货配置为紫外T565镜头罩，订单中备注：删除：202402547，添加：202409870"
-        },
-        {
-          "category": "镜头罩",
-          "series": "极小码配件1-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-M1",
-          "code": "310101674",
-          "detail": "ID3013PM/ID3050PM/ID5050M极小码配件1，对焦距离34~47mm，读码精度可达0.012mm，建议采用倾斜8°-15°的架设方式",
-          "remark": "若出货配置为极小码配件一，订单中备注：删除：202402547，添加：202404355"
-        },
-        {
-          "category": "镜头罩",
-          "series": "极小码配件2-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-M2",
-          "code": "310101675",
-          "detail": "ID3013PM/ID3050PM/ID5050M极小码配件2，对焦距离42~76mm，读码精度可达0.016mm，建议采用倾斜8°-15°的架设方式",
-          "remark": "若出货配置为极小码配件二，订单中备注：删除：202402547，添加：202404356"
-        }
-      ]
-    },
-    {
-      "productCategory": "ID3000PM系列",
-      "productSeries": "ID3013PM系列V2.0",
-      "productModel": "MV-ID3013PM-12M-WBN(国内中性)V2.0",
-      "materialCode": "313200853",
-      "description": "1.3MP，12mm镜头，14颗白色LED，半偏镜头罩，机械调焦",
-      "remark": "",
-      "standardAccessories": [
-        {
-          "category": "安装板",
-          "series": "安装板",
-          "name": "ID3000PM安装板",
-          "code": "190162231",
-          "detail": "V020-安装支架，适配ID3000PM",
-          "remark": ""
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
-          "code": "310101292",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": ""
-        },
-        {
-          "category": "灯板",
-          "series": "白光灯板-14灯珠",
-          "name": "MV-IDA-L-14-55-55-W(国内中性)",
-          "code": "310100789",
-          "detail": "14颗粒LED白光，色温5700K，仅适配14灯珠款",
-          "remark": "半成品物料：202403882（下配置订单请备注半成品物料号）"
-        },
-        {
-          "category": "镜头罩",
-          "series": "半偏镜头罩-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-HP(国内中性)",
-          "code": "310100787",
-          "detail": "ID3013PM/ID3050PM/ID5050M半偏镜头罩",
-          "remark": "半成品物料：202402547（下配置订单请备注半成品物料号）"
-        },
-        {
-          "category": "扩展配件",
-          "series": "外包装",
-          "name": "包装盒-ID2000/ID3000",
-          "code": "194213827",
-          "detail": "195x145x135 机器视觉 视觉传感器黄包，适配ID800/ID2013EM/ID2000XM/ID3000系列",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "泡棉EPE",
-          "name": "泡棉EPE-ID3000PM",
-          "code": "194406336",
-          "detail": "192X140X80,机器视觉 三进三出IO盒子+相机 EPE，适配ID3000PM系列",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "螺丝包",
-          "name": "螺丝包M4×8",
-          "code": "193100772",
-          "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
-          "remark": ""
-        }
-      ],
-      "optionalAccessories": [
-        {
-          "category": "电源",
-          "series": "电源适配器",
-          "name": "KPL-060M-VI(全球通中性)",
-          "code": "310100901",
-          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线",
-          "remark": "桌面式适配器，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "电源适配器线缆",
-          "name": "交流电源线_国标_弯三插_C13_1.2米",
-          "code": "310100840",
-          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)",
-          "remark": "搭配适配器应用"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源1",
-          "name": "LRS-50-24(全球通中性)",
-          "code": "310100905",
-          "detail": "开关电源,24V2.09A,50W,接线端子",
-          "remark": "开关电源1，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源2",
-          "name": "LRS-150F-24(全球通中性)",
-          "code": "310100904",
-          "detail": "开关电源,24V6.25A,150W,接线端子",
-          "remark": "开关电源2，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源线缆",
-          "name": "交流电源线_国标_弯三插_open_2米",
-          "code": "310100843",
-          "detail": "交流电源线_国标_弯三插_open_2米(中性)",
-          "remark": "搭配开关电源应用"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
-          "code": "310101293",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "网口型号出货配置为5m普通线缆，订单中备注：删除：310101292，添加：310101293"
-        },
-        {
-          "category": "一体线",
-          "series": "7m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
-          "code": "310101873",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
-          "code": "310101294",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
-          "code": "310101310",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
-          "code": "310101296",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m高柔线缆，订单中备注：删除：310101292，添加：310101296"
-        },
-        {
-          "category": "一体线",
-          "series": "5m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
-          "code": "310102637",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为5m高柔线缆，订单中备注：删除：310101292，添加：310102637"
-        },
-        {
-          "category": "一体线",
-          "series": "5m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
-          "code": "310101876",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "若网口型号出货配置为5m超柔线缆，订单中备注：删除：310101292，添加：310101876"
-        },
-        {
-          "category": "一体线",
-          "series": "7m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
-          "code": "310103217",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "7m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
-          "code": "310101874",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
-          "code": "310101875",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
-          "code": "310101307",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
-          "code": "310101869",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为3m弯头普通线缆，订单中备注：删除：310101292，添加：310101869"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通弯头网口母头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45FDB9-ST-5m",
-          "code": "310101877",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为5m弯头普通线缆，订单中备注：删除：310101292，添加：310101877"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
-          "code": "310101878",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
-          "code": "310101870",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m弯头高柔线缆，订单中备注：删除：310101292，添加：310101870"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
-          "code": "310101871",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为3m普通母头，订单中备注：删除：310101292，添加：310101871"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
-          "code": "310101872",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m高柔母头，订单中备注：删除：310101292，添加：310101872"
-        },
-        {
-          "category": "灯板",
-          "series": "红光灯板-14灯珠",
-          "name": "MV-IDA-L-14-55-55-R(国内中性)",
-          "code": "310100790",
-          "detail": "14颗粒LED红光，光源波长620nm~630nm，仅适配14灯珠款",
-          "remark": "若出货配置为红光，订单中备注：删除：202403882，添加：202403880"
-        },
-        {
-          "category": "灯板",
-          "series": "蓝光灯板-14灯珠",
-          "name": "MV-IDA-L-14-55-55-B(国内中性)",
-          "code": "310100791",
-          "detail": "14颗粒LED蓝光，光源波长465nm~475nm，仅适配14灯珠款",
-          "remark": "若出货配置为蓝光，订单中备注：删除：202403882，添加：202403881"
-        },
-        {
-          "category": "灯板",
-          "series": "红蓝灯板-14灯珠",
-          "name": "MV-IDA-L-14-55-55-RB(国内中性)",
-          "code": "202408084",
-          "detail": "14颗粒LED红蓝双色，上面红色，光源波长620nm~630nm，下面蓝色，光源波长465nm~475nm，建议镜头罩配置成全透或者全偏，仅适配14灯珠款",
-          "remark": "若出货配置为红蓝，订单中备注：删除：202403882，添加：202408084"
-        },
-        {
-          "category": "灯板",
-          "series": "红外灯板-14灯珠",
-          "name": "MV-IDA-L-14-55-55-IR(国内中性)",
-          "code": "310100792",
-          "detail": "14颗粒LED红外光，光源波长850nm，仅适配14灯珠款",
-          "remark": "若出货配置为红外光，订单中备注：删除：202403882，添加：202402649，更换红外灯板；除：202402547，添加：202402542，更换全透镜头罩"
-        },
-        {
-          "category": "灯板",
-          "series": "紫外灯板-14灯珠",
-          "name": "MV-IDA-L-14-55-55-UV(国内中性)",
-          "code": "310102554",
-          "detail": "14颗粒LED紫外光，光源波长360nm~370nm，紫外光会损伤皮肤、眼睛等，请避免长时间接触！！仅适配14灯珠款",
-          "remark": "若出货配置为紫外光，订单中备注：删除数量2：191300506,；(删除透镜)；除：202403882，添加：202407522；(更换紫外灯板)；除：202402547，添加：202402542；(更换全透镜头罩)；备注上线需要ME联系项目经理修改维护对应的高清ID"
-        },
-        {
-          "category": "镜头罩",
-          "series": "全偏镜头罩-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-P(国内中性)",
-          "code": "310100785",
-          "detail": "ID3013PM/ID3050PM/ID5050M全偏镜头罩",
-          "remark": "若出货配置为全偏镜头罩，订单中备注：删除：202402547，添加：202402673"
-        },
-        {
-          "category": "镜头罩",
-          "series": "全透镜头罩-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-T(国内中性)",
-          "code": "310100788",
-          "detail": "ID3013PM/ID3050PM/ID5050M全透镜头罩",
-          "remark": "若出货配置为透明镜头罩，订单中备注：删除：202402547，添加：202402542"
-        },
-        {
-          "category": "镜头罩",
-          "series": "扩散镜头罩-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-K(国内中性)",
-          "code": "310101825",
-          "detail": "ID3013PM/ID3050PM/ID5050M扩散镜头罩",
-          "remark": "若出货配置为扩散镜头罩，订单中备注：删除：202402547，添加：202404885"
-        },
-        {
-          "category": "镜头罩",
-          "series": "长波通镜头罩-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-IR775(国内中性)",
-          "code": "310102605",
-          "detail": "ID3013PM/ID3050PM/ID5050M长波通镜头罩，775nm长波通，用于屏蔽工厂内部环境光干扰，通常搭配红外灯板使用",
-          "remark": "若出货配置为红外长波镜头罩，订单中备注：删除：202402547，添加：202407776"
-        },
-        {
-          "category": "镜头罩",
-          "series": "紫外T565镜头罩-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-T565nm(国内中性)",
-          "code": "310103225",
-          "detail": "ID3013PM/ID3050PM/ID5050M紫外T565镜头罩，过滤565nm以下波段光源，通常搭配紫外灯板使用，用于提升隐形码的对比度",
-          "remark": "若出货配置为紫外T565镜头罩，订单中备注：删除：202402547，添加：202409870"
-        },
-        {
-          "category": "镜头罩",
-          "series": "极小码配件1-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-M1",
-          "code": "310101674",
-          "detail": "ID3013PM/ID3050PM/ID5050M极小码配件1，对焦距离34~47mm，读码精度可达0.012mm，建议采用倾斜8°-15°的架设方式",
-          "remark": "若出货配置为极小码配件一，订单中备注：删除：202402547，添加：202404355"
-        },
-        {
-          "category": "镜头罩",
-          "series": "极小码配件2-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-M2",
-          "code": "310101675",
-          "detail": "ID3013PM/ID3050PM/ID5050M极小码配件2，对焦距离42~76mm，读码精度可达0.016mm，建议采用倾斜8°-15°的架设方式",
-          "remark": "若出货配置为极小码配件二，订单中备注：删除：202402547，添加：202404356"
-        }
-      ]
-    },
-    {
-      "productCategory": "ID3000PM系列",
-      "productSeries": "ID3013PM系列V2.0",
-      "productModel": "MV-ID3013PM-15M-WBN(国内标配)V2.0",
-      "materialCode": "313200857",
-      "description": "1.3MP，14.8mm镜头，14颗白色LED，半偏镜头罩，机械调焦",
-      "remark": "",
-      "standardAccessories": [
-        {
-          "category": "安装板",
-          "series": "安装板",
-          "name": "ID3000PM安装板",
-          "code": "190162231",
-          "detail": "V020-安装支架，适配ID3000PM",
-          "remark": ""
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
-          "code": "310101292",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": ""
-        },
-        {
-          "category": "灯板",
-          "series": "白光灯板-14灯珠",
-          "name": "MV-IDA-L-14-55-55-W(国内中性)",
-          "code": "310100789",
-          "detail": "14颗粒LED白光，色温5700K，仅适配14灯珠款",
-          "remark": "半成品物料：202403882（下配置订单请备注半成品物料号）"
-        },
-        {
-          "category": "镜头罩",
-          "series": "半偏镜头罩-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-HP(国内中性)",
-          "code": "310100787",
-          "detail": "ID3013PM/ID3050PM/ID5050M半偏镜头罩",
-          "remark": "半成品物料：202402547（下配置订单请备注半成品物料号）"
-        },
-        {
-          "category": "扩展配件",
-          "series": "外包装",
-          "name": "包装盒-ID2000/ID3000",
-          "code": "194213827",
-          "detail": "195x145x135 机器视觉 视觉传感器黄包，适配ID800/ID2013EM/ID2000XM/ID3000系列",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "泡棉EPE",
-          "name": "泡棉EPE-ID3000PM",
-          "code": "194406336",
-          "detail": "192X140X80,机器视觉 三进三出IO盒子+相机 EPE，适配ID3000PM系列",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "螺丝包",
-          "name": "螺丝包M4×8",
-          "code": "193100772",
-          "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
-          "remark": ""
-        }
-      ],
-      "optionalAccessories": [
-        {
-          "category": "电源",
-          "series": "电源适配器",
-          "name": "KPL-060M-VI(全球通中性)",
-          "code": "310100901",
-          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线",
-          "remark": "桌面式适配器，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "电源适配器线缆",
-          "name": "交流电源线_国标_弯三插_C13_1.2米",
-          "code": "310100840",
-          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)",
-          "remark": "搭配适配器应用"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源1",
-          "name": "LRS-50-24(全球通中性)",
-          "code": "310100905",
-          "detail": "开关电源,24V2.09A,50W,接线端子",
-          "remark": "开关电源1，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源2",
-          "name": "LRS-150F-24(全球通中性)",
-          "code": "310100904",
-          "detail": "开关电源,24V6.25A,150W,接线端子",
-          "remark": "开关电源2，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源线缆",
-          "name": "交流电源线_国标_弯三插_open_2米",
-          "code": "310100843",
-          "detail": "交流电源线_国标_弯三插_open_2米(中性)",
-          "remark": "搭配开关电源应用"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
-          "code": "310101293",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "网口型号出货配置为5m普通线缆，订单中备注：删除：310101292，添加：310101293"
-        },
-        {
-          "category": "一体线",
-          "series": "7m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
-          "code": "310101873",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
-          "code": "310101294",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
-          "code": "310101310",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
-          "code": "310101296",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m高柔线缆，订单中备注：删除：310101292，添加：310101296"
-        },
-        {
-          "category": "一体线",
-          "series": "5m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
-          "code": "310102637",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为5m高柔线缆，订单中备注：删除：310101292，添加：310102637"
-        },
-        {
-          "category": "一体线",
-          "series": "5m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
-          "code": "310101876",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "若网口型号出货配置为5m超柔线缆，订单中备注：删除：310101292，添加：310101876"
-        },
-        {
-          "category": "一体线",
-          "series": "7m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
-          "code": "310103217",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "7m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
-          "code": "310101874",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
-          "code": "310101875",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
-          "code": "310101307",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
-          "code": "310101869",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为3m弯头普通线缆，订单中备注：删除：310101292，添加：310101869"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通弯头网口母头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45FDB9-ST-5m",
-          "code": "310101877",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为5m弯头普通线缆，订单中备注：删除：310101292，添加：310101877"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
-          "code": "310101878",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
-          "code": "310101870",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m弯头高柔线缆，订单中备注：删除：310101292，添加：310101870"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
-          "code": "310101871",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为3m普通母头，订单中备注：删除：310101292，添加：310101871"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
-          "code": "310101872",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m高柔母头，订单中备注：删除：310101292，添加：310101872"
-        },
-        {
-          "category": "灯板",
-          "series": "红光灯板-14灯珠",
-          "name": "MV-IDA-L-14-55-55-R(国内中性)",
-          "code": "310100790",
-          "detail": "14颗粒LED红光，光源波长620nm~630nm，仅适配14灯珠款",
-          "remark": "若出货配置为红光，订单中备注：删除：202403882，添加：202403880"
-        },
-        {
-          "category": "灯板",
-          "series": "蓝光灯板-14灯珠",
-          "name": "MV-IDA-L-14-55-55-B(国内中性)",
-          "code": "310100791",
-          "detail": "14颗粒LED蓝光，光源波长465nm~475nm，仅适配14灯珠款",
-          "remark": "若出货配置为蓝光，订单中备注：删除：202403882，添加：202403881"
-        },
-        {
-          "category": "灯板",
-          "series": "红蓝灯板-14灯珠",
-          "name": "MV-IDA-L-14-55-55-RB(国内中性)",
-          "code": "202408084",
-          "detail": "14颗粒LED红蓝双色，上面红色，光源波长620nm~630nm，下面蓝色，光源波长465nm~475nm，建议镜头罩配置成全透或者全偏，仅适配14灯珠款",
-          "remark": "若出货配置为红蓝，订单中备注：删除：202403882，添加：202408084"
-        },
-        {
-          "category": "灯板",
-          "series": "红外灯板-14灯珠",
-          "name": "MV-IDA-L-14-55-55-IR(国内中性)",
-          "code": "310100792",
-          "detail": "14颗粒LED红外光，光源波长850nm，仅适配14灯珠款",
-          "remark": "若出货配置为红外光，订单中备注：删除：202403882，添加：202402649，更换红外灯板；除：202402547，添加：202402542，更换全透镜头罩"
-        },
-        {
-          "category": "灯板",
-          "series": "紫外灯板-14灯珠",
-          "name": "MV-IDA-L-14-55-55-UV(国内中性)",
-          "code": "310102554",
-          "detail": "14颗粒LED紫外光，光源波长360nm~370nm，紫外光会损伤皮肤、眼睛等，请避免长时间接触！！仅适配14灯珠款",
-          "remark": "若出货配置为紫外光，订单中备注：删除数量2：191300506,；(删除透镜)；除：202403882，添加：202407522；(更换紫外灯板)；除：202402547，添加：202402542；(更换全透镜头罩)；备注上线需要ME联系项目经理修改维护对应的高清ID"
-        },
-        {
-          "category": "镜头罩",
-          "series": "全偏镜头罩-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-P(国内中性)",
-          "code": "310100785",
-          "detail": "ID3013PM/ID3050PM/ID5050M全偏镜头罩",
-          "remark": "若出货配置为全偏镜头罩，订单中备注：删除：202402547，添加：202402673"
-        },
-        {
-          "category": "镜头罩",
-          "series": "全透镜头罩-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-T(国内中性)",
-          "code": "310100788",
-          "detail": "ID3013PM/ID3050PM/ID5050M全透镜头罩",
-          "remark": "若出货配置为透明镜头罩，订单中备注：删除：202402547，添加：202402542"
-        },
-        {
-          "category": "镜头罩",
-          "series": "扩散镜头罩-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-K(国内中性)",
-          "code": "310101825",
-          "detail": "ID3013PM/ID3050PM/ID5050M扩散镜头罩",
-          "remark": "若出货配置为扩散镜头罩，订单中备注：删除：202402547，添加：202404885"
-        },
-        {
-          "category": "镜头罩",
-          "series": "长波通镜头罩-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-IR775(国内中性)",
-          "code": "310102605",
-          "detail": "ID3013PM/ID3050PM/ID5050M长波通镜头罩，775nm长波通，用于屏蔽工厂内部环境光干扰，通常搭配红外灯板使用",
-          "remark": "若出货配置为红外长波镜头罩，订单中备注：删除：202402547，添加：202407776"
-        },
-        {
-          "category": "镜头罩",
-          "series": "紫外T565镜头罩-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-T565nm(国内中性)",
-          "code": "310103225",
-          "detail": "ID3013PM/ID3050PM/ID5050M紫外T565镜头罩，过滤565nm以下波段光源，通常搭配紫外灯板使用，用于提升隐形码的对比度",
-          "remark": "若出货配置为紫外T565镜头罩，订单中备注：删除：202402547，添加：202409870"
-        },
-        {
-          "category": "镜头罩",
-          "series": "极小码配件1-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-M1",
-          "code": "310101674",
-          "detail": "ID3013PM/ID3050PM/ID5050M极小码配件1，对焦距离34~47mm，读码精度可达0.012mm，建议采用倾斜8°-15°的架设方式",
-          "remark": "若出货配置为极小码配件一，订单中备注：删除：202402547，添加：202404355"
-        },
-        {
-          "category": "镜头罩",
-          "series": "极小码配件2-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-M2",
-          "code": "310101675",
-          "detail": "ID3013PM/ID3050PM/ID5050M极小码配件2，对焦距离42~76mm，读码精度可达0.016mm，建议采用倾斜8°-15°的架设方式",
-          "remark": "若出货配置为极小码配件二，订单中备注：删除：202402547，添加：202404356"
-        }
-      ]
-    },
-    {
-      "productCategory": "ID3000PM系列",
-      "productSeries": "ID3013PM系列V2.0",
-      "productModel": "MV-ID3013PM-15M-WBN(国内中性)V2.0",
-      "materialCode": "313200856",
-      "description": "1.3MP，14.8mm镜头，14颗白色LED，半偏镜头罩，机械调焦",
-      "remark": "",
-      "standardAccessories": [
-        {
-          "category": "安装板",
-          "series": "安装板",
-          "name": "ID3000PM安装板",
-          "code": "190162231",
-          "detail": "V020-安装支架，适配ID3000PM",
-          "remark": ""
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
-          "code": "310101292",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": ""
-        },
-        {
-          "category": "灯板",
-          "series": "白光灯板-14灯珠",
-          "name": "MV-IDA-L-14-55-55-W(国内中性)",
-          "code": "310100789",
-          "detail": "14颗粒LED白光，色温5700K，仅适配14灯珠款",
-          "remark": "半成品物料：202403882（下配置订单请备注半成品物料号）"
-        },
-        {
-          "category": "镜头罩",
-          "series": "半偏镜头罩-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-HP(国内中性)",
-          "code": "310100787",
-          "detail": "ID3013PM/ID3050PM/ID5050M半偏镜头罩",
-          "remark": "半成品物料：202402547（下配置订单请备注半成品物料号）"
-        },
-        {
-          "category": "扩展配件",
-          "series": "外包装",
-          "name": "包装盒-ID2000/ID3000",
-          "code": "194213827",
-          "detail": "195x145x135 机器视觉 视觉传感器黄包，适配ID800/ID2013EM/ID2000XM/ID3000系列",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "泡棉EPE",
-          "name": "泡棉EPE-ID3000PM",
-          "code": "194406336",
-          "detail": "192X140X80,机器视觉 三进三出IO盒子+相机 EPE，适配ID3000PM系列",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "螺丝包",
-          "name": "螺丝包M4×8",
-          "code": "193100772",
-          "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
-          "remark": ""
-        }
-      ],
-      "optionalAccessories": [
-        {
-          "category": "电源",
-          "series": "电源适配器",
-          "name": "KPL-060M-VI(全球通中性)",
-          "code": "310100901",
-          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线",
-          "remark": "桌面式适配器，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "电源适配器线缆",
-          "name": "交流电源线_国标_弯三插_C13_1.2米",
-          "code": "310100840",
-          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)",
-          "remark": "搭配适配器应用"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源1",
-          "name": "LRS-50-24(全球通中性)",
-          "code": "310100905",
-          "detail": "开关电源,24V2.09A,50W,接线端子",
-          "remark": "开关电源1，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源2",
-          "name": "LRS-150F-24(全球通中性)",
-          "code": "310100904",
-          "detail": "开关电源,24V6.25A,150W,接线端子",
-          "remark": "开关电源2，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源线缆",
-          "name": "交流电源线_国标_弯三插_open_2米",
-          "code": "310100843",
-          "detail": "交流电源线_国标_弯三插_open_2米(中性)",
-          "remark": "搭配开关电源应用"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
-          "code": "310101293",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "网口型号出货配置为5m普通线缆，订单中备注：删除：310101292，添加：310101293"
-        },
-        {
-          "category": "一体线",
-          "series": "7m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
-          "code": "310101873",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
-          "code": "310101294",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
-          "code": "310101310",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
-          "code": "310101296",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m高柔线缆，订单中备注：删除：310101292，添加：310101296"
-        },
-        {
-          "category": "一体线",
-          "series": "5m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
-          "code": "310102637",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为5m高柔线缆，订单中备注：删除：310101292，添加：310102637"
-        },
-        {
-          "category": "一体线",
-          "series": "5m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
-          "code": "310101876",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "若网口型号出货配置为5m超柔线缆，订单中备注：删除：310101292，添加：310101876"
-        },
-        {
-          "category": "一体线",
-          "series": "7m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
-          "code": "310103217",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "7m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
-          "code": "310101874",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
-          "code": "310101875",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
-          "code": "310101307",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
-          "code": "310101869",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为3m弯头普通线缆，订单中备注：删除：310101292，添加：310101869"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通弯头网口母头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45FDB9-ST-5m",
-          "code": "310101877",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为5m弯头普通线缆，订单中备注：删除：310101292，添加：310101877"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
-          "code": "310101878",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
-          "code": "310101870",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m弯头高柔线缆，订单中备注：删除：310101292，添加：310101870"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
-          "code": "310101871",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为3m普通母头，订单中备注：删除：310101292，添加：310101871"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
-          "code": "310101872",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m高柔母头，订单中备注：删除：310101292，添加：310101872"
-        },
-        {
-          "category": "灯板",
-          "series": "红光灯板-14灯珠",
-          "name": "MV-IDA-L-14-55-55-R(国内中性)",
-          "code": "310100790",
-          "detail": "14颗粒LED红光，光源波长620nm~630nm，仅适配14灯珠款",
-          "remark": "若出货配置为红光，订单中备注：删除：202403882，添加：202403880"
-        },
-        {
-          "category": "灯板",
-          "series": "蓝光灯板-14灯珠",
-          "name": "MV-IDA-L-14-55-55-B(国内中性)",
-          "code": "310100791",
-          "detail": "14颗粒LED蓝光，光源波长465nm~475nm，仅适配14灯珠款",
-          "remark": "若出货配置为蓝光，订单中备注：删除：202403882，添加：202403881"
-        },
-        {
-          "category": "灯板",
-          "series": "红蓝灯板-14灯珠",
-          "name": "MV-IDA-L-14-55-55-RB(国内中性)",
-          "code": "202408084",
-          "detail": "14颗粒LED红蓝双色，上面红色，光源波长620nm~630nm，下面蓝色，光源波长465nm~475nm，建议镜头罩配置成全透或者全偏，仅适配14灯珠款",
-          "remark": "若出货配置为红蓝，订单中备注：删除：202403882，添加：202408084"
-        },
-        {
-          "category": "灯板",
-          "series": "红外灯板-14灯珠",
-          "name": "MV-IDA-L-14-55-55-IR(国内中性)",
-          "code": "310100792",
-          "detail": "14颗粒LED红外光，光源波长850nm，仅适配14灯珠款",
-          "remark": "若出货配置为红外光，订单中备注：删除：202403882，添加：202402649，更换红外灯板；除：202402547，添加：202402542，更换全透镜头罩"
-        },
-        {
-          "category": "灯板",
-          "series": "紫外灯板-14灯珠",
-          "name": "MV-IDA-L-14-55-55-UV(国内中性)",
-          "code": "310102554",
-          "detail": "14颗粒LED紫外光，光源波长360nm~370nm，紫外光会损伤皮肤、眼睛等，请避免长时间接触！！仅适配14灯珠款",
-          "remark": "若出货配置为紫外光，订单中备注：删除数量2：191300506,；(删除透镜)；除：202403882，添加：202407522；(更换紫外灯板)；除：202402547，添加：202402542；(更换全透镜头罩)；备注上线需要ME联系项目经理修改维护对应的高清ID"
-        },
-        {
-          "category": "镜头罩",
-          "series": "全偏镜头罩-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-P(国内中性)",
-          "code": "310100785",
-          "detail": "ID3013PM/ID3050PM/ID5050M全偏镜头罩",
-          "remark": "若出货配置为全偏镜头罩，订单中备注：删除：202402547，添加：202402673"
-        },
-        {
-          "category": "镜头罩",
-          "series": "全透镜头罩-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-T(国内中性)",
-          "code": "310100788",
-          "detail": "ID3013PM/ID3050PM/ID5050M全透镜头罩",
-          "remark": "若出货配置为透明镜头罩，订单中备注：删除：202402547，添加：202402542"
-        },
-        {
-          "category": "镜头罩",
-          "series": "扩散镜头罩-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-K(国内中性)",
-          "code": "310101825",
-          "detail": "ID3013PM/ID3050PM/ID5050M扩散镜头罩",
-          "remark": "若出货配置为扩散镜头罩，订单中备注：删除：202402547，添加：202404885"
-        },
-        {
-          "category": "镜头罩",
-          "series": "长波通镜头罩-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-IR775(国内中性)",
-          "code": "310102605",
-          "detail": "ID3013PM/ID3050PM/ID5050M长波通镜头罩，775nm长波通，用于屏蔽工厂内部环境光干扰，通常搭配红外灯板使用",
-          "remark": "若出货配置为红外长波镜头罩，订单中备注：删除：202402547，添加：202407776"
-        },
-        {
-          "category": "镜头罩",
-          "series": "紫外T565镜头罩-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-T565nm(国内中性)",
-          "code": "310103225",
-          "detail": "ID3013PM/ID3050PM/ID5050M紫外T565镜头罩，过滤565nm以下波段光源，通常搭配紫外灯板使用，用于提升隐形码的对比度",
-          "remark": "若出货配置为紫外T565镜头罩，订单中备注：删除：202402547，添加：202409870"
-        },
-        {
-          "category": "镜头罩",
-          "series": "极小码配件1-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-M1",
-          "code": "310101674",
-          "detail": "ID3013PM/ID3050PM/ID5050M极小码配件1，对焦距离34~47mm，读码精度可达0.012mm，建议采用倾斜8°-15°的架设方式",
-          "remark": "若出货配置为极小码配件一，订单中备注：删除：202402547，添加：202404355"
-        },
-        {
-          "category": "镜头罩",
-          "series": "极小码配件2-14灯珠",
-          "name": "MV-IDA-C-Y-62-62-M2",
-          "code": "310101675",
-          "detail": "ID3013PM/ID3050PM/ID5050M极小码配件2，对焦距离42~76mm，读码精度可达0.016mm，建议采用倾斜8°-15°的架设方式",
-          "remark": "若出货配置为极小码配件二，订单中备注：删除：202402547，添加：202404356"
         }
       ]
     },
@@ -69481,1806 +68201,6 @@ window.PEIDAN_DATA = {
           "code": "310101675",
           "detail": "ID3013PM/ID3050PM/ID5050M极小码配件2，对焦距离42~76mm，读码精度可达0.016mm，建议采用倾斜8°-15°的架设方式",
           "remark": "若出货配置为极小码配件二，订单中备注：删除：202402547，添加：202404356"
-        }
-      ]
-    },
-    {
-      "productCategory": "ID3000PM系列",
-      "productSeries": "ID3016PM系列V2.0",
-      "productModel": "MV-ID3016PM-06M-WBN(国内标配)V2.0",
-      "materialCode": "313200921",
-      "description": "1.6MP，6mm镜头，8颗白色LED，全透镜头罩，机械调焦",
-      "remark": "",
-      "standardAccessories": [
-        {
-          "category": "安装板",
-          "series": "安装板",
-          "name": "ID3000PM安装板",
-          "code": "190162231",
-          "detail": "V020-安装支架，适配ID3000PM",
-          "remark": ""
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
-          "code": "310101292",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": ""
-        },
-        {
-          "category": "灯板",
-          "series": "白光灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-W(国内中性)",
-          "code": "310100047",
-          "detail": "基础款，8颗粒LED白光，色温5700K，仅适配ID3000PM-8灯珠款",
-          "remark": "半成品物料：202401178（下配置订单请备注半成品物料号）"
-        },
-        {
-          "category": "镜头罩",
-          "series": "全透镜头罩-8灯珠",
-          "name": "MV-IDA-C-N-62-62-T(国内中性)",
-          "code": "190214704",
-          "detail": "ID3013PM-8/ID3016PM透明镜头罩",
-          "remark": "半成品物料：190214704（下配置订单请备注半成品物料号）"
-        },
-        {
-          "category": "扩展配件",
-          "series": "外包装",
-          "name": "包装盒-ID2000/ID3000",
-          "code": "194213827",
-          "detail": "195x145x135 机器视觉 视觉传感器黄包，适配ID800/ID2013EM/ID2000XM/ID3000系列",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "泡棉EPE",
-          "name": "泡棉EPE-ID3000PM",
-          "code": "194406336",
-          "detail": "192X140X80,机器视觉 三进三出IO盒子+相机 EPE，适配ID3000PM系列",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "螺丝包",
-          "name": "螺丝包M4×8",
-          "code": "193100772",
-          "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
-          "remark": ""
-        }
-      ],
-      "optionalAccessories": [
-        {
-          "category": "电源",
-          "series": "电源适配器",
-          "name": "KPL-060M-VI(全球通中性)",
-          "code": "310100901",
-          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线",
-          "remark": "桌面式适配器，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "电源适配器线缆",
-          "name": "交流电源线_国标_弯三插_C13_1.2米",
-          "code": "310100840",
-          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)",
-          "remark": "搭配适配器应用"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源1",
-          "name": "LRS-50-24(全球通中性)",
-          "code": "310100905",
-          "detail": "开关电源,24V2.09A,50W,接线端子",
-          "remark": "开关电源1，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源2",
-          "name": "LRS-150F-24(全球通中性)",
-          "code": "310100904",
-          "detail": "开关电源,24V6.25A,150W,接线端子",
-          "remark": "开关电源2，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源线缆",
-          "name": "交流电源线_国标_弯三插_open_2米",
-          "code": "310100843",
-          "detail": "交流电源线_国标_弯三插_open_2米(中性)",
-          "remark": "搭配开关电源应用"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
-          "code": "310101293",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "网口型号出货配置为5m普通线缆，订单中备注：删除：310101292，添加：310101293"
-        },
-        {
-          "category": "一体线",
-          "series": "7m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
-          "code": "310101873",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
-          "code": "310101294",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
-          "code": "310101310",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
-          "code": "310101296",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m高柔线缆，订单中备注：删除：310101292，添加：310101296"
-        },
-        {
-          "category": "一体线",
-          "series": "5m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
-          "code": "310102637",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为5m高柔线缆，订单中备注：删除：310101292，添加：310102637"
-        },
-        {
-          "category": "一体线",
-          "series": "5m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
-          "code": "310101876",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "若网口型号出货配置为5m超柔线缆，订单中备注：删除：310101292，添加：310101876"
-        },
-        {
-          "category": "一体线",
-          "series": "7m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
-          "code": "310103217",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "7m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
-          "code": "310101874",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
-          "code": "310101875",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
-          "code": "310101307",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
-          "code": "310101869",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为3m弯头普通线缆，订单中备注：删除：310101292，添加：310101869"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通弯头网口母头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45FDB9-ST-5m",
-          "code": "310101877",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为5m弯头普通线缆，订单中备注：删除：310101292，添加：310101877"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
-          "code": "310101878",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
-          "code": "310101870",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m弯头高柔线缆，订单中备注：删除：310101292，添加：310101870"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
-          "code": "310101871",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为3m普通母头，订单中备注：删除：310101292，添加：310101871"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
-          "code": "310101872",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m高柔母头，订单中备注：删除：310101292，添加：310101872"
-        },
-        {
-          "category": "灯板",
-          "series": "红光灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-R(国内中性)",
-          "code": "310100048",
-          "detail": "基础款，8颗粒LED红光，光源波长620nm~630nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为红光，订单中备注：删除：202401178，添加：202401179"
-        },
-        {
-          "category": "灯板",
-          "series": "蓝光灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-B(国内中性)",
-          "code": "310100049",
-          "detail": "基础款，8颗粒LED蓝光，光源波长465nm~475nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为蓝光，订单中备注：删除：202401178，添加：202401232"
-        },
-        {
-          "category": "灯板",
-          "series": "红外灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-IR(国内中性)",
-          "code": "310100485",
-          "detail": "基础款，8颗粒LED红外光，光源波长850nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为红外光，订单中备注：删除：202401178，添加：202401665"
-        },
-        {
-          "category": "灯板",
-          "series": "白光灯板-48灯珠",
-          "name": "MV-IDA-L-48-55-55-WH(国内中性)",
-          "code": "310100050",
-          "detail": "广角款，48颗粒LED白光，色温5700K，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为高功率白光，订单中备注：删除：202401178，添加：202401177"
-        },
-        {
-          "category": "灯板",
-          "series": "红光灯板-48灯珠",
-          "name": "MV-IDA-L-48-55-55-RH(国内中性)",
-          "code": "310100378",
-          "detail": "广角款，48颗粒LED红光，光源波长620nm~630nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为高功率红光，订单中备注：删除：202401178，添加：202401331"
-        },
-        {
-          "category": "灯板",
-          "series": "蓝光灯板-48灯珠",
-          "name": "MV-IDA-L-48-55-55-BH(国内中性)",
-          "code": "310100051",
-          "detail": "广角款，48颗粒LED蓝光，光源波长465nm~475nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为高功率蓝光，订单中备注：删除：202401178，添加：202401249"
-        },
-        {
-          "category": "镜头罩",
-          "series": "全偏镜头罩-8灯珠",
-          "name": "MV-IDA-C-N-62-62-P(国内中性)",
-          "code": "310100046",
-          "detail": "ID3013PM-8/ID3016PM偏振镜头罩",
-          "remark": "若ID3013-8/ID3016出货配置为全偏镜头罩，订单中备注：删除：190214704，添加：202402640"
-        }
-      ]
-    },
-    {
-      "productCategory": "ID3000PM系列",
-      "productSeries": "ID3016PM系列V2.0",
-      "productModel": "MV-ID3016PM-06M-WBN(国内中性)V2.0",
-      "materialCode": "313200922",
-      "description": "1.6MP，6mm镜头，8颗白色LED，全透镜头罩，机械调焦",
-      "remark": "",
-      "standardAccessories": [
-        {
-          "category": "安装板",
-          "series": "安装板",
-          "name": "ID3000PM安装板",
-          "code": "190162231",
-          "detail": "V020-安装支架，适配ID3000PM",
-          "remark": ""
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
-          "code": "310101292",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": ""
-        },
-        {
-          "category": "灯板",
-          "series": "白光灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-W(国内中性)",
-          "code": "310100047",
-          "detail": "基础款，8颗粒LED白光，色温5700K，仅适配ID3000PM-8灯珠款",
-          "remark": "半成品物料：202401178（下配置订单请备注半成品物料号）"
-        },
-        {
-          "category": "镜头罩",
-          "series": "全透镜头罩-8灯珠",
-          "name": "MV-IDA-C-N-62-62-T(国内中性)",
-          "code": "190214704",
-          "detail": "ID3013PM-8/ID3016PM透明镜头罩",
-          "remark": "半成品物料：190214704（下配置订单请备注半成品物料号）"
-        },
-        {
-          "category": "扩展配件",
-          "series": "外包装",
-          "name": "包装盒-ID2000/ID3000",
-          "code": "194213827",
-          "detail": "195x145x135 机器视觉 视觉传感器黄包，适配ID800/ID2013EM/ID2000XM/ID3000系列",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "泡棉EPE",
-          "name": "泡棉EPE-ID3000PM",
-          "code": "194406336",
-          "detail": "192X140X80,机器视觉 三进三出IO盒子+相机 EPE，适配ID3000PM系列",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "螺丝包",
-          "name": "螺丝包M4×8",
-          "code": "193100772",
-          "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
-          "remark": ""
-        }
-      ],
-      "optionalAccessories": [
-        {
-          "category": "电源",
-          "series": "电源适配器",
-          "name": "KPL-060M-VI(全球通中性)",
-          "code": "310100901",
-          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线",
-          "remark": "桌面式适配器，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "电源适配器线缆",
-          "name": "交流电源线_国标_弯三插_C13_1.2米",
-          "code": "310100840",
-          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)",
-          "remark": "搭配适配器应用"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源1",
-          "name": "LRS-50-24(全球通中性)",
-          "code": "310100905",
-          "detail": "开关电源,24V2.09A,50W,接线端子",
-          "remark": "开关电源1，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源2",
-          "name": "LRS-150F-24(全球通中性)",
-          "code": "310100904",
-          "detail": "开关电源,24V6.25A,150W,接线端子",
-          "remark": "开关电源2，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源线缆",
-          "name": "交流电源线_国标_弯三插_open_2米",
-          "code": "310100843",
-          "detail": "交流电源线_国标_弯三插_open_2米(中性)",
-          "remark": "搭配开关电源应用"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
-          "code": "310101293",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "网口型号出货配置为5m普通线缆，订单中备注：删除：310101292，添加：310101293"
-        },
-        {
-          "category": "一体线",
-          "series": "7m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
-          "code": "310101873",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
-          "code": "310101294",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
-          "code": "310101310",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
-          "code": "310101296",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m高柔线缆，订单中备注：删除：310101292，添加：310101296"
-        },
-        {
-          "category": "一体线",
-          "series": "5m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
-          "code": "310102637",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为5m高柔线缆，订单中备注：删除：310101292，添加：310102637"
-        },
-        {
-          "category": "一体线",
-          "series": "5m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
-          "code": "310101876",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "若网口型号出货配置为5m超柔线缆，订单中备注：删除：310101292，添加：310101876"
-        },
-        {
-          "category": "一体线",
-          "series": "7m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
-          "code": "310103217",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "7m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
-          "code": "310101874",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
-          "code": "310101875",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
-          "code": "310101307",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
-          "code": "310101869",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为3m弯头普通线缆，订单中备注：删除：310101292，添加：310101869"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通弯头网口母头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45FDB9-ST-5m",
-          "code": "310101877",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为5m弯头普通线缆，订单中备注：删除：310101292，添加：310101877"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
-          "code": "310101878",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
-          "code": "310101870",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m弯头高柔线缆，订单中备注：删除：310101292，添加：310101870"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
-          "code": "310101871",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为3m普通母头，订单中备注：删除：310101292，添加：310101871"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
-          "code": "310101872",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m高柔母头，订单中备注：删除：310101292，添加：310101872"
-        },
-        {
-          "category": "灯板",
-          "series": "红光灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-R(国内中性)",
-          "code": "310100048",
-          "detail": "基础款，8颗粒LED红光，光源波长620nm~630nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为红光，订单中备注：删除：202401178，添加：202401179"
-        },
-        {
-          "category": "灯板",
-          "series": "蓝光灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-B(国内中性)",
-          "code": "310100049",
-          "detail": "基础款，8颗粒LED蓝光，光源波长465nm~475nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为蓝光，订单中备注：删除：202401178，添加：202401232"
-        },
-        {
-          "category": "灯板",
-          "series": "红外灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-IR(国内中性)",
-          "code": "310100485",
-          "detail": "基础款，8颗粒LED红外光，光源波长850nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为红外光，订单中备注：删除：202401178，添加：202401665"
-        },
-        {
-          "category": "灯板",
-          "series": "白光灯板-48灯珠",
-          "name": "MV-IDA-L-48-55-55-WH(国内中性)",
-          "code": "310100050",
-          "detail": "广角款，48颗粒LED白光，色温5700K，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为高功率白光，订单中备注：删除：202401178，添加：202401177"
-        },
-        {
-          "category": "灯板",
-          "series": "红光灯板-48灯珠",
-          "name": "MV-IDA-L-48-55-55-RH(国内中性)",
-          "code": "310100378",
-          "detail": "广角款，48颗粒LED红光，光源波长620nm~630nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为高功率红光，订单中备注：删除：202401178，添加：202401331"
-        },
-        {
-          "category": "灯板",
-          "series": "蓝光灯板-48灯珠",
-          "name": "MV-IDA-L-48-55-55-BH(国内中性)",
-          "code": "310100051",
-          "detail": "广角款，48颗粒LED蓝光，光源波长465nm~475nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为高功率蓝光，订单中备注：删除：202401178，添加：202401249"
-        },
-        {
-          "category": "镜头罩",
-          "series": "全偏镜头罩-8灯珠",
-          "name": "MV-IDA-C-N-62-62-P(国内中性)",
-          "code": "310100046",
-          "detail": "ID3013PM-8/ID3016PM偏振镜头罩",
-          "remark": "若ID3013-8/ID3016出货配置为全偏镜头罩，订单中备注：删除：190214704，添加：202402640"
-        }
-      ]
-    },
-    {
-      "productCategory": "ID3000PM系列",
-      "productSeries": "ID3016PM系列V2.0",
-      "productModel": "MV-ID3016PM-12M-WBN(国内标配)V2.0",
-      "materialCode": "313200924",
-      "description": "1.6MP，12mm镜头，8颗白色LED，全透镜头罩，机械调焦",
-      "remark": "",
-      "standardAccessories": [
-        {
-          "category": "安装板",
-          "series": "安装板",
-          "name": "ID3000PM安装板",
-          "code": "190162231",
-          "detail": "V020-安装支架，适配ID3000PM",
-          "remark": ""
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
-          "code": "310101292",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": ""
-        },
-        {
-          "category": "灯板",
-          "series": "白光灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-W(国内中性)",
-          "code": "310100047",
-          "detail": "基础款，8颗粒LED白光，色温5700K，仅适配ID3000PM-8灯珠款",
-          "remark": "半成品物料：202401178（下配置订单请备注半成品物料号）"
-        },
-        {
-          "category": "镜头罩",
-          "series": "全透镜头罩-8灯珠",
-          "name": "MV-IDA-C-N-62-62-T(国内中性)",
-          "code": "190214704",
-          "detail": "ID3013PM-8/ID3016PM透明镜头罩",
-          "remark": "半成品物料：190214704（下配置订单请备注半成品物料号）"
-        },
-        {
-          "category": "扩展配件",
-          "series": "外包装",
-          "name": "包装盒-ID2000/ID3000",
-          "code": "194213827",
-          "detail": "195x145x135 机器视觉 视觉传感器黄包，适配ID800/ID2013EM/ID2000XM/ID3000系列",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "泡棉EPE",
-          "name": "泡棉EPE-ID3000PM",
-          "code": "194406336",
-          "detail": "192X140X80,机器视觉 三进三出IO盒子+相机 EPE，适配ID3000PM系列",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "螺丝包",
-          "name": "螺丝包M4×8",
-          "code": "193100772",
-          "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
-          "remark": ""
-        }
-      ],
-      "optionalAccessories": [
-        {
-          "category": "电源",
-          "series": "电源适配器",
-          "name": "KPL-060M-VI(全球通中性)",
-          "code": "310100901",
-          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线",
-          "remark": "桌面式适配器，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "电源适配器线缆",
-          "name": "交流电源线_国标_弯三插_C13_1.2米",
-          "code": "310100840",
-          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)",
-          "remark": "搭配适配器应用"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源1",
-          "name": "LRS-50-24(全球通中性)",
-          "code": "310100905",
-          "detail": "开关电源,24V2.09A,50W,接线端子",
-          "remark": "开关电源1，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源2",
-          "name": "LRS-150F-24(全球通中性)",
-          "code": "310100904",
-          "detail": "开关电源,24V6.25A,150W,接线端子",
-          "remark": "开关电源2，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源线缆",
-          "name": "交流电源线_国标_弯三插_open_2米",
-          "code": "310100843",
-          "detail": "交流电源线_国标_弯三插_open_2米(中性)",
-          "remark": "搭配开关电源应用"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
-          "code": "310101293",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "网口型号出货配置为5m普通线缆，订单中备注：删除：310101292，添加：310101293"
-        },
-        {
-          "category": "一体线",
-          "series": "7m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
-          "code": "310101873",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
-          "code": "310101294",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
-          "code": "310101310",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
-          "code": "310101296",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m高柔线缆，订单中备注：删除：310101292，添加：310101296"
-        },
-        {
-          "category": "一体线",
-          "series": "5m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
-          "code": "310102637",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为5m高柔线缆，订单中备注：删除：310101292，添加：310102637"
-        },
-        {
-          "category": "一体线",
-          "series": "5m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
-          "code": "310101876",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "若网口型号出货配置为5m超柔线缆，订单中备注：删除：310101292，添加：310101876"
-        },
-        {
-          "category": "一体线",
-          "series": "7m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
-          "code": "310103217",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "7m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
-          "code": "310101874",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
-          "code": "310101875",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
-          "code": "310101307",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
-          "code": "310101869",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为3m弯头普通线缆，订单中备注：删除：310101292，添加：310101869"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通弯头网口母头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45FDB9-ST-5m",
-          "code": "310101877",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为5m弯头普通线缆，订单中备注：删除：310101292，添加：310101877"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
-          "code": "310101878",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
-          "code": "310101870",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m弯头高柔线缆，订单中备注：删除：310101292，添加：310101870"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
-          "code": "310101871",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为3m普通母头，订单中备注：删除：310101292，添加：310101871"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
-          "code": "310101872",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m高柔母头，订单中备注：删除：310101292，添加：310101872"
-        },
-        {
-          "category": "灯板",
-          "series": "红光灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-R(国内中性)",
-          "code": "310100048",
-          "detail": "基础款，8颗粒LED红光，光源波长620nm~630nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为红光，订单中备注：删除：202401178，添加：202401179"
-        },
-        {
-          "category": "灯板",
-          "series": "蓝光灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-B(国内中性)",
-          "code": "310100049",
-          "detail": "基础款，8颗粒LED蓝光，光源波长465nm~475nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为蓝光，订单中备注：删除：202401178，添加：202401232"
-        },
-        {
-          "category": "灯板",
-          "series": "红外灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-IR(国内中性)",
-          "code": "310100485",
-          "detail": "基础款，8颗粒LED红外光，光源波长850nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为红外光，订单中备注：删除：202401178，添加：202401665"
-        },
-        {
-          "category": "灯板",
-          "series": "白光灯板-48灯珠",
-          "name": "MV-IDA-L-48-55-55-WH(国内中性)",
-          "code": "310100050",
-          "detail": "广角款，48颗粒LED白光，色温5700K，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为高功率白光，订单中备注：删除：202401178，添加：202401177"
-        },
-        {
-          "category": "灯板",
-          "series": "红光灯板-48灯珠",
-          "name": "MV-IDA-L-48-55-55-RH(国内中性)",
-          "code": "310100378",
-          "detail": "广角款，48颗粒LED红光，光源波长620nm~630nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为高功率红光，订单中备注：删除：202401178，添加：202401331"
-        },
-        {
-          "category": "灯板",
-          "series": "蓝光灯板-48灯珠",
-          "name": "MV-IDA-L-48-55-55-BH(国内中性)",
-          "code": "310100051",
-          "detail": "广角款，48颗粒LED蓝光，光源波长465nm~475nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为高功率蓝光，订单中备注：删除：202401178，添加：202401249"
-        },
-        {
-          "category": "镜头罩",
-          "series": "全偏镜头罩-8灯珠",
-          "name": "MV-IDA-C-N-62-62-P(国内中性)",
-          "code": "310100046",
-          "detail": "ID3013PM-8/ID3016PM偏振镜头罩",
-          "remark": "若ID3013-8/ID3016出货配置为全偏镜头罩，订单中备注：删除：190214704，添加：202402640"
-        }
-      ]
-    },
-    {
-      "productCategory": "ID3000PM系列",
-      "productSeries": "ID3016PM系列V2.0",
-      "productModel": "MV-ID3016PM-12M-WBN(国内中性)V2.0",
-      "materialCode": "313200925",
-      "description": "1.6MP，12mm镜头，8颗白色LED，全透镜头罩，机械调焦",
-      "remark": "",
-      "standardAccessories": [
-        {
-          "category": "安装板",
-          "series": "安装板",
-          "name": "ID3000PM安装板",
-          "code": "190162231",
-          "detail": "V020-安装支架，适配ID3000PM",
-          "remark": ""
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
-          "code": "310101292",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": ""
-        },
-        {
-          "category": "灯板",
-          "series": "白光灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-W(国内中性)",
-          "code": "310100047",
-          "detail": "基础款，8颗粒LED白光，色温5700K，仅适配ID3000PM-8灯珠款",
-          "remark": "半成品物料：202401178（下配置订单请备注半成品物料号）"
-        },
-        {
-          "category": "镜头罩",
-          "series": "全透镜头罩-8灯珠",
-          "name": "MV-IDA-C-N-62-62-T(国内中性)",
-          "code": "190214704",
-          "detail": "ID3013PM-8/ID3016PM透明镜头罩",
-          "remark": "半成品物料：190214704（下配置订单请备注半成品物料号）"
-        },
-        {
-          "category": "扩展配件",
-          "series": "外包装",
-          "name": "包装盒-ID2000/ID3000",
-          "code": "194213827",
-          "detail": "195x145x135 机器视觉 视觉传感器黄包，适配ID800/ID2013EM/ID2000XM/ID3000系列",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "泡棉EPE",
-          "name": "泡棉EPE-ID3000PM",
-          "code": "194406336",
-          "detail": "192X140X80,机器视觉 三进三出IO盒子+相机 EPE，适配ID3000PM系列",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "螺丝包",
-          "name": "螺丝包M4×8",
-          "code": "193100772",
-          "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
-          "remark": ""
-        }
-      ],
-      "optionalAccessories": [
-        {
-          "category": "电源",
-          "series": "电源适配器",
-          "name": "KPL-060M-VI(全球通中性)",
-          "code": "310100901",
-          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线",
-          "remark": "桌面式适配器，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "电源适配器线缆",
-          "name": "交流电源线_国标_弯三插_C13_1.2米",
-          "code": "310100840",
-          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)",
-          "remark": "搭配适配器应用"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源1",
-          "name": "LRS-50-24(全球通中性)",
-          "code": "310100905",
-          "detail": "开关电源,24V2.09A,50W,接线端子",
-          "remark": "开关电源1，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源2",
-          "name": "LRS-150F-24(全球通中性)",
-          "code": "310100904",
-          "detail": "开关电源,24V6.25A,150W,接线端子",
-          "remark": "开关电源2，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源线缆",
-          "name": "交流电源线_国标_弯三插_open_2米",
-          "code": "310100843",
-          "detail": "交流电源线_国标_弯三插_open_2米(中性)",
-          "remark": "搭配开关电源应用"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
-          "code": "310101293",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "网口型号出货配置为5m普通线缆，订单中备注：删除：310101292，添加：310101293"
-        },
-        {
-          "category": "一体线",
-          "series": "7m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
-          "code": "310101873",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
-          "code": "310101294",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
-          "code": "310101310",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
-          "code": "310101296",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m高柔线缆，订单中备注：删除：310101292，添加：310101296"
-        },
-        {
-          "category": "一体线",
-          "series": "5m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
-          "code": "310102637",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为5m高柔线缆，订单中备注：删除：310101292，添加：310102637"
-        },
-        {
-          "category": "一体线",
-          "series": "5m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
-          "code": "310101876",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "若网口型号出货配置为5m超柔线缆，订单中备注：删除：310101292，添加：310101876"
-        },
-        {
-          "category": "一体线",
-          "series": "7m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
-          "code": "310103217",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "7m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
-          "code": "310101874",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
-          "code": "310101875",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
-          "code": "310101307",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
-          "code": "310101869",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为3m弯头普通线缆，订单中备注：删除：310101292，添加：310101869"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通弯头网口母头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45FDB9-ST-5m",
-          "code": "310101877",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为5m弯头普通线缆，订单中备注：删除：310101292，添加：310101877"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
-          "code": "310101878",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
-          "code": "310101870",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m弯头高柔线缆，订单中备注：删除：310101292，添加：310101870"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
-          "code": "310101871",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为3m普通母头，订单中备注：删除：310101292，添加：310101871"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
-          "code": "310101872",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m高柔母头，订单中备注：删除：310101292，添加：310101872"
-        },
-        {
-          "category": "灯板",
-          "series": "红光灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-R(国内中性)",
-          "code": "310100048",
-          "detail": "基础款，8颗粒LED红光，光源波长620nm~630nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为红光，订单中备注：删除：202401178，添加：202401179"
-        },
-        {
-          "category": "灯板",
-          "series": "蓝光灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-B(国内中性)",
-          "code": "310100049",
-          "detail": "基础款，8颗粒LED蓝光，光源波长465nm~475nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为蓝光，订单中备注：删除：202401178，添加：202401232"
-        },
-        {
-          "category": "灯板",
-          "series": "红外灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-IR(国内中性)",
-          "code": "310100485",
-          "detail": "基础款，8颗粒LED红外光，光源波长850nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为红外光，订单中备注：删除：202401178，添加：202401665"
-        },
-        {
-          "category": "灯板",
-          "series": "白光灯板-48灯珠",
-          "name": "MV-IDA-L-48-55-55-WH(国内中性)",
-          "code": "310100050",
-          "detail": "广角款，48颗粒LED白光，色温5700K，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为高功率白光，订单中备注：删除：202401178，添加：202401177"
-        },
-        {
-          "category": "灯板",
-          "series": "红光灯板-48灯珠",
-          "name": "MV-IDA-L-48-55-55-RH(国内中性)",
-          "code": "310100378",
-          "detail": "广角款，48颗粒LED红光，光源波长620nm~630nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为高功率红光，订单中备注：删除：202401178，添加：202401331"
-        },
-        {
-          "category": "灯板",
-          "series": "蓝光灯板-48灯珠",
-          "name": "MV-IDA-L-48-55-55-BH(国内中性)",
-          "code": "310100051",
-          "detail": "广角款，48颗粒LED蓝光，光源波长465nm~475nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为高功率蓝光，订单中备注：删除：202401178，添加：202401249"
-        },
-        {
-          "category": "镜头罩",
-          "series": "全偏镜头罩-8灯珠",
-          "name": "MV-IDA-C-N-62-62-P(国内中性)",
-          "code": "310100046",
-          "detail": "ID3013PM-8/ID3016PM偏振镜头罩",
-          "remark": "若ID3013-8/ID3016出货配置为全偏镜头罩，订单中备注：删除：190214704，添加：202402640"
-        }
-      ]
-    },
-    {
-      "productCategory": "ID3000PM系列",
-      "productSeries": "ID3016PM系列V2.0",
-      "productModel": "MV-ID3016PM-15M-WBN(国内标配)V2.0",
-      "materialCode": "313200927",
-      "description": "1.6MP，14.8mm镜头，8颗白色LED，全透镜头罩，机械调焦",
-      "remark": "",
-      "standardAccessories": [
-        {
-          "category": "安装板",
-          "series": "安装板",
-          "name": "ID3000PM安装板",
-          "code": "190162231",
-          "detail": "V020-安装支架，适配ID3000PM",
-          "remark": ""
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
-          "code": "310101292",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": ""
-        },
-        {
-          "category": "灯板",
-          "series": "白光灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-W(国内中性)",
-          "code": "310100047",
-          "detail": "基础款，8颗粒LED白光，色温5700K，仅适配ID3000PM-8灯珠款",
-          "remark": "半成品物料：202401178（下配置订单请备注半成品物料号）"
-        },
-        {
-          "category": "镜头罩",
-          "series": "全透镜头罩-8灯珠",
-          "name": "MV-IDA-C-N-62-62-T(国内中性)",
-          "code": "190214704",
-          "detail": "ID3013PM-8/ID3016PM透明镜头罩",
-          "remark": "半成品物料：190214704（下配置订单请备注半成品物料号）"
-        },
-        {
-          "category": "扩展配件",
-          "series": "外包装",
-          "name": "包装盒-ID2000/ID3000",
-          "code": "194213827",
-          "detail": "195x145x135 机器视觉 视觉传感器黄包，适配ID800/ID2013EM/ID2000XM/ID3000系列",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "泡棉EPE",
-          "name": "泡棉EPE-ID3000PM",
-          "code": "194406336",
-          "detail": "192X140X80,机器视觉 三进三出IO盒子+相机 EPE，适配ID3000PM系列",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "螺丝包",
-          "name": "螺丝包M4×8",
-          "code": "193100772",
-          "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
-          "remark": ""
-        }
-      ],
-      "optionalAccessories": [
-        {
-          "category": "电源",
-          "series": "电源适配器",
-          "name": "KPL-060M-VI(全球通中性)",
-          "code": "310100901",
-          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线",
-          "remark": "桌面式适配器，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "电源适配器线缆",
-          "name": "交流电源线_国标_弯三插_C13_1.2米",
-          "code": "310100840",
-          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)",
-          "remark": "搭配适配器应用"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源1",
-          "name": "LRS-50-24(全球通中性)",
-          "code": "310100905",
-          "detail": "开关电源,24V2.09A,50W,接线端子",
-          "remark": "开关电源1，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源2",
-          "name": "LRS-150F-24(全球通中性)",
-          "code": "310100904",
-          "detail": "开关电源,24V6.25A,150W,接线端子",
-          "remark": "开关电源2，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源线缆",
-          "name": "交流电源线_国标_弯三插_open_2米",
-          "code": "310100843",
-          "detail": "交流电源线_国标_弯三插_open_2米(中性)",
-          "remark": "搭配开关电源应用"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
-          "code": "310101293",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "网口型号出货配置为5m普通线缆，订单中备注：删除：310101292，添加：310101293"
-        },
-        {
-          "category": "一体线",
-          "series": "7m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
-          "code": "310101873",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
-          "code": "310101294",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
-          "code": "310101310",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
-          "code": "310101296",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m高柔线缆，订单中备注：删除：310101292，添加：310101296"
-        },
-        {
-          "category": "一体线",
-          "series": "5m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
-          "code": "310102637",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为5m高柔线缆，订单中备注：删除：310101292，添加：310102637"
-        },
-        {
-          "category": "一体线",
-          "series": "5m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
-          "code": "310101876",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "若网口型号出货配置为5m超柔线缆，订单中备注：删除：310101292，添加：310101876"
-        },
-        {
-          "category": "一体线",
-          "series": "7m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
-          "code": "310103217",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "7m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
-          "code": "310101874",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
-          "code": "310101875",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
-          "code": "310101307",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
-          "code": "310101869",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为3m弯头普通线缆，订单中备注：删除：310101292，添加：310101869"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通弯头网口母头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45FDB9-ST-5m",
-          "code": "310101877",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为5m弯头普通线缆，订单中备注：删除：310101292，添加：310101877"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
-          "code": "310101878",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
-          "code": "310101870",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m弯头高柔线缆，订单中备注：删除：310101292，添加：310101870"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
-          "code": "310101871",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为3m普通母头，订单中备注：删除：310101292，添加：310101871"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
-          "code": "310101872",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m高柔母头，订单中备注：删除：310101292，添加：310101872"
-        },
-        {
-          "category": "灯板",
-          "series": "红光灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-R(国内中性)",
-          "code": "310100048",
-          "detail": "基础款，8颗粒LED红光，光源波长620nm~630nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为红光，订单中备注：删除：202401178，添加：202401179"
-        },
-        {
-          "category": "灯板",
-          "series": "蓝光灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-B(国内中性)",
-          "code": "310100049",
-          "detail": "基础款，8颗粒LED蓝光，光源波长465nm~475nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为蓝光，订单中备注：删除：202401178，添加：202401232"
-        },
-        {
-          "category": "灯板",
-          "series": "红外灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-IR(国内中性)",
-          "code": "310100485",
-          "detail": "基础款，8颗粒LED红外光，光源波长850nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为红外光，订单中备注：删除：202401178，添加：202401665"
-        },
-        {
-          "category": "灯板",
-          "series": "白光灯板-48灯珠",
-          "name": "MV-IDA-L-48-55-55-WH(国内中性)",
-          "code": "310100050",
-          "detail": "广角款，48颗粒LED白光，色温5700K，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为高功率白光，订单中备注：删除：202401178，添加：202401177"
-        },
-        {
-          "category": "灯板",
-          "series": "红光灯板-48灯珠",
-          "name": "MV-IDA-L-48-55-55-RH(国内中性)",
-          "code": "310100378",
-          "detail": "广角款，48颗粒LED红光，光源波长620nm~630nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为高功率红光，订单中备注：删除：202401178，添加：202401331"
-        },
-        {
-          "category": "灯板",
-          "series": "蓝光灯板-48灯珠",
-          "name": "MV-IDA-L-48-55-55-BH(国内中性)",
-          "code": "310100051",
-          "detail": "广角款，48颗粒LED蓝光，光源波长465nm~475nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为高功率蓝光，订单中备注：删除：202401178，添加：202401249"
-        },
-        {
-          "category": "镜头罩",
-          "series": "全偏镜头罩-8灯珠",
-          "name": "MV-IDA-C-N-62-62-P(国内中性)",
-          "code": "310100046",
-          "detail": "ID3013PM-8/ID3016PM偏振镜头罩",
-          "remark": "若ID3013-8/ID3016出货配置为全偏镜头罩，订单中备注：删除：190214704，添加：202402640"
-        }
-      ]
-    },
-    {
-      "productCategory": "ID3000PM系列",
-      "productSeries": "ID3016PM系列V2.0",
-      "productModel": "MV-ID3016PM-15M-WBN(国内中性)V2.0",
-      "materialCode": "313200928",
-      "description": "1.6MP，14.8mm镜头，8颗白色LED，全透镜头罩，机械调焦",
-      "remark": "",
-      "standardAccessories": [
-        {
-          "category": "安装板",
-          "series": "安装板",
-          "name": "ID3000PM安装板",
-          "code": "190162231",
-          "detail": "V020-安装支架，适配ID3000PM",
-          "remark": ""
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
-          "code": "310101292",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": ""
-        },
-        {
-          "category": "灯板",
-          "series": "白光灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-W(国内中性)",
-          "code": "310100047",
-          "detail": "基础款，8颗粒LED白光，色温5700K，仅适配ID3000PM-8灯珠款",
-          "remark": "半成品物料：202401178（下配置订单请备注半成品物料号）"
-        },
-        {
-          "category": "镜头罩",
-          "series": "全透镜头罩-8灯珠",
-          "name": "MV-IDA-C-N-62-62-T(国内中性)",
-          "code": "190214704",
-          "detail": "ID3013PM-8/ID3016PM透明镜头罩",
-          "remark": "半成品物料：190214704（下配置订单请备注半成品物料号）"
-        },
-        {
-          "category": "扩展配件",
-          "series": "外包装",
-          "name": "包装盒-ID2000/ID3000",
-          "code": "194213827",
-          "detail": "195x145x135 机器视觉 视觉传感器黄包，适配ID800/ID2013EM/ID2000XM/ID3000系列",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "泡棉EPE",
-          "name": "泡棉EPE-ID3000PM",
-          "code": "194406336",
-          "detail": "192X140X80,机器视觉 三进三出IO盒子+相机 EPE，适配ID3000PM系列",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "螺丝包",
-          "name": "螺丝包M4×8",
-          "code": "193100772",
-          "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
-          "remark": ""
-        }
-      ],
-      "optionalAccessories": [
-        {
-          "category": "电源",
-          "series": "电源适配器",
-          "name": "KPL-060M-VI(全球通中性)",
-          "code": "310100901",
-          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线",
-          "remark": "桌面式适配器，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "电源适配器线缆",
-          "name": "交流电源线_国标_弯三插_C13_1.2米",
-          "code": "310100840",
-          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)",
-          "remark": "搭配适配器应用"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源1",
-          "name": "LRS-50-24(全球通中性)",
-          "code": "310100905",
-          "detail": "开关电源,24V2.09A,50W,接线端子",
-          "remark": "开关电源1，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源2",
-          "name": "LRS-150F-24(全球通中性)",
-          "code": "310100904",
-          "detail": "开关电源,24V6.25A,150W,接线端子",
-          "remark": "开关电源2，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源线缆",
-          "name": "交流电源线_国标_弯三插_open_2米",
-          "code": "310100843",
-          "detail": "交流电源线_国标_弯三插_open_2米(中性)",
-          "remark": "搭配开关电源应用"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
-          "code": "310101293",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "网口型号出货配置为5m普通线缆，订单中备注：删除：310101292，添加：310101293"
-        },
-        {
-          "category": "一体线",
-          "series": "7m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
-          "code": "310101873",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
-          "code": "310101294",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
-          "code": "310101310",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
-          "code": "310101296",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m高柔线缆，订单中备注：删除：310101292，添加：310101296"
-        },
-        {
-          "category": "一体线",
-          "series": "5m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
-          "code": "310102637",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为5m高柔线缆，订单中备注：删除：310101292，添加：310102637"
-        },
-        {
-          "category": "一体线",
-          "series": "5m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
-          "code": "310101876",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "若网口型号出货配置为5m超柔线缆，订单中备注：删除：310101292，添加：310101876"
-        },
-        {
-          "category": "一体线",
-          "series": "7m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
-          "code": "310103217",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "7m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
-          "code": "310101874",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
-          "code": "310101875",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
-          "code": "310101307",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
-          "code": "310101869",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为3m弯头普通线缆，订单中备注：删除：310101292，添加：310101869"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通弯头网口母头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45FDB9-ST-5m",
-          "code": "310101877",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为5m弯头普通线缆，订单中备注：删除：310101292，添加：310101877"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
-          "code": "310101878",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "≥7m线缆无法配置下单，订单备注删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
-          "code": "310101870",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m弯头高柔线缆，订单中备注：删除：310101292，添加：310101870"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
-          "code": "310101871",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "若网口型号出货配置为3m普通母头，订单中备注：删除：310101292，添加：310101871"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
-          "code": "310101872",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "若网口型号出货配置为3m高柔母头，订单中备注：删除：310101292，添加：310101872"
-        },
-        {
-          "category": "灯板",
-          "series": "红光灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-R(国内中性)",
-          "code": "310100048",
-          "detail": "基础款，8颗粒LED红光，光源波长620nm~630nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为红光，订单中备注：删除：202401178，添加：202401179"
-        },
-        {
-          "category": "灯板",
-          "series": "蓝光灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-B(国内中性)",
-          "code": "310100049",
-          "detail": "基础款，8颗粒LED蓝光，光源波长465nm~475nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为蓝光，订单中备注：删除：202401178，添加：202401232"
-        },
-        {
-          "category": "灯板",
-          "series": "红外灯板-8灯珠",
-          "name": "MV-IDA-L-8-55-55-IR(国内中性)",
-          "code": "310100485",
-          "detail": "基础款，8颗粒LED红外光，光源波长850nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为红外光，订单中备注：删除：202401178，添加：202401665"
-        },
-        {
-          "category": "灯板",
-          "series": "白光灯板-48灯珠",
-          "name": "MV-IDA-L-48-55-55-WH(国内中性)",
-          "code": "310100050",
-          "detail": "广角款，48颗粒LED白光，色温5700K，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为高功率白光，订单中备注：删除：202401178，添加：202401177"
-        },
-        {
-          "category": "灯板",
-          "series": "红光灯板-48灯珠",
-          "name": "MV-IDA-L-48-55-55-RH(国内中性)",
-          "code": "310100378",
-          "detail": "广角款，48颗粒LED红光，光源波长620nm~630nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为高功率红光，订单中备注：删除：202401178，添加：202401331"
-        },
-        {
-          "category": "灯板",
-          "series": "蓝光灯板-48灯珠",
-          "name": "MV-IDA-L-48-55-55-BH(国内中性)",
-          "code": "310100051",
-          "detail": "广角款，48颗粒LED蓝光，光源波长465nm~475nm，仅适配ID3000PM-8灯珠款",
-          "remark": "若ID3013-8/ID3016出货配置为高功率蓝光，订单中备注：删除：202401178，添加：202401249"
-        },
-        {
-          "category": "镜头罩",
-          "series": "全偏镜头罩-8灯珠",
-          "name": "MV-IDA-C-N-62-62-P(国内中性)",
-          "code": "310100046",
-          "detail": "ID3013PM-8/ID3016PM偏振镜头罩",
-          "remark": "若ID3013-8/ID3016出货配置为全偏镜头罩，订单中备注：删除：190214704，添加：202402640"
         }
       ]
     },
@@ -76755,7 +73675,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -76763,7 +73683,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -76771,7 +73691,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -76779,7 +73699,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -77135,7 +74055,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -77143,7 +74063,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -77151,7 +74071,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -77159,7 +74079,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -77515,7 +74435,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -77523,7 +74443,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -77531,7 +74451,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -77539,7 +74459,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -77895,7 +74815,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -77903,7 +74823,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -77911,7 +74831,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -77919,7 +74839,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -78275,7 +75195,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -78283,7 +75203,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -78291,7 +75211,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -78299,7 +75219,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -78655,7 +75575,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -78663,7 +75583,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -78671,7 +75591,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -78679,7 +75599,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -79035,7 +75955,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -79043,7 +75963,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -79051,7 +75971,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -79059,7 +75979,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -79415,7 +76335,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -79423,7 +76343,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -79431,7 +76351,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -79439,7 +76359,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -79795,7 +76715,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -79803,7 +76723,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -79811,7 +76731,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -79819,7 +76739,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -80175,7 +77095,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -80183,7 +77103,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -80191,7 +77111,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -80199,7 +77119,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -80555,7 +77475,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -80563,7 +77483,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -80571,7 +77491,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -80579,7 +77499,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -80935,7 +77855,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -80943,7 +77863,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -80951,7 +77871,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -80959,7 +77879,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -81315,7 +78235,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -81323,7 +78243,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -81331,7 +78251,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -81339,7 +78259,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -81695,7 +78615,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -81703,7 +78623,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -81711,7 +78631,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -81719,7 +78639,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -82075,7 +78995,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -82083,7 +79003,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -82091,7 +79011,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -82099,7 +79019,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -82455,7 +79375,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -82463,7 +79383,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -82471,7 +79391,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -82479,7 +79399,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -82835,7 +79755,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -82843,7 +79763,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -82851,7 +79771,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -82859,7 +79779,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -83215,7 +80135,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -83223,7 +80143,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -83231,7 +80151,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -83239,7 +80159,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -83595,7 +80515,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -83603,7 +80523,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -83611,7 +80531,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -83619,7 +80539,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -83975,7 +80895,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -83983,7 +80903,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -83991,7 +80911,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -83999,7 +80919,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -84355,7 +81275,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -84363,7 +81283,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -84371,7 +81291,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -84379,7 +81299,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -84735,7 +81655,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -84743,7 +81663,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -84751,7 +81671,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -84759,7 +81679,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -85115,7 +82035,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -85123,7 +82043,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -85131,7 +82051,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -85139,7 +82059,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -85495,7 +82415,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -85503,7 +82423,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -85511,7 +82431,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -85519,7 +82439,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -85875,7 +82795,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -85883,7 +82803,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -85891,7 +82811,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -85899,7 +82819,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -86255,7 +83175,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -86263,7 +83183,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -86271,7 +83191,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -86279,7 +83199,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -86635,7 +83555,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -86643,7 +83563,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -86651,7 +83571,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -86659,7 +83579,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -87015,7 +83935,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -87023,7 +83943,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -87031,7 +83951,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -87039,7 +83959,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -87094,6 +84014,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -87403,7 +84331,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -87411,7 +84339,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -87419,7 +84347,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -87427,7 +84355,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -87482,6 +84410,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -87791,7 +84727,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -87799,7 +84735,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -87807,7 +84743,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -87815,7 +84751,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -87870,6 +84806,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -88179,7 +85123,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -88187,7 +85131,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -88195,7 +85139,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -88203,7 +85147,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -88258,6 +85202,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -88567,7 +85519,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -88575,7 +85527,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -88583,7 +85535,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -88591,7 +85543,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -88646,6 +85598,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -88955,7 +85915,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -88963,7 +85923,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -88971,7 +85931,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -88979,7 +85939,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -89034,6 +85994,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -89343,7 +86311,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -89351,7 +86319,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -89359,7 +86327,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -89367,7 +86335,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -89422,6 +86390,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -89731,7 +86707,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -89739,7 +86715,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -89747,7 +86723,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -89755,7 +86731,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -89810,6 +86786,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -90119,7 +87103,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -90127,7 +87111,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -90135,7 +87119,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -90143,7 +87127,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -90175,9 +87159,17 @@ window.PEIDAN_DATA = {
         {
           "category": "扩展配件",
           "series": "泡棉EPE",
-          "name": "泡棉EPE-ID3000RM-00C",
+          "name": "泡棉EPE-ID2000XM/ID3000XM",
+          "code": "194407130",
+          "detail": "192X140X80,ID3000XM读码器EPE，适配ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
           "code": "194406782",
-          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID3000RM-00C系列",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
           "remark": ""
         },
         {
@@ -90515,9 +87507,17 @@ window.PEIDAN_DATA = {
         {
           "category": "扩展配件",
           "series": "泡棉EPE",
-          "name": "泡棉EPE-ID3000RM-00C",
+          "name": "泡棉EPE-ID2000XM/ID3000XM",
+          "code": "194407130",
+          "detail": "192X140X80,ID3000XM读码器EPE，适配ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
           "code": "194406782",
-          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID3000RM-00C系列",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
           "remark": ""
         },
         {
@@ -91179,7 +88179,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -91187,7 +88187,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -91195,7 +88195,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -91203,7 +88203,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -91559,7 +88559,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -91567,7 +88567,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -91575,7 +88575,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -91583,7 +88583,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -91939,7 +88939,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -91947,7 +88947,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -91955,7 +88955,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -91963,7 +88963,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -92319,7 +89319,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -92327,7 +89327,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -92335,7 +89335,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -92343,7 +89343,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -92699,7 +89699,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -92707,7 +89707,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -92715,7 +89715,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -92723,7 +89723,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -93079,7 +90079,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -93087,7 +90087,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -93095,7 +90095,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -93103,7 +90103,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -93459,7 +90459,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -93467,7 +90467,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -93475,7 +90475,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -93483,7 +90483,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -93839,7 +90839,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -93847,7 +90847,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -93855,7 +90855,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -93863,7 +90863,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -94219,7 +91219,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -94227,7 +91227,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -94235,7 +91235,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -94243,7 +91243,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -94599,7 +91599,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -94607,7 +91607,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -94615,7 +91615,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -94623,7 +91623,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -94979,7 +91979,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -94987,7 +91987,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -94995,7 +91995,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -95003,7 +92003,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -95359,7 +92359,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -95367,7 +92367,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -95375,7 +92375,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -95383,7 +92383,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -95739,7 +92739,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -95747,7 +92747,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -95755,7 +92755,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -95763,7 +92763,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -96119,7 +93119,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -96127,7 +93127,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -96135,7 +93135,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -96143,7 +93143,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -96198,6 +93198,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -96507,7 +93515,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -96515,7 +93523,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -96523,7 +93531,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -96531,7 +93539,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -96586,6 +93594,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -96895,7 +93911,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -96903,7 +93919,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -96911,7 +93927,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -96919,7 +93935,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -96974,6 +93990,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -97283,7 +94307,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -97291,7 +94315,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -97299,7 +94323,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -97307,7 +94331,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -97362,6 +94386,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -97671,7 +94703,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -97679,7 +94711,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -97687,7 +94719,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -97695,7 +94727,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -97750,6 +94782,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -98059,7 +95099,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -98067,7 +95107,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -98075,7 +95115,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -98083,7 +95123,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -98138,6 +95178,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -98447,7 +95495,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -98455,7 +95503,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -98463,7 +95511,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -98471,7 +95519,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -98526,6 +95574,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -98835,7 +95891,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -98843,7 +95899,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -98851,7 +95907,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -98859,7 +95915,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -98914,6 +95970,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
+          "code": "194406782",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "螺丝包",
           "name": "螺丝包M3×6",
           "code": "193100773",
@@ -99223,7 +96287,7 @@ window.PEIDAN_DATA = {
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
           "code": "310103252",
-          "detail": "极小码配件，小码识别能力：0.006mm",
+          "detail": "极小码配件，小码识别能力：0.006mm，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -99231,7 +96295,7 @@ window.PEIDAN_DATA = {
           "series": "YAG防护罩",
           "name": "MV-IDA-C-Y-61-45-YAG(国内中性)V2.0",
           "code": "310103253",
-          "detail": "激光防护罩，防护1064nm激光漫射",
+          "detail": "激光防护罩，防护1064nm激光漫射，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -99239,7 +96303,7 @@ window.PEIDAN_DATA = {
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-61-45-ESD(国内中性)V2.0",
           "code": "310103254",
-          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         },
         {
@@ -99247,7 +96311,7 @@ window.PEIDAN_DATA = {
           "series": "匀光罩",
           "name": "MV-IDA-C-Y-61-45-DOME(国内中性)V2.0",
           "code": "310103255",
-          "detail": "匀光罩，适合金属拉丝反光场景",
+          "detail": "匀光罩，适合金属拉丝反光场景，适配ID3000XM V3.0和ID3000RM系列",
           "remark": ""
         }
       ]
@@ -99279,9 +96343,17 @@ window.PEIDAN_DATA = {
         {
           "category": "扩展配件",
           "series": "泡棉EPE",
-          "name": "泡棉EPE-ID3000RM-00C",
+          "name": "泡棉EPE-ID2000XM/ID3000XM",
+          "code": "194407130",
+          "detail": "192X140X80,ID3000XM读码器EPE，适配ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
           "code": "194406782",
-          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID3000RM-00C系列",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
           "remark": ""
         },
         {
@@ -99619,9 +96691,17 @@ window.PEIDAN_DATA = {
         {
           "category": "扩展配件",
           "series": "泡棉EPE",
-          "name": "泡棉EPE-ID3000RM-00C",
+          "name": "泡棉EPE-ID2000XM/ID3000XM",
+          "code": "194407130",
+          "detail": "192X140X80,ID3000XM读码器EPE，适配ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-填充物",
           "code": "194406782",
-          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID3000RM-00C系列",
+          "detail": "192X140X50,机器视觉 视觉传感器 填充EPE，适配ID2000XM/ID3000RM系列",
           "remark": ""
         },
         {
@@ -132702,6 +129782,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "蓝牙无线模块接收器",
+          "name": "蓝牙5.0无线模块USB端",
+          "code": "102902945",
+          "detail": "USB DONGLE,蓝牙BLE 5.0,USB-HID接口，适配IDH2000B/IDH2000PB系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "IDH2000电池",
           "name": "U可充电锂离子电池",
           "code": "101900824",
@@ -132750,6 +129838,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-H20B-N-S-USBB-U-ST-2m",
           "code": "310102797",
           "detail": "Type-B充电线缆",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "蓝牙无线模块接收器",
+          "name": "蓝牙5.0无线模块USB端",
+          "code": "102902945",
+          "detail": "USB DONGLE,蓝牙BLE 5.0,USB-HID接口，适配IDH2000B/IDH2000PB系列",
           "remark": ""
         },
         {
@@ -132806,6 +129902,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "蓝牙无线模块接收器",
+          "name": "蓝牙5.0无线模块USB端",
+          "code": "102902945",
+          "detail": "USB DONGLE,蓝牙BLE 5.0,USB-HID接口，适配IDH2000B/IDH2000PB系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "IDH2000电池",
           "name": "U可充电锂离子电池",
           "code": "101900824",
@@ -132854,6 +129958,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-H20B-N-S-USBB-U-ST-2m",
           "code": "310102797",
           "detail": "Type-B充电线缆",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "蓝牙无线模块接收器",
+          "name": "蓝牙5.0无线模块USB端",
+          "code": "102902945",
+          "detail": "USB DONGLE,蓝牙BLE 5.0,USB-HID接口，适配IDH2000B/IDH2000PB系列",
           "remark": ""
         },
         {
@@ -132910,6 +130022,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "蓝牙无线模块接收器",
+          "name": "蓝牙5.0无线模块USB端",
+          "code": "102902945",
+          "detail": "USB DONGLE,蓝牙BLE 5.0,USB-HID接口，适配IDH2000B/IDH2000PB系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "IDH2000电池",
           "name": "U可充电锂离子电池",
           "code": "101900824",
@@ -132962,6 +130082,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "蓝牙无线模块接收器",
+          "name": "蓝牙5.0无线模块USB端",
+          "code": "102902945",
+          "detail": "USB DONGLE,蓝牙BLE 5.0,USB-HID接口，适配IDH2000B/IDH2000PB系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "IDH2000电池",
           "name": "U可充电锂离子电池",
           "code": "101900824",
@@ -132971,10 +130099,10 @@ window.PEIDAN_DATA = {
         {
           "category": "扩展配件",
           "series": "IDH2000B底座",
-          "name": "MV-IDH2000B/CBASE/U(国内标配)无包装",
-          "code": "313201942",
+          "name": "MV-IDH2000B/CBASE/U(国内中性)无包装",
+          "code": "313201943",
           "detail": "IDH2000B、IDH2000PB无线手持巴枪底座，USB接口",
-          "remark": "底座单独物料：313201939"
+          "remark": "底座单独物料：313201938"
         }
       ],
       "optionalAccessories": [
@@ -133010,6 +130138,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-H20B-N-S-USBB-U-ST-2m",
           "code": "310102797",
           "detail": "Type-B充电线缆",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "蓝牙无线模块接收器",
+          "name": "蓝牙5.0无线模块USB端",
+          "code": "102902945",
+          "detail": "USB DONGLE,蓝牙BLE 5.0,USB-HID接口，适配IDH2000B/IDH2000PB系列",
           "remark": ""
         },
         {
@@ -133066,6 +130202,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "蓝牙无线模块接收器",
+          "name": "蓝牙5.0无线模块USB端",
+          "code": "102902945",
+          "detail": "USB DONGLE,蓝牙BLE 5.0,USB-HID接口，适配IDH2000B/IDH2000PB系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "IDH2000电池",
           "name": "U可充电锂离子电池",
           "code": "101900824",
@@ -133075,10 +130219,10 @@ window.PEIDAN_DATA = {
         {
           "category": "扩展配件",
           "series": "IDH2000B底座",
-          "name": "MV-IDH2000B/CBASE/U(国内标配)无包装",
-          "code": "313201942",
+          "name": "MV-IDH2000B/CBASE/U(国内中性)无包装",
+          "code": "313201943",
           "detail": "IDH2000B、IDH2000PB无线手持巴枪底座，USB接口",
-          "remark": "底座单独物料：313201939"
+          "remark": "底座单独物料：313201938"
         }
       ],
       "optionalAccessories": [
@@ -133114,6 +130258,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-H20B-N-S-USBB-U-ST-2m",
           "code": "310102797",
           "detail": "Type-B充电线缆",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "蓝牙无线模块接收器",
+          "name": "蓝牙5.0无线模块USB端",
+          "code": "102902945",
+          "detail": "USB DONGLE,蓝牙BLE 5.0,USB-HID接口，适配IDH2000B/IDH2000PB系列",
           "remark": ""
         },
         {
@@ -133170,6 +130322,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "蓝牙无线模块接收器",
+          "name": "蓝牙5.0无线模块USB端",
+          "code": "102902945",
+          "detail": "USB DONGLE,蓝牙BLE 5.0,USB-HID接口，适配IDH2000B/IDH2000PB系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "IDH2000电池",
           "name": "U可充电锂离子电池",
           "code": "101900824",
@@ -133179,10 +130339,10 @@ window.PEIDAN_DATA = {
         {
           "category": "扩展配件",
           "series": "IDH2000B底座",
-          "name": "MV-IDH2000B/CBASE/U(国内标配)无包装",
-          "code": "313201942",
+          "name": "MV-IDH2000B/CBASE/U(国内中性)无包装",
+          "code": "313201943",
           "detail": "IDH2000B、IDH2000PB无线手持巴枪底座，USB接口",
-          "remark": "底座单独物料：313201939"
+          "remark": "底座单独物料：313201938"
         }
       ],
       "optionalAccessories": [
@@ -134566,6 +131726,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "RF无线模块接收器",
+          "name": "RF2.4GHz无线模块USB端",
+          "code": "102902700",
+          "detail": "USB DONGLE,私有组网,HJ-USB_DONGLE_CUS，适配IDH2000RF系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "IDH2000电池",
           "name": "U可充电锂离子电池",
           "code": "101900824",
@@ -134614,6 +131782,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-H20B-N-S-USBB-U-ST-2m",
           "code": "310102797",
           "detail": "Type-B充电线缆",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "RF无线模块接收器",
+          "name": "RF2.4GHz无线模块USB端",
+          "code": "102902700",
+          "detail": "USB DONGLE,私有组网,HJ-USB_DONGLE_CUS，适配IDH2000RF系列",
           "remark": ""
         },
         {
@@ -134670,6 +131846,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "RF无线模块接收器",
+          "name": "RF2.4GHz无线模块USB端",
+          "code": "102902700",
+          "detail": "USB DONGLE,私有组网,HJ-USB_DONGLE_CUS，适配IDH2000RF系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "IDH2000电池",
           "name": "U可充电锂离子电池",
           "code": "101900824",
@@ -134718,6 +131902,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-H20B-N-S-USBB-U-ST-2m",
           "code": "310102797",
           "detail": "Type-B充电线缆",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "RF无线模块接收器",
+          "name": "RF2.4GHz无线模块USB端",
+          "code": "102902700",
+          "detail": "USB DONGLE,私有组网,HJ-USB_DONGLE_CUS，适配IDH2000RF系列",
           "remark": ""
         },
         {
@@ -134774,6 +131966,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "RF无线模块接收器",
+          "name": "RF2.4GHz无线模块USB端",
+          "code": "102902700",
+          "detail": "USB DONGLE,私有组网,HJ-USB_DONGLE_CUS，适配IDH2000RF系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "IDH2000电池",
           "name": "U可充电锂离子电池",
           "code": "101900824",
@@ -134822,6 +132022,14 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-H20B-N-S-USBB-U-ST-2m",
           "code": "310102797",
           "detail": "Type-B充电线缆",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "RF无线模块接收器",
+          "name": "RF2.4GHz无线模块USB端",
+          "code": "102902700",
+          "detail": "USB DONGLE,私有组网,HJ-USB_DONGLE_CUS，适配IDH2000RF系列",
           "remark": ""
         },
         {

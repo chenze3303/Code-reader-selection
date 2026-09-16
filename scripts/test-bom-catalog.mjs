@@ -28,9 +28,13 @@ assert.equal(index.reverseIndex['1001'].models[0].type, 'standard')
 
 const productionCatalog = JSON.parse(fs.readFileSync(new URL('../public/data/bom-catalog.json', import.meta.url), 'utf8'))
 const productionData = hydrateBomCatalog(productionCatalog)
+const sourceRows = JSON.parse(fs.readFileSync(new URL('../product_data.json', import.meta.url), 'utf8'))
+  .map((item) => item.value || item)
+const sourceModelCount = sourceRows.filter((row) => String(row[0] || '').trim() === '相机').length
+const sourceAccessoryCount = sourceRows.filter((row) => String(row[0] || '').trim() === '配件').length
 assert.equal(productionCatalog.schemaVersion, 1)
-assert.equal(productionData.modelList.length, 706)
-assert.equal(productionCatalog.accessories.length, 391)
+assert.equal(productionData.modelList.length, sourceModelCount)
+assert.equal(productionCatalog.accessories.length, sourceAccessoryCount)
 assert.ok(productionData.modelList.some((model) => model.productCategory === 'ID800系列'))
 
 let calls = 0
