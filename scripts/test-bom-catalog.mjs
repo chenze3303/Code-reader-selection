@@ -21,10 +21,11 @@ assert.equal(hydrated.modelList.length, 1)
 assert.deepEqual(hydrated.modelList[0].standardAccessories[0], catalog.accessories[0])
 assert.notEqual(hydrated.modelList[0].standardAccessories[0], catalog.accessories[0])
 
-const index = buildBomCatalogIndex(hydrated.modelList, { categoryPriority: ['ID800'] })
+const index = buildBomCatalogIndex(hydrated.modelList, { categoryPriority: ['ID800'], accessories: hydrated.accessories })
 assert.deepEqual(index.cats, ['ID800'])
 assert.equal(index.tree.ID800.ID803.mains[0].standardAcc[0].code, '1001')
 assert.equal(index.reverseIndex['1001'].models[0].type, 'standard')
+assert.equal(index.reverseIndex['1001'].variants.length, 1)
 
 const productionCatalog = JSON.parse(fs.readFileSync(new URL('../public/data/bom-catalog.json', import.meta.url), 'utf8'))
 const productionData = hydrateBomCatalog(productionCatalog)
@@ -36,6 +37,9 @@ assert.equal(productionCatalog.schemaVersion, 1)
 assert.equal(productionData.modelList.length, sourceModelCount)
 assert.equal(productionCatalog.accessories.length, sourceAccessoryCount)
 assert.ok(productionData.modelList.some((model) => model.productCategory === 'ID800系列'))
+const productionIndex = buildBomCatalogIndex(productionData.modelList, { accessories: productionData.accessories })
+assert.equal(Object.keys(productionIndex.reverseIndex).length, new Set(productionCatalog.accessories.map((item) => item.code).filter(Boolean)).size)
+assert.ok(productionIndex.reverseIndex['102202388'], '未关联型号的 M12 镜头仍应可检索')
 
 let calls = 0
 const repository = createBomCatalogRepository({

@@ -44,7 +44,10 @@ export function hydrateBomCatalog(catalog) {
   validateBomCatalog(catalog)
   const accessories = catalog.accessories.map(normalizeAccessory)
   return {
-    modelList: catalog.models.map((item) => normalizeModel(item, accessories))
+    modelList: catalog.models.map((item) => normalizeModel(item, accessories)),
+    // 保留完整配件主数据。部分配件当前尚未被型号引用，但仍应可通过
+    // 配单页的快速检索找到（例如独立的 M12 镜头）。
+    accessories
   }
 }
 

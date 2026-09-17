@@ -291,7 +291,7 @@ const addBtnText = ref('')
 
 function buildData(raw) {
   if (!raw || !raw.modelList || raw.modelList.length === 0) { console.warn('PEIDAN_DATA invalid or empty'); return }
-  const built = buildBomCatalogIndex(raw.modelList, { categoryPriority: CAT_PRIORITY })
+  const built = buildBomCatalogIndex(raw.modelList, { categoryPriority: CAT_PRIORITY, accessories: raw.accessories })
   tree.value = built.tree
   cats.value = built.cats
   reverseIndex.value = built.reverseIndex

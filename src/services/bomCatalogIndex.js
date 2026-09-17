@@ -31,9 +31,30 @@ function toModel(item, index) {
   }
 }
 
-export function buildBomCatalogIndex(modelList, { categoryPriority = [] } = {}) {
+export function buildBomCatalogIndex(modelList, { categoryPriority = [], accessories = [] } = {}) {
   const tree = {}
   const reverseIndex = {}
+
+  const registerAccessory = (accessory) => {
+    if (!accessory || !accessory.code) return
+    const code = accessory.code
+    if (!reverseIndex[code]) {
+      reverseIndex[code] = {
+        name: accessory.name || '', category: accessory.category || '', series: accessory.series || '',
+        detail: accessory.detail || '', remark: accessory.remark || '', models: [], variants: []
+      }
+    }
+    const entry = reverseIndex[code]
+    if (!entry.variants.some((variant) => variant.name === (accessory.name || '') && variant.category === (accessory.category || '') && variant.detail === (accessory.detail || '') && variant.remark === (accessory.remark || ''))) {
+      entry.variants.push({
+        name: accessory.name || '', category: accessory.category || '', series: accessory.series || '',
+        detail: accessory.detail || '', remark: accessory.remark || ''
+      })
+    }
+  }
+
+  // 先注册完整配件目录，确保未被任何型号引用的配件也可检索。
+  ;(accessories || []).forEach(registerAccessory)
 
   modelList.forEach((item, index) => {
     const category = (item.productCategory || '未分类').trim()
@@ -46,12 +67,7 @@ export function buildBomCatalogIndex(modelList, { categoryPriority = [] } = {}) 
     const standardAccessories = item.standardAccessories || []
     standardAccessories.concat(item.optionalAccessories || []).forEach((accessory, accessoryIndex) => {
       if (!accessory.code) return
-      if (!reverseIndex[accessory.code]) {
-        reverseIndex[accessory.code] = {
-          name: accessory.name || '', category: accessory.category || '', series: accessory.series || '',
-          detail: accessory.detail || '', remark: accessory.remark || '', models: []
-        }
-      }
+      registerAccessory(accessory)
       const linkedModels = reverseIndex[accessory.code].models
       if (!linkedModels.some((entry) => entry.name === model.n && entry.cat === category && entry.ser === series)) {
         linkedModels.push({ name: model.n, type: accessoryIndex < standardAccessories.length ? 'standard' : 'optional', cat: category, ser: series })
