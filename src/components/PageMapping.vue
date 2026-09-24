@@ -34,23 +34,45 @@
 
             <div v-if="error" class="id-series-state error" role="alert"><UiIcon name="alert" /> {{ labels.loadError }}</div>
             <div v-else-if="ready && visibleRows.length === 0" class="id-series-state"><UiIcon name="frown" /> {{ labels.noMatch }}</div>
-            <div v-else class="id-series-table-scroll">
-              <table class="id-series-table">
-                <thead><tr><th class="id-series-col-index">{{ labels.index }}</th><th class="id-series-col-type">{{ labels.type }}</th><th class="id-series-col-name">{{ labels.name }}</th><th class="id-series-col-code">{{ labels.code }}</th><th class="id-series-col-description">{{ labels.description }}</th><th class="id-series-col-remark">{{ labels.remark }}</th></tr></thead>
-                <tbody>
-                  <template v-for="group in visibleGroups" :key="group.name">
-                    <tr v-if="keyword && visibleGroups.length > 1" class="id-series-group-row"><th colspan="6">{{ group.name }} <span>{{ labels.totalCount(group.rows.length) }}</span></th></tr>
-                    <tr v-for="(row, index) in group.rows" :key="`${group.name}-${row.kind}-${row.code}-${index}`" class="id-series-data-row" :class="{ clickable: row.kind === 'model' }" :tabindex="row.kind === 'model' ? 0 : undefined" :role="row.kind === 'model' ? 'button' : undefined" :aria-label="row.kind === 'model' ? labels.openBom(row.name) : undefined" @click="row.kind === 'model' && jumpToBom(row)" @keydown.enter.prevent="row.kind === 'model' && jumpToBom(row)" @keydown.space.prevent="row.kind === 'model' && jumpToBom(row)">
-                      <td class="id-series-index">{{ index + 1 }}</td>
-                      <td><span class="id-series-type" :class="row.kind">{{ row.kind === 'model' ? labels.host : row.type }}</span></td>
-                      <td class="id-series-name"><span>{{ row.name }}</span><small v-if="row.kind === 'model'">{{ labels.openBomHint }}</small></td>
-                      <td class="id-series-code">{{ row.code || '—' }}</td>
-                      <td class="id-series-description">{{ row.description || '—' }}</td>
-                      <td class="id-series-remark">{{ row.remark || '—' }}</td>
-                    </tr>
-                  </template>
-                </tbody>
-              </table>
+            <div v-else class="id-series-results">
+              <div class="id-series-table-scroll">
+                <table class="id-series-table">
+                  <thead><tr><th class="id-series-col-index">{{ labels.index }}</th><th class="id-series-col-type">{{ labels.type }}</th><th class="id-series-col-name">{{ labels.name }}</th><th class="id-series-col-code">{{ labels.code }}</th><th class="id-series-col-description">{{ labels.description }}</th><th class="id-series-col-remark">{{ labels.remark }}</th></tr></thead>
+                  <tbody>
+                    <template v-for="group in visibleGroups" :key="group.name">
+                      <tr v-if="keyword && visibleGroups.length > 1" class="id-series-group-row"><th colspan="6">{{ group.name }} <span>{{ labels.totalCount(group.rows.length) }}</span></th></tr>
+                      <tr v-for="(row, index) in group.rows" :key="`${group.name}-${row.kind}-${row.code}-${index}`" class="id-series-data-row" :class="{ clickable: row.kind === 'model' }" :tabindex="row.kind === 'model' ? 0 : undefined" :role="row.kind === 'model' ? 'button' : undefined" :aria-label="row.kind === 'model' ? labels.openBom(row.name) : undefined" @dblclick="row.kind === 'model' && jumpToBom(row)" @keydown.enter.prevent="row.kind === 'model' && jumpToBom(row)" @keydown.space.prevent="row.kind === 'model' && jumpToBom(row)">
+                        <td class="id-series-index">{{ index + 1 }}</td>
+                        <td><span class="id-series-type" :class="row.kind" :title="row.kind === 'model' ? labels.host : row.type">{{ row.kind === 'model' ? labels.host : row.type }}</span></td>
+                        <td class="id-series-name"><span :title="row.name">{{ row.name }}</span><small v-if="row.kind === 'model'">{{ labels.openBomHint }}</small></td>
+                        <td class="id-series-code" :title="row.code || '—'">{{ row.code || '—' }}</td>
+                        <td class="id-series-description" :title="row.description || '—'">{{ row.description || '—' }}</td>
+                        <td class="id-series-remark" :title="row.remark || '—'">{{ row.remark || '—' }}</td>
+                      </tr>
+                    </template>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="id-series-card-list" :aria-label="labels.cardsLabel">
+                <template v-for="group in visibleGroups" :key="`cards-${group.name}`">
+                  <div v-if="keyword && visibleGroups.length > 1" class="id-series-card-group">
+                    <strong>{{ group.name }}</strong><span>{{ labels.totalCount(group.rows.length) }}</span>
+                  </div>
+                  <article v-for="(row, index) in group.rows" :key="`card-${group.name}-${row.kind}-${row.code}-${index}`" class="id-series-card" :class="{ clickable: row.kind === 'model' }" :tabindex="row.kind === 'model' ? 0 : undefined" :role="row.kind === 'model' ? 'button' : undefined" :aria-label="row.kind === 'model' ? labels.openBom(row.name) : undefined" @dblclick="row.kind === 'model' && jumpToBom(row)" @keydown.enter.prevent="row.kind === 'model' && jumpToBom(row)" @keydown.space.prevent="row.kind === 'model' && jumpToBom(row)">
+                    <div class="id-series-card-top">
+                      <span class="id-series-card-index">{{ index + 1 }}</span>
+                      <span class="id-series-type" :class="row.kind">{{ row.kind === 'model' ? labels.host : row.type }}</span>
+                      <span class="id-series-card-kind">{{ row.kind === 'model' ? labels.host : labels.accessory }}</span>
+                    </div>
+                    <h4 class="id-series-card-name" :title="row.name">{{ row.name }}</h4>
+                    <div class="id-series-card-code"><span>{{ labels.code }}</span>{{ row.code || '—' }}</div>
+                    <p v-if="row.description" class="id-series-card-description">{{ row.description }}</p>
+                    <p v-if="row.remark" class="id-series-card-remark">{{ row.remark }}</p>
+                    <div v-if="row.kind === 'model'" class="id-series-card-action">{{ labels.openBomAction }} <span aria-hidden="true">→</span></div>
+                  </article>
+                </template>
+              </div>
             </div>
             <div class="id-series-footer"><span>{{ labels.totalCount(visibleRows.length) }}</span><span>{{ labels.footerHint }}</span></div>
           </main>
@@ -75,9 +97,9 @@ const activeSeries = ref('')
 const labels = computed(() => {
   const en = currentLang.value === 'en'
   return en ? {
-    kicker: 'ID PRODUCT CATALOG', title: 'ID Series', sidebarTitle: 'ID Product Series', searchPlaceholder: 'Search model, material code or description…', clearSearch: 'Clear search', loading: 'Loading series data…', searchResults: 'Search results', currentSeries: 'Current series', noSeries: 'Select a series', index: '#', type: 'Type', name: 'Material name', code: 'Material code', description: 'Description', remark: 'Remark', host: 'Host', noMatch: 'No matching products found. Try another keyword.', loadError: 'Series data failed to load. Please refresh and try again.', openBom: (name) => `Open BOM for ${name}`, openBomHint: 'Click to open BOM', footerHint: 'Host rows can open the matching BOM configuration.', totalCount: (n) => `${n} items`
+    kicker: 'ID PRODUCT CATALOG', title: 'ID Series', sidebarTitle: 'ID Product Series', searchPlaceholder: 'Search model, material code or description…', clearSearch: 'Clear search', loading: 'Loading series data…', searchResults: 'Search results', currentSeries: 'Current series', noSeries: 'Select a series', index: '#', type: 'Type', name: 'Material name', code: 'Material code', description: 'Description', remark: 'Remark', host: 'Host', accessory: 'Accessory', cardsLabel: 'Product card list', openBomAction: 'View BOM', noMatch: 'No matching products found. Try another keyword.', loadError: 'Series data failed to load. Please refresh and try again.', openBom: (name) => `Open BOM for ${name}`, openBomHint: 'Double-click to open BOM', footerHint: 'Double-click a host row to open its BOM configuration.', totalCount: (n) => `${n} items`
   } : {
-    kicker: 'ID PRODUCT CATALOG', title: 'ID 产品系列', sidebarTitle: 'ID 产品系列', searchPlaceholder: '搜索型号、物料代码或描述…', clearSearch: '清空搜索', loading: '正在加载系列数据…', searchResults: '搜索结果', currentSeries: '当前系列', noSeries: '请选择系列', index: '序号', type: '类型', name: '物料名称', code: '物料代码', description: '描述', remark: '备注', host: '主机', noMatch: '未找到匹配产品，请调整搜索条件。', loadError: '系列数据加载失败，请刷新后重试。', openBom: (name) => `打开 ${name} 的配单表`, openBomHint: '点击打开配单表', footerHint: '点击主机型号可直接进入对应配单表。', totalCount: (n) => `共 ${n} 项`
+    kicker: 'ID PRODUCT CATALOG', title: 'ID 产品系列', sidebarTitle: 'ID 产品系列', searchPlaceholder: '搜索型号、物料代码或描述…', clearSearch: '清空搜索', loading: '正在加载系列数据…', searchResults: '搜索结果', currentSeries: '当前系列', noSeries: '请选择系列', index: '序号', type: '类型', name: '物料名称', code: '物料代码', description: '描述', remark: '备注', host: '主机', accessory: '配件', cardsLabel: '产品卡片列表', openBomAction: '查看配单', noMatch: '未找到匹配产品，请调整搜索条件。', loadError: '系列数据加载失败，请刷新后重试。', openBom: (name) => `打开 ${name} 的配单表`, openBomHint: '双击打开配单表', footerHint: '双击主机型号可直接进入对应配单表。', totalCount: (n) => `共 ${n} 项`
   }
 })
 
