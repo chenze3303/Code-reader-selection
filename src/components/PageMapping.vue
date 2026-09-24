@@ -14,11 +14,16 @@
           </label>
         </div>
 
-        <div class="id-series-layout">
+        <div class="id-series-layout" :class="{ 'sidebar-collapsed': sidebarCollapsed }">
           <aside class="id-series-sidebar" :aria-label="labels.sidebarTitle">
-            <div class="id-series-sidebar-title"><UiIcon name="package" aria-hidden="true" />{{ labels.sidebarTitle }}</div>
+            <div class="id-series-sidebar-title">
+              <span class="id-series-sidebar-heading"><UiIcon name="package" aria-hidden="true" /><span class="id-series-sidebar-title-text">{{ labels.sidebarTitle }}</span></span>
+              <button type="button" class="id-series-sidebar-toggle" :aria-label="sidebarCollapsed ? labels.expandSidebar : labels.collapseSidebar" :aria-expanded="String(!sidebarCollapsed)" @click="sidebarCollapsed = !sidebarCollapsed">
+                <UiIcon name="arrowRight" aria-hidden="true" />
+              </button>
+            </div>
             <div v-if="!ready" class="id-series-sidebar-empty">{{ labels.loading }}</div>
-            <button v-for="group in groups" :key="group.name" type="button" class="id-series-item" :class="{ active: !keyword && group.name === activeSeries }" @click="selectSeries(group.name)">
+            <button v-for="group in groups" :key="group.name" type="button" class="id-series-item" :class="{ active: !keyword && group.name === activeSeries }" :title="sidebarCollapsed ? group.name : undefined" @click="selectSeries(group.name)">
               <span>{{ group.name }}</span><small>{{ group.rows.length }}</small>
             </button>
           </aside>
@@ -93,13 +98,14 @@ const catalog = ref(null)
 const error = ref(false)
 const keyword = ref('')
 const activeSeries = ref('')
+const sidebarCollapsed = ref(false)
 
 const labels = computed(() => {
   const en = currentLang.value === 'en'
   return en ? {
-    kicker: 'ID PRODUCT CATALOG', title: 'ID Series', sidebarTitle: 'ID Product Series', searchPlaceholder: 'Search model, material code or description…', clearSearch: 'Clear search', loading: 'Loading series data…', searchResults: 'Search results', currentSeries: 'Current series', noSeries: 'Select a series', index: '#', type: 'Type', name: 'Material name', code: 'Material code', description: 'Description', remark: 'Remark', host: 'Host', accessory: 'Accessory', cardsLabel: 'Product card list', openBomAction: 'View BOM', noMatch: 'No matching products found. Try another keyword.', loadError: 'Series data failed to load. Please refresh and try again.', openBom: (name) => `Open BOM for ${name}`, openBomHint: 'Double-click to open BOM', footerHint: 'Double-click a host row to open its BOM configuration.', totalCount: (n) => `${n} items`
+    kicker: 'ID PRODUCT CATALOG', title: 'ID Series', sidebarTitle: 'ID Product Series', collapseSidebar: 'Collapse series sidebar', expandSidebar: 'Expand series sidebar', searchPlaceholder: 'Search model, material code or description…', clearSearch: 'Clear search', loading: 'Loading series data…', searchResults: 'Search results', currentSeries: 'Current series', noSeries: 'Select a series', index: '#', type: 'Type', name: 'Material name', code: 'Material code', description: 'Description', remark: 'Remark', host: 'Host', accessory: 'Accessory', cardsLabel: 'Product card list', openBomAction: 'View BOM', noMatch: 'No matching products found. Try another keyword.', loadError: 'Series data failed to load. Please refresh and try again.', openBom: (name) => `Open BOM for ${name}`, openBomHint: 'Double-click to open BOM', footerHint: 'Double-click a host row to open its BOM configuration.', totalCount: (n) => `${n} items`
   } : {
-    kicker: 'ID PRODUCT CATALOG', title: 'ID 产品系列', sidebarTitle: 'ID 产品系列', searchPlaceholder: '搜索型号、物料代码或描述…', clearSearch: '清空搜索', loading: '正在加载系列数据…', searchResults: '搜索结果', currentSeries: '当前系列', noSeries: '请选择系列', index: '序号', type: '类型', name: '物料名称', code: '物料代码', description: '描述', remark: '备注', host: '主机', accessory: '配件', cardsLabel: '产品卡片列表', openBomAction: '查看配单', noMatch: '未找到匹配产品，请调整搜索条件。', loadError: '系列数据加载失败，请刷新后重试。', openBom: (name) => `打开 ${name} 的配单表`, openBomHint: '双击打开配单表', footerHint: '双击主机型号可直接进入对应配单表。', totalCount: (n) => `共 ${n} 项`
+    kicker: 'ID PRODUCT CATALOG', title: 'ID 产品系列', sidebarTitle: 'ID 产品系列', collapseSidebar: '收起系列栏', expandSidebar: '展开系列栏', searchPlaceholder: '搜索型号、物料代码或描述…', clearSearch: '清空搜索', loading: '正在加载系列数据…', searchResults: '搜索结果', currentSeries: '当前系列', noSeries: '请选择系列', index: '序号', type: '类型', name: '物料名称', code: '物料代码', description: '描述', remark: '备注', host: '主机', accessory: '配件', cardsLabel: '产品卡片列表', openBomAction: '查看配单', noMatch: '未找到匹配产品，请调整搜索条件。', loadError: '系列数据加载失败，请刷新后重试。', openBom: (name) => `打开 ${name} 的配单表`, openBomHint: '双击打开配单表', footerHint: '双击主机型号可直接进入对应配单表。', totalCount: (n) => `共 ${n} 项`
   }
 })
 
