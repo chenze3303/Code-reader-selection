@@ -150,7 +150,7 @@
                 <tr v-if="bomList.length === 0"><td colspan="7" class="bom-q-empty">{{ t('bomEmpty') }}</td></tr>
                 <tr v-for="(row, i) in bomList" :key="i" :class="rowClass(row)">
                   <td class="bom-q-idx" style="text-align:center;">{{ i + 1 }}</td>
-                  <td style="text-align:center;"><span class="bom-q-type-badge" :class="row.type === '配件' ? ' acc' : ''">{{ row.accType || row.type }}</span></td>
+                  <td style="text-align:center;"><span class="bom-q-type-badge" :class="rowTypeBadgeClass(row)">{{ row.accType || row.type }}</span></td>
                   <td class="bom-td-name" style="text-align:center;">{{ row.n }}</td>
                   <td class="bom-q-img" style="text-align:center;">
                     <img v-if="rowImgSrc(row)" class="bom-model-img" :src="rowImgSrc(row)" width="44" height="44" :alt="row.n || ''" role="button" tabindex="0" @click="openLightbox(rowImgSrc(row))" @keydown.enter.prevent="openLightbox(rowImgSrc(row))" @keydown.space.prevent="openLightbox(rowImgSrc(row))">
@@ -540,6 +540,12 @@ const dlUrl = computed(() => {
 
 function rowClass(row) {
   return row.type === '主机' ? 'bom-row-main' : (row.accType === '标配' ? 'bom-row-std' : 'bom-row-opt')
+}
+function rowTypeBadgeClass(row) {
+  if (row.type !== '配件') return ''
+  if (row.accType === '标配') return 'acc std'
+  if (row.accType === '选配') return 'acc opt'
+  return 'acc'
 }
 function rowDesc(row) {
   let text = row.d || ''

@@ -1642,6 +1642,14 @@ select:focus, input:focus {
   background: var(--brand-red-lt);
   color: var(--brand-red);
 }
+.bom-q-type-badge.acc.std {
+  background: #dbeafe;
+  color: #2563eb;
+}
+.bom-q-type-badge.acc.opt {
+  background: var(--brand-red-lt);
+  color: var(--brand-red);
+}
 
 /* 鍒犻櫎鎸夐挳 */
 .bom-q-del {
