@@ -14,8 +14,9 @@
   --bg-card:       #FFFFFF;
   --border:        #DDE5EF;
   --border-light:  #EEF2F8;
-  --font-sans:     'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-  --font-mono:     'SF Mono', 'Cascadia Code', 'Consolas', monospace;
+  /* 统一使用微软雅黑，保证中文界面、编号和技术字段的字形一致。 */
+  --font-sans:     'Microsoft YaHei', '微软雅黑', 'PingFang SC', 'Hiragino Sans GB', Arial, sans-serif;
+  --font-mono:     'Microsoft YaHei', '微软雅黑', 'PingFang SC', 'Hiragino Sans GB', Arial, sans-serif;
   --border-main:   var(--border);
   --text-main:     var(--text-primary);
   --bg-hover:      var(--brand-red-lt);
@@ -25,7 +26,7 @@
 
 body {
   background: var(--bg-page);
-  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-family: var(--font-sans);
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -59,6 +60,10 @@ input, select, textarea { -webkit-text-size-adjust: 100%; }
 html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 table, td, th { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 * { -webkit-tap-highlight-color: transparent; }
+button, input, select, textarea, code, pre { font-family: inherit; }
+
+/* SVG 中的说明文字也继承页面字体（覆盖 presentation attribute 的默认 sans-serif）。 */
+svg text { font-family: var(--font-sans); }
 
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(8px); }
@@ -1660,7 +1665,7 @@ select:focus, input:focus {
 
 /* 鐗╂枡浠ｇ爜 */
 .bom-q-code {
-  font-family: monospace;
+  font-family: var(--font-sans);
   font-size: 0.68rem;
   color: var(--text-secondary);
 }
@@ -1855,7 +1860,7 @@ select:focus, input:focus {
 
 .acc-modal-info { flex: 1; min-width: 0; }
 .acc-modal-name { font-size: 0.88rem; font-weight: 700; color: var(--text-primary); }
-.acc-modal-code { font-size: 0.72rem; font-family: monospace; color: var(--text-muted); margin-top: 0.15rem; }
+.acc-modal-code { font-size: 0.72rem; font-family: var(--font-sans); color: var(--text-muted); margin-top: 0.15rem; }
 .acc-modal-detail { font-size: 0.72rem; color: var(--text-secondary); margin-top: 0.25rem; line-height: 1.5; }
 
 .acc-modal-footer {
@@ -3134,7 +3139,7 @@ select:focus, input:focus {
 
 .mp-code-tag {
   display: inline-block;
-  font-family: monospace;
+  font-family: var(--font-sans);
   font-size: 0.74rem;
   padding: 0.2rem 0.55rem;
   border-radius: 4px;
@@ -5131,7 +5136,7 @@ select:focus, input:focus {
 .sdk-code-header span {
   font-size: 11px;
   color: #8899aa;
-  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-family: var(--font-sans);
 }
 .sdk-copy-btn {
   background: rgba(255,255,255,.1);
@@ -5153,7 +5158,7 @@ select:focus, input:focus {
   overflow-x: auto;
 }
 .sdk-code code {
-  font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+  font-family: var(--font-sans);
   font-size: 12.5px;
   line-height: 1.6;
   color: #e0e6ed;
@@ -5200,7 +5205,7 @@ select:focus, input:focus {
   align-items: center;
 }
 .sdk-table-row code {
-  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-family: var(--font-sans);
   font-size: 12px;
   color: var(--brand-red, #f76504);
   background: var(--brand-red-lt, rgba(247,101,4,.08));
@@ -5226,7 +5231,7 @@ select:focus, input:focus {
 }
 .sdk-api-item code {
   display: block;
-  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-family: var(--font-sans);
   font-size: 12px;
   color: var(--brand-red, #f76504);
   margin-bottom: 4px;
@@ -5520,7 +5525,7 @@ select:focus, input:focus {
   padding: 10px 20px;
   border-radius: 8px;
   font-size: 13px;
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: var(--font-sans);
   box-shadow: 0 4px 16px rgba(0,0,0,0.2);
   animation: toast-in 0.3s ease-out;
   pointer-events: auto;
@@ -5687,7 +5692,7 @@ select:focus, input:focus {
 .stitch-3d-ann-val {
   font-weight: 600;
   color: var(--text-primary, #1a2332);
-  font-family: var(--font-mono, 'SF Mono', monospace);
+  font-family: var(--font-mono);
   margin-left: auto;
 }
 
