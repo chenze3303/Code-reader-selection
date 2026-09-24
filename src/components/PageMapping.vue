@@ -1,277 +1,132 @@
 <template>
-    <div class="page" id="page-mapping">
-      <div class="mp-page-wrap">
-      <div class="mp-page">
-
-        <!-- 工具栏 -->
-        <div class="mp-toolbar">
-          <div class="mp-search-wrap">
-            <input type="text" id="mpSearchInput" class="mp-search-input" v-model="keyword" :placeholder="t('mpSearch')" autocomplete="off">
+  <div class="page" id="page-mapping">
+    <div class="id-series-page-wrap">
+      <div class="id-series-page">
+        <div class="id-series-toolbar">
+          <div>
+            <div class="id-series-kicker">{{ labels.kicker }}</div>
+            <h2 class="id-series-title">{{ labels.title }}</h2>
           </div>
-          <div class="mp-filter-wrap">
-            <span class="mp-filter-label">{{ t('mpCatLabel') }}</span>
-            <select id="mpCatSelect" class="mp-cat-select" v-model="cat">
-              <option value="all">{{ t('mpCatAll') }}</option>
-              <option v-for="c in cats" :key="c" :value="c">{{ c }}</option>
-            </select>
-          </div>
-          <button class="mp-btn-expand" id="mpToggleAllBtn" @click="toggleAll"><UiIcon :name="allExpanded ? 'folder' : 'folderopen'" /> {{ allExpanded ? t('mpCollapse') : t('mpExpand') }}</button>
-          <button class="mp-btn-naming" id="mpNamingBtn" :class="{ show: showCodeColumns }" @click="namingOpen = true"><UiIcon name="book" /> {{ t('mpNamingBtn') }}</button>
+          <label class="id-series-search">
+            <UiIcon name="search" aria-hidden="true" />
+            <input id="idSeriesSearch" v-model="keyword" type="search" :placeholder="labels.searchPlaceholder" :aria-label="labels.searchPlaceholder" autocomplete="off">
+            <button v-if="keyword" type="button" class="id-series-search-clear" :aria-label="labels.clearSearch" @click="keyword = ''">×</button>
+          </label>
         </div>
 
-        <!-- 状态栏 -->
-        <div class="mp-statsbar">
-          <span id="mpStats">{{ t('mpStats', filtered.length) }}</span>
-          <span class="mp-statsbar-hint">{{ t('mpStatsHint') }}</span>
-        </div>
+        <div class="id-series-layout">
+          <aside class="id-series-sidebar" :aria-label="labels.sidebarTitle">
+            <div class="id-series-sidebar-title"><span aria-hidden="true">📦</span>{{ labels.sidebarTitle }}</div>
+            <div v-if="!ready" class="id-series-sidebar-empty">{{ labels.loading }}</div>
+            <button v-for="group in groups" :key="group.name" type="button" class="id-series-item" :class="{ active: !keyword && group.name === activeSeries }" @click="selectSeries(group.name)">
+              <span>{{ group.name }}</span><small>{{ group.rows.length }}</small>
+            </button>
+          </aside>
 
-        <!-- 表格 -->
-        <div class="mp-table-scroll">
-          <table class="mp-table">
-            <thead>
-              <tr>
-                <th style="width:52px;text-align:center">#</th>
-                <th style="width:28%;text-align:center">{{ t('mpThBaseModel') }}</th>
-                <th v-if="showCodeColumns" style="width:110px;text-align:center">{{ t('mpThBaseCode') }}</th>
-                <th style="width:50px;text-align:center">{{ t('mpThDocs') }}</th>
-                <th style="width:28%;text-align:center">{{ t('mpThDistModel') }}</th>
-                <th v-if="showCodeColumns" style="width:110px;text-align:center">{{ t('mpThDistCode') }}</th>
-                <th style="width:50px;text-align:center">{{ t('mpThDocs') }}</th>
-              </tr>
-            </thead>
-            <tbody id="mpTableBody">
-              <tr v-if="!ready" v-for="i in 6" :key="'sk'+i" class="skeleton-row">
-                <td><div class="skeleton-cell skeleton-pulse w28"></div></td>
-                <td><div class="skeleton-cell skeleton-pulse w120"></div></td>
-                <td v-if="showCodeColumns"><div class="skeleton-cell skeleton-pulse w88"></div></td>
-                <td><div class="skeleton-cell skeleton-pulse w28"></div></td>
-                <td><div class="skeleton-cell skeleton-pulse w120"></div></td>
-                <td v-if="showCodeColumns"><div class="skeleton-cell skeleton-pulse w88"></div></td>
-                <td><div class="skeleton-cell skeleton-pulse w28"></div></td>
-              </tr>
-              <tr v-else-if="filtered.length === 0"><td :colspan="colCount" class="mp-empty"><UiIcon name="frown" /> {{ t('mpNoMatch') }}</td></tr>
-              <template v-for="g in groups" :key="g.cat">
-                <tr class="mp-cat-row" :class="{ open: isCatOpen(g.cat) }" @click="toggleCat(g.cat)">
-                  <td :colspan="colCount">
-                    <span class="mp-cat-toggle">{{ isCatOpen(g.cat) ? '▼' : '▶' }}</span>
-                    <UiIcon name="folderopen" /> {{ g.cat }}
-                    <span class="mp-cat-badge">{{ t('mpRecords', g.items.length) }}</span>
-                  </td>
-                </tr>
-                <template v-if="isCatOpen(g.cat)">
-                  <tr v-for="(r, i) in g.items" :key="r.seq + '_' + i" class="mp-data-row">
-                    <td class="mp-seq">{{ r.seq }}</td>
-                    <td class="mp-base-name">{{ r.baseName }}</td>
-                    <td v-if="showCodeColumns" class="mp-base-code"><span class="mp-code-tag base">{{ r.baseCode || '—' }}</span></td>
-                    <td class="mp-dl-cell">
-                      <a v-if="baseUrl(r)" class="mp-dl-btn base" :href="baseUrl(r)" target="_blank" :title="t('mpDlBase')"><UiIcon name="download" /></a>
-                      <span v-else class="mp-dl-btn disabled" :title="t('mpNone')">—</span>
-                    </td>
-                    <td class="mp-dist-name">{{ r.distName }}</td>
-                    <td v-if="showCodeColumns" class="mp-dist-code"><span class="mp-code-tag dist">{{ r.distCode || '—' }}</span></td>
-                    <td class="mp-dl-cell">
-                      <a v-if="distUrl(r)" class="mp-dl-btn dist" :href="distUrl(r)" target="_blank" :title="t('mpDlDist')"><UiIcon name="download" /></a>
-                      <span v-else class="mp-dl-btn disabled" :title="t('mpNone')">—</span>
-                    </td>
-                  </tr>
-                </template>
-              </template>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="mp-footer">
-          <span id="mpFooterCount">{{ t('mpCount', filtered.length) }}</span>
-          <span class="mp-footer-hint"><UiIcon name="lightbulb" /> {{ t('mpFooterHint') }}</span>
-        </div>
-
-      </div>
-      </div>
-
-      <!-- 命名规则弹窗 -->
-      <div v-if="namingOpen" class="naming-modal-overlay" id="namingModal" :class="{ active: namingOpen }" @click.self="closeNamingModal">
-        <div class="naming-modal">
-          <div class="naming-modal-header">
-            <span class="naming-modal-title"><UiIcon name="book" /> {{ t('namingTitle') }}</span>
-            <button class="naming-modal-close" id="namingModalClose" @click="closeNamingModal">&times;</button>
-          </div>
-          <div class="naming-modal-body" id="namingModalBody">
-            <!-- 型号结构 -->
-            <div class="naming-section">
-              <div class="naming-section-title">{{ t('namingStructure') }}</div>
-              <div class="naming-model-row">
-                <div class="naming-blk naming-b-brand" data-naming-part="prefix" :class="{ active: namingActive === 'prefix' }" role="button" tabindex="0" @click="toggleNamingPart('prefix')" @keydown.enter.prevent="toggleNamingPart('prefix')" @keydown.space.prevent="toggleNamingPart('prefix')"><div class="naming-blk-top">{{ t('namingBrand') }}</div><div class="naming-blk-mid">MV</div><div class="naming-blk-bot">Machine Vision</div></div>
-                <div class="naming-sep">-</div>
-                <div class="naming-blk naming-b-brand" data-naming-part="prefix" :class="{ active: namingActive === 'prefix' }" role="button" tabindex="0" @click="toggleNamingPart('prefix')" @keydown.enter.prevent="toggleNamingPart('prefix')" @keydown.space.prevent="toggleNamingPart('prefix')"><div class="naming-blk-top">{{ t('namingCategory') }}</div><div class="naming-blk-mid">ID</div><div class="naming-blk-bot">Industrial Decoder</div></div>
-                <div class="naming-blk naming-b-series" data-naming-part="series" :class="{ active: namingActive === 'series' }" role="button" tabindex="0" @click="toggleNamingPart('series')" @keydown.enter.prevent="toggleNamingPart('series')" @keydown.space.prevent="toggleNamingPart('series')"><div class="naming-blk-top">{{ t('namingSeries') }}</div><div class="naming-blk-mid">2023</div><div class="naming-blk-bot">{{ t('namingSeriesDesc') }}</div></div>
-                <div class="naming-blk naming-b-type" data-naming-part="type" :class="{ active: namingActive === 'type' }" role="button" tabindex="0" @click="toggleNamingPart('type')" @keydown.enter.prevent="toggleNamingPart('type')" @keydown.space.prevent="toggleNamingPart('type')"><div class="naming-blk-top">{{ t('namingType') }}</div><div class="naming-blk-mid">XM</div><div class="naming-blk-bot">{{ t('namingTypeDesc') }}</div></div>
-                <div class="naming-sep">-</div>
-                <div class="naming-blk naming-b-focal" data-naming-part="focal" :class="{ active: namingActive === 'focal' }" role="button" tabindex="0" @click="toggleNamingPart('focal')" @keydown.enter.prevent="toggleNamingPart('focal')" @keydown.space.prevent="toggleNamingPart('focal')"><div class="naming-blk-top">{{ t('namingFocal') }}</div><div class="naming-blk-mid">08</div><div class="naming-blk-bot">8mm</div></div>
-                <div class="naming-blk naming-b-focus" data-naming-part="focus" :class="{ active: namingActive === 'focus' }" role="button" tabindex="0" @click="toggleNamingPart('focus')" @keydown.enter.prevent="toggleNamingPart('focus')" @keydown.space.prevent="toggleNamingPart('focus')"><div class="naming-blk-top">{{ t('namingFocus') }}</div><div class="naming-blk-mid">M</div><div class="naming-blk-bot">{{ t('namingFocusDesc') }}</div></div>
-                <div class="naming-sep">-</div>
-                <div class="naming-blk naming-b-light" data-naming-part="light" :class="{ active: namingActive === 'light' }" role="button" tabindex="0" @click="toggleNamingPart('light')" @keydown.enter.prevent="toggleNamingPart('light')" @keydown.space.prevent="toggleNamingPart('light')"><div class="naming-blk-top">{{ t('namingLight') }}</div><div class="naming-blk-mid">R</div><div class="naming-blk-bot">{{ t('namingLightDesc') }}</div></div>
-                <div class="naming-blk naming-b-variant" data-naming-part="variant" :class="{ active: namingActive === 'variant' }" role="button" tabindex="0" @click="toggleNamingPart('variant')" @keydown.enter.prevent="toggleNamingPart('variant')" @keydown.space.prevent="toggleNamingPart('variant')"><div class="naming-blk-top">{{ t('namingVariant') }}</div><div class="naming-blk-mid">B</div><div class="naming-blk-bot">{{ t('namingVariantDesc') }}</div></div>
-                <div class="naming-blk naming-b-lens" data-naming-part="lens" :class="{ active: namingActive === 'lens' }" role="button" tabindex="0" @click="toggleNamingPart('lens')" @keydown.enter.prevent="toggleNamingPart('lens')" @keydown.space.prevent="toggleNamingPart('lens')"><div class="naming-blk-top">{{ t('namingLens') }}</div><div class="naming-blk-mid">N</div><div class="naming-blk-bot">{{ t('namingLensDesc') }}</div></div>
+          <main class="id-series-main">
+            <div class="id-series-main-header">
+              <div>
+                <div class="id-series-main-kicker">{{ keyword ? labels.searchResults : labels.currentSeries }}</div>
+                <h3>{{ keyword ? labels.searchResults : (activeGroup ? activeGroup.name : labels.noSeries) }}</h3>
               </div>
-              <div class="naming-struct-note" v-html="t('namingStructNote')"></div>
+              <span class="id-series-count">{{ labels.totalCount(visibleRows.length) }}</span>
             </div>
 
-            <!-- 详情区块 -->
-            <div v-if="namingInfo" class="naming-detail show" id="namingDetail">
-              <div class="naming-detail-header" id="namingDetailHeader">
-                <span class="naming-detail-dot" :style="{ background: namingInfo.color }"></span>{{ namingInfo.title }}
-              </div>
-              <div class="naming-detail-body" id="namingDetailBody" v-html="namingInfo.html"></div>
-            </div>
-
-            <!-- 型号解析示例 -->
-            <div class="naming-section">
-              <div class="naming-section-title">{{ t('namingExamples') }}</div>
-              <table class="naming-ex-table">
-                <thead><tr><th style="width:32%">{{ t('namingFullModel') }}</th><th>{{ t('namingParse') }}</th></tr></thead>
+            <div v-if="error" class="id-series-state error" role="alert"><UiIcon name="alert" /> {{ labels.loadError }}</div>
+            <div v-else-if="ready && visibleRows.length === 0" class="id-series-state"><UiIcon name="frown" /> {{ labels.noMatch }}</div>
+            <div v-else class="id-series-table-scroll">
+              <table class="id-series-table">
+                <thead><tr><th class="id-series-col-index">{{ labels.index }}</th><th class="id-series-col-type">{{ labels.type }}</th><th class="id-series-col-name">{{ labels.name }}</th><th class="id-series-col-code">{{ labels.code }}</th><th class="id-series-col-description">{{ labels.description }}</th><th class="id-series-col-remark">{{ labels.remark }}</th></tr></thead>
                 <tbody>
-                  <tr><td class="naming-model">MV-ID803M-03S-WBN</td><td class="naming-parse" v-html="t('namingEx1')"></td></tr>
-                  <tr><td class="naming-model">MV-ID803M-03S-WBP-R</td><td class="naming-parse" v-html="t('namingEx2')"></td></tr>
-                  <tr><td class="naming-model">MV-ID2013EMI-05-RBN-U</td><td class="naming-parse" v-html="t('namingEx3')"></td></tr>
-                  <tr><td class="naming-model">MV-ID2023XM-08M-RBN</td><td class="naming-parse" v-html="t('namingEx4')"></td></tr>
-                  <tr><td class="naming-model">MV-ID3013PM-06M-WBN</td><td class="naming-parse" v-html="t('namingEx5')"></td></tr>
-                  <tr><td class="naming-model">MV-ID3040RM-00C-NNN</td><td class="naming-parse" v-html="t('namingEx6')"></td></tr>
-                  <tr><td class="naming-model">MV-ID5120RM-08L-RBN</td><td class="naming-parse" v-html="t('namingEx7')"></td></tr>
-                  <tr><td class="naming-model">MV-ID5200M-00C-NNN</td><td class="naming-parse" v-html="t('namingEx8')"></td></tr>
+                  <template v-for="group in visibleGroups" :key="group.name">
+                    <tr v-if="keyword && visibleGroups.length > 1" class="id-series-group-row"><th colspan="6">{{ group.name }} <span>{{ labels.totalCount(group.rows.length) }}</span></th></tr>
+                    <tr v-for="(row, index) in group.rows" :key="`${group.name}-${row.kind}-${row.code}-${index}`" class="id-series-data-row" :class="{ clickable: row.kind === 'model' }" :tabindex="row.kind === 'model' ? 0 : undefined" :role="row.kind === 'model' ? 'button' : undefined" :aria-label="row.kind === 'model' ? labels.openBom(row.name) : undefined" @click="row.kind === 'model' && jumpToBom(row)" @keydown.enter.prevent="row.kind === 'model' && jumpToBom(row)" @keydown.space.prevent="row.kind === 'model' && jumpToBom(row)">
+                      <td class="id-series-index">{{ index + 1 }}</td>
+                      <td><span class="id-series-type" :class="row.kind">{{ row.kind === 'model' ? labels.host : row.type }}</span></td>
+                      <td class="id-series-name"><span>{{ row.name }}</span><small v-if="row.kind === 'model'">{{ labels.openBomHint }}</small></td>
+                      <td class="id-series-code">{{ row.code || '—' }}</td>
+                      <td class="id-series-description">{{ row.description || '—' }}</td>
+                      <td class="id-series-remark">{{ row.remark || '—' }}</td>
+                    </tr>
+                  </template>
                 </tbody>
               </table>
             </div>
-          </div>
+            <div class="id-series-footer"><span>{{ labels.totalCount(visibleRows.length) }}</span><span>{{ labels.footerHint }}</span></div>
+          </main>
         </div>
       </div>
-
     </div>
+  </div>
 </template>
 
 <script setup>
-import { ref, computed, onMounted, onUnmounted } from 'vue'
+import { computed, onMounted, onUnmounted, ref } from 'vue'
 import { useI18n } from '../composables/useI18n'
-import { useGlobalData } from '../composables/useLegacy'
-import namingData from '../data/namingData'
+import { idSeriesRepository } from '../services/idSeriesRepository'
 import UiIcon from './UiIcon.vue'
 
-const { t, currentLang } = useI18n()
-const mappingData = useGlobalData('MAPPING_DATA')
-const dlUrls = useGlobalData('MAPPING_DOWNLOAD_URLS')
-const ready = computed(() => mappingData.value !== null)
-
+const { currentLang } = useI18n()
+const catalog = ref(null)
+const error = ref(false)
 const keyword = ref('')
-const cat = ref('all')
-const expanded = ref({})
-const showCodeColumns = ref(false)
-const namingOpen = ref(false)
-const namingActive = ref(null)
+const activeSeries = ref('')
 
-const colCount = computed(() => showCodeColumns.value ? 7 : 5)
-const isSearching = computed(() => keyword.value.trim().length > 0)
-
-const cats = computed(() => {
-  const seen = {}
-  const out = []
-  ;(mappingData.value || []).forEach((r) => {
-    if (r.cat && !seen[r.cat]) { seen[r.cat] = 1; out.push(r.cat) }
-  })
-  return out
-})
-
-function normalize(s) {
-  return (s || '').toLowerCase().replace(/^[\s\-_/]*mv[-_\s]*/i, '').replace(/[\s\-_/]+/g, '')
-}
-
-const filtered = computed(() => {
-  const list = mappingData.value || []
-  const kw = normalize(keyword.value.trim())
-  return list.filter((r) => {
-    const catOK = cat.value === 'all' || r.cat === cat.value
-    const kwOK = !kw || [r.baseName, r.baseCode, r.distName, r.distCode].some((v) => normalize(v).indexOf(kw) !== -1)
-    return catOK && kwOK
-  })
-})
-
-const groups = computed(() => {
-  const map = {}
-  const order = []
-  filtered.value.forEach((r) => {
-    if (!map[r.cat]) { map[r.cat] = []; order.push(r.cat) }
-    map[r.cat].push(r)
-  })
-  return order.map((c) => ({ cat: c, items: map[c] }))
-})
-
-const allExpanded = computed(() => {
-  const c = cats.value
-  return c.length > 0 && c.every((x) => !!expanded.value[x])
-})
-
-function isCatOpen(c) { return isSearching.value ? true : !!expanded.value[c] }
-function toggleCat(c) { expanded.value = { ...expanded.value, [c]: !expanded.value[c] } }
-function toggleAll() {
-  if (allExpanded.value) expanded.value = {}
-  else {
-    const next = {}
-    cats.value.forEach((c) => { next[c] = true })
-    expanded.value = next
+const labels = computed(() => {
+  const en = currentLang.value === 'en'
+  return en ? {
+    kicker: 'ID PRODUCT CATALOG', title: 'ID Series', sidebarTitle: 'ID Product Series', searchPlaceholder: 'Search model, material code or description…', clearSearch: 'Clear search', loading: 'Loading series data…', searchResults: 'Search results', currentSeries: 'Current series', noSeries: 'Select a series', index: '#', type: 'Type', name: 'Material name', code: 'Material code', description: 'Description', remark: 'Remark', host: 'Host', noMatch: 'No matching products found. Try another keyword.', loadError: 'Series data failed to load. Please refresh and try again.', openBom: (name) => `Open BOM for ${name}`, openBomHint: 'Click to open BOM', footerHint: 'Host rows can open the matching BOM configuration.', totalCount: (n) => `${n} items`
+  } : {
+    kicker: 'ID PRODUCT CATALOG', title: 'ID 产品系列', sidebarTitle: 'ID 产品系列', searchPlaceholder: '搜索型号、物料代码或描述…', clearSearch: '清空搜索', loading: '正在加载系列数据…', searchResults: '搜索结果', currentSeries: '当前系列', noSeries: '请选择系列', index: '序号', type: '类型', name: '物料名称', code: '物料代码', description: '描述', remark: '备注', host: '主机', noMatch: '未找到匹配产品，请调整搜索条件。', loadError: '系列数据加载失败，请刷新后重试。', openBom: (name) => `打开 ${name} 的配单表`, openBomHint: '点击打开配单表', footerHint: '点击主机型号可直接进入对应配单表。', totalCount: (n) => `共 ${n} 项`
   }
-}
-
-function baseUrl(r) { return dlUrls.value ? dlUrls.value.getBaseUrl(r.cat) : '' }
-function distUrl(r) { return dlUrls.value ? dlUrls.value.getDistUrl(r.cat) : '' }
-
-const namingInfo = computed(() => {
-  if (!namingActive.value) return null
-  const d = namingData[namingActive.value]
-  if (!d) return null
-  const isEn = currentLang.value === 'en'
-  return { color: d.color, title: isEn ? (d.titleEn || d.title) : d.title, html: isEn ? (d.htmlEn || d.html) : d.html }
 })
 
-function toggleNamingPart(part) {
-  namingActive.value = namingActive.value === part ? null : part
-}
-function closeNamingModal() {
-  namingOpen.value = false
-  namingActive.value = null
-}
+const ready = computed(() => !!catalog.value)
+const groups = computed(() => catalog.value ? catalog.value.series : [])
+const activeGroup = computed(() => groups.value.find((group) => group.name === activeSeries.value) || groups.value[0] || null)
+const normalizedKeyword = computed(() => normalize(keyword.value))
+const visibleGroups = computed(() => {
+  if (!normalizedKeyword.value) return activeGroup.value ? [activeGroup.value] : []
+  return groups.value.map((group) => ({ ...group, rows: group.rows.filter((row) => [row.name, row.code, row.description, row.remark, row.type, row.series].some((value) => normalize(value).includes(normalizedKeyword.value))) })).filter((group) => group.rows.length)
+})
+const visibleRows = computed(() => visibleGroups.value.flatMap((group) => group.rows))
 
-let tabClickCount = 0
-let tabClickTimer = null
-function toggleCodeColumns() {
-  showCodeColumns.value = !showCodeColumns.value
-  return showCodeColumns.value
-}
-function handleTabClick() {
-  tabClickCount++
-  if (tabClickTimer) clearTimeout(tabClickTimer)
-  if (tabClickCount >= 4) {
-    tabClickCount = 0
-    toggleCodeColumns()
+function normalize(value) { return String(value || '').toLowerCase().replace(/[\s\-_/]+/g, '') }
+function selectSeries(name) { activeSeries.value = name; keyword.value = '' }
+function showMessage(message, type) { if (typeof window.showToast === 'function') window.showToast(message, type) }
+
+function jumpToBom(row) {
+  const pageTab = document.querySelector('.nav-tab[data-page="page-bom"]')
+  if (pageTab) pageTab.click()
+  const payload = { category: row.category, series: row.series, model: row.name, code: row.code }
+  if (window.BOM && typeof window.BOM.openModel === 'function') {
+    const result = window.BOM.openModel(payload)
+    if (result === false) showMessage(currentLang.value === 'en' ? 'This model is not available in the BOM catalog.' : '当前型号未找到对应配单数据。', 'warning')
   } else {
-    tabClickTimer = setTimeout(function () { tabClickCount = 0 }, 2000)
+    window.dispatchEvent(new CustomEvent('bom:open-model', { detail: payload }))
   }
 }
 
-function onKeydown(e) {
-  if (e.key === 'Escape' && namingOpen.value) closeNamingModal()
+async function loadData() {
+  try {
+    catalog.value = await idSeriesRepository.load()
+    activeSeries.value = catalog.value.series[0] ? catalog.value.series[0].name : ''
+  } catch (e) {
+    error.value = true
+    console.error('ID series catalog load failed:', e)
+  }
 }
+
+function onKeydown(event) { if (event.key === 'Escape' && keyword.value) keyword.value = '' }
 
 onMounted(() => {
-  window.MAPPING = {
-    applyData: () => {},
-    reset: () => {},
-    getData: () => mappingData.value || [],
-    rerender: () => {},
-    handleTabClick: handleTabClick,
-    isCodeColumnsVisible: () => showCodeColumns.value
-  }
+  window.MAPPING = { applyData: () => {}, reset: () => { keyword.value = ''; activeSeries.value = groups.value[0] ? groups.value[0].name : '' }, getData: () => catalog.value, rerender: () => {}, handleTabClick: () => {} }
   document.addEventListener('keydown', onKeydown)
+  loadData()
 })
+
 onUnmounted(() => {
   document.removeEventListener('keydown', onKeydown)
-  if (window.MAPPING && window.MAPPING.handleTabClick === handleTabClick) delete window.MAPPING
+  if (window.MAPPING && window.MAPPING.getData) delete window.MAPPING
 })
 </script>

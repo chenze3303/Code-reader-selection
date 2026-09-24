@@ -224,7 +224,7 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useI18n } from '../composables/useI18n'
 import { useGlobalData } from '../composables/useLegacy'
 import { bomCatalogRepository } from '../services/bomCatalogRepository'
@@ -288,6 +288,7 @@ const selModelIdx = ref(null)
 const accCodes = ref({})
 const bomList = ref([])
 const addBtnText = ref('')
+const pendingExternalModel = ref(null)
 
 function buildData(raw) {
   if (!raw || !raw.modelList || raw.modelList.length === 0) { console.warn('PEIDAN_DATA invalid or empty'); return }
@@ -296,6 +297,7 @@ function buildData(raw) {
   cats.value = built.cats
   reverseIndex.value = built.reverseIndex
   loadState()
+  applyPendingExternalModel()
 }
 
 async function loadBomCatalog() {
@@ -412,6 +414,72 @@ function onModelChange() {
   bomList.value = []
   saveState()
   if (currentModel.value) autoGenerateBOM()
+}
+
+function normalizeModelValue(value) {
+  return String(value || '').toLowerCase().replace(/[\s\-_\/]+/g, '')
+}
+
+function findExternalModel(payload) {
+  const requestedCategory = payload && payload.category
+  const requestedSeries = payload && payload.series
+  const categoryNames = requestedCategory && tree.value[requestedCategory]
+    ? [requestedCategory]
+    : Object.keys(tree.value)
+  const modelCode = String(payload && payload.code || '')
+  const modelName = String(payload && payload.model || '')
+  const normalizedName = normalizeModelValue(modelName)
+
+  for (const category of categoryNames) {
+    const seriesNames = requestedSeries && tree.value[category] && tree.value[category][requestedSeries]
+      ? [requestedSeries]
+      : Object.keys(tree.value[category] || {})
+    for (const series of seriesNames) {
+      const mains = tree.value[category][series].mains || []
+      const codeIndex = mains.findIndex((item) => modelCode && String(item.c || '') === modelCode)
+      if (codeIndex !== -1) return { category, series, index: codeIndex }
+    }
+  }
+
+  for (const category of categoryNames) {
+    const seriesNames = requestedSeries && tree.value[category] && tree.value[category][requestedSeries]
+      ? [requestedSeries]
+      : Object.keys(tree.value[category] || {})
+    for (const series of seriesNames) {
+      const mains = tree.value[category][series].mains || []
+      const nameIndex = mains.findIndex((item) => item.n === modelName || normalizeModelValue(item.n) === normalizedName)
+      if (nameIndex !== -1) return { category, series, index: nameIndex }
+    }
+  }
+  return null
+}
+
+function openExternalModel(payload) {
+  if (!payload || (!payload.code && !payload.model)) return false
+  if (!Object.keys(tree.value).length) {
+    pendingExternalModel.value = payload
+    return true
+  }
+  const found = findExternalModel(payload)
+  if (!found) return false
+  selCat.value = found.category
+  selSer.value = found.series
+  selModelIdx.value = found.index
+  accCodes.value = {}
+  bomList.value = []
+  autoGenerateBOM()
+  saveState()
+  pendingExternalModel.value = null
+  return true
+}
+
+function applyPendingExternalModel() {
+  if (!pendingExternalModel.value) return
+  openExternalModel(pendingExternalModel.value)
+}
+
+function onExternalModelEvent(event) {
+  openExternalModel(event && event.detail)
 }
 function onAddToList() {
   if (!currentModel.value) return
@@ -682,8 +750,15 @@ onMounted(() => {
     getTree: () => tree.value,
     getCats: () => cats.value,
     getReverseIndex: () => reverseIndex.value,
+    openModel: openExternalModel,
     rerender: () => {}
   }
+  window.addEventListener('bom:open-model', onExternalModelEvent)
   loadBomCatalog()
+})
+
+onUnmounted(() => {
+  window.removeEventListener('bom:open-model', onExternalModelEvent)
+  if (window.BOM && window.BOM.openModel === openExternalModel) delete window.BOM
 })
 </script>
