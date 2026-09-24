@@ -10,13 +10,13 @@
           <label class="id-series-search">
             <UiIcon name="search" aria-hidden="true" />
             <input id="idSeriesSearch" v-model="keyword" type="search" :placeholder="labels.searchPlaceholder" :aria-label="labels.searchPlaceholder" autocomplete="off">
-            <button v-if="keyword" type="button" class="id-series-search-clear" :aria-label="labels.clearSearch" @click="keyword = ''">×</button>
+            <button v-if="keyword" type="button" class="id-series-search-clear" :aria-label="labels.clearSearch" @click="keyword = ''"><UiIcon name="x" aria-hidden="true" /></button>
           </label>
         </div>
 
         <div class="id-series-layout">
           <aside class="id-series-sidebar" :aria-label="labels.sidebarTitle">
-            <div class="id-series-sidebar-title"><span aria-hidden="true">📦</span>{{ labels.sidebarTitle }}</div>
+            <div class="id-series-sidebar-title"><UiIcon name="package" aria-hidden="true" />{{ labels.sidebarTitle }}</div>
             <div v-if="!ready" class="id-series-sidebar-empty">{{ labels.loading }}</div>
             <button v-for="group in groups" :key="group.name" type="button" class="id-series-item" :class="{ active: !keyword && group.name === activeSeries }" @click="selectSeries(group.name)">
               <span>{{ group.name }}</span><small>{{ group.rows.length }}</small>
@@ -69,7 +69,7 @@
                     <div class="id-series-card-code"><span>{{ labels.code }}</span>{{ row.code || '—' }}</div>
                     <p v-if="row.description" class="id-series-card-description">{{ row.description }}</p>
                     <p v-if="row.remark" class="id-series-card-remark">{{ row.remark }}</p>
-                    <div v-if="row.kind === 'model'" class="id-series-card-action">{{ labels.openBomAction }} <span aria-hidden="true">→</span></div>
+                    <div v-if="row.kind === 'model'" class="id-series-card-action">{{ labels.openBomAction }} <UiIcon name="arrowRight" aria-hidden="true" /></div>
                   </article>
                 </template>
               </div>

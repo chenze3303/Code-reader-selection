@@ -6802,12 +6802,15 @@ td, th { font-variant-numeric: tabular-nums; }
 }
 .id-series-search:focus-within { border-color: var(--brand-red); box-shadow: 0 0 0 3px rgba(247,101,4,0.1); }
 .id-series-search input { width: 100%; min-width: 0; border: 0; outline: 0; color: var(--text-primary); background: transparent; font-size: 0.76rem; }
-.id-series-search-clear { border: 0; padding: 0; color: var(--text-muted); background: transparent; font-size: 1.1rem; line-height: 1; cursor: pointer; }
+.id-series-search-clear { display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; border: 0; padding: 0; color: var(--text-muted); background: transparent; cursor: pointer; }
+.id-series-search-clear:hover { color: var(--text-primary); }
+.id-series-search-clear .ui-icon { width: 15px; height: 15px; }
 .id-series-layout { display: grid; grid-template-columns: 220px minmax(0, 1fr); flex: 1; min-height: 0; }
 .id-series-sidebar { min-height: 0; overflow: auto; padding: 0.9rem 0.65rem; border-right: 1px solid var(--border-light); background: var(--bg-panel); scrollbar-width: none; }
 .id-series-sidebar::-webkit-scrollbar,
 .id-series-table-scroll::-webkit-scrollbar { display: none; }
 .id-series-sidebar-title { display: flex; align-items: center; gap: 0.45rem; padding: 0.2rem 0.6rem 0.75rem; color: var(--text-primary); font-size: 0.78rem; font-weight: 800; }
+.id-series-sidebar-title .ui-icon { width: 16px; height: 16px; color: var(--brand-red); }
 .id-series-sidebar-empty { padding: 1rem 0.6rem; color: var(--text-muted); font-size: 0.7rem; }
 .id-series-item { display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 0.62rem 0.7rem; border: 0; border-left: 3px solid transparent; border-radius: 6px; color: var(--text-secondary); background: transparent; font-size: 0.72rem; text-align: left; cursor: pointer; transition: background 0.15s, color 0.15s, border-color 0.15s; }
 .id-series-item:hover { color: var(--text-primary); background: var(--brand-red-lt); }
@@ -6869,6 +6872,35 @@ td, th { font-variant-numeric: tabular-nums; }
 .id-series-card-description, .id-series-card-remark { margin: 0.5rem 0 0; color: var(--text-secondary); font-size: 0.68rem; line-height: 1.55; overflow-wrap: anywhere; word-break: break-word; }
 .id-series-card-remark { padding-top: 0.5rem; border-top: 1px solid var(--border-light); }
 .id-series-card-action { display: flex; align-items: center; justify-content: space-between; margin-top: 0.7rem; padding-top: 0.6rem; border-top: 1px solid var(--border-light); color: var(--brand-red); font-size: 0.68rem; font-weight: 800; }
+.id-series-card-action .ui-icon { width: 15px; height: 15px; transition: transform 0.15s; }
+.id-series-card.clickable:hover .id-series-card-action .ui-icon { transform: translateX(2px); }
+
+@media (min-width: 769px) {
+  .id-series-page-wrap { padding: 16px 18px; }
+  .id-series-toolbar { padding: 1.1rem 1.45rem; }
+  .id-series-search { width: min(420px, 46%); height: 40px; }
+  .id-series-search input { font-size: 0.78rem; }
+  .id-series-sidebar { padding: 1rem 0.75rem; }
+  .id-series-sidebar-title { padding-left: 0.7rem; }
+  .id-series-item { min-height: 42px; padding: 0.68rem 0.8rem; }
+  .id-series-main-header { padding: 1.1rem 1.4rem 0.9rem; border-bottom: 1px solid var(--border-light); }
+  .id-series-main-header h3 { font-size: 1.05rem; }
+  .id-series-table { font-size: 0.75rem; }
+  .id-series-table th { padding: 0.76rem 0.85rem; box-shadow: 0 1px 0 rgba(10, 22, 40, 0.08); }
+  .id-series-data-row td { padding: 0.8rem 0.85rem; line-height: 1.6; }
+  .id-series-data-row.clickable .id-series-name small { opacity: 1; }
+  .id-series-data-row.clickable .id-series-name small::before { content: '↗ '; }
+  .id-series-data-row.clickable:hover .id-series-name small,
+  .id-series-data-row.clickable:focus-visible .id-series-name small { color: var(--brand-red-dk); }
+}
+
+@media (min-width: 1440px) {
+  .id-series-layout { grid-template-columns: 240px minmax(0, 1fr); }
+  .id-series-table { min-width: 1080px; }
+  .id-series-table .id-series-col-type { width: 170px; }
+  .id-series-table .id-series-col-name { width: 300px; }
+  .id-series-main-header { padding-left: 1.55rem; padding-right: 1.55rem; }
+}
 
 .dark .id-series-page-wrap { background: #0d1117; }
 .dark .id-series-page { background: #1c2128; border-color: #21262d; }
