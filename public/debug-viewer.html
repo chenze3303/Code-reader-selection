@@ -417,6 +417,7 @@
     .grid-cell-state { display: block; font-family: var(--sans); font-size: 12px; }
 
     .results-table-wrap {
+      min-width: 0;
       max-height: 396px;
       margin-top: 12px;
       overflow: auto;
@@ -489,34 +490,6 @@
 
     .toast.is-visible { opacity: 1; transform: translateY(0); }
 
-    @media (max-width: 1180px) {
-      .summary-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-      .workspace-grid { grid-template-columns: 1fr; }
-      .detail-stack { grid-template-columns: 1fr 1fr; }
-      .detail-stack .wide { grid-column: 1 / -1; }
-    }
-
-    @media (max-width: 760px) {
-      .app-shell { padding: 16px; }
-      .topbar { align-items: flex-start; }
-      .privacy-badge { display: none; }
-      .drop-zone { align-items: stretch; flex-direction: column; }
-      .primary-button { width: 100%; }
-      .summary-grid { grid-template-columns: 1fr 1fr; }
-      .workspace-grid, .detail-stack { grid-template-columns: 1fr; }
-      .detail-stack .wide { grid-column: auto; }
-      .viewer-toolbar { align-items: flex-start; flex-direction: column; }
-      .canvas-scroller { min-height: 300px; max-height: 60vh; }
-      .kv-grid { grid-template-columns: 1fr; }
-      .canvas-caption { flex-direction: column; }
-    }
-
-    @media (max-width: 420px) {
-      .summary-grid { grid-template-columns: 1fr; }
-      .drop-main { align-items: flex-start; }
-      .drop-icon { width: 44px; height: 44px; }
-    }
-
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
     }
@@ -530,19 +503,11 @@
     .workspace-grid { display: block; }
     .viewer-panel { margin-bottom: 18px; }
     .canvas-scroller { min-height: 420px; max-height: 66vh; }
-    .detail-stack { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    .detail-stack { min-width: 0; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
     .detail-stack .wide { grid-column: 1 / -1; }
-    .detail-panel { padding: 18px; }
-    .detail-stack > .detail-panel:first-child { grid-column: 1 / -1; min-height: 0; }
+    .detail-panel { min-width: 0; padding: 18px; }
     .results-table-wrap { max-height: 340px; }
     .raw-panel { grid-column: 1 / -1; }
-
-    @media (max-width: 900px) {
-      .app-shell { padding: 22px 20px 32px; }
-      .summary-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .detail-stack { grid-template-columns: 1fr; }
-      .detail-stack .wide { grid-column: auto; }
-    }
 
     /* The default view shows the complete image without an inner scroll area. */
     .canvas-scroller {
@@ -568,18 +533,6 @@
     .compact-kv .kv-item { padding: 9px 10px; }
     .compact-kv .kv-value { font-size: 12px; }
     .detail-stack { align-items: start; }
-    @media (max-width: 900px) {
-      .canvas-scroller { height: clamp(300px, 58vh, 620px); }
-      .compact-kv { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    }
-    @media (min-width: 901px) and (max-width: 1180px) {
-      .summary-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-      .compact-kv { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    }
-    @media (max-width: 520px) {
-      .canvas-scroller { height: clamp(250px, 52vh, 460px); padding: 10px; }
-      .compact-kv { grid-template-columns: 1fr 1fr; }
-    }
   </style>
   <style id="toolkit-theme">
     :root {
@@ -797,20 +750,47 @@
     .empty-inline { color: var(--muted); }
     .toast { background: #0a1628; }
 
+    @media (max-width: 1180px) {
+      .summary-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .compact-kv { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
     @media (max-width: 900px) {
       .app-shell { width: calc(100% - 28px); min-height: calc(100vh - 28px); margin: 14px auto; padding: 0 0 18px; }
-      .topbar { margin-bottom: 18px; padding: 8px 18px; }
+      .topbar { margin-bottom: 18px; padding: 8px 18px; flex-wrap: wrap; }
+      .brand { flex: 1 1 340px; min-width: 0; }
+      .header-actions { margin-left: auto; }
       #dropZone, #statusLine, #results { margin-right: 16px; margin-left: 16px; }
+      .detail-stack { grid-template-columns: minmax(0, 1fr); }
+      .detail-stack > .detail-panel { min-width: 0; }
+      .detail-stack .wide, .raw-panel { grid-column: auto; }
+      .canvas-scroller { height: clamp(300px, 58vh, 620px); }
+      .compact-kv { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     }
-    @media (max-width: 600px) {
+    @media (max-width: 760px) {
+      .topbar { align-items: flex-start; flex-wrap: wrap; gap: 10px 14px; }
+      .brand { flex: 1 1 220px; min-width: 0; }
+      .privacy-badge { display: none; }
+      .header-actions { margin-left: auto; }
+      .drop-zone { align-items: stretch; flex-direction: column; }
+      .primary-button { width: 100%; }
+      .summary-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .viewer-toolbar { align-items: flex-start; flex-direction: column; }
+      .canvas-caption { flex-direction: column; }
+      .canvas-scroller { height: clamp(280px, 58vh, 560px); }
+      .detail-panel { padding: 14px; }
+    }
+    @media (max-width: 520px) {
       .app-shell { width: 100%; min-height: 100vh; margin: 0; padding-bottom: 16px; border: 0; border-radius: 0; }
-      .topbar { min-height: 58px; margin-bottom: 16px; padding: 8px 14px; }
-      .brand { gap: 9px; }
+      .topbar { min-height: 58px; margin-bottom: 16px; padding: 10px 14px; }
+      .brand { flex-basis: 100%; gap: 9px; }
       .brand-mark { width: 32px; height: 32px; }
       .topbar h1 { font-size: 16px; }
-      .subtitle { max-width: 65vw; font-size: 11px; }
+      .subtitle { max-width: 72vw; font-size: 11px; }
+      .header-actions { width: 100%; justify-content: flex-end; }
       #dropZone, #statusLine, #results { margin-right: 12px; margin-left: 12px; }
       .drop-zone { padding: 14px; }
+      .drop-main { align-items: flex-start; }
+      .drop-icon { width: 44px; height: 44px; }
       .summary-grid { gap: 8px; }
       .metric-card { min-height: 84px; padding: 11px; }
       .metric-value { font-size: 21px; }
@@ -818,7 +798,14 @@
       .toolbar-group { gap: 5px; }
       .toggle { min-height: 32px; padding: 4px 5px; font-size: 12px; }
       .threshold-wrap { flex-wrap: wrap; }
+      .canvas-scroller { height: clamp(250px, 52vh, 460px); padding: 10px; }
       .detail-panel { padding: 13px; }
+      .results-table-wrap { max-width: 100%; overflow-x: auto; }
+      .results-table-wrap table { min-width: 620px; }
+      .barcode-content { min-width: 180px; max-width: 260px; white-space: normal; overflow-wrap: anywhere; }
+    }
+    @media (max-width: 360px) {
+      .summary-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -950,7 +937,7 @@
             <div id="overviewGrid" class="kv-grid compact-kv"></div>
           </section>
 
-          <section class="panel detail-panel wide">
+          <section class="panel detail-panel">
             <div class="panel-heading">
               <div>
                 <h2 data-i18n="missingTitle">漏检定位</h2>
