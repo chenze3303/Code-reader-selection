@@ -652,19 +652,6 @@
       color: rgba(255, 255, 255, 0.72);
       font-size: 12px;
     }
-    .lang-toggle {
-      border: 1px solid rgba(255,255,255,.22);
-      border-radius: 6px;
-      background: rgba(255,255,255,.08);
-      color: #fff;
-      padding: 6px 10px;
-      font: inherit;
-      font-size: 12px;
-      font-weight: 700;
-      cursor: pointer;
-      transition: background .2s, border-color .2s;
-    }
-    .lang-toggle:hover { background: rgba(255,255,255,.16); border-color: rgba(255,255,255,.4); }
     .header-actions { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
     .return-link {
       display: inline-flex;
@@ -862,7 +849,6 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/><path d="M9 12h12"/></svg>
           <span data-i18n="backToSolutions">返回方案解决</span>
         </a>
-        <button id="langToggle" class="lang-toggle" type="button" aria-label="Switch to English">EN</button>
       </div>
     </header>
 
@@ -1123,8 +1109,8 @@
         }
       };
       const queryLanguage = new URLSearchParams(window.location.search).get('lang');
-      let language = queryLanguage === 'en' || (queryLanguage !== 'zh' && localStorage.getItem('lang') === 'en') ? 'en' : 'zh';
-      const tr = (key, values = {}) => (messages[language][key] || messages.zh[key] || key).replace(/\{(\w+)\}/g, (_, name) => values[name] ?? '');
+      const returnLanguage = queryLanguage === 'en' || (queryLanguage !== 'zh' && localStorage.getItem('lang') === 'en') ? 'en' : 'zh';
+      const tr = (key, values = {}) => (messages.zh[key] || key).replace(/\{(\w+)\}/g, (_, name) => values[name] ?? '');
 
       const els = {
         dropZone: document.getElementById('dropZone'),
@@ -1151,7 +1137,6 @@
         stages: document.getElementById('stageStats'),
         exportJson: document.getElementById('exportJson'),
         exportTxt: document.getElementById('exportTxt'),
-        langToggle: document.getElementById('langToggle'),
         returnLink: document.getElementById('returnLink'),
         toast: document.getElementById('toast')
       };
@@ -1174,7 +1159,7 @@
       }
 
       function applyLanguage() {
-        document.documentElement.lang = language === 'en' ? 'en' : 'zh-CN';
+        document.documentElement.lang = 'zh-CN';
         document.title = tr('title');
         document.querySelectorAll('[data-i18n]').forEach(node => {
           node.textContent = tr(node.dataset.i18n);
@@ -1182,24 +1167,16 @@
         document.querySelectorAll('[data-i18n-aria]').forEach(node => {
           node.setAttribute('aria-label', tr(node.dataset.i18nAria));
         });
-        els.langToggle.textContent = tr('switchLabel');
-        els.langToggle.setAttribute('aria-label', tr('languageToggleAria'));
         const returnUrl = location.protocol === 'file:'
           ? new URL('https://chenze3303.github.io/Code-reader-selection/')
           : new URL('index.html', location.href);
         returnUrl.searchParams.set('page', 'page-solutions');
-        returnUrl.searchParams.set('lang', language);
+        returnUrl.searchParams.set('lang', returnLanguage);
         els.returnLink.href = returnUrl.toString();
         if (state.parsed) renderResults();
         else setStatus(tr('readyStatus'));
         draw();
       }
-
-      els.langToggle.addEventListener('click', () => {
-        language = language === 'zh' ? 'en' : 'zh';
-        try { localStorage.setItem('lang', language); } catch {}
-        applyLanguage();
-      });
 
       function showToast(message) {
         els.toast.textContent = message;
