@@ -501,15 +501,24 @@
     .summary-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; margin-bottom: 20px; }
     .metric-card { min-height: 96px; padding: 14px 16px; }
     .workspace-grid {
-      grid-template-columns: minmax(0, 1.7fr) minmax(360px, .85fr);
+      grid-template-columns: minmax(0, 1.6fr) minmax(440px, 1fr);
       gap: 16px;
-      align-items: stretch;
+      align-items: start;
     }
     .viewer-panel { min-width: 0; margin-bottom: 0; }
     .canvas-scroller { min-height: 420px; max-height: 66vh; }
     .detail-stack { min-width: 0; grid-template-columns: minmax(0, 1fr); align-content: start; gap: 14px; }
     .detail-panel { min-width: 0; padding: 18px; }
     .results-table-wrap { max-height: 340px; }
+    .detections-panel .results-table-wrap { max-height: clamp(240px, 42vh, 420px); }
+    .detections-panel table { table-layout: fixed; }
+    .detections-panel th, .detections-panel td { white-space: normal; }
+    .detections-panel th:nth-child(1), .detections-panel td:nth-child(1) { width: 42px; }
+    .detections-panel th:nth-child(2), .detections-panel td:nth-child(2) { width: 92px; }
+    .detections-panel th:nth-child(4), .detections-panel td:nth-child(4) { width: 66px; }
+    .detections-panel th:nth-child(5), .detections-panel td:nth-child(5) { width: 92px; }
+    .detections-panel .barcode-content { min-width: 0; max-width: none; white-space: normal; overflow-wrap: anywhere; }
+    .missing-panel .grid-map { grid-template-columns: repeat(var(--grid-cols, 6), minmax(56px, 76px)); justify-content: center; }
     .raw-panel { grid-column: 1 / -1; }
 
     /* The default view shows the complete image without an inner scroll area. */
@@ -944,24 +953,7 @@
             <div id="overviewGrid" class="kv-grid compact-kv"></div>
           </section>
 
-          <section class="panel detail-panel">
-            <div class="panel-heading">
-              <div>
-                <h2 data-i18n="missingTitle">漏检定位</h2>
-                <p data-i18n="missingDesc">按从上到下的行、从左到右的列编号，自动推断规则网格</p>
-              </div>
-            </div>
-            <p id="missingSummary" class="missing-summary" data-i18n="waitingGrid">等待网格分析…</p>
-            <div class="grid-map-wrap">
-              <div id="gridMap" class="grid-map" aria-label="检测网格示意图" data-i18n-aria="gridAria"></div>
-            </div>
-          </section>
-
-        </aside>
-      </div>
-
-      <div class="result-stack">
-          <section class="panel detail-panel wide">
+          <section class="panel detail-panel wide detections-panel">
             <div class="panel-heading">
               <div>
                 <h2 data-i18n="detectionsTitle">检测结果</h2>
@@ -980,6 +972,22 @@
                 </thead>
                 <tbody id="resultRows"></tbody>
               </table>
+            </div>
+          </section>
+        </aside>
+      </div>
+
+      <div class="result-stack">
+          <section class="panel detail-panel wide missing-panel">
+            <div class="panel-heading">
+              <div>
+                <h2 data-i18n="missingTitle">漏检定位</h2>
+                <p data-i18n="missingDesc">按从上到下的行、从左到右的列编号，自动推断规则网格</p>
+              </div>
+            </div>
+            <p id="missingSummary" class="missing-summary" data-i18n="waitingGrid">等待网格分析…</p>
+            <div class="grid-map-wrap">
+              <div id="gridMap" class="grid-map" aria-label="检测网格示意图" data-i18n-aria="gridAria"></div>
             </div>
           </section>
 
