@@ -494,17 +494,20 @@
       *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
     }
 
-    /* Focused workstation layout: image first, diagnostics in a calmer two-column shelf. */
+    /* Workstation layout: image and key diagnostics share the first row. */
     .app-shell { width: min(1540px, 100%); padding: 28px 32px 40px; }
     .topbar { margin-bottom: 24px; }
     .drop-zone { min-height: 96px; padding: 18px 20px; }
     .summary-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; margin-bottom: 20px; }
     .metric-card { min-height: 96px; padding: 14px 16px; }
-    .workspace-grid { display: block; }
-    .viewer-panel { margin-bottom: 18px; }
+    .workspace-grid {
+      grid-template-columns: minmax(0, 1.7fr) minmax(360px, .85fr);
+      gap: 16px;
+      align-items: stretch;
+    }
+    .viewer-panel { min-width: 0; margin-bottom: 0; }
     .canvas-scroller { min-height: 420px; max-height: 66vh; }
-    .detail-stack { min-width: 0; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
-    .detail-stack .wide { grid-column: 1 / -1; }
+    .detail-stack { min-width: 0; grid-template-columns: minmax(0, 1fr); align-content: start; gap: 14px; }
     .detail-panel { min-width: 0; padding: 18px; }
     .results-table-wrap { max-height: 340px; }
     .raw-panel { grid-column: 1 / -1; }
@@ -512,7 +515,7 @@
     /* The default view shows the complete image without an inner scroll area. */
     .canvas-scroller {
       min-height: 0;
-      height: clamp(360px, 68vh, 820px);
+      height: clamp(360px, 58vh, 680px);
       max-height: none;
       overflow: hidden;
       padding: 16px;
@@ -529,10 +532,11 @@
       object-fit: contain;
       flex: 0 0 auto;
     }
-    .compact-kv { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+    .compact-kv { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .compact-kv .kv-item { padding: 9px 10px; }
     .compact-kv .kv-value { font-size: 12px; }
     .detail-stack { align-items: start; }
+    .result-stack { display: grid; gap: 14px; margin-top: 16px; }
   </style>
   <style id="toolkit-theme">
     :root {
@@ -751,8 +755,11 @@
     .toast { background: #0a1628; }
 
     @media (max-width: 1180px) {
-      .summary-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .workspace-grid { grid-template-columns: minmax(0, 1fr); }
+      .detail-stack { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .compact-kv { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .summary-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .canvas-scroller { height: clamp(360px, 58vh, 620px); }
     }
     @media (max-width: 900px) {
       .app-shell { width: calc(100% - 28px); min-height: calc(100vh - 28px); margin: 14px auto; padding: 0 0 18px; }
@@ -950,6 +957,10 @@
             </div>
           </section>
 
+        </aside>
+      </div>
+
+      <div class="result-stack">
           <section class="panel detail-panel wide">
             <div class="panel-heading">
               <div>
@@ -992,7 +1003,6 @@
               <div id="stageStats" class="kv-grid"></div>
             </details>
           </section>
-        </aside>
       </div>
     </section>
   </main>
