@@ -519,7 +519,6 @@
     .detections-panel th:nth-child(5), .detections-panel td:nth-child(5) { width: 92px; }
     .detections-panel .barcode-content { min-width: 0; max-width: none; white-space: normal; overflow-wrap: anywhere; }
     .missing-panel .grid-map { grid-template-columns: repeat(var(--grid-cols, 6), minmax(56px, 76px)); justify-content: center; }
-    .raw-panel { grid-column: 1 / -1; }
 
     /* The default view shows the complete image without an inner scroll area. */
     .canvas-scroller {
@@ -541,9 +540,6 @@
       object-fit: contain;
       flex: 0 0 auto;
     }
-    .compact-kv { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .compact-kv .kv-item { padding: 9px 10px; }
-    .compact-kv .kv-value { font-size: 12px; }
     .detail-stack { align-items: start; }
     .result-stack { display: grid; gap: 14px; margin-top: 16px; }
   </style>
@@ -766,7 +762,6 @@
     @media (max-width: 1180px) {
       .workspace-grid { grid-template-columns: minmax(0, 1fr); }
       .detail-stack { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .compact-kv { grid-template-columns: repeat(3, minmax(0, 1fr)); }
       .summary-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
       .canvas-scroller { height: clamp(360px, 58vh, 620px); }
     }
@@ -778,9 +773,7 @@
       #dropZone, #statusLine, #results { margin-right: 16px; margin-left: 16px; }
       .detail-stack { grid-template-columns: minmax(0, 1fr); }
       .detail-stack > .detail-panel { min-width: 0; }
-      .detail-stack .wide, .raw-panel { grid-column: auto; }
       .canvas-scroller { height: clamp(300px, 58vh, 620px); }
-      .compact-kv { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     }
     @media (max-width: 760px) {
       .topbar { align-items: flex-start; flex-wrap: wrap; gap: 10px 14px; }
@@ -943,17 +936,7 @@
         </section>
 
         <aside class="detail-stack" aria-label="调试信息" data-i18n-aria="debugAria">
-          <section class="panel detail-panel">
-            <div class="panel-heading">
-              <div>
-                <h2 data-i18n="overviewTitle">运行概览</h2>
-                <p data-i18n="overviewDesc">文件头、配置与处理状态</p>
-              </div>
-            </div>
-            <div id="overviewGrid" class="kv-grid compact-kv"></div>
-          </section>
-
-          <section class="panel detail-panel wide detections-panel">
+          <section class="panel detail-panel detections-panel">
             <div class="panel-heading">
               <div>
                 <h2 data-i18n="detectionsTitle">检测结果</h2>
@@ -1035,7 +1018,7 @@
           viewerAria: '图像与检测框', zoomFit: '适应窗口', showReadStatus: '显示读码状态',
           showMissing: '显示漏检位置', thresholdLabel: '最低置信度', canvasAria: '图像及检测框叠加结果',
           waitingImage: '等待图片', canvasLegend: '绿色＝已读到　红色虚线＝检测到但未读到　蓝色叉号＝推断漏检　放大后按住拖动',
-          debugAria: '调试信息', overviewTitle: '运行概览', overviewDesc: '文件头、配置与处理状态',
+          debugAria: '调试信息',
           missingTitle: '漏检定位', missingDesc: '按行列顺序自动推断规则网格',
           waitingGrid: '等待网格分析…', gridAria: '检测网格示意图', detectionsTitle: '检测结果',
           detectionsDesc: '点击行可在图中高亮对应区域', confidenceLegend: '置信度图例',
@@ -1044,9 +1027,7 @@
           thIndex: '序号', thStatus: '读码状态', thCode: '条码内容', thConfidence: '置信度', thCenter: '中心坐标',
           rawTitle: '原始数据', rawDesc: '用于进一步排查或保存记录', exportJson: '导出 JSON',
           exportTxt: '导出 TXT', debugText: '调试文本', waitingParse: '等待解析…', stageStats: '定位过程统计',
-          imageSize: '图像尺寸', fileFormat: '文件格式', threshold: '置信度阈值', roi: 'ROI',
-          readRecords: '识码记录', debugState: '调试状态', records: '条', duplicate: '重复',
-          enabled: '已开启', notFound: '未找到', inferredMissing: '推断漏检 {count} 个：{items}',
+          inferredMissing: '推断漏检 {count} 个：{items}',
           noMissing: '按 {method} 未发现漏检格位。',
           tooFewTargets: '当前样本配置目标数为 {count}，自动网格定位仅适用于目标数不少于 9 的规则排列图片，因此这里不生成网格位置。读到的条码内容请看检测结果表。',
           noGrid: '当前图片无法按规则网格推算漏检位置。读码状态和已读到的条码内容请看检测结果表。',
@@ -1078,7 +1059,7 @@
           viewerAria: 'Image and detection boxes', zoomFit: 'Fit to window', showReadStatus: 'Show decoding status',
           showMissing: 'Show missing positions', thresholdLabel: 'Minimum confidence', canvasAria: 'Image with detection overlays',
           waitingImage: 'Waiting for an image', canvasLegend: 'Green = decoded　Red dashed = detected, not decoded　Blue cross = inferred miss　Drag to pan when zoomed',
-          debugAria: 'Debug information', overviewTitle: 'Run overview', overviewDesc: 'File header, configuration, and processing status',
+          debugAria: 'Debug information',
           missingTitle: 'Missing-position analysis', missingDesc: 'Infer a regular grid using row and column order',
           waitingGrid: 'Waiting for grid analysis…', gridAria: 'Detection grid diagram', detectionsTitle: 'Detection results',
           detectionsDesc: 'Select a row to highlight its region in the image', confidenceLegend: 'Confidence legend',
@@ -1087,9 +1068,7 @@
           thIndex: '#', thStatus: 'Decode status', thCode: 'Barcode content', thConfidence: 'Confidence', thCenter: 'Center',
           rawTitle: 'Raw data', rawDesc: 'For further troubleshooting or record keeping', exportJson: 'Export JSON',
           exportTxt: 'Export TXT', debugText: 'Debug text', waitingParse: 'Waiting for parsing…', stageStats: 'Pipeline statistics',
-          imageSize: 'Image size', fileFormat: 'File format', threshold: 'Confidence threshold', roi: 'ROI',
-          readRecords: 'Decoding records', debugState: 'Debug status', records: 'records', duplicate: 'duplicates',
-          enabled: 'Enabled', notFound: 'Not found', inferredMissing: 'Inferred {count} missing: {items}',
+          inferredMissing: 'Inferred {count} missing: {items}',
           noMissing: 'No missing grid cells found using {method}.',
           tooFewTargets: 'This sample configures {count} targets. Automatic grid localization requires at least 9 targets in a regular layout, so no grid positions are generated. See the detection results table for decoded barcodes.',
           noGrid: 'Missing positions cannot be inferred from a regular grid in this image. See the detection results table for decoding status and barcode content.',
@@ -1130,7 +1109,6 @@
         time: document.getElementById('timeMetric'),
         tail: document.getElementById('tailMetric'),
         caption: document.getElementById('imageCaption'),
-        overview: document.getElementById('overviewGrid'),
         missingSummary: document.getElementById('missingSummary'),
         gridMap: document.getElementById('gridMap'),
         rows: document.getElementById('resultRows'),
@@ -1699,18 +1677,6 @@
         els.detected.className = `metric-value ${detected && expected && detected >= expected ? 'good' : 'warn'}`;
         els.missing.className = `metric-value ${difference === 0 ? 'good' : difference > 0 ? 'bad' : ''}`;
         els.caption.textContent = `${state.file.name}　${header.width} × ${header.height}　${header.bitsPerPixel} bpp`;
-
-        const codeCount = debug?.codes?.length || 0;
-        const duplicateCount = codeCount - new Set(debug?.codes || []).size;
-        const items = [
-          [tr('imageSize'), `${header.width} × ${header.height}`],
-          [tr('fileFormat'), header.format || 'BMP'],
-          [tr('threshold'), debug?.config.bcrThreshold],
-          [tr('roi'), debug ? `${debug.config.roi.width} × ${debug.config.roi.height}` : null],
-          [tr('readRecords'), codeCount ? `${codeCount} ${tr('records')}, ${duplicateCount} ${tr('duplicate')}` : '—'],
-          [tr('debugState'), header.debugMarkerOffset >= 0 && debug?.config.debugFlag ? tr('enabled') : tr('notFound')]
-        ];
-        els.overview.innerHTML = items.map(([label, value]) => kv(label, value)).join('');
 
         if (debug?.grid) {
           els.missingSummary.classList.remove('is-info');
