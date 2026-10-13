@@ -125,6 +125,7 @@
       solVTitle: '小V智能助手', solVDesc: '在线智能问答，快速解决产品使用与选型问题',
       solDocTitle: '方案解决文档', solDocDesc: '读码器应用方案、接线指南、调试教程等技术文档',
       solRepairTitle: '维修状态查询', solRepairDesc: '查询产品维修进度与售后状态',
+      solFirmwareTitle: '固件下载', solFirmwareDesc: '打开海康机器人文件下载页面，获取相关固件资源',
       solHint: '所有链接将在新标签页中打开',
       // Selection page
       card1: '核心参数配置', card2: '方案示意图', card3: '最佳推荐型号', card3Manual: '当前选定型号',
@@ -439,6 +440,7 @@
       solVTitle: 'V Assistant', solVDesc: 'Online Q&A for product usage and selection questions',
       solDocTitle: 'Solution Documents', solDocDesc: 'Application guides, wiring diagrams, debugging tutorials and more',
       solRepairTitle: 'Repair Status', solRepairDesc: 'Check product repair progress and after-sales status',
+      solFirmwareTitle: 'Firmware Download', solFirmwareDesc: 'Open the Hikrobot file download page to access firmware resources',
       solHint: 'All links open in a new tab',
       card1: 'Core Parameters', card2: 'Schematic', card3: 'Best Match', card3Manual: 'Selected Model',
       sec1: 'Code Type & Module Size', sec2: 'Distance & FOV',

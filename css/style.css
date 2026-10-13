@@ -3769,6 +3769,11 @@ select:focus, input:focus {
   border: 1.5px solid #90caf9;
   color: #1565c0;
 }
+.sol-icon-firmware {
+  background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+  border: 1.5px solid #a5d6a7;
+  color: #2e7d32;
+}
 
 /* 鍗＄墖鍐呭 */
 .sol-card-body {
@@ -3923,6 +3928,7 @@ select:focus, input:focus {
 .dark .sol-icon-doc { background: linear-gradient(135deg, #2a1a08, #3d2510); border-color: #5a3a18; }
 .dark .sol-icon-repair { background: linear-gradient(135deg, #2a0f18, #3d1520); border-color: #5a2030; }
 .dark .sol-icon-v { background: linear-gradient(135deg, #1a1a30, #252548); border-color: #3a3a60; }
+.dark .sol-icon-firmware { background: linear-gradient(135deg, #14291b, #1c3824); border-color: #315a3b; color: #81c784; }
 .dark .sol-footer { border-top-color: #21262d; }
 
 .dark .app-window {

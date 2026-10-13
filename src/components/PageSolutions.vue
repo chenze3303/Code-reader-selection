@@ -57,6 +57,20 @@
             </div>
           </a>
 
+          <a class="sol-card" href="https://drive.ticklink.com/disk/fileDownload?link=qBVYUkml" target="_blank" rel="noopener">
+            <div class="sol-card-icon-wrap sol-icon-firmware">
+              <span class="sol-card-icon"><UiIcon name="download" /></span>
+            </div>
+            <div class="sol-card-body">
+              <div class="sol-card-title">{{ t('solFirmwareTitle') }}</div>
+              <div class="sol-card-desc">{{ t('solFirmwareDesc') }}</div>
+              <div class="sol-card-link">
+                <span class="sol-card-url">drive.ticklink.com</span>
+                <span class="sol-card-arrow">→</span>
+              </div>
+            </div>
+          </a>
+
           <a class="sol-card" href="sdk-guide.html" target="_blank" rel="noopener">
             <div class="sol-card-icon-wrap sol-icon-sdk">
               <span class="sol-card-icon"><UiIcon name="laptop" /></span>
