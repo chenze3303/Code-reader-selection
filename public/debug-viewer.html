@@ -845,9 +845,9 @@
           </svg>
           <span data-i18n="privacy">仅在本机浏览器处理</span>
         </div>
-        <a id="returnLink" class="return-link" href="index.html?page=page-solutions" aria-label="返回方案解决" data-i18n-aria="returnAria">
+        <a id="returnLink" class="return-link" href="index.html?page=page-solutions" aria-label="返回方案解决">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/><path d="M9 12h12"/></svg>
-          <span data-i18n="backToSolutions">返回方案解决</span>
+          <span>返回方案解决</span>
         </a>
       </div>
     </header>
@@ -1059,8 +1059,6 @@
           bmpInvalid: '文件不是有效的 BMP 格式。', bmpSizeInvalid: 'BMP 的图像尺寸无效或过大。',
           bmpFormatUnsupported: '暂不支持此 BMP 像素格式（{bits} 位，压缩方式 {compression}）。调试文本仍可解析。',
           jpgDecodeFailed: 'JPG 解码失败', gridInference: '{rows}×{cols} 规则网格推断',
-          languageToggleAria: 'Switch to English', switchLabel: 'EN',
-          backToSolutions: 'Back to Solutions', returnAria: 'Return to Solutions'
         },
         en: {
           title: 'Image Algorithm Debug Viewer', heading: 'Image Algorithm Debug Viewer',
@@ -1104,8 +1102,6 @@
           bmpInvalid: 'The file is not a valid BMP image.', bmpSizeInvalid: 'The BMP image dimensions are invalid or too large.',
           bmpFormatUnsupported: 'This BMP pixel format is not supported yet ({bits}-bit, compression {compression}). Debug text can still be parsed.',
           jpgDecodeFailed: 'JPG decoding failed', gridInference: 'Regular grid inference ({rows}×{cols})',
-          languageToggleAria: '切换到中文', switchLabel: '中文',
-          backToSolutions: '返回方案解决', returnAria: '返回方案解决'
         }
       };
       const queryLanguage = new URLSearchParams(window.location.search).get('lang');
