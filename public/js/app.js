@@ -966,8 +966,12 @@
 
   function boot() {
     initTheme();
+    var requestedLang = new URLSearchParams(window.location.search).get('lang');
+    if (requestedLang === 'zh' || requestedLang === 'en') currentLang = requestedLang;
     applyLang(currentLang);
     init();
+    var requestedPage = new URLSearchParams(window.location.search).get('page');
+    if (requestedPage && document.getElementById(requestedPage)) switchToPage(requestedPage);
     initAnnouncement();
     // 空闲预加载：首页渲染完后后台静默下载大文件，用户无感知
     idlePreload();

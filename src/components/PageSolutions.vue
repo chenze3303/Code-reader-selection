@@ -71,7 +71,7 @@
             </div>
           </a>
 
-          <a class="sol-card" href="debug-viewer.html" target="_blank" rel="noopener">
+          <a class="sol-card" :href="debugViewerHref" target="_blank" rel="noopener">
             <div class="sol-card-icon-wrap sol-icon-debug">
               <span class="sol-card-icon"><UiIcon name="aperture" /></span>
             </div>
@@ -112,8 +112,10 @@
 </template>
 
 <script setup>
+import { computed } from 'vue'
 import { useI18n } from '../composables/useI18n'
 import UiIcon from './UiIcon.vue'
 const { currentLang, t } = useI18n()
+const debugViewerHref = computed(() => `debug-viewer.html?lang=${currentLang.value === 'en' ? 'en' : 'zh'}`)
 currentLang.value
 </script>

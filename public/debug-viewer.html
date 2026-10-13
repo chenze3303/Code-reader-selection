@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>图像算法调试查看器</title>
+  <title data-i18n="title">图像算法调试查看器</title>
   <style>
     :root {
       color-scheme: light;
@@ -652,6 +652,37 @@
       color: rgba(255, 255, 255, 0.72);
       font-size: 12px;
     }
+    .lang-toggle {
+      border: 1px solid rgba(255,255,255,.22);
+      border-radius: 6px;
+      background: rgba(255,255,255,.08);
+      color: #fff;
+      padding: 6px 10px;
+      font: inherit;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background .2s, border-color .2s;
+    }
+    .lang-toggle:hover { background: rgba(255,255,255,.16); border-color: rgba(255,255,255,.4); }
+    .header-actions { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+    .return-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid rgba(255,255,255,.22);
+      border-radius: 6px;
+      background: rgba(255,255,255,.08);
+      color: #fff;
+      padding: 6px 10px;
+      font-size: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: background .2s, border-color .2s;
+    }
+    .return-link:hover { background: rgba(255,255,255,.16); border-color: rgba(255,255,255,.4); }
+    .return-link svg { width: 14px; height: 14px; flex: none; }
 
     #dropZone, #statusLine, #results { margin-right: 24px; margin-left: 24px; }
     .drop-zone {
@@ -815,20 +846,27 @@
           </svg>
         </div>
         <div>
-          <h1>图像算法调试查看器</h1>
-          <p class="subtitle">解析 BMP / JPG / RAW 尾部 DebugInfo，并将检测结果叠加到原图</p>
+          <h1 data-i18n="heading">图像算法调试查看器</h1>
+          <p class="subtitle" data-i18n="subtitle">解析 BMP / JPG / RAW 尾部 DebugInfo，并将检测结果叠加到原图</p>
         </div>
       </div>
-      <div class="privacy-badge">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"></path>
-          <path d="m9 12 2 2 4-4"></path>
-        </svg>
-        仅在本机浏览器处理
+      <div class="header-actions">
+        <div class="privacy-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"></path>
+            <path d="m9 12 2 2 4-4"></path>
+          </svg>
+          <span data-i18n="privacy">仅在本机浏览器处理</span>
+        </div>
+        <a id="returnLink" class="return-link" href="index.html?page=page-solutions" aria-label="返回方案解决" data-i18n-aria="returnAria">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/><path d="M9 12h12"/></svg>
+          <span data-i18n="backToSolutions">返回方案解决</span>
+        </a>
+        <button id="langToggle" class="lang-toggle" type="button" aria-label="Switch to English">EN</button>
       </div>
     </header>
 
-    <section id="dropZone" class="drop-zone" tabindex="0" role="button" aria-label="选择或拖入 BMP 文件">
+    <section id="dropZone" class="drop-zone" tabindex="0" role="button" aria-label="选择或拖入 BMP 文件" data-i18n-aria="dropAria">
       <div class="drop-main">
         <div class="drop-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
@@ -837,8 +875,8 @@
           </svg>
         </div>
         <div>
-          <div class="drop-title">拖入 BMP、JPG 或 RAW 图片</div>
-          <p class="drop-help">支持 BMP、JPG 和带尺寸信息的灰度 RAW；不会上传图片或调试数据</p>
+          <div class="drop-title" data-i18n="dropTitle">拖入 BMP、JPG 或 RAW 图片</div>
+          <p class="drop-help" data-i18n="dropHelp">支持 BMP、JPG 和带尺寸信息的灰度 RAW；不会上传图片或调试数据</p>
         </div>
       </div>
       <label for="fileInput" class="primary-button" tabindex="0">
@@ -846,81 +884,81 @@
           <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
           <path d="m17 8-5-5-5 5M12 3v12"></path>
         </svg>
-        选择图片
+        <span data-i18n="chooseImage">选择图片</span>
       </label>
       <input id="fileInput" type="file" accept=".bmp,.jpg,.jpeg,.raw,image/bmp,image/jpeg">
     </section>
 
-    <div id="statusLine" class="status-line" role="status" aria-live="polite">请选择 BMP、JPG 或 RAW 图片开始解析。</div>
+    <div id="statusLine" class="status-line" role="status" aria-live="polite" data-i18n="readyStatus">请选择 BMP、JPG 或 RAW 图片开始解析。</div>
 
-    <section id="results" class="results" aria-label="解析结果">
+    <section id="results" class="results" aria-label="解析结果" data-i18n-aria="resultsAria">
       <div class="summary-grid">
         <article class="metric-card">
-          <div class="metric-label">配置目标数</div>
+          <div class="metric-label" data-i18n="expectedLabel">配置目标数</div>
           <div id="expectedMetric" class="metric-value">—</div>
           <div class="metric-note">BCR quit_bar_num</div>
         </article>
         <article class="metric-card">
-          <div class="metric-label">检测结果数</div>
+          <div class="metric-label" data-i18n="detectedLabel">检测结果数</div>
           <div id="detectedMetric" class="metric-value">—</div>
           <div class="metric-note">DET out_roi_num</div>
         </article>
         <article class="metric-card">
-          <div class="metric-label">数量差异</div>
+          <div class="metric-label" data-i18n="differenceLabel">数量差异</div>
           <div id="missingMetric" class="metric-value">—</div>
-          <div class="metric-note">配置数 − 检测数</div>
+          <div class="metric-note" data-i18n="differenceNote">配置数 − 检测数</div>
         </article>
         <article class="metric-card">
-          <div class="metric-label">处理耗时</div>
+          <div class="metric-label" data-i18n="timeLabel">处理耗时</div>
           <div id="timeMetric" class="metric-value">—</div>
-          <div class="metric-note">原始 time_cost，单位未声明</div>
+          <div class="metric-note" data-i18n="timeNote">原始 time_cost，单位未声明</div>
         </article>
         <article class="metric-card">
-          <div class="metric-label">附加数据</div>
+          <div class="metric-label" data-i18n="tailLabel">附加数据</div>
           <div id="tailMetric" class="metric-value">—</div>
-          <div class="metric-note">BMP 像素数据之后</div>
+          <div class="metric-note" data-i18n="tailNote">BMP 像素数据之后</div>
         </article>
       </div>
 
       <div class="workspace-grid">
-        <section class="panel viewer-panel" aria-label="图像与检测框">
+        <section class="panel viewer-panel" aria-label="图像与检测框" data-i18n-aria="viewerAria">
           <div class="viewer-toolbar">
             <div class="toolbar-group">
-              <button class="tool-button is-active" type="button" data-zoom="fit">适应窗口</button>
+              <button class="tool-button is-active" type="button" data-zoom="fit" data-i18n="zoomFit">适应窗口</button>
               <button class="tool-button" type="button" data-zoom="0.5">50%</button>
               <button class="tool-button" type="button" data-zoom="1">100%</button>
             </div>
             <div class="toolbar-group">
               <label class="toggle">
                 <input id="overlayToggle" type="checkbox" checked>
-                显示读码状态
+                <span data-i18n="showReadStatus">显示读码状态</span>
               </label>
               <label class="toggle">
                 <input id="missingToggle" type="checkbox" checked>
-                显示漏检位置
+                <span data-i18n="showMissing">显示漏检位置</span>
               </label>
               <label class="threshold-wrap" for="thresholdRange">
-                最低置信度
+                <span data-i18n="thresholdLabel">最低置信度</span>
                 <input id="thresholdRange" type="range" min="0" max="100" value="0">
                 <span id="thresholdValue" class="threshold-value">0</span>
               </label>
             </div>
           </div>
           <div id="canvasScroller" class="canvas-scroller">
-            <canvas id="imageCanvas" width="1" height="1" aria-label="BMP 图像及检测框叠加结果"></canvas>
+            <canvas id="imageCanvas" width="1" height="1" aria-label="BMP 图像及检测框叠加结果" data-i18n-aria="canvasAria"></canvas>
           </div>
           <div class="canvas-caption">
-            <span id="imageCaption">等待图片</span>
-            <span>绿色＝已读到　红色虚线＝检测到但未读到　蓝色叉号＝推断漏检　放大后按住拖动</span>
+            <span id="imageCaption" data-i18n="waitingImage">等待图片</span>
+            <span data-i18n="canvasLegend">绿色＝已读到　红色虚线＝检测到但未读到　蓝色叉号＝推断漏检　放大后按住拖动</span>
           </div>
         </section>
 
-        <aside class="detail-stack" aria-label="调试信息">
+        <aside class="detail-stack" aria-label="调试信息" data-i18n-aria="debugAria">
           <section class="panel detail-panel">
             <div class="panel-heading">
               <div>
-                <h2>运行概览</h2>
-                <p>文件头、配置与处理状态</p>
+                <h2 data-i18n="overviewTitle">运行概览</h2>
+                <p data-i18n="overviewDesc">文件头、配置与处理状态</p>
               </div>
             </div>
             <div id="overviewGrid" class="kv-grid compact-kv"></div>
@@ -929,32 +967,32 @@
           <section class="panel detail-panel wide">
             <div class="panel-heading">
               <div>
-                <h2>漏检定位</h2>
-                <p>按从上到下的行、从左到右的列编号，自动推断规则网格</p>
+                <h2 data-i18n="missingTitle">漏检定位</h2>
+                <p data-i18n="missingDesc">按从上到下的行、从左到右的列编号，自动推断规则网格</p>
               </div>
             </div>
-            <p id="missingSummary" class="missing-summary">等待网格分析…</p>
+            <p id="missingSummary" class="missing-summary" data-i18n="waitingGrid">等待网格分析…</p>
             <div class="grid-map-wrap">
-              <div id="gridMap" class="grid-map" aria-label="检测网格示意图"></div>
+              <div id="gridMap" class="grid-map" aria-label="检测网格示意图" data-i18n-aria="gridAria"></div>
             </div>
           </section>
 
           <section class="panel detail-panel wide">
             <div class="panel-heading">
               <div>
-                <h2>检测结果</h2>
-                <p>点击行可在图中高亮对应区域</p>
+                <h2 data-i18n="detectionsTitle">检测结果</h2>
+                <p data-i18n="detectionsDesc">点击行可在图中高亮对应区域</p>
               </div>
             </div>
-            <div class="confidence-legend" aria-label="置信度图例">
-              <span class="legend-item"><span class="legend-dot high"></span>已读到</span>
-              <span class="legend-item"><span class="legend-dot low"></span>检测到但未读到</span>
-              <span class="legend-item">灰色＝无识码结果记录</span>
+            <div class="confidence-legend" aria-label="置信度图例" data-i18n-aria="confidenceLegend">
+              <span class="legend-item"><span class="legend-dot high"></span><span data-i18n="readStatus">已读到</span></span>
+              <span class="legend-item"><span class="legend-dot low"></span><span data-i18n="unreadStatus">检测到但未读到</span></span>
+              <span class="legend-item" data-i18n="noReadStatus">灰色＝无识码结果记录</span>
             </div>
             <div class="results-table-wrap">
               <table>
                 <thead>
-                  <tr><th>序号</th><th>读码状态</th><th>条码内容</th><th>置信度</th><th>中心坐标</th></tr>
+                  <tr><th data-i18n="thIndex">序号</th><th data-i18n="thStatus">读码状态</th><th data-i18n="thCode">条码内容</th><th data-i18n="thConfidence">置信度</th><th data-i18n="thCenter">中心坐标</th></tr>
                 </thead>
                 <tbody id="resultRows"></tbody>
               </table>
@@ -964,20 +1002,20 @@
           <section class="panel detail-panel wide">
             <div class="panel-heading">
               <div>
-                <h2>原始数据</h2>
-                <p>用于进一步排查或保存记录</p>
+                <h2 data-i18n="rawTitle">原始数据</h2>
+                <p data-i18n="rawDesc">用于进一步排查或保存记录</p>
               </div>
               <div class="toolbar-group">
-                <button id="exportJson" class="secondary-button" type="button" disabled>导出 JSON</button>
-                <button id="exportTxt" class="secondary-button" type="button" disabled>导出 TXT</button>
+                <button id="exportJson" class="secondary-button" type="button" disabled data-i18n="exportJson">导出 JSON</button>
+                <button id="exportTxt" class="secondary-button" type="button" disabled data-i18n="exportTxt">导出 TXT</button>
               </div>
             </div>
             <details>
-              <summary>调试文本</summary>
-              <pre id="rawDebug">等待解析…</pre>
+              <summary data-i18n="debugText">调试文本</summary>
+              <pre id="rawDebug" data-i18n="waitingParse">等待解析…</pre>
             </details>
             <details>
-              <summary>定位过程统计</summary>
+              <summary data-i18n="stageStats">定位过程统计</summary>
               <div id="stageStats" class="kv-grid"></div>
             </details>
           </section>
@@ -991,6 +1029,102 @@
   <script>
     (() => {
       'use strict';
+
+      const messages = {
+        zh: {
+          title: '图像算法调试查看器', heading: '图像算法调试查看器',
+          subtitle: '解析 BMP / JPG / RAW 尾部 DebugInfo，并将检测结果叠加到原图',
+          privacy: '仅在本机浏览器处理', dropAria: '选择或拖入 BMP、JPG 或 RAW 文件',
+          dropTitle: '拖入 BMP、JPG 或 RAW 图片',
+          dropHelp: '支持 BMP、JPG 和带尺寸信息的灰度 RAW；不会上传图片或调试数据',
+          chooseImage: '选择图片', readyStatus: '请选择 BMP、JPG 或 RAW 图片开始解析。',
+          resultsAria: '解析结果', expectedLabel: '配置目标数', detectedLabel: '检测结果数',
+          differenceLabel: '数量差异', differenceNote: '配置数 − 检测数', timeLabel: '处理耗时',
+          timeNote: '原始 time_cost，单位未声明', tailLabel: '附加数据', tailNote: 'BMP 像素数据之后',
+          viewerAria: '图像与检测框', zoomFit: '适应窗口', showReadStatus: '显示读码状态',
+          showMissing: '显示漏检位置', thresholdLabel: '最低置信度', canvasAria: '图像及检测框叠加结果',
+          waitingImage: '等待图片', canvasLegend: '绿色＝已读到　红色虚线＝检测到但未读到　蓝色叉号＝推断漏检　放大后按住拖动',
+          debugAria: '调试信息', overviewTitle: '运行概览', overviewDesc: '文件头、配置与处理状态',
+          missingTitle: '漏检定位', missingDesc: '按行列顺序自动推断规则网格',
+          waitingGrid: '等待网格分析…', gridAria: '检测网格示意图', detectionsTitle: '检测结果',
+          detectionsDesc: '点击行可在图中高亮对应区域', confidenceLegend: '置信度图例',
+          readStatus: '已读到', unreadStatus: '检测到但未读到', noReadStatus: '灰色＝无识码结果记录',
+          noReadRecord: '无识码记录', missingShort: '漏检', detectedShort: '已检',
+          thIndex: '序号', thStatus: '读码状态', thCode: '条码内容', thConfidence: '置信度', thCenter: '中心坐标',
+          rawTitle: '原始数据', rawDesc: '用于进一步排查或保存记录', exportJson: '导出 JSON',
+          exportTxt: '导出 TXT', debugText: '调试文本', waitingParse: '等待解析…', stageStats: '定位过程统计',
+          imageSize: '图像尺寸', fileFormat: '文件格式', threshold: '置信度阈值', roi: 'ROI',
+          readRecords: '识码记录', debugState: '调试状态', records: '条', duplicate: '重复',
+          enabled: '已开启', notFound: '未找到', inferredMissing: '推断漏检 {count} 个：{items}',
+          noMissing: '按 {method} 未发现漏检格位。',
+          tooFewTargets: '当前样本配置目标数为 {count}，自动网格定位仅适用于目标数不少于 9 的规则排列图片，因此这里不生成网格位置。读到的条码内容请看检测结果表。',
+          noGrid: '当前图片无法按规则网格推算漏检位置。读码状态和已读到的条码内容请看检测结果表。',
+          missingCellAria: '漏检 {key}，估计中心坐标 {x}, {y}', detectedCellAria: '{key} 已检测，对应结果 {index}',
+          missingRowAria: '检测结果 {index}，置信度 {confidence}', noDetections: '没有解析到 DET 检测结果',
+          noDebugText: '文件中没有找到 DebugInfo 文本。', codeItem: '识码 {index}', duplicateSuffix: '（重复）',
+          stageItem: '定位过程', noData: '无数据', recordCount: '条记录',
+          invalidFile: '请选择 BMP、JPG 或 RAW 格式的图片。', reading: '正在读取 {name}…',
+          parsing: '正在解析图像文件头和 DebugInfo…', complete: '解析完成：找到 {bytes} 字节附加数据和 {count} 个检测框{missing}。',
+          missingCount: '，推断漏检 {count} 个', markerMissing: '图像已显示，但文件尾没有找到 DebugInfo 标识。',
+          parseFailed: '解析失败：{error}', highlightedDetection: '已高亮检测结果 #{index}',
+          highlightedMissing: '已高亮漏检 {key}，估计中心 {x}, {y}', jsonExported: 'JSON 调试数据已导出',
+          txtExported: '原始调试文本已导出', rawNoSize: 'RAW 缺少源图尺寸，无法自动显示；请使用带 DebugInfo 的原始 RAW。',
+          rawLengthMismatch: 'RAW 像素长度与调试尺寸不匹配，目前支持 8 位或 16 位小端灰度 RAW。',
+          bmpInvalid: '文件不是有效的 BMP 格式。', bmpSizeInvalid: 'BMP 的图像尺寸无效或过大。',
+          bmpFormatUnsupported: '暂不支持此 BMP 像素格式（{bits} 位，压缩方式 {compression}）。调试文本仍可解析。',
+          jpgDecodeFailed: 'JPG 解码失败', gridInference: '{rows}×{cols} 规则网格推断',
+          languageToggleAria: 'Switch to English', switchLabel: 'EN',
+          backToSolutions: 'Back to Solutions', returnAria: 'Return to Solutions'
+        },
+        en: {
+          title: 'Image Algorithm Debug Viewer', heading: 'Image Algorithm Debug Viewer',
+          subtitle: 'Parse DebugInfo appended to BMP / JPG / RAW images and overlay detections on the source image',
+          privacy: 'Processed locally in your browser', dropAria: 'Choose or drop a BMP, JPG, or RAW file',
+          dropTitle: 'Drop a BMP, JPG, or RAW image',
+          dropHelp: 'Supports BMP, JPG, and grayscale RAW with dimensions; images and debug data are never uploaded',
+          chooseImage: 'Choose image', readyStatus: 'Choose a BMP, JPG, or RAW image to begin parsing.',
+          resultsAria: 'Analysis results', expectedLabel: 'Configured targets', detectedLabel: 'Detections',
+          differenceLabel: 'Count difference', differenceNote: 'Configured − detected', timeLabel: 'Processing time',
+          timeNote: 'Original time_cost; unit not specified', tailLabel: 'Appended data', tailNote: 'After BMP pixel data',
+          viewerAria: 'Image and detection boxes', zoomFit: 'Fit to window', showReadStatus: 'Show decoding status',
+          showMissing: 'Show missing positions', thresholdLabel: 'Minimum confidence', canvasAria: 'Image with detection overlays',
+          waitingImage: 'Waiting for an image', canvasLegend: 'Green = decoded　Red dashed = detected, not decoded　Blue cross = inferred miss　Drag to pan when zoomed',
+          debugAria: 'Debug information', overviewTitle: 'Run overview', overviewDesc: 'File header, configuration, and processing status',
+          missingTitle: 'Missing-position analysis', missingDesc: 'Infer a regular grid using row and column order',
+          waitingGrid: 'Waiting for grid analysis…', gridAria: 'Detection grid diagram', detectionsTitle: 'Detection results',
+          detectionsDesc: 'Select a row to highlight its region in the image', confidenceLegend: 'Confidence legend',
+          readStatus: 'Decoded', unreadStatus: 'Detected, not decoded', noReadStatus: 'Gray = no decoding record',
+          noReadRecord: 'No decoding record', missingShort: 'Missing', detectedShort: 'Detected',
+          thIndex: '#', thStatus: 'Decode status', thCode: 'Barcode content', thConfidence: 'Confidence', thCenter: 'Center',
+          rawTitle: 'Raw data', rawDesc: 'For further troubleshooting or record keeping', exportJson: 'Export JSON',
+          exportTxt: 'Export TXT', debugText: 'Debug text', waitingParse: 'Waiting for parsing…', stageStats: 'Pipeline statistics',
+          imageSize: 'Image size', fileFormat: 'File format', threshold: 'Confidence threshold', roi: 'ROI',
+          readRecords: 'Decoding records', debugState: 'Debug status', records: 'records', duplicate: 'duplicates',
+          enabled: 'Enabled', notFound: 'Not found', inferredMissing: 'Inferred {count} missing: {items}',
+          noMissing: 'No missing grid cells found using {method}.',
+          tooFewTargets: 'This sample configures {count} targets. Automatic grid localization requires at least 9 targets in a regular layout, so no grid positions are generated. See the detection results table for decoded barcodes.',
+          noGrid: 'Missing positions cannot be inferred from a regular grid in this image. See the detection results table for decoding status and barcode content.',
+          missingCellAria: 'Missing {key}, estimated center {x}, {y}', detectedCellAria: '{key} detected, result {index}',
+          missingRowAria: 'Detection {index}, confidence {confidence}', noDetections: 'No DET detection results were parsed',
+          noDebugText: 'No DebugInfo text was found in the file.', codeItem: 'Code {index}', duplicateSuffix: ' (duplicate)',
+          stageItem: 'Pipeline', noData: 'No data', recordCount: 'records',
+          invalidFile: 'Choose an image in BMP, JPG, or RAW format.', reading: 'Reading {name}…',
+          parsing: 'Parsing image header and DebugInfo…', complete: 'Parsing complete: found {bytes} bytes of appended data and {count} detection boxes{missing}.',
+          missingCount: '; inferred {count} missing', markerMissing: 'Image displayed, but no DebugInfo marker was found at the end of the file.',
+          parseFailed: 'Parsing failed: {error}', highlightedDetection: 'Highlighted detection #{index}',
+          highlightedMissing: 'Highlighted missing {key}, estimated center {x}, {y}', jsonExported: 'JSON debug data exported',
+          txtExported: 'Raw debug text exported', rawNoSize: 'RAW source dimensions are missing, so it cannot be displayed automatically. Use a raw file with DebugInfo.',
+          rawLengthMismatch: 'RAW pixel length does not match the debug dimensions. 8-bit or 16-bit little-endian grayscale RAW is supported.',
+          bmpInvalid: 'The file is not a valid BMP image.', bmpSizeInvalid: 'The BMP image dimensions are invalid or too large.',
+          bmpFormatUnsupported: 'This BMP pixel format is not supported yet ({bits}-bit, compression {compression}). Debug text can still be parsed.',
+          jpgDecodeFailed: 'JPG decoding failed', gridInference: 'Regular grid inference ({rows}×{cols})',
+          languageToggleAria: '切换到中文', switchLabel: '中文',
+          backToSolutions: '返回方案解决', returnAria: '返回方案解决'
+        }
+      };
+      const queryLanguage = new URLSearchParams(window.location.search).get('lang');
+      let language = queryLanguage === 'en' || (queryLanguage !== 'zh' && localStorage.getItem('lang') === 'en') ? 'en' : 'zh';
+      const tr = (key, values = {}) => (messages[language][key] || messages.zh[key] || key).replace(/\{(\w+)\}/g, (_, name) => values[name] ?? '');
 
       const els = {
         dropZone: document.getElementById('dropZone'),
@@ -1017,6 +1151,8 @@
         stages: document.getElementById('stageStats'),
         exportJson: document.getElementById('exportJson'),
         exportTxt: document.getElementById('exportTxt'),
+        langToggle: document.getElementById('langToggle'),
+        returnLink: document.getElementById('returnLink'),
         toast: document.getElementById('toast')
       };
 
@@ -1036,6 +1172,34 @@
         els.statusLine.textContent = message;
         els.statusLine.dataset.state = type;
       }
+
+      function applyLanguage() {
+        document.documentElement.lang = language === 'en' ? 'en' : 'zh-CN';
+        document.title = tr('title');
+        document.querySelectorAll('[data-i18n]').forEach(node => {
+          node.textContent = tr(node.dataset.i18n);
+        });
+        document.querySelectorAll('[data-i18n-aria]').forEach(node => {
+          node.setAttribute('aria-label', tr(node.dataset.i18nAria));
+        });
+        els.langToggle.textContent = tr('switchLabel');
+        els.langToggle.setAttribute('aria-label', tr('languageToggleAria'));
+        const returnUrl = location.protocol === 'file:'
+          ? new URL('https://chenze3303.github.io/Code-reader-selection/')
+          : new URL('index.html', location.href);
+        returnUrl.searchParams.set('page', 'page-solutions');
+        returnUrl.searchParams.set('lang', language);
+        els.returnLink.href = returnUrl.toString();
+        if (state.parsed) renderResults();
+        else setStatus(tr('readyStatus'));
+        draw();
+      }
+
+      els.langToggle.addEventListener('click', () => {
+        language = language === 'zh' ? 'en' : 'zh';
+        try { localStorage.setItem('lang', language); } catch {}
+        applyLanguage();
+      });
 
       function showToast(message) {
         els.toast.textContent = message;
@@ -1150,7 +1314,7 @@
             return {read,score:smaller>0?area/smaller:0};
           }).sort((a,b)=>b.score-a.score)[0];
           det.read = match?.score >= .5 ? match.read : null;
-          det.readStatus = det.read ? '已读到' : parsed.hasReadResults ? '未读到' : '无识码记录';
+          det.readStatusKey = det.read ? 'readStatus' : parsed.hasReadResults ? 'unreadStatus' : 'noReadRecord';
         }
         parsed.grid = inferMissingGrid(parsed);
         return parsed;
@@ -1265,7 +1429,7 @@
         return {
           rows,
           cols,
-          method: `${rows}×${cols} 规则网格推断`,
+          method: tr('gridInference', { rows, cols }),
           colCenters: colCenters.map(Math.round),
           rowCenters: rowCenters.map(Math.round),
           xSpacing: Math.round(xSpacing),
@@ -1278,7 +1442,7 @@
       function parseBmp(buffer) {
         const view = new DataView(buffer);
         if (buffer.byteLength < 54 || view.getUint8(0) !== 0x42 || view.getUint8(1) !== 0x4d) {
-          throw new Error('文件不是有效的 BMP 格式。');
+          throw new Error(tr('bmpInvalid'));
         }
 
         const headerFileSize = readU32(view, 2);
@@ -1299,7 +1463,7 @@
         const tailBytes = Math.max(0, buffer.byteLength - tailStart);
 
         if (width <= 0 || height <= 0 || width > 30000 || height > 30000) {
-          throw new Error('BMP 的图像尺寸无效或过大。');
+          throw new Error(tr('bmpSizeInvalid'));
         }
 
         let debugMarkerOffset = -1;
@@ -1362,7 +1526,7 @@
         const { header, buffer } = parsed;
         const { width, height, bitsPerPixel, compression, pixelOffset, stride, topDown, dibSize, colorsUsed } = header;
         if (compression !== 0 || ![8, 24, 32].includes(bitsPerPixel)) {
-          throw new Error(`暂不支持此 BMP 像素格式（${bitsPerPixel} 位，压缩方式 ${compression}）。调试文本仍可解析。`);
+          throw new Error(tr('bmpFormatUnsupported', { bits: bitsPerPixel, compression }));
         }
 
         const src = new Uint8Array(buffer);
@@ -1455,7 +1619,7 @@
             ctx.closePath();
             ctx.stroke();
             ctx.setLineDash([]);
-            const label = `#${det.index} ${det.readStatus}`;
+            const label = `#${det.index} ${tr(det.readStatusKey)}`;
             const metrics = ctx.measureText(label);
             const padX = 7 * scaleBase;
             const boxHeight = 22 * scaleBase;
@@ -1493,7 +1657,7 @@
             ctx.lineTo(cell.points[3].x, cell.points[3].y);
             ctx.stroke();
 
-            const label = `漏 ${cell.key}`;
+            const label = `${tr('missingShort')} ${cell.key}`;
             const metrics = ctx.measureText(label);
             const padX = 7 * scaleBase;
             const boxHeight = 22 * scaleBase;
@@ -1558,54 +1722,55 @@
         els.missing.className = `metric-value ${difference === 0 ? 'good' : difference > 0 ? 'bad' : ''}`;
         els.caption.textContent = `${state.file.name}　${header.width} × ${header.height}　${header.bitsPerPixel} bpp`;
 
+        const codeCount = debug?.codes?.length || 0;
+        const duplicateCount = codeCount - new Set(debug?.codes || []).size;
         const items = [
-          ['图像尺寸', `${header.width} × ${header.height}`],
-          ['文件格式', header.format || 'BMP'],
-          ['置信度阈值', debug?.config.bcrThreshold],
-          ['ROI', debug ? `${debug.config.roi.width} × ${debug.config.roi.height}` : null],
-          ['识码记录', debug?.codes?.length ? `${debug.codes.length} 条，重复 ${debug.codes.length - new Set(debug.codes).size} 条` : '—'],
-          ['调试状态', header.debugMarkerOffset >= 0 && debug?.config.debugFlag ? '已开启' : '未找到']
+          [tr('imageSize'), `${header.width} × ${header.height}`],
+          [tr('fileFormat'), header.format || 'BMP'],
+          [tr('threshold'), debug?.config.bcrThreshold],
+          [tr('roi'), debug ? `${debug.config.roi.width} × ${debug.config.roi.height}` : null],
+          [tr('readRecords'), codeCount ? `${codeCount} ${tr('records')}, ${duplicateCount} ${tr('duplicate')}` : '—'],
+          [tr('debugState'), header.debugMarkerOffset >= 0 && debug?.config.debugFlag ? tr('enabled') : tr('notFound')]
         ];
         els.overview.innerHTML = items.map(([label, value]) => kv(label, value)).join('');
 
         if (debug?.grid) {
           els.missingSummary.classList.remove('is-info');
-          const missingNames = debug.grid.missing.map(cell => `${cell.key}（${cell.center.x}, ${cell.center.y}）`);
+          const missingNames = debug.grid.missing.map(cell => `${cell.key} (${cell.center.x}, ${cell.center.y})`);
           els.missingSummary.textContent = debug.grid.missing.length
-            ? `推断漏检 ${debug.grid.missing.length} 个：${missingNames.join('、')}`
-            : `按 ${debug.grid.method} 未发现漏检格位。`;
+            ? tr('inferredMissing', { count: debug.grid.missing.length, items: missingNames.join(', ') })
+            : tr('noMissing', { method: tr('gridInference', { rows: debug.grid.rows, cols: debug.grid.cols }) });
           els.gridMap.style.setProperty('--grid-cols', debug.grid.cols);
           els.gridMap.innerHTML = debug.grid.cells.map(cell => cell.estimate
-            ? `<button class="grid-cell" type="button" data-missing="${cell.key}" aria-label="漏检 ${cell.key}，估计中心坐标 ${cell.center.x}, ${cell.center.y}"><span>${cell.key}</span><span class="grid-cell-state">漏检</span></button>`
-            : `<div class="grid-cell" aria-label="${cell.key} 已检测，对应结果 ${cell.detectionIndex}"><span>${cell.key}</span><span class="grid-cell-state">已检 #${cell.detectionIndex}</span></div>`
+            ? `<button class="grid-cell" type="button" data-missing="${cell.key}" aria-label="${tr('missingCellAria', { key: cell.key, x: cell.center.x, y: cell.center.y })}"><span>${cell.key}</span><span class="grid-cell-state">${tr('missingShort')}</span></button>`
+            : `<div class="grid-cell" aria-label="${tr('detectedCellAria', { key: cell.key, index: cell.detectionIndex })}"><span>${cell.key}</span><span class="grid-cell-state">${tr('detectedShort')} #${cell.detectionIndex}</span></div>`
           ).join('');
         } else {
           els.missingSummary.classList.add('is-info');
           const target = debug?.config?.bcrTarget;
           els.missingSummary.textContent = Number.isFinite(target) && target < 9
-            ? `当前样本配置目标数为 ${target}，自动网格定位仅适用于目标数不少于 9 的规则排列图片，因此这里不生成网格位置。读到的条码内容请看检测结果表。`
-            : '当前图片无法按规则网格推算漏检位置。读码状态和已读到的条码内容请看检测结果表。';
+            ? tr('tooFewTargets', { count: target })
+            : tr('noGrid');
           els.gridMap.innerHTML = '';
         }
 
         if (debug?.detections.length) {
           els.rows.innerHTML = debug.detections.map(det => `
-            <tr class="result-row" tabindex="0" data-index="${det.index}" aria-label="检测结果 ${det.index}，置信度 ${det.confidence}">
+            <tr class="result-row" tabindex="0" data-index="${det.index}" aria-label="${tr('missingRowAria', { index: det.index, confidence: det.confidence })}">
               <td>#${det.index}</td>
-              <td><span class="conf-pill ${det.read ? 'high' : 'low'}">${det.readStatus}</span></td>
+              <td><span class="conf-pill ${det.read ? 'high' : 'low'}">${tr(det.readStatusKey)}</span></td>
               <td class="barcode-content" title="${escapeHtml(det.read?.code || '')}">${escapeHtml(det.read?.code || '—')}</td>
               <td>${det.confidence}</td>
               <td>${det.center.x}, ${det.center.y}</td>
             </tr>`).join('');
         } else {
-          els.rows.innerHTML = '<tr><td colspan="5" class="empty-inline">没有解析到 DET 检测结果</td></tr>';
+          els.rows.innerHTML = `<tr><td colspan="5" class="empty-inline">${tr('noDetections')}</td></tr>`;
         }
 
-        els.raw.textContent = rawDebugText || '文件中没有找到 DebugInfo 文本。';
-        if (debug?.codes?.length) els.stages.innerHTML = debug.codes.map((code, i) => kv(`识码 ${i+1}${debug.codes.filter(c=>c===code).length>1?'（重复）':''}`, code)).join('');
-        els.stages.innerHTML = (debug?.codes || []).map((code, i) => kv(`识码 ${i+1}${debug.codes.filter(c=>c===code).length>1?'（重复）':''}`, code)).join('') + (debug
-          ? Object.entries(debug.stages).map(([name, count]) => kv(name, `${count} 条记录`)).join('')
-          : kv('定位过程', '无数据'));
+        els.raw.textContent = rawDebugText || tr('noDebugText');
+        els.stages.innerHTML = (debug?.codes || []).map((code, i) => kv(`${tr('codeItem', { index: i + 1 })}${debug.codes.filter(c=>c===code).length>1?tr('duplicateSuffix'):''}`, code)).join('') + (debug
+          ? Object.entries(debug.stages).map(([name, count]) => kv(name, `${count} ${tr('recordCount')}`)).join('')
+          : kv(tr('stageItem'), tr('noData')));
         els.exportJson.disabled = !debug;
         els.exportTxt.disabled = !rawDebugText;
         els.results.classList.add('is-visible');
@@ -1614,17 +1779,17 @@
       async function handleFile(file) {
         if (!file) return;
         if (!/\.(bmp|jpe?g|raw)$/i.test(file.name)) {
-          setStatus('请选择图片 格式的图片。', 'error');
+          setStatus(tr('invalidFile'), 'error');
           return;
         }
         state.file = file;
         state.selected = null;
         state.selectedMissing = null;
-        setStatus(`正在读取 ${file.name}…`, 'loading');
+        setStatus(tr('reading', { name: file.name }), 'loading');
 
         try {
           const buffer = await file.arrayBuffer();
-          setStatus('正在解析 BMP 文件头和 DebugInfo…', 'loading');
+          setStatus(tr('parsing'), 'loading');
           const parsed = parseImage(buffer, file.name);
           state.parsed = parsed;
           const decoded = await decodeImage(parsed);
@@ -1635,14 +1800,18 @@
           applyZoom('fit');
           if (parsed.header.debugMarkerOffset >= 0) {
             const missingCount = parsed.debug?.grid?.missing.length;
-            const missingText = Number.isInteger(missingCount) ? `，推断漏检 ${missingCount} 个` : '';
-            setStatus(`解析完成：找到 ${parsed.header.tailBytes.toLocaleString()} 字节附加数据和 ${parsed.debug?.detections.length || 0} 个检测框${missingText}。`, 'success');
+            const missingText = Number.isInteger(missingCount) ? tr('missingCount', { count: missingCount }) : '';
+            setStatus(tr('complete', {
+              bytes: parsed.header.tailBytes.toLocaleString(),
+              count: parsed.debug?.detections.length || 0,
+              missing: missingText
+            }), 'success');
           } else {
-            setStatus('图像已显示，但文件尾没有找到 DebugInfo 标识。', 'error');
+            setStatus(tr('markerMissing'), 'error');
           }
         } catch (error) {
           console.error(error);
-          setStatus(`解析失败：${error.message}`, 'error');
+          setStatus(tr('parseFailed', { error: error.message }), 'error');
         }
       }
 
@@ -1727,7 +1896,7 @@
         document.querySelectorAll('.result-row').forEach(item => item.classList.toggle('is-selected', Number(item.dataset.index) === state.selected));
         document.querySelectorAll('[data-missing]').forEach(item => item.classList.remove('is-selected'));
         draw();
-        if (state.selected) showToast(`已高亮检测结果 #${state.selected}`);
+        if (state.selected) showToast(tr('highlightedDetection', { index: state.selected }));
       }
 
       function selectMissing(cellButton) {
@@ -1740,7 +1909,7 @@
         draw();
         if (state.selectedMissing) {
           const cell = state.parsed?.debug?.grid?.missing.find(item => item.key === state.selectedMissing);
-          showToast(`已高亮漏检 ${state.selectedMissing}，估计中心 ${cell?.center.x}, ${cell?.center.y}`);
+          showToast(tr('highlightedMissing', { key: state.selectedMissing, x: cell?.center.x, y: cell?.center.y }));
         }
       }
 
@@ -1754,14 +1923,14 @@
         delete payload.bmp.debugMarkerOffset;
         const base = state.file.name.replace(/\.(bmp|jpe?g|raw)$/i, '');
         downloadFile(JSON.stringify(payload, null, 2), `${base}-debug.json`, 'application/json;charset=utf-8');
-        showToast('JSON 调试数据已导出');
+        showToast(tr('jsonExported'));
       });
 
       els.exportTxt.addEventListener('click', () => {
         if (!state.parsed?.rawDebugText) return;
         const base = state.file.name.replace(/\.(bmp|jpe?g|raw)$/i, '');
         downloadFile(state.parsed.rawDebugText, `${base}-debug.txt`, 'text/plain;charset=utf-8');
-        showToast('原始调试文本已导出');
+        showToast(tr('txtExported'));
       });
 
       // Small public hook for offline diagnostics and automated format checks.
@@ -1808,10 +1977,10 @@
             p+=len;
           }
         }
-        if(!width || !height) throw new Error('RAW 缺少源图尺寸，无法自动显示；请使用带 DebugInfo 的原始 RAW。');
+        if(!width || !height) throw new Error(tr('rawNoSize'));
         const pixels=width*height;
         const bpp=jpeg?24:pixelEnd/pixels*8;
-        if(!jpeg && ![8,16].includes(bpp)) throw new Error('RAW 像素长度与调试尺寸不匹配，目前支持 8 位或 16 位小端灰度 RAW。');
+        if(!jpeg && ![8,16].includes(bpp)) throw new Error(tr('rawLengthMismatch'));
         return {header:{format:jpeg?'JPG':'RAW',width,height,bitsPerPixel:bpp,
           compression:jpeg?1:0,actualFileSize:bytes.length,headerFileSize:pixelEnd,
           pixelOffset:0,pixelEnd,tailStart:pixelEnd,tailBytes:bytes.length-pixelEnd,
@@ -1828,7 +1997,7 @@
           const url=URL.createObjectURL(blob);
           try {
             const bitmap=await new Promise((resolve,reject)=>{
-              const img=new Image();img.onload=()=>resolve(img);img.onerror=()=>reject(new Error('JPG 解码失败'));img.src=url;
+              const img=new Image();img.onload=()=>resolve(img);img.onerror=()=>reject(new Error(tr('jpgDecodeFailed')));img.src=url;
             });
             return {bitmap,imageData:null};
           } finally {URL.revokeObjectURL(url);}
@@ -1842,6 +2011,7 @@
         return {bitmap:null,imageData:new ImageData(data,h.width,h.height)};
       }
 
+      applyLanguage();
       window.BmpDebugViewer = { parseBmp, parseDebugText, decodeBmpPixels, inferMissingGrid, parseImage, decodeImage };
     })();
   </script>
