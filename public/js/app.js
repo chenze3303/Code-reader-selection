@@ -282,6 +282,8 @@
       // Solutions page cards
       solSdkTitle: 'SDK 参考文档',
       solSdkDesc: 'MvCodeReader SDK C/C# 编程指南，从环境搭建到完整示例',
+      solDebugTitle: '图像算法调试查看器',
+      solDebugDesc: '查看 BMP、JPG、RAW 图像与算法调试结果，支持标注叠加、缺失网格分析和报告导出',
       solViewerTitle: 'STEP & DXF 在线查看器',
       solViewerDesc: '浏览器端 3D/2D CAD 图纸查看器，支持 STEP、IGES、BREP、DXF 格式，纯前端解析',
 
@@ -584,6 +586,8 @@
       // Solutions page cards
       solSdkTitle: 'SDK Reference Docs',
       solSdkDesc: 'MvCodeReader SDK C/C# programming guide, from environment setup to full examples',
+      solDebugTitle: 'Image Algorithm Debug Viewer',
+      solDebugDesc: 'Inspect BMP, JPG, and RAW images with algorithm results, overlay annotations, analyze missing grids, and export reports',
       solViewerTitle: 'STEP & DXF Online Viewer',
       solViewerDesc: 'Browser-based 3D/2D CAD viewer supporting STEP, IGES, BREP, DXF formats, pure front-end parsing',
 

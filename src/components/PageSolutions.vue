@@ -71,6 +71,20 @@
             </div>
           </a>
 
+          <a class="sol-card" href="debug-viewer.html" target="_blank" rel="noopener">
+            <div class="sol-card-icon-wrap sol-icon-debug">
+              <span class="sol-card-icon"><UiIcon name="aperture" /></span>
+            </div>
+            <div class="sol-card-body">
+              <div class="sol-card-title">{{ t('solDebugTitle') }}</div>
+              <div class="sol-card-desc">{{ t('solDebugDesc') }}</div>
+              <div class="sol-card-link">
+                <span class="sol-card-url">debug-viewer.html</span>
+                <span class="sol-card-arrow">→</span>
+              </div>
+            </div>
+          </a>
+
           <a class="sol-card" href="https://jiaze3303.github.io/Viewer/" target="_blank" rel="noopener">
             <div class="sol-card-icon-wrap sol-icon-viewer">
               <span class="sol-card-icon"><UiIcon name="ruler" /></span>

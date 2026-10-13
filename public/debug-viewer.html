@@ -1,0 +1,1849 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>图像算法调试查看器</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #fff7ed;
+      --surface: #ffffff;
+      --surface-soft: #fffaf5;
+      --viewer: #111827;
+      --text: #0f172a;
+      --muted: #526071;
+      --border: #eadfd5;
+      --primary: #c2410c;
+      --primary-hover: #9a3412;
+      --accent: #1d4ed8;
+      --accent-soft: #dbeafe;
+      --success: #047857;
+      --success-soft: #d1fae5;
+      --warning: #b45309;
+      --warning-soft: #fef3c7;
+      --danger: #b91c1c;
+      --danger-soft: #fee2e2;
+      --shadow: 0 10px 30px rgba(71, 42, 20, 0.08);
+      --radius: 14px;
+      --mono: "Cascadia Mono", "SFMono-Regular", Consolas, monospace;
+      --sans: "Segoe UI", "Microsoft YaHei UI", "PingFang SC", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    button, input { font: inherit; }
+
+    button, label[for="fileInput"] { touch-action: manipulation; }
+
+    button:focus-visible,
+    input:focus-visible,
+    label[for="fileInput"]:focus-visible,
+    .drop-zone:focus-visible,
+    .result-row:focus-visible {
+      outline: 3px solid rgba(29, 78, 216, 0.32);
+      outline-offset: 2px;
+    }
+
+    .app-shell {
+      width: min(1760px, 100%);
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 20px;
+    }
+
+    .brand { display: flex; align-items: center; gap: 12px; }
+
+    .brand-mark {
+      display: grid;
+      place-items: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: var(--primary);
+      color: #ffffff;
+      box-shadow: 0 8px 20px rgba(194, 65, 12, 0.22);
+    }
+
+    .brand-mark svg { width: 24px; height: 24px; }
+
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { margin-bottom: 2px; font-size: clamp(21px, 2vw, 28px); line-height: 1.25; }
+    h2 { margin-bottom: 0; font-size: 18px; }
+    h3 { margin-bottom: 12px; font-size: 15px; }
+
+    .subtitle { margin: 0; color: var(--muted); font-size: 14px; }
+
+    .privacy-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      min-height: 36px;
+      padding: 7px 12px;
+      border: 1px solid #bbf7d0;
+      border-radius: 999px;
+      background: #f0fdf4;
+      color: #166534;
+      font-size: 13px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .privacy-badge svg { width: 16px; height: 16px; }
+
+    .panel {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    .drop-zone {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      min-height: 118px;
+      padding: 22px 24px;
+      border: 2px dashed #d8c6b5;
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.72);
+      cursor: pointer;
+      transition: border-color 180ms ease, background 180ms ease, box-shadow 180ms ease;
+    }
+
+    .drop-zone:hover,
+    .drop-zone.is-dragging {
+      border-color: var(--primary);
+      background: #ffffff;
+      box-shadow: 0 8px 24px rgba(194, 65, 12, 0.10);
+    }
+
+    .drop-main { display: flex; align-items: center; gap: 16px; min-width: 0; }
+
+    .drop-icon {
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      background: #ffedd5;
+      color: var(--primary);
+    }
+
+    .drop-icon svg { width: 26px; height: 26px; }
+    .drop-title { margin-bottom: 4px; font-size: 17px; font-weight: 700; }
+    .drop-help { margin: 0; color: var(--muted); font-size: 13px; }
+
+    .primary-button,
+    .secondary-button,
+    .tool-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 44px;
+      padding: 9px 14px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 650;
+      transition: color 180ms ease, background 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+    }
+
+    .primary-button { background: var(--primary); color: #ffffff; }
+    .primary-button:hover { background: var(--primary-hover); }
+    .secondary-button { border-color: var(--border); background: var(--surface); color: var(--text); }
+    .secondary-button:hover { border-color: #c8b7a8; background: var(--surface-soft); }
+    .tool-button { min-height: 38px; padding: 7px 11px; border-color: #374151; background: #1f2937; color: #f8fafc; font-size: 13px; }
+    .tool-button:hover, .tool-button.is-active { border-color: #93c5fd; background: #334155; }
+    button:disabled { opacity: 0.46; cursor: not-allowed; }
+    button svg, .primary-button svg, .secondary-button svg { width: 17px; height: 17px; }
+
+    #fileInput { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); }
+
+    .status-line {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 24px;
+      margin: 12px 2px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .status-line[data-state="loading"]::before {
+      content: "";
+      width: 14px;
+      height: 14px;
+      flex: 0 0 auto;
+      border: 2px solid #fed7aa;
+      border-top-color: var(--primary);
+      border-radius: 50%;
+      animation: spin 700ms linear infinite;
+    }
+
+    .status-line[data-state="error"] { color: var(--danger); font-weight: 600; }
+    .status-line[data-state="success"] { color: var(--success); font-weight: 600; }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .results { display: none; margin-top: 18px; }
+    .results.is-visible { display: block; }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .metric-card {
+      min-height: 106px;
+      padding: 16px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: var(--surface);
+      box-shadow: 0 4px 16px rgba(71, 42, 20, 0.05);
+    }
+
+    .metric-label { color: var(--muted); font-size: 12px; font-weight: 650; letter-spacing: .02em; }
+    .metric-value { margin-top: 7px; font-family: var(--mono); font-size: 25px; font-weight: 700; line-height: 1.2; }
+    .metric-note { margin-top: 4px; color: var(--muted); font-size: 12px; }
+    .metric-value.good { color: var(--success); }
+    .metric-value.warn { color: var(--warning); }
+    .metric-value.bad { color: var(--danger); }
+
+    .workspace-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.75fr) minmax(340px, .85fr);
+      gap: 16px;
+      align-items: start;
+    }
+
+    .viewer-panel { overflow: hidden; background: var(--viewer); border-color: #243041; }
+
+    .viewer-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      min-height: 58px;
+      padding: 10px 12px;
+      border-bottom: 1px solid #334155;
+      color: #f8fafc;
+    }
+
+    .toolbar-group { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+
+    .toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 38px;
+      padding: 6px 9px;
+      color: #e2e8f0;
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    .toggle input { width: 18px; height: 18px; accent-color: #60a5fa; }
+
+    .threshold-wrap {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #cbd5e1;
+      font-size: 12px;
+    }
+
+    .threshold-wrap input { width: 112px; accent-color: #60a5fa; }
+    .threshold-value { min-width: 26px; font-family: var(--mono); color: #ffffff; }
+
+    .canvas-scroller {
+      display: grid;
+      place-items: center;
+      min-height: 440px;
+      max-height: 72vh;
+      overflow: auto;
+      padding: 12px;
+      background-color: #0b1120;
+      background-image:
+        linear-gradient(45deg, rgba(255,255,255,.025) 25%, transparent 25%),
+        linear-gradient(-45deg, rgba(255,255,255,.025) 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, rgba(255,255,255,.025) 75%),
+        linear-gradient(-45deg, transparent 75%, rgba(255,255,255,.025) 75%);
+      background-size: 24px 24px;
+      background-position: 0 0, 0 12px, 12px -12px, -12px 0;
+    }
+
+    canvas {
+      display: block;
+      max-width: none;
+      height: auto;
+      background: #000000;
+      box-shadow: 0 0 0 1px rgba(255,255,255,.12);
+    }
+
+    .canvas-caption {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 9px 12px;
+      border-top: 1px solid #334155;
+      color: #94a3b8;
+      font-family: var(--mono);
+      font-size: 12px;
+    }
+
+    .detail-stack { display: grid; gap: 16px; }
+    .detail-panel { padding: 16px; }
+
+    .panel-heading {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .panel-heading p { margin: 2px 0 0; color: var(--muted); font-size: 12px; }
+
+    .kv-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+
+    .kv-item {
+      min-width: 0;
+      padding: 10px;
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      background: var(--surface-soft);
+    }
+
+    .kv-label { color: var(--muted); font-size: 11px; }
+    .kv-value { margin-top: 3px; overflow-wrap: anywhere; font-family: var(--mono); font-size: 13px; font-weight: 650; }
+
+    .confidence-legend {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .legend-item { display: inline-flex; align-items: center; gap: 5px; }
+    .legend-dot { width: 9px; height: 9px; border-radius: 50%; }
+    .legend-dot.high { background: #10b981; }
+    .legend-dot.medium { background: #f59e0b; }
+    .legend-dot.low { background: #ef4444; }
+
+    .missing-summary {
+      margin: 0 0 12px;
+      padding: 10px 12px;
+      border: 1px solid #fecaca;
+      border-radius: 9px;
+      background: #fff1f2;
+      color: #9f1239;
+      font-size: 13px;
+    }
+
+    .missing-summary.is-info {
+      border-color: #bfdbfe;
+      background: #eff6ff;
+      color: #1e40af;
+    }
+
+    .grid-map-wrap { overflow-x: auto; padding-bottom: 4px; }
+
+    .grid-map {
+      display: grid;
+      grid-template-columns: repeat(var(--grid-cols, 6), minmax(56px, 1fr));
+      gap: 7px;
+      min-width: calc(var(--grid-cols, 6) * 60px);
+    }
+
+    .grid-cell {
+      display: grid;
+      place-items: center;
+      min-height: 50px;
+      padding: 5px;
+      border: 1px solid #bbf7d0;
+      border-radius: 8px;
+      background: #f0fdf4;
+      color: #166534;
+      font-family: var(--mono);
+      font-size: 11px;
+      line-height: 1.25;
+      text-align: center;
+    }
+
+    button.grid-cell {
+      border-color: #fda4af;
+      background: #fff1f2;
+      color: #9f1239;
+      cursor: pointer;
+      font-weight: 700;
+      transition: background 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+    }
+
+    button.grid-cell:hover,
+    button.grid-cell.is-selected {
+      border-color: #2563eb;
+      background: #dbeafe;
+      color: #1e40af;
+      box-shadow: 0 0 0 2px rgba(37, 99, 235, .18);
+    }
+
+    .grid-cell-state { display: block; font-family: var(--sans); font-size: 12px; }
+
+    .results-table-wrap {
+      max-height: 396px;
+      margin-top: 12px;
+      overflow: auto;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+    }
+
+    table { width: 100%; border-collapse: collapse; font-size: 12px; }
+    th, td { padding: 9px 10px; border-bottom: 1px solid var(--border); text-align: left; white-space: nowrap; }
+    th { position: sticky; top: 0; z-index: 1; background: #f8fafc; color: #475569; font-weight: 700; }
+    tbody tr:last-child td { border-bottom: 0; }
+
+    .result-row { cursor: pointer; transition: background 160ms ease; }
+    .result-row:hover, .result-row.is-selected { background: #eff6ff; }
+    .barcode-content { max-width: 460px; overflow-wrap: anywhere; font-family: var(--mono); font-size: 12px; }
+
+    .conf-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 38px;
+      padding: 2px 7px;
+      border-radius: 999px;
+      font-family: var(--mono);
+      font-weight: 700;
+    }
+
+    .conf-pill.high { background: var(--success-soft); color: var(--success); }
+    .conf-pill.medium { background: var(--warning-soft); color: #92400e; }
+    .conf-pill.low { background: var(--danger-soft); color: var(--danger); }
+
+    details { border-top: 1px solid var(--border); }
+    details:first-of-type { border-top: 0; }
+    summary { min-height: 46px; padding: 12px 0; cursor: pointer; font-weight: 650; }
+    summary:hover { color: var(--primary); }
+
+    pre {
+      max-height: 320px;
+      margin: 0 0 12px;
+      padding: 12px;
+      overflow: auto;
+      border-radius: 9px;
+      background: #0f172a;
+      color: #dbeafe;
+      font-family: var(--mono);
+      font-size: 11px;
+      line-height: 1.55;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+
+    .empty-inline { padding: 12px; color: var(--muted); text-align: center; }
+
+    .toast {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 100;
+      max-width: min(380px, calc(100vw - 40px));
+      padding: 12px 16px;
+      border-radius: 10px;
+      background: #0f172a;
+      color: #ffffff;
+      box-shadow: 0 12px 30px rgba(15, 23, 42, .28);
+      opacity: 0;
+      transform: translateY(12px);
+      pointer-events: none;
+      transition: opacity 180ms ease, transform 180ms ease;
+    }
+
+    .toast.is-visible { opacity: 1; transform: translateY(0); }
+
+    @media (max-width: 1180px) {
+      .summary-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .workspace-grid { grid-template-columns: 1fr; }
+      .detail-stack { grid-template-columns: 1fr 1fr; }
+      .detail-stack .wide { grid-column: 1 / -1; }
+    }
+
+    @media (max-width: 760px) {
+      .app-shell { padding: 16px; }
+      .topbar { align-items: flex-start; }
+      .privacy-badge { display: none; }
+      .drop-zone { align-items: stretch; flex-direction: column; }
+      .primary-button { width: 100%; }
+      .summary-grid { grid-template-columns: 1fr 1fr; }
+      .workspace-grid, .detail-stack { grid-template-columns: 1fr; }
+      .detail-stack .wide { grid-column: auto; }
+      .viewer-toolbar { align-items: flex-start; flex-direction: column; }
+      .canvas-scroller { min-height: 300px; max-height: 60vh; }
+      .kv-grid { grid-template-columns: 1fr; }
+      .canvas-caption { flex-direction: column; }
+    }
+
+    @media (max-width: 420px) {
+      .summary-grid { grid-template-columns: 1fr; }
+      .drop-main { align-items: flex-start; }
+      .drop-icon { width: 44px; height: 44px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
+    }
+
+    /* Focused workstation layout: image first, diagnostics in a calmer two-column shelf. */
+    .app-shell { width: min(1540px, 100%); padding: 28px 32px 40px; }
+    .topbar { margin-bottom: 24px; }
+    .drop-zone { min-height: 96px; padding: 18px 20px; }
+    .summary-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; margin-bottom: 20px; }
+    .metric-card { min-height: 96px; padding: 14px 16px; }
+    .workspace-grid { display: block; }
+    .viewer-panel { margin-bottom: 18px; }
+    .canvas-scroller { min-height: 420px; max-height: 66vh; }
+    .detail-stack { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    .detail-stack .wide { grid-column: 1 / -1; }
+    .detail-panel { padding: 18px; }
+    .detail-stack > .detail-panel:first-child { grid-column: 1 / -1; min-height: 0; }
+    .results-table-wrap { max-height: 340px; }
+    .raw-panel { grid-column: 1 / -1; }
+
+    @media (max-width: 900px) {
+      .app-shell { padding: 22px 20px 32px; }
+      .summary-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .detail-stack { grid-template-columns: 1fr; }
+      .detail-stack .wide { grid-column: auto; }
+    }
+
+    /* The default view shows the complete image without an inner scroll area. */
+    .canvas-scroller {
+      min-height: 0;
+      height: clamp(360px, 68vh, 820px);
+      max-height: none;
+      overflow: hidden;
+      padding: 16px;
+    }
+    .canvas-scroller.is-zoomed { overflow: auto; }
+    .canvas-scroller.is-zoomed { cursor: grab; }
+    .canvas-scroller.is-zoomed { touch-action: none; }
+    .canvas-scroller.is-panning { cursor: grabbing; }
+    .canvas-scroller canvas {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      flex: 0 0 auto;
+    }
+    .compact-kv { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+    .compact-kv .kv-item { padding: 9px 10px; }
+    .compact-kv .kv-value { font-size: 12px; }
+    .detail-stack { align-items: start; }
+    @media (max-width: 900px) {
+      .canvas-scroller { height: clamp(300px, 58vh, 620px); }
+      .compact-kv { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (min-width: 901px) and (max-width: 1180px) {
+      .summary-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .compact-kv { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+    @media (max-width: 520px) {
+      .canvas-scroller { height: clamp(250px, 52vh, 460px); padding: 10px; }
+      .compact-kv { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+  <style id="toolkit-theme">
+    :root {
+      color-scheme: light;
+      --bg: #eef1f6;
+      --surface: #ffffff;
+      --surface-soft: #f5f7fa;
+      --viewer: #0a1628;
+      --text: #1a2332;
+      --muted: #64748b;
+      --border: #dde5ef;
+      --primary: #f76504;
+      --primary-hover: #d95800;
+      --accent: #1a2b4a;
+      --accent-soft: #e8eef7;
+      --shadow: 0 8px 28px rgba(10, 22, 40, 0.08);
+      --radius: 12px;
+      --mono: 'Microsoft YaHei', '微软雅黑', 'PingFang SC', 'Hiragino Sans GB', Arial, sans-serif;
+      --sans: 'Microsoft YaHei', '微软雅黑', 'PingFang SC', 'Hiragino Sans GB', Arial, sans-serif;
+    }
+
+    body { background: var(--bg); color: var(--text); font-family: var(--sans); }
+    button, input { font-family: inherit; }
+    button:focus-visible,
+    input:focus-visible,
+    label[for="fileInput"]:focus-visible,
+    .drop-zone:focus-visible,
+    .result-row:focus-visible {
+      outline-color: rgba(247, 101, 4, 0.35);
+    }
+
+    .app-shell {
+      width: min(1500px, calc(100% - 48px));
+      min-height: calc(100vh - 48px);
+      margin: 24px auto;
+      padding: 0 0 24px;
+      overflow: hidden;
+      border: 1px solid rgba(221, 229, 239, 0.9);
+      border-radius: 16px;
+      background: var(--surface);
+      box-shadow: 0 4px 8px rgba(10, 22, 40, 0.04), 0 18px 48px rgba(10, 22, 40, 0.1);
+    }
+
+    .topbar {
+      min-height: 60px;
+      margin: 0 0 24px;
+      padding: 8px 26px;
+      border-bottom: 3px solid var(--primary);
+      background: #0a1628;
+      color: #ffffff;
+    }
+
+    .brand { gap: 11px; }
+    .brand-mark {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      background: #1a2b4a;
+      color: #f76504;
+      box-shadow: none;
+    }
+    .brand-mark svg { width: 21px; height: 21px; }
+    .topbar h1 { color: #ffffff; font-size: 18px; }
+    .subtitle { color: rgba(255, 255, 255, 0.62); font-size: 12px; }
+    .privacy-badge {
+      min-height: 32px;
+      border-color: rgba(255, 255, 255, 0.14);
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.07);
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 12px;
+    }
+
+    #dropZone, #statusLine, #results { margin-right: 24px; margin-left: 24px; }
+    .drop-zone {
+      min-height: 100px;
+      padding: 18px 20px;
+      border-color: #f2b68e;
+      border-radius: 10px;
+      background: #fffaf6;
+    }
+    .drop-zone:hover, .drop-zone.is-dragging {
+      border-color: var(--primary);
+      background: #fff7f0;
+      box-shadow: 0 6px 20px rgba(247, 101, 4, 0.1);
+    }
+    .drop-icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 10px;
+      background: #fff0e5;
+      color: var(--primary);
+    }
+    .drop-title { color: var(--text); }
+    .drop-help { color: var(--muted); }
+
+    .primary-button {
+      border-color: var(--primary);
+      border-radius: 6px;
+      background: var(--primary);
+      box-shadow: 0 3px 10px rgba(247, 101, 4, 0.2);
+    }
+    .primary-button:hover { background: var(--primary-hover); }
+    .secondary-button {
+      border-color: var(--border);
+      border-radius: 6px;
+      background: var(--surface-soft);
+      color: var(--text);
+    }
+    .secondary-button:hover { border-color: #f2b68e; background: #fff7f0; }
+    .tool-button {
+      border-color: #35445e;
+      border-radius: 6px;
+      background: #1a2b4a;
+      color: #e7edf6;
+    }
+    .tool-button:hover { border-color: #607392; background: #243556; }
+    .tool-button.is-active {
+      border-color: var(--primary);
+      background: var(--primary);
+      color: #ffffff;
+    }
+
+    .status-line { color: var(--muted); }
+    .status-line[data-state="loading"]::before { border-color: #fcd9be; border-top-color: var(--primary); }
+    .summary-grid { gap: 12px; }
+    .metric-card {
+      border-color: var(--border);
+      border-radius: 10px;
+      background: var(--surface);
+      box-shadow: 0 3px 12px rgba(10, 22, 40, 0.04);
+    }
+    .metric-label, .metric-note { color: var(--muted); }
+    .metric-value { color: var(--text); }
+
+    .panel {
+      border-color: var(--border);
+      border-radius: 10px;
+      box-shadow: 0 3px 14px rgba(10, 22, 40, 0.045);
+    }
+    .viewer-panel { border-color: #1a2b4a; background: #0a1628; }
+    .viewer-toolbar, .canvas-caption { border-color: rgba(255, 255, 255, 0.1); }
+    .canvas-scroller { background-color: #0a1628; }
+    .toggle input, .threshold-wrap input { accent-color: var(--primary); }
+    .canvas-caption { color: #a8b4c6; }
+    .detail-panel { padding: 16px; }
+    .panel-heading h2 { color: var(--text); }
+    .panel-heading p { color: var(--muted); }
+    .kv-item {
+      border-color: var(--border);
+      border-radius: 7px;
+      background: var(--surface-soft);
+    }
+    .kv-label { color: var(--muted); }
+    .kv-value { color: var(--text); }
+    .missing-summary {
+      border-color: #f2b68e;
+      border-radius: 7px;
+      background: #fff7f0;
+      color: #9a3e08;
+    }
+    .missing-summary.is-info {
+      border-color: #c9d5e6;
+      background: #f1f5fa;
+      color: #29466e;
+    }
+    .grid-cell {
+      border-color: #b7e0d0;
+      border-radius: 7px;
+      background: #edf8f3;
+      color: #176b50;
+    }
+    button.grid-cell {
+      border-color: #f2b68e;
+      background: #fff5ec;
+      color: #a2430a;
+    }
+    button.grid-cell:hover, button.grid-cell.is-selected {
+      border-color: var(--primary);
+      background: #ffeadb;
+      color: #a84308;
+      box-shadow: 0 0 0 2px rgba(247, 101, 4, 0.14);
+    }
+    .results-table-wrap { border-color: var(--border); border-radius: 8px; }
+    th { background: #1a2b4a; color: #ffffff; }
+    th, td { border-bottom-color: var(--border); }
+    tbody tr:nth-child(even) { background: #f7f9fc; }
+    .result-row:hover, .result-row.is-selected { background: #fff2e8; }
+    .barcode-content { color: #1a2b4a; }
+    .conf-pill.high { background: #e3f4ed; color: #176b50; }
+    .conf-pill.medium { background: #fff2d5; color: #925d06; }
+    .conf-pill.low { background: #ffebe8; color: #a63c31; }
+    details { border-color: var(--border); }
+    summary { color: var(--text); }
+    summary:hover { color: var(--primary); }
+    pre { background: #0a1628; }
+    .empty-inline { color: var(--muted); }
+    .toast { background: #0a1628; }
+
+    @media (max-width: 900px) {
+      .app-shell { width: calc(100% - 28px); min-height: calc(100vh - 28px); margin: 14px auto; padding: 0 0 18px; }
+      .topbar { margin-bottom: 18px; padding: 8px 18px; }
+      #dropZone, #statusLine, #results { margin-right: 16px; margin-left: 16px; }
+    }
+    @media (max-width: 600px) {
+      .app-shell { width: 100%; min-height: 100vh; margin: 0; padding-bottom: 16px; border: 0; border-radius: 0; }
+      .topbar { min-height: 58px; margin-bottom: 16px; padding: 8px 14px; }
+      .brand { gap: 9px; }
+      .brand-mark { width: 32px; height: 32px; }
+      .topbar h1 { font-size: 16px; }
+      .subtitle { max-width: 65vw; font-size: 11px; }
+      #dropZone, #statusLine, #results { margin-right: 12px; margin-left: 12px; }
+      .drop-zone { padding: 14px; }
+      .summary-grid { gap: 8px; }
+      .metric-card { min-height: 84px; padding: 11px; }
+      .metric-value { font-size: 21px; }
+      .viewer-toolbar { padding: 10px; }
+      .toolbar-group { gap: 5px; }
+      .toggle { min-height: 32px; padding: 4px 5px; font-size: 12px; }
+      .threshold-wrap { flex-wrap: wrap; }
+      .detail-panel { padding: 13px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <rect x="3" y="3" width="18" height="18" rx="3"></rect>
+            <path d="M7 8h2M7 12h5M7 16h3M15 8h2M15 12h2M14 16h3"></path>
+          </svg>
+        </div>
+        <div>
+          <h1>图像算法调试查看器</h1>
+          <p class="subtitle">解析 BMP / JPG / RAW 尾部 DebugInfo，并将检测结果叠加到原图</p>
+        </div>
+      </div>
+      <div class="privacy-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"></path>
+          <path d="m9 12 2 2 4-4"></path>
+        </svg>
+        仅在本机浏览器处理
+      </div>
+    </header>
+
+    <section id="dropZone" class="drop-zone" tabindex="0" role="button" aria-label="选择或拖入 BMP 文件">
+      <div class="drop-main">
+        <div class="drop-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"></path>
+            <path d="M14 2v6h6M8 14h8M8 18h5"></path>
+          </svg>
+        </div>
+        <div>
+          <div class="drop-title">拖入 BMP、JPG 或 RAW 图片</div>
+          <p class="drop-help">支持 BMP、JPG 和带尺寸信息的灰度 RAW；不会上传图片或调试数据</p>
+        </div>
+      </div>
+      <label for="fileInput" class="primary-button" tabindex="0">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <path d="m17 8-5-5-5 5M12 3v12"></path>
+        </svg>
+        选择图片
+      </label>
+      <input id="fileInput" type="file" accept=".bmp,.jpg,.jpeg,.raw,image/bmp,image/jpeg">
+    </section>
+
+    <div id="statusLine" class="status-line" role="status" aria-live="polite">请选择 BMP、JPG 或 RAW 图片开始解析。</div>
+
+    <section id="results" class="results" aria-label="解析结果">
+      <div class="summary-grid">
+        <article class="metric-card">
+          <div class="metric-label">配置目标数</div>
+          <div id="expectedMetric" class="metric-value">—</div>
+          <div class="metric-note">BCR quit_bar_num</div>
+        </article>
+        <article class="metric-card">
+          <div class="metric-label">检测结果数</div>
+          <div id="detectedMetric" class="metric-value">—</div>
+          <div class="metric-note">DET out_roi_num</div>
+        </article>
+        <article class="metric-card">
+          <div class="metric-label">数量差异</div>
+          <div id="missingMetric" class="metric-value">—</div>
+          <div class="metric-note">配置数 − 检测数</div>
+        </article>
+        <article class="metric-card">
+          <div class="metric-label">处理耗时</div>
+          <div id="timeMetric" class="metric-value">—</div>
+          <div class="metric-note">原始 time_cost，单位未声明</div>
+        </article>
+        <article class="metric-card">
+          <div class="metric-label">附加数据</div>
+          <div id="tailMetric" class="metric-value">—</div>
+          <div class="metric-note">BMP 像素数据之后</div>
+        </article>
+      </div>
+
+      <div class="workspace-grid">
+        <section class="panel viewer-panel" aria-label="图像与检测框">
+          <div class="viewer-toolbar">
+            <div class="toolbar-group">
+              <button class="tool-button is-active" type="button" data-zoom="fit">适应窗口</button>
+              <button class="tool-button" type="button" data-zoom="0.5">50%</button>
+              <button class="tool-button" type="button" data-zoom="1">100%</button>
+            </div>
+            <div class="toolbar-group">
+              <label class="toggle">
+                <input id="overlayToggle" type="checkbox" checked>
+                显示读码状态
+              </label>
+              <label class="toggle">
+                <input id="missingToggle" type="checkbox" checked>
+                显示漏检位置
+              </label>
+              <label class="threshold-wrap" for="thresholdRange">
+                最低置信度
+                <input id="thresholdRange" type="range" min="0" max="100" value="0">
+                <span id="thresholdValue" class="threshold-value">0</span>
+              </label>
+            </div>
+          </div>
+          <div id="canvasScroller" class="canvas-scroller">
+            <canvas id="imageCanvas" width="1" height="1" aria-label="BMP 图像及检测框叠加结果"></canvas>
+          </div>
+          <div class="canvas-caption">
+            <span id="imageCaption">等待图片</span>
+            <span>绿色＝已读到　红色虚线＝检测到但未读到　蓝色叉号＝推断漏检　放大后按住拖动</span>
+          </div>
+        </section>
+
+        <aside class="detail-stack" aria-label="调试信息">
+          <section class="panel detail-panel">
+            <div class="panel-heading">
+              <div>
+                <h2>运行概览</h2>
+                <p>文件头、配置与处理状态</p>
+              </div>
+            </div>
+            <div id="overviewGrid" class="kv-grid compact-kv"></div>
+          </section>
+
+          <section class="panel detail-panel wide">
+            <div class="panel-heading">
+              <div>
+                <h2>漏检定位</h2>
+                <p>按从上到下的行、从左到右的列编号，自动推断规则网格</p>
+              </div>
+            </div>
+            <p id="missingSummary" class="missing-summary">等待网格分析…</p>
+            <div class="grid-map-wrap">
+              <div id="gridMap" class="grid-map" aria-label="检测网格示意图"></div>
+            </div>
+          </section>
+
+          <section class="panel detail-panel wide">
+            <div class="panel-heading">
+              <div>
+                <h2>检测结果</h2>
+                <p>点击行可在图中高亮对应区域</p>
+              </div>
+            </div>
+            <div class="confidence-legend" aria-label="置信度图例">
+              <span class="legend-item"><span class="legend-dot high"></span>已读到</span>
+              <span class="legend-item"><span class="legend-dot low"></span>检测到但未读到</span>
+              <span class="legend-item">灰色＝无识码结果记录</span>
+            </div>
+            <div class="results-table-wrap">
+              <table>
+                <thead>
+                  <tr><th>序号</th><th>读码状态</th><th>条码内容</th><th>置信度</th><th>中心坐标</th></tr>
+                </thead>
+                <tbody id="resultRows"></tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="panel detail-panel wide">
+            <div class="panel-heading">
+              <div>
+                <h2>原始数据</h2>
+                <p>用于进一步排查或保存记录</p>
+              </div>
+              <div class="toolbar-group">
+                <button id="exportJson" class="secondary-button" type="button" disabled>导出 JSON</button>
+                <button id="exportTxt" class="secondary-button" type="button" disabled>导出 TXT</button>
+              </div>
+            </div>
+            <details>
+              <summary>调试文本</summary>
+              <pre id="rawDebug">等待解析…</pre>
+            </details>
+            <details>
+              <summary>定位过程统计</summary>
+              <div id="stageStats" class="kv-grid"></div>
+            </details>
+          </section>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    (() => {
+      'use strict';
+
+      const els = {
+        dropZone: document.getElementById('dropZone'),
+        fileInput: document.getElementById('fileInput'),
+        statusLine: document.getElementById('statusLine'),
+        results: document.getElementById('results'),
+        canvas: document.getElementById('imageCanvas'),
+        scroller: document.getElementById('canvasScroller'),
+        overlayToggle: document.getElementById('overlayToggle'),
+        missingToggle: document.getElementById('missingToggle'),
+        thresholdRange: document.getElementById('thresholdRange'),
+        thresholdValue: document.getElementById('thresholdValue'),
+        expected: document.getElementById('expectedMetric'),
+        detected: document.getElementById('detectedMetric'),
+        missing: document.getElementById('missingMetric'),
+        time: document.getElementById('timeMetric'),
+        tail: document.getElementById('tailMetric'),
+        caption: document.getElementById('imageCaption'),
+        overview: document.getElementById('overviewGrid'),
+        missingSummary: document.getElementById('missingSummary'),
+        gridMap: document.getElementById('gridMap'),
+        rows: document.getElementById('resultRows'),
+        raw: document.getElementById('rawDebug'),
+        stages: document.getElementById('stageStats'),
+        exportJson: document.getElementById('exportJson'),
+        exportTxt: document.getElementById('exportTxt'),
+        toast: document.getElementById('toast')
+      };
+
+      const state = {
+        file: null,
+        parsed: null,
+        bitmap: null,
+        imageData: null,
+        zoom: 'fit',
+        selected: null,
+        selectedMissing: null,
+        toastTimer: null,
+        pan: { active: false, startX: 0, startY: 0, scrollLeft: 0, scrollTop: 0 }
+      };
+
+      function setStatus(message, type = 'normal') {
+        els.statusLine.textContent = message;
+        els.statusLine.dataset.state = type;
+      }
+
+      function showToast(message) {
+        els.toast.textContent = message;
+        els.toast.classList.add('is-visible');
+        clearTimeout(state.toastTimer);
+        state.toastTimer = setTimeout(() => els.toast.classList.remove('is-visible'), 3200);
+      }
+
+      function readU16(view, offset) { return view.getUint16(offset, true); }
+      function readU32(view, offset) { return view.getUint32(offset, true); }
+      function readI32(view, offset) { return view.getInt32(offset, true); }
+
+      function extractNumber(text, pattern) {
+        const match = text.match(pattern);
+        return match ? Number(match[1]) : null;
+      }
+
+      function normalizeDebugText(text) {
+        return text
+          .replace(/\0/g, '')
+          .replace(/(?=\[(?:CFG|CFG_BCR|CFG_TDCR|CFG_SDR|IFO SIZE|IFO_IMG|DET|LOC1|LOC2|LOC3|REC)\])/g, '\n')
+          .replace(/(?=(?:img_id|idr_status|idr_proc_flag|verify_proc_flag|waybill_proc_flag|ocr_det_proc_flag|ocr_proc_flag|use_ds_det_model_flag|consume_time_type|time_cost)\s*:)/g, '\n')
+          .trim();
+      }
+
+      function parseDebugText(text) {
+        const configSection = text.match(/\[CFG\][\s\S]*?(?=\[CFG_BCR\])/i)?.[0] || '';
+        const bcrSection = text.match(/\[CFG_BCR\][\s\S]*?(?=\[CFG_TDCR\])/i)?.[0] || '';
+        const tdcrSection = text.match(/\[CFG_TDCR\][\s\S]*?(?=\[CFG_SDR\])/i)?.[0] || '';
+        const sizeSection = text.match(/\[IFO SIZE\][\s\S]*?(?=\[IFO_IMG\])/i)?.[0] || '';
+
+        const detections = [];
+        const detRegex = /\[DET\]\s+(-?\d+)\s+(-?\d+)\s+(-?\d+)\s+(-?\d+)\s+(-?\d+)\s+(-?\d+)\s+(-?\d+)\s+(-?\d+)\s+(-?\d+)\s+(-?\d+)/g;
+        let detMatch;
+        while ((detMatch = detRegex.exec(text)) !== null) {
+          const values = detMatch.slice(1).map(Number);
+          const points = [
+            { x: values[0], y: values[1] },
+            { x: values[2], y: values[3] },
+            { x: values[4], y: values[5] },
+            { x: values[6], y: values[7] }
+          ];
+          detections.push({
+            index: detections.length + 1,
+            points,
+            type: values[8],
+            confidence: values[9],
+            center: {
+              x: Math.round(points.reduce((sum, p) => sum + p.x, 0) / 4),
+              y: Math.round(points.reduce((sum, p) => sum + p.y, 0) / 4)
+            }
+          });
+        }
+
+        const stages = {};
+        ['LOC1', 'LOC2', 'LOC3'].forEach(stage => {
+          stages[stage] = (text.match(new RegExp('\\[' + stage + '\\]\\s+(?!out_roi_num)', 'g')) || []).length;
+        });
+
+        const parsed = {
+          config: {
+            waitingTime: extractNumber(configSection, /waiting_time\s*=\s*(-?\d+)/i),
+            debugFlag: extractNumber(configSection, /debug_flag\s*=\s*(-?\d+)/i),
+            readMode: extractNumber(configSection, /read_mode\s*=\s*(-?\d+)/i),
+            roiCount: extractNumber(configSection, /roi_region_num\s*=\s*(-?\d+)/i),
+            roi: {
+              centerX: extractNumber(configSection, /roi_region\.center_x\s*=\s*(-?\d+)/i),
+              centerY: extractNumber(configSection, /roi_region\.center_y\s*=\s*(-?\d+)/i),
+              width: extractNumber(configSection, /roi_region\.width\s*=\s*(-?\d+)/i),
+              height: extractNumber(configSection, /roi_region\.height\s*=\s*(-?\d+)/i),
+              angle: extractNumber(configSection, /roi_region\.angle\s*=\s*(-?\d+)/i)
+            },
+            bcrTarget: extractNumber(bcrSection, /quit_bar_num\s*=\s*(-?\d+)/i),
+            bcrThreshold: extractNumber(bcrSection, /conf_thresh\s*=\s*(-?\d+)/i),
+            tdcrTarget: extractNumber(tdcrSection, /quit_bar_num\s*=\s*(-?\d+)/i),
+            tdcrThreshold: extractNumber(tdcrSection, /conf_thresh\s*=\s*(-?\d+)/i),
+            sourceWidth: extractNumber(sizeSection, /src_img\.width\s*=\s*(-?\d+)/i),
+            sourceHeight: extractNumber(sizeSection, /src_img\.height\s*=\s*(-?\d+)/i),
+            displayWidth: extractNumber(sizeSection, /dsp_img\.width\s*=\s*(-?\d+)/i),
+            displayHeight: extractNumber(sizeSection, /dsp_img\.height\s*=\s*(-?\d+)/i)
+          },
+          declaredDetectionCount: extractNumber(text, /\[DET\]\s*out_roi_num\s*=\s*(\d+)/i),
+          detections,
+          stages,
+          status: {
+            imageId: extractNumber(text, /img_id\s*:\s*(-?\d+)/i),
+            idrStatus: extractNumber(text, /idr_status\s*:\s*(-?\d+)/i),
+            idrProcFlag: extractNumber(text, /idr_proc_flag\s*:\s*(-?\d+)/i),
+            verifyProcFlag: extractNumber(text, /verify_proc_flag\s*:\s*(-?\d+)/i),
+            waybillProcFlag: extractNumber(text, /waybill_proc_flag\s*:\s*(-?\d+)/i),
+            ocrDetProcFlag: extractNumber(text, /ocr_det_proc_flag\s*:\s*(-?\d+)/i),
+            ocrProcFlag: extractNumber(text, /ocr_proc_flag\s*:\s*(-?\d+)/i),
+            dsModelFlag: extractNumber(text, /use_ds_det_model_flag\s*:\s*(-?\d+)/i),
+            consumeTimeType: extractNumber(text, /consume_time_type\s*:\s*(-?\d+)/i),
+            timeCost: extractNumber(text, /time_cost\s*:\s*(-?\d+)/i)
+          }
+        };
+        parsed.codes = [...text.matchAll(/\[REC\]\s*code_str\s+([^\[\r\n\x00]+)/g)].map(m => m[1].trim());
+        parsed.hasReadResults = /\[REC\]\s*out_bar_num\s*=/.test(text);
+        parsed.reads = [...text.matchAll(/\[REC\]\s*code_str\s+([^\[\r\n\x00]+)\s*\[REC\]\s+(-?\d+)\s+(-?\d+)\s+(-?\d+)\s+(-?\d+)\s+(-?\d+)\s+(-?\d+)\s+(-?\d+)\s+(-?\d+)\s+(-?\d+)/g)].map(m => ({
+          code: m[1].trim(),
+          points: Array.from({length:4}, (_,i)=>({x:Number(m[2+i*2]),y:Number(m[3+i*2])}))
+        }));
+        // Match by image position: REC corner order can differ from DET corner order.
+        const bounds = points => ({left:Math.min(...points.map(p=>p.x)),right:Math.max(...points.map(p=>p.x)),top:Math.min(...points.map(p=>p.y)),bottom:Math.max(...points.map(p=>p.y))});
+        for (const det of detections) {
+          const a = bounds(det.points);
+          const match = parsed.reads.map(read => {
+            const b = bounds(read.points);
+            const area = Math.max(0,Math.min(a.right,b.right)-Math.max(a.left,b.left))*Math.max(0,Math.min(a.bottom,b.bottom)-Math.max(a.top,b.top));
+            const smaller = Math.min((a.right-a.left)*(a.bottom-a.top),(b.right-b.left)*(b.bottom-b.top));
+            return {read,score:smaller>0?area/smaller:0};
+          }).sort((a,b)=>b.score-a.score)[0];
+          det.read = match?.score >= .5 ? match.read : null;
+          det.readStatus = det.read ? '已读到' : parsed.hasReadResults ? '未读到' : '无识码记录';
+        }
+        parsed.grid = inferMissingGrid(parsed);
+        return parsed;
+      }
+
+      function median(values) {
+        if (!values.length) return 0;
+        const sorted = [...values].sort((a, b) => a - b);
+        const middle = Math.floor(sorted.length / 2);
+        return sorted.length % 2 ? sorted[middle] : (sorted[middle - 1] + sorted[middle]) / 2;
+      }
+
+      function chooseGridShape(target) {
+        if (!Number.isInteger(target) || target < 2) return null;
+        let best = null;
+        for (let rows = 1; rows <= Math.sqrt(target); rows++) {
+          if (target % rows !== 0) continue;
+          const cols = target / rows;
+          const score = Math.abs(cols - rows);
+          if (!best || score < best.score) best = { rows, cols, score };
+        }
+        return best ? { rows: best.rows, cols: best.cols } : null;
+      }
+
+      function cluster1d(values, count) {
+        if (!values.length || count < 1 || count > values.length) return null;
+        const min = Math.min(...values);
+        const max = Math.max(...values);
+        let centers = Array.from({ length: count }, (_, i) => count === 1 ? (min + max) / 2 : min + (max - min) * i / (count - 1));
+        for (let iteration = 0; iteration < 60; iteration++) {
+          const groups = Array.from({ length: count }, () => []);
+          values.forEach(value => {
+            let bestIndex = 0;
+            let bestDistance = Infinity;
+            centers.forEach((center, index) => {
+              const distance = Math.abs(value - center);
+              if (distance < bestDistance) { bestDistance = distance; bestIndex = index; }
+            });
+            groups[bestIndex].push(value);
+          });
+          const next = centers.map((center, index) => groups[index].length
+            ? groups[index].reduce((sum, value) => sum + value, 0) / groups[index].length
+            : center).sort((a, b) => a - b);
+          const change = next.reduce((sum, center, index) => sum + Math.abs(center - centers[index]), 0);
+          centers = next;
+          if (change < 0.01) break;
+        }
+        return centers;
+      }
+
+      function inferMissingGrid(debug) {
+        const target = debug?.config?.bcrTarget;
+        const detections = debug?.detections || [];
+        const shape = chooseGridShape(target);
+        if (!shape || target < 9 || detections.length < Math.max(shape.rows, shape.cols)) return null;
+
+        let { rows, cols } = shape;
+        const sourceWidth = debug.config.sourceWidth || debug.config.roi.width || 1;
+        const sourceHeight = debug.config.sourceHeight || debug.config.roi.height || 1;
+        if (sourceWidth < sourceHeight && cols > rows) [rows, cols] = [cols, rows];
+
+        const colCenters = cluster1d(detections.map(det => det.center.x), cols);
+        const rowCenters = cluster1d(detections.map(det => det.center.y), rows);
+        if (!colCenters || !rowCenters) return null;
+
+        const xSpacing = median(colCenters.slice(1).map((value, index) => value - colCenters[index])) || sourceWidth / cols;
+        const ySpacing = median(rowCenters.slice(1).map((value, index) => value - rowCenters[index])) || sourceHeight / rows;
+        const boxWidth = median(detections.map(det => Math.max(...det.points.map(p => p.x)) - Math.min(...det.points.map(p => p.x)))) || xSpacing * .15;
+        const boxHeight = median(detections.map(det => Math.max(...det.points.map(p => p.y)) - Math.min(...det.points.map(p => p.y)))) || ySpacing * .15;
+        const cells = [];
+        const missing = [];
+
+        for (let row = 0; row < rows; row++) {
+          for (let col = 0; col < cols; col++) {
+            const x = colCenters[col];
+            const y = rowCenters[row];
+            let match = null;
+            let bestDistance = Infinity;
+            detections.forEach(det => {
+              const dx = Math.abs(det.center.x - x) / Math.max(xSpacing, 1);
+              const dy = Math.abs(det.center.y - y) / Math.max(ySpacing, 1);
+              const distance = Math.hypot(dx, dy);
+              if (dx < .38 && dy < .38 && distance < bestDistance) {
+                match = det;
+                bestDistance = distance;
+              }
+            });
+            const cell = {
+              row: row + 1,
+              col: col + 1,
+              key: `R${row + 1}C${col + 1}`,
+              center: { x: Math.round(x), y: Math.round(y) },
+              detectionIndex: match?.index || null,
+              confidence: match?.confidence ?? null,
+              estimate: !match
+            };
+            cells.push(cell);
+            if (!match) {
+              const halfW = Math.max(28, boxWidth * .62);
+              const halfH = Math.max(28, boxHeight * .62);
+              cell.points = [
+                { x: x - halfW, y: y - halfH },
+                { x: x + halfW, y: y - halfH },
+                { x: x + halfW, y: y + halfH },
+                { x: x - halfW, y: y + halfH }
+              ];
+              missing.push(cell);
+            }
+          }
+        }
+
+        return {
+          rows,
+          cols,
+          method: `${rows}×${cols} 规则网格推断`,
+          colCenters: colCenters.map(Math.round),
+          rowCenters: rowCenters.map(Math.round),
+          xSpacing: Math.round(xSpacing),
+          ySpacing: Math.round(ySpacing),
+          cells,
+          missing
+        };
+      }
+
+      function parseBmp(buffer) {
+        const view = new DataView(buffer);
+        if (buffer.byteLength < 54 || view.getUint8(0) !== 0x42 || view.getUint8(1) !== 0x4d) {
+          throw new Error('文件不是有效的 BMP 格式。');
+        }
+
+        const headerFileSize = readU32(view, 2);
+        const pixelOffset = readU32(view, 10);
+        const dibSize = readU32(view, 14);
+        const width = readI32(view, 18);
+        const signedHeight = readI32(view, 22);
+        const height = Math.abs(signedHeight);
+        const bitsPerPixel = readU16(view, 28);
+        const compression = readU32(view, 30);
+        const imageSize = readU32(view, 34);
+        const colorsUsed = dibSize >= 40 ? readU32(view, 46) : 0;
+        const stride = Math.floor((width * bitsPerPixel + 31) / 32) * 4;
+        const calculatedImageSize = stride * height;
+        const pixelEnd = Math.min(buffer.byteLength, pixelOffset + (imageSize || calculatedImageSize));
+        const headerEnd = Math.min(headerFileSize || pixelEnd, buffer.byteLength);
+        const tailStart = Math.max(pixelEnd, headerEnd);
+        const tailBytes = Math.max(0, buffer.byteLength - tailStart);
+
+        if (width <= 0 || height <= 0 || width > 30000 || height > 30000) {
+          throw new Error('BMP 的图像尺寸无效或过大。');
+        }
+
+        let debugMarkerOffset = -1;
+        const marker = [68, 101, 98, 117, 103, 73, 110, 102, 111];
+        const bytes = new Uint8Array(buffer);
+        for (let i = tailStart; i <= bytes.length - marker.length; i++) {
+          let found = true;
+          for (let j = 0; j < marker.length; j++) {
+            if (bytes[i + j] !== marker[j]) { found = false; break; }
+          }
+          if (found) { debugMarkerOffset = i; break; }
+        }
+
+        let rawDebugText = '';
+        let normalizedDebugText = '';
+        if (debugMarkerOffset >= 0) {
+          const tailText = new TextDecoder('windows-1252').decode(bytes.slice(debugMarkerOffset));
+          const cfgIndex = tailText.indexOf('[CFG]');
+          rawDebugText = cfgIndex >= 0 ? tailText.slice(cfgIndex) : tailText;
+          normalizedDebugText = normalizeDebugText(rawDebugText);
+        }
+
+        return {
+          header: {
+            headerFileSize,
+            actualFileSize: buffer.byteLength,
+            pixelOffset,
+            dibSize,
+            width,
+            height,
+            topDown: signedHeight < 0,
+            bitsPerPixel,
+            compression,
+            imageSize,
+            stride,
+            colorsUsed,
+            pixelEnd,
+            tailStart,
+            tailBytes,
+            debugMarkerOffset
+          },
+          debug: normalizedDebugText ? parseDebugText(normalizedDebugText) : null,
+          rawDebugText: normalizedDebugText,
+          buffer
+        };
+      }
+
+      async function decodeBmp(parsed) {
+        const { header, buffer } = parsed;
+        const safeLength = Math.min(header.headerFileSize || header.pixelEnd, header.pixelEnd, buffer.byteLength);
+        try {
+          const cleanBlob = new Blob([buffer.slice(0, safeLength)], { type: 'image/bmp' });
+          return { bitmap: await createImageBitmap(cleanBlob), imageData: null };
+        } catch (error) {
+          return { bitmap: null, imageData: decodeBmpPixels(parsed) };
+        }
+      }
+
+      function decodeBmpPixels(parsed) {
+        const { header, buffer } = parsed;
+        const { width, height, bitsPerPixel, compression, pixelOffset, stride, topDown, dibSize, colorsUsed } = header;
+        if (compression !== 0 || ![8, 24, 32].includes(bitsPerPixel)) {
+          throw new Error(`暂不支持此 BMP 像素格式（${bitsPerPixel} 位，压缩方式 ${compression}）。调试文本仍可解析。`);
+        }
+
+        const src = new Uint8Array(buffer);
+        const out = new Uint8ClampedArray(width * height * 4);
+        let palette = null;
+        if (bitsPerPixel === 8) {
+          const paletteCount = colorsUsed || 256;
+          const paletteOffset = 14 + dibSize;
+          palette = new Uint8Array(paletteCount * 4);
+          for (let i = 0; i < paletteCount; i++) {
+            const p = paletteOffset + i * 4;
+            if (p + 3 >= src.length || p >= pixelOffset) break;
+            palette[i * 4] = src[p + 2];
+            palette[i * 4 + 1] = src[p + 1];
+            palette[i * 4 + 2] = src[p];
+            palette[i * 4 + 3] = 255;
+          }
+        }
+
+        for (let y = 0; y < height; y++) {
+          const srcY = topDown ? y : height - 1 - y;
+          const row = pixelOffset + srcY * stride;
+          let dst = y * width * 4;
+          for (let x = 0; x < width; x++, dst += 4) {
+            if (bitsPerPixel === 8) {
+              const index = src[row + x] * 4;
+              out[dst] = palette[index];
+              out[dst + 1] = palette[index + 1];
+              out[dst + 2] = palette[index + 2];
+              out[dst + 3] = 255;
+            } else if (bitsPerPixel === 24) {
+              const p = row + x * 3;
+              out[dst] = src[p + 2];
+              out[dst + 1] = src[p + 1];
+              out[dst + 2] = src[p];
+              out[dst + 3] = 255;
+            } else {
+              const p = row + x * 4;
+              out[dst] = src[p + 2];
+              out[dst + 1] = src[p + 1];
+              out[dst + 2] = src[p];
+              out[dst + 3] = src[p + 3] || 255;
+            }
+          }
+        }
+        return new ImageData(out, width, height);
+      }
+
+      function confidenceClass(value) {
+        if (value >= 90) return 'high';
+        if (value >= 70) return 'medium';
+        return 'low';
+      }
+
+      function confidenceColor(value) {
+        if (value >= 90) return '#10b981';
+        if (value >= 70) return '#f59e0b';
+        return '#ef4444';
+      }
+
+      function draw() {
+        if (!state.parsed) return;
+        const ctx = els.canvas.getContext('2d');
+        const { width, height } = state.parsed.header;
+        els.canvas.width = width;
+        els.canvas.height = height;
+        ctx.clearRect(0, 0, width, height);
+        if (state.bitmap) ctx.drawImage(state.bitmap, 0, 0, width, height);
+        else if (state.imageData) ctx.putImageData(state.imageData, 0, 0);
+
+        const debug = state.parsed.debug;
+        if (!debug) return;
+        const threshold = Number(els.thresholdRange.value);
+        const scaleBase = Math.max(width, height) / 1200;
+        ctx.lineJoin = 'round';
+        ctx.font = `${Math.max(18, Math.round(14 * scaleBase))}px ${getComputedStyle(document.documentElement).getPropertyValue('--mono')}`;
+
+        if (els.overlayToggle.checked) {
+          debug.detections.forEach(det => {
+            if (det.confidence < threshold) return;
+            const selected = det.index === state.selected;
+            const color = det.read ? '#047857' : debug.hasReadResults ? '#dc2626' : '#64748b';
+            ctx.save();
+            ctx.strokeStyle = color;
+            ctx.lineWidth = selected ? Math.max(5, 3.2 * scaleBase) : Math.max(3, 2.2 * scaleBase);
+            if (!det.read) ctx.setLineDash([7 * scaleBase, 4 * scaleBase]);
+            ctx.beginPath();
+            ctx.moveTo(det.points[0].x, det.points[0].y);
+            for (let i = 1; i < det.points.length; i++) ctx.lineTo(det.points[i].x, det.points[i].y);
+            ctx.closePath();
+            ctx.stroke();
+            ctx.setLineDash([]);
+            const label = `#${det.index} ${det.readStatus}`;
+            const metrics = ctx.measureText(label);
+            const padX = 7 * scaleBase;
+            const boxHeight = 22 * scaleBase;
+            const labelX = det.points[0].x;
+            const labelY = Math.max(boxHeight, det.points[0].y - 3 * scaleBase);
+            ctx.fillStyle = color;
+            ctx.fillRect(labelX, labelY - boxHeight, metrics.width + padX * 2, boxHeight);
+            ctx.fillStyle = '#ffffff';
+            ctx.textBaseline = 'middle';
+            ctx.fillText(label, labelX + padX, labelY - boxHeight / 2);
+            ctx.restore();
+          });
+        }
+
+        if (els.missingToggle.checked && debug.grid?.missing.length) {
+          debug.grid.missing.forEach(cell => {
+            const selected = cell.key === state.selectedMissing;
+            const color = selected ? '#2563eb' : '#38bdf8';
+            ctx.save();
+            ctx.strokeStyle = color;
+            ctx.fillStyle = selected ? 'rgba(37, 99, 235, .18)' : 'rgba(56, 189, 248, .12)';
+            ctx.lineWidth = selected ? Math.max(6, 4 * scaleBase) : Math.max(4, 2.8 * scaleBase);
+            ctx.setLineDash([10 * scaleBase, 6 * scaleBase]);
+            ctx.beginPath();
+            ctx.moveTo(cell.points[0].x, cell.points[0].y);
+            for (let i = 1; i < cell.points.length; i++) ctx.lineTo(cell.points[i].x, cell.points[i].y);
+            ctx.closePath();
+            ctx.fill();
+            ctx.stroke();
+            ctx.setLineDash([]);
+            ctx.beginPath();
+            ctx.moveTo(cell.points[0].x, cell.points[0].y);
+            ctx.lineTo(cell.points[2].x, cell.points[2].y);
+            ctx.moveTo(cell.points[1].x, cell.points[1].y);
+            ctx.lineTo(cell.points[3].x, cell.points[3].y);
+            ctx.stroke();
+
+            const label = `漏 ${cell.key}`;
+            const metrics = ctx.measureText(label);
+            const padX = 7 * scaleBase;
+            const boxHeight = 22 * scaleBase;
+            const labelX = cell.points[0].x;
+            const labelY = Math.max(boxHeight, cell.points[0].y - 4 * scaleBase);
+            ctx.fillStyle = color;
+            ctx.fillRect(labelX, labelY - boxHeight, metrics.width + padX * 2, boxHeight);
+            ctx.fillStyle = '#ffffff';
+            ctx.textBaseline = 'middle';
+            ctx.fillText(label, labelX + padX, labelY - boxHeight / 2);
+            ctx.restore();
+          });
+        }
+      }
+
+      function applyZoom(value) {
+        state.zoom = value;
+        document.querySelectorAll('[data-zoom]').forEach(button => {
+          button.classList.toggle('is-active', String(button.dataset.zoom) === String(value));
+        });
+        if (!state.parsed) return;
+        const {width, height} = state.parsed.header;
+        const padding = getComputedStyle(els.scroller);
+        const availableWidth = Math.max(1, els.scroller.clientWidth - parseFloat(padding.paddingLeft) - parseFloat(padding.paddingRight));
+        const availableHeight = Math.max(1, els.scroller.clientHeight - parseFloat(padding.paddingTop) - parseFloat(padding.paddingBottom));
+        const scale = value === 'fit' ? Math.min(availableWidth / width, availableHeight / height, 1) : Number(value);
+        els.canvas.style.width = `${Math.floor(width * scale)}px`;
+        els.canvas.style.height = `${Math.floor(height * scale)}px`;
+        els.canvas.style.maxWidth = 'none';
+        els.canvas.style.maxHeight = 'none';
+        if (value === 'fit') {
+          els.scroller.classList.remove('is-zoomed');
+          els.scroller.style.placeItems = 'center';
+          els.scroller.scrollLeft = 0;
+          els.scroller.scrollTop = 0;
+        } else {
+          els.scroller.classList.add('is-zoomed');
+          els.scroller.style.placeItems = 'start';
+        }
+      }
+
+      function kv(label, value) {
+        return `<div class="kv-item"><div class="kv-label">${escapeHtml(label)}</div><div class="kv-value">${escapeHtml(value ?? '—')}</div></div>`;
+      }
+
+      function escapeHtml(value) {
+        return String(value).replace(/[&<>'"]/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' })[char]);
+      }
+
+      function renderResults() {
+        const { header, debug, rawDebugText } = state.parsed;
+        const expected = debug?.config.bcrTarget;
+        const detected = debug?.declaredDetectionCount ?? debug?.detections.length ?? null;
+        const difference = expected !== null && expected !== undefined && detected !== null ? expected - detected : null;
+
+        els.expected.textContent = expected ?? '—';
+        els.detected.textContent = detected ?? '—';
+        els.missing.textContent = difference ?? '—';
+        els.time.textContent = debug?.status.timeCost ?? '—';
+        els.tail.textContent = header.tailBytes ? `${header.tailBytes.toLocaleString()} B` : '0 B';
+        els.detected.className = `metric-value ${detected && expected && detected >= expected ? 'good' : 'warn'}`;
+        els.missing.className = `metric-value ${difference === 0 ? 'good' : difference > 0 ? 'bad' : ''}`;
+        els.caption.textContent = `${state.file.name}　${header.width} × ${header.height}　${header.bitsPerPixel} bpp`;
+
+        const items = [
+          ['图像尺寸', `${header.width} × ${header.height}`],
+          ['文件格式', header.format || 'BMP'],
+          ['置信度阈值', debug?.config.bcrThreshold],
+          ['ROI', debug ? `${debug.config.roi.width} × ${debug.config.roi.height}` : null],
+          ['识码记录', debug?.codes?.length ? `${debug.codes.length} 条，重复 ${debug.codes.length - new Set(debug.codes).size} 条` : '—'],
+          ['调试状态', header.debugMarkerOffset >= 0 && debug?.config.debugFlag ? '已开启' : '未找到']
+        ];
+        els.overview.innerHTML = items.map(([label, value]) => kv(label, value)).join('');
+
+        if (debug?.grid) {
+          els.missingSummary.classList.remove('is-info');
+          const missingNames = debug.grid.missing.map(cell => `${cell.key}（${cell.center.x}, ${cell.center.y}）`);
+          els.missingSummary.textContent = debug.grid.missing.length
+            ? `推断漏检 ${debug.grid.missing.length} 个：${missingNames.join('、')}`
+            : `按 ${debug.grid.method} 未发现漏检格位。`;
+          els.gridMap.style.setProperty('--grid-cols', debug.grid.cols);
+          els.gridMap.innerHTML = debug.grid.cells.map(cell => cell.estimate
+            ? `<button class="grid-cell" type="button" data-missing="${cell.key}" aria-label="漏检 ${cell.key}，估计中心坐标 ${cell.center.x}, ${cell.center.y}"><span>${cell.key}</span><span class="grid-cell-state">漏检</span></button>`
+            : `<div class="grid-cell" aria-label="${cell.key} 已检测，对应结果 ${cell.detectionIndex}"><span>${cell.key}</span><span class="grid-cell-state">已检 #${cell.detectionIndex}</span></div>`
+          ).join('');
+        } else {
+          els.missingSummary.classList.add('is-info');
+          const target = debug?.config?.bcrTarget;
+          els.missingSummary.textContent = Number.isFinite(target) && target < 9
+            ? `当前样本配置目标数为 ${target}，自动网格定位仅适用于目标数不少于 9 的规则排列图片，因此这里不生成网格位置。读到的条码内容请看检测结果表。`
+            : '当前图片无法按规则网格推算漏检位置。读码状态和已读到的条码内容请看检测结果表。';
+          els.gridMap.innerHTML = '';
+        }
+
+        if (debug?.detections.length) {
+          els.rows.innerHTML = debug.detections.map(det => `
+            <tr class="result-row" tabindex="0" data-index="${det.index}" aria-label="检测结果 ${det.index}，置信度 ${det.confidence}">
+              <td>#${det.index}</td>
+              <td><span class="conf-pill ${det.read ? 'high' : 'low'}">${det.readStatus}</span></td>
+              <td class="barcode-content" title="${escapeHtml(det.read?.code || '')}">${escapeHtml(det.read?.code || '—')}</td>
+              <td>${det.confidence}</td>
+              <td>${det.center.x}, ${det.center.y}</td>
+            </tr>`).join('');
+        } else {
+          els.rows.innerHTML = '<tr><td colspan="5" class="empty-inline">没有解析到 DET 检测结果</td></tr>';
+        }
+
+        els.raw.textContent = rawDebugText || '文件中没有找到 DebugInfo 文本。';
+        if (debug?.codes?.length) els.stages.innerHTML = debug.codes.map((code, i) => kv(`识码 ${i+1}${debug.codes.filter(c=>c===code).length>1?'（重复）':''}`, code)).join('');
+        els.stages.innerHTML = (debug?.codes || []).map((code, i) => kv(`识码 ${i+1}${debug.codes.filter(c=>c===code).length>1?'（重复）':''}`, code)).join('') + (debug
+          ? Object.entries(debug.stages).map(([name, count]) => kv(name, `${count} 条记录`)).join('')
+          : kv('定位过程', '无数据'));
+        els.exportJson.disabled = !debug;
+        els.exportTxt.disabled = !rawDebugText;
+        els.results.classList.add('is-visible');
+      }
+
+      async function handleFile(file) {
+        if (!file) return;
+        if (!/\.(bmp|jpe?g|raw)$/i.test(file.name)) {
+          setStatus('请选择图片 格式的图片。', 'error');
+          return;
+        }
+        state.file = file;
+        state.selected = null;
+        state.selectedMissing = null;
+        setStatus(`正在读取 ${file.name}…`, 'loading');
+
+        try {
+          const buffer = await file.arrayBuffer();
+          setStatus('正在解析 BMP 文件头和 DebugInfo…', 'loading');
+          const parsed = parseImage(buffer, file.name);
+          state.parsed = parsed;
+          const decoded = await decodeImage(parsed);
+          state.bitmap = decoded.bitmap;
+          state.imageData = decoded.imageData;
+          renderResults();
+          draw();
+          applyZoom('fit');
+          if (parsed.header.debugMarkerOffset >= 0) {
+            const missingCount = parsed.debug?.grid?.missing.length;
+            const missingText = Number.isInteger(missingCount) ? `，推断漏检 ${missingCount} 个` : '';
+            setStatus(`解析完成：找到 ${parsed.header.tailBytes.toLocaleString()} 字节附加数据和 ${parsed.debug?.detections.length || 0} 个检测框${missingText}。`, 'success');
+          } else {
+            setStatus('图像已显示，但文件尾没有找到 DebugInfo 标识。', 'error');
+          }
+        } catch (error) {
+          console.error(error);
+          setStatus(`解析失败：${error.message}`, 'error');
+        }
+      }
+
+      function downloadFile(content, filename, type) {
+        const blob = new Blob([content], { type });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = filename;
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+        setTimeout(() => URL.revokeObjectURL(url), 1000);
+      }
+
+      els.dropZone.addEventListener('click', event => {
+        if (event.target.closest('label')) return;
+        els.fileInput.click();
+      });
+      els.dropZone.addEventListener('keydown', event => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          els.fileInput.click();
+        }
+      });
+      els.fileInput.addEventListener('change', () => handleFile(els.fileInput.files[0]));
+      ['dragenter', 'dragover'].forEach(type => els.dropZone.addEventListener(type, event => {
+        event.preventDefault();
+        els.dropZone.classList.add('is-dragging');
+      }));
+      ['dragleave', 'drop'].forEach(type => els.dropZone.addEventListener(type, event => {
+        event.preventDefault();
+        els.dropZone.classList.remove('is-dragging');
+      }));
+      els.dropZone.addEventListener('drop', event => handleFile(event.dataTransfer.files[0]));
+
+      document.querySelectorAll('[data-zoom]').forEach(button => {
+        button.addEventListener('click', () => applyZoom(button.dataset.zoom));
+      });
+        els.overlayToggle.addEventListener('change', draw);
+        els.missingToggle.addEventListener('change', draw);
+        els.scroller.addEventListener('pointerdown', event => {
+          if (state.zoom === 'fit' || event.button !== 0) return;
+          Object.assign(state.pan, {active:true,startX:event.clientX,startY:event.clientY,scrollLeft:els.scroller.scrollLeft,scrollTop:els.scroller.scrollTop});
+          els.scroller.setPointerCapture(event.pointerId);
+          els.scroller.classList.add('is-panning');
+          event.preventDefault();
+        });
+        els.scroller.addEventListener('pointermove', event => {
+          if (!state.pan.active) return;
+          els.scroller.scrollLeft = state.pan.scrollLeft - (event.clientX - state.pan.startX);
+          els.scroller.scrollTop = state.pan.scrollTop - (event.clientY - state.pan.startY);
+        });
+        const endPan = () => { state.pan.active = false; els.scroller.classList.remove('is-panning'); };
+        els.scroller.addEventListener('pointerup', endPan);
+        els.scroller.addEventListener('pointercancel', endPan);
+        if (typeof ResizeObserver !== 'undefined') new ResizeObserver(() => { if (state.parsed) applyZoom(state.zoom); }).observe(els.scroller);
+      els.thresholdRange.addEventListener('input', () => {
+        els.thresholdValue.textContent = els.thresholdRange.value;
+        state.selected = null;
+        draw();
+        document.querySelectorAll('.result-row').forEach(row => {
+          const det = state.parsed?.debug?.detections[Number(row.dataset.index) - 1];
+          row.hidden = det ? det.confidence < Number(els.thresholdRange.value) : false;
+        });
+      });
+
+      els.rows.addEventListener('click', event => selectDetection(event.target.closest('.result-row')));
+      els.rows.addEventListener('keydown', event => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          selectDetection(event.target.closest('.result-row'));
+        }
+      });
+      els.gridMap.addEventListener('click', event => selectMissing(event.target.closest('[data-missing]')));
+
+      function selectDetection(row) {
+        if (!row) return;
+        const index = Number(row.dataset.index);
+        state.selected = state.selected === index ? null : index;
+        state.selectedMissing = null;
+        document.querySelectorAll('.result-row').forEach(item => item.classList.toggle('is-selected', Number(item.dataset.index) === state.selected));
+        document.querySelectorAll('[data-missing]').forEach(item => item.classList.remove('is-selected'));
+        draw();
+        if (state.selected) showToast(`已高亮检测结果 #${state.selected}`);
+      }
+
+      function selectMissing(cellButton) {
+        if (!cellButton) return;
+        const key = cellButton.dataset.missing;
+        state.selectedMissing = state.selectedMissing === key ? null : key;
+        state.selected = null;
+        document.querySelectorAll('[data-missing]').forEach(item => item.classList.toggle('is-selected', item.dataset.missing === state.selectedMissing));
+        document.querySelectorAll('.result-row').forEach(item => item.classList.remove('is-selected'));
+        draw();
+        if (state.selectedMissing) {
+          const cell = state.parsed?.debug?.grid?.missing.find(item => item.key === state.selectedMissing);
+          showToast(`已高亮漏检 ${state.selectedMissing}，估计中心 ${cell?.center.x}, ${cell?.center.y}`);
+        }
+      }
+
+      els.exportJson.addEventListener('click', () => {
+        if (!state.parsed?.debug) return;
+        const payload = {
+          file: state.file.name,
+          bmp: state.parsed.header,
+          ...state.parsed.debug
+        };
+        delete payload.bmp.debugMarkerOffset;
+        const base = state.file.name.replace(/\.(bmp|jpe?g|raw)$/i, '');
+        downloadFile(JSON.stringify(payload, null, 2), `${base}-debug.json`, 'application/json;charset=utf-8');
+        showToast('JSON 调试数据已导出');
+      });
+
+      els.exportTxt.addEventListener('click', () => {
+        if (!state.parsed?.rawDebugText) return;
+        const base = state.file.name.replace(/\.(bmp|jpe?g|raw)$/i, '');
+        downloadFile(state.parsed.rawDebugText, `${base}-debug.txt`, 'text/plain;charset=utf-8');
+        showToast('原始调试文本已导出');
+      });
+
+      // Small public hook for offline diagnostics and automated format checks.
+
+      function parseImage(buffer, name) {
+        const bytes = new Uint8Array(buffer);
+        if (bytes[0] === 66 && bytes[1] === 77) {
+          const result = parseBmp(buffer); result.header.format = 'BMP'; return result;
+        }
+        const jpeg = bytes[0] === 255 && bytes[1] === 216;
+        const marker = new TextEncoder().encode('DebugInfo');
+        let markerOffset = -1;
+        for (let i=bytes.length-marker.length; i>=0; i--) {
+          if (bytes[i] !== 68) continue;
+          if (marker.every((v,j)=>bytes[i+j]===v)) { markerOffset=i; break; }
+        }
+        let text = '';
+        if (markerOffset>=0) {
+          const tail = new TextDecoder('windows-1252').decode(bytes.subarray(markerOffset));
+          const cfg = tail.indexOf('[CFG]');
+          if(cfg>=0) {
+            text=tail.slice(cfg);
+            const end=text.indexOf('\x00');
+            if(end>=0) text=text.slice(0,end);
+            text=normalizeDebugText(text);
+          }
+        }
+        const debug = text ? parseDebugText(text) : null;
+        let width=debug?.config.sourceWidth, height=debug?.config.sourceHeight;
+        let pixelEnd=markerOffset>=0?markerOffset:bytes.length;
+        if(jpeg) {
+          let p=2;
+          while(p+4<bytes.length) {
+            if(bytes[p++]!==255) continue;
+            while(bytes[p]===255) p++;
+            const m=bytes[p++];
+            if(m===218 || m===217) break;
+            if(m===1 || (m>=208 && m<=215)) continue;
+            const len=(bytes[p]<<8)|bytes[p+1];
+            if(len<2 || p+len>bytes.length) break;
+            if([192,193,194,195,197,198,199,201,202,203,205,206,207].includes(m)) {
+              height=(bytes[p+3]<<8)|bytes[p+4]; width=(bytes[p+5]<<8)|bytes[p+6];
+            }
+            p+=len;
+          }
+        }
+        if(!width || !height) throw new Error('RAW 缺少源图尺寸，无法自动显示；请使用带 DebugInfo 的原始 RAW。');
+        const pixels=width*height;
+        const bpp=jpeg?24:pixelEnd/pixels*8;
+        if(!jpeg && ![8,16].includes(bpp)) throw new Error('RAW 像素长度与调试尺寸不匹配，目前支持 8 位或 16 位小端灰度 RAW。');
+        return {header:{format:jpeg?'JPG':'RAW',width,height,bitsPerPixel:bpp,
+          compression:jpeg?1:0,actualFileSize:bytes.length,headerFileSize:pixelEnd,
+          pixelOffset:0,pixelEnd,tailStart:pixelEnd,tailBytes:bytes.length-pixelEnd,
+          debugMarkerOffset:markerOffset},debug,rawDebugText:text,buffer};
+      }
+      async function decodeImage(parsed) {
+        const h=parsed.header;
+        if(h.format==='BMP') return decodeBmp(parsed);
+        if(h.format==='JPG') {
+          const blob=new Blob([parsed.buffer.slice(0,h.pixelEnd)],{type:'image/jpeg'});
+          if(typeof createImageBitmap==='function') {
+            try { return {bitmap:await createImageBitmap(blob),imageData:null}; } catch {}
+          }
+          const url=URL.createObjectURL(blob);
+          try {
+            const bitmap=await new Promise((resolve,reject)=>{
+              const img=new Image();img.onload=()=>resolve(img);img.onerror=()=>reject(new Error('JPG 解码失败'));img.src=url;
+            });
+            return {bitmap,imageData:null};
+          } finally {URL.revokeObjectURL(url);}
+        }
+        const src=new Uint8Array(parsed.buffer), view=new DataView(parsed.buffer);
+        const data=new Uint8ClampedArray(h.width*h.height*4);
+        for(let i=0;i<h.width*h.height;i++){
+          const v=h.bitsPerPixel===8?src[i]:view.getUint16(i*2,true)>>>8;
+          data[i*4]=data[i*4+1]=data[i*4+2]=v;data[i*4+3]=255;
+        }
+        return {bitmap:null,imageData:new ImageData(data,h.width,h.height)};
+      }
+
+      window.BmpDebugViewer = { parseBmp, parseDebugText, decodeBmpPixels, inferMissingGrid, parseImage, decodeImage };
+    })();
+  </script>
+</body>
+</html>
