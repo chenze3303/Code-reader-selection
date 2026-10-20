@@ -20,7 +20,7 @@ const ACCESSORY_COLUMNS = {
   '网线':     { name: '网线',     col: 15, flagCol: 16, accCategory: '网线' },
   '灯板':     { name: '灯板',     col: 17, flagCol: 18, accCategory: '灯板' },
   '镜头罩':   { name: '镜头罩',   col: 19, flagCol: 20, accCategory: '镜头罩' },
-  'FA镜头':   { name: 'FA镜头',   col: 21, flagCol: 22, accCategory: 'FA镜头' },
+  '镜头':     { name: '镜头',     col: 21, flagCol: 22, accCategory: '镜头' },
   '扩展配件': { name: '扩展配件', col: 23, flagCol: 24, accCategory: '扩展配件' },
 };
 

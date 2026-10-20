@@ -33,9 +33,13 @@ const sourceRows = JSON.parse(fs.readFileSync(new URL('../product_data.json', im
   .map((item) => item.value || item)
 const sourceModelCount = sourceRows.filter((row) => String(row[0] || '').trim() === '相机').length
 const sourceAccessoryCount = sourceRows.filter((row) => String(row[0] || '').trim() === '配件').length
+const sourceAccessoryKeys = new Set(sourceRows
+  .filter((row) => String(row[0] || '').trim() === '配件')
+  .map((row) => [row[1], row[2], row[3], row[4], row[5], row[6]].map((value) => String(value || '').trim()).join('\u0001')))
 assert.equal(productionCatalog.schemaVersion, 1)
 assert.equal(productionData.modelList.length, sourceModelCount)
-assert.equal(productionCatalog.accessories.length, sourceAccessoryCount)
+assert.equal(productionCatalog.accessories.length, sourceAccessoryKeys.size)
+assert.equal(sourceAccessoryCount, 412, 'ID 配单源数据应包含参考站当前的 412 条配件记录')
 assert.ok(productionData.modelList.some((model) => model.productCategory === 'ID800系列'))
 const productionIndex = buildBomCatalogIndex(productionData.modelList, { accessories: productionData.accessories })
 assert.equal(Object.keys(productionIndex.reverseIndex).length, new Set(productionCatalog.accessories.map((item) => item.code).filter(Boolean)).size)
