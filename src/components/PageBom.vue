@@ -361,8 +361,8 @@ const bomMainCount = computed(() => bomList.value.filter((r) => r.type === '主�
 const bomAccCount = computed(() => bomList.value.filter((r) => r.type === '配件').length)
 
 /* ---------- 包装 / 文档类标配折叠 ---------- */
-const FOLD_STORAGE_KEY = 'hikrobot_bom_fold_pack'
 const FOLD_KEYWORDS = ['包装盒', '螺丝包', '泡棉', 'EPE', '防尘袋', '防静电袋', '快速指南', '说明书', '合格证', '保修卡', '纸箱']
+// 每次进入页面都从折叠态开始；展开只在本次会话内生效
 const foldPack = ref(true)
 
 function isFoldableStd(row) {
@@ -401,7 +401,6 @@ function foldPreview(names) {
 
 function toggleFold() {
   foldPack.value = !foldPack.value
-  try { localStorage.setItem(FOLD_STORAGE_KEY, foldPack.value ? '1' : '0') } catch (e) {}
 }
 
 function saveState() {
@@ -807,7 +806,6 @@ function accImgSrc(name) {
 }
 
 onMounted(() => {
-  try { foldPack.value = localStorage.getItem(FOLD_STORAGE_KEY) !== '0' } catch (e) {}
   window.BOM = {
     init: () => {},
     applyData: () => {},
