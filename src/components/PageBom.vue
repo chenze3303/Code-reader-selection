@@ -106,6 +106,10 @@
                 <span class="bom-legend-item std">{{ t('bomLegendStd') }}</span>
                 <span class="bom-legend-item opt">{{ t('bomLegendOpt') }}</span>
               </div>
+              <button v-if="foldableStdCount" type="button" class="bom-fold-toggle" :class="{ active: foldPack }" :aria-expanded="String(!foldPack)" @click="toggleFold">
+                <span class="bom-fold-caret">▾</span>
+                {{ foldPack ? t('bomFoldExpand', { n: foldableStdCount }) : t('bomFoldCollapse', { n: foldableStdCount }) }}
+              </button>
             </div>
             <div class="bom-toolbar-actions">
               <div class="bom-stats-row">
@@ -148,23 +152,35 @@
               </thead>
               <tbody id="bomQBody">
                 <tr v-if="bomList.length === 0"><td colspan="7" class="bom-q-empty">{{ t('bomEmpty') }}</td></tr>
-                <tr v-for="(row, i) in bomList" :key="i" :class="rowClass(row)">
-                  <td class="bom-q-idx" style="text-align:center;">{{ i + 1 }}</td>
-                  <td style="text-align:center;"><span class="bom-q-type-badge" :class="rowTypeBadgeClass(row)">{{ row.accType || row.type }}</span></td>
-                  <td class="bom-td-name" style="text-align:center;">{{ row.n }}</td>
-                  <td class="bom-q-img" style="text-align:center;">
-                    <img v-if="rowImgSrc(row)" class="bom-model-img" :src="rowImgSrc(row)" width="44" height="44" :alt="row.n || ''" role="button" tabindex="0" @click="openLightbox(rowImgSrc(row))" @keydown.enter.prevent="openLightbox(rowImgSrc(row))" @keydown.space.prevent="openLightbox(rowImgSrc(row))">
-                  </td>
-                  <td class="bom-q-desc" style="text-align:center;">{{ rowDesc(row) }}</td>
-                  <td style="text-align:center;"><span class="bom-q-remark" v-if="row.remark">{{ row.remark }}</span></td>
-                  <td style="text-align:center;"><span class="bom-q-code">{{ row.c || '—' }}</span></td>
-                </tr>
+                <template v-for="(item, i) in displayRows" :key="item.kind === 'fold' ? 'fold-pack' : 'row-' + item.index">
+                  <tr v-if="item.kind === 'fold'" class="bom-fold-row" role="button" tabindex="0" :aria-expanded="String(!foldPack)" @click="toggleFold" @keydown.enter.prevent="toggleFold" @keydown.space.prevent="toggleFold">
+                    <td class="bom-q-idx" style="text-align:center;">…</td>
+                    <td style="text-align:center;"><span class="bom-q-type-badge acc std">{{ t('bomFoldType', { n: item.count }) }}</span></td>
+                    <td class="bom-td-name" style="text-align:center;"><span class="bom-fold-name">{{ t('bomFoldRowTitle') }}</span><span class="bom-fold-hint">{{ t('bomFoldRowHint') }}</span></td>
+                    <td></td>
+                    <td class="bom-q-desc" style="text-align:center;">{{ foldPreview(item.names) }}</td>
+                    <td></td>
+                    <td style="text-align:center;"><span class="bom-q-code">—</span></td>
+                  </tr>
+                  <tr v-else :class="rowClass(item.row)">
+                    <td class="bom-q-idx" style="text-align:center;">{{ i + 1 }}</td>
+                    <td style="text-align:center;"><span class="bom-q-type-badge" :class="rowTypeBadgeClass(item.row)">{{ item.row.accType || item.row.type }}</span></td>
+                    <td class="bom-td-name" style="text-align:center;">{{ item.row.n }}</td>
+                    <td class="bom-q-img" style="text-align:center;">
+                      <img v-if="rowImgSrc(item.row)" class="bom-model-img" :src="rowImgSrc(item.row)" width="44" height="44" :alt="item.row.n || ''" role="button" tabindex="0" @click="openLightbox(rowImgSrc(item.row))" @keydown.enter.prevent="openLightbox(rowImgSrc(item.row))" @keydown.space.prevent="openLightbox(rowImgSrc(item.row))">
+                    </td>
+                    <td class="bom-q-desc" style="text-align:center;">{{ rowDesc(item.row) }}</td>
+                    <td style="text-align:center;"><span class="bom-q-remark" v-if="item.row.remark">{{ item.row.remark }}</span></td>
+                    <td style="text-align:center;"><span class="bom-q-code">{{ item.row.c || '—' }}</span></td>
+                  </tr>
+                </template>
               </tbody>
             </table>
           </div>
 
           <div class="bom-right-footer">
             <span id="bomQCount">{{ t('bomCount', bomList.length) }}</span>
+            <span v-if="foldPack && foldableStdCount" class="bom-fold-footer">{{ t('bomFoldFooter', { n: foldableStdCount }) }}</span>
             <span class="bom-footer-hint"><UiIcon name="lightbulb" /> {{ t('bomFooterHint') }}</span>
           </div>
         </div>
@@ -343,6 +359,50 @@ const accGroups = computed(() => {
 
 const bomMainCount = computed(() => bomList.value.filter((r) => r.type === '主机').length)
 const bomAccCount = computed(() => bomList.value.filter((r) => r.type === '配件').length)
+
+/* ---------- 包装 / 文档类标配折叠 ---------- */
+const FOLD_STORAGE_KEY = 'hikrobot_bom_fold_pack'
+const FOLD_KEYWORDS = ['包装盒', '螺丝包', '泡棉', 'EPE', '防尘袋', '防静电袋', '快速指南', '说明书', '合格证', '保修卡', '纸箱']
+const foldPack = ref(true)
+
+function isFoldableStd(row) {
+  if (!row || row.accType !== '标配') return false
+  const name = row.n || ''
+  return FOLD_KEYWORDS.some((keyword) => name.indexOf(keyword) !== -1)
+}
+
+const foldableStdCount = computed(() => bomList.value.filter(isFoldableStd).length)
+
+const displayRows = computed(() => {
+  const list = bomList.value
+  if (!foldPack.value) return list.map((row, index) => ({ kind: 'row', row, index }))
+  const names = list.filter(isFoldableStd).map((row) => row.n)
+  if (names.length === 0) return list.map((row, index) => ({ kind: 'row', row, index }))
+  const rows = []
+  let foldedPushed = false
+  list.forEach((row, index) => {
+    if (isFoldableStd(row)) {
+      if (!foldedPushed) {
+        rows.push({ kind: 'fold', count: names.length, names })
+        foldedPushed = true
+      }
+      return
+    }
+    rows.push({ kind: 'row', row, index })
+  })
+  return rows
+})
+
+function foldPreview(names) {
+  if (!names || names.length === 0) return ''
+  const head = names.slice(0, 3).join(' / ')
+  return names.length > 3 ? t('bomFoldMore', { head, n: names.length - 3 }) : head
+}
+
+function toggleFold() {
+  foldPack.value = !foldPack.value
+  try { localStorage.setItem(FOLD_STORAGE_KEY, foldPack.value ? '1' : '0') } catch (e) {}
+}
 
 function saveState() {
   try {
@@ -747,6 +807,7 @@ function accImgSrc(name) {
 }
 
 onMounted(() => {
+  try { foldPack.value = localStorage.getItem(FOLD_STORAGE_KEY) !== '0' } catch (e) {}
   window.BOM = {
     init: () => {},
     applyData: () => {},

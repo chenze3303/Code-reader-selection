@@ -1443,6 +1443,46 @@ select:focus, input:focus {
 .bom-legend-item.std  { color: #3b6ab5; }
 .bom-legend-item.opt  { color: var(--brand-red); }
 
+/* 包装/文档类标配折叠 */
+.bom-fold-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  height: 26px;
+  padding: 0 0.6rem;
+  border: 1px solid var(--border-light);
+  border-radius: 999px;
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  font-size: 0.62rem;
+  font-weight: 700;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s, background-color 0.15s;
+}
+.bom-fold-toggle:hover { color: var(--brand-red); border-color: var(--brand-red); background: var(--brand-red-lt); }
+.bom-fold-toggle:focus-visible { outline: 2px solid var(--brand-red); outline-offset: 1px; }
+.bom-fold-toggle.active { color: var(--brand-red); border-color: rgba(247, 101, 4, 0.45); background: var(--brand-red-lt); }
+.bom-fold-caret { display: inline-block; font-size: 0.7rem; line-height: 1; transition: transform 0.15s ease; }
+.bom-fold-toggle.active .bom-fold-caret { transform: rotate(-90deg); }
+
+.bom-q-table tbody tr.bom-fold-row { cursor: pointer; }
+.bom-q-table tbody tr.bom-fold-row td {
+  background: #f4f7fc;
+  border-bottom: 1px dashed var(--border-light);
+  color: var(--text-muted);
+  font-size: 0.7rem;
+}
+.bom-q-table tbody tr.bom-fold-row:hover td { background: #e9eff9; }
+.bom-q-table tbody tr.bom-fold-row:focus-visible { outline: 2px solid var(--brand-red); outline-offset: -2px; }
+.bom-fold-name { color: var(--text-primary); font-weight: 800; }
+.bom-fold-hint { margin-left: 0.35rem; color: var(--brand-red); font-size: 0.6rem; font-weight: 700; }
+.bom-fold-footer { color: var(--text-muted); font-size: 0.62rem; font-weight: 600; }
+
+.dark .bom-q-table tbody tr.bom-fold-row td { background: rgba(255, 255, 255, 0.04); }
+.dark .bom-q-table tbody tr.bom-fold-row:hover td { background: rgba(255, 122, 47, 0.1); }
+
+
 .bom-toolbar-actions {
   display: flex;
   align-items: center;

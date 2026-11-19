@@ -170,6 +170,9 @@
       bomEmpty: '请选择型号，配单将自动生成',
       bomCount: '共 {n} 行',
       bomFooterHint: '蓝色 = 主机 · 浅蓝 = 标配 · 浅橙 = 选配',
+      bomFoldExpand: '展开包装/文档（{n}）', bomFoldCollapse: '收起包装/文档（{n}）',
+      bomFoldType: '标配 ×{n}', bomFoldRowTitle: '包装与文档', bomFoldRowHint: '点击展开',
+      bomFoldMore: '{head} 等 {n} 项', bomFoldFooter: '· {n} 项包装/文档已折叠',
       // Verify page
       verifyTitle: 'PPM 计算', verifyModelSel: '选择型号', verifyDist: '工作距离',
       verifyBarcode: '条码参数',
@@ -480,6 +483,9 @@
       bomEmpty: 'Select a model to auto-generate BOM',
       bomCount: '{n} rows',
       bomFooterHint: 'Blue = Main · Light Blue = Standard · Light Orange = Optional',
+      bomFoldExpand: 'Show packaging/docs ({n})', bomFoldCollapse: 'Hide packaging/docs ({n})',
+      bomFoldType: 'Std ×{n}', bomFoldRowTitle: 'Packaging & Documents', bomFoldRowHint: 'Click to expand',
+      bomFoldMore: '{head} +{n} more', bomFoldFooter: '· {n} packaging/doc items hidden',
       // Verify page
       verifyTitle: 'PPM Calculator', verifyModelSel: 'Select Model', verifyDist: 'Working Distance',
       verifyBarcode: 'Barcode Parameters',
