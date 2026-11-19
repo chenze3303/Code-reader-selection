@@ -39,7 +39,7 @@ const sourceAccessoryKeys = new Set(sourceRows
 assert.equal(productionCatalog.schemaVersion, 1)
 assert.equal(productionData.modelList.length, sourceModelCount)
 assert.equal(productionCatalog.accessories.length, sourceAccessoryKeys.size)
-assert.equal(sourceAccessoryCount, 412, 'ID 配单源数据应包含参考站当前的 412 条配件记录')
+assert.equal(sourceAccessoryCount, 434, 'ID 配单源数据应包含参考站当前的 434 条配件记录')
 assert.ok(productionData.modelList.some((model) => model.productCategory === 'ID800系列'))
 const productionIndex = buildBomCatalogIndex(productionData.modelList, { accessories: productionData.accessories })
 assert.equal(Object.keys(productionIndex.reverseIndex).length, new Set(productionCatalog.accessories.map((item) => item.code).filter(Boolean)).size)

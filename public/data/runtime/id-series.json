@@ -4,17 +4,17 @@
     "url": "https://cai0707-kiki.github.io/ID-BOM/",
     "cameraDataUrl": "https://cai0707-kiki.github.io/ID-BOM/scripts/id_camera_data.js",
     "accessoryDataUrl": "https://cai0707-kiki.github.io/ID-BOM/scripts/id_accessory_data.js",
-    "generatedAt": "2026-09-24T02:49:38.733Z"
+    "generatedAt": "2026-11-19T02:58:37.665Z"
   },
   "totals": {
     "series": 13,
-    "models": 688,
-    "accessories": 395
+    "models": 686,
+    "accessories": 434
   },
   "series": [
     {
       "name": "ID800系列",
-      "count": 68,
+      "count": 70,
       "rows": [
         {
           "kind": "model",
@@ -24,7 +24,7 @@
           "name": "MV-ID803M-03S-WBN-SR-U(国内标配)",
           "code": "313201715",
           "description": "0.3MP，3.1m镜头，1颗暖白LED，标准距离120mm，USB型号",
-          "remark": "支持U口/串口线缆互换"
+          "remark": "支持U口/串口线缆互换，经销型号不配线缆"
         },
         {
           "kind": "model",
@@ -34,7 +34,7 @@
           "name": "MV-ID803M-03S-WBN-SR-U(国内中性)",
           "code": "313201712",
           "description": "0.3MP，3.1m镜头，1颗暖白LED，标准距离120mm，USB型号",
-          "remark": "支持U口/串口线缆互换"
+          "remark": "支持U口/串口线缆互换，经销型号不配线缆"
         },
         {
           "kind": "model",
@@ -44,7 +44,7 @@
           "name": "MV-ID803M-03S-WBP-SR-U(国内标配)",
           "code": "313202189",
           "description": "0.3MP，3.1m镜头，1颗暖白LED，标准距离120mm，偏振前罩，USB型号",
-          "remark": "支持U口/串口线缆互换"
+          "remark": "支持U口/串口线缆互换，经销型号不配线缆"
         },
         {
           "kind": "model",
@@ -54,7 +54,7 @@
           "name": "MV-ID803M-03S-WBP-SR-U(国内中性)",
           "code": "313202191",
           "description": "0.3MP，3.1m镜头，1颗暖白LED，标准距离120mm，偏振前罩，USB型号",
-          "remark": "支持U口/串口线缆互换"
+          "remark": "支持U口/串口线缆互换，经销型号不配线缆"
         },
         {
           "kind": "model",
@@ -64,7 +64,7 @@
           "name": "MV-ID803M-03S-WBN-SR-R(国内标配)",
           "code": "313201714",
           "description": "0.3MP，3.1m镜头，1颗暖白LED，标准距离120mm，串口型号",
-          "remark": "支持U口/串口线缆互换"
+          "remark": "支持U口/串口线缆互换，经销型号不配线缆"
         },
         {
           "kind": "model",
@@ -74,7 +74,7 @@
           "name": "MV-ID803M-03S-WBN-SR-R(国内中性)",
           "code": "313201713",
           "description": "0.3MP，3.1m镜头，1颗暖白LED，标准距离120mm，串口型号",
-          "remark": "支持U口/串口线缆互换"
+          "remark": "支持U口/串口线缆互换，经销型号不配线缆"
         },
         {
           "kind": "model",
@@ -84,7 +84,7 @@
           "name": "MV-ID803M-03S-WBP-SR-R(国内标配)",
           "code": "313202193",
           "description": "0.3MP，3.1m镜头，1颗暖白LED，标准距离120mm，偏振前罩，串口型号",
-          "remark": "支持U口/串口线缆互换"
+          "remark": "支持U口/串口线缆互换，经销型号不配线缆"
         },
         {
           "kind": "model",
@@ -94,7 +94,7 @@
           "name": "MV-ID803M-03S-WBP-SR-R(国内中性)",
           "code": "313202192",
           "description": "0.3MP，3.1m镜头，1颗暖白LED，标准距离120mm，偏振前罩，串口型号",
-          "remark": "支持U口/串口线缆互换"
+          "remark": "支持U口/串口线缆互换，经销型号不配线缆"
         },
         {
           "kind": "model",
@@ -144,7 +144,7 @@
           "name": "MV-ID813M-05S-WBN-SR-U(国内标配)",
           "code": "313201493",
           "description": "1.3MP，4.9m镜头，1颗暖白LED，标准距离120mm，USB型号",
-          "remark": "支持U口/串口线缆互换"
+          "remark": "支持U口/串口线缆互换，经销型号不配线缆"
         },
         {
           "kind": "model",
@@ -154,7 +154,7 @@
           "name": "MV-ID813M-05S-WBN-SR-U(国内中性)",
           "code": "313201518",
           "description": "1.3MP，4.9m镜头，1颗暖白LED，标准距离120mm，USB型号",
-          "remark": "支持U口/串口线缆互换"
+          "remark": "支持U口/串口线缆互换，经销型号不配线缆"
         },
         {
           "kind": "model",
@@ -164,7 +164,7 @@
           "name": "MV-ID813M-05S-WBP-SR-U(国内标配)",
           "code": "313202198",
           "description": "1.3MP，4.9m镜头，1颗暖白LED，标准距离120mm，偏振前罩，USB型号",
-          "remark": "支持U口/串口线缆互换"
+          "remark": "支持U口/串口线缆互换，经销型号不配线缆"
         },
         {
           "kind": "model",
@@ -174,7 +174,7 @@
           "name": "MV-ID813M-05S-WBP-SR-U(国内中性)",
           "code": "313202200",
           "description": "1.3MP，4.9m镜头，1颗暖白LED，标准距离120mm，偏振前罩，USB型号",
-          "remark": "支持U口/串口线缆互换"
+          "remark": "支持U口/串口线缆互换，经销型号不配线缆"
         },
         {
           "kind": "model",
@@ -184,7 +184,7 @@
           "name": "MV-ID813M-05S-WBN-NR-U(国内标配)",
           "code": "313201494",
           "description": "1.3MP，4.9m镜头，1颗暖白LED，近焦距离70mm，USB型号",
-          "remark": "支持U口/串口线缆互换"
+          "remark": "支持U口/串口线缆互换，经销型号不配线缆"
         },
         {
           "kind": "model",
@@ -194,7 +194,7 @@
           "name": "MV-ID813M-05S-WBN-NR-U(国内中性)",
           "code": "313201519",
           "description": "1.3MP，4.9m镜头，1颗暖白LED，近焦距离70mm，USB型号",
-          "remark": "支持U口/串口线缆互换"
+          "remark": "支持U口/串口线缆互换，经销型号不配线缆"
         },
         {
           "kind": "model",
@@ -204,7 +204,7 @@
           "name": "MV-ID813M-05S-WBP-NR-U(国内标配)",
           "code": "313202197",
           "description": "1.3MP，4.9m镜头，1颗暖白LED，近焦距离70mm，偏振前罩，USB型号",
-          "remark": "支持U口/串口线缆互换"
+          "remark": "支持U口/串口线缆互换，经销型号不配线缆"
         },
         {
           "kind": "model",
@@ -214,7 +214,7 @@
           "name": "MV-ID813M-05S-WBP-NR-U(国内中性)",
           "code": "313202196",
           "description": "1.3MP，4.9m镜头，1颗暖白LED，近焦距离70mm，偏振前罩，USB型号",
-          "remark": "支持U口/串口线缆互换"
+          "remark": "支持U口/串口线缆互换，经销型号不配线缆"
         },
         {
           "kind": "model",
@@ -224,7 +224,7 @@
           "name": "MV-ID813M-05S-WBN-SR-R(国内标配)",
           "code": "313201495",
           "description": "1.3MP，4.9m镜头，1颗暖白LED，标准距离120mm，串口型号",
-          "remark": "支持U口/串口线缆互换"
+          "remark": "支持U口/串口线缆互换，经销型号不配线缆"
         },
         {
           "kind": "model",
@@ -234,7 +234,7 @@
           "name": "MV-ID813M-05S-WBN-SR-R(国内中性)",
           "code": "313201520",
           "description": "1.3MP，4.9m镜头，1颗暖白LED，标准距离120mm，串口型号",
-          "remark": "支持U口/串口线缆互换"
+          "remark": "支持U口/串口线缆互换，经销型号不配线缆"
         },
         {
           "kind": "model",
@@ -244,7 +244,7 @@
           "name": "MV-ID813M-05S-WBP-SR-R(国内标配)",
           "code": "313202204",
           "description": "1.3MP，4.9m镜头，1颗暖白LED，标准距离120mm，偏振前罩，串口型号",
-          "remark": "支持U口/串口线缆互换"
+          "remark": "支持U口/串口线缆互换，经销型号不配线缆"
         },
         {
           "kind": "model",
@@ -254,7 +254,7 @@
           "name": "MV-ID813M-05S-WBP-SR-R(国内中性)",
           "code": "313202205",
           "description": "1.3MP，4.9m镜头，1颗暖白LED，标准距离120mm，偏振前罩，串口型号",
-          "remark": "支持U口/串口线缆互换"
+          "remark": "支持U口/串口线缆互换，经销型号不配线缆"
         },
         {
           "kind": "model",
@@ -264,7 +264,7 @@
           "name": "MV-ID813M-05S-WBN-NR-R(国内标配)",
           "code": "313201496",
           "description": "1.3MP，4.9m镜头，1颗暖白LED，近焦距离70mm，串口型号",
-          "remark": "支持U口/串口线缆互换"
+          "remark": "支持U口/串口线缆互换，经销型号不配线缆"
         },
         {
           "kind": "model",
@@ -274,7 +274,7 @@
           "name": "MV-ID813M-05S-WBN-NR-R(国内中性)",
           "code": "313201521",
           "description": "1.3MP，4.9m镜头，1颗暖白LED，近焦距离70mm，串口型号",
-          "remark": "支持U口/串口线缆互换"
+          "remark": "支持U口/串口线缆互换，经销型号不配线缆"
         },
         {
           "kind": "model",
@@ -284,7 +284,7 @@
           "name": "MV-ID813M-05S-WBP-NR-R(国内标配)",
           "code": "313202203",
           "description": "1.3MP，4.9m镜头，1颗暖白LED，近焦距离70mm，偏振前罩，串口型号",
-          "remark": "支持U口/串口线缆互换"
+          "remark": "支持U口/串口线缆互换，经销型号不配线缆"
         },
         {
           "kind": "model",
@@ -294,7 +294,7 @@
           "name": "MV-ID813M-05S-WBP-NR-R(国内中性)",
           "code": "313202201",
           "description": "1.3MP，4.9m镜头，1颗暖白LED，近焦距离70mm，偏振前罩，串口型号",
-          "remark": "支持U口/串口线缆互换"
+          "remark": "支持U口/串口线缆互换，经销型号不配线缆"
         },
         {
           "kind": "model",
@@ -695,12 +695,32 @@
           "code": "193100773",
           "description": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "快速指南",
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】超小型智能读码器快速指南",
+          "code": "102048044",
+          "description": "【中文标配】超小型智能读码器快速指南V2.0.0，适配ID800系列",
+          "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "快速指南",
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】超小型智能读码器快速指南",
+          "code": "102048045",
+          "description": "【中文中性】超小型智能读码器快速指南V2.0.0，适配ID800系列",
+          "remark": ""
         }
       ]
     },
     {
       "name": "ID2013EM系列",
-      "count": 142,
+      "count": 144,
       "rows": [
         {
           "kind": "model",
@@ -2121,12 +2141,32 @@
           "code": "193100773",
           "description": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "快速指南",
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "description": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "快速指南",
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "description": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ]
     },
     {
       "name": "ID2000M系列",
-      "count": 97,
+      "count": 98,
       "rows": [
         {
           "kind": "model",
@@ -2196,7 +2236,7 @@
           "name": "MV-ID2004M-16T-RBN(国内标配)V4.0",
           "code": "313202603",
           "description": "0.4MP，16mm镜头，4颗红色LED，工作距离100~400mm，固态调焦",
-          "remark": "ID2004M调焦款出货配置偏振镜头罩，订单中备注：删除：202402450，添加：202402298；增加偏振检测"
+          "remark": "可配置全偏镜头罩下单"
         },
         {
           "kind": "model",
@@ -2206,7 +2246,7 @@
           "name": "MV-ID2004M-16T-RBN(国内中性)V4.0",
           "code": "313202604",
           "description": "0.4MP，16mm镜头，4颗红色LED，工作距离100~400mm，固态调焦",
-          "remark": "ID2004M调焦款出货配置偏振镜头罩，订单中备注：删除：202402450，添加：202402298；增加偏振检测"
+          "remark": "可配置全偏镜头罩下单"
         },
         {
           "kind": "model",
@@ -2366,26 +2406,6 @@
           "name": "MV-ID2013M-06S-BBN(国内中性)V4.0",
           "code": "313202628",
           "description": "1.3MP，6.7mm镜头，4颗蓝色LED，工作距离40~120mm，基础款网口",
-          "remark": ""
-        },
-        {
-          "kind": "model",
-          "type": "主机",
-          "category": "ID2000M系列",
-          "series": "ID2013M基础款网口",
-          "name": "MV-ID2013M-06S-WBP(国内标配)V4.0",
-          "code": "313202623",
-          "description": "1.3MP，6.7mm镜头，4颗白色LED，工作距离40~120mm，偏振前罩，基础款网口",
-          "remark": ""
-        },
-        {
-          "kind": "model",
-          "type": "主机",
-          "category": "ID2000M系列",
-          "series": "ID2013M基础款网口",
-          "name": "MV-ID2013M-06S-WBP(国内中性)V4.0",
-          "code": "313202627",
-          "description": "1.3MP，6.7mm镜头，4颗白色LED，工作距离40~120mm，偏振前罩，基础款网口",
           "remark": ""
         },
         {
@@ -2576,7 +2596,7 @@
           "name": "MV-ID2016M-06T-RBP(国内标配)V4.0",
           "code": "313202609",
           "description": "1.6MP，6.7mm镜头，4颗红色LED，工作距离70~160mm，偏振前罩，固态调焦",
-          "remark": "ID2016M调焦款出货配置全透镜头罩，订单中备注：删除：202402298，添加：202402450"
+          "remark": "可配置全透镜头罩下单"
         },
         {
           "kind": "model",
@@ -2586,7 +2606,7 @@
           "name": "MV-ID2016M-06T-RBP(国内中性)V4.0",
           "code": "313202610",
           "description": "1.6MP，6.7mm镜头，4颗红色LED，工作距离70~160mm，偏振前罩，固态调焦",
-          "remark": "ID2016M调焦款出货配置全透镜头罩，订单中备注：删除：202402298，添加：202402450"
+          "remark": "可配置全透镜头罩下单"
         },
         {
           "kind": "model",
@@ -2596,7 +2616,7 @@
           "name": "MV-ID2016M-10T-RBP(国内标配)V4.0",
           "code": "313202612",
           "description": "1.6MP，10mm镜头，4颗红色LED，工作距离100~400mm，偏振前罩，固态调焦",
-          "remark": "ID2016M调焦款出货配置全透镜头罩，订单中备注：删除：202402298，添加：202402450"
+          "remark": "可配置全透镜头罩下单"
         },
         {
           "kind": "model",
@@ -2606,7 +2626,7 @@
           "name": "MV-ID2016M-10T-RBP(国内中性)V4.0",
           "code": "313202613",
           "description": "1.6MP，10mm镜头，4颗红色LED，工作距离100~400mm，偏振前罩，固态调焦",
-          "remark": "ID2016M调焦款出货配置全透镜头罩，订单中备注：删除：202402298，添加：202402450"
+          "remark": "可配置全透镜头罩下单"
         },
         {
           "kind": "model",
@@ -2616,7 +2636,7 @@
           "name": "MV-ID2016M-16T-RBN(国内标配)V4.0",
           "code": "313202615",
           "description": "1.6MP，16mm镜头，4颗红色LED，工作距离100~400mm，固态调焦",
-          "remark": "偏振型号：313203309，可直接下载"
+          "remark": "偏振型号：313203309，可直接下单"
         },
         {
           "kind": "model",
@@ -2626,7 +2646,7 @@
           "name": "MV-ID2016M-16T-RBN(国内中性)V4.0",
           "code": "313202616",
           "description": "1.6MP，16mm镜头，4颗红色LED，工作距离100~400mm，固态调焦",
-          "remark": "偏振型号：313203318，可直接下载"
+          "remark": "偏振型号：313203318，可直接下单"
         },
         {
           "kind": "model",
@@ -3040,6 +3060,26 @@
         },
         {
           "kind": "accessory",
+          "type": "镜头罩",
+          "category": "镜头罩",
+          "series": "ID2000M全透镜头罩",
+          "name": "ID2000上盖点胶组件-变焦",
+          "code": "202402450",
+          "description": "ID2000M全透镜头罩，仅适配ID2000M-xxT-RBP型号配置下单，其他型号只能单独下单自行更换",
+          "remark": "删除：202402298，添加：202402450"
+        },
+        {
+          "kind": "accessory",
+          "type": "镜头罩",
+          "category": "镜头罩",
+          "series": "ID2000M全偏镜头罩",
+          "name": "ID2000上盖点胶组件-变焦/偏振片",
+          "code": "202402298",
+          "description": "ID2000M全偏镜头罩，仅适配ID2000M-xxT-RBN型号配置下单，其他型号只能单独下单自行更换",
+          "remark": "删除：202402450，添加：202402298；增加偏振检测"
+        },
+        {
+          "kind": "accessory",
           "type": "隔离支架",
           "category": "扩展配件",
           "series": "隔离支架",
@@ -3083,26 +3123,36 @@
           "type": "螺丝包",
           "category": "扩展配件",
           "series": "螺丝包",
-          "name": "螺丝包M3×6",
-          "code": "193100773",
-          "description": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "name": "螺丝包M2×6",
+          "code": "193102445",
+          "description": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
           "remark": ""
         },
         {
           "kind": "accessory",
-          "type": "螺丝包",
+          "type": "快速指南",
           "category": "扩展配件",
-          "series": "螺丝包",
-          "name": "螺丝包M2×6",
-          "code": "193102445",
-          "description": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "description": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "快速指南",
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "description": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ]
     },
     {
       "name": "ID2000XM系列",
-      "count": 159,
+      "count": 167,
       "rows": [
         {
           "kind": "model",
@@ -3670,7 +3720,7 @@
           "category": "ID2000XM系列",
           "series": "ID2020RM系列网口",
           "name": "MV-ID2020RM-05M-RBN(国内标配)",
-          "code": "328500542",
+          "code": "313203809",
           "description": "2MP，卷帘快门，5mm镜头，4颗红色LED，半偏镜头罩，机械调焦，网口型号",
           "remark": "不配线缆，需额外下单"
         },
@@ -3680,7 +3730,7 @@
           "category": "ID2000XM系列",
           "series": "ID2020RM系列网口",
           "name": "MV-ID2020RM-05M-RBN(国内中性)",
-          "code": "328500538",
+          "code": "313203817",
           "description": "2MP，卷帘快门，5mm镜头，4颗红色LED，半偏镜头罩，机械调焦，网口型号",
           "remark": "不配线缆，需额外下单"
         },
@@ -3690,7 +3740,7 @@
           "category": "ID2000XM系列",
           "series": "ID2020RM系列网口",
           "name": "MV-ID2020RM-08M-RBN(国内标配)",
-          "code": "328500544",
+          "code": "313203808",
           "description": "2MP，卷帘快门，8mm镜头，4颗红色LED，半偏镜头罩，机械调焦，网口型号",
           "remark": "不配线缆，需额外下单"
         },
@@ -3700,7 +3750,7 @@
           "category": "ID2000XM系列",
           "series": "ID2020RM系列网口",
           "name": "MV-ID2020RM-08M-RBN(国内中性)",
-          "code": "328500537",
+          "code": "313203815",
           "description": "2MP，卷帘快门，8mm镜头，4颗红色LED，半偏镜头罩，机械调焦，网口型号",
           "remark": "不配线缆，需额外下单"
         },
@@ -3710,7 +3760,7 @@
           "category": "ID2000XM系列",
           "series": "ID2020RM系列网口",
           "name": "MV-ID2020RM-12M-RBN(国内标配)",
-          "code": "328500530",
+          "code": "313203821",
           "description": "2MP，卷帘快门，12mm镜头，4颗红色LED，半偏镜头罩，机械调焦，网口型号",
           "remark": "不配线缆，需额外下单"
         },
@@ -3720,7 +3770,7 @@
           "category": "ID2000XM系列",
           "series": "ID2020RM系列网口",
           "name": "MV-ID2020RM-12M-RBN(国内中性)",
-          "code": "328500532",
+          "code": "313203822",
           "description": "2MP，卷帘快门，12mm镜头，4颗红色LED，半偏镜头罩，机械调焦，网口型号",
           "remark": "不配线缆，需额外下单"
         },
@@ -3730,7 +3780,7 @@
           "category": "ID2000XM系列",
           "series": "ID2020RM系列网口",
           "name": "MV-ID2020RM-16M-RBN(国内标配)",
-          "code": "328500540",
+          "code": "313203812",
           "description": "2MP，卷帘快门，16mm镜头，4颗红色LED，半偏镜头罩，机械调焦，网口型号",
           "remark": "不配线缆，需额外下单"
         },
@@ -3740,7 +3790,7 @@
           "category": "ID2000XM系列",
           "series": "ID2020RM系列网口",
           "name": "MV-ID2020RM-16M-RBN(国内中性)",
-          "code": "328500536",
+          "code": "313203811",
           "description": "2MP，卷帘快门，16mm镜头，4颗红色LED，半偏镜头罩，机械调焦，网口型号",
           "remark": "不配线缆，需额外下单"
         },
@@ -3750,7 +3800,7 @@
           "category": "ID2000XM系列",
           "series": "ID2020RM系列网口",
           "name": "MV-ID2020RM-25M-RBN(国内标配)",
-          "code": "328500585",
+          "code": "313203806",
           "description": "2MP，卷帘快门，25mm镜头，4颗红色LED，半偏镜头罩，机械调焦，网口型号",
           "remark": "不配线缆，需额外下单"
         },
@@ -3760,7 +3810,7 @@
           "category": "ID2000XM系列",
           "series": "ID2020RM系列网口",
           "name": "MV-ID2020RM-25M-RBN(国内中性)",
-          "code": "328500587",
+          "code": "313203804",
           "description": "2MP，卷帘快门，25mm镜头，4颗红色LED，半偏镜头罩，机械调焦，网口型号",
           "remark": "不配线缆，需额外下单"
         },
@@ -3770,7 +3820,7 @@
           "category": "ID2000XM系列",
           "series": "ID2020RM系列U口",
           "name": "MV-ID2020RM-05M-RBN-U(国内标配)",
-          "code": "328500541",
+          "code": "313203810",
           "description": "2MP，卷帘快门，5mm镜头，4颗红色LED，半偏镜头罩，机械调焦，U口型号",
           "remark": "不配线缆，需额外下单，U口型号须额外供电"
         },
@@ -3780,7 +3830,7 @@
           "category": "ID2000XM系列",
           "series": "ID2020RM系列U口",
           "name": "MV-ID2020RM-05M-RBN-U(国内中性)",
-          "code": "328500535",
+          "code": "313203816",
           "description": "2MP，卷帘快门，5mm镜头，4颗红色LED，半偏镜头罩，机械调焦，U口型号",
           "remark": "不配线缆，需额外下单，U口型号须额外供电"
         },
@@ -3790,7 +3840,7 @@
           "category": "ID2000XM系列",
           "series": "ID2020RM系列U口",
           "name": "MV-ID2020RM-08M-RBN-U(国内标配)",
-          "code": "328500543",
+          "code": "313203813",
           "description": "2MP，卷帘快门，8mm镜头，4颗红色LED，半偏镜头罩，机械调焦，U口型号",
           "remark": "不配线缆，需额外下单，U口型号须额外供电"
         },
@@ -3800,7 +3850,7 @@
           "category": "ID2000XM系列",
           "series": "ID2020RM系列U口",
           "name": "MV-ID2020RM-08M-RBN-U(国内中性)",
-          "code": "328500534",
+          "code": "313203818",
           "description": "2MP，卷帘快门，8mm镜头，4颗红色LED，半偏镜头罩，机械调焦，U口型号",
           "remark": "不配线缆，需额外下单，U口型号须额外供电"
         },
@@ -3810,7 +3860,7 @@
           "category": "ID2000XM系列",
           "series": "ID2020RM系列U口",
           "name": "MV-ID2020RM-12M-RBN-U(国内标配)",
-          "code": "328500531",
+          "code": "313203820",
           "description": "2MP，卷帘快门，12mm镜头，4颗红色LED，半偏镜头罩，机械调焦，U口型号",
           "remark": "不配线缆，需额外下单，U口型号须额外供电"
         },
@@ -3820,7 +3870,7 @@
           "category": "ID2000XM系列",
           "series": "ID2020RM系列U口",
           "name": "MV-ID2020RM-12M-RBN-U(国内中性)",
-          "code": "328500529",
+          "code": "313203823",
           "description": "2MP，卷帘快门，12mm镜头，4颗红色LED，半偏镜头罩，机械调焦，U口型号",
           "remark": "不配线缆，需额外下单，U口型号须额外供电"
         },
@@ -3830,7 +3880,7 @@
           "category": "ID2000XM系列",
           "series": "ID2020RM系列U口",
           "name": "MV-ID2020RM-16M-RBN-U(国内标配)",
-          "code": "328500539",
+          "code": "313203814",
           "description": "2MP，卷帘快门，16mm镜头，4颗红色LED，半偏镜头罩，机械调焦，U口型号",
           "remark": "不配线缆，需额外下单，U口型号须额外供电"
         },
@@ -3840,7 +3890,7 @@
           "category": "ID2000XM系列",
           "series": "ID2020RM系列U口",
           "name": "MV-ID2020RM-16M-RBN-U(国内中性)",
-          "code": "328500533",
+          "code": "313203819",
           "description": "2MP，卷帘快门，16mm镜头，4颗红色LED，半偏镜头罩，机械调焦，U口型号",
           "remark": "不配线缆，需额外下单，U口型号须额外供电"
         },
@@ -3850,7 +3900,7 @@
           "category": "ID2000XM系列",
           "series": "ID2020RM系列U口",
           "name": "MV-ID2020RM-25M-RBN-U(国内标配)",
-          "code": "328500584",
+          "code": "313203807",
           "description": "2MP，卷帘快门，25mm镜头，4颗红色LED，半偏镜头罩，机械调焦，U口型号",
           "remark": "不配线缆，需额外下单，U口型号须额外供电"
         },
@@ -3860,7 +3910,7 @@
           "category": "ID2000XM系列",
           "series": "ID2020RM系列U口",
           "name": "MV-ID2020RM-25M-RBN-U(国内中性)",
-          "code": "328500586",
+          "code": "313203805",
           "description": "2MP，卷帘快门，25mm镜头，4颗红色LED，半偏镜头罩，机械调焦，U口型号",
           "remark": "不配线缆，需额外下单，U口型号须额外供电"
         },
@@ -4626,12 +4676,62 @@
         },
         {
           "kind": "accessory",
-          "type": "白色全透爆闪光源",
+          "type": "红色全透拓展光源",
           "category": "扩展配件",
-          "series": "白色全透爆闪光源",
+          "series": "红色全透拓展光源",
+          "name": "MV-IDA-BCL-A-RHN-TOF(全球通中性)",
+          "code": "310103294",
+          "description": "红色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上，仅适配ID2000XM/RM机械型号使用，不适配SE版本",
+          "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "红色偏振拓展光源",
+          "category": "扩展配件",
+          "series": "红色偏振拓展光源",
+          "name": "MV-IDA-BCL-A-RHP-TOF(全球通中性)",
+          "code": "310103295",
+          "description": "红色20颗补光灯，偏振镜头罩，亮度最大可达自带光源的2.5倍以上，仅适配ID2000XM/RM机械型号使用，不适配SE版本",
+          "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "白色全透拓展光源",
+          "category": "扩展配件",
+          "series": "白色全透拓展光源",
           "name": "MV-IDA-BCL-A-WHN-TOF(全球通中性)",
           "code": "310103168",
-          "description": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上",
+          "description": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上，仅适配ID2000XM/RM机械型号使用，不适配SE版本",
+          "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "白色偏振拓展光源",
+          "category": "扩展配件",
+          "series": "白色偏振拓展光源",
+          "name": "MV-IDA-BCL-A-WHP-TOF(全球通中性)",
+          "code": "310103293",
+          "description": "白色20颗补光灯，偏振镜头罩，亮度最大可达自带光源的2.5倍以上，仅适配ID2000XM/RM机械型号使用，不适配SE版本",
+          "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "蓝色全透拓展光源",
+          "category": "扩展配件",
+          "series": "蓝色全透拓展光源",
+          "name": "MV-IDA-BCL-A-BHN-TOF(全球通中性)",
+          "code": "310103339",
+          "description": "蓝色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上，仅适配ID2000XM/RM机械型号使用，不适配SE版本",
+          "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "蓝色偏振拓展光源",
+          "category": "扩展配件",
+          "series": "蓝色偏振拓展光源",
+          "name": "MV-IDA-BCL-A-BHP-TOF(全球通中性)",
+          "code": "310103338",
+          "description": "蓝色20颗补光灯，偏振镜头罩，亮度最大可达自带光源的2.5倍以上，仅适配ID2000XM/RM机械型号使用，不适配SE版本",
           "remark": ""
         },
         {
@@ -4693,12 +4793,42 @@
           "code": "193100773",
           "description": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "快速指南",
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "description": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "快速指南",
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "description": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "防尘袋",
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "description": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ]
     },
     {
       "name": "ID3000PM系列",
-      "count": 84,
+      "count": 87,
       "rows": [
         {
           "kind": "model",
@@ -5539,12 +5669,42 @@
           "code": "193100772",
           "description": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "快速指南",
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型工业读码器快速指南",
+          "code": "102048037",
+          "description": "【中文标配】紧凑型工业读码器快速指南V3.0.0，适配ID3000PM系列",
+          "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "快速指南",
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型工业读码器快速指南",
+          "code": "102048038",
+          "description": "【中文中性】紧凑型工业读码器快速指南V3.0.0，适配ID3000PM系列",
+          "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "防尘袋",
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "红色防静电袋",
+          "code": "194300309",
+          "description": "120x200mm ,机器人 AGV读码器粉红色防静电袋",
+          "remark": ""
         }
       ]
     },
     {
       "name": "ID3000XM系列",
-      "count": 131,
+      "count": 141,
       "rows": [
         {
           "kind": "model",
@@ -6061,7 +6221,7 @@
           "type": "主机",
           "category": "ID3000XM系列",
           "series": "ID3040RM系列",
-          "name": "MV-ID3040RM-00C-NNN(国内中性))",
+          "name": "MV-ID3040RM-00C-NNN(国内中性)",
           "code": "313203012",
           "description": "4MP，卷帘快门，无镜头，无自带光源",
           "remark": ""
@@ -6818,6 +6978,66 @@
         },
         {
           "kind": "accessory",
+          "type": "红色全透拓展光源",
+          "category": "扩展配件",
+          "series": "红色全透拓展光源",
+          "name": "MV-IDA-CCL-A-RHN-TOF(全球通中性)",
+          "code": "310103296",
+          "description": "红色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上，仅适配ID3000XM V3.0/RM机械型号使用",
+          "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "红色偏振拓展光源",
+          "category": "扩展配件",
+          "series": "红色偏振拓展光源",
+          "name": "MV-IDA-CCL-A-RHP-TOF(全球通中性)",
+          "code": "310103297",
+          "description": "红色20颗补光灯，偏振镜头罩，亮度最大可达自带光源的2.5倍以上，仅适配ID3000XM V3.0/RM机械型号使用",
+          "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "白色全透拓展光源",
+          "category": "扩展配件",
+          "series": "白色全透拓展光源",
+          "name": "MV-IDA-CCL-A-WHN-TOF(全球通中性)",
+          "code": "310103169",
+          "description": "白色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上，仅适配ID3000XM V3.0/RM机械型号使用",
+          "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "白色偏振拓展光源",
+          "category": "扩展配件",
+          "series": "白色偏振拓展光源",
+          "name": "MV-IDA-CCL-A-WHP-TOF(全球通中性)",
+          "code": "310103284",
+          "description": "白色20颗补光灯，偏振镜头罩，亮度最大可达自带光源的2.5倍以上，仅适配ID3000XM V3.0/RM机械型号使用",
+          "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "蓝色全透拓展光源",
+          "category": "扩展配件",
+          "series": "蓝色全透拓展光源",
+          "name": "MV-IDA-CCL-A-BHN-TOF(全球通中性)",
+          "code": "310103336",
+          "description": "蓝色20颗补光灯，全透镜头罩，亮度最大可达自带光源的2.5倍以上，仅适配ID3000XM V3.0/RM机械型号使用",
+          "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "蓝色偏振拓展光源",
+          "category": "扩展配件",
+          "series": "蓝色偏振拓展光源",
+          "name": "MV-IDA-CCL-A-BHP-TOF(全球通中性)",
+          "code": "310103337",
+          "description": "蓝色20颗补光灯，偏振镜头罩，亮度最大可达自带光源的2.5倍以上，仅适配ID3000XM V3.0/RM机械型号使用",
+          "remark": ""
+        },
+        {
+          "kind": "accessory",
           "type": "外包装",
           "category": "扩展配件",
           "series": "外包装",
@@ -6855,12 +7075,52 @@
           "code": "193100773",
           "description": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "快速指南",
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046892",
+          "description": "【中文标配】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "快速指南",
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046891",
+          "description": "【中文中性】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "防尘袋",
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "description": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "防尘袋",
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "description": "防尘袋-31(370X180)",
+          "remark": ""
         }
       ]
     },
     {
       "name": "ID5000M系列",
-      "count": 128,
+      "count": 131,
       "rows": [
         {
           "kind": "model",
@@ -8010,7 +8270,7 @@
           "name": "MV-LB-270-140-4030WL-A",
           "code": "310100510",
           "description": "24V,120W, 32LED颗粒,全角40*30°，主推，搭配ID6000系列智能读码器使用",
-          "remark": "删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
+          "remark": "ID5000搭配物流大灯需要调整相机钣金，删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
         },
         {
           "kind": "accessory",
@@ -8141,12 +8401,42 @@
           "code": "193100772",
           "description": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "快速指南",
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型工业读码器快速指南",
+          "code": "102048039",
+          "description": "【中文标配】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "快速指南",
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型工业读码器快速指南",
+          "code": "102048040",
+          "description": "【中文中性】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "防尘袋",
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "description": "防尘袋-31(370X180)",
+          "remark": ""
         }
       ]
     },
     {
       "name": "ID5000XM系列",
-      "count": 120,
+      "count": 125,
       "rows": [
         {
           "kind": "model",
@@ -8336,7 +8626,7 @@
           "name": "MV-ID5050XM-16M-BVS(国内标配)",
           "code": "313203301",
           "description": "条码验证器，5MP，16mm镜头，搭配专用光源(红色)，四象限分控照明，照明区分为30°、45°、同轴光",
-          "remark": ""
+          "remark": "推荐搭配条码验证器支架使用，在安装板配件中选择"
         },
         {
           "kind": "model",
@@ -8346,7 +8636,7 @@
           "name": "MV-ID5050XM-16M-BVS(国内中性)",
           "code": "313203302",
           "description": "条码验证器，5MP，16mm镜头，搭配专用光源(红色)，四象限分控照明，照明区分为30°、45°、同轴光",
-          "remark": ""
+          "remark": "推荐搭配条码验证器支架使用，在安装板配件中选择"
         },
         {
           "kind": "model",
@@ -8356,7 +8646,7 @@
           "name": "MV-ID5050XM-25M-BVS(国内标配)",
           "code": "313203303",
           "description": "条码验证器，5MP，25mm镜头，搭配专用光源(红色)，四象限分控照明，照明区分为30°、45°、同轴光",
-          "remark": ""
+          "remark": "推荐搭配条码验证器支架使用，在安装板配件中选择"
         },
         {
           "kind": "model",
@@ -8366,7 +8656,7 @@
           "name": "MV-ID5050XM-25M-BVS(国内中性)",
           "code": "313203304",
           "description": "条码验证器，5MP，25mm镜头，搭配专用光源(红色)，四象限分控照明，照明区分为30°、45°、同轴光",
-          "remark": ""
+          "remark": "推荐搭配条码验证器支架使用，在安装板配件中选择"
         },
         {
           "kind": "model",
@@ -8606,6 +8896,16 @@
           "name": "ID5000XM安装板",
           "code": "192119847",
           "description": "V-读码器023-安装支架，适配ID5000XM/RM",
+          "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "安装板",
+          "category": "安装板",
+          "series": "安装板",
+          "name": "条码验证器支架",
+          "code": "190437255",
+          "description": "V-读码器023-条码光源-调节支架组件，长450mm宽400mm高647mm",
           "remark": ""
         },
         {
@@ -9347,12 +9647,52 @@
           "code": "193100772",
           "description": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "快速指南",
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型Mini工业读码器快速指南",
+          "code": "102046860",
+          "description": "【中文标配】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "快速指南",
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型Mini工业读码器快速指南",
+          "code": "102046861",
+          "description": "【中文中性】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "防尘袋",
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300031",
+          "description": "D-68 220x220x0.04mm2.5寸球机透明PE防尘袋",
+          "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "防尘袋",
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300035",
+          "description": "D-71 340X450X0.06E系五寸球PE防尘袋，条码验证器专用",
+          "remark": ""
         }
       ]
     },
     {
       "name": "行业型号",
-      "count": 23,
+      "count": 29,
       "rows": [
         {
           "kind": "model",
@@ -9566,8 +9906,68 @@
         },
         {
           "kind": "accessory",
-          "type": "安装板",
+          "type": "外包装",
           "category": "扩展配件",
+          "series": "外包装",
+          "name": "包装盒-ID2000/ID3000",
+          "code": "194213827",
+          "description": "195x145x135 机器视觉 视觉传感器黄包，适配ID800/ID2013EM/ID2000XM/ID3000系列",
+          "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "泡棉EPE",
+          "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-ID800/ID2013EM",
+          "code": "194405409",
+          "description": "192x140x80 机器视觉 ID2000E相机 EPE，适配ID800/ID2013EM系列",
+          "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "泡棉EPE",
+          "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-B10",
+          "code": "194404199",
+          "description": "192x140x80 机器视觉 ID2000相机 EPE，适配MED-B10系列",
+          "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "螺丝包",
+          "category": "扩展配件",
+          "series": "螺丝包",
+          "name": "螺丝包M3×6",
+          "code": "193100773",
+          "description": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "快速指南",
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "description": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "快速指南",
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "description": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "安装板",
+          "category": "安装板",
           "series": "安装板",
           "name": "一体机支架",
           "code": "192131621",
@@ -9577,7 +9977,7 @@
         {
           "kind": "accessory",
           "type": "安装板",
-          "category": "扩展配件",
+          "category": "安装板",
           "series": "安装板",
           "name": "一体机支架",
           "code": "192137572",
@@ -9588,7 +9988,7 @@
     },
     {
       "name": "物流读码器",
-      "count": 101,
+      "count": 102,
       "rows": [
         {
           "kind": "model",
@@ -10365,6 +10765,16 @@
           "type": "镜头",
           "category": "镜头",
           "series": "FA镜头",
+          "name": "MVL-KF2056M-10MP (标配)",
+          "code": "102202996",
+          "description": "FA镜头，20mm，F5.6，1英寸，10MP，C接口",
+          "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "镜头",
+          "category": "镜头",
+          "series": "FA镜头",
           "name": "MVL-KF0818M-12MP(中性)",
           "code": "310101752",
           "description": "8mm焦距，12MP分辨率镜头，1‘’，F1.8，C接口",
@@ -10448,7 +10858,7 @@
           "name": "MV-LB-270-140-4030WL-A",
           "code": "310100510",
           "description": "24V,120W, 32LED颗粒,全角40*30°，主推，搭配ID6000系列智能读码器使用",
-          "remark": "删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
+          "remark": "ID5000搭配物流大灯需要调整相机钣金，删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
         },
         {
           "kind": "accessory",
@@ -12308,9 +12718,9 @@
         },
         {
           "kind": "accessory",
-          "type": "IDH7000B底座网口",
+          "type": "IDH7000B底座U口",
           "category": "扩展配件",
-          "series": "IDH7000B底座网口",
+          "series": "IDH7000B底座U口",
           "name": "MV-IDH7000B/SBASE/U/国内版无包装",
           "code": "313201360",
           "description": "IDH7000B无线巴枪底座，USB接口",
@@ -12328,9 +12738,9 @@
         },
         {
           "kind": "accessory",
-          "type": "IDH9000B底座网口",
+          "type": "IDH9000B底座U口",
           "category": "扩展配件",
-          "series": "IDH9000B底座网口",
+          "series": "IDH9000B底座U口",
           "name": "MV-IDH9000B/SBASE/U/国内标配无包装",
           "code": "313202515",
           "description": "IDH9000B无线巴枪底座，USB接口",
@@ -12338,9 +12748,9 @@
         },
         {
           "kind": "accessory",
-          "type": "IDH9000B底座网口",
+          "type": "IDH9000B底座U口",
           "category": "扩展配件",
-          "series": "IDH9000B底座网口",
+          "series": "IDH9000B底座U口",
           "name": "MV-IDH9000B/SBASE/U/国内中性无包装",
           "code": "313202743",
           "description": "IDH9000B无线巴枪底座，USB接口",
@@ -12400,7 +12810,7 @@
     },
     {
       "name": "IDP智能移动终端",
-      "count": 33,
+      "count": 38,
       "rows": [
         {
           "kind": "model",
@@ -12624,12 +13034,12 @@
         },
         {
           "kind": "accessory",
-          "type": "IDP4104长键盘手柄",
+          "type": "IDP4104普通手柄",
           "category": "扩展配件",
-          "series": "IDP4104长键盘手柄",
+          "series": "IDP4104普通手柄",
           "name": "DS-MH1721-501(国内中性)",
           "code": "307500835",
-          "description": "手柄，适配IDP4104系列",
+          "description": "普通手柄，适配IDP4104系列",
           "remark": ""
         },
         {
@@ -12654,13 +13064,33 @@
         },
         {
           "kind": "accessory",
-          "type": "IDP510X全面屏手柄",
+          "type": "IDP510X-RFID手柄",
           "category": "扩展配件",
-          "series": "IDP510X全面屏手柄",
+          "series": "IDP510X-RFID手柄",
           "name": "DS-MH1731(国内标配)",
           "code": "307500369",
-          "description": "手柄，适配IDP5102系列",
+          "description": "RFID手柄，适配IDP5102、IDP5104系列",
           "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "IDP5102保护套",
+          "category": "扩展配件",
+          "series": "IDP5102保护套",
+          "name": "tpu保护套-5寸扫码仪",
+          "code": "190230985",
+          "description": "保护套，适配IDP5102系列",
+          "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "IDP5104普通手柄",
+          "category": "扩展配件",
+          "series": "IDP5104普通手柄",
+          "name": "DS-MH1721-201(国内中性)",
+          "code": "307500505",
+          "description": "普通手柄，适配IDP5104系列",
+          "remark": "303201791带背部触点，支持该手柄\n303201723不支持"
         },
         {
           "kind": "accessory",
@@ -12680,6 +13110,16 @@
           "name": "DS-MH1426-201(国内标配)",
           "code": "303201715",
           "description": "支持6个PDA同时充电，适配IDP5104系列",
+          "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "IDP5104钢化膜",
+          "category": "扩展配件",
+          "series": "IDP5104钢化膜",
+          "name": "扫码1-钢化保护膜",
+          "code": "191001460",
+          "description": "钢化膜，适配IDP5104系列",
           "remark": ""
         },
         {
@@ -12714,12 +13154,32 @@
         },
         {
           "kind": "accessory",
-          "type": "IDP5114全面屏手柄",
+          "type": "IDP5114普通手柄",
           "category": "扩展配件",
-          "series": "IDP5114全面屏手柄",
+          "series": "IDP5114普通手柄",
           "name": "DS-MH1721-202(国内中性)",
           "code": "307500788",
-          "description": "手柄，适配IDP5114系列",
+          "description": "普通手柄，适配IDP5114系列",
+          "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "IDP5114钢化膜",
+          "category": "扩展配件",
+          "series": "IDP5114钢化膜",
+          "name": "MDT202-钢化膜",
+          "code": "191002207",
+          "description": "钢化膜，适配IDP5114系列",
+          "remark": ""
+        },
+        {
+          "kind": "accessory",
+          "type": "IDP5114腕带套膜装",
+          "category": "扩展配件",
+          "series": "IDP5114腕带套膜装",
+          "name": "DS-MH1720-202(国内中性)",
+          "code": "307500851",
+          "description": "DS-MDT202配套腕带,含腕带、螺钉、手绳柄，适配IDP5114系列",
           "remark": ""
         },
         {

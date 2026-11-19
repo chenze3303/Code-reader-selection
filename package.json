@@ -11,6 +11,7 @@
     "minify:css": "node scripts/minify-css.js",
     "data:convert": "node scripts/convert_product_data.js && node scripts/build-bom-catalog.js",
     "data:bom": "node scripts/build-bom-catalog.js",
+    "data:sync-id-bom": "node scripts/sync-id-bom.js",
     "data:id-series": "node scripts/build-id-series-data.js",
     "data:runtime": "node scripts/build-runtime-data.js",
     "test:data": "node scripts/test-bom-catalog.mjs && node scripts/test-runtime-data.mjs && node scripts/test-id-series-data.mjs"

@@ -8,8 +8,8 @@ const catalog = JSON.parse(fs.readFileSync(new URL('../public/data/runtime/id-se
 assert.equal(validateIdSeriesCatalog(catalog), catalog)
 assert.equal(catalog.schemaVersion, 1)
 assert.equal(catalog.totals.series, 13)
-assert.equal(catalog.totals.models, 688)
-assert.equal(catalog.totals.accessories, 395)
+assert.equal(catalog.totals.models, 686)
+assert.equal(catalog.totals.accessories, 434)
 assert.deepEqual(catalog.series.map((group) => group.name), [
   'ID800系列', 'ID2013EM系列', 'ID2000M系列', 'ID2000XM系列', 'ID3000PM系列',
   'ID3000XM系列', 'ID5000M系列', 'ID5000XM系列', '行业型号', '物流读码器',
@@ -17,7 +17,7 @@ assert.deepEqual(catalog.series.map((group) => group.name), [
 ])
 
 const id800 = catalog.series.find((group) => group.name === 'ID800系列')
-assert.equal(id800.count, 68)
+assert.equal(id800.count, 70)
 assert.equal(id800.rows.filter((row) => row.kind === 'model').length, 36)
 assert.equal(id800.rows[0].code, '313201715')
 assert.equal(id800.rows[0].kind, 'model')
@@ -25,7 +25,7 @@ assert.ok(id800.rows.some((row) => row.kind === 'accessory' && row.code === '310
 
 const allRows = catalog.series.flatMap((group) => group.rows)
 assert.ok(allRows.every((row) => row.name && row.code))
-assert.equal(allRows.filter((row) => row.kind === 'model').length, 688)
+assert.equal(allRows.filter((row) => row.kind === 'model').length, 686)
 assert.deepEqual(normalizeIdSeriesCatalog(catalog).series[0].rows[0], id800.rows[0])
 
 console.log('✓ ID series data tests passed')

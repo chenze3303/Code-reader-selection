@@ -1,5 +1,5 @@
 // peidan.js - 配单数据文件
-// 自动生成于 2026/10/20 19:08:17
+// 自动生成于 2026/11/19 10:58:10
 // 数据来源: product_data.json
 
 window.PEIDAN_DATA = {
@@ -10,7 +10,7 @@ window.PEIDAN_DATA = {
       "productModel": "MV-ID803M-03S-WBN-SR-U(国内标配)",
       "materialCode": "313201715",
       "description": "0.3MP，3.1m镜头，1颗暖白LED，标准距离120mm，USB型号",
-      "remark": "支持U口/串口线缆互换",
+      "remark": "支持U口/串口线缆互换，经销型号不配线缆",
       "standardAccessories": [
         {
           "category": "一体线",
@@ -42,6 +42,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】超小型智能读码器快速指南",
+          "code": "102048044",
+          "detail": "【中文标配】超小型智能读码器快速指南V2.0.0，适配ID800系列",
           "remark": ""
         }
       ],
@@ -70,7 +78,7 @@ window.PEIDAN_DATA = {
       "productModel": "MV-ID803M-03S-WBN-SR-U(国内中性)",
       "materialCode": "313201712",
       "description": "0.3MP，3.1m镜头，1颗暖白LED，标准距离120mm，USB型号",
-      "remark": "支持U口/串口线缆互换",
+      "remark": "支持U口/串口线缆互换，经销型号不配线缆",
       "standardAccessories": [
         {
           "category": "一体线",
@@ -102,6 +110,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】超小型智能读码器快速指南",
+          "code": "102048045",
+          "detail": "【中文中性】超小型智能读码器快速指南V2.0.0，适配ID800系列",
           "remark": ""
         }
       ],
@@ -130,7 +146,7 @@ window.PEIDAN_DATA = {
       "productModel": "MV-ID803M-03S-WBP-SR-U(国内标配)",
       "materialCode": "313202189",
       "description": "0.3MP，3.1m镜头，1颗暖白LED，标准距离120mm，偏振前罩，USB型号",
-      "remark": "支持U口/串口线缆互换",
+      "remark": "支持U口/串口线缆互换，经销型号不配线缆",
       "standardAccessories": [
         {
           "category": "一体线",
@@ -162,6 +178,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】超小型智能读码器快速指南",
+          "code": "102048044",
+          "detail": "【中文标配】超小型智能读码器快速指南V2.0.0，适配ID800系列",
           "remark": ""
         }
       ],
@@ -190,7 +214,7 @@ window.PEIDAN_DATA = {
       "productModel": "MV-ID803M-03S-WBP-SR-U(国内中性)",
       "materialCode": "313202191",
       "description": "0.3MP，3.1m镜头，1颗暖白LED，标准距离120mm，偏振前罩，USB型号",
-      "remark": "支持U口/串口线缆互换",
+      "remark": "支持U口/串口线缆互换，经销型号不配线缆",
       "standardAccessories": [
         {
           "category": "一体线",
@@ -223,6 +247,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】超小型智能读码器快速指南",
+          "code": "102048045",
+          "detail": "【中文中性】超小型智能读码器快速指南V2.0.0，适配ID800系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -250,7 +282,7 @@ window.PEIDAN_DATA = {
       "productModel": "MV-ID803M-03S-WBN-SR-R(国内标配)",
       "materialCode": "313201714",
       "description": "0.3MP，3.1m镜头，1颗暖白LED，标准距离120mm，串口型号",
-      "remark": "支持U口/串口线缆互换",
+      "remark": "支持U口/串口线缆互换，经销型号不配线缆",
       "standardAccessories": [
         {
           "category": "一体线",
@@ -282,6 +314,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】超小型智能读码器快速指南",
+          "code": "102048044",
+          "detail": "【中文标配】超小型智能读码器快速指南V2.0.0，适配ID800系列",
           "remark": ""
         }
       ],
@@ -358,7 +398,7 @@ window.PEIDAN_DATA = {
       "productModel": "MV-ID803M-03S-WBN-SR-R(国内中性)",
       "materialCode": "313201713",
       "description": "0.3MP，3.1m镜头，1颗暖白LED，标准距离120mm，串口型号",
-      "remark": "支持U口/串口线缆互换",
+      "remark": "支持U口/串口线缆互换，经销型号不配线缆",
       "standardAccessories": [
         {
           "category": "一体线",
@@ -390,6 +430,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】超小型智能读码器快速指南",
+          "code": "102048045",
+          "detail": "【中文中性】超小型智能读码器快速指南V2.0.0，适配ID800系列",
           "remark": ""
         }
       ],
@@ -466,7 +514,7 @@ window.PEIDAN_DATA = {
       "productModel": "MV-ID803M-03S-WBP-SR-R(国内标配)",
       "materialCode": "313202193",
       "description": "0.3MP，3.1m镜头，1颗暖白LED，标准距离120mm，偏振前罩，串口型号",
-      "remark": "支持U口/串口线缆互换",
+      "remark": "支持U口/串口线缆互换，经销型号不配线缆",
       "standardAccessories": [
         {
           "category": "一体线",
@@ -498,6 +546,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】超小型智能读码器快速指南",
+          "code": "102048044",
+          "detail": "【中文标配】超小型智能读码器快速指南V2.0.0，适配ID800系列",
           "remark": ""
         }
       ],
@@ -574,7 +630,7 @@ window.PEIDAN_DATA = {
       "productModel": "MV-ID803M-03S-WBP-SR-R(国内中性)",
       "materialCode": "313202192",
       "description": "0.3MP，3.1m镜头，1颗暖白LED，标准距离120mm，偏振前罩，串口型号",
-      "remark": "支持U口/串口线缆互换",
+      "remark": "支持U口/串口线缆互换，经销型号不配线缆",
       "standardAccessories": [
         {
           "category": "一体线",
@@ -606,6 +662,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】超小型智能读码器快速指南",
+          "code": "102048045",
+          "detail": "【中文中性】超小型智能读码器快速指南V2.0.0，适配ID800系列",
           "remark": ""
         }
       ],
@@ -706,6 +770,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】超小型智能读码器快速指南",
+          "code": "102048044",
+          "detail": "【中文标配】超小型智能读码器快速指南V2.0.0，适配ID800系列",
           "remark": ""
         }
       ],
@@ -943,6 +1015,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】超小型智能读码器快速指南",
+          "code": "102048045",
+          "detail": "【中文中性】超小型智能读码器快速指南V2.0.0，适配ID800系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -1178,6 +1258,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】超小型智能读码器快速指南",
+          "code": "102048044",
+          "detail": "【中文标配】超小型智能读码器快速指南V2.0.0，适配ID800系列",
           "remark": ""
         }
       ],
@@ -1415,6 +1503,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】超小型智能读码器快速指南",
+          "code": "102048045",
+          "detail": "【中文中性】超小型智能读码器快速指南V2.0.0，适配ID800系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -1626,7 +1722,7 @@ window.PEIDAN_DATA = {
       "productModel": "MV-ID813M-05S-WBN-SR-U(国内标配)",
       "materialCode": "313201493",
       "description": "1.3MP，4.9m镜头，1颗暖白LED，标准距离120mm，USB型号",
-      "remark": "支持U口/串口线缆互换",
+      "remark": "支持U口/串口线缆互换，经销型号不配线缆",
       "standardAccessories": [
         {
           "category": "一体线",
@@ -1658,6 +1754,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】超小型智能读码器快速指南",
+          "code": "102048044",
+          "detail": "【中文标配】超小型智能读码器快速指南V2.0.0，适配ID800系列",
           "remark": ""
         }
       ],
@@ -1686,7 +1790,7 @@ window.PEIDAN_DATA = {
       "productModel": "MV-ID813M-05S-WBN-SR-U(国内中性)",
       "materialCode": "313201518",
       "description": "1.3MP，4.9m镜头，1颗暖白LED，标准距离120mm，USB型号",
-      "remark": "支持U口/串口线缆互换",
+      "remark": "支持U口/串口线缆互换，经销型号不配线缆",
       "standardAccessories": [
         {
           "category": "一体线",
@@ -1718,6 +1822,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】超小型智能读码器快速指南",
+          "code": "102048045",
+          "detail": "【中文中性】超小型智能读码器快速指南V2.0.0，适配ID800系列",
           "remark": ""
         }
       ],
@@ -1746,7 +1858,7 @@ window.PEIDAN_DATA = {
       "productModel": "MV-ID813M-05S-WBP-SR-U(国内标配)",
       "materialCode": "313202198",
       "description": "1.3MP，4.9m镜头，1颗暖白LED，标准距离120mm，偏振前罩，USB型号",
-      "remark": "支持U口/串口线缆互换",
+      "remark": "支持U口/串口线缆互换，经销型号不配线缆",
       "standardAccessories": [
         {
           "category": "一体线",
@@ -1778,6 +1890,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】超小型智能读码器快速指南",
+          "code": "102048044",
+          "detail": "【中文标配】超小型智能读码器快速指南V2.0.0，适配ID800系列",
           "remark": ""
         }
       ],
@@ -1806,7 +1926,7 @@ window.PEIDAN_DATA = {
       "productModel": "MV-ID813M-05S-WBP-SR-U(国内中性)",
       "materialCode": "313202200",
       "description": "1.3MP，4.9m镜头，1颗暖白LED，标准距离120mm，偏振前罩，USB型号",
-      "remark": "支持U口/串口线缆互换",
+      "remark": "支持U口/串口线缆互换，经销型号不配线缆",
       "standardAccessories": [
         {
           "category": "一体线",
@@ -1838,6 +1958,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】超小型智能读码器快速指南",
+          "code": "102048045",
+          "detail": "【中文中性】超小型智能读码器快速指南V2.0.0，适配ID800系列",
           "remark": ""
         }
       ],
@@ -1866,7 +1994,7 @@ window.PEIDAN_DATA = {
       "productModel": "MV-ID813M-05S-WBN-NR-U(国内标配)",
       "materialCode": "313201494",
       "description": "1.3MP，4.9m镜头，1颗暖白LED，近焦距离70mm，USB型号",
-      "remark": "支持U口/串口线缆互换",
+      "remark": "支持U口/串口线缆互换，经销型号不配线缆",
       "standardAccessories": [
         {
           "category": "一体线",
@@ -1898,6 +2026,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】超小型智能读码器快速指南",
+          "code": "102048044",
+          "detail": "【中文标配】超小型智能读码器快速指南V2.0.0，适配ID800系列",
           "remark": ""
         }
       ],
@@ -1926,7 +2062,7 @@ window.PEIDAN_DATA = {
       "productModel": "MV-ID813M-05S-WBN-NR-U(国内中性)",
       "materialCode": "313201519",
       "description": "1.3MP，4.9m镜头，1颗暖白LED，近焦距离70mm，USB型号",
-      "remark": "支持U口/串口线缆互换",
+      "remark": "支持U口/串口线缆互换，经销型号不配线缆",
       "standardAccessories": [
         {
           "category": "一体线",
@@ -1958,6 +2094,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】超小型智能读码器快速指南",
+          "code": "102048045",
+          "detail": "【中文中性】超小型智能读码器快速指南V2.0.0，适配ID800系列",
           "remark": ""
         }
       ],
@@ -1986,7 +2130,7 @@ window.PEIDAN_DATA = {
       "productModel": "MV-ID813M-05S-WBP-NR-U(国内标配)",
       "materialCode": "313202197",
       "description": "1.3MP，4.9m镜头，1颗暖白LED，近焦距离70mm，偏振前罩，USB型号",
-      "remark": "支持U口/串口线缆互换",
+      "remark": "支持U口/串口线缆互换，经销型号不配线缆",
       "standardAccessories": [
         {
           "category": "一体线",
@@ -2018,6 +2162,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】超小型智能读码器快速指南",
+          "code": "102048044",
+          "detail": "【中文标配】超小型智能读码器快速指南V2.0.0，适配ID800系列",
           "remark": ""
         }
       ],
@@ -2046,7 +2198,7 @@ window.PEIDAN_DATA = {
       "productModel": "MV-ID813M-05S-WBP-NR-U(国内中性)",
       "materialCode": "313202196",
       "description": "1.3MP，4.9m镜头，1颗暖白LED，近焦距离70mm，偏振前罩，USB型号",
-      "remark": "支持U口/串口线缆互换",
+      "remark": "支持U口/串口线缆互换，经销型号不配线缆",
       "standardAccessories": [
         {
           "category": "一体线",
@@ -2079,6 +2231,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】超小型智能读码器快速指南",
+          "code": "102048045",
+          "detail": "【中文中性】超小型智能读码器快速指南V2.0.0，适配ID800系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -2106,7 +2266,7 @@ window.PEIDAN_DATA = {
       "productModel": "MV-ID813M-05S-WBN-SR-R(国内标配)",
       "materialCode": "313201495",
       "description": "1.3MP，4.9m镜头，1颗暖白LED，标准距离120mm，串口型号",
-      "remark": "支持U口/串口线缆互换",
+      "remark": "支持U口/串口线缆互换，经销型号不配线缆",
       "standardAccessories": [
         {
           "category": "一体线",
@@ -2138,6 +2298,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】超小型智能读码器快速指南",
+          "code": "102048044",
+          "detail": "【中文标配】超小型智能读码器快速指南V2.0.0，适配ID800系列",
           "remark": ""
         }
       ],
@@ -2214,7 +2382,7 @@ window.PEIDAN_DATA = {
       "productModel": "MV-ID813M-05S-WBN-SR-R(国内中性)",
       "materialCode": "313201520",
       "description": "1.3MP，4.9m镜头，1颗暖白LED，标准距离120mm，串口型号",
-      "remark": "支持U口/串口线缆互换",
+      "remark": "支持U口/串口线缆互换，经销型号不配线缆",
       "standardAccessories": [
         {
           "category": "一体线",
@@ -2246,6 +2414,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】超小型智能读码器快速指南",
+          "code": "102048045",
+          "detail": "【中文中性】超小型智能读码器快速指南V2.0.0，适配ID800系列",
           "remark": ""
         }
       ],
@@ -2322,7 +2498,7 @@ window.PEIDAN_DATA = {
       "productModel": "MV-ID813M-05S-WBP-SR-R(国内标配)",
       "materialCode": "313202204",
       "description": "1.3MP，4.9m镜头，1颗暖白LED，标准距离120mm，偏振前罩，串口型号",
-      "remark": "支持U口/串口线缆互换",
+      "remark": "支持U口/串口线缆互换，经销型号不配线缆",
       "standardAccessories": [
         {
           "category": "一体线",
@@ -2354,6 +2530,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】超小型智能读码器快速指南",
+          "code": "102048044",
+          "detail": "【中文标配】超小型智能读码器快速指南V2.0.0，适配ID800系列",
           "remark": ""
         }
       ],
@@ -2430,7 +2614,7 @@ window.PEIDAN_DATA = {
       "productModel": "MV-ID813M-05S-WBP-SR-R(国内中性)",
       "materialCode": "313202205",
       "description": "1.3MP，4.9m镜头，1颗暖白LED，标准距离120mm，偏振前罩，串口型号",
-      "remark": "支持U口/串口线缆互换",
+      "remark": "支持U口/串口线缆互换，经销型号不配线缆",
       "standardAccessories": [
         {
           "category": "一体线",
@@ -2462,6 +2646,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】超小型智能读码器快速指南",
+          "code": "102048045",
+          "detail": "【中文中性】超小型智能读码器快速指南V2.0.0，适配ID800系列",
           "remark": ""
         }
       ],
@@ -2538,7 +2730,7 @@ window.PEIDAN_DATA = {
       "productModel": "MV-ID813M-05S-WBN-NR-R(国内标配)",
       "materialCode": "313201496",
       "description": "1.3MP，4.9m镜头，1颗暖白LED，近焦距离70mm，串口型号",
-      "remark": "支持U口/串口线缆互换",
+      "remark": "支持U口/串口线缆互换，经销型号不配线缆",
       "standardAccessories": [
         {
           "category": "一体线",
@@ -2570,6 +2762,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】超小型智能读码器快速指南",
+          "code": "102048044",
+          "detail": "【中文标配】超小型智能读码器快速指南V2.0.0，适配ID800系列",
           "remark": ""
         }
       ],
@@ -2646,7 +2846,7 @@ window.PEIDAN_DATA = {
       "productModel": "MV-ID813M-05S-WBN-NR-R(国内中性)",
       "materialCode": "313201521",
       "description": "1.3MP，4.9m镜头，1颗暖白LED，近焦距离70mm，串口型号",
-      "remark": "支持U口/串口线缆互换",
+      "remark": "支持U口/串口线缆互换，经销型号不配线缆",
       "standardAccessories": [
         {
           "category": "一体线",
@@ -2678,6 +2878,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】超小型智能读码器快速指南",
+          "code": "102048045",
+          "detail": "【中文中性】超小型智能读码器快速指南V2.0.0，适配ID800系列",
           "remark": ""
         }
       ],
@@ -2754,7 +2962,7 @@ window.PEIDAN_DATA = {
       "productModel": "MV-ID813M-05S-WBP-NR-R(国内标配)",
       "materialCode": "313202203",
       "description": "1.3MP，4.9m镜头，1颗暖白LED，近焦距离70mm，偏振前罩，串口型号",
-      "remark": "支持U口/串口线缆互换",
+      "remark": "支持U口/串口线缆互换，经销型号不配线缆",
       "standardAccessories": [
         {
           "category": "一体线",
@@ -2786,6 +2994,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】超小型智能读码器快速指南",
+          "code": "102048044",
+          "detail": "【中文标配】超小型智能读码器快速指南V2.0.0，适配ID800系列",
           "remark": ""
         }
       ],
@@ -2862,7 +3078,7 @@ window.PEIDAN_DATA = {
       "productModel": "MV-ID813M-05S-WBP-NR-R(国内中性)",
       "materialCode": "313202201",
       "description": "1.3MP，4.9m镜头，1颗暖白LED，近焦距离70mm，偏振前罩，串口型号",
-      "remark": "支持U口/串口线缆互换",
+      "remark": "支持U口/串口线缆互换，经销型号不配线缆",
       "standardAccessories": [
         {
           "category": "一体线",
@@ -2894,6 +3110,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】超小型智能读码器快速指南",
+          "code": "102048045",
+          "detail": "【中文中性】超小型智能读码器快速指南V2.0.0，适配ID800系列",
           "remark": ""
         }
       ],
@@ -2994,6 +3218,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】超小型智能读码器快速指南",
+          "code": "102048044",
+          "detail": "【中文标配】超小型智能读码器快速指南V2.0.0，适配ID800系列",
           "remark": ""
         }
       ],
@@ -3231,6 +3463,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】超小型智能读码器快速指南",
+          "code": "102048045",
+          "detail": "【中文中性】超小型智能读码器快速指南V2.0.0，适配ID800系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -3466,6 +3706,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】超小型智能读码器快速指南",
+          "code": "102048044",
+          "detail": "【中文标配】超小型智能读码器快速指南V2.0.0，适配ID800系列",
           "remark": ""
         }
       ],
@@ -3703,6 +3951,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】超小型智能读码器快速指南",
+          "code": "102048045",
+          "detail": "【中文中性】超小型智能读码器快速指南V2.0.0，适配ID800系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -3938,6 +4194,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】超小型智能读码器快速指南",
+          "code": "102048044",
+          "detail": "【中文标配】超小型智能读码器快速指南V2.0.0，适配ID800系列",
           "remark": ""
         }
       ],
@@ -4175,6 +4439,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】超小型智能读码器快速指南",
+          "code": "102048045",
+          "detail": "【中文中性】超小型智能读码器快速指南V2.0.0，适配ID800系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -4411,6 +4683,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】超小型智能读码器快速指南",
+          "code": "102048044",
+          "detail": "【中文标配】超小型智能读码器快速指南V2.0.0，适配ID800系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -4646,6 +4926,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】超小型智能读码器快速指南",
+          "code": "102048045",
+          "detail": "【中文中性】超小型智能读码器快速指南V2.0.0，适配ID800系列",
           "remark": ""
         }
       ],
@@ -4891,6 +5179,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -5014,6 +5310,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -5139,6 +5443,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -5262,6 +5574,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -5387,6 +5707,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -5510,6 +5838,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -5635,6 +5971,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -5758,6 +6102,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -5883,6 +6235,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -6006,6 +6366,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -6131,6 +6499,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -6254,6 +6630,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -6379,6 +6763,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -6502,6 +6894,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -6627,6 +7027,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -6750,6 +7158,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -6875,6 +7291,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -6998,6 +7422,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -7123,6 +7555,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -7246,6 +7686,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -7371,6 +7819,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -7494,6 +7950,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -7619,6 +8083,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -7743,6 +8215,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -7866,6 +8346,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -8023,6 +8511,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -8178,6 +8674,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -8335,6 +8839,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -8490,6 +9002,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -8647,6 +9167,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -8802,6 +9330,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -8959,6 +9495,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -9114,6 +9658,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -9271,6 +9823,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -9426,6 +9986,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -9583,6 +10151,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -9738,6 +10314,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -9895,6 +10479,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -10050,6 +10642,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -10207,6 +10807,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -10362,6 +10970,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -10519,6 +11135,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -10674,6 +11298,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -10831,6 +11463,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -10986,6 +11626,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -11143,6 +11791,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -11298,6 +11954,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -11455,6 +12119,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -11610,6 +12282,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -11767,6 +12447,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -11922,6 +12610,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -12079,6 +12775,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -12234,6 +12938,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -12391,6 +13103,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -12546,6 +13266,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -12703,6 +13431,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -12859,6 +13595,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -12974,6 +13718,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -13091,6 +13843,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -13206,6 +13966,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -13323,6 +14091,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -13438,6 +14214,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -13555,6 +14339,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -13670,6 +14462,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -13787,6 +14587,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -13902,6 +14710,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -14019,6 +14835,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -14134,6 +14958,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -14251,6 +15083,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -14366,6 +15206,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -14483,6 +15331,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -14598,6 +15454,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -14715,6 +15579,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -14830,6 +15702,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -14947,6 +15827,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -15062,6 +15950,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -15179,6 +16075,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -15294,6 +16198,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -15411,6 +16323,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -15527,6 +16447,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -15642,6 +16570,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -15807,6 +16743,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -15970,6 +16914,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -16135,6 +17087,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -16298,6 +17258,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -16463,6 +17431,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -16626,6 +17602,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -16791,6 +17775,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -16954,6 +17946,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -17119,6 +18119,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -17282,6 +18290,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -17447,6 +18463,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -17610,6 +18634,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -17775,6 +18807,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -17938,6 +18978,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -18103,6 +19151,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -18266,6 +19322,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -18431,6 +19495,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -18594,6 +19666,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -18759,6 +19839,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -18922,6 +20010,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -19087,6 +20183,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -19250,6 +20354,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -19415,6 +20527,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -19578,6 +20698,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -19743,6 +20871,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -19906,6 +21042,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -20071,6 +21215,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -20234,6 +21386,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -20399,6 +21559,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -20563,6 +21731,14 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -20726,6 +21902,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -20899,6 +22083,14 @@ window.PEIDAN_DATA = {
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -21022,6 +22214,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M2×6",
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -21147,6 +22347,14 @@ window.PEIDAN_DATA = {
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -21270,6 +22478,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M2×6",
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -21395,6 +22611,14 @@ window.PEIDAN_DATA = {
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -21518,6 +22742,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M2×6",
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -21650,6 +22882,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M2×6",
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -21895,6 +23135,14 @@ window.PEIDAN_DATA = {
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -22138,6 +23386,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M2×6",
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -22383,6 +23639,14 @@ window.PEIDAN_DATA = {
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -22626,6 +23890,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M2×6",
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -22871,6 +24143,14 @@ window.PEIDAN_DATA = {
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -23066,7 +24346,7 @@ window.PEIDAN_DATA = {
       "productModel": "MV-ID2004M-16T-RBN(国内标配)V4.0",
       "materialCode": "313202603",
       "description": "0.4MP，16mm镜头，4颗红色LED，工作距离100~400mm，固态调焦",
-      "remark": "ID2004M调焦款出货配置偏振镜头罩，订单中备注：删除：202402450，添加：202402298；增加偏振检测",
+      "remark": "可配置全偏镜头罩下单",
       "standardAccessories": [
         {
           "category": "安装板",
@@ -23114,6 +24394,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M2×6",
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -23293,6 +24581,14 @@ window.PEIDAN_DATA = {
           "code": "310101872",
           "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
           "remark": "删除：310101292，添加：310101872"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000M全偏镜头罩",
+          "name": "ID2000上盖点胶组件-变焦/偏振片",
+          "code": "202402298",
+          "detail": "ID2000M全偏镜头罩，仅适配ID2000M-xxT-RBN型号配置下单，其他型号只能单独下单自行更换",
+          "remark": "删除：202402450，添加：202402298；增加偏振检测"
         },
         {
           "category": "扩展配件",
@@ -23310,7 +24606,7 @@ window.PEIDAN_DATA = {
       "productModel": "MV-ID2004M-16T-RBN(国内中性)V4.0",
       "materialCode": "313202604",
       "description": "0.4MP，16mm镜头，4颗红色LED，工作距离100~400mm，固态调焦",
-      "remark": "ID2004M调焦款出货配置偏振镜头罩，订单中备注：删除：202402450，添加：202402298；增加偏振检测",
+      "remark": "可配置全偏镜头罩下单",
       "standardAccessories": [
         {
           "category": "安装板",
@@ -23358,6 +24654,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M2×6",
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -23537,6 +24841,14 @@ window.PEIDAN_DATA = {
           "code": "310101872",
           "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
           "remark": "删除：310101292，添加：310101872"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000M全偏镜头罩",
+          "name": "ID2000上盖点胶组件-变焦/偏振片",
+          "code": "202402298",
+          "detail": "ID2000M全偏镜头罩，仅适配ID2000M-xxT-RBN型号配置下单，其他型号只能单独下单自行更换",
+          "remark": "删除：202402450，添加：202402298；增加偏振检测"
         },
         {
           "category": "扩展配件",
@@ -23602,6 +24914,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M2×6",
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -23847,6 +25167,14 @@ window.PEIDAN_DATA = {
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -24090,6 +25418,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M2×6",
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -24335,6 +25671,14 @@ window.PEIDAN_DATA = {
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -24578,6 +25922,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M2×6",
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -24823,6 +26175,14 @@ window.PEIDAN_DATA = {
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -25067,6 +26427,14 @@ window.PEIDAN_DATA = {
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -25310,6 +26678,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M2×6",
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -25555,6 +26931,14 @@ window.PEIDAN_DATA = {
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -25799,493 +27183,13 @@ window.PEIDAN_DATA = {
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
           "remark": ""
-        }
-      ],
-      "optionalAccessories": [
-        {
-          "category": "电源",
-          "series": "电源适配器",
-          "name": "KPL-060M-VI(全球通中性)",
-          "code": "310100901",
-          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线",
-          "remark": "桌面式适配器，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "电源适配器线缆",
-          "name": "交流电源线_国标_弯三插_C13_1.2米",
-          "code": "310100840",
-          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)",
-          "remark": "搭配适配器应用"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源1",
-          "name": "LRS-50-24(全球通中性)",
-          "code": "310100905",
-          "detail": "开关电源,24V2.09A,50W,接线端子",
-          "remark": "开关电源1，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源2",
-          "name": "LRS-150F-24(全球通中性)",
-          "code": "310100904",
-          "detail": "开关电源,24V6.25A,150W,接线端子",
-          "remark": "开关电源2，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源线缆",
-          "name": "交流电源线_国标_弯三插_open_2米",
-          "code": "310100843",
-          "detail": "交流电源线_国标_弯三插_open_2米(中性)",
-          "remark": "搭配开关电源应用"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
-          "code": "310101293",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101293"
-        },
-        {
-          "category": "一体线",
-          "series": "7m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
-          "code": "310101873",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
-          "code": "310101294",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
-          "code": "310101310",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
-          "code": "310101296",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310101296"
-        },
-        {
-          "category": "一体线",
-          "series": "5m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
-          "code": "310102637",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310102637"
-        },
-        {
-          "category": "一体线",
-          "series": "5m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
-          "code": "310101876",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "删除：310101292，添加：310101876"
-        },
-        {
-          "category": "一体线",
-          "series": "7m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
-          "code": "310103217",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "7m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
-          "code": "310101874",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
-          "code": "310101875",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
-          "code": "310101307",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
-          "code": "310101869",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101869"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通弯头网口母头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45FDB9-ST-5m",
-          "code": "310101877",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101877"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
-          "code": "310101878",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
-          "code": "310101870",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310101870"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
-          "code": "310101871",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101871"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
-          "code": "310101872",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310101872"
         },
         {
           "category": "扩展配件",
-          "series": "隔离支架",
-          "name": "ID2000M隔离支架",
-          "code": "190234947",
-          "detail": "V-读码器035-隔离支架适配ID2000系列基线型号使用，配合安装支架使用，相机孔位M2",
-          "remark": ""
-        }
-      ]
-    },
-    {
-      "productCategory": "ID2000M系列",
-      "productSeries": "ID2013M基础款网口",
-      "productModel": "MV-ID2013M-06S-WBP(国内标配)V4.0",
-      "materialCode": "313202623",
-      "description": "1.3MP，6.7mm镜头，4颗白色LED，工作距离40~120mm，偏振前罩，基础款网口",
-      "remark": "",
-      "standardAccessories": [
-        {
-          "category": "安装板",
-          "series": "安装板",
-          "name": "L型安装板M2孔",
-          "code": "190171821",
-          "detail": "V035-安装支架，适配ID2000M除长焦型号外所有型号，L型，相机孔位M2",
-          "remark": ""
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
-          "code": "310101292",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "IO盒子",
-          "name": "MV-IDA-IO-33(国内中性)V2.0",
-          "code": "310102404",
-          "detail": "适配ID2000M系列网口型号使用，内嵌光耦隔离IO，8路IO",
-          "remark": "单独包装物料：310102379"
-        },
-        {
-          "category": "扩展配件",
-          "series": "外包装",
-          "name": "包装盒-ID2000M",
-          "code": "194223207",
-          "detail": "200X195X135,机器视觉 两进两出IO盒子+相机 中性黄包，适配ID2000M系列",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "泡棉EPE",
-          "name": "泡棉EPE-ID2000M",
-          "code": "194407684",
-          "detail": "197X192X130,机器视觉ID2000相机IO盒子EPE，适配ID2000M系列",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "螺丝包",
-          "name": "螺丝包M2×6",
-          "code": "193102445",
-          "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
-          "remark": ""
-        }
-      ],
-      "optionalAccessories": [
-        {
-          "category": "电源",
-          "series": "电源适配器",
-          "name": "KPL-060M-VI(全球通中性)",
-          "code": "310100901",
-          "detail": "桌面式适配器,24V2.5A,60W,1.2m,open两线",
-          "remark": "桌面式适配器，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "电源适配器线缆",
-          "name": "交流电源线_国标_弯三插_C13_1.2米",
-          "code": "310100840",
-          "detail": "交流电源线_国标_弯三插_C13_1.2米(中性)",
-          "remark": "搭配适配器应用"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源1",
-          "name": "LRS-50-24(全球通中性)",
-          "code": "310100905",
-          "detail": "开关电源,24V2.09A,50W,接线端子",
-          "remark": "开关电源1，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源2",
-          "name": "LRS-150F-24(全球通中性)",
-          "code": "310100904",
-          "detail": "开关电源,24V6.25A,150W,接线端子",
-          "remark": "开关电源2，需要额外选配AC电源线"
-        },
-        {
-          "category": "电源",
-          "series": "开关电源线缆",
-          "name": "交流电源线_国标_弯三插_open_2米",
-          "code": "310100843",
-          "detail": "交流电源线_国标_弯三插_open_2米(中性)",
-          "remark": "搭配开关电源应用"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
-          "code": "310101293",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101293"
-        },
-        {
-          "category": "一体线",
-          "series": "7m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
-          "code": "310101873",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
-          "code": "310101294",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
-          "code": "310101310",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
-          "code": "310101296",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310101296"
-        },
-        {
-          "category": "一体线",
-          "series": "5m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
-          "code": "310102637",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310102637"
-        },
-        {
-          "category": "一体线",
-          "series": "5m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
-          "code": "310101876",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "删除：310101292，添加：310101876"
-        },
-        {
-          "category": "一体线",
-          "series": "7m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
-          "code": "310103217",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "7m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
-          "code": "310101874",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
-          "code": "310101875",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
-          "code": "310101307",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
-          "code": "310101869",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101869"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通弯头网口母头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45FDB9-ST-5m",
-          "code": "310101877",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101877"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
-          "code": "310101878",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
-          "code": "310101870",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310101870"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
-          "code": "310101871",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101871"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
-          "code": "310101872",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310101872"
-        },
-        {
-          "category": "扩展配件",
-          "series": "隔离支架",
-          "name": "ID2000M隔离支架",
-          "code": "190234947",
-          "detail": "V-读码器035-隔离支架适配ID2000系列基线型号使用，配合安装支架使用，相机孔位M2",
-          "remark": ""
-        }
-      ]
-    },
-    {
-      "productCategory": "ID2000M系列",
-      "productSeries": "ID2013M基础款网口",
-      "productModel": "MV-ID2013M-06S-WBP(国内中性)V4.0",
-      "materialCode": "313202627",
-      "description": "1.3MP，6.7mm镜头，4颗白色LED，工作距离40~120mm，偏振前罩，基础款网口",
-      "remark": "",
-      "standardAccessories": [
-        {
-          "category": "安装板",
-          "series": "安装板",
-          "name": "L型安装板M2孔",
-          "code": "190171821",
-          "detail": "V035-安装支架，适配ID2000M除长焦型号外所有型号，L型，相机孔位M2",
-          "remark": ""
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
-          "code": "310101292",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "IO盒子",
-          "name": "MV-IDA-IO-33(国内中性)V2.0",
-          "code": "310102404",
-          "detail": "适配ID2000M系列网口型号使用，内嵌光耦隔离IO，8路IO",
-          "remark": "单独包装物料：310102379"
-        },
-        {
-          "category": "扩展配件",
-          "series": "外包装",
-          "name": "包装盒-ID2000M",
-          "code": "194223207",
-          "detail": "200X195X135,机器视觉 两进两出IO盒子+相机 中性黄包，适配ID2000M系列",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "泡棉EPE",
-          "name": "泡棉EPE-ID2000M",
-          "code": "194407684",
-          "detail": "197X192X130,机器视觉ID2000相机IO盒子EPE，适配ID2000M系列",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "螺丝包",
-          "name": "螺丝包M2×6",
-          "code": "193102445",
-          "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -26531,6 +27435,14 @@ window.PEIDAN_DATA = {
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -26775,6 +27687,14 @@ window.PEIDAN_DATA = {
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -27015,9 +27935,17 @@ window.PEIDAN_DATA = {
         {
           "category": "扩展配件",
           "series": "螺丝包",
-          "name": "螺丝包M3×6",
-          "code": "193100773",
-          "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "name": "螺丝包M2×6",
+          "code": "193102445",
+          "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -27259,9 +28187,17 @@ window.PEIDAN_DATA = {
         {
           "category": "扩展配件",
           "series": "螺丝包",
-          "name": "螺丝包M3×6",
-          "code": "193100773",
-          "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "name": "螺丝包M2×6",
+          "code": "193102445",
+          "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -27503,9 +28439,17 @@ window.PEIDAN_DATA = {
         {
           "category": "扩展配件",
           "series": "螺丝包",
-          "name": "螺丝包M3×6",
-          "code": "193100773",
-          "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "name": "螺丝包M2×6",
+          "code": "193102445",
+          "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -27747,9 +28691,17 @@ window.PEIDAN_DATA = {
         {
           "category": "扩展配件",
           "series": "螺丝包",
-          "name": "螺丝包M3×6",
-          "code": "193100773",
-          "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "name": "螺丝包M2×6",
+          "code": "193102445",
+          "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -27991,9 +28943,17 @@ window.PEIDAN_DATA = {
         {
           "category": "扩展配件",
           "series": "螺丝包",
-          "name": "螺丝包M3×6",
-          "code": "193100773",
-          "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "name": "螺丝包M2×6",
+          "code": "193102445",
+          "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -28235,9 +29195,17 @@ window.PEIDAN_DATA = {
         {
           "category": "扩展配件",
           "series": "螺丝包",
-          "name": "螺丝包M3×6",
-          "code": "193100773",
-          "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "name": "螺丝包M2×6",
+          "code": "193102445",
+          "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -28475,6 +29443,14 @@ window.PEIDAN_DATA = {
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -28598,6 +29574,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M2×6",
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -28723,6 +29707,14 @@ window.PEIDAN_DATA = {
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -28846,6 +29838,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M2×6",
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -28971,6 +29971,14 @@ window.PEIDAN_DATA = {
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -29094,6 +30102,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M2×6",
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -29226,6 +30242,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M2×6",
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -29471,6 +30495,14 @@ window.PEIDAN_DATA = {
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -29714,6 +30746,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M2×6",
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -29959,6 +30999,14 @@ window.PEIDAN_DATA = {
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -30202,6 +31250,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M2×6",
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -30447,6 +31503,14 @@ window.PEIDAN_DATA = {
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -30690,6 +31754,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M2×6",
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -30935,6 +32007,14 @@ window.PEIDAN_DATA = {
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -31178,6 +32258,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M2×6",
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -31423,6 +32511,14 @@ window.PEIDAN_DATA = {
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -31618,7 +32714,7 @@ window.PEIDAN_DATA = {
       "productModel": "MV-ID2016M-06T-RBP(国内标配)V4.0",
       "materialCode": "313202609",
       "description": "1.6MP，6.7mm镜头，4颗红色LED，工作距离70~160mm，偏振前罩，固态调焦",
-      "remark": "ID2016M调焦款出货配置全透镜头罩，订单中备注：删除：202402298，添加：202402450",
+      "remark": "可配置全透镜头罩下单",
       "standardAccessories": [
         {
           "category": "安装板",
@@ -31666,6 +32762,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M2×6",
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -31845,6 +32949,14 @@ window.PEIDAN_DATA = {
           "code": "310101872",
           "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
           "remark": "删除：310101292，添加：310101872"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000M全透镜头罩",
+          "name": "ID2000上盖点胶组件-变焦",
+          "code": "202402450",
+          "detail": "ID2000M全透镜头罩，仅适配ID2000M-xxT-RBP型号配置下单，其他型号只能单独下单自行更换",
+          "remark": "删除：202402298，添加：202402450"
         },
         {
           "category": "扩展配件",
@@ -31862,7 +32974,7 @@ window.PEIDAN_DATA = {
       "productModel": "MV-ID2016M-06T-RBP(国内中性)V4.0",
       "materialCode": "313202610",
       "description": "1.6MP，6.7mm镜头，4颗红色LED，工作距离70~160mm，偏振前罩，固态调焦",
-      "remark": "ID2016M调焦款出货配置全透镜头罩，订单中备注：删除：202402298，添加：202402450",
+      "remark": "可配置全透镜头罩下单",
       "standardAccessories": [
         {
           "category": "安装板",
@@ -31910,6 +33022,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M2×6",
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -32089,6 +33209,14 @@ window.PEIDAN_DATA = {
           "code": "310101872",
           "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
           "remark": "删除：310101292，添加：310101872"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000M全透镜头罩",
+          "name": "ID2000上盖点胶组件-变焦",
+          "code": "202402450",
+          "detail": "ID2000M全透镜头罩，仅适配ID2000M-xxT-RBP型号配置下单，其他型号只能单独下单自行更换",
+          "remark": "删除：202402298，添加：202402450"
         },
         {
           "category": "扩展配件",
@@ -32106,7 +33234,7 @@ window.PEIDAN_DATA = {
       "productModel": "MV-ID2016M-10T-RBP(国内标配)V4.0",
       "materialCode": "313202612",
       "description": "1.6MP，10mm镜头，4颗红色LED，工作距离100~400mm，偏振前罩，固态调焦",
-      "remark": "ID2016M调焦款出货配置全透镜头罩，订单中备注：删除：202402298，添加：202402450",
+      "remark": "可配置全透镜头罩下单",
       "standardAccessories": [
         {
           "category": "安装板",
@@ -32154,6 +33282,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M2×6",
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -32333,6 +33469,14 @@ window.PEIDAN_DATA = {
           "code": "310101872",
           "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
           "remark": "删除：310101292，添加：310101872"
+        },
+        {
+          "category": "镜头罩",
+          "series": "ID2000M全透镜头罩",
+          "name": "ID2000上盖点胶组件-变焦",
+          "code": "202402450",
+          "detail": "ID2000M全透镜头罩，仅适配ID2000M-xxT-RBP型号配置下单，其他型号只能单独下单自行更换",
+          "remark": "删除：202402298，添加：202402450"
         },
         {
           "category": "扩展配件",
@@ -32350,7 +33494,7 @@ window.PEIDAN_DATA = {
       "productModel": "MV-ID2016M-10T-RBP(国内中性)V4.0",
       "materialCode": "313202613",
       "description": "1.6MP，10mm镜头，4颗红色LED，工作距离100~400mm，偏振前罩，固态调焦",
-      "remark": "ID2016M调焦款出货配置全透镜头罩，订单中备注：删除：202402298，添加：202402450",
+      "remark": "可配置全透镜头罩下单",
       "standardAccessories": [
         {
           "category": "安装板",
@@ -32398,6 +33542,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M2×6",
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -32579,6 +33731,14 @@ window.PEIDAN_DATA = {
           "remark": "删除：310101292，添加：310101872"
         },
         {
+          "category": "镜头罩",
+          "series": "ID2000M全透镜头罩",
+          "name": "ID2000上盖点胶组件-变焦",
+          "code": "202402450",
+          "detail": "ID2000M全透镜头罩，仅适配ID2000M-xxT-RBP型号配置下单，其他型号只能单独下单自行更换",
+          "remark": "删除：202402298，添加：202402450"
+        },
+        {
           "category": "扩展配件",
           "series": "隔离支架",
           "name": "ID2000M隔离支架",
@@ -32594,7 +33754,7 @@ window.PEIDAN_DATA = {
       "productModel": "MV-ID2016M-16T-RBN(国内标配)V4.0",
       "materialCode": "313202615",
       "description": "1.6MP，16mm镜头，4颗红色LED，工作距离100~400mm，固态调焦",
-      "remark": "偏振型号：313203309，可直接下载",
+      "remark": "偏振型号：313203309，可直接下单",
       "standardAccessories": [
         {
           "category": "安装板",
@@ -32642,6 +33802,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M2×6",
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -32838,7 +34006,7 @@ window.PEIDAN_DATA = {
       "productModel": "MV-ID2016M-16T-RBN(国内中性)V4.0",
       "materialCode": "313202616",
       "description": "1.6MP，16mm镜头，4颗红色LED，工作距离100~400mm，固态调焦",
-      "remark": "偏振型号：313203318，可直接下载",
+      "remark": "偏振型号：313203318，可直接下单",
       "standardAccessories": [
         {
           "category": "安装板",
@@ -32886,6 +34054,14 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M2×6",
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -33131,6 +34307,14 @@ window.PEIDAN_DATA = {
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -33375,6 +34559,14 @@ window.PEIDAN_DATA = {
           "code": "193102445",
           "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -33615,9 +34807,17 @@ window.PEIDAN_DATA = {
         {
           "category": "扩展配件",
           "series": "螺丝包",
-          "name": "螺丝包M3×6",
-          "code": "193100773",
-          "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "name": "螺丝包M2×6",
+          "code": "193102445",
+          "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -33859,9 +35059,17 @@ window.PEIDAN_DATA = {
         {
           "category": "扩展配件",
           "series": "螺丝包",
-          "name": "螺丝包M3×6",
-          "code": "193100773",
-          "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "name": "螺丝包M2×6",
+          "code": "193102445",
+          "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -34103,9 +35311,17 @@ window.PEIDAN_DATA = {
         {
           "category": "扩展配件",
           "series": "螺丝包",
-          "name": "螺丝包M3×6",
-          "code": "193100773",
-          "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "name": "螺丝包M2×6",
+          "code": "193102445",
+          "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -34347,9 +35563,17 @@ window.PEIDAN_DATA = {
         {
           "category": "扩展配件",
           "series": "螺丝包",
-          "name": "螺丝包M3×6",
-          "code": "193100773",
-          "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "name": "螺丝包M2×6",
+          "code": "193102445",
+          "detail": "螺丝包(4_PSF0M2×6、绿色PE袋)，适配ID2000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
           "remark": ""
         }
       ],
@@ -34602,6 +35826,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -34895,6 +36135,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -35186,6 +36442,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -35479,6 +36751,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -35770,6 +37058,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -36063,6 +37367,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -36354,6 +37674,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -36647,6 +37983,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -36939,6 +38291,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -37069,38 +38437,6 @@ window.PEIDAN_DATA = {
           "code": "310102931",
           "detail": "ID2000XM全透镜头罩",
           "remark": "删除：202408180，添加：202407731"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYT0540-04S",
-          "code": "102205973",
-          "detail": "M12接口镜头,1/1.8”,光圈F4.0,焦距4.98mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY0840-05S",
-          "code": "102205321",
-          "detail": "M12镜头，8mm，F4.0，2/3\"，5MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY1240-20S",
-          "code": "102205253",
-          "detail": "M12镜头，12mm，F4.0，2/3''，20MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB1640-05S",
-          "code": "102205952",
-          "detail": "M12接口镜头,1/1.7”, 光圈F4.0, 焦距16.01mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -37231,6 +38567,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -37363,38 +38715,6 @@ window.PEIDAN_DATA = {
           "remark": "删除：202408180，添加：202407731"
         },
         {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYT0540-04S",
-          "code": "102205973",
-          "detail": "M12接口镜头,1/1.8”,光圈F4.0,焦距4.98mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY0840-05S",
-          "code": "102205321",
-          "detail": "M12镜头，8mm，F4.0，2/3\"，5MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY1240-20S",
-          "code": "102205253",
-          "detail": "M12镜头，12mm，F4.0，2/3''，20MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB1640-05S",
-          "code": "102205952",
-          "detail": "M12接口镜头,1/1.7”, 光圈F4.0, 焦距16.01mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
           "category": "扩展配件",
           "series": "红色全透拓展光源",
           "name": "MV-IDA-BCL-A-RHN-TOF(全球通中性)",
@@ -37522,6 +38842,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -37653,38 +38989,6 @@ window.PEIDAN_DATA = {
           "code": "310102931",
           "detail": "ID2000XM全透镜头罩",
           "remark": "删除：202408180，添加：202407731"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYT0540-04S",
-          "code": "102205973",
-          "detail": "M12接口镜头,1/1.8”,光圈F4.0,焦距4.98mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY0840-05S",
-          "code": "102205321",
-          "detail": "M12镜头，8mm，F4.0，2/3\"，5MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY1240-20S",
-          "code": "102205253",
-          "detail": "M12镜头，12mm，F4.0，2/3''，20MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB1640-05S",
-          "code": "102205952",
-          "detail": "M12接口镜头,1/1.7”, 光圈F4.0, 焦距16.01mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -37815,6 +39119,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -37945,38 +39265,6 @@ window.PEIDAN_DATA = {
           "code": "310102931",
           "detail": "ID2000XM全透镜头罩",
           "remark": "删除：202408180，添加：202407731"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYT0540-04S",
-          "code": "102205973",
-          "detail": "M12接口镜头,1/1.8”,光圈F4.0,焦距4.98mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY0840-05S",
-          "code": "102205321",
-          "detail": "M12镜头，8mm，F4.0，2/3\"，5MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY1240-20S",
-          "code": "102205253",
-          "detail": "M12镜头，12mm，F4.0，2/3''，20MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB1640-05S",
-          "code": "102205952",
-          "detail": "M12接口镜头,1/1.7”, 光圈F4.0, 焦距16.01mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -38107,6 +39395,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -38237,38 +39541,6 @@ window.PEIDAN_DATA = {
           "code": "310102931",
           "detail": "ID2000XM全透镜头罩",
           "remark": "删除：202408180，添加：202407731"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYT0540-04S",
-          "code": "102205973",
-          "detail": "M12接口镜头,1/1.8”,光圈F4.0,焦距4.98mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY0840-05S",
-          "code": "102205321",
-          "detail": "M12镜头，8mm，F4.0，2/3\"，5MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY1240-20S",
-          "code": "102205253",
-          "detail": "M12镜头，12mm，F4.0，2/3''，20MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB1640-05S",
-          "code": "102205952",
-          "detail": "M12接口镜头,1/1.7”, 光圈F4.0, 焦距16.01mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -38399,6 +39671,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -38531,38 +39819,6 @@ window.PEIDAN_DATA = {
           "remark": "删除：202408180，添加：202407731"
         },
         {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYT0540-04S",
-          "code": "102205973",
-          "detail": "M12接口镜头,1/1.8”,光圈F4.0,焦距4.98mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY0840-05S",
-          "code": "102205321",
-          "detail": "M12镜头，8mm，F4.0，2/3\"，5MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY1240-20S",
-          "code": "102205253",
-          "detail": "M12镜头，12mm，F4.0，2/3''，20MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB1640-05S",
-          "code": "102205952",
-          "detail": "M12接口镜头,1/1.7”, 光圈F4.0, 焦距16.01mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
           "category": "扩展配件",
           "series": "红色全透拓展光源",
           "name": "MV-IDA-BCL-A-RHN-TOF(全球通中性)",
@@ -38690,6 +39946,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -39095,6 +40367,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -39498,6 +40786,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -39903,6 +41207,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -40306,6 +41626,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -40711,6 +42047,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -41114,6 +42466,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -41519,6 +42887,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -41923,6 +43307,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -42165,38 +43565,6 @@ window.PEIDAN_DATA = {
           "code": "310102931",
           "detail": "ID2000XM全透镜头罩",
           "remark": "删除：202408180，添加：202407731"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYT0540-04S",
-          "code": "102205973",
-          "detail": "M12接口镜头,1/1.8”,光圈F4.0,焦距4.98mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY0840-05S",
-          "code": "102205321",
-          "detail": "M12镜头，8mm，F4.0，2/3\"，5MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY1240-20S",
-          "code": "102205253",
-          "detail": "M12镜头，12mm，F4.0，2/3''，20MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB1640-05S",
-          "code": "102205952",
-          "detail": "M12接口镜头,1/1.7”, 光圈F4.0, 焦距16.01mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -42327,6 +43695,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -42571,38 +43955,6 @@ window.PEIDAN_DATA = {
           "remark": "删除：202408180，添加：202407731"
         },
         {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYT0540-04S",
-          "code": "102205973",
-          "detail": "M12接口镜头,1/1.8”,光圈F4.0,焦距4.98mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY0840-05S",
-          "code": "102205321",
-          "detail": "M12镜头，8mm，F4.0，2/3\"，5MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY1240-20S",
-          "code": "102205253",
-          "detail": "M12镜头，12mm，F4.0，2/3''，20MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB1640-05S",
-          "code": "102205952",
-          "detail": "M12接口镜头,1/1.7”, 光圈F4.0, 焦距16.01mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
           "category": "扩展配件",
           "series": "红色全透拓展光源",
           "name": "MV-IDA-BCL-A-RHN-TOF(全球通中性)",
@@ -42730,6 +44082,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -42973,38 +44341,6 @@ window.PEIDAN_DATA = {
           "code": "310102931",
           "detail": "ID2000XM全透镜头罩",
           "remark": "删除：202408180，添加：202407731"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYT0540-04S",
-          "code": "102205973",
-          "detail": "M12接口镜头,1/1.8”,光圈F4.0,焦距4.98mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY0840-05S",
-          "code": "102205321",
-          "detail": "M12镜头，8mm，F4.0，2/3\"，5MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY1240-20S",
-          "code": "102205253",
-          "detail": "M12镜头，12mm，F4.0，2/3''，20MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB1640-05S",
-          "code": "102205952",
-          "detail": "M12接口镜头,1/1.7”, 光圈F4.0, 焦距16.01mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -43135,6 +44471,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -43377,38 +44729,6 @@ window.PEIDAN_DATA = {
           "code": "310102931",
           "detail": "ID2000XM全透镜头罩",
           "remark": "删除：202408180，添加：202407731"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYT0540-04S",
-          "code": "102205973",
-          "detail": "M12接口镜头,1/1.8”,光圈F4.0,焦距4.98mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY0840-05S",
-          "code": "102205321",
-          "detail": "M12镜头，8mm，F4.0，2/3\"，5MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY1240-20S",
-          "code": "102205253",
-          "detail": "M12镜头，12mm，F4.0，2/3''，20MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB1640-05S",
-          "code": "102205952",
-          "detail": "M12接口镜头,1/1.7”, 光圈F4.0, 焦距16.01mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -43539,6 +44859,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -43781,38 +45117,6 @@ window.PEIDAN_DATA = {
           "code": "310102931",
           "detail": "ID2000XM全透镜头罩",
           "remark": "删除：202408180，添加：202407731"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYT0540-04S",
-          "code": "102205973",
-          "detail": "M12接口镜头,1/1.8”,光圈F4.0,焦距4.98mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY0840-05S",
-          "code": "102205321",
-          "detail": "M12镜头，8mm，F4.0，2/3\"，5MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY1240-20S",
-          "code": "102205253",
-          "detail": "M12镜头，12mm，F4.0，2/3''，20MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB1640-05S",
-          "code": "102205952",
-          "detail": "M12接口镜头,1/1.7”, 光圈F4.0, 焦距16.01mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -43943,6 +45247,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -44187,38 +45507,6 @@ window.PEIDAN_DATA = {
           "remark": "删除：202408180，添加：202407731"
         },
         {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYT0540-04S",
-          "code": "102205973",
-          "detail": "M12接口镜头,1/1.8”,光圈F4.0,焦距4.98mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY0840-05S",
-          "code": "102205321",
-          "detail": "M12镜头，8mm，F4.0，2/3\"，5MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY1240-20S",
-          "code": "102205253",
-          "detail": "M12镜头，12mm，F4.0，2/3''，20MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB1640-05S",
-          "code": "102205952",
-          "detail": "M12接口镜头,1/1.7”, 光圈F4.0, 焦距16.01mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
           "category": "扩展配件",
           "series": "红色全透拓展光源",
           "name": "MV-IDA-BCL-A-RHN-TOF(全球通中性)",
@@ -44346,6 +45634,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -44639,6 +45943,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -44930,6 +46250,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -45223,6 +46559,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -45514,6 +46866,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -45807,6 +47175,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -46098,6 +47482,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -46391,6 +47791,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -46683,6 +48099,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -46813,38 +48245,6 @@ window.PEIDAN_DATA = {
           "code": "310102931",
           "detail": "ID2000XM全透镜头罩",
           "remark": "删除：202408180，添加：202407731"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYT0540-04S",
-          "code": "102205973",
-          "detail": "M12接口镜头,1/1.8”,光圈F4.0,焦距4.98mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY0840-05S",
-          "code": "102205321",
-          "detail": "M12镜头，8mm，F4.0，2/3\"，5MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY1240-20S",
-          "code": "102205253",
-          "detail": "M12镜头，12mm，F4.0，2/3''，20MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB1640-05S",
-          "code": "102205952",
-          "detail": "M12接口镜头,1/1.7”, 光圈F4.0, 焦距16.01mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -46975,6 +48375,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -47107,38 +48523,6 @@ window.PEIDAN_DATA = {
           "remark": "删除：202408180，添加：202407731"
         },
         {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYT0540-04S",
-          "code": "102205973",
-          "detail": "M12接口镜头,1/1.8”,光圈F4.0,焦距4.98mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY0840-05S",
-          "code": "102205321",
-          "detail": "M12镜头，8mm，F4.0，2/3\"，5MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY1240-20S",
-          "code": "102205253",
-          "detail": "M12镜头，12mm，F4.0，2/3''，20MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB1640-05S",
-          "code": "102205952",
-          "detail": "M12接口镜头,1/1.7”, 光圈F4.0, 焦距16.01mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
           "category": "扩展配件",
           "series": "红色全透拓展光源",
           "name": "MV-IDA-BCL-A-RHN-TOF(全球通中性)",
@@ -47266,6 +48650,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -47397,38 +48797,6 @@ window.PEIDAN_DATA = {
           "code": "310102931",
           "detail": "ID2000XM全透镜头罩",
           "remark": "删除：202408180，添加：202407731"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYT0540-04S",
-          "code": "102205973",
-          "detail": "M12接口镜头,1/1.8”,光圈F4.0,焦距4.98mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY0840-05S",
-          "code": "102205321",
-          "detail": "M12镜头，8mm，F4.0，2/3\"，5MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY1240-20S",
-          "code": "102205253",
-          "detail": "M12镜头，12mm，F4.0，2/3''，20MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB1640-05S",
-          "code": "102205952",
-          "detail": "M12接口镜头,1/1.7”, 光圈F4.0, 焦距16.01mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -47559,6 +48927,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -47689,38 +49073,6 @@ window.PEIDAN_DATA = {
           "code": "310102931",
           "detail": "ID2000XM全透镜头罩",
           "remark": "删除：202408180，添加：202407731"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYT0540-04S",
-          "code": "102205973",
-          "detail": "M12接口镜头,1/1.8”,光圈F4.0,焦距4.98mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY0840-05S",
-          "code": "102205321",
-          "detail": "M12镜头，8mm，F4.0，2/3\"，5MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY1240-20S",
-          "code": "102205253",
-          "detail": "M12镜头，12mm，F4.0，2/3''，20MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB1640-05S",
-          "code": "102205952",
-          "detail": "M12接口镜头,1/1.7”, 光圈F4.0, 焦距16.01mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -47851,6 +49203,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -47981,38 +49349,6 @@ window.PEIDAN_DATA = {
           "code": "310102931",
           "detail": "ID2000XM全透镜头罩",
           "remark": "删除：202408180，添加：202407731"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYT0540-04S",
-          "code": "102205973",
-          "detail": "M12接口镜头,1/1.8”,光圈F4.0,焦距4.98mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY0840-05S",
-          "code": "102205321",
-          "detail": "M12镜头，8mm，F4.0，2/3\"，5MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY1240-20S",
-          "code": "102205253",
-          "detail": "M12镜头，12mm，F4.0，2/3''，20MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB1640-05S",
-          "code": "102205952",
-          "detail": "M12接口镜头,1/1.7”, 光圈F4.0, 焦距16.01mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -48143,6 +49479,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -48275,38 +49627,6 @@ window.PEIDAN_DATA = {
           "remark": "删除：202408180，添加：202407731"
         },
         {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYT0540-04S",
-          "code": "102205973",
-          "detail": "M12接口镜头,1/1.8”,光圈F4.0,焦距4.98mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY0840-05S",
-          "code": "102205321",
-          "detail": "M12镜头，8mm，F4.0，2/3\"，5MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY1240-20S",
-          "code": "102205253",
-          "detail": "M12镜头，12mm，F4.0，2/3''，20MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB1640-05S",
-          "code": "102205952",
-          "detail": "M12接口镜头,1/1.7”, 光圈F4.0, 焦距16.01mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
           "category": "扩展配件",
           "series": "红色全透拓展光源",
           "name": "MV-IDA-BCL-A-RHN-TOF(全球通中性)",
@@ -48434,6 +49754,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -48839,6 +50175,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -49242,6 +50594,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -49647,6 +51015,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -50050,6 +51434,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -50455,6 +51855,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -50858,6 +52274,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -51263,6 +52695,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -51667,6 +53115,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -51909,38 +53373,6 @@ window.PEIDAN_DATA = {
           "code": "310102931",
           "detail": "ID2000XM全透镜头罩",
           "remark": "删除：202408180，添加：202407731"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYT0540-04S",
-          "code": "102205973",
-          "detail": "M12接口镜头,1/1.8”,光圈F4.0,焦距4.98mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY0840-05S",
-          "code": "102205321",
-          "detail": "M12镜头，8mm，F4.0，2/3\"，5MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY1240-20S",
-          "code": "102205253",
-          "detail": "M12镜头，12mm，F4.0，2/3''，20MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB1640-05S",
-          "code": "102205952",
-          "detail": "M12接口镜头,1/1.7”, 光圈F4.0, 焦距16.01mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -52071,6 +53503,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -52315,38 +53763,6 @@ window.PEIDAN_DATA = {
           "remark": "删除：202408180，添加：202407731"
         },
         {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYT0540-04S",
-          "code": "102205973",
-          "detail": "M12接口镜头,1/1.8”,光圈F4.0,焦距4.98mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY0840-05S",
-          "code": "102205321",
-          "detail": "M12镜头，8mm，F4.0，2/3\"，5MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY1240-20S",
-          "code": "102205253",
-          "detail": "M12镜头，12mm，F4.0，2/3''，20MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB1640-05S",
-          "code": "102205952",
-          "detail": "M12接口镜头,1/1.7”, 光圈F4.0, 焦距16.01mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
           "category": "扩展配件",
           "series": "红色全透拓展光源",
           "name": "MV-IDA-BCL-A-RHN-TOF(全球通中性)",
@@ -52474,6 +53890,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -52717,38 +54149,6 @@ window.PEIDAN_DATA = {
           "code": "310102931",
           "detail": "ID2000XM全透镜头罩",
           "remark": "删除：202408180，添加：202407731"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYT0540-04S",
-          "code": "102205973",
-          "detail": "M12接口镜头,1/1.8”,光圈F4.0,焦距4.98mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY0840-05S",
-          "code": "102205321",
-          "detail": "M12镜头，8mm，F4.0，2/3\"，5MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY1240-20S",
-          "code": "102205253",
-          "detail": "M12镜头，12mm，F4.0，2/3''，20MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB1640-05S",
-          "code": "102205952",
-          "detail": "M12接口镜头,1/1.7”, 光圈F4.0, 焦距16.01mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -52879,6 +54279,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -53121,38 +54537,6 @@ window.PEIDAN_DATA = {
           "code": "310102931",
           "detail": "ID2000XM全透镜头罩",
           "remark": "删除：202408180，添加：202407731"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYT0540-04S",
-          "code": "102205973",
-          "detail": "M12接口镜头,1/1.8”,光圈F4.0,焦距4.98mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY0840-05S",
-          "code": "102205321",
-          "detail": "M12镜头，8mm，F4.0，2/3\"，5MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY1240-20S",
-          "code": "102205253",
-          "detail": "M12镜头，12mm，F4.0，2/3''，20MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB1640-05S",
-          "code": "102205952",
-          "detail": "M12接口镜头,1/1.7”, 光圈F4.0, 焦距16.01mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -53283,6 +54667,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -53525,38 +54925,6 @@ window.PEIDAN_DATA = {
           "code": "310102931",
           "detail": "ID2000XM全透镜头罩",
           "remark": "删除：202408180，添加：202407731"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYT0540-04S",
-          "code": "102205973",
-          "detail": "M12接口镜头,1/1.8”,光圈F4.0,焦距4.98mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY0840-05S",
-          "code": "102205321",
-          "detail": "M12镜头，8mm，F4.0，2/3\"，5MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY1240-20S",
-          "code": "102205253",
-          "detail": "M12镜头，12mm，F4.0，2/3''，20MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB1640-05S",
-          "code": "102205952",
-          "detail": "M12接口镜头,1/1.7”, 光圈F4.0, 焦距16.01mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -53687,6 +55055,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -53931,38 +55315,6 @@ window.PEIDAN_DATA = {
           "remark": "删除：202408180，添加：202407731"
         },
         {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYT0540-04S",
-          "code": "102205973",
-          "detail": "M12接口镜头,1/1.8”,光圈F4.0,焦距4.98mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY0840-05S",
-          "code": "102205321",
-          "detail": "M12镜头，8mm，F4.0，2/3\"，5MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY1240-20S",
-          "code": "102205253",
-          "detail": "M12镜头，12mm，F4.0，2/3''，20MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB1640-05S",
-          "code": "102205952",
-          "detail": "M12接口镜头,1/1.7”, 光圈F4.0, 焦距16.01mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
           "category": "扩展配件",
           "series": "红色全透拓展光源",
           "name": "MV-IDA-BCL-A-RHN-TOF(全球通中性)",
@@ -54032,7 +55384,7 @@ window.PEIDAN_DATA = {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2020RM系列U口",
       "productModel": "MV-ID2020RM-05M-RBN-U(国内标配)",
-      "materialCode": "328500541",
+      "materialCode": "313203810",
       "description": "2MP，卷帘快门，5mm镜头，4颗红色LED，半偏镜头罩，机械调焦，U口型号",
       "remark": "不配线缆，需额外下单，U口型号须额外供电",
       "standardAccessories": [
@@ -54091,6 +55443,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -54136,147 +55504,27 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "一体线",
-          "series": "3m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
-          "code": "310101292",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": ""
+          "series": "2m普通单U口",
+          "name": "MV-IDAPE-M12A17F-U2DC-ST-2m",
+          "code": "310102959",
+          "detail": "17pin航插头转USB2.0+DC圆孔供电，2米静态线缆，线缆特性：静态铺设，弯折半径：12D",
+          "remark": "推荐搭配DC圆头适配器：310101855"
         },
         {
           "category": "一体线",
-          "series": "5m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
-          "code": "310101293",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101293"
+          "series": "2m普通组合U口",
+          "name": "MV-IDA-PE-M12A17pF-openU2DB9-ST-2m",
+          "code": "310101295",
+          "detail": "17pin航插头转8pin端子+USB2.0+DB9，2米静态线缆，线缆特性：静态铺设，弯折半径：12D；",
+          "remark": "删除：101515363，添加：310101295"
         },
         {
           "category": "一体线",
-          "series": "7m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
-          "code": "310101873",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
-          "code": "310101294",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
-          "code": "310101310",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
-          "code": "310101296",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310101296"
-        },
-        {
-          "category": "一体线",
-          "series": "5m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
-          "code": "310102637",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310102637"
-        },
-        {
-          "category": "一体线",
-          "series": "5m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
-          "code": "310101876",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "删除：310101292，添加：310101876"
-        },
-        {
-          "category": "一体线",
-          "series": "7m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
-          "code": "310103217",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "7m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
-          "code": "310101874",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
-          "code": "310101875",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
-          "code": "310101307",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
-          "code": "310101869",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101869"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通弯头网口母头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45FDB9-ST-5m",
-          "code": "310101877",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101877"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
-          "code": "310101878",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
-          "code": "310101870",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310101870"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
-          "code": "310101871",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101871"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
-          "code": "310101872",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310101872"
+          "series": "2m高柔组合U口",
+          "name": "MV-IDA-PE-M12A17pF-openU2DB9-HF-2m",
+          "code": "310101297",
+          "detail": "17pin航插头转8pin端子+USB2.0+DB9，3米高柔线缆，线缆特性：拖链500W次，运动速度60次/分，弯折半径：12D；",
+          "remark": "删除：101515363，添加：310101297"
         },
         {
           "category": "灯板",
@@ -54436,7 +55684,7 @@ window.PEIDAN_DATA = {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2020RM系列U口",
       "productModel": "MV-ID2020RM-05M-RBN-U(国内中性)",
-      "materialCode": "328500535",
+      "materialCode": "313203816",
       "description": "2MP，卷帘快门，5mm镜头，4颗红色LED，半偏镜头罩，机械调焦，U口型号",
       "remark": "不配线缆，需额外下单，U口型号须额外供电",
       "standardAccessories": [
@@ -54495,6 +55743,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -54540,147 +55804,27 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "一体线",
-          "series": "3m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
-          "code": "310101292",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": ""
+          "series": "2m普通单U口",
+          "name": "MV-IDAPE-M12A17F-U2DC-ST-2m",
+          "code": "310102959",
+          "detail": "17pin航插头转USB2.0+DC圆孔供电，2米静态线缆，线缆特性：静态铺设，弯折半径：12D",
+          "remark": "推荐搭配DC圆头适配器：310101855"
         },
         {
           "category": "一体线",
-          "series": "5m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
-          "code": "310101293",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101293"
+          "series": "2m普通组合U口",
+          "name": "MV-IDA-PE-M12A17pF-openU2DB9-ST-2m",
+          "code": "310101295",
+          "detail": "17pin航插头转8pin端子+USB2.0+DB9，2米静态线缆，线缆特性：静态铺设，弯折半径：12D；",
+          "remark": "删除：101515363，添加：310101295"
         },
         {
           "category": "一体线",
-          "series": "7m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
-          "code": "310101873",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
-          "code": "310101294",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
-          "code": "310101310",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
-          "code": "310101296",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310101296"
-        },
-        {
-          "category": "一体线",
-          "series": "5m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
-          "code": "310102637",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310102637"
-        },
-        {
-          "category": "一体线",
-          "series": "5m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
-          "code": "310101876",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "删除：310101292，添加：310101876"
-        },
-        {
-          "category": "一体线",
-          "series": "7m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
-          "code": "310103217",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "7m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
-          "code": "310101874",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
-          "code": "310101875",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
-          "code": "310101307",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
-          "code": "310101869",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101869"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通弯头网口母头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45FDB9-ST-5m",
-          "code": "310101877",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101877"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
-          "code": "310101878",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
-          "code": "310101870",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310101870"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
-          "code": "310101871",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101871"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
-          "code": "310101872",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310101872"
+          "series": "2m高柔组合U口",
+          "name": "MV-IDA-PE-M12A17pF-openU2DB9-HF-2m",
+          "code": "310101297",
+          "detail": "17pin航插头转8pin端子+USB2.0+DB9，3米高柔线缆，线缆特性：拖链500W次，运动速度60次/分，弯折半径：12D；",
+          "remark": "删除：101515363，添加：310101297"
         },
         {
           "category": "灯板",
@@ -54840,7 +55984,7 @@ window.PEIDAN_DATA = {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2020RM系列U口",
       "productModel": "MV-ID2020RM-08M-RBN-U(国内标配)",
-      "materialCode": "328500543",
+      "materialCode": "313203813",
       "description": "2MP，卷帘快门，8mm镜头，4颗红色LED，半偏镜头罩，机械调焦，U口型号",
       "remark": "不配线缆，需额外下单，U口型号须额外供电",
       "standardAccessories": [
@@ -54899,6 +56043,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -54944,147 +56104,27 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "一体线",
-          "series": "3m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
-          "code": "310101292",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": ""
+          "series": "2m普通单U口",
+          "name": "MV-IDAPE-M12A17F-U2DC-ST-2m",
+          "code": "310102959",
+          "detail": "17pin航插头转USB2.0+DC圆孔供电，2米静态线缆，线缆特性：静态铺设，弯折半径：12D",
+          "remark": "推荐搭配DC圆头适配器：310101855"
         },
         {
           "category": "一体线",
-          "series": "5m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
-          "code": "310101293",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101293"
+          "series": "2m普通组合U口",
+          "name": "MV-IDA-PE-M12A17pF-openU2DB9-ST-2m",
+          "code": "310101295",
+          "detail": "17pin航插头转8pin端子+USB2.0+DB9，2米静态线缆，线缆特性：静态铺设，弯折半径：12D；",
+          "remark": "删除：101515363，添加：310101295"
         },
         {
           "category": "一体线",
-          "series": "7m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
-          "code": "310101873",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
-          "code": "310101294",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
-          "code": "310101310",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
-          "code": "310101296",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310101296"
-        },
-        {
-          "category": "一体线",
-          "series": "5m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
-          "code": "310102637",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310102637"
-        },
-        {
-          "category": "一体线",
-          "series": "5m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
-          "code": "310101876",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "删除：310101292，添加：310101876"
-        },
-        {
-          "category": "一体线",
-          "series": "7m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
-          "code": "310103217",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "7m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
-          "code": "310101874",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
-          "code": "310101875",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
-          "code": "310101307",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
-          "code": "310101869",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101869"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通弯头网口母头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45FDB9-ST-5m",
-          "code": "310101877",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101877"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
-          "code": "310101878",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
-          "code": "310101870",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310101870"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
-          "code": "310101871",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101871"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
-          "code": "310101872",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310101872"
+          "series": "2m高柔组合U口",
+          "name": "MV-IDA-PE-M12A17pF-openU2DB9-HF-2m",
+          "code": "310101297",
+          "detail": "17pin航插头转8pin端子+USB2.0+DB9，3米高柔线缆，线缆特性：拖链500W次，运动速度60次/分，弯折半径：12D；",
+          "remark": "删除：101515363，添加：310101297"
         },
         {
           "category": "灯板",
@@ -55244,7 +56284,7 @@ window.PEIDAN_DATA = {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2020RM系列U口",
       "productModel": "MV-ID2020RM-08M-RBN-U(国内中性)",
-      "materialCode": "328500534",
+      "materialCode": "313203818",
       "description": "2MP，卷帘快门，8mm镜头，4颗红色LED，半偏镜头罩，机械调焦，U口型号",
       "remark": "不配线缆，需额外下单，U口型号须额外供电",
       "standardAccessories": [
@@ -55303,6 +56343,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -55348,147 +56404,27 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "一体线",
-          "series": "3m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
-          "code": "310101292",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": ""
+          "series": "2m普通单U口",
+          "name": "MV-IDAPE-M12A17F-U2DC-ST-2m",
+          "code": "310102959",
+          "detail": "17pin航插头转USB2.0+DC圆孔供电，2米静态线缆，线缆特性：静态铺设，弯折半径：12D",
+          "remark": "推荐搭配DC圆头适配器：310101855"
         },
         {
           "category": "一体线",
-          "series": "5m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
-          "code": "310101293",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101293"
+          "series": "2m普通组合U口",
+          "name": "MV-IDA-PE-M12A17pF-openU2DB9-ST-2m",
+          "code": "310101295",
+          "detail": "17pin航插头转8pin端子+USB2.0+DB9，2米静态线缆，线缆特性：静态铺设，弯折半径：12D；",
+          "remark": "删除：101515363，添加：310101295"
         },
         {
           "category": "一体线",
-          "series": "7m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
-          "code": "310101873",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
-          "code": "310101294",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
-          "code": "310101310",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
-          "code": "310101296",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310101296"
-        },
-        {
-          "category": "一体线",
-          "series": "5m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
-          "code": "310102637",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310102637"
-        },
-        {
-          "category": "一体线",
-          "series": "5m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
-          "code": "310101876",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "删除：310101292，添加：310101876"
-        },
-        {
-          "category": "一体线",
-          "series": "7m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
-          "code": "310103217",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "7m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
-          "code": "310101874",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
-          "code": "310101875",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
-          "code": "310101307",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
-          "code": "310101869",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101869"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通弯头网口母头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45FDB9-ST-5m",
-          "code": "310101877",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101877"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
-          "code": "310101878",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
-          "code": "310101870",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310101870"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
-          "code": "310101871",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101871"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
-          "code": "310101872",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310101872"
+          "series": "2m高柔组合U口",
+          "name": "MV-IDA-PE-M12A17pF-openU2DB9-HF-2m",
+          "code": "310101297",
+          "detail": "17pin航插头转8pin端子+USB2.0+DB9，3米高柔线缆，线缆特性：拖链500W次，运动速度60次/分，弯折半径：12D；",
+          "remark": "删除：101515363，添加：310101297"
         },
         {
           "category": "灯板",
@@ -55648,7 +56584,7 @@ window.PEIDAN_DATA = {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2020RM系列U口",
       "productModel": "MV-ID2020RM-12M-RBN-U(国内标配)",
-      "materialCode": "328500531",
+      "materialCode": "313203820",
       "description": "2MP，卷帘快门，12mm镜头，4颗红色LED，半偏镜头罩，机械调焦，U口型号",
       "remark": "不配线缆，需额外下单，U口型号须额外供电",
       "standardAccessories": [
@@ -55707,6 +56643,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -55752,147 +56704,27 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "一体线",
-          "series": "3m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
-          "code": "310101292",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": ""
+          "series": "2m普通单U口",
+          "name": "MV-IDAPE-M12A17F-U2DC-ST-2m",
+          "code": "310102959",
+          "detail": "17pin航插头转USB2.0+DC圆孔供电，2米静态线缆，线缆特性：静态铺设，弯折半径：12D",
+          "remark": "推荐搭配DC圆头适配器：310101855"
         },
         {
           "category": "一体线",
-          "series": "5m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
-          "code": "310101293",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101293"
+          "series": "2m普通组合U口",
+          "name": "MV-IDA-PE-M12A17pF-openU2DB9-ST-2m",
+          "code": "310101295",
+          "detail": "17pin航插头转8pin端子+USB2.0+DB9，2米静态线缆，线缆特性：静态铺设，弯折半径：12D；",
+          "remark": "删除：101515363，添加：310101295"
         },
         {
           "category": "一体线",
-          "series": "7m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
-          "code": "310101873",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
-          "code": "310101294",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
-          "code": "310101310",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
-          "code": "310101296",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310101296"
-        },
-        {
-          "category": "一体线",
-          "series": "5m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
-          "code": "310102637",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310102637"
-        },
-        {
-          "category": "一体线",
-          "series": "5m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
-          "code": "310101876",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "删除：310101292，添加：310101876"
-        },
-        {
-          "category": "一体线",
-          "series": "7m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
-          "code": "310103217",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "7m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
-          "code": "310101874",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
-          "code": "310101875",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
-          "code": "310101307",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
-          "code": "310101869",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101869"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通弯头网口母头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45FDB9-ST-5m",
-          "code": "310101877",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101877"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
-          "code": "310101878",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
-          "code": "310101870",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310101870"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
-          "code": "310101871",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101871"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
-          "code": "310101872",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310101872"
+          "series": "2m高柔组合U口",
+          "name": "MV-IDA-PE-M12A17pF-openU2DB9-HF-2m",
+          "code": "310101297",
+          "detail": "17pin航插头转8pin端子+USB2.0+DB9，3米高柔线缆，线缆特性：拖链500W次，运动速度60次/分，弯折半径：12D；",
+          "remark": "删除：101515363，添加：310101297"
         },
         {
           "category": "灯板",
@@ -56052,7 +56884,7 @@ window.PEIDAN_DATA = {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2020RM系列U口",
       "productModel": "MV-ID2020RM-12M-RBN-U(国内中性)",
-      "materialCode": "328500529",
+      "materialCode": "313203823",
       "description": "2MP，卷帘快门，12mm镜头，4颗红色LED，半偏镜头罩，机械调焦，U口型号",
       "remark": "不配线缆，需额外下单，U口型号须额外供电",
       "standardAccessories": [
@@ -56111,6 +56943,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -56156,147 +57004,27 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "一体线",
-          "series": "3m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
-          "code": "310101292",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": ""
+          "series": "2m普通单U口",
+          "name": "MV-IDAPE-M12A17F-U2DC-ST-2m",
+          "code": "310102959",
+          "detail": "17pin航插头转USB2.0+DC圆孔供电，2米静态线缆，线缆特性：静态铺设，弯折半径：12D",
+          "remark": "推荐搭配DC圆头适配器：310101855"
         },
         {
           "category": "一体线",
-          "series": "5m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
-          "code": "310101293",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101293"
+          "series": "2m普通组合U口",
+          "name": "MV-IDA-PE-M12A17pF-openU2DB9-ST-2m",
+          "code": "310101295",
+          "detail": "17pin航插头转8pin端子+USB2.0+DB9，2米静态线缆，线缆特性：静态铺设，弯折半径：12D；",
+          "remark": "删除：101515363，添加：310101295"
         },
         {
           "category": "一体线",
-          "series": "7m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
-          "code": "310101873",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
-          "code": "310101294",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
-          "code": "310101310",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
-          "code": "310101296",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310101296"
-        },
-        {
-          "category": "一体线",
-          "series": "5m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
-          "code": "310102637",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310102637"
-        },
-        {
-          "category": "一体线",
-          "series": "5m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
-          "code": "310101876",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "删除：310101292，添加：310101876"
-        },
-        {
-          "category": "一体线",
-          "series": "7m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
-          "code": "310103217",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "7m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
-          "code": "310101874",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
-          "code": "310101875",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
-          "code": "310101307",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
-          "code": "310101869",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101869"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通弯头网口母头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45FDB9-ST-5m",
-          "code": "310101877",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101877"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
-          "code": "310101878",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
-          "code": "310101870",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310101870"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
-          "code": "310101871",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101871"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
-          "code": "310101872",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310101872"
+          "series": "2m高柔组合U口",
+          "name": "MV-IDA-PE-M12A17pF-openU2DB9-HF-2m",
+          "code": "310101297",
+          "detail": "17pin航插头转8pin端子+USB2.0+DB9，3米高柔线缆，线缆特性：拖链500W次，运动速度60次/分，弯折半径：12D；",
+          "remark": "删除：101515363，添加：310101297"
         },
         {
           "category": "灯板",
@@ -56456,7 +57184,7 @@ window.PEIDAN_DATA = {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2020RM系列U口",
       "productModel": "MV-ID2020RM-16M-RBN-U(国内标配)",
-      "materialCode": "328500539",
+      "materialCode": "313203814",
       "description": "2MP，卷帘快门，16mm镜头，4颗红色LED，半偏镜头罩，机械调焦，U口型号",
       "remark": "不配线缆，需额外下单，U口型号须额外供电",
       "standardAccessories": [
@@ -56515,6 +57243,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -56560,147 +57304,27 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "一体线",
-          "series": "3m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
-          "code": "310101292",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": ""
+          "series": "2m普通单U口",
+          "name": "MV-IDAPE-M12A17F-U2DC-ST-2m",
+          "code": "310102959",
+          "detail": "17pin航插头转USB2.0+DC圆孔供电，2米静态线缆，线缆特性：静态铺设，弯折半径：12D",
+          "remark": "推荐搭配DC圆头适配器：310101855"
         },
         {
           "category": "一体线",
-          "series": "5m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
-          "code": "310101293",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101293"
+          "series": "2m普通组合U口",
+          "name": "MV-IDA-PE-M12A17pF-openU2DB9-ST-2m",
+          "code": "310101295",
+          "detail": "17pin航插头转8pin端子+USB2.0+DB9，2米静态线缆，线缆特性：静态铺设，弯折半径：12D；",
+          "remark": "删除：101515363，添加：310101295"
         },
         {
           "category": "一体线",
-          "series": "7m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
-          "code": "310101873",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
-          "code": "310101294",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
-          "code": "310101310",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
-          "code": "310101296",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310101296"
-        },
-        {
-          "category": "一体线",
-          "series": "5m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
-          "code": "310102637",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310102637"
-        },
-        {
-          "category": "一体线",
-          "series": "5m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
-          "code": "310101876",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "删除：310101292，添加：310101876"
-        },
-        {
-          "category": "一体线",
-          "series": "7m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
-          "code": "310103217",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "7m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
-          "code": "310101874",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
-          "code": "310101875",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
-          "code": "310101307",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
-          "code": "310101869",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101869"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通弯头网口母头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45FDB9-ST-5m",
-          "code": "310101877",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101877"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
-          "code": "310101878",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
-          "code": "310101870",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310101870"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
-          "code": "310101871",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101871"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
-          "code": "310101872",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310101872"
+          "series": "2m高柔组合U口",
+          "name": "MV-IDA-PE-M12A17pF-openU2DB9-HF-2m",
+          "code": "310101297",
+          "detail": "17pin航插头转8pin端子+USB2.0+DB9，3米高柔线缆，线缆特性：拖链500W次，运动速度60次/分，弯折半径：12D；",
+          "remark": "删除：101515363，添加：310101297"
         },
         {
           "category": "灯板",
@@ -56860,7 +57484,7 @@ window.PEIDAN_DATA = {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2020RM系列U口",
       "productModel": "MV-ID2020RM-16M-RBN-U(国内中性)",
-      "materialCode": "328500533",
+      "materialCode": "313203819",
       "description": "2MP，卷帘快门，16mm镜头，4颗红色LED，半偏镜头罩，机械调焦，U口型号",
       "remark": "不配线缆，需额外下单，U口型号须额外供电",
       "standardAccessories": [
@@ -56919,6 +57543,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -56964,147 +57604,27 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "一体线",
-          "series": "3m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
-          "code": "310101292",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": ""
+          "series": "2m普通单U口",
+          "name": "MV-IDAPE-M12A17F-U2DC-ST-2m",
+          "code": "310102959",
+          "detail": "17pin航插头转USB2.0+DC圆孔供电，2米静态线缆，线缆特性：静态铺设，弯折半径：12D",
+          "remark": "推荐搭配DC圆头适配器：310101855"
         },
         {
           "category": "一体线",
-          "series": "5m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
-          "code": "310101293",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101293"
+          "series": "2m普通组合U口",
+          "name": "MV-IDA-PE-M12A17pF-openU2DB9-ST-2m",
+          "code": "310101295",
+          "detail": "17pin航插头转8pin端子+USB2.0+DB9，2米静态线缆，线缆特性：静态铺设，弯折半径：12D；",
+          "remark": "删除：101515363，添加：310101295"
         },
         {
           "category": "一体线",
-          "series": "7m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
-          "code": "310101873",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
-          "code": "310101294",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
-          "code": "310101310",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
-          "code": "310101296",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310101296"
-        },
-        {
-          "category": "一体线",
-          "series": "5m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
-          "code": "310102637",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310102637"
-        },
-        {
-          "category": "一体线",
-          "series": "5m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
-          "code": "310101876",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "删除：310101292，添加：310101876"
-        },
-        {
-          "category": "一体线",
-          "series": "7m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
-          "code": "310103217",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "7m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
-          "code": "310101874",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
-          "code": "310101875",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
-          "code": "310101307",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
-          "code": "310101869",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101869"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通弯头网口母头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45FDB9-ST-5m",
-          "code": "310101877",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101877"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
-          "code": "310101878",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
-          "code": "310101870",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310101870"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
-          "code": "310101871",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101871"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
-          "code": "310101872",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310101872"
+          "series": "2m高柔组合U口",
+          "name": "MV-IDA-PE-M12A17pF-openU2DB9-HF-2m",
+          "code": "310101297",
+          "detail": "17pin航插头转8pin端子+USB2.0+DB9，3米高柔线缆，线缆特性：拖链500W次，运动速度60次/分，弯折半径：12D；",
+          "remark": "删除：101515363，添加：310101297"
         },
         {
           "category": "灯板",
@@ -57264,7 +57784,7 @@ window.PEIDAN_DATA = {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2020RM系列U口",
       "productModel": "MV-ID2020RM-25M-RBN-U(国内标配)",
-      "materialCode": "328500584",
+      "materialCode": "313203807",
       "description": "2MP，卷帘快门，25mm镜头，4颗红色LED，半偏镜头罩，机械调焦，U口型号",
       "remark": "不配线缆，需额外下单，U口型号须额外供电",
       "standardAccessories": [
@@ -57323,6 +57843,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -57368,147 +57904,27 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "一体线",
-          "series": "3m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
-          "code": "310101292",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": ""
+          "series": "2m普通单U口",
+          "name": "MV-IDAPE-M12A17F-U2DC-ST-2m",
+          "code": "310102959",
+          "detail": "17pin航插头转USB2.0+DC圆孔供电，2米静态线缆，线缆特性：静态铺设，弯折半径：12D",
+          "remark": "推荐搭配DC圆头适配器：310101855"
         },
         {
           "category": "一体线",
-          "series": "5m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
-          "code": "310101293",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101293"
+          "series": "2m普通组合U口",
+          "name": "MV-IDA-PE-M12A17pF-openU2DB9-ST-2m",
+          "code": "310101295",
+          "detail": "17pin航插头转8pin端子+USB2.0+DB9，2米静态线缆，线缆特性：静态铺设，弯折半径：12D；",
+          "remark": "删除：101515363，添加：310101295"
         },
         {
           "category": "一体线",
-          "series": "7m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
-          "code": "310101873",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
-          "code": "310101294",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
-          "code": "310101310",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
-          "code": "310101296",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310101296"
-        },
-        {
-          "category": "一体线",
-          "series": "5m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
-          "code": "310102637",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310102637"
-        },
-        {
-          "category": "一体线",
-          "series": "5m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
-          "code": "310101876",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "删除：310101292，添加：310101876"
-        },
-        {
-          "category": "一体线",
-          "series": "7m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
-          "code": "310103217",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "7m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
-          "code": "310101874",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
-          "code": "310101875",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
-          "code": "310101307",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
-          "code": "310101869",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101869"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通弯头网口母头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45FDB9-ST-5m",
-          "code": "310101877",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101877"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
-          "code": "310101878",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
-          "code": "310101870",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310101870"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
-          "code": "310101871",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101871"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
-          "code": "310101872",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310101872"
+          "series": "2m高柔组合U口",
+          "name": "MV-IDA-PE-M12A17pF-openU2DB9-HF-2m",
+          "code": "310101297",
+          "detail": "17pin航插头转8pin端子+USB2.0+DB9，3米高柔线缆，线缆特性：拖链500W次，运动速度60次/分，弯折半径：12D；",
+          "remark": "删除：101515363，添加：310101297"
         },
         {
           "category": "灯板",
@@ -57668,7 +58084,7 @@ window.PEIDAN_DATA = {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2020RM系列U口",
       "productModel": "MV-ID2020RM-25M-RBN-U(国内中性)",
-      "materialCode": "328500586",
+      "materialCode": "313203805",
       "description": "2MP，卷帘快门，25mm镜头，4颗红色LED，半偏镜头罩，机械调焦，U口型号",
       "remark": "不配线缆，需额外下单，U口型号须额外供电",
       "standardAccessories": [
@@ -57727,6 +58143,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -57772,147 +58204,27 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "一体线",
-          "series": "3m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-3m",
-          "code": "310101292",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": ""
+          "series": "2m普通单U口",
+          "name": "MV-IDAPE-M12A17F-U2DC-ST-2m",
+          "code": "310102959",
+          "detail": "17pin航插头转USB2.0+DC圆孔供电，2米静态线缆，线缆特性：静态铺设，弯折半径：12D",
+          "remark": "推荐搭配DC圆头适配器：310101855"
         },
         {
           "category": "一体线",
-          "series": "5m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-5m",
-          "code": "310101293",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态5米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101293"
+          "series": "2m普通组合U口",
+          "name": "MV-IDA-PE-M12A17pF-openU2DB9-ST-2m",
+          "code": "310101295",
+          "detail": "17pin航插头转8pin端子+USB2.0+DB9，2米静态线缆，线缆特性：静态铺设，弯折半径：12D；",
+          "remark": "删除：101515363，添加：310101295"
         },
         {
           "category": "一体线",
-          "series": "7m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-7m",
-          "code": "310101873",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态7米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-10m",
-          "code": "310101294",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m普通网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-ST-15m",
-          "code": "310101310",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态15米线缆，弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-3m",
-          "code": "310101296",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310101296"
-        },
-        {
-          "category": "一体线",
-          "series": "5m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-5m",
-          "code": "310102637",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔5米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310102637"
-        },
-        {
-          "category": "一体线",
-          "series": "5m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-5m",
-          "code": "310101876",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔5米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "删除：310101292，添加：310101876"
-        },
-        {
-          "category": "一体线",
-          "series": "7m超柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-SF-7m",
-          "code": "310103217",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,超柔7米线缆，弯折半径：12D线缆特性：拖链1000W次，运动速度60次/分，弯折300W次，速度30次/分；扭转500W次，速度30次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "7m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-7m",
-          "code": "310101874",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔7米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "10m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-10m",
-          "code": "310101875",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔10米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "15m高柔网口公头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45DB9-HF-15m",
-          "code": "310101307",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔15米线缆，弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-3m",
-          "code": "310101869",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态3米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101869"
-        },
-        {
-          "category": "一体线",
-          "series": "5m普通弯头网口母头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45FDB9-ST-5m",
-          "code": "310101877",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态5米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101877"
-        },
-        {
-          "category": "一体线",
-          "series": "10m普通弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-ST-10m",
-          "code": "310101878",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,静态10米直角线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，再额外下单！"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔弯头网口公头",
-          "name": "MV-IDA-PE-M12A17pFUP-openRJ45DB9-HF-3m",
-          "code": "310101870",
-          "detail": "17pin航插头转open绿色端子/RJ45公头/DB9,网口公头,高柔3米直角线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310101870"
-        },
-        {
-          "category": "一体线",
-          "series": "3m普通网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-ST-3m",
-          "code": "310101871",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,静态3米线缆,弯折半径：12D；线缆特性：静态铺设",
-          "remark": "删除：310101292，添加：310101871"
-        },
-        {
-          "category": "一体线",
-          "series": "3m高柔网口母头",
-          "name": "MV-IDA-PE-M12A17pF-openRJ45FDB9-HF-3m",
-          "code": "310101872",
-          "detail": "17pin航插头转open绿色端子/RJ45母头/DB9,网口母头,高柔3米线缆,弯折半径：12D；线缆特性：拖链500W次，运动速度60次/分",
-          "remark": "删除：310101292，添加：310101872"
+          "series": "2m高柔组合U口",
+          "name": "MV-IDA-PE-M12A17pF-openU2DB9-HF-2m",
+          "code": "310101297",
+          "detail": "17pin航插头转8pin端子+USB2.0+DB9，3米高柔线缆，线缆特性：拖链500W次，运动速度60次/分，弯折半径：12D；",
+          "remark": "删除：101515363，添加：310101297"
         },
         {
           "category": "灯板",
@@ -58072,7 +58384,7 @@ window.PEIDAN_DATA = {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2020RM系列网口",
       "productModel": "MV-ID2020RM-05M-RBN(国内标配)",
-      "materialCode": "328500542",
+      "materialCode": "313203809",
       "description": "2MP，卷帘快门，5mm镜头，4颗红色LED，半偏镜头罩，机械调焦，网口型号",
       "remark": "不配线缆，需额外下单",
       "standardAccessories": [
@@ -58130,6 +58442,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -58476,7 +58804,7 @@ window.PEIDAN_DATA = {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2020RM系列网口",
       "productModel": "MV-ID2020RM-05M-RBN(国内中性)",
-      "materialCode": "328500538",
+      "materialCode": "313203817",
       "description": "2MP，卷帘快门，5mm镜头，4颗红色LED，半偏镜头罩，机械调焦，网口型号",
       "remark": "不配线缆，需额外下单",
       "standardAccessories": [
@@ -58534,6 +58862,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -58880,7 +59224,7 @@ window.PEIDAN_DATA = {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2020RM系列网口",
       "productModel": "MV-ID2020RM-08M-RBN(国内标配)",
-      "materialCode": "328500544",
+      "materialCode": "313203808",
       "description": "2MP，卷帘快门，8mm镜头，4颗红色LED，半偏镜头罩，机械调焦，网口型号",
       "remark": "不配线缆，需额外下单",
       "standardAccessories": [
@@ -58938,6 +59282,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -59284,7 +59644,7 @@ window.PEIDAN_DATA = {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2020RM系列网口",
       "productModel": "MV-ID2020RM-08M-RBN(国内中性)",
-      "materialCode": "328500537",
+      "materialCode": "313203815",
       "description": "2MP，卷帘快门，8mm镜头，4颗红色LED，半偏镜头罩，机械调焦，网口型号",
       "remark": "不配线缆，需额外下单",
       "standardAccessories": [
@@ -59342,6 +59702,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -59688,7 +60064,7 @@ window.PEIDAN_DATA = {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2020RM系列网口",
       "productModel": "MV-ID2020RM-12M-RBN(国内标配)",
-      "materialCode": "328500530",
+      "materialCode": "313203821",
       "description": "2MP，卷帘快门，12mm镜头，4颗红色LED，半偏镜头罩，机械调焦，网口型号",
       "remark": "不配线缆，需额外下单",
       "standardAccessories": [
@@ -59746,6 +60122,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -60092,7 +60484,7 @@ window.PEIDAN_DATA = {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2020RM系列网口",
       "productModel": "MV-ID2020RM-12M-RBN(国内中性)",
-      "materialCode": "328500532",
+      "materialCode": "313203822",
       "description": "2MP，卷帘快门，12mm镜头，4颗红色LED，半偏镜头罩，机械调焦，网口型号",
       "remark": "不配线缆，需额外下单",
       "standardAccessories": [
@@ -60150,6 +60542,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -60496,7 +60904,7 @@ window.PEIDAN_DATA = {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2020RM系列网口",
       "productModel": "MV-ID2020RM-16M-RBN(国内标配)",
-      "materialCode": "328500540",
+      "materialCode": "313203812",
       "description": "2MP，卷帘快门，16mm镜头，4颗红色LED，半偏镜头罩，机械调焦，网口型号",
       "remark": "不配线缆，需额外下单",
       "standardAccessories": [
@@ -60554,6 +60962,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -60900,7 +61324,7 @@ window.PEIDAN_DATA = {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2020RM系列网口",
       "productModel": "MV-ID2020RM-16M-RBN(国内中性)",
-      "materialCode": "328500536",
+      "materialCode": "313203811",
       "description": "2MP，卷帘快门，16mm镜头，4颗红色LED，半偏镜头罩，机械调焦，网口型号",
       "remark": "不配线缆，需额外下单",
       "standardAccessories": [
@@ -60958,6 +61382,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -61304,7 +61744,7 @@ window.PEIDAN_DATA = {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2020RM系列网口",
       "productModel": "MV-ID2020RM-25M-RBN(国内标配)",
-      "materialCode": "328500585",
+      "materialCode": "313203806",
       "description": "2MP，卷帘快门，25mm镜头，4颗红色LED，半偏镜头罩，机械调焦，网口型号",
       "remark": "不配线缆，需额外下单",
       "standardAccessories": [
@@ -61362,6 +61802,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -61708,7 +62164,7 @@ window.PEIDAN_DATA = {
       "productCategory": "ID2000XM系列",
       "productSeries": "ID2020RM系列网口",
       "productModel": "MV-ID2020RM-25M-RBN(国内中性)",
-      "materialCode": "328500587",
+      "materialCode": "313203804",
       "description": "2MP，卷帘快门，25mm镜头，4颗红色LED，半偏镜头罩，机械调焦，网口型号",
       "remark": "不配线缆，需额外下单",
       "standardAccessories": [
@@ -61766,6 +62222,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -62171,6 +62643,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -62462,6 +62950,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -62755,6 +63259,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -63046,6 +63566,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -63339,6 +63875,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -63630,6 +64182,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -63923,6 +64491,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -64214,6 +64798,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -64507,6 +65107,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -64637,38 +65253,6 @@ window.PEIDAN_DATA = {
           "code": "310102931",
           "detail": "ID2000XM全透镜头罩",
           "remark": "删除：202408180，添加：202407731"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYT0540-04S",
-          "code": "102205973",
-          "detail": "M12接口镜头,1/1.8”,光圈F4.0,焦距4.98mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY0840-05S",
-          "code": "102205321",
-          "detail": "M12镜头，8mm，F4.0，2/3\"，5MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY1240-20S",
-          "code": "102205253",
-          "detail": "M12镜头，12mm，F4.0，2/3''，20MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB1640-05S",
-          "code": "102205952",
-          "detail": "M12接口镜头,1/1.7”, 光圈F4.0, 焦距16.01mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -64799,6 +65383,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -64931,38 +65531,6 @@ window.PEIDAN_DATA = {
           "remark": "删除：202408180，添加：202407731"
         },
         {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYT0540-04S",
-          "code": "102205973",
-          "detail": "M12接口镜头,1/1.8”,光圈F4.0,焦距4.98mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY0840-05S",
-          "code": "102205321",
-          "detail": "M12镜头，8mm，F4.0，2/3\"，5MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY1240-20S",
-          "code": "102205253",
-          "detail": "M12镜头，12mm，F4.0，2/3''，20MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB1640-05S",
-          "code": "102205952",
-          "detail": "M12接口镜头,1/1.7”, 光圈F4.0, 焦距16.01mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
           "category": "扩展配件",
           "series": "红色全透拓展光源",
           "name": "MV-IDA-BCL-A-RHN-TOF(全球通中性)",
@@ -65090,6 +65658,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -65221,38 +65805,6 @@ window.PEIDAN_DATA = {
           "code": "310102931",
           "detail": "ID2000XM全透镜头罩",
           "remark": "删除：202408180，添加：202407731"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYT0540-04S",
-          "code": "102205973",
-          "detail": "M12接口镜头,1/1.8”,光圈F4.0,焦距4.98mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY0840-05S",
-          "code": "102205321",
-          "detail": "M12镜头，8mm，F4.0，2/3\"，5MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY1240-20S",
-          "code": "102205253",
-          "detail": "M12镜头，12mm，F4.0，2/3''，20MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB1640-05S",
-          "code": "102205952",
-          "detail": "M12接口镜头,1/1.7”, 光圈F4.0, 焦距16.01mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -65383,6 +65935,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -65513,38 +66081,6 @@ window.PEIDAN_DATA = {
           "code": "310102931",
           "detail": "ID2000XM全透镜头罩",
           "remark": "删除：202408180，添加：202407731"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYT0540-04S",
-          "code": "102205973",
-          "detail": "M12接口镜头,1/1.8”,光圈F4.0,焦距4.98mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY0840-05S",
-          "code": "102205321",
-          "detail": "M12镜头，8mm，F4.0，2/3\"，5MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY1240-20S",
-          "code": "102205253",
-          "detail": "M12镜头，12mm，F4.0，2/3''，20MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB1640-05S",
-          "code": "102205952",
-          "detail": "M12接口镜头,1/1.7”, 光圈F4.0, 焦距16.01mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -65675,6 +66211,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -65805,38 +66357,6 @@ window.PEIDAN_DATA = {
           "code": "310102931",
           "detail": "ID2000XM全透镜头罩",
           "remark": "删除：202408180，添加：202407731"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYT0540-04S",
-          "code": "102205973",
-          "detail": "M12接口镜头,1/1.8”,光圈F4.0,焦距4.98mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY0840-05S",
-          "code": "102205321",
-          "detail": "M12镜头，8mm，F4.0，2/3\"，5MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY1240-20S",
-          "code": "102205253",
-          "detail": "M12镜头，12mm，F4.0，2/3''，20MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB1640-05S",
-          "code": "102205952",
-          "detail": "M12接口镜头,1/1.7”, 光圈F4.0, 焦距16.01mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -65967,6 +66487,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -66099,38 +66635,6 @@ window.PEIDAN_DATA = {
           "remark": "删除：202408180，添加：202407731"
         },
         {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYT0540-04S",
-          "code": "102205973",
-          "detail": "M12接口镜头,1/1.8”,光圈F4.0,焦距4.98mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY0840-05S",
-          "code": "102205321",
-          "detail": "M12镜头，8mm，F4.0，2/3\"，5MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY1240-20S",
-          "code": "102205253",
-          "detail": "M12镜头，12mm，F4.0，2/3''，20MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB1640-05S",
-          "code": "102205952",
-          "detail": "M12接口镜头,1/1.7”, 光圈F4.0, 焦距16.01mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
           "category": "扩展配件",
           "series": "红色全透拓展光源",
           "name": "MV-IDA-BCL-A-RHN-TOF(全球通中性)",
@@ -66258,6 +66762,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -66663,6 +67183,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -67066,6 +67602,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -67471,6 +68023,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -67874,6 +68442,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -68279,6 +68863,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -68682,6 +69282,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -69087,6 +69703,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -69491,6 +70123,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -69733,38 +70381,6 @@ window.PEIDAN_DATA = {
           "code": "310102931",
           "detail": "ID2000XM全透镜头罩",
           "remark": "删除：202408180，添加：202407731"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYT0540-04S",
-          "code": "102205973",
-          "detail": "M12接口镜头,1/1.8”,光圈F4.0,焦距4.98mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY0840-05S",
-          "code": "102205321",
-          "detail": "M12镜头，8mm，F4.0，2/3\"，5MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY1240-20S",
-          "code": "102205253",
-          "detail": "M12镜头，12mm，F4.0，2/3''，20MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB1640-05S",
-          "code": "102205952",
-          "detail": "M12接口镜头,1/1.7”, 光圈F4.0, 焦距16.01mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -69895,6 +70511,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -70139,38 +70771,6 @@ window.PEIDAN_DATA = {
           "remark": "删除：202408180，添加：202407731"
         },
         {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYT0540-04S",
-          "code": "102205973",
-          "detail": "M12接口镜头,1/1.8”,光圈F4.0,焦距4.98mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY0840-05S",
-          "code": "102205321",
-          "detail": "M12镜头，8mm，F4.0，2/3\"，5MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY1240-20S",
-          "code": "102205253",
-          "detail": "M12镜头，12mm，F4.0，2/3''，20MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB1640-05S",
-          "code": "102205952",
-          "detail": "M12接口镜头,1/1.7”, 光圈F4.0, 焦距16.01mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
           "category": "扩展配件",
           "series": "红色全透拓展光源",
           "name": "MV-IDA-BCL-A-RHN-TOF(全球通中性)",
@@ -70298,6 +70898,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -70541,38 +71157,6 @@ window.PEIDAN_DATA = {
           "code": "310102931",
           "detail": "ID2000XM全透镜头罩",
           "remark": "删除：202408180，添加：202407731"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYT0540-04S",
-          "code": "102205973",
-          "detail": "M12接口镜头,1/1.8”,光圈F4.0,焦距4.98mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY0840-05S",
-          "code": "102205321",
-          "detail": "M12镜头，8mm，F4.0，2/3\"，5MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY1240-20S",
-          "code": "102205253",
-          "detail": "M12镜头，12mm，F4.0，2/3''，20MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB1640-05S",
-          "code": "102205952",
-          "detail": "M12接口镜头,1/1.7”, 光圈F4.0, 焦距16.01mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -70703,6 +71287,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -70945,38 +71545,6 @@ window.PEIDAN_DATA = {
           "code": "310102931",
           "detail": "ID2000XM全透镜头罩",
           "remark": "删除：202408180，添加：202407731"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYT0540-04S",
-          "code": "102205973",
-          "detail": "M12接口镜头,1/1.8”,光圈F4.0,焦距4.98mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY0840-05S",
-          "code": "102205321",
-          "detail": "M12镜头，8mm，F4.0，2/3\"，5MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY1240-20S",
-          "code": "102205253",
-          "detail": "M12镜头，12mm，F4.0，2/3''，20MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB1640-05S",
-          "code": "102205952",
-          "detail": "M12接口镜头,1/1.7”, 光圈F4.0, 焦距16.01mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -71107,6 +71675,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型(Mini)智能读码器快速指南",
+          "code": "102048152",
+          "detail": "【中文标配】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -71349,38 +71933,6 @@ window.PEIDAN_DATA = {
           "code": "310102931",
           "detail": "ID2000XM全透镜头罩",
           "remark": "删除：202408180，添加：202407731"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYT0540-04S",
-          "code": "102205973",
-          "detail": "M12接口镜头,1/1.8”,光圈F4.0,焦距4.98mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY0840-05S",
-          "code": "102205321",
-          "detail": "M12镜头，8mm，F4.0，2/3\"，5MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY1240-20S",
-          "code": "102205253",
-          "detail": "M12镜头，12mm，F4.0，2/3''，20MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB1640-05S",
-          "code": "102205952",
-          "detail": "M12接口镜头,1/1.7”, 光圈F4.0, 焦距16.01mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -71511,6 +72063,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型(Mini)智能读码器快速指南",
+          "code": "102048154",
+          "detail": "【中文中性】极小型(Mini)智能读码器快速指南V2.0.0，适配ID2000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -71755,38 +72323,6 @@ window.PEIDAN_DATA = {
           "remark": "删除：202408180，添加：202407731"
         },
         {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYT0540-04S",
-          "code": "102205973",
-          "detail": "M12接口镜头,1/1.8”,光圈F4.0,焦距4.98mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY0840-05S",
-          "code": "102205321",
-          "detail": "M12镜头，8mm，F4.0，2/3\"，5MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BMY1240-20S",
-          "code": "102205253",
-          "detail": "M12镜头，12mm，F4.0，2/3''，20MP，M12接口",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB1640-05S",
-          "code": "102205952",
-          "detail": "M12接口镜头,1/1.7”, 光圈F4.0, 焦距16.01mm",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
           "category": "扩展配件",
           "series": "红色全透拓展光源",
           "name": "MV-IDA-BCL-A-RHN-TOF(全球通中性)",
@@ -71914,6 +72450,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型工业读码器快速指南",
+          "code": "102048037",
+          "detail": "【中文标配】紧凑型工业读码器快速指南V3.0.0，适配ID3000PM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "红色防静电袋",
+          "code": "194300309",
+          "detail": "120x200mm ,机器人 AGV读码器粉红色防静电袋",
           "remark": ""
         }
       ],
@@ -72239,6 +72791,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型工业读码器快速指南",
+          "code": "102048038",
+          "detail": "【中文中性】紧凑型工业读码器快速指南V3.0.0，适配ID3000PM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "红色防静电袋",
+          "code": "194300309",
+          "detail": "120x200mm ,机器人 AGV读码器粉红色防静电袋",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -72562,6 +73130,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型工业读码器快速指南",
+          "code": "102048037",
+          "detail": "【中文标配】紧凑型工业读码器快速指南V3.0.0，适配ID3000PM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "红色防静电袋",
+          "code": "194300309",
+          "detail": "120x200mm ,机器人 AGV读码器粉红色防静电袋",
           "remark": ""
         }
       ],
@@ -72887,6 +73471,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型工业读码器快速指南",
+          "code": "102048038",
+          "detail": "【中文中性】紧凑型工业读码器快速指南V3.0.0，适配ID3000PM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "红色防静电袋",
+          "code": "194300309",
+          "detail": "120x200mm ,机器人 AGV读码器粉红色防静电袋",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -73210,6 +73810,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型工业读码器快速指南",
+          "code": "102048037",
+          "detail": "【中文标配】紧凑型工业读码器快速指南V3.0.0，适配ID3000PM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "红色防静电袋",
+          "code": "194300309",
+          "detail": "120x200mm ,机器人 AGV读码器粉红色防静电袋",
           "remark": ""
         }
       ],
@@ -73535,6 +74151,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型工业读码器快速指南",
+          "code": "102048038",
+          "detail": "【中文中性】紧凑型工业读码器快速指南V3.0.0，适配ID3000PM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "红色防静电袋",
+          "code": "194300309",
+          "detail": "120x200mm ,机器人 AGV读码器粉红色防静电袋",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -73858,6 +74490,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型工业读码器快速指南",
+          "code": "102048037",
+          "detail": "【中文标配】紧凑型工业读码器快速指南V3.0.0，适配ID3000PM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "红色防静电袋",
+          "code": "194300309",
+          "detail": "120x200mm ,机器人 AGV读码器粉红色防静电袋",
           "remark": ""
         }
       ],
@@ -74223,6 +74871,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型工业读码器快速指南",
+          "code": "102048038",
+          "detail": "【中文中性】紧凑型工业读码器快速指南V3.0.0，适配ID3000PM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "红色防静电袋",
+          "code": "194300309",
+          "detail": "120x200mm ,机器人 AGV读码器粉红色防静电袋",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -74586,6 +75250,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型工业读码器快速指南",
+          "code": "102048037",
+          "detail": "【中文标配】紧凑型工业读码器快速指南V3.0.0，适配ID3000PM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "红色防静电袋",
+          "code": "194300309",
+          "detail": "120x200mm ,机器人 AGV读码器粉红色防静电袋",
           "remark": ""
         }
       ],
@@ -74951,6 +75631,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型工业读码器快速指南",
+          "code": "102048038",
+          "detail": "【中文中性】紧凑型工业读码器快速指南V3.0.0，适配ID3000PM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "红色防静电袋",
+          "code": "194300309",
+          "detail": "120x200mm ,机器人 AGV读码器粉红色防静电袋",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -75314,6 +76010,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型工业读码器快速指南",
+          "code": "102048037",
+          "detail": "【中文标配】紧凑型工业读码器快速指南V3.0.0，适配ID3000PM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "红色防静电袋",
+          "code": "194300309",
+          "detail": "120x200mm ,机器人 AGV读码器粉红色防静电袋",
           "remark": ""
         }
       ],
@@ -75679,6 +76391,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型工业读码器快速指南",
+          "code": "102048038",
+          "detail": "【中文中性】紧凑型工业读码器快速指南V3.0.0，适配ID3000PM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "红色防静电袋",
+          "code": "194300309",
+          "detail": "120x200mm ,机器人 AGV读码器粉红色防静电袋",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -76043,6 +76771,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型工业读码器快速指南",
+          "code": "102048037",
+          "detail": "【中文标配】紧凑型工业读码器快速指南V3.0.0，适配ID3000PM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "红色防静电袋",
+          "code": "194300309",
+          "detail": "120x200mm ,机器人 AGV读码器粉红色防静电袋",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -76366,6 +77110,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型工业读码器快速指南",
+          "code": "102048038",
+          "detail": "【中文中性】紧凑型工业读码器快速指南V3.0.0，适配ID3000PM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "红色防静电袋",
+          "code": "194300309",
+          "detail": "120x200mm ,机器人 AGV读码器粉红色防静电袋",
           "remark": ""
         }
       ],
@@ -76691,6 +77451,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型工业读码器快速指南",
+          "code": "102048037",
+          "detail": "【中文标配】紧凑型工业读码器快速指南V3.0.0，适配ID3000PM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "红色防静电袋",
+          "code": "194300309",
+          "detail": "120x200mm ,机器人 AGV读码器粉红色防静电袋",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -77014,6 +77790,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型工业读码器快速指南",
+          "code": "102048038",
+          "detail": "【中文中性】紧凑型工业读码器快速指南V3.0.0，适配ID3000PM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "红色防静电袋",
+          "code": "194300309",
+          "detail": "120x200mm ,机器人 AGV读码器粉红色防静电袋",
           "remark": ""
         }
       ],
@@ -77339,6 +78131,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型工业读码器快速指南",
+          "code": "102048037",
+          "detail": "【中文标配】紧凑型工业读码器快速指南V3.0.0，适配ID3000PM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "红色防静电袋",
+          "code": "194300309",
+          "detail": "120x200mm ,机器人 AGV读码器粉红色防静电袋",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -77662,6 +78470,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型工业读码器快速指南",
+          "code": "102048038",
+          "detail": "【中文中性】紧凑型工业读码器快速指南V3.0.0，适配ID3000PM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "红色防静电袋",
+          "code": "194300309",
+          "detail": "120x200mm ,机器人 AGV读码器粉红色防静电袋",
           "remark": ""
         }
       ],
@@ -77987,6 +78811,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型工业读码器快速指南",
+          "code": "102048037",
+          "detail": "【中文标配】紧凑型工业读码器快速指南V3.0.0，适配ID3000PM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "红色防静电袋",
+          "code": "194300309",
+          "detail": "120x200mm ,机器人 AGV读码器粉红色防静电袋",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -78311,6 +79151,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型工业读码器快速指南",
+          "code": "102048038",
+          "detail": "【中文中性】紧凑型工业读码器快速指南V3.0.0，适配ID3000PM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "红色防静电袋",
+          "code": "194300309",
+          "detail": "120x200mm ,机器人 AGV读码器粉红色防静电袋",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -78634,6 +79490,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型工业读码器快速指南",
+          "code": "102048037",
+          "detail": "【中文标配】紧凑型工业读码器快速指南V3.0.0，适配ID3000PM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "红色防静电袋",
+          "code": "194300309",
+          "detail": "120x200mm ,机器人 AGV读码器粉红色防静电袋",
           "remark": ""
         }
       ],
@@ -79007,6 +79879,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型工业读码器快速指南",
+          "code": "102048038",
+          "detail": "【中文中性】紧凑型工业读码器快速指南V3.0.0，适配ID3000PM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "红色防静电袋",
+          "code": "194300309",
+          "detail": "120x200mm ,机器人 AGV读码器粉红色防静电袋",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -79378,6 +80266,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型工业读码器快速指南",
+          "code": "102048037",
+          "detail": "【中文标配】紧凑型工业读码器快速指南V3.0.0，适配ID3000PM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "红色防静电袋",
+          "code": "194300309",
+          "detail": "120x200mm ,机器人 AGV读码器粉红色防静电袋",
           "remark": ""
         }
       ],
@@ -79751,6 +80655,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型工业读码器快速指南",
+          "code": "102048038",
+          "detail": "【中文中性】紧凑型工业读码器快速指南V3.0.0，适配ID3000PM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "红色防静电袋",
+          "code": "194300309",
+          "detail": "120x200mm ,机器人 AGV读码器粉红色防静电袋",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -80122,6 +81042,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型工业读码器快速指南",
+          "code": "102048037",
+          "detail": "【中文标配】紧凑型工业读码器快速指南V3.0.0，适配ID3000PM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "红色防静电袋",
+          "code": "194300309",
+          "detail": "120x200mm ,机器人 AGV读码器粉红色防静电袋",
           "remark": ""
         }
       ],
@@ -80495,6 +81431,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型工业读码器快速指南",
+          "code": "102048038",
+          "detail": "【中文中性】紧凑型工业读码器快速指南V3.0.0，适配ID3000PM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "红色防静电袋",
+          "code": "194300309",
+          "detail": "120x200mm ,机器人 AGV读码器粉红色防静电袋",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -80867,6 +81819,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型工业读码器快速指南",
+          "code": "102048037",
+          "detail": "【中文标配】紧凑型工业读码器快速指南V3.0.0，适配ID3000PM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "红色防静电袋",
+          "code": "194300309",
+          "detail": "120x200mm ,机器人 AGV读码器粉红色防静电袋",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -81238,6 +82206,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型工业读码器快速指南",
+          "code": "102048038",
+          "detail": "【中文中性】紧凑型工业读码器快速指南V3.0.0，适配ID3000PM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "红色防静电袋",
+          "code": "194300309",
+          "detail": "120x200mm ,机器人 AGV读码器粉红色防静电袋",
           "remark": ""
         }
       ],
@@ -81618,6 +82602,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046892",
+          "detail": "【中文标配】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -82079,6 +83079,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046891",
+          "detail": "【中文中性】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -82538,6 +83554,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046892",
+          "detail": "【中文标配】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -82999,6 +84031,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046891",
+          "detail": "【中文中性】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -83458,6 +84506,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046892",
+          "detail": "【中文标配】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -83919,6 +84983,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046891",
+          "detail": "【中文中性】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -84378,6 +85458,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046892",
+          "detail": "【中文标配】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -84839,6 +85935,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046891",
+          "detail": "【中文中性】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -85299,6 +86411,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046892",
+          "detail": "【中文标配】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -85573,38 +86701,6 @@ window.PEIDAN_DATA = {
           "code": "202409862",
           "detail": "仅4颗灯珠区域为全透，底部任为扩散，仅适配ID3000XM V3.0",
           "remark": "删除：202408451，添加：202409862"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB0856-12S",
-          "code": "102203387",
-          "detail": "焦距8mm，光圈F5.6，六百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1256-12S",
-          "code": "102202753",
-          "detail": "焦距12mm，光圈F5.6，12百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1656-12S",
-          "code": "102203196",
-          "detail": "焦距16mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP2556-12S",
-          "code": "102203197",
-          "detail": "焦距25mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -85759,6 +86855,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046891",
+          "detail": "【中文中性】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -86033,38 +87145,6 @@ window.PEIDAN_DATA = {
           "code": "202409862",
           "detail": "仅4颗灯珠区域为全透，底部任为扩散，仅适配ID3000XM V3.0",
           "remark": "删除：202408451，添加：202409862"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB0856-12S",
-          "code": "102203387",
-          "detail": "焦距8mm，光圈F5.6，六百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1256-12S",
-          "code": "102202753",
-          "detail": "焦距12mm，光圈F5.6，12百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1656-12S",
-          "code": "102203196",
-          "detail": "焦距16mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP2556-12S",
-          "code": "102203197",
-          "detail": "焦距25mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -86219,6 +87299,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046892",
+          "detail": "【中文标配】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -86493,38 +87589,6 @@ window.PEIDAN_DATA = {
           "code": "202409862",
           "detail": "仅4颗灯珠区域为全透，底部任为扩散，仅适配ID3000XM V3.0",
           "remark": "删除：202408451，添加：202409862"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB0856-12S",
-          "code": "102203387",
-          "detail": "焦距8mm，光圈F5.6，六百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1256-12S",
-          "code": "102202753",
-          "detail": "焦距12mm，光圈F5.6，12百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1656-12S",
-          "code": "102203196",
-          "detail": "焦距16mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP2556-12S",
-          "code": "102203197",
-          "detail": "焦距25mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -86679,6 +87743,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046891",
+          "detail": "【中文中性】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -86953,38 +88033,6 @@ window.PEIDAN_DATA = {
           "code": "202409862",
           "detail": "仅4颗灯珠区域为全透，底部任为扩散，仅适配ID3000XM V3.0",
           "remark": "删除：202408451，添加：202409862"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB0856-12S",
-          "code": "102203387",
-          "detail": "焦距8mm，光圈F5.6，六百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1256-12S",
-          "code": "102202753",
-          "detail": "焦距12mm，光圈F5.6，12百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1656-12S",
-          "code": "102203196",
-          "detail": "焦距16mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP2556-12S",
-          "code": "102203197",
-          "detail": "焦距25mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -87139,6 +88187,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046892",
+          "detail": "【中文标配】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -87413,38 +88477,6 @@ window.PEIDAN_DATA = {
           "code": "202409862",
           "detail": "仅4颗灯珠区域为全透，底部任为扩散，仅适配ID3000XM V3.0",
           "remark": "删除：202408451，添加：202409862"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB0856-12S",
-          "code": "102203387",
-          "detail": "焦距8mm，光圈F5.6，六百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1256-12S",
-          "code": "102202753",
-          "detail": "焦距12mm，光圈F5.6，12百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1656-12S",
-          "code": "102203196",
-          "detail": "焦距16mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP2556-12S",
-          "code": "102203197",
-          "detail": "焦距25mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -87599,6 +88631,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046891",
+          "detail": "【中文中性】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -87875,38 +88923,6 @@ window.PEIDAN_DATA = {
           "remark": "删除：202408451，添加：202409862"
         },
         {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB0856-12S",
-          "code": "102203387",
-          "detail": "焦距8mm，光圈F5.6，六百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1256-12S",
-          "code": "102202753",
-          "detail": "焦距12mm，光圈F5.6，12百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1656-12S",
-          "code": "102203196",
-          "detail": "焦距16mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP2556-12S",
-          "code": "102203197",
-          "detail": "焦距25mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
           "category": "扩展配件",
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
@@ -88058,6 +89074,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046892",
+          "detail": "【中文标配】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -88519,6 +89551,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046891",
+          "detail": "【中文中性】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -88978,6 +90026,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046892",
+          "detail": "【中文标配】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -89439,6 +90503,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046891",
+          "detail": "【中文中性】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -89898,6 +90978,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046892",
+          "detail": "【中文标配】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -90359,6 +91455,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046891",
+          "detail": "【中文中性】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -90818,6 +91930,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046892",
+          "detail": "【中文标配】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -91279,6 +92407,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046891",
+          "detail": "【中文中性】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -91739,6 +92883,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046892",
+          "detail": "【中文标配】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -92013,38 +93173,6 @@ window.PEIDAN_DATA = {
           "code": "202409862",
           "detail": "仅4颗灯珠区域为全透，底部任为扩散，仅适配ID3000XM V3.0",
           "remark": "删除：202408451，添加：202409862"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB0856-12S",
-          "code": "102203387",
-          "detail": "焦距8mm，光圈F5.6，六百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1256-12S",
-          "code": "102202753",
-          "detail": "焦距12mm，光圈F5.6，12百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1656-12S",
-          "code": "102203196",
-          "detail": "焦距16mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP2556-12S",
-          "code": "102203197",
-          "detail": "焦距25mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -92199,6 +93327,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046891",
+          "detail": "【中文中性】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -92473,38 +93617,6 @@ window.PEIDAN_DATA = {
           "code": "202409862",
           "detail": "仅4颗灯珠区域为全透，底部任为扩散，仅适配ID3000XM V3.0",
           "remark": "删除：202408451，添加：202409862"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB0856-12S",
-          "code": "102203387",
-          "detail": "焦距8mm，光圈F5.6，六百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1256-12S",
-          "code": "102202753",
-          "detail": "焦距12mm，光圈F5.6，12百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1656-12S",
-          "code": "102203196",
-          "detail": "焦距16mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP2556-12S",
-          "code": "102203197",
-          "detail": "焦距25mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -92659,6 +93771,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046892",
+          "detail": "【中文标配】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -92933,38 +94061,6 @@ window.PEIDAN_DATA = {
           "code": "202409862",
           "detail": "仅4颗灯珠区域为全透，底部任为扩散，仅适配ID3000XM V3.0",
           "remark": "删除：202408451，添加：202409862"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB0856-12S",
-          "code": "102203387",
-          "detail": "焦距8mm，光圈F5.6，六百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1256-12S",
-          "code": "102202753",
-          "detail": "焦距12mm，光圈F5.6，12百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1656-12S",
-          "code": "102203196",
-          "detail": "焦距16mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP2556-12S",
-          "code": "102203197",
-          "detail": "焦距25mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -93119,6 +94215,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046891",
+          "detail": "【中文中性】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -93393,38 +94505,6 @@ window.PEIDAN_DATA = {
           "code": "202409862",
           "detail": "仅4颗灯珠区域为全透，底部任为扩散，仅适配ID3000XM V3.0",
           "remark": "删除：202408451，添加：202409862"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB0856-12S",
-          "code": "102203387",
-          "detail": "焦距8mm，光圈F5.6，六百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1256-12S",
-          "code": "102202753",
-          "detail": "焦距12mm，光圈F5.6，12百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1656-12S",
-          "code": "102203196",
-          "detail": "焦距16mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP2556-12S",
-          "code": "102203197",
-          "detail": "焦距25mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -93579,6 +94659,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046892",
+          "detail": "【中文标配】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -93853,38 +94949,6 @@ window.PEIDAN_DATA = {
           "code": "202409862",
           "detail": "仅4颗灯珠区域为全透，底部任为扩散，仅适配ID3000XM V3.0",
           "remark": "删除：202408451，添加：202409862"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB0856-12S",
-          "code": "102203387",
-          "detail": "焦距8mm，光圈F5.6，六百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1256-12S",
-          "code": "102202753",
-          "detail": "焦距12mm，光圈F5.6，12百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1656-12S",
-          "code": "102203196",
-          "detail": "焦距16mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP2556-12S",
-          "code": "102203197",
-          "detail": "焦距25mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -94039,6 +95103,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046891",
+          "detail": "【中文中性】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -94315,38 +95395,6 @@ window.PEIDAN_DATA = {
           "remark": "删除：202408451，添加：202409862"
         },
         {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB0856-12S",
-          "code": "102203387",
-          "detail": "焦距8mm，光圈F5.6，六百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1256-12S",
-          "code": "102202753",
-          "detail": "焦距12mm，光圈F5.6，12百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1656-12S",
-          "code": "102203196",
-          "detail": "焦距16mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP2556-12S",
-          "code": "102203197",
-          "detail": "焦距25mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
           "category": "扩展配件",
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
@@ -94482,6 +95530,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046892",
+          "detail": "【中文标配】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -94951,6 +96015,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046891",
+          "detail": "【中文中性】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -95418,6 +96498,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046892",
+          "detail": "【中文标配】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -95887,6 +96983,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046891",
+          "detail": "【中文中性】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -96354,6 +97466,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046892",
+          "detail": "【中文标配】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -96823,6 +97951,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046891",
+          "detail": "【中文中性】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -97290,6 +98434,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046892",
+          "detail": "【中文标配】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -97759,6 +98919,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046891",
+          "detail": "【中文中性】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -98219,6 +99395,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046892",
+          "detail": "【中文标配】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -98523,7 +99715,7 @@ window.PEIDAN_DATA = {
     {
       "productCategory": "ID3000XM系列",
       "productSeries": "ID3040RM系列",
-      "productModel": "MV-ID3040RM-00C-NNN(国内中性))",
+      "productModel": "MV-ID3040RM-00C-NNN(国内中性)",
       "materialCode": "313203012",
       "description": "4MP，卷帘快门，无镜头，无自带光源",
       "remark": "",
@@ -98566,6 +99758,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046891",
+          "detail": "【中文中性】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
           "remark": ""
         }
       ],
@@ -98938,6 +100146,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046892",
+          "detail": "【中文标配】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -99399,6 +100623,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046891",
+          "detail": "【中文中性】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -99858,6 +101098,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046892",
+          "detail": "【中文标配】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -100319,6 +101575,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046891",
+          "detail": "【中文中性】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -100778,6 +102050,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046892",
+          "detail": "【中文标配】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -101239,6 +102527,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046891",
+          "detail": "【中文中性】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -101698,6 +103002,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046892",
+          "detail": "【中文标配】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -102159,6 +103479,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046891",
+          "detail": "【中文中性】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -102619,6 +103955,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046892",
+          "detail": "【中文标配】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -102893,38 +104245,6 @@ window.PEIDAN_DATA = {
           "code": "202409862",
           "detail": "仅4颗灯珠区域为全透，底部任为扩散，仅适配ID3000XM V3.0",
           "remark": "删除：202408451，添加：202409862"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB0856-12S",
-          "code": "102203387",
-          "detail": "焦距8mm，光圈F5.6，六百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1256-12S",
-          "code": "102202753",
-          "detail": "焦距12mm，光圈F5.6，12百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1656-12S",
-          "code": "102203196",
-          "detail": "焦距16mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP2556-12S",
-          "code": "102203197",
-          "detail": "焦距25mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -103079,6 +104399,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046891",
+          "detail": "【中文中性】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -103353,38 +104689,6 @@ window.PEIDAN_DATA = {
           "code": "202409862",
           "detail": "仅4颗灯珠区域为全透，底部任为扩散，仅适配ID3000XM V3.0",
           "remark": "删除：202408451，添加：202409862"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB0856-12S",
-          "code": "102203387",
-          "detail": "焦距8mm，光圈F5.6，六百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1256-12S",
-          "code": "102202753",
-          "detail": "焦距12mm，光圈F5.6，12百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1656-12S",
-          "code": "102203196",
-          "detail": "焦距16mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP2556-12S",
-          "code": "102203197",
-          "detail": "焦距25mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -103539,6 +104843,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046892",
+          "detail": "【中文标配】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -103813,38 +105133,6 @@ window.PEIDAN_DATA = {
           "code": "202409862",
           "detail": "仅4颗灯珠区域为全透，底部任为扩散，仅适配ID3000XM V3.0",
           "remark": "删除：202408451，添加：202409862"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB0856-12S",
-          "code": "102203387",
-          "detail": "焦距8mm，光圈F5.6，六百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1256-12S",
-          "code": "102202753",
-          "detail": "焦距12mm，光圈F5.6，12百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1656-12S",
-          "code": "102203196",
-          "detail": "焦距16mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP2556-12S",
-          "code": "102203197",
-          "detail": "焦距25mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -103999,6 +105287,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046891",
+          "detail": "【中文中性】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -104273,38 +105577,6 @@ window.PEIDAN_DATA = {
           "code": "202409862",
           "detail": "仅4颗灯珠区域为全透，底部任为扩散，仅适配ID3000XM V3.0",
           "remark": "删除：202408451，添加：202409862"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB0856-12S",
-          "code": "102203387",
-          "detail": "焦距8mm，光圈F5.6，六百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1256-12S",
-          "code": "102202753",
-          "detail": "焦距12mm，光圈F5.6，12百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1656-12S",
-          "code": "102203196",
-          "detail": "焦距16mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP2556-12S",
-          "code": "102203197",
-          "detail": "焦距25mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -104459,6 +105731,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046892",
+          "detail": "【中文标配】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -104733,38 +106021,6 @@ window.PEIDAN_DATA = {
           "code": "202409862",
           "detail": "仅4颗灯珠区域为全透，底部任为扩散，仅适配ID3000XM V3.0",
           "remark": "删除：202408451，添加：202409862"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB0856-12S",
-          "code": "102203387",
-          "detail": "焦距8mm，光圈F5.6，六百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1256-12S",
-          "code": "102202753",
-          "detail": "焦距12mm，光圈F5.6，12百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1656-12S",
-          "code": "102203196",
-          "detail": "焦距16mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP2556-12S",
-          "code": "102203197",
-          "detail": "焦距25mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -104919,6 +106175,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046891",
+          "detail": "【中文中性】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -105195,38 +106467,6 @@ window.PEIDAN_DATA = {
           "remark": "删除：202408451，添加：202409862"
         },
         {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB0856-12S",
-          "code": "102203387",
-          "detail": "焦距8mm，光圈F5.6，六百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1256-12S",
-          "code": "102202753",
-          "detail": "焦距12mm，光圈F5.6，12百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1656-12S",
-          "code": "102203196",
-          "detail": "焦距16mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP2556-12S",
-          "code": "102203197",
-          "detail": "焦距25mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
           "category": "扩展配件",
           "series": "极小码配件",
           "name": "MV-IDA-C-Y-61-45-M(国内中性)V2.0",
@@ -105362,6 +106602,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046892",
+          "detail": "【中文标配】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -105831,6 +107087,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046891",
+          "detail": "【中文中性】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -106298,6 +107570,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046892",
+          "detail": "【中文标配】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -106767,6 +108055,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046891",
+          "detail": "【中文中性】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -107234,6 +108538,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046892",
+          "detail": "【中文标配】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -107703,6 +109023,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046891",
+          "detail": "【中文中性】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -108170,6 +109506,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046892",
+          "detail": "【中文标配】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
           "remark": ""
         }
       ],
@@ -108639,6 +109991,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046891",
+          "detail": "【中文中性】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194300023",
+          "detail": "D-63 v1.1 100x175x0.04mm 透明防尘袋，适配自动调焦款",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -109099,6 +110467,22 @@ window.PEIDAN_DATA = {
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046892",
+          "detail": "【中文标配】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -109446,6 +110830,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M3×6",
           "code": "193100773",
           "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】紧凑型(Mini)工业读码器快速指南",
+          "code": "102046891",
+          "detail": "【中文中性】紧凑型(Mini)工业读码器快速指南V2.0.0，适配ID3000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
           "remark": ""
         }
       ],
@@ -109810,6 +111210,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型工业读码器快速指南",
+          "code": "102048039",
+          "detail": "【中文标配】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
           "remark": ""
         }
       ],
@@ -110247,6 +111663,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型工业读码器快速指南",
+          "code": "102048040",
+          "detail": "【中文中性】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -110682,6 +112114,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型工业读码器快速指南",
+          "code": "102048039",
+          "detail": "【中文标配】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
           "remark": ""
         }
       ],
@@ -111119,6 +112567,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型工业读码器快速指南",
+          "code": "102048040",
+          "detail": "【中文中性】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -111554,6 +113018,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型工业读码器快速指南",
+          "code": "102048039",
+          "detail": "【中文标配】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
           "remark": ""
         }
       ],
@@ -111991,6 +113471,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型工业读码器快速指南",
+          "code": "102048040",
+          "detail": "【中文中性】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -112426,6 +113922,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型工业读码器快速指南",
+          "code": "102048039",
+          "detail": "【中文标配】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
           "remark": ""
         }
       ],
@@ -112863,6 +114375,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型工业读码器快速指南",
+          "code": "102048040",
+          "detail": "【中文中性】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -113299,6 +114827,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型工业读码器快速指南",
+          "code": "102048039",
+          "detail": "【中文标配】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -113686,6 +115230,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型工业读码器快速指南",
+          "code": "102048040",
+          "detail": "【中文中性】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
           "remark": ""
         }
       ],
@@ -114075,6 +115635,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型工业读码器快速指南",
+          "code": "102048039",
+          "detail": "【中文标配】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -114462,6 +116038,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型工业读码器快速指南",
+          "code": "102048040",
+          "detail": "【中文中性】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
           "remark": ""
         }
       ],
@@ -114851,6 +116443,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型工业读码器快速指南",
+          "code": "102048039",
+          "detail": "【中文标配】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -115238,6 +116846,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型工业读码器快速指南",
+          "code": "102048040",
+          "detail": "【中文中性】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
           "remark": ""
         }
       ],
@@ -115627,6 +117251,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型工业读码器快速指南",
+          "code": "102048039",
+          "detail": "【中文标配】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -116015,6 +117655,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型工业读码器快速指南",
+          "code": "102048040",
+          "detail": "【中文中性】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -116387,6 +118043,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型工业读码器快速指南",
+          "code": "102048039",
+          "detail": "【中文标配】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -116684,7 +118356,7 @@ window.PEIDAN_DATA = {
           "name": "MV-LB-270-140-4030WL-A",
           "code": "310100510",
           "detail": "24V,120W, 32LED颗粒,全角40*30°，主推，搭配ID6000系列智能读码器使用",
-          "remark": "删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
+          "remark": "ID5000搭配物流大灯需要调整相机钣金，删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
         },
         {
           "category": "扩展配件",
@@ -116799,6 +118471,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型工业读码器快速指南",
+          "code": "102048040",
+          "detail": "【中文中性】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -117096,7 +118784,7 @@ window.PEIDAN_DATA = {
           "name": "MV-LB-270-140-4030WL-A",
           "code": "310100510",
           "detail": "24V,120W, 32LED颗粒,全角40*30°，主推，搭配ID6000系列智能读码器使用",
-          "remark": "删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
+          "remark": "ID5000搭配物流大灯需要调整相机钣金，删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
         },
         {
           "category": "扩展配件",
@@ -117226,6 +118914,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型工业读码器快速指南",
+          "code": "102048039",
+          "detail": "【中文标配】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
           "remark": ""
         }
       ],
@@ -117615,6 +119319,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型工业读码器快速指南",
+          "code": "102048040",
+          "detail": "【中文中性】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -118002,6 +119722,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型工业读码器快速指南",
+          "code": "102048039",
+          "detail": "【中文标配】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
           "remark": ""
         }
       ],
@@ -118391,6 +120127,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型工业读码器快速指南",
+          "code": "102048040",
+          "detail": "【中文中性】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -118778,6 +120530,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型工业读码器快速指南",
+          "code": "102048039",
+          "detail": "【中文标配】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
           "remark": ""
         }
       ],
@@ -119167,6 +120935,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型工业读码器快速指南",
+          "code": "102048040",
+          "detail": "【中文中性】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -119554,6 +121338,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型工业读码器快速指南",
+          "code": "102048039",
+          "detail": "【中文标配】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
           "remark": ""
         }
       ],
@@ -119943,6 +121743,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型工业读码器快速指南",
+          "code": "102048040",
+          "detail": "【中文中性】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -120330,6 +122146,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型工业读码器快速指南",
+          "code": "102048039",
+          "detail": "【中文标配】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
           "remark": ""
         }
       ],
@@ -120719,6 +122551,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型工业读码器快速指南",
+          "code": "102048040",
+          "detail": "【中文中性】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -121106,6 +122954,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型工业读码器快速指南",
+          "code": "102048039",
+          "detail": "【中文标配】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
           "remark": ""
         }
       ],
@@ -121495,6 +123359,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型工业读码器快速指南",
+          "code": "102048040",
+          "detail": "【中文中性】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -121882,6 +123762,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型工业读码器快速指南",
+          "code": "102048039",
+          "detail": "【中文标配】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
           "remark": ""
         }
       ],
@@ -122271,6 +124167,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型工业读码器快速指南",
+          "code": "102048040",
+          "detail": "【中文中性】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -122658,6 +124570,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型工业读码器快速指南",
+          "code": "102048039",
+          "detail": "【中文标配】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
           "remark": ""
         }
       ],
@@ -123047,6 +124975,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型工业读码器快速指南",
+          "code": "102048040",
+          "detail": "【中文中性】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -123419,6 +125363,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型工业读码器快速指南",
+          "code": "102048039",
+          "detail": "【中文标配】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -123716,7 +125676,7 @@ window.PEIDAN_DATA = {
           "name": "MV-LB-270-140-4030WL-A",
           "code": "310100510",
           "detail": "24V,120W, 32LED颗粒,全角40*30°，主推，搭配ID6000系列智能读码器使用",
-          "remark": "删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
+          "remark": "ID5000搭配物流大灯需要调整相机钣金，删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
         },
         {
           "category": "扩展配件",
@@ -123831,6 +125791,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型工业读码器快速指南",
+          "code": "102048040",
+          "detail": "【中文中性】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -124128,7 +126104,7 @@ window.PEIDAN_DATA = {
           "name": "MV-LB-270-140-4030WL-A",
           "code": "310100510",
           "detail": "24V,120W, 32LED颗粒,全角40*30°，主推，搭配ID6000系列智能读码器使用",
-          "remark": "删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
+          "remark": "ID5000搭配物流大灯需要调整相机钣金，删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
         },
         {
           "category": "扩展配件",
@@ -124243,6 +126219,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型工业读码器快速指南",
+          "code": "102048039",
+          "detail": "【中文标配】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -124540,7 +126532,7 @@ window.PEIDAN_DATA = {
           "name": "MV-LB-270-140-4030WL-A",
           "code": "310100510",
           "detail": "24V,120W, 32LED颗粒,全角40*30°，主推，搭配ID6000系列智能读码器使用",
-          "remark": "删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
+          "remark": "ID5000搭配物流大灯需要调整相机钣金，删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
         },
         {
           "category": "扩展配件",
@@ -124655,6 +126647,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型工业读码器快速指南",
+          "code": "102048040",
+          "detail": "【中文中性】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -124952,7 +126960,7 @@ window.PEIDAN_DATA = {
           "name": "MV-LB-270-140-4030WL-A",
           "code": "310100510",
           "detail": "24V,120W, 32LED颗粒,全角40*30°，主推，搭配ID6000系列智能读码器使用",
-          "remark": "删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
+          "remark": "ID5000搭配物流大灯需要调整相机钣金，删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
         },
         {
           "category": "扩展配件",
@@ -125067,6 +127075,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型工业读码器快速指南",
+          "code": "102048039",
+          "detail": "【中文标配】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -125364,7 +127388,7 @@ window.PEIDAN_DATA = {
           "name": "MV-LB-270-140-4030WL-A",
           "code": "310100510",
           "detail": "24V,120W, 32LED颗粒,全角40*30°，主推，搭配ID6000系列智能读码器使用",
-          "remark": "删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
+          "remark": "ID5000搭配物流大灯需要调整相机钣金，删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
         },
         {
           "category": "扩展配件",
@@ -125479,6 +127503,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型工业读码器快速指南",
+          "code": "102048040",
+          "detail": "【中文中性】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -125776,7 +127816,7 @@ window.PEIDAN_DATA = {
           "name": "MV-LB-270-140-4030WL-A",
           "code": "310100510",
           "detail": "24V,120W, 32LED颗粒,全角40*30°，主推，搭配ID6000系列智能读码器使用",
-          "remark": "删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
+          "remark": "ID5000搭配物流大灯需要调整相机钣金，删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
         },
         {
           "category": "扩展配件",
@@ -125891,6 +127931,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型工业读码器快速指南",
+          "code": "102048039",
+          "detail": "【中文标配】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -126188,7 +128244,7 @@ window.PEIDAN_DATA = {
           "name": "MV-LB-270-140-4030WL-A",
           "code": "310100510",
           "detail": "24V,120W, 32LED颗粒,全角40*30°，主推，搭配ID6000系列智能读码器使用",
-          "remark": "删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
+          "remark": "ID5000搭配物流大灯需要调整相机钣金，删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
         },
         {
           "category": "扩展配件",
@@ -126303,6 +128359,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型工业读码器快速指南",
+          "code": "102048040",
+          "detail": "【中文中性】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -126600,7 +128672,7 @@ window.PEIDAN_DATA = {
           "name": "MV-LB-270-140-4030WL-A",
           "code": "310100510",
           "detail": "24V,120W, 32LED颗粒,全角40*30°，主推，搭配ID6000系列智能读码器使用",
-          "remark": "删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
+          "remark": "ID5000搭配物流大灯需要调整相机钣金，删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
         },
         {
           "category": "扩展配件",
@@ -126699,6 +128771,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型工业读码器快速指南",
+          "code": "102048039",
+          "detail": "【中文标配】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -127012,7 +129100,7 @@ window.PEIDAN_DATA = {
           "name": "MV-LB-270-140-4030WL-A",
           "code": "310100510",
           "detail": "24V,120W, 32LED颗粒,全角40*30°，主推，搭配ID6000系列智能读码器使用",
-          "remark": "删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
+          "remark": "ID5000搭配物流大灯需要调整相机钣金，删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
         },
         {
           "category": "扩展配件",
@@ -127111,6 +129199,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型工业读码器快速指南",
+          "code": "102048040",
+          "detail": "【中文中性】全功能型工业读码器快速指南V2.0.0，适配ID5000M系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明防尘袋",
+          "code": "194200851",
+          "detail": "防尘袋-31(370X180)",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -127424,7 +129528,7 @@ window.PEIDAN_DATA = {
           "name": "MV-LB-270-140-4030WL-A",
           "code": "310100510",
           "detail": "24V,120W, 32LED颗粒,全角40*30°，主推，搭配ID6000系列智能读码器使用",
-          "remark": "删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
+          "remark": "ID5000搭配物流大灯需要调整相机钣金，删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
         },
         {
           "category": "扩展配件",
@@ -127546,6 +129650,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型Mini工业读码器快速指南",
+          "code": "102046860",
+          "detail": "【中文标配】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300031",
+          "detail": "D-68 220x220x0.04mm2.5寸球机透明PE防尘袋",
           "remark": ""
         }
       ],
@@ -127963,9 +130083,9 @@ window.PEIDAN_DATA = {
         {
           "category": "扩展配件",
           "series": "外包装",
-          "name": "包装盒-ID5000XM中性",
-          "code": "194230226",
-          "detail": "228x180x120 机器视觉 (运输标识)中性白盒，适配ID5000XM中性系列",
+          "name": "包装盒-ID5000XM标配",
+          "code": "194230227",
+          "detail": "228x180x120 机器视觉 烫银logo白盒，适配ID5000XM标配系列",
           "remark": ""
         },
         {
@@ -127982,6 +130102,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型Mini工业读码器快速指南",
+          "code": "102046861",
+          "detail": "【中文中性】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300031",
+          "detail": "D-68 220x220x0.04mm2.5寸球机透明PE防尘袋",
           "remark": ""
         }
       ],
@@ -128419,6 +130555,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型Mini工业读码器快速指南",
+          "code": "102046860",
+          "detail": "【中文标配】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300031",
+          "detail": "D-68 220x220x0.04mm2.5寸球机透明PE防尘袋",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -128835,9 +130987,9 @@ window.PEIDAN_DATA = {
         {
           "category": "扩展配件",
           "series": "外包装",
-          "name": "包装盒-ID5000XM中性",
-          "code": "194230226",
-          "detail": "228x180x120 机器视觉 (运输标识)中性白盒，适配ID5000XM中性系列",
+          "name": "包装盒-ID5000XM标配",
+          "code": "194230227",
+          "detail": "228x180x120 机器视觉 烫银logo白盒，适配ID5000XM标配系列",
           "remark": ""
         },
         {
@@ -128854,6 +131006,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型Mini工业读码器快速指南",
+          "code": "102046861",
+          "detail": "【中文中性】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300031",
+          "detail": "D-68 220x220x0.04mm2.5寸球机透明PE防尘袋",
           "remark": ""
         }
       ],
@@ -129291,6 +131459,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型Mini工业读码器快速指南",
+          "code": "102046860",
+          "detail": "【中文标配】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300031",
+          "detail": "D-68 220x220x0.04mm2.5寸球机透明PE防尘袋",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -129707,9 +131891,9 @@ window.PEIDAN_DATA = {
         {
           "category": "扩展配件",
           "series": "外包装",
-          "name": "包装盒-ID5000XM中性",
-          "code": "194230226",
-          "detail": "228x180x120 机器视觉 (运输标识)中性白盒，适配ID5000XM中性系列",
+          "name": "包装盒-ID5000XM标配",
+          "code": "194230227",
+          "detail": "228x180x120 机器视觉 烫银logo白盒，适配ID5000XM标配系列",
           "remark": ""
         },
         {
@@ -129726,6 +131910,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型Mini工业读码器快速指南",
+          "code": "102046861",
+          "detail": "【中文中性】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300031",
+          "detail": "D-68 220x220x0.04mm2.5寸球机透明PE防尘袋",
           "remark": ""
         }
       ],
@@ -130163,6 +132363,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型Mini工业读码器快速指南",
+          "code": "102046860",
+          "detail": "【中文标配】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300031",
+          "detail": "D-68 220x220x0.04mm2.5寸球机透明PE防尘袋",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -130579,9 +132795,9 @@ window.PEIDAN_DATA = {
         {
           "category": "扩展配件",
           "series": "外包装",
-          "name": "包装盒-ID5000XM中性",
-          "code": "194230226",
-          "detail": "228x180x120 机器视觉 (运输标识)中性白盒，适配ID5000XM中性系列",
+          "name": "包装盒-ID5000XM标配",
+          "code": "194230227",
+          "detail": "228x180x120 机器视觉 烫银logo白盒，适配ID5000XM标配系列",
           "remark": ""
         },
         {
@@ -130598,6 +132814,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型Mini工业读码器快速指南",
+          "code": "102046861",
+          "detail": "【中文中性】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300031",
+          "detail": "D-68 220x220x0.04mm2.5寸球机透明PE防尘袋",
           "remark": ""
         }
       ],
@@ -131035,6 +133267,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型Mini工业读码器快速指南",
+          "code": "102046860",
+          "detail": "【中文标配】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300031",
+          "detail": "D-68 220x220x0.04mm2.5寸球机透明PE防尘袋",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -131325,38 +133573,6 @@ window.PEIDAN_DATA = {
           "code": "310102294",
           "detail": "ID5000XR透明镜头罩",
           "remark": "删除：202406694，添加：202406696"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB0856-12S",
-          "code": "102203387",
-          "detail": "焦距8mm，光圈F5.6，六百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1256-12S",
-          "code": "102202753",
-          "detail": "焦距12mm，光圈F5.6，12百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1656-12S",
-          "code": "102203196",
-          "detail": "焦距16mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP2556-12S",
-          "code": "102203197",
-          "detail": "焦距25mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -131451,9 +133667,9 @@ window.PEIDAN_DATA = {
         {
           "category": "扩展配件",
           "series": "外包装",
-          "name": "包装盒-ID5000XM中性",
-          "code": "194230226",
-          "detail": "228x180x120 机器视觉 (运输标识)中性白盒，适配ID5000XM中性系列",
+          "name": "包装盒-ID5000XM标配",
+          "code": "194230227",
+          "detail": "228x180x120 机器视觉 烫银logo白盒，适配ID5000XM标配系列",
           "remark": ""
         },
         {
@@ -131470,6 +133686,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型Mini工业读码器快速指南",
+          "code": "102046861",
+          "detail": "【中文中性】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300031",
+          "detail": "D-68 220x220x0.04mm2.5寸球机透明PE防尘袋",
           "remark": ""
         }
       ],
@@ -131761,38 +133993,6 @@ window.PEIDAN_DATA = {
           "code": "310102294",
           "detail": "ID5000XR透明镜头罩",
           "remark": "删除：202406694，添加：202406696"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB0856-12S",
-          "code": "102203387",
-          "detail": "焦距8mm，光圈F5.6，六百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1256-12S",
-          "code": "102202753",
-          "detail": "焦距12mm，光圈F5.6，12百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1656-12S",
-          "code": "102203196",
-          "detail": "焦距16mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP2556-12S",
-          "code": "102203197",
-          "detail": "焦距25mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -131907,6 +134107,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型Mini工业读码器快速指南",
+          "code": "102046860",
+          "detail": "【中文标配】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300031",
+          "detail": "D-68 220x220x0.04mm2.5寸球机透明PE防尘袋",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -132197,38 +134413,6 @@ window.PEIDAN_DATA = {
           "code": "310102294",
           "detail": "ID5000XR透明镜头罩",
           "remark": "删除：202406694，添加：202406696"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB0856-12S",
-          "code": "102203387",
-          "detail": "焦距8mm，光圈F5.6，六百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1256-12S",
-          "code": "102202753",
-          "detail": "焦距12mm，光圈F5.6，12百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1656-12S",
-          "code": "102203196",
-          "detail": "焦距16mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP2556-12S",
-          "code": "102203197",
-          "detail": "焦距25mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -132323,9 +134507,9 @@ window.PEIDAN_DATA = {
         {
           "category": "扩展配件",
           "series": "外包装",
-          "name": "包装盒-ID5000XM中性",
-          "code": "194230226",
-          "detail": "228x180x120 机器视觉 (运输标识)中性白盒，适配ID5000XM中性系列",
+          "name": "包装盒-ID5000XM标配",
+          "code": "194230227",
+          "detail": "228x180x120 机器视觉 烫银logo白盒，适配ID5000XM标配系列",
           "remark": ""
         },
         {
@@ -132342,6 +134526,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型Mini工业读码器快速指南",
+          "code": "102046861",
+          "detail": "【中文中性】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300031",
+          "detail": "D-68 220x220x0.04mm2.5寸球机透明PE防尘袋",
           "remark": ""
         }
       ],
@@ -132633,38 +134833,6 @@ window.PEIDAN_DATA = {
           "code": "310102294",
           "detail": "ID5000XR透明镜头罩",
           "remark": "删除：202406694，添加：202406696"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB0856-12S",
-          "code": "102203387",
-          "detail": "焦距8mm，光圈F5.6，六百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1256-12S",
-          "code": "102202753",
-          "detail": "焦距12mm，光圈F5.6，12百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1656-12S",
-          "code": "102203196",
-          "detail": "焦距16mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP2556-12S",
-          "code": "102203197",
-          "detail": "焦距25mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -132779,6 +134947,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型Mini工业读码器快速指南",
+          "code": "102046860",
+          "detail": "【中文标配】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300031",
+          "detail": "D-68 220x220x0.04mm2.5寸球机透明PE防尘袋",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -133069,38 +135253,6 @@ window.PEIDAN_DATA = {
           "code": "310102294",
           "detail": "ID5000XR透明镜头罩",
           "remark": "删除：202406694，添加：202406696"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB0856-12S",
-          "code": "102203387",
-          "detail": "焦距8mm，光圈F5.6，六百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1256-12S",
-          "code": "102202753",
-          "detail": "焦距12mm，光圈F5.6，12百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1656-12S",
-          "code": "102203196",
-          "detail": "焦距16mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP2556-12S",
-          "code": "102203197",
-          "detail": "焦距25mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -133195,9 +135347,9 @@ window.PEIDAN_DATA = {
         {
           "category": "扩展配件",
           "series": "外包装",
-          "name": "包装盒-ID5000XM中性",
-          "code": "194230226",
-          "detail": "228x180x120 机器视觉 (运输标识)中性白盒，适配ID5000XM中性系列",
+          "name": "包装盒-ID5000XM标配",
+          "code": "194230227",
+          "detail": "228x180x120 机器视觉 烫银logo白盒，适配ID5000XM标配系列",
           "remark": ""
         },
         {
@@ -133214,6 +135366,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型Mini工业读码器快速指南",
+          "code": "102046861",
+          "detail": "【中文中性】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300031",
+          "detail": "D-68 220x220x0.04mm2.5寸球机透明PE防尘袋",
           "remark": ""
         }
       ],
@@ -133507,38 +135675,6 @@ window.PEIDAN_DATA = {
           "remark": "删除：202406694，添加：202406696"
         },
         {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB0856-12S",
-          "code": "102203387",
-          "detail": "焦距8mm，光圈F5.6，六百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1256-12S",
-          "code": "102202753",
-          "detail": "焦距12mm，光圈F5.6，12百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1656-12S",
-          "code": "102203196",
-          "detail": "焦距16mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP2556-12S",
-          "code": "102203197",
-          "detail": "焦距25mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
           "category": "扩展配件",
           "series": "ESD防护罩",
           "name": "MV-IDA-C-Y-41-56-ESD(国内中性)",
@@ -133623,9 +135759,9 @@ window.PEIDAN_DATA = {
         {
           "category": "扩展配件",
           "series": "泡棉EPE",
-          "name": "泡棉EPE-ID5000XM-00C",
-          "code": "194410472",
-          "detail": "203X172X105,机器人SC5000X C智能相机EPE，适配ID5000XM-00C系列",
+          "name": "泡棉EPE-ID5000XM",
+          "code": "194409360",
+          "detail": "203X172X105,机器人SC5000X智能相机EPE，适配ID5000XM系列",
           "remark": ""
         },
         {
@@ -133634,6 +135770,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型Mini工业读码器快速指南",
+          "code": "102046860",
+          "detail": "【中文标配】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300031",
+          "detail": "D-68 220x220x0.04mm2.5寸球机透明PE防尘袋",
           "remark": ""
         }
       ],
@@ -133936,6 +136088,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "ESD防护罩",
+          "name": "MV-IDA-C-Y-41-56-ESD(国内中性)",
+          "code": "310102292",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "红色全透爆闪光源",
           "name": "MV-IDA-SL-16-C-RBN(全球通中性)",
           "code": "310103194",
@@ -133980,38 +136140,6 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-SL-16-C-BBP(全球通中性)",
           "code": "310103196",
           "detail": "适配C口型号，蓝色16颗补光灯，全偏镜头罩，亮度最大可达自带光源的3倍以上",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "蓝色微码光源",
-          "name": "MV-IDA-LY-02-76C-20B2(全球通中性)",
-          "code": "310103150",
-          "detail": "适配C口型号，蓝色 20 颗补光灯，暗场光源，工作距离76mm",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "红色微码光源",
-          "name": "MV-IDA-LY-02-76C-20R2(全球通中性)",
-          "code": "310103149",
-          "detail": "适配C口型号，红色 20 颗补光灯，暗场光源，工作距离76mm",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "蓝色微码光源",
-          "name": "MV-IDA-LY-02-76C-61B8(全球通中性)",
-          "code": "310103148",
-          "detail": "适配C口型号，蓝色 61 颗补光灯，明暗场光源，工作距离76mm",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "红色微码光源",
-          "name": "MV-IDA-LY-02-76C-61R8(全球通中性)",
-          "code": "310103147",
-          "detail": "适配C口型号，红色 61 颗补光灯，明暗场光源，工作距离76mm",
           "remark": ""
         }
       ]
@@ -134035,17 +136163,17 @@ window.PEIDAN_DATA = {
         {
           "category": "扩展配件",
           "series": "外包装",
-          "name": "包装盒-ID5000XM中性",
-          "code": "194230226",
-          "detail": "228x180x120 机器视觉 (运输标识)中性白盒，适配ID5000XM中性系列",
+          "name": "包装盒-ID5000XM标配",
+          "code": "194230227",
+          "detail": "228x180x120 机器视觉 烫银logo白盒，适配ID5000XM标配系列",
           "remark": ""
         },
         {
           "category": "扩展配件",
           "series": "泡棉EPE",
-          "name": "泡棉EPE-ID5000XM-00C",
-          "code": "194410472",
-          "detail": "203X172X105,机器人SC5000X C智能相机EPE，适配ID5000XM-00C系列",
+          "name": "泡棉EPE-ID5000XM",
+          "code": "194409360",
+          "detail": "203X172X105,机器人SC5000X智能相机EPE，适配ID5000XM系列",
           "remark": ""
         },
         {
@@ -134054,6 +136182,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型Mini工业读码器快速指南",
+          "code": "102046861",
+          "detail": "【中文中性】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300031",
+          "detail": "D-68 220x220x0.04mm2.5寸球机透明PE防尘袋",
           "remark": ""
         }
       ],
@@ -134356,6 +136500,14 @@ window.PEIDAN_DATA = {
         },
         {
           "category": "扩展配件",
+          "series": "ESD防护罩",
+          "name": "MV-IDA-C-Y-41-56-ESD(国内中性)",
+          "code": "310102292",
+          "detail": "静电防护罩，复合IEC61340-5-1：2016防静电要求",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
           "series": "红色全透爆闪光源",
           "name": "MV-IDA-SL-16-C-RBN(全球通中性)",
           "code": "310103194",
@@ -134400,38 +136552,6 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-SL-16-C-BBP(全球通中性)",
           "code": "310103196",
           "detail": "适配C口型号，蓝色16颗补光灯，全偏镜头罩，亮度最大可达自带光源的3倍以上",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "蓝色微码光源",
-          "name": "MV-IDA-LY-02-76C-20B2(全球通中性)",
-          "code": "310103150",
-          "detail": "适配C口型号，蓝色 20 颗补光灯，暗场光源，工作距离76mm",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "红色微码光源",
-          "name": "MV-IDA-LY-02-76C-20R2(全球通中性)",
-          "code": "310103149",
-          "detail": "适配C口型号，红色 20 颗补光灯，暗场光源，工作距离76mm",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "蓝色微码光源",
-          "name": "MV-IDA-LY-02-76C-61B8(全球通中性)",
-          "code": "310103148",
-          "detail": "适配C口型号，蓝色 61 颗补光灯，明暗场光源，工作距离76mm",
-          "remark": ""
-        },
-        {
-          "category": "扩展配件",
-          "series": "红色微码光源",
-          "name": "MV-IDA-LY-02-76C-61R8(全球通中性)",
-          "code": "310103147",
-          "detail": "适配C口型号，红色 61 颗补光灯，明暗场光源，工作距离76mm",
           "remark": ""
         }
       ]
@@ -134474,6 +136594,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型Mini工业读码器快速指南",
+          "code": "102046860",
+          "detail": "【中文标配】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300031",
+          "detail": "D-68 220x220x0.04mm2.5寸球机透明PE防尘袋",
           "remark": ""
         }
       ],
@@ -134799,6 +136935,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型Mini工业读码器快速指南",
+          "code": "102046861",
+          "detail": "【中文中性】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300031",
+          "detail": "D-68 220x220x0.04mm2.5寸球机透明PE防尘袋",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -135122,6 +137274,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型Mini工业读码器快速指南",
+          "code": "102046860",
+          "detail": "【中文标配】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300035",
+          "detail": "D-71 340X450X0.06E系五寸球PE防尘袋，条码验证器专用",
           "remark": ""
         }
       ],
@@ -135455,6 +137623,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型Mini工业读码器快速指南",
+          "code": "102046861",
+          "detail": "【中文中性】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300035",
+          "detail": "D-71 340X450X0.06E系五寸球PE防尘袋，条码验证器专用",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -135787,6 +137971,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型Mini工业读码器快速指南",
+          "code": "102046860",
+          "detail": "【中文标配】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300035",
+          "detail": "D-71 340X450X0.06E系五寸球PE防尘袋，条码验证器专用",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -136118,6 +138318,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型Mini工业读码器快速指南",
+          "code": "102046861",
+          "detail": "【中文中性】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300035",
+          "detail": "D-71 340X450X0.06E系五寸球PE防尘袋，条码验证器专用",
           "remark": ""
         }
       ],
@@ -136466,6 +138682,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型Mini工业读码器快速指南",
+          "code": "102046860",
+          "detail": "【中文标配】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300031",
+          "detail": "D-68 220x220x0.04mm2.5寸球机透明PE防尘袋",
           "remark": ""
         }
       ],
@@ -136883,9 +139115,9 @@ window.PEIDAN_DATA = {
         {
           "category": "扩展配件",
           "series": "外包装",
-          "name": "包装盒-ID5000XM中性",
-          "code": "194230226",
-          "detail": "228x180x120 机器视觉 (运输标识)中性白盒，适配ID5000XM中性系列",
+          "name": "包装盒-ID5000XM标配",
+          "code": "194230227",
+          "detail": "228x180x120 机器视觉 烫银logo白盒，适配ID5000XM标配系列",
           "remark": ""
         },
         {
@@ -136902,6 +139134,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型Mini工业读码器快速指南",
+          "code": "102046861",
+          "detail": "【中文中性】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300031",
+          "detail": "D-68 220x220x0.04mm2.5寸球机透明PE防尘袋",
           "remark": ""
         }
       ],
@@ -137339,6 +139587,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型Mini工业读码器快速指南",
+          "code": "102046860",
+          "detail": "【中文标配】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300031",
+          "detail": "D-68 220x220x0.04mm2.5寸球机透明PE防尘袋",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -137755,9 +140019,9 @@ window.PEIDAN_DATA = {
         {
           "category": "扩展配件",
           "series": "外包装",
-          "name": "包装盒-ID5000XM中性",
-          "code": "194230226",
-          "detail": "228x180x120 机器视觉 (运输标识)中性白盒，适配ID5000XM中性系列",
+          "name": "包装盒-ID5000XM标配",
+          "code": "194230227",
+          "detail": "228x180x120 机器视觉 烫银logo白盒，适配ID5000XM标配系列",
           "remark": ""
         },
         {
@@ -137774,6 +140038,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型Mini工业读码器快速指南",
+          "code": "102046861",
+          "detail": "【中文中性】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300031",
+          "detail": "D-68 220x220x0.04mm2.5寸球机透明PE防尘袋",
           "remark": ""
         }
       ],
@@ -138211,6 +140491,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型Mini工业读码器快速指南",
+          "code": "102046860",
+          "detail": "【中文标配】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300031",
+          "detail": "D-68 220x220x0.04mm2.5寸球机透明PE防尘袋",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -138627,9 +140923,9 @@ window.PEIDAN_DATA = {
         {
           "category": "扩展配件",
           "series": "外包装",
-          "name": "包装盒-ID5000XM中性",
-          "code": "194230226",
-          "detail": "228x180x120 机器视觉 (运输标识)中性白盒，适配ID5000XM中性系列",
+          "name": "包装盒-ID5000XM标配",
+          "code": "194230227",
+          "detail": "228x180x120 机器视觉 烫银logo白盒，适配ID5000XM标配系列",
           "remark": ""
         },
         {
@@ -138646,6 +140942,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型Mini工业读码器快速指南",
+          "code": "102046861",
+          "detail": "【中文中性】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300031",
+          "detail": "D-68 220x220x0.04mm2.5寸球机透明PE防尘袋",
           "remark": ""
         }
       ],
@@ -139083,6 +141395,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型Mini工业读码器快速指南",
+          "code": "102046860",
+          "detail": "【中文标配】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300031",
+          "detail": "D-68 220x220x0.04mm2.5寸球机透明PE防尘袋",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -139499,9 +141827,9 @@ window.PEIDAN_DATA = {
         {
           "category": "扩展配件",
           "series": "外包装",
-          "name": "包装盒-ID5000XM中性",
-          "code": "194230226",
-          "detail": "228x180x120 机器视觉 (运输标识)中性白盒，适配ID5000XM中性系列",
+          "name": "包装盒-ID5000XM标配",
+          "code": "194230227",
+          "detail": "228x180x120 机器视觉 烫银logo白盒，适配ID5000XM标配系列",
           "remark": ""
         },
         {
@@ -139518,6 +141846,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型Mini工业读码器快速指南",
+          "code": "102046861",
+          "detail": "【中文中性】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300031",
+          "detail": "D-68 220x220x0.04mm2.5寸球机透明PE防尘袋",
           "remark": ""
         }
       ],
@@ -139955,6 +142299,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型Mini工业读码器快速指南",
+          "code": "102046860",
+          "detail": "【中文标配】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300031",
+          "detail": "D-68 220x220x0.04mm2.5寸球机透明PE防尘袋",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -140245,38 +142605,6 @@ window.PEIDAN_DATA = {
           "code": "310102294",
           "detail": "ID5000XR透明镜头罩",
           "remark": "删除：202406694，添加：202406696"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB0856-12S",
-          "code": "102203387",
-          "detail": "焦距8mm，光圈F5.6，六百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1256-12S",
-          "code": "102202753",
-          "detail": "焦距12mm，光圈F5.6，12百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1656-12S",
-          "code": "102203196",
-          "detail": "焦距16mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP2556-12S",
-          "code": "102203197",
-          "detail": "焦距25mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -140371,9 +142699,9 @@ window.PEIDAN_DATA = {
         {
           "category": "扩展配件",
           "series": "外包装",
-          "name": "包装盒-ID5000XM中性",
-          "code": "194230226",
-          "detail": "228x180x120 机器视觉 (运输标识)中性白盒，适配ID5000XM中性系列",
+          "name": "包装盒-ID5000XM标配",
+          "code": "194230227",
+          "detail": "228x180x120 机器视觉 烫银logo白盒，适配ID5000XM标配系列",
           "remark": ""
         },
         {
@@ -140390,6 +142718,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型Mini工业读码器快速指南",
+          "code": "102046861",
+          "detail": "【中文中性】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300031",
+          "detail": "D-68 220x220x0.04mm2.5寸球机透明PE防尘袋",
           "remark": ""
         }
       ],
@@ -140681,38 +143025,6 @@ window.PEIDAN_DATA = {
           "code": "310102294",
           "detail": "ID5000XR透明镜头罩",
           "remark": "删除：202406694，添加：202406696"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB0856-12S",
-          "code": "102203387",
-          "detail": "焦距8mm，光圈F5.6，六百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1256-12S",
-          "code": "102202753",
-          "detail": "焦距12mm，光圈F5.6，12百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1656-12S",
-          "code": "102203196",
-          "detail": "焦距16mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP2556-12S",
-          "code": "102203197",
-          "detail": "焦距25mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -140827,6 +143139,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型Mini工业读码器快速指南",
+          "code": "102046860",
+          "detail": "【中文标配】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300031",
+          "detail": "D-68 220x220x0.04mm2.5寸球机透明PE防尘袋",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -141117,38 +143445,6 @@ window.PEIDAN_DATA = {
           "code": "310102294",
           "detail": "ID5000XR透明镜头罩",
           "remark": "删除：202406694，添加：202406696"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB0856-12S",
-          "code": "102203387",
-          "detail": "焦距8mm，光圈F5.6，六百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1256-12S",
-          "code": "102202753",
-          "detail": "焦距12mm，光圈F5.6，12百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1656-12S",
-          "code": "102203196",
-          "detail": "焦距16mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP2556-12S",
-          "code": "102203197",
-          "detail": "焦距25mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -141243,9 +143539,9 @@ window.PEIDAN_DATA = {
         {
           "category": "扩展配件",
           "series": "外包装",
-          "name": "包装盒-ID5000XM中性",
-          "code": "194230226",
-          "detail": "228x180x120 机器视觉 (运输标识)中性白盒，适配ID5000XM中性系列",
+          "name": "包装盒-ID5000XM标配",
+          "code": "194230227",
+          "detail": "228x180x120 机器视觉 烫银logo白盒，适配ID5000XM标配系列",
           "remark": ""
         },
         {
@@ -141262,6 +143558,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型Mini工业读码器快速指南",
+          "code": "102046861",
+          "detail": "【中文中性】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300031",
+          "detail": "D-68 220x220x0.04mm2.5寸球机透明PE防尘袋",
           "remark": ""
         }
       ],
@@ -141553,38 +143865,6 @@ window.PEIDAN_DATA = {
           "code": "310102294",
           "detail": "ID5000XR透明镜头罩",
           "remark": "删除：202406694，添加：202406696"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB0856-12S",
-          "code": "102203387",
-          "detail": "焦距8mm，光圈F5.6，六百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1256-12S",
-          "code": "102202753",
-          "detail": "焦距12mm，光圈F5.6，12百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1656-12S",
-          "code": "102203196",
-          "detail": "焦距16mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP2556-12S",
-          "code": "102203197",
-          "detail": "焦距25mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -141699,6 +143979,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型Mini工业读码器快速指南",
+          "code": "102046860",
+          "detail": "【中文标配】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300031",
+          "detail": "D-68 220x220x0.04mm2.5寸球机透明PE防尘袋",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -141989,38 +144285,6 @@ window.PEIDAN_DATA = {
           "code": "310102294",
           "detail": "ID5000XR透明镜头罩",
           "remark": "删除：202406694，添加：202406696"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB0856-12S",
-          "code": "102203387",
-          "detail": "焦距8mm，光圈F5.6，六百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1256-12S",
-          "code": "102202753",
-          "detail": "焦距12mm，光圈F5.6，12百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1656-12S",
-          "code": "102203196",
-          "detail": "焦距16mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP2556-12S",
-          "code": "102203197",
-          "detail": "焦距25mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -142115,9 +144379,9 @@ window.PEIDAN_DATA = {
         {
           "category": "扩展配件",
           "series": "外包装",
-          "name": "包装盒-ID5000XM中性",
-          "code": "194230226",
-          "detail": "228x180x120 机器视觉 (运输标识)中性白盒，适配ID5000XM中性系列",
+          "name": "包装盒-ID5000XM标配",
+          "code": "194230227",
+          "detail": "228x180x120 机器视觉 烫银logo白盒，适配ID5000XM标配系列",
           "remark": ""
         },
         {
@@ -142134,6 +144398,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型Mini工业读码器快速指南",
+          "code": "102046861",
+          "detail": "【中文中性】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300031",
+          "detail": "D-68 220x220x0.04mm2.5寸球机透明PE防尘袋",
           "remark": ""
         }
       ],
@@ -142425,38 +144705,6 @@ window.PEIDAN_DATA = {
           "code": "310102294",
           "detail": "ID5000XR透明镜头罩",
           "remark": "删除：202406694，添加：202406696"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHYB0856-12S",
-          "code": "102203387",
-          "detail": "焦距8mm，光圈F5.6，六百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1256-12S",
-          "code": "102202753",
-          "detail": "焦距12mm，光圈F5.6，12百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP1656-12S",
-          "code": "102203196",
-          "detail": "焦距16mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
-        },
-        {
-          "category": "镜头",
-          "series": "M12镜头",
-          "name": "BHP2556-12S",
-          "code": "102203197",
-          "detail": "焦距25mm，光圈F5.6，一千两百万像素，M12接口镜头",
-          "remark": "无法配置下单，仅用于临时更换测试"
         },
         {
           "category": "扩展配件",
@@ -142554,6 +144802,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型Mini工业读码器快速指南",
+          "code": "102046860",
+          "detail": "【中文标配】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300031",
+          "detail": "D-68 220x220x0.04mm2.5寸球机透明PE防尘袋",
           "remark": ""
         }
       ],
@@ -142975,6 +145239,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型Mini工业读码器快速指南",
+          "code": "102046861",
+          "detail": "【中文中性】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300031",
+          "detail": "D-68 220x220x0.04mm2.5寸球机透明PE防尘袋",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -143395,6 +145675,22 @@ window.PEIDAN_DATA = {
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
           "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】全功能型Mini工业读码器快速指南",
+          "code": "102046860",
+          "detail": "【中文标配】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300031",
+          "detail": "D-68 220x220x0.04mm2.5寸球机透明PE防尘袋",
+          "remark": ""
         }
       ],
       "optionalAccessories": [
@@ -143814,6 +146110,22 @@ window.PEIDAN_DATA = {
           "name": "螺丝包M4×8",
           "code": "193100772",
           "detail": "螺丝包(4_HSCSM4×8NL-SUS、绿色PE袋)，适配ID3000PM/ID5000M/ID5000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】全功能型Mini工业读码器快速指南",
+          "code": "102046861",
+          "detail": "【中文中性】全功能型Mini工业读码器快速指南V2.0.0，适配ID5000XM/RM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "防尘袋",
+          "name": "透明PE防尘袋",
+          "code": "194300031",
+          "detail": "D-68 220x220x0.04mm2.5寸球机透明PE防尘袋",
           "remark": ""
         }
       ],
@@ -146973,14 +149285,6 @@ window.PEIDAN_DATA = {
           "remark": ""
         },
         {
-          "category": "一体线",
-          "series": "ID3000无线-3m网口线缆",
-          "name": "MV-IDA-H30B-N-S-RJ45-RNE-BR-3m",
-          "code": "310102802",
-          "detail": "外甩线_三代把枪底座网口线缆,10P10C转RJ45/M+DB9F,3m,黑",
-          "remark": ""
-        },
-        {
           "category": "扩展配件",
           "series": "IDH3000电池",
           "name": "MV-IDH3013B-BATTERY-01",
@@ -147049,14 +149353,6 @@ window.PEIDAN_DATA = {
           "remark": ""
         },
         {
-          "category": "一体线",
-          "series": "ID3000无线-3m网口线缆",
-          "name": "MV-IDA-H30B-N-S-RJ45-RNE-BR-3m",
-          "code": "310102802",
-          "detail": "外甩线_三代把枪底座网口线缆,10P10C转RJ45/M+DB9F,3m,黑",
-          "remark": ""
-        },
-        {
           "category": "扩展配件",
           "series": "IDH3000电池",
           "name": "MV-IDH3013B-BATTERY-01",
@@ -147117,6 +149413,14 @@ window.PEIDAN_DATA = {
           "remark": ""
         },
         {
+          "category": "一体线",
+          "series": "ID3000无线-3m网口线缆",
+          "name": "MV-IDA-H30B-N-S-RJ45-RNE-BR-3m",
+          "code": "310102802",
+          "detail": "外甩线_三代把枪底座网口线缆,10P10C转RJ45/M+DB9F,3m,黑",
+          "remark": ""
+        },
+        {
           "category": "扩展配件",
           "series": "IDH3000电池",
           "name": "MV-IDH3013B-BATTERY-01",
@@ -147169,6 +149473,14 @@ window.PEIDAN_DATA = {
           "remark": ""
         },
         {
+          "category": "一体线",
+          "series": "ID3000无线-3m网口线缆",
+          "name": "MV-IDA-H30B-N-S-RJ45-RNE-BR-3m",
+          "code": "310102802",
+          "detail": "外甩线_三代把枪底座网口线缆,10P10C转RJ45/M+DB9F,3m,黑",
+          "remark": ""
+        },
+        {
           "category": "扩展配件",
           "series": "IDH3000电池",
           "name": "MV-IDH3013B-BATTERY-01",
@@ -147218,6 +149530,14 @@ window.PEIDAN_DATA = {
           "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1",
+          "remark": ""
+        },
+        {
+          "category": "一体线",
+          "series": "ID3000无线-3m网口线缆",
+          "name": "MV-IDA-H30B-N-S-RJ45-RNE-BR-3m",
+          "code": "310102802",
+          "detail": "外甩线_三代把枪底座网口线缆,10P10C转RJ45/M+DB9F,3m,黑",
           "remark": ""
         },
         {
@@ -147278,14 +149598,6 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-H30B-N-S-RJ45-U-BR-2.5m",
           "code": "310102801",
           "detail": "外甩线_三代把枪底座U口线缆,2.5m,黑",
-          "remark": ""
-        },
-        {
-          "category": "一体线",
-          "series": "ID3000无线-3m网口线缆",
-          "name": "MV-IDA-H30B-N-S-RJ45-RNE-BR-3m",
-          "code": "310102802",
-          "detail": "外甩线_三代把枪底座网口线缆,10P10C转RJ45/M+DB9F,3m,黑",
           "remark": ""
         },
         {
@@ -147357,14 +149669,6 @@ window.PEIDAN_DATA = {
           "remark": ""
         },
         {
-          "category": "一体线",
-          "series": "ID3000无线-3m网口线缆",
-          "name": "MV-IDA-H30B-N-S-RJ45-RNE-BR-3m",
-          "code": "310102802",
-          "detail": "外甩线_三代把枪底座网口线缆,10P10C转RJ45/M+DB9F,3m,黑",
-          "remark": ""
-        },
-        {
           "category": "扩展配件",
           "series": "IDH3000电池",
           "name": "MV-IDH3013B-BATTERY-01",
@@ -147425,6 +149729,14 @@ window.PEIDAN_DATA = {
           "remark": ""
         },
         {
+          "category": "一体线",
+          "series": "ID3000无线-3m网口线缆",
+          "name": "MV-IDA-H30B-N-S-RJ45-RNE-BR-3m",
+          "code": "310102802",
+          "detail": "外甩线_三代把枪底座网口线缆,10P10C转RJ45/M+DB9F,3m,黑",
+          "remark": ""
+        },
+        {
           "category": "扩展配件",
           "series": "IDH3000电池",
           "name": "MV-IDH3013B-BATTERY-01",
@@ -147477,6 +149789,14 @@ window.PEIDAN_DATA = {
           "remark": ""
         },
         {
+          "category": "一体线",
+          "series": "ID3000无线-3m网口线缆",
+          "name": "MV-IDA-H30B-N-S-RJ45-RNE-BR-3m",
+          "code": "310102802",
+          "detail": "外甩线_三代把枪底座网口线缆,10P10C转RJ45/M+DB9F,3m,黑",
+          "remark": ""
+        },
+        {
           "category": "扩展配件",
           "series": "IDH3000电池",
           "name": "MV-IDH3013B-BATTERY-01",
@@ -147526,6 +149846,14 @@ window.PEIDAN_DATA = {
           "name": "ADS-26FSG-12 12024EPCN",
           "code": "101700736",
           "detail": "适配器,ADS-26FSG-12 12024EPCN,国标,12V2A,Φ2.1",
+          "remark": ""
+        },
+        {
+          "category": "一体线",
+          "series": "ID3000无线-3m网口线缆",
+          "name": "MV-IDA-H30B-N-S-RJ45-RNE-BR-3m",
+          "code": "310102802",
+          "detail": "外甩线_三代把枪底座网口线缆,10P10C转RJ45/M+DB9F,3m,黑",
           "remark": ""
         },
         {
@@ -147586,14 +149914,6 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-H30B-N-S-RJ45-U-BR-2.5m",
           "code": "310102801",
           "detail": "外甩线_三代把枪底座U口线缆,2.5m,黑",
-          "remark": ""
-        },
-        {
-          "category": "一体线",
-          "series": "ID3000无线-3m网口线缆",
-          "name": "MV-IDA-H30B-N-S-RJ45-RNE-BR-3m",
-          "code": "310102802",
-          "detail": "外甩线_三代把枪底座网口线缆,10P10C转RJ45/M+DB9F,3m,黑",
           "remark": ""
         },
         {
@@ -147665,14 +149985,6 @@ window.PEIDAN_DATA = {
           "remark": ""
         },
         {
-          "category": "一体线",
-          "series": "ID3000无线-3m网口线缆",
-          "name": "MV-IDA-H30B-N-S-RJ45-RNE-BR-3m",
-          "code": "310102802",
-          "detail": "外甩线_三代把枪底座网口线缆,10P10C转RJ45/M+DB9F,3m,黑",
-          "remark": ""
-        },
-        {
           "category": "扩展配件",
           "series": "IDH3000电池",
           "name": "MV-IDH3013B-BATTERY-01",
@@ -147738,14 +150050,6 @@ window.PEIDAN_DATA = {
           "name": "MV-IDA-H30B-N-S-RJ45-U-BR-2.5m",
           "code": "310102801",
           "detail": "外甩线_三代把枪底座U口线缆,2.5m,黑",
-          "remark": ""
-        },
-        {
-          "category": "一体线",
-          "series": "ID3000无线-3m网口线缆",
-          "name": "MV-IDA-H30B-N-S-RJ45-RNE-BR-3m",
-          "code": "310102802",
-          "detail": "外甩线_三代把枪底座网口线缆,10P10C转RJ45/M+DB9F,3m,黑",
           "remark": ""
         },
         {
@@ -153232,7 +155536,7 @@ window.PEIDAN_DATA = {
           "name": "MV-LB-270-140-4030WL-A",
           "code": "310100510",
           "detail": "24V,120W, 32LED颗粒,全角40*30°，主推，搭配ID6000系列智能读码器使用",
-          "remark": "删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
+          "remark": "ID5000搭配物流大灯需要调整相机钣金，删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
         },
         {
           "category": "扩展配件",
@@ -153619,7 +155923,7 @@ window.PEIDAN_DATA = {
           "name": "MV-LB-270-140-4030WL-A",
           "code": "310100510",
           "detail": "24V,120W, 32LED颗粒,全角40*30°，主推，搭配ID6000系列智能读码器使用",
-          "remark": "删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
+          "remark": "ID5000搭配物流大灯需要调整相机钣金，删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
         },
         {
           "category": "扩展配件",
@@ -154006,7 +156310,7 @@ window.PEIDAN_DATA = {
           "name": "MV-LB-270-140-4030WL-A",
           "code": "310100510",
           "detail": "24V,120W, 32LED颗粒,全角40*30°，主推，搭配ID6000系列智能读码器使用",
-          "remark": "删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
+          "remark": "ID5000搭配物流大灯需要调整相机钣金，删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
         },
         {
           "category": "扩展配件",
@@ -154393,7 +156697,7 @@ window.PEIDAN_DATA = {
           "name": "MV-LB-270-140-4030WL-A",
           "code": "310100510",
           "detail": "24V,120W, 32LED颗粒,全角40*30°，主推，搭配ID6000系列智能读码器使用",
-          "remark": "删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
+          "remark": "ID5000搭配物流大灯需要调整相机钣金，删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
         },
         {
           "category": "扩展配件",
@@ -154741,7 +157045,7 @@ window.PEIDAN_DATA = {
           "name": "MV-LB-270-140-4030WL-A",
           "code": "310100510",
           "detail": "24V,120W, 32LED颗粒,全角40*30°，主推，搭配ID6000系列智能读码器使用",
-          "remark": "删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
+          "remark": "ID5000搭配物流大灯需要调整相机钣金，删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
         },
         {
           "category": "扩展配件",
@@ -155089,7 +157393,7 @@ window.PEIDAN_DATA = {
           "name": "MV-LB-270-140-4030WL-A",
           "code": "310100510",
           "detail": "24V,120W, 32LED颗粒,全角40*30°，主推，搭配ID6000系列智能读码器使用",
-          "remark": "删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
+          "remark": "ID5000搭配物流大灯需要调整相机钣金，删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
         },
         {
           "category": "扩展配件",
@@ -155476,7 +157780,7 @@ window.PEIDAN_DATA = {
           "name": "MV-LB-270-140-4030WL-A",
           "code": "310100510",
           "detail": "24V,120W, 32LED颗粒,全角40*30°，主推，搭配ID6000系列智能读码器使用",
-          "remark": "删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
+          "remark": "ID5000搭配物流大灯需要调整相机钣金，删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
         },
         {
           "category": "扩展配件",
@@ -155863,7 +158167,7 @@ window.PEIDAN_DATA = {
           "name": "MV-LB-270-140-4030WL-A",
           "code": "310100510",
           "detail": "24V,120W, 32LED颗粒,全角40*30°，主推，搭配ID6000系列智能读码器使用",
-          "remark": "删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
+          "remark": "ID5000搭配物流大灯需要调整相机钣金，删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
         },
         {
           "category": "扩展配件",
@@ -156250,7 +158554,7 @@ window.PEIDAN_DATA = {
           "name": "MV-LB-270-140-4030WL-A",
           "code": "310100510",
           "detail": "24V,120W, 32LED颗粒,全角40*30°，主推，搭配ID6000系列智能读码器使用",
-          "remark": "删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
+          "remark": "ID5000搭配物流大灯需要调整相机钣金，删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
         },
         {
           "category": "扩展配件",
@@ -156637,7 +158941,7 @@ window.PEIDAN_DATA = {
           "name": "MV-LB-270-140-4030WL-A",
           "code": "310100510",
           "detail": "24V,120W, 32LED颗粒,全角40*30°，主推，搭配ID6000系列智能读码器使用",
-          "remark": "删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
+          "remark": "ID5000搭配物流大灯需要调整相机钣金，删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
         },
         {
           "category": "扩展配件",
@@ -157024,7 +159328,7 @@ window.PEIDAN_DATA = {
           "name": "MV-LB-270-140-4030WL-A",
           "code": "310100510",
           "detail": "24V,120W, 32LED颗粒,全角40*30°，主推，搭配ID6000系列智能读码器使用",
-          "remark": "删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
+          "remark": "ID5000搭配物流大灯需要调整相机钣金，删除：190170125，添加：190175190；配合读码器使用时，相机与光源的连接线需要额外配置下单：光源触发线：310102111, 光源触发线,TB2A10P转open,7m,黑；相机触发线：310102110, ,M12A12F转TB2A12S ,50cm,黑"
         },
         {
           "category": "扩展配件",
@@ -157664,6 +159968,14 @@ window.PEIDAN_DATA = {
           "code": "101507667",
           "detail": "RJ45转RJ45(螺钉),5m,黑",
           "remark": ""
+        },
+        {
+          "category": "镜头",
+          "series": "FA镜头",
+          "name": "MVL-KF2056M-10MP (标配)",
+          "code": "102202996",
+          "detail": "FA镜头，20mm，F5.6，1英寸，10MP，C接口",
+          "remark": ""
         }
       ],
       "optionalAccessories": []
@@ -158265,7 +160577,40 @@ window.PEIDAN_DATA = {
       "materialCode": "313203076",
       "description": "1.3MP，2.48mm镜头，视场角69°*58°，4颗白光(偏振)，网口型号",
       "remark": "标配1.2m高柔线缆：医疗专用型号供电通讯一体线，DB15转RJ45、DB9，散线（2入2出）",
-      "standardAccessories": [],
+      "standardAccessories": [
+        {
+          "category": "扩展配件",
+          "series": "外包装",
+          "name": "包装盒-ID2000/ID3000",
+          "code": "194213827",
+          "detail": "195x145x135 机器视觉 视觉传感器黄包，适配ID800/ID2013EM/ID2000XM/ID3000系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-ID800/ID2013EM",
+          "code": "194405409",
+          "detail": "192x140x80 机器视觉 ID2000E相机 EPE，适配ID800/ID2013EM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "螺丝包",
+          "name": "螺丝包M3×6",
+          "code": "193100773",
+          "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
+        }
+      ],
       "optionalAccessories": []
     },
     {
@@ -158275,7 +160620,40 @@ window.PEIDAN_DATA = {
       "materialCode": "313203321",
       "description": "1.3MP，2.48mm镜头，视场角69°*58°，4颗白光(偏振)，网口型号",
       "remark": "标配1.2m高柔线缆：医疗专用型号供电通讯一体线，DB15转RJ45、DB9，散线（2入2出）",
-      "standardAccessories": [],
+      "standardAccessories": [
+        {
+          "category": "扩展配件",
+          "series": "外包装",
+          "name": "包装盒-ID2000/ID3000",
+          "code": "194213827",
+          "detail": "195x145x135 机器视觉 视觉传感器黄包，适配ID800/ID2013EM/ID2000XM/ID3000系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-ID800/ID2013EM",
+          "code": "194405409",
+          "detail": "192x140x80 机器视觉 ID2000E相机 EPE，适配ID800/ID2013EM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "螺丝包",
+          "name": "螺丝包M3×6",
+          "code": "193100773",
+          "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
+        }
+      ],
       "optionalAccessories": []
     },
     {
@@ -158285,7 +160663,40 @@ window.PEIDAN_DATA = {
       "materialCode": "313203077",
       "description": "1.3MP，4.63mm镜头，视场角40°*33°，4颗白光(偏振)，网口型号",
       "remark": "标配1.2m高柔线缆：医疗专用型号供电通讯一体线，DB15转RJ45、DB9，散线（2入2出）",
-      "standardAccessories": [],
+      "standardAccessories": [
+        {
+          "category": "扩展配件",
+          "series": "外包装",
+          "name": "包装盒-ID2000/ID3000",
+          "code": "194213827",
+          "detail": "195x145x135 机器视觉 视觉传感器黄包，适配ID800/ID2013EM/ID2000XM/ID3000系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-ID800/ID2013EM",
+          "code": "194405409",
+          "detail": "192x140x80 机器视觉 ID2000E相机 EPE，适配ID800/ID2013EM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "螺丝包",
+          "name": "螺丝包M3×6",
+          "code": "193100773",
+          "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
+        }
+      ],
       "optionalAccessories": []
     },
     {
@@ -158295,7 +160706,40 @@ window.PEIDAN_DATA = {
       "materialCode": "313203320",
       "description": "1.3MP，4.63mm镜头，视场角40°*33°，4颗白光(偏振)，网口型号",
       "remark": "标配1.2m高柔线缆：医疗专用型号供电通讯一体线，DB15转RJ45、DB9，散线（2入2出）",
-      "standardAccessories": [],
+      "standardAccessories": [
+        {
+          "category": "扩展配件",
+          "series": "外包装",
+          "name": "包装盒-ID2000/ID3000",
+          "code": "194213827",
+          "detail": "195x145x135 机器视觉 视觉传感器黄包，适配ID800/ID2013EM/ID2000XM/ID3000系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-ID800/ID2013EM",
+          "code": "194405409",
+          "detail": "192x140x80 机器视觉 ID2000E相机 EPE，适配ID800/ID2013EM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "螺丝包",
+          "name": "螺丝包M3×6",
+          "code": "193100773",
+          "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文中性】极小型智能读码器快速指南",
+          "code": "102048036",
+          "detail": "【中文中性】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
+        }
+      ],
       "optionalAccessories": []
     },
     {
@@ -158305,7 +160749,40 @@ window.PEIDAN_DATA = {
       "materialCode": "313203088",
       "description": "1MP，2.48mm镜头，视场角71°*51°，1颗白光(偏振)，网口型号",
       "remark": "一体化1m甩线",
-      "standardAccessories": [],
+      "standardAccessories": [
+        {
+          "category": "扩展配件",
+          "series": "外包装",
+          "name": "包装盒-ID2000/ID3000",
+          "code": "194213827",
+          "detail": "195x145x135 机器视觉 视觉传感器黄包，适配ID800/ID2013EM/ID2000XM/ID3000系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-B10",
+          "code": "194404199",
+          "detail": "192x140x80 机器视觉 ID2000相机 EPE，适配MED-B10系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "螺丝包",
+          "name": "螺丝包M3×6",
+          "code": "193100773",
+          "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
+        }
+      ],
       "optionalAccessories": []
     },
     {
@@ -158315,7 +160792,40 @@ window.PEIDAN_DATA = {
       "materialCode": "313203089",
       "description": "1MP，4.63mm镜头，视场角42°*29°，1颗白光，网口型号",
       "remark": "一体化1m甩线",
-      "standardAccessories": [],
+      "standardAccessories": [
+        {
+          "category": "扩展配件",
+          "series": "外包装",
+          "name": "包装盒-ID2000/ID3000",
+          "code": "194213827",
+          "detail": "195x145x135 机器视觉 视觉传感器黄包，适配ID800/ID2013EM/ID2000XM/ID3000系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "泡棉EPE",
+          "name": "泡棉EPE-B10",
+          "code": "194404199",
+          "detail": "192x140x80 机器视觉 ID2000相机 EPE，适配MED-B10系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "螺丝包",
+          "name": "螺丝包M3×6",
+          "code": "193100773",
+          "detail": "螺丝包(3_PSF0M3×6-SUS、绿色PE袋)，适配ID800/ID2013EM/ID2000XM/ID3000XM系列",
+          "remark": ""
+        },
+        {
+          "category": "扩展配件",
+          "series": "快速指南",
+          "name": "【中文标配】极小型智能读码器快速指南",
+          "code": "102048034",
+          "detail": "【中文标配】极小型智能读码器快速指南V2.0.0，适配ID2013EM和ID2000M系列",
+          "remark": ""
+        }
+      ],
       "optionalAccessories": []
     },
     {
@@ -158551,6 +161061,14 @@ window.PEIDAN_DATA = {
           "remark": ""
         },
         {
+          "category": "安装板",
+          "series": "安装板",
+          "name": "一体机支架",
+          "code": "192131621",
+          "detail": "可调高度560~660mm，20mm一个档位，E10 V2.0专用",
+          "remark": ""
+        },
+        {
           "category": "一体线",
           "series": "1.5m普通U口",
           "name": "USB3-AM转USB-CM,1.5m",
@@ -158560,6 +161078,14 @@ window.PEIDAN_DATA = {
         }
       ],
       "optionalAccessories": [
+        {
+          "category": "安装板",
+          "series": "安装板",
+          "name": "一体机支架",
+          "code": "192137572",
+          "detail": "可调高度460~660mm，20mm一个档位，E10 V2.0专用",
+          "remark": ""
+        },
         {
           "category": "一体线",
           "series": "3m普通U口",
@@ -158587,6 +161113,14 @@ window.PEIDAN_DATA = {
           "remark": ""
         },
         {
+          "category": "安装板",
+          "series": "安装板",
+          "name": "一体机支架",
+          "code": "192131621",
+          "detail": "可调高度560~660mm，20mm一个档位，E10 V2.0专用",
+          "remark": ""
+        },
+        {
           "category": "一体线",
           "series": "1.5m普通U口",
           "name": "USB3-AM转USB-CM,1.5m",
@@ -158596,6 +161130,14 @@ window.PEIDAN_DATA = {
         }
       ],
       "optionalAccessories": [
+        {
+          "category": "安装板",
+          "series": "安装板",
+          "name": "一体机支架",
+          "code": "192137572",
+          "detail": "可调高度460~660mm，20mm一个档位，E10 V2.0专用",
+          "remark": ""
+        },
         {
           "category": "一体线",
           "series": "3m普通U口",

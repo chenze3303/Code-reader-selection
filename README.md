@@ -238,7 +238,7 @@ IDP 系列智能移动终端（PDA）型号参数对比工具，支持多条件�
 - **可扩展**：新增数据集只需添加 JSON 生成项与桥接映射，不需要在多个组件重复改动。
 - **可测试**：`npm run test:data` 校验归一化目录、真实数据数量、加载缓存和 legacy 兼容接口。
 
-配单数据采用归一化结构：型号只保存配件 ID，配件详情仅保留一份。当前 686 个型号、16,432 次配件引用归并为 341 个唯一配件，运行时目录约 374KB。
+配单数据采用归一化结构：型号只保存配件 ID，配件详情仅保留一份。当前 686 个型号、19,139 次配件引用归并为 433 个唯一配件，运行时目录约 401KB。
 
 > `public/js/data/` 内的旧 JS 数据源继续保留，仅用于数据库编辑器和数据生成，不能手动删除。
 
@@ -306,6 +306,30 @@ node scripts/gen_download_urls.js
 ```
 
 > ⚠️ 抓取脚本依赖 agent-browser（Playwright 封装），需要安装 Chromium。每个系列约耗时 10 秒，全部完成约 5-10 分钟。
+
+### 方式五：同步 ID 参考站配单数据
+
+ID 配单数据以公开参考站 [ID-BOM](https://cai0707-kiki.github.io/ID-BOM/) 的 `id_camera_data.js` / `id_accessory_data.js` 为上游。同步脚本保持两站列结构一致（26 列相机行 / 10 列配件行），只改写项目约定：第 0 列 `ID系列 → 相机`、第 25 列补 `CAM/` 前缀、配件第 9 列补 `ACC/` 前缀。
+
+```bash
+# 1. 拉取参考站最新数据并覆盖 product_data.json（先跑 --dry-run 看差异）
+node scripts/sync-id-bom.js --dry-run
+node scripts/sync-id-bom.js
+
+# 2. 重新生成 peidan.js 与归一化目录
+node scripts/convert_product_data.js
+node scripts/build-bom-catalog.js
+
+# 3. 同步「ID 系列全览」快照
+node scripts/build-id-series-data.js
+
+# 4. 压缩 + 校验 + 构建
+node scripts/minify-js.js
+npm run test:data
+npm run build
+```
+
+> 离线可用 `--local <目录>` 指定已下载的 `id_camera_data.js` / `id_accessory_data.js`。同步会整体覆盖 `product_data.json`，请先提交或备份当前数据。
 
 ---
 
